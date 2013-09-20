@@ -103,7 +103,7 @@ projects[crm_core_profile_commerce_items][version] = 0.3
 projects[crm_core_profile_commerce_items][subdir] = "contrib"
 
 ; download crm core donations
-projects[crm_core_donation][version] = 1.5
+projects[crm_core_donation][version] = 1.6
 projects[crm_core_donation][subdir] = "contrib"
 
 ; download crm core events
