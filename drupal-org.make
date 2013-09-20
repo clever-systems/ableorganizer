@@ -115,7 +115,7 @@ projects[crm_core_petition][version] = 0.3
 projects[crm_core_petition][subdir] = "contrib"
 
 ; download crm core volunteers
-projects[crm_core_volunteer][version] = 0.3
+projects[crm_core_volunteer][version] = 0.4
 projects[crm_core_volunteer][subdir] = "contrib"
 
 ; download standard fields
