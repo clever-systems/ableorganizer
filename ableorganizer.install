@@ -1,0 +1,759 @@
+<?php
+/**
+ * @file
+ * Install, update and uninstall functions for the installation profile.
+ */
+
+/**
+ * Implements hook_install().
+ *
+ * Perform actions to set up the site for this profile.
+ *
+ * @see system_install()
+ */
+function ableorganizer_install() {
+
+  $t = get_t();
+  // Add text formats.
+  $filtered_html_format = array(
+    'format' => 'filtered_html',
+    'name' => 'Filtered HTML',
+    'weight' => 0,
+    'filters' => array(
+      // URL filter.
+      'filter_url' => array(
+        'weight' => 0,
+        'status' => 1,
+      ),
+      // HTML filter.
+      'filter_html' => array(
+        'weight' => 1,
+        'status' => 1,
+      ),
+      // Line break filter.
+      'filter_autop' => array(
+        'weight' => 2,
+        'status' => 1,
+      ),
+      // HTML corrector filter.
+      'filter_htmlcorrector' => array(
+        'weight' => 10,
+        'status' => 1,
+      ),
+    ),
+  );
+  $filtered_html_format = (object) $filtered_html_format;
+  filter_format_save($filtered_html_format);
+
+  $full_html_format = array(
+    'format' => 'full_html',
+    'name' => 'Full HTML',
+    'weight' => 1,
+    'filters' => array(
+      // URL filter.
+      'filter_url' => array(
+        'weight' => 0,
+        'status' => 1,
+      ),
+      // Line break filter.
+      'filter_autop' => array(
+        'weight' => 1,
+        'status' => 1,
+      ),
+      // HTML corrector filter.
+      'filter_htmlcorrector' => array(
+        'weight' => 10,
+        'status' => 1,
+      ),
+    ),
+  );
+  $full_html_format = (object) $full_html_format;
+  filter_format_save($full_html_format);
+
+  // Enable some standard blocks.
+  $default_theme = variable_get('theme_default', 'bartik');
+  $admin_theme = 'seven';
+  $blocks = array(
+    array(
+      'module' => 'system',
+      'delta' => 'main',
+      'theme' => $default_theme,
+      'status' => 1,
+      'weight' => 0,
+      'region' => 'content',
+      'pages' => '',
+      'cache' => -1,
+    ),
+    array(
+      'module' => 'search',
+      'delta' => 'form',
+      'theme' => $default_theme,
+      'status' => 1,
+      'weight' => -1,
+      'region' => 'sidebar_first',
+      'pages' => '',
+      'cache' => -1,
+    ),
+    array(
+      'module' => 'user',
+      'delta' => 'login',
+      'theme' => $default_theme,
+      'status' => 1,
+      'weight' => 0,
+      'region' => 'sidebar_first',
+      'pages' => '',
+      'cache' => -1,
+    ),
+    array(
+      'module' => 'system',
+      'delta' => 'powered-by',
+      'theme' => $default_theme,
+      'status' => 1,
+      'weight' => 10,
+      'region' => 'footer',
+      'pages' => '',
+      'cache' => -1,
+    ),
+    array(
+      'module' => 'system',
+      'delta' => 'help',
+      'theme' => $default_theme,
+      'status' => 1,
+      'weight' => 0,
+      'region' => 'help',
+      'pages' => '',
+      'cache' => -1,
+    ),
+    array(
+      'module' => 'system',
+      'delta' => 'main',
+      'theme' => $admin_theme,
+      'status' => 1,
+      'weight' => 0,
+      'region' => 'content',
+      'pages' => '',
+      'cache' => -1,
+    ),
+    array(
+      'module' => 'system',
+      'delta' => 'help',
+      'theme' => $admin_theme,
+      'status' => 1,
+      'weight' => 0,
+      'region' => 'help',
+      'pages' => '',
+      'cache' => -1,
+    ),
+    array(
+      'module' => 'user',
+      'delta' => 'login',
+      'theme' => $admin_theme,
+      'status' => 1,
+      'weight' => 10,
+      'region' => 'content',
+      'pages' => '',
+      'cache' => -1,
+    ),
+  );
+  $query = db_insert('block')->fields(array(
+    'module',
+    'delta',
+    'theme',
+    'status',
+    'weight',
+    'region',
+    'pages',
+    'cache',
+  ));
+  foreach ($blocks as $block) {
+    $query->values($block);
+  }
+  $query->execute();
+
+  // Insert default pre-defined node types into the database. For a complete
+  // list of available node type attributes, refer to the node type API
+  // documentation at: http://api.drupal.org/api/HEAD/function/hook_node_info.
+  $types = array(
+    array(
+      'type' => 'page',
+      'name' => $t('Basic page'),
+      'base' => 'node_content',
+      'description' => $t("Use <em>basic pages</em> for your static content, such as an 'About us' page."),
+      'custom' => 1,
+      'modified' => 1,
+      'locked' => 0,
+    ),
+    array(
+      'type' => 'article',
+      'name' => $t('Article'),
+      'base' => 'node_content',
+      'description' => $t('Use <em>articles</em> for time-sensitive content like news, press releases or blog posts.'),
+      'custom' => 1,
+      'modified' => 1,
+      'locked' => 0,
+    ),
+  );
+
+  foreach ($types as $type) {
+    $type = node_type_set_defaults($type);
+    node_type_save($type);
+    node_add_body_field($type);
+  }
+
+  // Insert default pre-defined RDF mapping into the database.
+  $rdf_mappings = array(
+    array(
+      'type' => 'node',
+      'bundle' => 'page',
+      'mapping' => array(
+        'rdftype' => array('foaf:Document'),
+      ),
+    ),
+    array(
+      'type' => 'node',
+      'bundle' => 'article',
+      'mapping' => array(
+        'field_image' => array(
+          'predicates' => array('og:image', 'rdfs:seeAlso'),
+          'type' => 'rel',
+        ),
+        'field_tags' => array(
+          'predicates' => array('dc:subject'),
+          'type' => 'rel',
+        ),
+      ),
+    ),
+  );
+  foreach ($rdf_mappings as $rdf_mapping) {
+    rdf_mapping_save($rdf_mapping);
+  }
+
+  // Default "Basic page" to not be promoted and have comments disabled.
+  variable_set('node_options_page', array('status'));
+  variable_set('comment_page', COMMENT_NODE_HIDDEN);
+
+  // Don't display date and author information for "Basic page" nodes.
+  variable_set('node_submitted_page', FALSE);
+
+  // Enable user picture support and set the default to a square thumbnail.
+  variable_set('user_pictures', '1');
+  variable_set('user_picture_dimensions', '1024x1024');
+  variable_set('user_picture_file_size', '800');
+  variable_set('user_picture_style', 'thumbnail');
+
+  // Allow visitor account creation with administrative approval.
+  variable_set('user_register', USER_REGISTER_VISITORS_ADMINISTRATIVE_APPROVAL);
+
+  // Create a default vocabulary named "Tags", enabled for the 'article'
+  // content type.
+  $description = $t('Use tags to group articles on similar topics into categories.');
+  $help = $t('Enter a comma-separated list of words to describe your content.');
+  $vocabulary = (object) array(
+    'name' => $t('Tags'),
+    'description' => $description,
+    'machine_name' => 'tags',
+    'help' => $help,
+
+  );
+  taxonomy_vocabulary_save($vocabulary);
+
+  $field = array(
+    'field_name' => 'field_' . $vocabulary->machine_name,
+    'type' => 'taxonomy_term_reference',
+    // Set cardinality to unlimited for tagging.
+    'cardinality' => FIELD_CARDINALITY_UNLIMITED,
+    'settings' => array(
+      'allowed_values' => array(
+        array(
+          'vocabulary' => $vocabulary->machine_name,
+          'parent' => 0,
+        ),
+      ),
+    ),
+  );
+  field_create_field($field);
+
+  $instance = array(
+    'field_name' => 'field_' . $vocabulary->machine_name,
+    'entity_type' => 'node',
+    'label' => 'Tags',
+    'bundle' => 'article',
+    'description' => $vocabulary->help,
+    'widget' => array(
+      'type' => 'taxonomy_autocomplete',
+      'weight' => -4,
+    ),
+    'display' => array(
+      'default' => array(
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 10,
+      ),
+      'teaser' => array(
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 10,
+      ),
+    ),
+  );
+  field_create_instance($instance);
+
+  // Create an image field named "Image", enabled for the 'article'
+  // content type. Many of the following values will be defaulted, they're
+  // included here as an illustrative examples.
+  // See http://api.drupal.org/api/function/field_create_field/7
+  $field = array(
+    'field_name' => 'field_image',
+    'type' => 'image',
+    'cardinality' => 1,
+    'locked' => FALSE,
+    'indexes' => array('fid' => array('fid')),
+    'settings' => array(
+      'uri_scheme' => 'public',
+      'default_image' => FALSE,
+    ),
+    'storage' => array(
+      'type' => 'field_sql_storage',
+      'settings' => array(),
+    ),
+  );
+  field_create_field($field);
+
+  // Many of the following values will be defaulted, they're included here as
+  // an illustrative examples.
+  // See http://api.drupal.org/api/function/field_create_instance/7
+  $instance = array(
+    'field_name' => 'field_image',
+    'entity_type' => 'node',
+    'label' => 'Image',
+    'bundle' => 'article',
+    'description' => $t('Upload an image to go with this article.'),
+    'required' => FALSE,
+    'settings' => array(
+      'file_directory' => 'field/image',
+      'file_extensions' => 'png gif jpg jpeg',
+      'max_filesize' => '',
+      'max_resolution' => '',
+      'min_resolution' => '',
+      'alt_field' => TRUE,
+      'title_field' => '',
+    ),
+    'widget' => array(
+      'type' => 'image_image',
+      'settings' => array(
+        'progress_indicator' => 'throbber',
+        'preview_image_style' => 'thumbnail',
+      ),
+      'weight' => -1,
+    ),
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'type' => 'image',
+        'settings' => array('image_style' => 'large', 'image_link' => ''),
+        'weight' => -1,
+      ),
+      'teaser' => array(
+        'label' => 'hidden',
+        'type' => 'image',
+        'settings' => array(
+          'image_style' => 'medium',
+          'image_link' => 'content',
+        ),
+        'weight' => -1,
+      ),
+    ),
+  );
+  field_create_instance($instance);
+
+  // Enable default permissions for system roles.
+  $filtered_html_permission = filter_permission_name($filtered_html_format);
+  user_role_grant_permissions(DRUPAL_ANONYMOUS_RID, array(
+    'access content',
+    'access comments',
+    $filtered_html_permission,
+  ));
+  user_role_grant_permissions(DRUPAL_AUTHENTICATED_RID, array(
+    'access content',
+    'access comments',
+    'post comments',
+    'skip comment approval',
+    $filtered_html_permission,
+  ));
+
+  // Create a default role for site administrators, with all available
+  // permissions assigned.
+  $admin_role = new stdClass();
+  $admin_role->name = 'administrator';
+  $admin_role->weight = 2;
+  user_role_save($admin_role);
+  user_role_grant_permissions($admin_role->rid, array_keys(module_invoke_all('permission')));
+  // Set this as the administrator role.
+  variable_set('user_admin_role', $admin_role->rid);
+
+  // Assign user 1 the "administrator" role.
+  db_insert('users_roles')
+    ->fields(array('uid' => 1, 'rid' => $admin_role->rid))
+    ->execute();
+
+  // Create a Home link in the main menu.
+  $item = array(
+    'link_title' => $t('Home'),
+    'link_path' => '<front>',
+    'menu_name' => 'main-menu',
+  );
+  menu_link_save($item);
+
+  // Update the menu router information.
+  menu_rebuild();
+
+  // Enable the admin theme.
+  db_update('system')
+    ->fields(array('status' => 1))
+    ->condition('type', 'theme')
+    ->condition('name', 'seven')
+    ->execute();
+  variable_set('admin_theme', 'seven');
+  variable_set('node_admin_theme', '1');
+
+  // Configure CRM Core Contact matching rules.
+  // Enable the default engine.
+  db_insert('crm_core_match_engines')
+    ->fields(array(
+      'machine_name' => 'default_matching_engine',
+      'weight' => 10,
+      'status' => 1,
+    ))
+    ->execute();
+
+  // Enable the default match engine for contacts of type "individual".
+  db_insert('crm_core_match_contact_types')
+    ->fields(array(
+      'contact_type' => 'individual',
+      'threshold' => 30,
+      'status' => 1,
+      'strict' => 0,
+      'return_order' => 'created',
+    ))
+    ->execute();
+
+  // Add contact name and email matching rules for individuals.
+  $contact_type_rules = array(
+    array(
+      'individual',
+      'contact_name',
+      'name',
+      'given',
+      'equals',
+      10,
+      1,
+      -25,
+    ),
+    array(
+      'individual',
+      'contact_name',
+      'name',
+      'family',
+      'equals',
+      20,
+      1,
+      -24,
+    ),
+    array(
+      'individual',
+      'field_ao_email_address',
+      'email',
+      'email',
+      'equals',
+      30,
+      1,
+      -23,
+    ),
+  );
+  $query = db_insert('crm_core_match_contact_type_rules')
+    ->fields(array(
+      'contact_type',
+      'field_name',
+      'field_type',
+      'field_item',
+      'operator',
+      'score',
+      'status',
+      'weight',
+    ));
+  foreach ($contact_type_rules as $contact_type_rule) {
+    $query->values($contact_type_rule);
+  }
+  $query->execute();
+
+  // Set CRM Core user sync defaults (authenticated users to individuals).
+  variable_set('crm_core_user_sync_rules', array(
+    0 => array(
+      'rid' => '2',
+      'contact_type' => 'individual',
+      'weight' => '0',
+      'enabled' => 1,
+    ),
+  ));
+
+  // Configure CRM Core primary fields.
+  $individual_contact_type = crm_core_contact_type_load('individual');
+  $individual_contact_type->primary_fields = array(
+    'email' => 'field_ao_email_address',
+    'address' => 'field_ao_home_address',
+    'phone' => 'field_ao_primary_telephone',
+  );
+  crm_core_contact_type_save($individual_contact_type);
+}
+
+/**
+ * Implements hook_install_tasks_alter().
+ */
+function ableorganizer_install_tasks_alter(&$tasks, $install_state) {
+
+  $t = get_t();
+  // The "Welcome" screen needs to come after the first two steps
+  // (profile and language selection), despite the fact that they are disabled.
+  $new_task['ableorganizer_welcome'] = array(
+    'display' => TRUE,
+    'display_name' => $t('Welcome'),
+    'type' => 'form',
+    'run' => isset($install_state['parameters']['welcome']) ? INSTALL_TASK_SKIP : INSTALL_TASK_RUN_IF_REACHED,
+  );
+  $tasks = $new_task + $tasks;
+
+  $new_task['ableorganizer_profile_settings'] = array(
+    'display' => TRUE,
+    'display_name' => $t('Configure profile settings'),
+    'type' => 'form',
+    'run' => isset($install_state['parameters']['profile_settings']) ? INSTALL_TASK_SKIP : INSTALL_TASK_RUN_IF_REACHED,
+  );
+  $old_tasks = $tasks;
+  $tasks = array_slice($old_tasks, 0, 11) + $new_task + array_slice($old_tasks, 11);
+
+  $new_task['ableorganizer_sample_content'] = array(
+    'display' => TRUE,
+    'display_name' => $t('Install sample content'),
+    'type' => 'form',
+    'run' => isset($install_state['parameters']['sample_content']) ? INSTALL_TASK_SKIP : INSTALL_TASK_RUN_IF_REACHED,
+  );
+  $old_tasks = $tasks;
+  $tasks = array_slice($old_tasks, 0, 11) + $new_task + array_slice($old_tasks, 11);
+}
+
+/**
+ * Task callback: shows the welcome screen.
+ */
+function ableorganizer_welcome($form, &$form_state, &$install_state) {
+
+  $t = get_t();
+  drupal_set_title($t('Welcome to Able Organizer'));
+
+  $message = $t('Thank you for using Able Organizer!') . '<br />';
+  $message .= '<p>' . $t('This drupal distribution will demonstrate a powerful features built with CRM Core technology.') . '</p>';
+  $message .= '<p>' . $t('Be sure to join us on ' . l($t('crmcore.org'), 'http://crmcore.org') .
+    ' for the latest updates, discussions and share your comments and feedback with us.') . '</p>';
+
+  $form = array();
+  $form['welcome_message'] = array(
+    '#markup' => $message,
+  );
+  $form['actions'] = array(
+    '#type' => 'actions',
+  );
+  $form['actions']['submit'] = array(
+    '#type' => 'submit',
+    '#value' => $t("Get started!"),
+    '#weight' => 10,
+  );
+
+  return $form;
+}
+
+/**
+ * Install welcome submission handler.
+ */
+function ableorganizer_welcome_submit($form, &$form_state) {
+  global $install_state;
+
+  $install_state['parameters']['welcome'] = 'done';
+}
+
+/**
+ * Task callback.
+ *
+ * Profile settings.
+ */
+function ableorganizer_profile_settings($form, &$form_state, &$install_state) {
+  $t = get_t();
+
+  drupal_set_title($t('Configure profile settings'));
+
+  $form = array();
+
+  $form['settings_wrapper'] = array(
+    '#type' => 'fieldset',
+    '#title' => $t('Email Settings'),
+  );
+
+  // This should be an email setting.
+  $form['settings_wrapper']['emails'] = array(
+    '#type' => 'checkbox',
+    '#default_value' => TRUE,
+    '#title' => $t('Enable email messages?'),
+    '#description' => $t('Check this box to send email messages when people register for events. To use this feature, please ensure your server is configured to send emails.'),
+  );
+
+  // Build a currency options list from all defined currencies.
+  $options = array();
+  foreach (commerce_currencies(FALSE, TRUE) as $currency_code => $currency) {
+    $options[$currency_code] = t('@code - !name', array(
+      '@code' => $currency['code'],
+      '@symbol' => $currency['symbol'],
+      '!name' => $currency['name'],
+    ));
+
+    if (!empty($currency['symbol'])) {
+      $options[$currency_code] .= ' - ' . check_plain($currency['symbol']);
+    }
+  }
+
+  $form['commerce_default_currency_wrapper'] = array(
+    '#type' => 'fieldset',
+    '#title' => $t('Currency'),
+  );
+  $form['commerce_default_currency_wrapper']['commerce_default_currency'] = array(
+    '#type' => 'select',
+    '#title' => t('Default currency for donations'),
+    '#options' => $options,
+    '#default_value' => commerce_default_currency(),
+  );
+
+  $form['actions'] = array('#type' => 'actions');
+  $form['actions']['submit'] = array(
+    '#type' => 'submit',
+    '#value' => $t('Continue'),
+    '#weight' => 15,
+  );
+
+  return $form;
+}
+
+/**
+ * Profile settings submission handler.
+ */
+function ableorganizer_profile_settings_submit($form, &$form_state) {
+
+  global $install_state;
+
+  // This is where we set the default currency.
+  variable_set('commerce_default_currency', $form_state['values']['commerce_default_currency']);
+
+  // This is where we enable default emails.
+  if ($form_state['values']['emails'] === 1) {
+    variable_set('configure_email', 1);
+  }
+
+  $install_state['parameters']['profile_settings'] = 'done';
+}
+
+/**
+ * Task callback.
+ *
+ * Profile settings.
+ */
+function ableorganizer_sample_content($form, &$form_state, &$install_state) {
+  $t = get_t();
+
+  drupal_set_title($t('Sample Content and Data'));
+
+  $form = array();
+
+  $form['sample_content_wrapper'] = array(
+    '#type' => 'fieldset',
+    '#title' => $t('Sample Content'),
+  );
+  $form['sample_content_wrapper']['sample_content'] = array(
+    '#type' => 'checkbox',
+    '#default_value' => TRUE,
+    '#title' => $t('Install sample content?'),
+    '#description' => $t('Check this box to install sample content, including forms and events.'),
+  );
+
+  $form['sample_data_wrapper'] = array(
+    '#type' => 'fieldset',
+    '#title' => $t('Sample Data'),
+  );
+  $form['sample_data_wrapper']['sample_data'] = array(
+    '#type' => 'checkbox',
+    '#default_value' => TRUE,
+    '#title' => $t('Install sample data?'),
+    '#description' => $t('Check this box to install sample data, which will pre-populate reports with information about event registration.'),
+  );
+
+  $form['actions'] = array('#type' => 'actions');
+  $form['actions']['submit'] = array(
+    '#type' => 'submit',
+    '#value' => $t('Continue'),
+    '#weight' => 15,
+  );
+
+  return $form;
+}
+
+/**
+ * Profile settings submission handler.
+ */
+function ableorganizer_sample_content_submit($form, &$form_state) {
+
+  global $install_state;
+
+  if ($form_state['values']['sample_content'] === 1) {
+
+  }
+
+  // Configure sample data.
+  if ($form_state['values']['sample_data'] === 1) {
+
+    // Import sample contacts and activities.
+    module_load_include('inc', 'ableorganizer', 'ableorganizer_sample_data');
+    $sample_data = ableorganizer_sample_data();
+    foreach ($sample_data['crm_core_contact'] as $contact) {
+      $new_contact = entity_import('crm_core_contact', $contact);
+      entity_save('crm_core_contact', $new_contact);
+    }
+    foreach ($sample_data['crm_core_activity'] as $activity) {
+      $new_activity = entity_import('crm_core_activity', $activity);
+      $new_activity->field_cmcev_reg_date = _ableorganizer_set_activity_date();
+      entity_save('crm_core_activity', $new_activity);
+    }
+  }
+
+  $install_state['parameters']['sample_content'] = 'done';
+}
+
+/**
+ * Helper to set activity date.
+ *
+ * Will set activity date to some random point in time between now and -30 days.
+ */
+function _ableorganizer_set_activity_date() {
+  $days_from_now = 30;
+  $tz = variable_get('date_default_timezone', 'UTC');
+  $format = 'Y-m-d H:i:s';
+
+  $days = mt_rand(1, $days_from_now);
+  $ts = time() - $days * 24 * 60 * 60;
+  $date_str = format_date($ts, 'custom', $format, $tz);
+
+  $field = array(
+    LANGUAGE_NONE => array(
+      array(
+        'value' => $date_str,
+        'timezone' => $tz,
+        'timezone_db' => $tz,
+        'date_type' => 'datetime',
+      ),
+    ),
+  );
+
+  return $field;
+}
