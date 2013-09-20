@@ -111,7 +111,7 @@ projects[crm_core_event][version] = 0.4
 projects[crm_core_event][subdir] = "contrib"
 
 ; download crm core petitions
-projects[crm_core_petition][version] = 0.3
+projects[crm_core_petition][version] = 0.4
 projects[crm_core_petition][subdir] = "contrib"
 
 ; download crm core volunteers
