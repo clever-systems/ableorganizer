@@ -719,7 +719,7 @@ function ableorganizer_profile_settings($form, &$form_state, &$install_state) {
       '#title' => $t('Email Settings'),
     );
     $form['settings_wrapper']['starter_message'] = array(
-      '#markup' => $t('The features in AbleOrganizer are configured to send HTML emails. Please select the ones where you would like to enable sending emails.'),
+      '#markup' => $t('The features in AbleOrganizer are configured to send HTML emails. Select the ones you would like to have send messages.'),
     );
   }
 
@@ -729,7 +729,7 @@ function ableorganizer_profile_settings($form, &$form_state, &$install_state) {
     $form['settings_wrapper']['donation_emails'] = array(
       '#type' => 'checkbox',
       '#default_value' => TRUE,
-      '#title' => $t('Enable donation email messages?'),
+      '#title' => $t('Donations'),
       '#description' => $t('Check this box to send thank you messages each time a donation is received.'),
     );
   }
@@ -739,7 +739,7 @@ function ableorganizer_profile_settings($form, &$form_state, &$install_state) {
     $form['settings_wrapper']['event_emails'] = array(
       '#type' => 'checkbox',
       '#default_value' => TRUE,
-      '#title' => $t('Enable email messages?'),
+      '#title' => $t('Events'),
       '#description' => $t('Check this box to send thank you messages each time someone registers for an event.'),
     );
   }  
@@ -749,7 +749,7 @@ function ableorganizer_profile_settings($form, &$form_state, &$install_state) {
     $form['settings_wrapper']['petition_emails'] = array(
       '#type' => 'checkbox',
       '#default_value' => TRUE,
-      '#title' => $t('Enable email messages?'),
+      '#title' => $t('Petitions'),
       '#description' => $t('Check this box to send thank you messages each time someone signs a petition, or when someone signs a targeted petition.'),
     );
   }  
@@ -758,7 +758,7 @@ function ableorganizer_profile_settings($form, &$form_state, &$install_state) {
     $form['settings_wrapper']['volunteer_emails'] = array(
       '#type' => 'checkbox',
       '#default_value' => TRUE,
-      '#title' => $t('Enable email messages?'),
+      '#title' => $t('Volunteer'),
       '#description' => $t('Check this box to send thank you messages each time someone registers for an event.'),
     );
   }  
@@ -805,13 +805,22 @@ function ableorganizer_profile_settings_submit($form, &$form_state) {
 
   global $install_state;
 
+  // This is where we enable the default emails for each feature
+  if ($form_state['values']['donation_emails'] === 1) {
+    variable_set('configure_donation_email', 1);
+  }
+  if ($form_state['values']['event_emails'] === 1) {
+    variable_set('configure_event_email', 1);
+  }
+  if ($form_state['values']['petition_emails'] === 1) {
+    variable_set('configure_petition_email', 1);
+  }
+  if ($form_state['values']['volunteer_emails'] === 1) {
+    variable_set('configure_volunteer_email', 1);
+  }
+  
   // This is where we set the default currency.
   variable_set('commerce_default_currency', $form_state['values']['commerce_default_currency']);
-
-  // This is where we enable default emails.
-  if ($form_state['values']['emails'] === 1) {
-    variable_set('configure_email', 1);
-  }
 
   $install_state['parameters']['profile_settings'] = 'done';
 }
@@ -827,28 +836,100 @@ function ableorganizer_sample_content($form, &$form_state, &$install_state) {
   drupal_set_title($t('Sample Content and Data'));
 
   $form = array();
+  
+  // this is where we install the sample content.
+  // there should be sample content for each feature.
+  if(variable_get('donations_enabled', 0) == 1 || variable_get('events_enabled', 0) == 1 || variable_get('petitions_enabled', 0) == 1 || variable_get('volunteer_enabled', 0) == 1){
+    $form['sample_content_wrapper'] = array(
+      '#type' => 'fieldset',
+      '#title' => $t('Sample content'),
+    );
+    
+    $form['sample_content_wrapper']['sample_content_message'] = array(
+      '#markup' => $t('<p>You can install sample content, to use for demonstrations or as examples for your own site.</p><p>Select the sample content to include:</p>'),
+    );
+  }
 
-  $form['sample_content_wrapper'] = array(
-    '#type' => 'fieldset',
-    '#title' => $t('Sample Content'),
-  );
-  $form['sample_content_wrapper']['sample_content'] = array(
-    '#type' => 'checkbox',
-    '#default_value' => TRUE,
-    '#title' => $t('Install sample content?'),
-    '#description' => $t('Check this box to install sample content, including forms and events.'),
-  );
+  if(variable_get('donations_enabled', 0) == 1){
+    $form['sample_content_wrapper']['donation_sample_content'] = array(
+      '#type' => 'checkbox',
+      '#default_value' => TRUE,
+      '#title' => $t('Donations'),
+      '#description' => $t('Including online and offline donation forms.'),
+    );
+  }
+  
+  // next do events
+  if(variable_get('events_enabled', 0) == 1){
+    $form['sample_content_wrapper']['event_sample_content'] = array(
+      '#type' => 'checkbox',
+      '#default_value' => TRUE,
+      '#title' => $t('Events'),
+      '#description' => $t('Including event registration, registration levels and multiple ticket sales.'),
+    );
+  }  
+  
+  if(variable_get('petitions_enabled', 0) == 1){
+    $form['sample_content_wrapper']['petition_sample_content'] = array(
+      '#type' => 'checkbox',
+      '#default_value' => TRUE,
+      '#title' => $t('Petitions'),
+      '#description' => $t('Including onilne petitions and signature drives.'),
+    );
+  }  
+  
+  if(variable_get('volunteer_enabled', 0) == 1){
+    $form['sample_content_wrapper']['volunteer_sample_content'] = array(
+      '#type' => 'checkbox',
+      '#default_value' => TRUE,
+      '#title' => $t('Volunteer'),
+      '#description' => $t('Including sample volunteer opportunities.'),
+    );
+  }  
 
-  $form['sample_data_wrapper'] = array(
-    '#type' => 'fieldset',
-    '#title' => $t('Sample Data'),
-  );
-  $form['sample_data_wrapper']['sample_data'] = array(
-    '#type' => 'checkbox',
-    '#default_value' => TRUE,
-    '#title' => $t('Install sample data?'),
-    '#description' => $t('Check this box to install sample data, which will pre-populate reports with information about event registration.'),
-  );
+  if(variable_get('donations_enabled', 0) == 1 || variable_get('events_enabled', 0) == 1 || variable_get('petitions_enabled', 0) == 1 || variable_get('volunteer_enabled', 0) == 1){
+    $form['sample_data_wrapper'] = array(
+      '#type' => 'fieldset',
+      '#title' => $t('Sample Data'),
+    );
+    
+    $form['sample_data_wrapper']['sample_data_message'] = array(
+      '#markup' => $t('<p>You can install sample data, which can help you to understand how reports work and to customize the system. Be sure to delete it before taking your site live!</p><p>Select the sample data to install:</p>'),
+    );
+  }
+
+  if(variable_get('donations_enabled', 0) == 1){
+    $form['sample_data_wrapper']['donation_sample_data'] = array(
+      '#type' => 'checkbox',
+      '#default_value' => TRUE,
+      '#title' => $t('Donations'),
+    );
+  }
+  
+  // next do events
+  if(variable_get('events_enabled', 0) == 1){
+    $form['sample_data_wrapper']['event_sample_data'] = array(
+      '#type' => 'checkbox',
+      '#default_value' => TRUE,
+      '#title' => $t('Events'),
+    );
+  }  
+  
+  if(variable_get('petitions_enabled', 0) == 1){
+    $form['sample_data_wrapper']['petition_sample_data'] = array(
+      '#type' => 'checkbox',
+      '#default_value' => TRUE,
+      '#title' => $t('Petitions'),
+    );
+  }  
+  
+  if(variable_get('volunteer_enabled', 0) == 1){
+    $form['sample_data_wrapper']['volunteer_sample_data'] = array(
+      '#type' => 'checkbox',
+      '#default_value' => TRUE,
+      '#title' => $t('Volunteer'),
+    );
+  }  
 
   $form['actions'] = array('#type' => 'actions');
   $form['actions']['submit'] = array(
@@ -867,25 +948,55 @@ function ableorganizer_sample_content_submit($form, &$form_state) {
 
   global $install_state;
 
-  if ($form_state['values']['sample_content'] === 1) {
+  if ($form_state['values']['donation_sample_content'] === 1 || $form_state['values']['event_sample_content'] === 1 || $form_state['values']['petition_sample_content'] === 1 || $form_state['values']['volunteer_sample_content'] === 1) {
+    
+    // we should have a sample content feature for able organizer
+    // there should be some way to turn donations / events / petitions / volunteer opportunities on individually,
+    // without needing a thing for each one
+    // just not sure how to do it...
+    
+    // maybe we should enable the feature
+    // and delete the content that does not apply
+    // i.e. select nodes from the database of type X and delete them programmatically
+    
+    module_enable('ableorganizer_sample_content');
+    
+    if ($form_state['values']['donation_sample_content'] !== 1) {
+      
+    }
+    
+    if ($form_state['values']['event_sample_content'] !== 1) {
+      
+    }
+    if ($form_state['values']['petition_sample_content'] !== 1) {
+      
+    } 
+    if ($form_state['values']['volunteer_sample_content'] !== 1) {
+      
+    }
 
   }
+
 
   // Configure sample data.
   if ($form_state['values']['sample_data'] === 1) {
 
     // Import sample contacts and activities.
     module_load_include('inc', 'ableorganizer', 'ableorganizer_sample_data');
+    
     $sample_data = ableorganizer_sample_data();
+    
     foreach ($sample_data['crm_core_contact'] as $contact) {
       $new_contact = entity_import('crm_core_contact', $contact);
       entity_save('crm_core_contact', $new_contact);
     }
+    
     foreach ($sample_data['crm_core_activity'] as $activity) {
       $new_activity = entity_import('crm_core_activity', $activity);
       $new_activity->field_cmcev_reg_date = _ableorganizer_set_activity_date();
       entity_save('crm_core_activity', $new_activity);
     }
+
   }
 
   $install_state['parameters']['sample_content'] = 'done';
