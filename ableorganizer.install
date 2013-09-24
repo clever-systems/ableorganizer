@@ -959,7 +959,7 @@ function ableorganizer_sample_content_submit($form, &$form_state) {
     // and delete the content that does not apply
     // i.e. select nodes from the database of type X and delete them programmatically
     
-    module_enable('ableorganizer_sample_content');
+    // module_enable('ableorganizer_sample_content');
 
     if ($form_state['values']['donation_sample_content'] !== 1) {
       // remove donation sample content  
