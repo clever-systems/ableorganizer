@@ -978,7 +978,7 @@ function ableorganizer_sample_content_submit($form, &$form_state) {
   }
 
   // Configure sample data.
-  if ($form_state['values']['sample_data'] === 1) {
+  if ($form_state['values']['donation_sample_data'] === 1 || $form_state['values']['event_sample_data'] === 1 || $form_state['values']['petition_sample_data'] === 1 || $form_state['values']['volunteer_sample_data'] === 1) {
 
     // Import sample contacts and activities.
     module_load_include('inc', 'ableorganizer', 'ableorganizer_sample_data');
