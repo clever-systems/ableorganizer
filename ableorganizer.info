@@ -1,7 +1,7 @@
-name = Able Organizer installation profile
+name = AbleOrganizer installation profile
 description = Built on top of CRM Core to provide quick start and real working examples of how to use CRM Core to build CRM solution that feet your needs.
 core = 7.x
-distribution_name = Able Organizer
+distribution_name = AbleOrganizer
 project = ableorganizer
 exclusive = TRUE
 
@@ -105,7 +105,6 @@ dependencies[] = crm_core_demo_standard_fields
 ; dependencies[] = crm_core_event
 ; dependencies[] = crm_core_petition
 ; dependencies[] = crm_core_volunteer
-
 
 ; System Requirements.
 php_memory_limit = 128M

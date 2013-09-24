@@ -534,7 +534,7 @@ function ableorganizer_install_tasks_alter(&$tasks, $install_state) {
   // configure profile settings
   $new_task['ableorganizer_profile_settings'] = array(
     'display' => TRUE,
-    'display_name' => $t('Configure profile settings'),
+    'display_name' => $t('Messaging and currency settings'),
     'type' => 'form',
     'run' => isset($install_state['parameters']['profile_settings']) ? INSTALL_TASK_SKIP : INSTALL_TASK_RUN_IF_REACHED,
   );
@@ -544,7 +544,7 @@ function ableorganizer_install_tasks_alter(&$tasks, $install_state) {
   // install sample content
   $new_task['ableorganizer_sample_content'] = array(
     'display' => TRUE,
-    'display_name' => $t('Install sample content'),
+    'display_name' => $t('Sample content and data'),
     'type' => 'form',
     'run' => isset($install_state['parameters']['sample_content']) ? INSTALL_TASK_SKIP : INSTALL_TASK_RUN_IF_REACHED,
   );
@@ -562,12 +562,17 @@ function ableorganizer_install_tasks_alter(&$tasks, $install_state) {
 function ableorganizer_welcome($form, &$form_state, &$install_state) {
 
   $t = get_t();
-  drupal_set_title($t('Welcome to Able Organizer'));
+  drupal_set_title($t('Welcome to AbleOrganizer'));
 
-  $message = $t('Thank you for using Able Organizer!') . '<br />';
-  $message .= '<p>' . $t('This drupal distribution will demonstrate a powerful features built with CRM Core technology.') . '</p>';
-  $message .= '<p>' . $t('Be sure to join us on ' . l($t('crmcore.org'), 'http://crmcore.org') .
-    ' for the latest updates, discussions and share your comments and feedback with us.') . '</p>';
+  $message = $t('Thank you for using AbleOrganizer!') . '<br />';
+  $message .= '<p>' . $t('This Drupal distribution includes powerful features for tracking information about people, activities and relationships built with CRM Core.') . '</p>';
+  $message .= '<p>' . $t('The following features are included as part of this distro:') . '</p>';
+  $message .= '<ul>';
+  $message .= '<li>' . $t('Donations: donation pages, source tracking and reports.');
+  $message .= '<li>' . $t('Events: event registration, attendance and reports.');
+  $message .= '<li>' . $t('Petitions: signature gathering, targeted emails and reports.');
+  $message .= '<li>' . $t('Volunteer: volunteer management and reports.');
+  $message .= '</ul>';
 
   $form = array();
   $form['welcome_message'] = array(
@@ -607,13 +612,17 @@ function ableorganizer_features($form, &$form_state, &$install_state) {
 
   $form = array();
 
+  $form['basic_desc'] = array(
+    '#markup' => $t('<h2>AbleOrganizer features</h2>AbleOrganizer includes a variety of tools for interacting with your community. Select the ones that are right for your site.'),
+  );
+  
   $form['settings_wrapper'] = array(
     '#type' => 'fieldset',
-    '#title' => $t('AbleOrganizer features'),
+    '#title' => $t('Features'),
   );
 
   $form['settings_wrapper']['desc'] = array(
-    '#markup' => $t('Select the features you would like to enable.'),
+    '#markup' => $t('Select the tools you would like to install.'),
   );
 
   // Donations
@@ -714,12 +723,17 @@ function ableorganizer_profile_settings($form, &$form_state, &$install_state) {
   
   // check to make sure we have at least one feature enabled
   if(variable_get('donations_enabled', 0) == 1 || variable_get('events_enabled', 0) == 1 || variable_get('petitions_enabled', 0) == 1 || variable_get('volunteer_enabled', 0) == 1){
+    
+    $form['basic_desc'] = array(
+      '#markup' => $t('<h2>AbleOrganizer messaging</h2>Most of the features in AbleOrganizer are configured to send HTML emails. Select the kinds of communications you would like your site to generate.'),
+    );
+    
     $form['settings_wrapper'] = array(
       '#type' => 'fieldset',
-      '#title' => $t('Email Settings'),
+      '#title' => $t('Message settings'),
     );
     $form['settings_wrapper']['starter_message'] = array(
-      '#markup' => $t('The features in AbleOrganizer are configured to send HTML emails. Select the ones you would like to have send messages.'),
+      '#markup' => $t('Select message settings.'),
     );
   }
 
@@ -777,13 +791,17 @@ function ableorganizer_profile_settings($form, &$form_state, &$install_state) {
     }
   }
 
+  $form['basic_desc_currency'] = array(
+    '#markup' => $t('<h2>Currency settings</h2>AbleOrganizer is fully internationalized and integrates directly with Drupal Commerce. Select the currency settings most appropriate for your site.'),
+  );
+    
   $form['commerce_default_currency_wrapper'] = array(
     '#type' => 'fieldset',
     '#title' => $t('Currency'),
   );
   $form['commerce_default_currency_wrapper']['commerce_default_currency'] = array(
     '#type' => 'select',
-    '#title' => t('Default currency for donations'),
+    '#title' => t('Default site currency'),
     '#options' => $options,
     '#default_value' => commerce_default_currency(),
   );
@@ -840,13 +858,18 @@ function ableorganizer_sample_content($form, &$form_state, &$install_state) {
   // this is where we install the sample content.
   // there should be sample content for each feature.
   if(variable_get('donations_enabled', 0) == 1 || variable_get('events_enabled', 0) == 1 || variable_get('petitions_enabled', 0) == 1 || variable_get('volunteer_enabled', 0) == 1){
+
+    $form['basic_desc_sample'] = array(
+      '#markup' => $t('<h2>Sample content and data</h2>You can install sample content, to use for demonstrations or as examples for your own site.'),
+    );
+
     $form['sample_content_wrapper'] = array(
       '#type' => 'fieldset',
       '#title' => $t('Sample content'),
     );
     
     $form['sample_content_wrapper']['sample_content_message'] = array(
-      '#markup' => $t('<p>You can install sample content, to use for demonstrations or as examples for your own site.</p><p>Select the sample content to include:</p>'),
+      '#markup' => $t('Select the sample content to install:'),
     );
   }
 
@@ -894,7 +917,7 @@ function ableorganizer_sample_content($form, &$form_state, &$install_state) {
     );
     
     $form['sample_data_wrapper']['sample_data_message'] = array(
-      '#markup' => $t('<p>You can install sample data, which can help you to understand how reports work and to customize the system. Be sure to delete it before taking your site live!</p><p>Select the sample data to install:</p>'),
+      '#markup' => $t('Select the sample data to install:'),
     );
   }
 
@@ -902,7 +925,7 @@ function ableorganizer_sample_content($form, &$form_state, &$install_state) {
     $form['sample_data_wrapper']['donation_sample_data'] = array(
       '#type' => 'checkbox',
       '#default_value' => TRUE,
-      '#title' => $t('Donations'),
+      '#title' => $t('Donations received'),
     );
   }
   
@@ -911,7 +934,7 @@ function ableorganizer_sample_content($form, &$form_state, &$install_state) {
     $form['sample_data_wrapper']['event_sample_data'] = array(
       '#type' => 'checkbox',
       '#default_value' => TRUE,
-      '#title' => $t('Events'),
+      '#title' => $t('Events registrations'),
     );
   }  
   
@@ -919,7 +942,7 @@ function ableorganizer_sample_content($form, &$form_state, &$install_state) {
     $form['sample_data_wrapper']['petition_sample_data'] = array(
       '#type' => 'checkbox',
       '#default_value' => TRUE,
-      '#title' => $t('Petitions'),
+      '#title' => $t('Petition signatures'),
     );
   }  
   
@@ -927,7 +950,7 @@ function ableorganizer_sample_content($form, &$form_state, &$install_state) {
     $form['sample_data_wrapper']['volunteer_sample_data'] = array(
       '#type' => 'checkbox',
       '#default_value' => TRUE,
-      '#title' => $t('Volunteer'),
+      '#title' => $t('Volunteer commitements'),
     );
   }  
 
@@ -950,7 +973,7 @@ function ableorganizer_sample_content_submit($form, &$form_state) {
 
   if ($form_state['values']['donation_sample_content'] === 1 || $form_state['values']['event_sample_content'] === 1 || $form_state['values']['petition_sample_content'] === 1 || $form_state['values']['volunteer_sample_content'] === 1) {
     
-    // we should have a sample content feature for able organizer
+    // we should have a sample content feature for ableorganizer
     // there should be some way to turn donations / events / petitions / volunteer opportunities on individually,
     // without needing a thing for each one
     // just not sure how to do it...
