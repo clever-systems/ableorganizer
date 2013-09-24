@@ -519,16 +519,30 @@ function ableorganizer_install_tasks_alter(&$tasks, $install_state) {
     'run' => isset($install_state['parameters']['welcome']) ? INSTALL_TASK_SKIP : INSTALL_TASK_RUN_IF_REACHED,
   );
   $tasks = $new_task + $tasks;
-
+  
+  
+  // configure features
+  
+  $new_task['ableorganizer_features'] = array(
+    'display' => TRUE,
+    'display_name' => $t('Select features'),
+    'type' => 'form',
+    'run' => isset($install_state['parameters']['features']) ? INSTALL_TASK_SKIP : INSTALL_TASK_RUN_IF_REACHED,
+  );
+  $old_tasks = $tasks;
+  $tasks = array_slice($old_tasks, 0, 11) + $new_task + array_slice($old_tasks, 11);
+  
+  // configure profile settings
   $new_task['ableorganizer_profile_settings'] = array(
     'display' => TRUE,
-    'display_name' => $t('Configure profile settings'),
+    'display_name' => $t('yo yo yo Configure profile settings'),
     'type' => 'form',
     'run' => isset($install_state['parameters']['profile_settings']) ? INSTALL_TASK_SKIP : INSTALL_TASK_RUN_IF_REACHED,
   );
   $old_tasks = $tasks;
   $tasks = array_slice($old_tasks, 0, 11) + $new_task + array_slice($old_tasks, 11);
 
+  // install sample content
   $new_task['ableorganizer_sample_content'] = array(
     'display' => TRUE,
     'display_name' => $t('Install sample content'),
@@ -575,6 +589,66 @@ function ableorganizer_welcome_submit($form, &$form_state) {
   global $install_state;
 
   $install_state['parameters']['welcome'] = 'done';
+}
+
+/**
+ * Task callback.
+ *
+ * Select the features you are going to install with AbleOrganizer
+ */
+function ableorganizer_features($form, &$form_state, &$install_state) {
+  $t = get_t();
+
+  drupal_set_title($t('Configure profile settings'));
+
+  $form = array();
+
+  $form['settings_wrapper'] = array(
+    '#type' => 'fieldset',
+    '#title' => $t('Email Settings'),
+  );
+
+  // This should be an email setting.
+  $form['settings_wrapper']['emails'] = array(
+    '#type' => 'checkbox',
+    '#default_value' => TRUE,
+    '#title' => $t('Enable email messages?'),
+    '#description' => $t('Check this box to send email messages when people register for events. To use this feature, please ensure your server is configured to send emails.'),
+  );
+
+  // Build a currency options list from all defined currencies.
+  $options = array();
+  foreach (commerce_currencies(FALSE, TRUE) as $currency_code => $currency) {
+    $options[$currency_code] = t('@code - !name', array(
+      '@code' => $currency['code'],
+      '@symbol' => $currency['symbol'],
+      '!name' => $currency['name'],
+    ));
+
+    if (!empty($currency['symbol'])) {
+      $options[$currency_code] .= ' - ' . check_plain($currency['symbol']);
+    }
+  }
+
+  $form['commerce_default_currency_wrapper'] = array(
+    '#type' => 'fieldset',
+    '#title' => $t('Currency'),
+  );
+  $form['commerce_default_currency_wrapper']['commerce_default_currency'] = array(
+    '#type' => 'select',
+    '#title' => t('Default currency for donations'),
+    '#options' => $options,
+    '#default_value' => commerce_default_currency(),
+  );
+
+  $form['actions'] = array('#type' => 'actions');
+  $form['actions']['submit'] = array(
+    '#type' => 'submit',
+    '#value' => $t('Continue'),
+    '#weight' => 15,
+  );
+
+  return $form;
 }
 
 /**

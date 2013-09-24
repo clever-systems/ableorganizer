@@ -100,11 +100,19 @@ dependencies[] = crm_core_default_matching_engine
 dependencies[] = crm_core_profile
 dependencies[] = crm_core_profile_commerce_items
 dependencies[] = crm_core_demo_standard_fields
-dependencies[] = crm_core_donation
-dependencies[] = crm_core_event
-dependencies[] = crm_core_petition
-dependencies[] = crm_core_volunteer
+
+; dependencies[] = crm_core_donation
+; dependencies[] = crm_core_event
+; dependencies[] = crm_core_petition
+; dependencies[] = crm_core_volunteer
 
 
 ; System Requirements.
 php_memory_limit = 128M
+
+
+; Information added by drush on 2013-09-24
+version = ""
+project = "ableorganizer"
+datestamp = "1379980768"
+
