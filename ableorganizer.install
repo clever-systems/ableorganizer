@@ -510,6 +510,7 @@ function ableorganizer_install() {
 function ableorganizer_install_tasks_alter(&$tasks, $install_state) {
 
   $t = get_t();
+  
   // The "Welcome" screen needs to come after the first two steps
   // (profile and language selection), despite the fact that they are disabled.
   $new_task['ableorganizer_welcome'] = array(
@@ -519,10 +520,8 @@ function ableorganizer_install_tasks_alter(&$tasks, $install_state) {
     'run' => isset($install_state['parameters']['welcome']) ? INSTALL_TASK_SKIP : INSTALL_TASK_RUN_IF_REACHED,
   );
   $tasks = $new_task + $tasks;
-  
-  
+
   // configure features
-  
   $new_task['ableorganizer_features'] = array(
     'display' => TRUE,
     'display_name' => $t('Select features'),
@@ -535,7 +534,7 @@ function ableorganizer_install_tasks_alter(&$tasks, $install_state) {
   // configure profile settings
   $new_task['ableorganizer_profile_settings'] = array(
     'display' => TRUE,
-    'display_name' => $t('yo yo yo Configure profile settings'),
+    'display_name' => $t('Configure profile settings'),
     'type' => 'form',
     'run' => isset($install_state['parameters']['profile_settings']) ? INSTALL_TASK_SKIP : INSTALL_TASK_RUN_IF_REACHED,
   );
@@ -551,6 +550,10 @@ function ableorganizer_install_tasks_alter(&$tasks, $install_state) {
   );
   $old_tasks = $tasks;
   $tasks = array_slice($old_tasks, 0, 11) + $new_task + array_slice($old_tasks, 11);
+  
+  // change the name of the other install profile step
+  $tasks['install_profile_modules']['display_name'] = 'Install modules';
+  
 }
 
 /**
@@ -599,46 +602,50 @@ function ableorganizer_welcome_submit($form, &$form_state) {
 function ableorganizer_features($form, &$form_state, &$install_state) {
   $t = get_t();
 
-  drupal_set_title($t('Configure profile settings'));
+  // this is the page where we select the features to be installed
+  drupal_set_title($t('Select features'));
 
   $form = array();
 
   $form['settings_wrapper'] = array(
     '#type' => 'fieldset',
-    '#title' => $t('Email Settings'),
+    '#title' => $t('AbleOrganizer features'),
   );
 
-  // This should be an email setting.
-  $form['settings_wrapper']['emails'] = array(
+  $form['settings_wrapper']['desc'] = array(
+    '#markup' => $t('Select the features you would like to enable.'),
+  );
+
+  // Donations
+  $form['settings_wrapper']['install_donations'] = array(
     '#type' => 'checkbox',
     '#default_value' => TRUE,
-    '#title' => $t('Enable email messages?'),
-    '#description' => $t('Check this box to send email messages when people register for events. To use this feature, please ensure your server is configured to send emails.'),
+    '#title' => $t('Donations'),
+    '#description' => $t('Includes donation pages, source tracking, and reports.'),
   );
-
-  // Build a currency options list from all defined currencies.
-  $options = array();
-  foreach (commerce_currencies(FALSE, TRUE) as $currency_code => $currency) {
-    $options[$currency_code] = t('@code - !name', array(
-      '@code' => $currency['code'],
-      '@symbol' => $currency['symbol'],
-      '!name' => $currency['name'],
-    ));
-
-    if (!empty($currency['symbol'])) {
-      $options[$currency_code] .= ' - ' . check_plain($currency['symbol']);
-    }
-  }
-
-  $form['commerce_default_currency_wrapper'] = array(
-    '#type' => 'fieldset',
-    '#title' => $t('Currency'),
+  
+  // Events
+  $form['settings_wrapper']['install_events'] = array(
+    '#type' => 'checkbox',
+    '#default_value' => TRUE,
+    '#title' => $t('Events'),
+    '#description' => $t('Includes event registration, attendance and reports.'),
   );
-  $form['commerce_default_currency_wrapper']['commerce_default_currency'] = array(
-    '#type' => 'select',
-    '#title' => t('Default currency for donations'),
-    '#options' => $options,
-    '#default_value' => commerce_default_currency(),
+  
+  // Petitions
+  $form['settings_wrapper']['install_petitions'] = array(
+    '#type' => 'checkbox',
+    '#default_value' => TRUE,
+    '#title' => $t('Petitions'),
+    '#description' => $t('Includes signature gathering, targeted emails and reports.'),
+  );
+  
+  // Volunteer
+  $form['settings_wrapper']['install_volunteer'] = array(
+    '#type' => 'checkbox',
+    '#default_value' => TRUE,
+    '#title' => $t('Volunteer'),
+    '#description' => $t('Includes volunteer management and reports.'),
   );
 
   $form['actions'] = array('#type' => 'actions');
@@ -652,6 +659,48 @@ function ableorganizer_features($form, &$form_state, &$install_state) {
 }
 
 /**
+ * Features submission handler.
+ */
+function ableorganizer_features_submit($form, &$form_state) {
+
+  global $install_state;
+
+  $modules = array();
+
+  // default settings
+  variable_set('donations_enabled', 0);
+  variable_set('events_enabled', 0);
+  variable_set('petitions_enabled', 0);
+  variable_set('volunteer_enabled', 0);
+
+  // this is where we turn on various features
+  if(isset($form_state['values']['install_donations'])){
+    $modules[] = 'crm_core_donation';
+    variable_set('donations_enabled', 1);
+  }
+  
+  if(isset($form_state['values']['install_events'])){
+    $modules[] = 'crm_core_event';
+    variable_set('events_enabled', 1);
+  }
+  
+  if(isset($form_state['values']['install_petitions'])){
+    $modules[] = 'crm_core_petition';
+    variable_set('petitions_enabled', 1);
+  }
+  
+  if(isset($form_state['values']['install_volunteer'])){
+    $modules[] = 'crm_core_volunteer';
+    variable_set('volunteer_enabled', 1);
+  }
+  
+  module_enable($modules);
+
+  $install_state['parameters']['features'] = 'done';
+}
+
+
+/**
  * Task callback.
  *
  * Profile settings.
@@ -662,19 +711,57 @@ function ableorganizer_profile_settings($form, &$form_state, &$install_state) {
   drupal_set_title($t('Configure profile settings'));
 
   $form = array();
+  
+  // check to make sure we have at least one feature enabled
+  if(variable_get('donations_enabled', 0) == 1 || variable_get('events_enabled', 0) == 1 || variable_get('petitions_enabled', 0) == 1 || variable_get('volunteer_enabled', 0) == 1){
+    $form['settings_wrapper'] = array(
+      '#type' => 'fieldset',
+      '#title' => $t('Email Settings'),
+    );
+    $form['settings_wrapper']['starter_message'] = array(
+      '#markup' => $t('The features in AbleOrganizer are configured to send HTML emails. Please select the ones where you would like to enable sending emails.'),
+    );
+  }
 
-  $form['settings_wrapper'] = array(
-    '#type' => 'fieldset',
-    '#title' => $t('Email Settings'),
-  );
-
-  // This should be an email setting.
-  $form['settings_wrapper']['emails'] = array(
-    '#type' => 'checkbox',
-    '#default_value' => TRUE,
-    '#title' => $t('Enable email messages?'),
-    '#description' => $t('Check this box to send email messages when people register for events. To use this feature, please ensure your server is configured to send emails.'),
-  );
+  // this should house the email settings for each feature
+  // starting with donations
+  if(variable_get('donations_enabled', 0) == 1){
+    $form['settings_wrapper']['donation_emails'] = array(
+      '#type' => 'checkbox',
+      '#default_value' => TRUE,
+      '#title' => $t('Enable donation email messages?'),
+      '#description' => $t('Check this box to send thank you messages each time a donation is received.'),
+    );
+  }
+  
+  // next do events
+  if(variable_get('events_enabled', 0) == 1){
+    $form['settings_wrapper']['event_emails'] = array(
+      '#type' => 'checkbox',
+      '#default_value' => TRUE,
+      '#title' => $t('Enable email messages?'),
+      '#description' => $t('Check this box to send thank you messages each time someone registers for an event.'),
+    );
+  }  
+  
+  
+  if(variable_get('petitions_enabled', 0) == 1){
+    $form['settings_wrapper']['petition_emails'] = array(
+      '#type' => 'checkbox',
+      '#default_value' => TRUE,
+      '#title' => $t('Enable email messages?'),
+      '#description' => $t('Check this box to send thank you messages each time someone signs a petition, or when someone signs a targeted petition.'),
+    );
+  }  
+  
+  if(variable_get('volunteer_enabled', 0) == 1){
+    $form['settings_wrapper']['volunteer_emails'] = array(
+      '#type' => 'checkbox',
+      '#default_value' => TRUE,
+      '#title' => $t('Enable email messages?'),
+      '#description' => $t('Check this box to send thank you messages each time someone registers for an event.'),
+    );
+  }  
 
   // Build a currency options list from all defined currencies.
   $options = array();
