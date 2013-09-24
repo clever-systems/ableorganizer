@@ -960,23 +960,22 @@ function ableorganizer_sample_content_submit($form, &$form_state) {
     // i.e. select nodes from the database of type X and delete them programmatically
     
     module_enable('ableorganizer_sample_content');
-    
+
     if ($form_state['values']['donation_sample_content'] !== 1) {
-      
+      // remove donation sample content  
     }
     
     if ($form_state['values']['event_sample_content'] !== 1) {
-      
+      // remove event sample content
     }
     if ($form_state['values']['petition_sample_content'] !== 1) {
-      
+      // remove petition sample content
     } 
     if ($form_state['values']['volunteer_sample_content'] !== 1) {
-      
+      // remove volunteer sample content
     }
-
+    
   }
-
 
   // Configure sample data.
   if ($form_state['values']['sample_data'] === 1) {
@@ -986,15 +985,32 @@ function ableorganizer_sample_content_submit($form, &$form_state) {
     
     $sample_data = ableorganizer_sample_data();
     
+    // this is where we create the sample contacts
     foreach ($sample_data['crm_core_contact'] as $contact) {
       $new_contact = entity_import('crm_core_contact', $contact);
       entity_save('crm_core_contact', $new_contact);
     }
     
+    // this is where we are creating the sample activities
+    // need to break this out based on activity type
     foreach ($sample_data['crm_core_activity'] as $activity) {
       $new_activity = entity_import('crm_core_activity', $activity);
       $new_activity->field_cmcev_reg_date = _ableorganizer_set_activity_date();
       entity_save('crm_core_activity', $new_activity);
+    }
+    
+    if ($form_state['values']['donation_sample_data'] === 1) {
+      // install sample data for donations
+    }
+    
+    if ($form_state['values']['event_sample_data'] === 1) {
+      // install sample data for events
+    }
+    if ($form_state['values']['petition_sample_data'] === 1) {
+      // install sample data for petitions
+    } 
+    if ($form_state['values']['volunteer_sample_data'] === 1) {
+      // install sample data for volunteers
     }
 
   }
