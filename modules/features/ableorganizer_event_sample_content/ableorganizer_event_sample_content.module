@@ -1,0 +1,59 @@
+<?php
+/**
+ * @file
+ * Code for the CRM Core Event Sample Content feature.
+ */
+
+include_once 'ableorganizer_event_sample_content.features.inc';
+
+/**
+ * Implements hook_uuid_node_features_rebuild_alter().
+ *
+ * Update field_cmcev_date of event node so they will cover current month fully.
+ * Expecting to have 5 event nodes to set each event to held 6 days.
+ */
+function ableorganizer_event_sample_content_uuid_node_features_rebuild_alter(&$node, $module) {
+  if ($module == 'ableorganizer_event_sample_content' && $node->type == 'cmcev_event') {
+    // We have only 5 event nodes.
+    $event_nodes = 5;
+    // Features can be rebuilt multiple times during single page request.
+    // We must track this.
+    $counter =& drupal_static('cmcev_counter', 0);
+    $duration = 6;
+    $start_day =& drupal_static('cmcev_start', 1);
+    $start_hour = '09:00:00';
+    $end_day =& drupal_static('cmcev_end', 6);
+    $end_hour = '19:00:00';
+    $tz = variable_get('date_default_timezone', 'UTC');
+    $format = 'Y-m-d';
+
+    $date = new DateObject('now', $tz);
+    $year = $date->format('Y');
+    $month = $date->format('m');
+    $start_date = $date->setDate($year, $month, $start_day)->format($format);
+    $end_date = $date->setDate($year, $month, $end_day)->format($format);
+
+    $field = array(
+      LANGUAGE_NONE => array(
+        array(
+          'value' => $start_date . ' ' . $start_hour,
+          'value2' => $end_date . ' ' . $end_hour,
+          'timezone' => $tz,
+          'timezone_db' => $tz,
+          'date_type' => 'datetime',
+        ),
+      ),
+    );
+
+    $start_day += $duration;
+    $end_day += $duration;
+    $counter++;
+    if ($counter === $event_nodes) {
+      drupal_static('cmcev_counter', 0, TRUE);
+      drupal_static('cmcev_start', 1, TRUE);
+      drupal_static('cmcev_end', 6, TRUE);
+    }
+
+    $node->field_cmcev_date = $field;
+  }
+}
