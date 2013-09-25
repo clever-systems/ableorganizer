@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Able Organizer Donation Sample Content feature.
+ */
+
+include_once 'ableorganizer_donation_sample_content.features.inc';
