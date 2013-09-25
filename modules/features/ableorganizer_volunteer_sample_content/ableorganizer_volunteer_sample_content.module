@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the CRM Core Volunteer sample content feature.
+ */
+
+include_once 'ableorganizer_volunteer_sample_content.features.inc';
