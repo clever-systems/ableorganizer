@@ -510,6 +510,10 @@ function ableorganizer_install() {
     'phone' => 'field_ao_primary_telephone',
   );
   crm_core_contact_type_save($individual_contact_type);
+
+  // Setup mimemail format and off mimemail sitestyle.
+  variable_set('mimemail_format', 'full_html');
+  variable_set('mimemail_sitestyle', 0);
 }
 
 /**
