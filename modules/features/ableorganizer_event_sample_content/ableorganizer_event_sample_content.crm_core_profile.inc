@@ -75,6 +75,9 @@ Corporate|1000',
         'quantities' => 0,
       ),
       'commerce_items_payment_settings' => array(
+        'payment_processors' => array(
+          'commerce_payment_example|commerce_payment_commerce_payment_example' => 'commerce_payment_example|commerce_payment_commerce_payment_example',
+        ),
         'name_fields' => array(
           'crm_core_contact_individual_contact_name_given' => 'crm_core_contact_individual_contact_name_given',
           'crm_core_contact_individual_contact_name_family' => 'crm_core_contact_individual_contact_name_family',
@@ -360,6 +363,9 @@ Corporate|1000',
         'quantities' => 1,
       ),
       'commerce_items_payment_settings' => array(
+        'payment_processors' => array(
+          'commerce_payment_example|commerce_payment_commerce_payment_example' => 'commerce_payment_example|commerce_payment_commerce_payment_example',
+        ),
         'name_fields' => array(
           'crm_core_contact_individual_contact_name_given' => 'crm_core_contact_individual_contact_name_given',
           'crm_core_contact_individual_contact_name_family' => 'crm_core_contact_individual_contact_name_family',
@@ -864,6 +870,9 @@ Corporate|1000',
         'preset_amounts' => '50',
       ),
       'commerce_items_payment_settings' => array(
+        'payment_processors' => array(
+          'commerce_payment_example|commerce_payment_commerce_payment_example' => 'commerce_payment_example|commerce_payment_commerce_payment_example',
+        ),
         'name_fields' => array(
           'crm_core_contact_individual_contact_name_given' => 'crm_core_contact_individual_contact_name_given',
           'crm_core_contact_individual_contact_name_family' => 'crm_core_contact_individual_contact_name_family',

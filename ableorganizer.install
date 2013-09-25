@@ -999,8 +999,8 @@ function ableorganizer_sample_content_submit($form, &$form_state) {
     if ($form_state['values']['donation_sample_content'] === 1) {
       _ableorganizer_set_config_donation_sample_content();
     }
-    if ($form_state['values']['event_sample_content'] !== 1) {
-      // remove event sample content
+    if ($form_state['values']['event_sample_content'] === 1) {
+      _ableorganizer_set_config_event_sample_content();
     }
     if ($form_state['values']['petition_sample_content'] !== 1) {
       // remove petition sample content
@@ -1211,6 +1211,133 @@ function _ableorganizer_set_config_donation_sample_content() {
   $content_aliases[] = array(
     'source' => 'node/' . $nids[$content_uuids['donate']],
     'alias' => 'donate',
+  );
+  foreach($content_aliases as $path) {
+    path_save($path);
+  }
+}
+
+/**
+ * Helper to set config for event content.
+ */
+function _ableorganizer_set_config_event_sample_content() {
+  module_enable(array('uuid'));
+  module_enable(array('uuid_path'));
+  module_enable(array('uuid_features'));
+  module_enable(array('ableorganizer_event_sample_content'));
+
+  // Saving profile nodes configuration.
+  $module = 'ableorganizer_event_sample_content';
+
+  // Including sample nodes definitions.
+  module_load_include('inc', $module, $module . '.features.uuid_node');
+
+  // Including helper.
+  module_load_include('inc', 'uuid_features', 'includes/uuid_node.features');
+
+  // Creating sample content in DB.
+  uuid_node_features_rebuild($module);
+  $content_uuids = array(
+    'simple_reg_form' => 'c4e0254b-e193-4f95-b843-fde40151fd81',
+    'simple_single_form' => '52a80050-d98f-4bbf-90e8-9526dd3c77a1',
+    'simple_many_form' => '8cbf5460-9633-4fcd-a730-c5832c19e5f0',
+    'simple_quantity_form' => '37106c78-84c8-4e74-a387-5c04b03f5375',
+    'phonebank' => 'e340d2ab-485b-4e68-b35c-c4e07a7b80c5',
+  );
+
+  // Getting local IDs from universal.
+  $nids = entity_get_id_by_uuid('node', $content_uuids);
+
+  $crm_core_profile_nodes = array(
+    array(
+      'nid' => $nids[$content_uuids['simple_reg_form']],
+      'use_profile' => '1',
+      'profile_name' => 'ao_cmcev_simple_reg_form',
+      'display_profile' => '1',
+      'inline_title' => 'Registration form',
+    ),
+    array(
+      'nid' => $nids[$content_uuids['simple_single_form']],
+      'use_profile' => '1',
+      'profile_name' => 'ao_cmcev_simple_single_form',
+      'display_profile' => '1',
+      'inline_title' => 'Registration form',
+    ),
+    array(
+      'nid' => $nids[$content_uuids['simple_many_form']],
+      'use_profile' => '1',
+      'profile_name' => 'ao_cmcev_simple_many_form',
+      'display_profile' => '1',
+      'inline_title' => 'Registration form',
+    ),
+    array(
+      'nid' => $nids[$content_uuids['simple_quantity_form']],
+      'use_profile' => '1',
+      'profile_name' => 'ao_cmcev_simple_quantity_form',
+      'display_profile' => '1',
+      'inline_title' => 'Registration form',
+    ),
+  );
+
+  $fields = array(
+    'nid',
+    'use_profile',
+    'profile_name',
+    'display_profile',
+    'inline_title',
+  );
+  $query = db_insert('crm_core_profile_nodes')
+    ->fields($fields);
+
+  foreach ($crm_core_profile_nodes as $node_config) {
+    $query->values($node_config);
+  }
+
+  $query->execute();
+
+  // Configure the default email settings, if they are enabled.
+  $thank_you_email = '';
+  if (variable_get('configure_event_email', 0) === 1) {
+    $thank_you_email = 'rules_cmcev_thank_you_message';
+  }
+
+  // Create the appropriate settings for each event page.
+  $query = db_insert('crm_core_event_nodes')->fields(array('nid', 'thanks_email'));
+  foreach ($crm_core_profile_nodes as $event) {
+    $query->values(array($event['nid'], $thank_you_email));
+  }
+  $query->execute();
+
+  // Saving path alias for 'Thank you' page.
+  $thank_you_uuid = '88e4e269-7dff-48ef-a527-c109f2e9ca6f';
+  $thank_you_id = entity_get_id_by_uuid('node', array($thank_you_uuid));
+  $thank_you_id = $thank_you_id[$thank_you_uuid];
+
+  // Setup aliases.
+  $content_aliases = array();
+  $content_aliases[] = array(
+    'source' => 'node/' . $thank_you_id,
+    'alias' => 'event/thank-you',
+  );
+  $content_aliases[] = array (
+    'source' => 'node/' . $nids[$content_uuids['simple_reg_form']],
+    'alias' => 'event/basic',
+  );
+  $content_aliases[] = array(
+    'source' => 'node/' . $nids[$content_uuids['simple_single_form']],
+    'alias' => 'event/single-ticket',
+  );
+  $content_aliases[] = array(
+    'source' => 'node/' . $nids[$content_uuids['simple_many_form']],
+    'alias' => 'event/multiple-ticket-level',
+  );
+  $content_aliases[] = array(
+    'source' => 'node/' . $nids[$content_uuids['simple_quantity_form']],
+    'alias' => 'event/multiple-ticket-levels-quantity',
+  );
+  $content_aliases[] = array(
+    'source' => 'node/' . $nids[$content_uuids['phonebank']],
+    'alias' => 'event/phonebank',
   );
   foreach($content_aliases as $path) {
     path_save($path);
