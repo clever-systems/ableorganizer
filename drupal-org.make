@@ -141,23 +141,23 @@ projects[omega_tools][version] = "3.0-rc4"
 ; crm core modules
 projects[crm_core][version] = 0.961
 projects[crm_core][subdir] = "contrib"
-projects[crm_core_profile][version] = 1.0-beta5
+projects[crm_core_profile][version] = 1.0-beta6
 projects[crm_core_profile][subdir] = "contrib"
 projects[crm_core_profile_commerce_items][version] = 0.3
 projects[crm_core_profile_commerce_items][subdir] = "contrib"
 projects[crm_core_demo_standard_fields][version] = 1.2
 projects[crm_core_demo_standard_fields][subdir] = "contrib"
 ; donations
-projects[crm_core_donation][version] = 1.6
+projects[crm_core_donation][version] = 1.7
 projects[crm_core_donation][subdir] = "contrib"
 ; events
-projects[crm_core_event][version] = 0.4
+projects[crm_core_event][version] = 0.5
 projects[crm_core_event][subdir] = "contrib"
 ; petitions
-projects[crm_core_petition][version] = 0.4
+projects[crm_core_petition][version] = 0.5
 projects[crm_core_petition][subdir] = "contrib"
 ; volunteers
-projects[crm_core_volunteer][version] = 0.4
+projects[crm_core_volunteer][version] = 0.5
 projects[crm_core_volunteer][subdir] = "contrib"
 
 ; libraries
