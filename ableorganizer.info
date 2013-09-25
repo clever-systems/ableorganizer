@@ -63,6 +63,7 @@ dependencies[] = admin_menu
 dependencies[] = features
 dependencies[] = context
 dependencies[] = strongarm
+dependencies[] = pathologic
 
 ; commerce modules
 dependencies[] = commerce
