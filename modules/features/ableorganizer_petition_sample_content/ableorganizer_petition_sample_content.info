@@ -1,5 +1,5 @@
-name = Able Organizer Petition Sample Content
-description = Sample content for the CRM Core Petition module
+name = AbleOrganizer Petition Sample Content
+description = Sample content for the CRM Core Petition
 core = 7.x
 package = CRM Core
 dependencies[] = crm_core_petition
