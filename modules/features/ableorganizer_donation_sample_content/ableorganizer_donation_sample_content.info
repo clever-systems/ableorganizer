@@ -4,6 +4,7 @@ core = 7.x
 package = CRM Core
 dependencies[] = commerce_features
 dependencies[] = commerce_price
+dependencies[] = commerce_payment_example
 dependencies[] = commerce_product_ui
 dependencies[] = crm_core_donation
 dependencies[] = crm_core_petition
