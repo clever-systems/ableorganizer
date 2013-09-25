@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the CRM Core Petition sample content feature.
+ */
+
+include_once 'ableorganizer_petition_sample_content.features.inc';
