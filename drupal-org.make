@@ -11,7 +11,7 @@ projects[ctools][version] = 1.3
 projects[ctools][subdir] = "contrib"
 projects[entity][version] = 1.2
 projects[entity][subdir] = "contrib"
-projects[entity][patch][] = "http://drupal.org/files/unformatted_replacements-2082407-1.patch"
+projects[entity][patch][] = "https://drupal.org/files/unformatted_replacements-2082407-1.patch"
 projects[entityreference][version] = 1.0
 projects[entityreference][subdir] = "contrib"
 projects[relation][version] = 1.0-rc4
@@ -58,7 +58,7 @@ projects[select_or_other][version] = 2.20
 projects[select_or_other][subdir] = "contrib"
 projects[calendar][version] = 3.4
 projects[calendar][subdir] = "contrib"
-projects[calendar][patch][] = "http://drupal.org/files/calendar-php54-1471400-58.patch"
+projects[calendar][patch][] = "https://drupal.org/files/calendar-php54-1471400-58.patch"
 
 ; email
 projects[mailsystem][version] = 2.34
@@ -111,8 +111,8 @@ projects[flot][subdir] = "contrib"
 projects[flot][download][type] = git
 projects[flot][download][branch] = 7.x-1.x
 projects[flot][download][revision] = 516ecd418878d3a10abd38342862a4fafdf12179
-projects[flot][patch][] = "http://drupal.org/files/flot-php54compat_0.patch"
-projects[flot][patch][] = "http://drupal.org/files/flot-pie_options-2088021-3.patch"
+projects[flot][patch][] = "https://drupal.org/files/flot-php54compat_0.patch"
+projects[flot][patch][] = "https://drupal.org/files/flot-pie_options-2088021-3.patch"
 projects[views_data_export][subdir] = "contrib"
 projects[views_data_export][version] = "3.0-beta6"
 
