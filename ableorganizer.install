@@ -1038,17 +1038,36 @@ function ableorganizer_sample_content_submit($form, &$form_state) {
     }
     
     if ($form_state['values']['donation_sample_data'] === 1) {
-      // install sample data for donations
+      $sample_data = ableorganizer_donation_sample_data();
+      foreach ($sample_data['crm_core_activity'] as $activity) {
+        $new_activity = entity_import('crm_core_activity', $activity);
+        $new_activity->field_cmcev_reg_date = _ableorganizer_set_activity_date();
+        entity_save('crm_core_activity', $new_activity);
+      }
     }
-    
     if ($form_state['values']['event_sample_data'] === 1) {
-      // install sample data for events
+      $sample_data = ableorganizer_event_sample_data();
+      foreach ($sample_data['crm_core_activity'] as $activity) {
+        $new_activity = entity_import('crm_core_activity', $activity);
+        $new_activity->field_cmcev_reg_date = _ableorganizer_set_activity_date();
+        entity_save('crm_core_activity', $new_activity);
+      }
     }
     if ($form_state['values']['petition_sample_data'] === 1) {
-      // install sample data for petitions
+      $sample_data = ableorganizer_petition_sample_data();
+      foreach ($sample_data['crm_core_activity'] as $activity) {
+        $new_activity = entity_import('crm_core_activity', $activity);
+        $new_activity->field_cmcev_reg_date = _ableorganizer_set_activity_date();
+        entity_save('crm_core_activity', $new_activity);
+      }
     } 
     if ($form_state['values']['volunteer_sample_data'] === 1) {
-      // install sample data for volunteers
+      $sample_data = ableorganizer_volunteer_sample_data();
+      foreach ($sample_data['crm_core_activity'] as $activity) {
+        $new_activity = entity_import('crm_core_activity', $activity);
+        $new_activity->field_cmcev_reg_date = _ableorganizer_set_activity_date();
+        entity_save('crm_core_activity', $new_activity);
+      }
     }
 
   }
