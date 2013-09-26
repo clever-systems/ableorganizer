@@ -25,7 +25,7 @@ function ableorganizer_event_sample_content_uuid_features_default_content() {
   'tnid' => 0,
   'translate' => 0,
   'uuid' => '37106c78-84c8-4e74-a387-5c04b03f5375',
-  'revision_uid' => 0,
+  'revision_uid' => 1,
   'body' => array(
     'und' => array(
       0 => array(
@@ -151,7 +151,7 @@ function ableorganizer_event_sample_content_uuid_features_default_content() {
   'tnid' => 0,
   'translate' => 0,
   'uuid' => '52a80050-d98f-4bbf-90e8-9526dd3c77a1',
-  'revision_uid' => 0,
+  'revision_uid' => 1,
   'body' => array(
     'und' => array(
       0 => array(
@@ -280,7 +280,7 @@ function ableorganizer_event_sample_content_uuid_features_default_content() {
   'tnid' => 0,
   'translate' => 0,
   'uuid' => '88e4e269-7dff-48ef-a527-c109f2e9ca6f',
-  'revision_uid' => 0,
+  'revision_uid' => 1,
   'body' => array(
     'und' => array(
       0 => array(
@@ -371,7 +371,7 @@ function ableorganizer_event_sample_content_uuid_features_default_content() {
   'tnid' => 0,
   'translate' => 0,
   'uuid' => '8cbf5460-9633-4fcd-a730-c5832c19e5f0',
-  'revision_uid' => 0,
+  'revision_uid' => 1,
   'body' => array(
     'und' => array(
       0 => array(
@@ -497,7 +497,7 @@ function ableorganizer_event_sample_content_uuid_features_default_content() {
   'tnid' => 0,
   'translate' => 0,
   'uuid' => 'c4e0254b-e193-4f95-b843-fde40151fd81',
-  'revision_uid' => 0,
+  'revision_uid' => 1,
   'body' => array(
     'und' => array(
       0 => array(
@@ -622,7 +622,7 @@ function ableorganizer_event_sample_content_uuid_features_default_content() {
   'tnid' => 0,
   'translate' => 0,
   'uuid' => 'e340d2ab-485b-4e68-b35c-c4e07a7b80c5',
-  'revision_uid' => 0,
+  'revision_uid' => 1,
   'body' => array(
     'und' => array(
       0 => array(

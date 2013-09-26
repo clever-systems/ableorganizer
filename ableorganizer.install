@@ -1466,7 +1466,7 @@ function _ableorganizer_set_config_petition_sample_content() {
   );
   $content_aliases[] = array (
     'source' => 'node/' . $nids[$content_uuids['on_line_petition']],
-    'alias' => 'petition/on_line_petition',
+    'alias' => 'petition/online-petition',
   );
   $content_aliases[] = array(
     'source' => 'node/' . $nids[$content_uuids['without_personal_message']],
