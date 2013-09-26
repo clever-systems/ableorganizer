@@ -717,6 +717,9 @@ function ableorganizer_features_submit($form, &$form_state) {
   
   module_enable($modules);
 
+  // Flush caches to initialize features.
+  features_flush_caches();
+
   $install_state['parameters']['features'] = 'done';
 }
 
@@ -996,19 +999,30 @@ function ableorganizer_sample_content_submit($form, &$form_state) {
     
     // module_enable('ableorganizer_sample_content');
 
+    $modules = array('uuid', 'uuid_path', 'uuid_features');
+    $configs = array();
     if ($form_state['values']['donation_sample_content'] === 1) {
-      _ableorganizer_set_config_donation_sample_content();
+      $modules[] = 'ableorganizer_donation_sample_content';
+      $configs[] = '_ableorganizer_set_config_donation_sample_content';
     }
     if ($form_state['values']['event_sample_content'] === 1) {
-      _ableorganizer_set_config_event_sample_content();
+      $modules[] = 'ableorganizer_event_sample_content';
+      $configs[] = '_ableorganizer_set_config_event_sample_content';
     }
     if ($form_state['values']['petition_sample_content'] === 1) {
-      _ableorganizer_set_config_petition_sample_content();
-    } 
-    if ($form_state['values']['volunteer_sample_content'] === 1) {
-      _ableorganizer_set_config_volunteer_sample_content();
+      $modules[] = 'ableorganizer_petition_sample_content';
+      $configs[] = '_ableorganizer_set_config_petition_sample_content';
     }
-    
+    if ($form_state['values']['volunteer_sample_content'] === 1) {
+      $modules[] = 'ableorganizer_volunteer_sample_content';
+      $configs[] = '_ableorganizer_set_config_volunteer_sample_content';
+    }
+    module_enable($modules);
+    foreach ($configs as $function) {
+      if (function_exists($function)) {
+        $function();
+      }
+    }
   }
 
   // Configure sample data.
@@ -1084,11 +1098,6 @@ function _ableorganizer_set_activity_date() {
  * Helper to set config for donation content.
  */
 function _ableorganizer_set_config_donation_sample_content() {
-  module_enable(array('uuid'));
-  module_enable(array('uuid_path'));
-  module_enable(array('uuid_features'));
-  module_enable(array('ableorganizer_donation_sample_content'));
-
   // Saving profile nodes configuration.
   $module = 'ableorganizer_donation_sample_content';
 
@@ -1221,11 +1230,6 @@ function _ableorganizer_set_config_donation_sample_content() {
  * Helper to set config for event content.
  */
 function _ableorganizer_set_config_event_sample_content() {
-  module_enable(array('uuid'));
-  module_enable(array('uuid_path'));
-  module_enable(array('uuid_features'));
-  module_enable(array('ableorganizer_event_sample_content'));
-
   // Saving profile nodes configuration.
   $module = 'ableorganizer_event_sample_content';
 
@@ -1348,11 +1352,6 @@ function _ableorganizer_set_config_event_sample_content() {
  * Helper to set config for petition content.
  */
 function _ableorganizer_set_config_petition_sample_content() {
-  module_enable(array('uuid'));
-  module_enable(array('uuid_path'));
-  module_enable(array('uuid_features'));
-  module_enable(array('ableorganizer_petition_sample_content'));
-
   // Saving profile nodes configuration.
   $module = 'ableorganizer_petition_sample_content';
 
@@ -1482,11 +1481,6 @@ function _ableorganizer_set_config_petition_sample_content() {
  * Helper to set config for volunteer content.
  */
 function _ableorganizer_set_config_volunteer_sample_content() {
-  module_enable(array('uuid'));
-  module_enable(array('uuid_path'));
-  module_enable(array('uuid_features'));
-  module_enable(array('ableorganizer_volunteer_sample_content'));
-
   // Saving profile nodes configuration.
   $module = 'ableorganizer_volunteer_sample_content';
 
