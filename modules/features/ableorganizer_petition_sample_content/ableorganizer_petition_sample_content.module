@@ -5,3 +5,139 @@
  */
 
 include_once 'ableorganizer_petition_sample_content.features.inc';
+
+/**
+ * Implements hook_enable().
+ */
+function ableorganizer_petition_sample_content_enable() {
+  _ableorganizer_petition_sample_content_set_config();
+}
+
+/**
+ * Helper to set config for petition content.
+ */
+function _ableorganizer_petition_sample_content_set_config() {
+  // Saving profile nodes configuration.
+  $module = 'ableorganizer_petition_sample_content';
+
+  // Including sample nodes definitions.
+  module_load_include('inc', $module, $module . '.features.uuid_node');
+
+  // Including helper.
+  module_load_include('inc', 'uuid_features', 'includes/uuid_node.features');
+
+  // Creating sample content in DB.
+  uuid_node_features_rebuild($module);
+  $content_uuids = array(
+    'on_line_petition' => '67720e58-b9b4-43c4-98cf-ad29bc13068d',
+    'without_personal_message' => 'dcb2bfb1-c860-4713-afd1-cdcf868c88f0',
+  );
+
+  // Getting local IDs from universal.
+  $nids = entity_get_id_by_uuid('node', $content_uuids);
+
+  // CRM Core Profile settings.
+  $crm_core_profile_nodes = array(
+    array(
+      'nid' => $nids[$content_uuids['on_line_petition']],
+      'use_profile' => '1',
+      'profile_name' => 'ao_on_line_petition_form',
+      'display_profile' => '1',
+      'inline_title' => 'Petition form',
+    ),
+    array(
+      'nid' => $nids[$content_uuids['without_personal_message']],
+      'use_profile' => '1',
+      'profile_name' => 'ao_on_line_petition_form',
+      'display_profile' => '1',
+      'inline_title' => 'Petition form',
+    ),
+  );
+
+  $fields = array(
+    'nid',
+    'use_profile',
+    'profile_name',
+    'display_profile',
+    'inline_title',
+  );
+  $query = db_insert('crm_core_profile_nodes')
+    ->fields($fields);
+
+  foreach ($crm_core_profile_nodes as $node_config) {
+    $query->values($node_config);
+  }
+
+  $query->execute();
+
+  // Configure the default email settings, if they are enabled.
+  $thank_you_email = '';
+  $sign_email = '';
+  if (variable_get('configure_petition_email', 0) === 1) {
+    $thank_you_email = 'rules_cmcp_thank_you_message';
+    $sign_email = 'rules_cmcp_target_email';
+  }
+
+  // Create the appropriate settings for each petition page.
+  $petitions = array(
+    array(
+      'nid' => $nids[$content_uuids['on_line_petition']],
+      'signatories' => 1,
+      'goal' => 200,
+      'thanks_email' => $thank_you_email,
+      'sign_email' => $sign_email,
+    ),
+    array(
+      'nid' => $nids[$content_uuids['without_personal_message']],
+      'signatories' => 1,
+      'goal' => 100,
+      'thanks_email' => $thank_you_email,
+      'sign_email' => $sign_email,
+    ),
+  );
+  $query = db_insert('crm_core_petition_nodes')->fields(array_keys($petitions[0]));
+  foreach ($petitions as $petition) {
+    $query->values($petition);
+  }
+  $query->execute();
+
+  // Creating configuration for block with signatures counter.
+  $ret = db_delete('block')->condition('module', 'crm_core_petition')->execute();
+  $block = array(
+    'module' => 'crm_core_petition',
+    'delta' => 'petition_counter',
+    'theme' => 'bartik',
+    'status' => '1',
+    'weight' => '0',
+    'region' => 'sidebar_second',
+    'custom' => '0',
+    'visibility' => '1',
+    'pages' => 'node/3',
+    'title' => '',
+    'cache' => '1',
+  );
+  db_insert('block')->fields(array_keys($block))->values($block)->execute();
+
+  // Saving path alias for 'Thank you' page.
+  $thank_you_uuid = '07f62fec-73c6-406e-af38-d79c0070e4dd';
+  $thank_you_id = entity_get_id_by_uuid('node', array($thank_you_uuid));
+  $thank_you_id = $thank_you_id[$thank_you_uuid];
+
+  // Setup aliases.
+  $content_aliases = array();
+  $content_aliases[] = array(
+    'source' => 'node/' . $thank_you_id,
+    'alias' => 'petition/thank-you',
+  );
+  $content_aliases[] = array (
+    'source' => 'node/' . $nids[$content_uuids['on_line_petition']],
+    'alias' => 'petition/online-petition',
+  );
+  $content_aliases[] = array(
+    'source' => 'node/' . $nids[$content_uuids['without_personal_message']],
+    'alias' => 'petition/single-ticket',
+  );
+  foreach($content_aliases as $path) {
+    path_save($path);
+  }
+}

@@ -5,3 +5,149 @@
  */
 
 include_once 'ableorganizer_volunteer_sample_content.features.inc';
+
+/**
+ * Implements hook_enable().
+ */
+function ableorganizer_volunteer_sample_content_enable() {
+  _ableorganizer_volunteer_sample_content_set_config();
+}
+
+/**
+ * Helper to set config for volunteer content.
+ */
+function _ableorganizer_volunteer_sample_content_set_config() {
+  // Saving profile nodes configuration.
+  $module = 'ableorganizer_volunteer_sample_content';
+
+  // Including sample nodes definitions.
+  module_load_include('inc', $module, $module . '.features.uuid_node');
+
+  // Including helper.
+  module_load_include('inc', 'uuid_features', 'includes/uuid_node.features');
+
+  // Creating sample content in DB.
+  uuid_node_features_rebuild($module);
+  $content_uuids = array(
+    'after_school_tutors_needed' => '2a0e3955-18a5-4be1-a2c4-8dff6e05be73',
+    'get_out_the_vote' => '85b8792e-c6f0-41e1-bb04-7cbf6b522abf',
+    'keep_our_creek_clean' => '0d86ea2a-fb8a-4ec5-8a00-3361772433d3',
+    'support_the_food_bank' => '9c84b384-91ef-438d-a442-b7aa4158823f',
+    'work_with_homeless_animals' => '0b621efb-62fa-4312-b0bd-479c6d8d8be4',
+  );
+
+  // Getting local IDs from universal.
+  $nids = entity_get_id_by_uuid('node', $content_uuids);
+
+  // CRM Core Profile settings.
+  $crm_core_profile_nodes = array(
+    array(
+      'nid' => $nids[$content_uuids['after_school_tutors_needed']],
+      'use_profile' => '1',
+      'profile_name' => 'ao_volunteer_commitment_form_2',
+      'display_profile' => '1',
+      'inline_title' => 'Volunteer form',
+    ),
+    array(
+      'nid' => $nids[$content_uuids['get_out_the_vote']],
+      'use_profile' => '1',
+      'profile_name' => 'ao_volunteer_commitment_form',
+      'display_profile' => '1',
+      'inline_title' => 'Volunteer form',
+    ),
+    array(
+      'nid' => $nids[$content_uuids['keep_our_creek_clean']],
+      'use_profile' => '1',
+      'profile_name' => 'ao_volunteer_commitment_form',
+      'display_profile' => '1',
+      'inline_title' => 'Volunteer form',
+    ),
+    array(
+      'nid' => $nids[$content_uuids['support_the_food_bank']],
+      'use_profile' => '1',
+      'profile_name' => 'ao_volunteer_commitment_form',
+      'display_profile' => '1',
+      'inline_title' => 'Volunteer form',
+    ),
+    array(
+      'nid' => $nids[$content_uuids['work_with_homeless_animals']],
+      'use_profile' => '1',
+      'profile_name' => 'ao_volunteer_commitment_form',
+      'display_profile' => '1',
+      'inline_title' => 'Volunteer form',
+    ),
+  );
+
+  $fields = array(
+    'nid',
+    'use_profile',
+    'profile_name',
+    'display_profile',
+    'inline_title',
+  );
+  $query = db_insert('crm_core_profile_nodes')
+    ->fields($fields);
+
+  foreach ($crm_core_profile_nodes as $node_config) {
+    $query->values($node_config);
+  }
+
+  $query->execute();
+
+  // Configure the default email settings, if they are enabled.
+  $wait_email = '';
+  $sign_email = '';
+  if (variable_get('configure_volunteer_email', 0) === 1) {
+    $wait_email = 'rules_cmcv_wl_notify';
+    $sign_email = 'rules_cmcv_opportunity_signup';
+  }
+
+  // Create the appropriate settings for each volunteer page.
+  $values = array(
+    'nid' => 0,
+    'wait_email' => $wait_email,
+    'sign_email' => $sign_email,
+  );
+  $fields = array_keys($values);
+  $query = db_insert('crm_core_volunteer_nodes')->fields($fields);
+  foreach ($crm_core_profile_nodes as $item) {
+    $values['nid'] = $item['nid'];
+    $query->values($values);
+  }
+  $query->execute();
+
+  // Saving path alias for 'Thank you' page.
+  $thank_you_uuid = 'a6aca833-1f84-4876-93d1-cc070aad77d0';
+  $thank_you_id = entity_get_id_by_uuid('node', array($thank_you_uuid));
+  $thank_you_id = $thank_you_id[$thank_you_uuid];
+
+  // Setup aliases.
+  $content_aliases = array();
+  $content_aliases[] = array(
+    'source' => 'node/' . $thank_you_id,
+    'alias' => 'volunteer/thank-you',
+  );
+  $content_aliases[] = array (
+    'source' => 'node/' . $nids[$content_uuids['after_school_tutors_needed']],
+    'alias' => 'volunteer/after-school-tutors-needed',
+  );
+  $content_aliases[] = array (
+    'source' => 'node/' . $nids[$content_uuids['get_out_the_vote']],
+    'alias' => 'volunteer/get-out-the-vote',
+  );
+  $content_aliases[] = array (
+    'source' => 'node/' . $nids[$content_uuids['keep_our_creek_clean']],
+    'alias' => 'volunteer/keep-our-creek-clean',
+  );
+  $content_aliases[] = array (
+    'source' => 'node/' . $nids[$content_uuids['support_the_food_bank']],
+    'alias' => 'volunteer/support-the-food-bank',
+  );
+  $content_aliases[] = array (
+    'source' => 'node/' . $nids[$content_uuids['work_with_homeless_animals']],
+    'alias' => 'volunteer/work-with-homeless-animals',
+  );
+  foreach($content_aliases as $path) {
+    path_save($path);
+  }
+}
