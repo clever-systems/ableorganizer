@@ -843,7 +843,6 @@ function ableorganizer_donation_sample_data() {
       "uid" : "1",
       "created" : "1377571973",
       "changed" : "1377571973",
-      "activity_type_id" : "3",
       "field_activity_participants" : { "und" : [ { "target_id" : "2" } ] },
       "field_activity_date" : { "und" : [
           {
@@ -886,7 +885,6 @@ function ableorganizer_donation_sample_data() {
       "uid" : "1",
       "created" : "1377571976",
       "changed" : "1377571976",
-      "activity_type_id" : "3",
       "field_activity_participants" : { "und" : [ { "target_id" : "3" } ] },
       "field_activity_date" : { "und" : [
           {
@@ -929,7 +927,6 @@ function ableorganizer_donation_sample_data() {
       "uid" : "1",
       "created" : "1377571979",
       "changed" : "1377571979",
-      "activity_type_id" : "3",
       "field_activity_participants" : { "und" : [ { "target_id" : "4" } ] },
       "field_activity_date" : { "und" : [
           {
@@ -972,7 +969,6 @@ function ableorganizer_donation_sample_data() {
       "uid" : "1",
       "created" : "1377571982",
       "changed" : "1377571982",
-      "activity_type_id" : "3",
       "field_activity_participants" : { "und" : [ { "target_id" : "5" } ] },
       "field_activity_date" : { "und" : [
           {
@@ -1015,7 +1011,6 @@ function ableorganizer_donation_sample_data() {
       "uid" : "1",
       "created" : "1377571985",
       "changed" : "1377571985",
-      "activity_type_id" : "3",
       "field_activity_participants" : { "und" : [ { "target_id" : "6" } ] },
       "field_activity_date" : { "und" : [
           {
@@ -1058,7 +1053,6 @@ function ableorganizer_donation_sample_data() {
       "uid" : "1",
       "created" : "1377571988",
       "changed" : "1377571988",
-      "activity_type_id" : "3",
       "field_activity_participants" : { "und" : [ { "target_id" : "7" } ] },
       "field_activity_date" : { "und" : [
           {
@@ -1101,7 +1095,6 @@ function ableorganizer_donation_sample_data() {
       "uid" : "1",
       "created" : "1377571990",
       "changed" : "1377571990",
-      "activity_type_id" : "3",
       "field_activity_participants" : { "und" : [ { "target_id" : "8" } ] },
       "field_activity_date" : { "und" : [
           {
@@ -1144,7 +1137,6 @@ function ableorganizer_donation_sample_data() {
       "uid" : "1",
       "created" : "1377571994",
       "changed" : "1377571994",
-      "activity_type_id" : "3",
       "field_activity_participants" : { "und" : [ { "target_id" : "9" } ] },
       "field_activity_date" : { "und" : [
           {
@@ -1187,7 +1179,6 @@ function ableorganizer_donation_sample_data() {
       "uid" : "1",
       "created" : "1377571996",
       "changed" : "1377571996",
-      "activity_type_id" : "3",
       "field_activity_participants" : { "und" : [ { "target_id" : "10" } ] },
       "field_activity_date" : { "und" : [
           {
@@ -1230,7 +1221,6 @@ function ableorganizer_donation_sample_data() {
       "uid" : "1",
       "created" : "1377571999",
       "changed" : "1377571999",
-      "activity_type_id" : "3",
       "field_activity_participants" : { "und" : [ { "target_id" : "11" } ] },
       "field_activity_date" : { "und" : [
           {
@@ -1273,7 +1263,6 @@ function ableorganizer_donation_sample_data() {
       "uid" : "1",
       "created" : "1377572339",
       "changed" : "1377572339",
-      "activity_type_id" : "3",
       "field_activity_participants" : { "und" : [ { "target_id" : "2" } ] },
       "field_activity_date" : { "und" : [
           {
@@ -1316,7 +1305,6 @@ function ableorganizer_donation_sample_data() {
       "uid" : "1",
       "created" : "1377572342",
       "changed" : "1377572342",
-      "activity_type_id" : "3",
       "field_activity_participants" : { "und" : [ { "target_id" : "3" } ] },
       "field_activity_date" : { "und" : [
           {
@@ -1359,7 +1347,6 @@ function ableorganizer_donation_sample_data() {
       "uid" : "1",
       "created" : "1377572345",
       "changed" : "1377572345",
-      "activity_type_id" : "3",
       "field_activity_participants" : { "und" : [ { "target_id" : "4" } ] },
       "field_activity_date" : { "und" : [
           {
@@ -1402,7 +1389,6 @@ function ableorganizer_donation_sample_data() {
       "uid" : "1",
       "created" : "1377572347",
       "changed" : "1377572347",
-      "activity_type_id" : "3",
       "field_activity_participants" : { "und" : [ { "target_id" : "5" } ] },
       "field_activity_date" : { "und" : [
           {
@@ -1445,7 +1431,6 @@ function ableorganizer_donation_sample_data() {
       "uid" : "1",
       "created" : "1377572350",
       "changed" : "1377572350",
-      "activity_type_id" : "3",
       "field_activity_participants" : { "und" : [ { "target_id" : "6" } ] },
       "field_activity_date" : { "und" : [
           {
@@ -1488,7 +1473,6 @@ function ableorganizer_donation_sample_data() {
       "uid" : "1",
       "created" : "1377572353",
       "changed" : "1377572353",
-      "activity_type_id" : "3",
       "field_activity_participants" : { "und" : [ { "target_id" : "7" } ] },
       "field_activity_date" : { "und" : [
           {
@@ -1531,7 +1515,6 @@ function ableorganizer_donation_sample_data() {
       "uid" : "1",
       "created" : "1377572356",
       "changed" : "1377572356",
-      "activity_type_id" : "3",
       "field_activity_participants" : { "und" : [ { "target_id" : "8" } ] },
       "field_activity_date" : { "und" : [
           {
@@ -1574,7 +1557,6 @@ function ableorganizer_donation_sample_data() {
       "uid" : "1",
       "created" : "1377572359",
       "changed" : "1377572359",
-      "activity_type_id" : "3",
       "field_activity_participants" : { "und" : [ { "target_id" : "9" } ] },
       "field_activity_date" : { "und" : [
           {
@@ -1617,7 +1599,6 @@ function ableorganizer_donation_sample_data() {
       "uid" : "1",
       "created" : "1377572362",
       "changed" : "1377572362",
-      "activity_type_id" : "3",
       "field_activity_participants" : { "und" : [ { "target_id" : "10" } ] },
       "field_activity_date" : { "und" : [
           {
@@ -1660,7 +1641,6 @@ function ableorganizer_donation_sample_data() {
       "uid" : "1",
       "created" : "1377572365",
       "changed" : "1377572365",
-      "activity_type_id" : "3",
       "field_activity_participants" : { "und" : [ { "target_id" : "11" } ] },
       "field_activity_date" : { "und" : [
           {
@@ -1703,7 +1683,6 @@ function ableorganizer_donation_sample_data() {
       "uid" : "1",
       "created" : "1377572499",
       "changed" : "1377572499",
-      "activity_type_id" : "3",
       "field_activity_participants" : { "und" : [ { "target_id" : "2" } ] },
       "field_activity_date" : { "und" : [
           {
@@ -1746,7 +1725,6 @@ function ableorganizer_donation_sample_data() {
       "uid" : "1",
       "created" : "1377572504",
       "changed" : "1377572504",
-      "activity_type_id" : "3",
       "field_activity_participants" : { "und" : [ { "target_id" : "3" } ] },
       "field_activity_date" : { "und" : [
           {
@@ -1789,7 +1767,6 @@ function ableorganizer_donation_sample_data() {
       "uid" : "1",
       "created" : "1377572506",
       "changed" : "1377572506",
-      "activity_type_id" : "3",
       "field_activity_participants" : { "und" : [ { "target_id" : "4" } ] },
       "field_activity_date" : { "und" : [
           {
@@ -1832,7 +1809,6 @@ function ableorganizer_donation_sample_data() {
       "uid" : "1",
       "created" : "1377572509",
       "changed" : "1377572509",
-      "activity_type_id" : "3",
       "field_activity_participants" : { "und" : [ { "target_id" : "5" } ] },
       "field_activity_date" : { "und" : [
           {
@@ -1875,7 +1851,6 @@ function ableorganizer_donation_sample_data() {
       "uid" : "1",
       "created" : "1377572512",
       "changed" : "1377572512",
-      "activity_type_id" : "3",
       "field_activity_participants" : { "und" : [ { "target_id" : "6" } ] },
       "field_activity_date" : { "und" : [
           {
@@ -1918,7 +1893,6 @@ function ableorganizer_donation_sample_data() {
       "uid" : "1",
       "created" : "1377572515",
       "changed" : "1377572515",
-      "activity_type_id" : "3",
       "field_activity_participants" : { "und" : [ { "target_id" : "7" } ] },
       "field_activity_date" : { "und" : [
           {
@@ -1961,7 +1935,6 @@ function ableorganizer_donation_sample_data() {
       "uid" : "1",
       "created" : "1377572518",
       "changed" : "1377572518",
-      "activity_type_id" : "3",
       "field_activity_participants" : { "und" : [ { "target_id" : "8" } ] },
       "field_activity_date" : { "und" : [
           {
@@ -2004,7 +1977,6 @@ function ableorganizer_donation_sample_data() {
       "uid" : "1",
       "created" : "1377572521",
       "changed" : "1377572521",
-      "activity_type_id" : "3",
       "field_activity_participants" : { "und" : [ { "target_id" : "9" } ] },
       "field_activity_date" : { "und" : [
           {
@@ -2047,7 +2019,6 @@ function ableorganizer_donation_sample_data() {
       "uid" : "1",
       "created" : "1377572524",
       "changed" : "1377572524",
-      "activity_type_id" : "3",
       "field_activity_participants" : { "und" : [ { "target_id" : "10" } ] },
       "field_activity_date" : { "und" : [
           {
@@ -2090,7 +2061,6 @@ function ableorganizer_donation_sample_data() {
       "uid" : "1",
       "created" : "1377572526",
       "changed" : "1377572526",
-      "activity_type_id" : "3",
       "field_activity_participants" : { "und" : [ { "target_id" : "11" } ] },
       "field_activity_date" : { "und" : [
           {
@@ -2133,7 +2103,6 @@ function ableorganizer_donation_sample_data() {
   "uid" : "1",
   "created" : "1377573061",
   "changed" : "1377573061",
-  "activity_type_id" : "3",
   "field_activity_participants" : { "und" : [ { "target_id" : "2" } ] },
   "field_activity_date" : { "und" : [
       {
@@ -2176,7 +2145,6 @@ function ableorganizer_donation_sample_data() {
   "uid" : "1",
   "created" : "1377573062",
   "changed" : "1377573062",
-  "activity_type_id" : "3",
   "field_activity_participants" : { "und" : [ { "target_id" : "3" } ] },
   "field_activity_date" : { "und" : [
       {
@@ -2219,7 +2187,6 @@ function ableorganizer_donation_sample_data() {
   "uid" : "1",
   "created" : "1377573064",
   "changed" : "1377573064",
-  "activity_type_id" : "3",
   "field_activity_participants" : { "und" : [ { "target_id" : "4" } ] },
   "field_activity_date" : { "und" : [
       {
@@ -2262,7 +2229,6 @@ function ableorganizer_donation_sample_data() {
   "uid" : "1",
   "created" : "1377573066",
   "changed" : "1377573066",
-  "activity_type_id" : "3",
   "field_activity_participants" : { "und" : [ { "target_id" : "5" } ] },
   "field_activity_date" : { "und" : [
       {
@@ -2305,7 +2271,6 @@ function ableorganizer_donation_sample_data() {
   "uid" : "1",
   "created" : "1377573068",
   "changed" : "1377573068",
-  "activity_type_id" : "3",
   "field_activity_participants" : { "und" : [ { "target_id" : "6" } ] },
   "field_activity_date" : { "und" : [
       {
@@ -2348,7 +2313,6 @@ function ableorganizer_donation_sample_data() {
   "uid" : "1",
   "created" : "1377573069",
   "changed" : "1377573069",
-  "activity_type_id" : "3",
   "field_activity_participants" : { "und" : [ { "target_id" : "7" } ] },
   "field_activity_date" : { "und" : [
       {
@@ -2391,7 +2355,6 @@ function ableorganizer_donation_sample_data() {
   "uid" : "1",
   "created" : "1377573071",
   "changed" : "1377573071",
-  "activity_type_id" : "3",
   "field_activity_participants" : { "und" : [ { "target_id" : "8" } ] },
   "field_activity_date" : { "und" : [
       {
@@ -2434,7 +2397,6 @@ function ableorganizer_donation_sample_data() {
   "uid" : "1",
   "created" : "1377573074",
   "changed" : "1377573074",
-  "activity_type_id" : "3",
   "field_activity_participants" : { "und" : [ { "target_id" : "9" } ] },
   "field_activity_date" : { "und" : [
       {
@@ -2477,7 +2439,6 @@ function ableorganizer_donation_sample_data() {
   "uid" : "1",
   "created" : "1377573075",
   "changed" : "1377573075",
-  "activity_type_id" : "3",
   "field_activity_participants" : { "und" : [ { "target_id" : "10" } ] },
   "field_activity_date" : { "und" : [
       {
@@ -2520,7 +2481,6 @@ function ableorganizer_donation_sample_data() {
   "uid" : "1",
   "created" : "1377573077",
   "changed" : "1377573077",
-  "activity_type_id" : "3",
   "field_activity_participants" : { "und" : [ { "target_id" : "11" } ] },
   "field_activity_date" : { "und" : [
       {
@@ -2576,34 +2536,34 @@ function ableorganizer_event_sample_data() {
 
   $sample_data = array(
     'crm_core_activity' => array(
-      1 => "{\n  \"revision_id\" : \"41\",\n  \"uid\" : \"1\",\n  \"title\" : \"Event Registration\",\n  \"created\" : \"1378290173\",\n  \"changed\" : \"1378291143\",\n  \"activity_id\" : \"41\",\n  \"type\" : \"cmcev_event_registration\",\n  \"activity_type_id\" : \"3\",\n  \"default_revision\" : \"1\",\n  \"field_activity_participants\" : { \"und\" : [ { \"target_id\" : \"11\" } ] },\n  \"field_activity_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-09-04 10:30:00\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_activity_notes\" : [],\n  \"field_cmcev_amount\" : [],\n  \"field_cmcev_event\" : { \"und\" : [ { \"target_id\" : \"{$nids[$content_uuids['simple_quantity_form']]}\" } ] },\n  \"field_cmcev_public\" : { \"und\" : [ { \"value\" : \"0\" } ] },\n  \"field_cmcev_reg_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-09-01 10:30:00\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_cmcev_source\" : { \"und\" : [ { \"value\" : \"Online Registration\" } ] },\n  \"field_cmcev_status\" : { \"und\" : [ { \"value\" : \"Registered\" } ] },\n  \"rdf_mapping\" : []\n}",
-      2 => "{\n  \"revision_id\" : \"42\",\n  \"uid\" : \"1\",\n  \"title\" : \"Event Registration\",\n  \"created\" : \"1378290823\",\n  \"changed\" : \"1378291165\",\n  \"activity_id\" : \"42\",\n  \"type\" : \"cmcev_event_registration\",\n  \"activity_type_id\" : \"3\",\n  \"default_revision\" : \"1\",\n  \"field_activity_participants\" : { \"und\" : [ { \"target_id\" : \"9\" } ] },\n  \"field_activity_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-09-02 07:30:00\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_activity_notes\" : [],\n  \"field_cmcev_amount\" : [],\n  \"field_cmcev_event\" : { \"und\" : [ { \"target_id\" : \"{$nids[$content_uuids['simple_quantity_form']]}\" } ] },\n  \"field_cmcev_public\" : { \"und\" : [ { \"value\" : \"0\" } ] },\n  \"field_cmcev_reg_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-09-04 10:30:00\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_cmcev_source\" : { \"und\" : [ { \"value\" : \"Online Registration\" } ] },\n  \"field_cmcev_status\" : { \"und\" : [ { \"value\" : \"Registered\" } ] },\n  \"rdf_mapping\" : []\n}",
-      3 => "{\n  \"revision_id\" : \"43\",\n  \"uid\" : \"1\",\n  \"title\" : \"Event Registration\",\n  \"created\" : \"1378290863\",\n  \"changed\" : \"1378291185\",\n  \"activity_id\" : \"43\",\n  \"type\" : \"cmcev_event_registration\",\n  \"activity_type_id\" : \"3\",\n  \"default_revision\" : \"1\",\n  \"field_activity_participants\" : { \"und\" : [ { \"target_id\" : \"7\" } ] },\n  \"field_activity_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-09-03 09:00:00\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_activity_notes\" : [],\n  \"field_cmcev_amount\" : [],\n  \"field_cmcev_event\" : { \"und\" : [ { \"target_id\" : \"{$nids[$content_uuids['simple_quantity_form']]}\" } ] },\n  \"field_cmcev_public\" : { \"und\" : [ { \"value\" : \"0\" } ] },\n  \"field_cmcev_reg_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-09-04 10:30:00\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_cmcev_source\" : { \"und\" : [ { \"value\" : \"Online Registration\" } ] },\n  \"field_cmcev_status\" : { \"und\" : [ { \"value\" : \"Registered\" } ] },\n  \"rdf_mapping\" : []\n}",
-      4 => "{\n  \"revision_id\" : \"44\",\n  \"uid\" : \"1\",\n  \"title\" : \"Event Registration\",\n  \"created\" : \"1378290895\",\n  \"changed\" : \"1378291198\",\n  \"activity_id\" : \"44\",\n  \"type\" : \"cmcev_event_registration\",\n  \"activity_type_id\" : \"3\",\n  \"default_revision\" : \"1\",\n  \"field_activity_participants\" : { \"und\" : [ { \"target_id\" : \"5\" } ] },\n  \"field_activity_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-09-02 13:30:00\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_activity_notes\" : [],\n  \"field_cmcev_amount\" : [],\n  \"field_cmcev_event\" : { \"und\" : [ { \"target_id\" : \"{$nids[$content_uuids['simple_quantity_form']]}\" } ] },\n  \"field_cmcev_public\" : { \"und\" : [ { \"value\" : \"0\" } ] },\n  \"field_cmcev_reg_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-09-04 10:30:00\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_cmcev_source\" : { \"und\" : [ { \"value\" : \"Online Registration\" } ] },\n  \"field_cmcev_status\" : { \"und\" : [ { \"value\" : \"Registered\" } ] },\n  \"rdf_mapping\" : []\n}",
-      5 => "{\n  \"revision_id\" : \"45\",\n  \"uid\" : \"1\",\n  \"title\" : \"Event Registration\",\n  \"created\" : \"1378290913\",\n  \"changed\" : \"1378291212\",\n  \"activity_id\" : \"45\",\n  \"type\" : \"cmcev_event_registration\",\n  \"activity_type_id\" : \"3\",\n  \"default_revision\" : \"1\",\n  \"field_activity_participants\" : { \"und\" : [ { \"target_id\" : \"3\" } ] },\n  \"field_activity_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-09-02 16:30:00\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_activity_notes\" : [],\n  \"field_cmcev_amount\" : [],\n  \"field_cmcev_event\" : { \"und\" : [ { \"target_id\" : \"{$nids[$content_uuids['simple_quantity_form']]}\" } ] },\n  \"field_cmcev_public\" : { \"und\" : [ { \"value\" : \"0\" } ] },\n  \"field_cmcev_reg_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-09-04 10:30:00\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_cmcev_source\" : { \"und\" : [ { \"value\" : \"Online Registration\" } ] },\n  \"field_cmcev_status\" : { \"und\" : [ { \"value\" : \"Registered\" } ] },\n  \"rdf_mapping\" : []\n}",
-      6 => "{\n  \"revision_id\" : \"46\",\n  \"uid\" : \"1\",\n  \"title\" : \"Event Registration\",\n  \"created\" : \"1378290935\",\n  \"changed\" : \"1378291224\",\n  \"activity_id\" : \"46\",\n  \"type\" : \"cmcev_event_registration\",\n  \"activity_type_id\" : \"3\",\n  \"default_revision\" : \"1\",\n  \"field_activity_participants\" : { \"und\" : [ { \"target_id\" : \"10\" } ] },\n  \"field_activity_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-09-06 10:30:00\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_activity_notes\" : [],\n  \"field_cmcev_amount\" : [],\n  \"field_cmcev_event\" : { \"und\" : [ { \"target_id\" : \"{$nids[$content_uuids['simple_quantity_form']]}\" } ] },\n  \"field_cmcev_public\" : { \"und\" : [ { \"value\" : \"0\" } ] },\n  \"field_cmcev_reg_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-09-04 10:30:00\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_cmcev_source\" : { \"und\" : [ { \"value\" : \"Online Registration\" } ] },\n  \"field_cmcev_status\" : { \"und\" : [ { \"value\" : \"Registered\" } ] },\n  \"rdf_mapping\" : []\n}",
-      7 => "{\n  \"revision_id\" : \"47\",\n  \"uid\" : \"1\",\n  \"title\" : \"Event Registration\",\n  \"created\" : \"1378290958\",\n  \"changed\" : \"1378291239\",\n  \"activity_id\" : \"47\",\n  \"type\" : \"cmcev_event_registration\",\n  \"activity_type_id\" : \"3\",\n  \"default_revision\" : \"1\",\n  \"field_activity_participants\" : { \"und\" : [ { \"target_id\" : \"8\" } ] },\n  \"field_activity_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-09-05 06:30:00\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_activity_notes\" : [],\n  \"field_cmcev_amount\" : [],\n  \"field_cmcev_event\" : { \"und\" : [ { \"target_id\" : \"{$nids[$content_uuids['simple_quantity_form']]}\" } ] },\n  \"field_cmcev_public\" : { \"und\" : [ { \"value\" : \"0\" } ] },\n  \"field_cmcev_reg_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-09-04 10:30:00\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_cmcev_source\" : { \"und\" : [ { \"value\" : \"Online Registration\" } ] },\n  \"field_cmcev_status\" : { \"und\" : [ { \"value\" : \"Registered\" } ] },\n  \"rdf_mapping\" : []\n}",
-      8 => "{\n  \"revision_id\" : \"48\",\n  \"uid\" : \"1\",\n  \"title\" : \"Event Registration\",\n  \"created\" : \"1378290977\",\n  \"changed\" : \"1378291347\",\n  \"activity_id\" : \"48\",\n  \"type\" : \"cmcev_event_registration\",\n  \"activity_type_id\" : \"3\",\n  \"default_revision\" : \"1\",\n  \"field_activity_participants\" : { \"und\" : [ { \"target_id\" : \"6\" } ] },\n  \"field_activity_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-09-07 18:30:00\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_activity_notes\" : [],\n  \"field_cmcev_amount\" : [],\n  \"field_cmcev_event\" : { \"und\" : [ { \"target_id\" : \"{$nids[$content_uuids['simple_quantity_form']]}\" } ] },\n  \"field_cmcev_public\" : { \"und\" : [ { \"value\" : \"0\" } ] },\n  \"field_cmcev_reg_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-09-04 10:30:00\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_cmcev_source\" : { \"und\" : [ { \"value\" : \"Telephone\" } ] },\n  \"field_cmcev_status\" : { \"und\" : [ { \"value\" : \"Registered\" } ] },\n  \"rdf_mapping\" : []\n}",
-      9 => "{\n  \"revision_id\" : \"49\",\n  \"uid\" : \"1\",\n  \"title\" : \"Event Registration\",\n  \"created\" : \"1378290998\",\n  \"changed\" : \"1378291357\",\n  \"activity_id\" : \"49\",\n  \"type\" : \"cmcev_event_registration\",\n  \"activity_type_id\" : \"3\",\n  \"default_revision\" : \"1\",\n  \"field_activity_participants\" : { \"und\" : [ { \"target_id\" : \"4\" } ] },\n  \"field_activity_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-09-06 07:30:00\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_activity_notes\" : [],\n  \"field_cmcev_amount\" : [],\n  \"field_cmcev_event\" : { \"und\" : [ { \"target_id\" : \"{$nids[$content_uuids['simple_quantity_form']]}\" } ] },\n  \"field_cmcev_public\" : { \"und\" : [ { \"value\" : \"0\" } ] },\n  \"field_cmcev_reg_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-09-04 10:30:00\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_cmcev_source\" : { \"und\" : [ { \"value\" : \"Walk Up\" } ] },\n  \"field_cmcev_status\" : { \"und\" : [ { \"value\" : \"Registered\" } ] },\n  \"rdf_mapping\" : []\n}",
-      10 => "{\n  \"revision_id\" : \"50\",\n  \"uid\" : \"1\",\n  \"title\" : \"Event Registration\",\n  \"created\" : \"1378291020\",\n  \"changed\" : \"1378291365\",\n  \"activity_id\" : \"50\",\n  \"type\" : \"cmcev_event_registration\",\n  \"activity_type_id\" : \"3\",\n  \"default_revision\" : \"1\",\n  \"field_activity_participants\" : { \"und\" : [ { \"target_id\" : \"2\" } ] },\n  \"field_activity_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-09-02 07:30:00\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_activity_notes\" : [],\n  \"field_cmcev_amount\" : [],\n  \"field_cmcev_event\" : { \"und\" : [ { \"target_id\" : \"{$nids[$content_uuids['simple_quantity_form']]}\" } ] },\n  \"field_cmcev_public\" : { \"und\" : [ { \"value\" : \"0\" } ] },\n  \"field_cmcev_reg_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-09-04 10:30:00\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_cmcev_source\" : { \"und\" : [ { \"value\" : \"Walk Up\" } ] },\n  \"field_cmcev_status\" : { \"und\" : [ { \"value\" : \"Registered\" } ] },\n  \"rdf_mapping\" : []\n}",
-      11 => "{\n  \"revision_id\" : \"51\",\n  \"uid\" : \"1\",\n  \"title\" : \"On-line Event Registration\",\n  \"created\" : \"1378291498\",\n  \"changed\" : \"1378291601\",\n  \"activity_id\" : \"51\",\n  \"type\" : \"cmcev_event_registration\",\n  \"activity_type_id\" : \"3\",\n  \"default_revision\" : \"1\",\n  \"field_activity_participants\" : { \"und\" : [ { \"target_id\" : \"5\" } ] },\n  \"field_activity_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-09-04 10:45:00\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_activity_notes\" : [],\n  \"field_cmcev_amount\" : { \"und\" : [ { \"value\" : \"50.00\" } ] },\n  \"field_cmcev_event\" : { \"und\" : [ { \"target_id\" : \"{$nids[$content_uuids['simple_single_form']]}\" } ] },\n  \"field_cmcev_public\" : { \"und\" : [ { \"value\" : \"0\" } ] },\n  \"field_cmcev_reg_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-08-04 10:45:00\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_cmcev_source\" : { \"und\" : [ { \"value\" : \"Online Registration\" } ] },\n  \"field_cmcev_status\" : { \"und\" : [ { \"value\" : \"Registered\" } ] },\n  \"rdf_mapping\" : []\n}",
-      12 => "{\n  \"revision_id\" : \"52\",\n  \"uid\" : \"1\",\n  \"title\" : \"On-line Event Registration\",\n  \"created\" : \"1378291639\",\n  \"changed\" : \"1378291639\",\n  \"activity_id\" : \"52\",\n  \"type\" : \"cmcev_event_registration\",\n  \"activity_type_id\" : \"3\",\n  \"default_revision\" : \"1\",\n  \"field_activity_participants\" : { \"und\" : [ { \"target_id\" : \"10\" } ] },\n  \"field_activity_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-09-04 10:47:19\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_activity_notes\" : [],\n  \"field_cmcev_amount\" : { \"und\" : [ { \"value\" : \"50.00\" } ] },\n  \"field_cmcev_event\" : { \"und\" : [ { \"target_id\" : \"{$nids[$content_uuids['simple_single_form']]}\" } ] },\n  \"field_cmcev_public\" : { \"und\" : [ { \"value\" : \"0\" } ] },\n  \"field_cmcev_reg_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-08-10 06:45:00\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_cmcev_source\" : { \"und\" : [ { \"value\" : \"Online Registration\" } ] },\n  \"field_cmcev_status\" : { \"und\" : [ { \"value\" : \"Registered\" } ] },\n  \"rdf_mapping\" : []\n}",
-      13 => "{\n  \"revision_id\" : \"53\",\n  \"uid\" : \"1\",\n  \"title\" : \"On-line Event Registration\",\n  \"created\" : \"1378292127\",\n  \"changed\" : \"1378292127\",\n  \"activity_id\" : \"53\",\n  \"type\" : \"cmcev_event_registration\",\n  \"activity_type_id\" : \"3\",\n  \"default_revision\" : \"1\",\n  \"field_activity_participants\" : { \"und\" : [ { \"target_id\" : \"8\" } ] },\n  \"field_activity_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-09-04 10:55:28\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_activity_notes\" : [],\n  \"field_cmcev_amount\" : { \"und\" : [ { \"value\" : \"50.00\" } ] },\n  \"field_cmcev_event\" : { \"und\" : [ { \"target_id\" : \"{$nids[$content_uuids['simple_single_form']]}\" } ] },\n  \"field_cmcev_public\" : { \"und\" : [ { \"value\" : \"0\" } ] },\n  \"field_cmcev_reg_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-08-06 11:00:00\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_cmcev_source\" : { \"und\" : [ { \"value\" : \"Online Registration\" } ] },\n  \"field_cmcev_status\" : { \"und\" : [ { \"value\" : \"Registered\" } ] },\n  \"rdf_mapping\" : []\n}",
-      14 => "{\n  \"revision_id\" : \"54\",\n  \"uid\" : \"1\",\n  \"title\" : \"On-line Event Registration\",\n  \"created\" : \"1378292173\",\n  \"changed\" : \"1378292173\",\n  \"activity_id\" : \"54\",\n  \"type\" : \"cmcev_event_registration\",\n  \"activity_type_id\" : \"3\",\n  \"default_revision\" : \"1\",\n  \"field_activity_participants\" : { \"und\" : [ { \"target_id\" : \"4\" } ] },\n  \"field_activity_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-09-04 10:56:13\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_activity_notes\" : [],\n  \"field_cmcev_amount\" : { \"und\" : [ { \"value\" : \"50.00\" } ] },\n  \"field_cmcev_event\" : { \"und\" : [ { \"target_id\" : \"{$nids[$content_uuids['simple_single_form']]}\" } ] },\n  \"field_cmcev_public\" : { \"und\" : [ { \"value\" : \"0\" } ] },\n  \"field_cmcev_reg_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-08-05 06:00:00\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_cmcev_source\" : { \"und\" : [ { \"value\" : \"Online Registration\" } ] },\n  \"field_cmcev_status\" : { \"und\" : [ { \"value\" : \"Registered\" } ] },\n  \"rdf_mapping\" : []\n}",
-      15 => "{\n  \"revision_id\" : \"55\",\n  \"uid\" : \"1\",\n  \"title\" : \"On-line Event Registration\",\n  \"created\" : \"1378292241\",\n  \"changed\" : \"1378292241\",\n  \"activity_id\" : \"55\",\n  \"type\" : \"cmcev_event_registration\",\n  \"activity_type_id\" : \"3\",\n  \"default_revision\" : \"1\",\n  \"field_activity_participants\" : { \"und\" : [ { \"target_id\" : \"2\" } ] },\n  \"field_activity_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-09-04 10:57:21\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_activity_notes\" : [],\n  \"field_cmcev_amount\" : { \"und\" : [ { \"value\" : \"50.00\" } ] },\n  \"field_cmcev_event\" : { \"und\" : [ { \"target_id\" : \"{$nids[$content_uuids['simple_single_form']]}\" } ] },\n  \"field_cmcev_public\" : { \"und\" : [ { \"value\" : \"0\" } ] },\n  \"field_cmcev_reg_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-08-06 11:00:00\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_cmcev_source\" : { \"und\" : [ { \"value\" : \"Online Registration\" } ] },\n  \"field_cmcev_status\" : { \"und\" : [ { \"value\" : \"Registered\" } ] },\n  \"rdf_mapping\" : []\n}",
-      16 => "{\n  \"revision_id\" : \"56\",\n  \"uid\" : \"1\",\n  \"title\" : \"On-line Event Registration\",\n  \"created\" : \"1378292276\",\n  \"changed\" : \"1378292276\",\n  \"activity_id\" : \"56\",\n  \"type\" : \"cmcev_event_registration\",\n  \"activity_type_id\" : \"3\",\n  \"default_revision\" : \"1\",\n  \"field_activity_participants\" : { \"und\" : [ { \"target_id\" : \"11\" } ] },\n  \"field_activity_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-09-04 10:57:56\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_activity_notes\" : [],\n  \"field_cmcev_amount\" : { \"und\" : [ { \"value\" : \"50.00\" } ] },\n  \"field_cmcev_event\" : { \"und\" : [ { \"target_id\" : \"{$nids[$content_uuids['simple_single_form']]}\" } ] },\n  \"field_cmcev_public\" : { \"und\" : [ { \"value\" : \"0\" } ] },\n  \"field_cmcev_reg_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-09-02 13:15:00\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_cmcev_source\" : { \"und\" : [ { \"value\" : \"Online Registration\" } ] },\n  \"field_cmcev_status\" : { \"und\" : [ { \"value\" : \"Registered\" } ] },\n  \"rdf_mapping\" : []\n}",
-      17 => "{\n  \"revision_id\" : \"57\",\n  \"uid\" : \"1\",\n  \"title\" : \"On-line Event Registration\",\n  \"created\" : \"1378292706\",\n  \"changed\" : \"1378292706\",\n  \"activity_id\" : \"57\",\n  \"type\" : \"cmcev_event_registration\",\n  \"activity_type_id\" : \"3\",\n  \"default_revision\" : \"1\",\n  \"field_activity_participants\" : { \"und\" : [ { \"target_id\" : \"9\" } ] },\n  \"field_activity_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-09-04 11:05:06\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_activity_notes\" : [],\n  \"field_cmcev_amount\" : { \"und\" : [ { \"value\" : \"50.00\" } ] },\n  \"field_cmcev_event\" : { \"und\" : [ { \"target_id\" : \"{$nids[$content_uuids['simple_many_form']]}\" } ] },\n  \"field_cmcev_public\" : { \"und\" : [ { \"value\" : \"0\" } ] },\n  \"field_cmcev_reg_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-09-03 11:00:00\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_cmcev_source\" : { \"und\" : [ { \"value\" : \"Online Registration\" } ] },\n  \"field_cmcev_status\" : { \"und\" : [ { \"value\" : \"Registered\" } ] },\n  \"rdf_mapping\" : []\n}",
-      18 => "{\n  \"revision_id\" : \"58\",\n  \"uid\" : \"1\",\n  \"title\" : \"On-line Event Registration\",\n  \"created\" : \"1378292733\",\n  \"changed\" : \"1378292733\",\n  \"activity_id\" : \"58\",\n  \"type\" : \"cmcev_event_registration\",\n  \"activity_type_id\" : \"3\",\n  \"default_revision\" : \"1\",\n  \"field_activity_participants\" : { \"und\" : [ { \"target_id\" : \"3\" } ] },\n  \"field_activity_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-09-04 11:05:33\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_activity_notes\" : [],\n  \"field_cmcev_amount\" : { \"und\" : [ { \"value\" : \"200.00\" } ] },\n  \"field_cmcev_event\" : { \"und\" : [ { \"target_id\" : \"{$nids[$content_uuids['simple_many_form']]}\" } ] },\n  \"field_cmcev_public\" : { \"und\" : [ { \"value\" : \"0\" } ] },\n  \"field_cmcev_reg_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-08-13 11:00:00\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_cmcev_source\" : { \"und\" : [ { \"value\" : \"Telephone\" } ] },\n  \"field_cmcev_status\" : { \"und\" : [ { \"value\" : \"Registered\" } ] },\n  \"rdf_mapping\" : []\n}",
-      19 => "{\n  \"revision_id\" : \"59\",\n  \"uid\" : \"1\",\n  \"title\" : \"On-line Event Registration\",\n  \"created\" : \"1378292831\",\n  \"changed\" : \"1378292831\",\n  \"activity_id\" : \"59\",\n  \"type\" : \"cmcev_event_registration\",\n  \"activity_type_id\" : \"3\",\n  \"default_revision\" : \"1\",\n  \"field_activity_participants\" : { \"und\" : [ { \"target_id\" : \"5\" } ] },\n  \"field_activity_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-09-04 11:07:11\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_activity_notes\" : [],\n  \"field_cmcev_amount\" : { \"und\" : [ { \"value\" : \"0.00\" } ] },\n  \"field_cmcev_event\" : { \"und\" : [ { \"target_id\" : \"{$nids[$content_uuids['simple_many_form']]}\" } ] },\n  \"field_cmcev_public\" : { \"und\" : [ { \"value\" : \"0\" } ] },\n  \"field_cmcev_reg_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-08-15 11:00:00\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_cmcev_source\" : { \"und\" : [ { \"value\" : \"Walk Up\" } ] },\n  \"field_cmcev_status\" : { \"und\" : [ { \"value\" : \"Registered\" } ] },\n  \"rdf_mapping\" : []\n}",
-      20 => "{\n  \"revision_id\" : \"60\",\n  \"uid\" : \"1\",\n  \"title\" : \"On-line Event Registration\",\n  \"created\" : \"1378292867\",\n  \"changed\" : \"1378292867\",\n  \"activity_id\" : \"60\",\n  \"type\" : \"cmcev_event_registration\",\n  \"activity_type_id\" : \"3\",\n  \"default_revision\" : \"1\",\n  \"field_activity_participants\" : { \"und\" : [ { \"target_id\" : \"8\" } ] },\n  \"field_activity_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-09-04 11:07:48\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_activity_notes\" : [],\n  \"field_cmcev_amount\" : { \"und\" : [ { \"value\" : \"200.00\" } ] },\n  \"field_cmcev_event\" : { \"und\" : [ { \"target_id\" : \"{$nids[$content_uuids['simple_many_form']]}\" } ] },\n  \"field_cmcev_public\" : { \"und\" : [ { \"value\" : \"0\" } ] },\n  \"field_cmcev_reg_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-08-20 11:00:00\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_cmcev_source\" : { \"und\" : [ { \"value\" : \"Walk Up\" } ] },\n  \"field_cmcev_status\" : { \"und\" : [ { \"value\" : \"Registered\" } ] },\n  \"rdf_mapping\" : []\n}",
-      21 => "{\n  \"revision_id\" : \"61\",\n  \"uid\" : \"1\",\n  \"title\" : \"On-line Event Registration\",\n  \"created\" : \"1378292909\",\n  \"changed\" : \"1378292909\",\n  \"activity_id\" : \"61\",\n  \"type\" : \"cmcev_event_registration\",\n  \"activity_type_id\" : \"3\",\n  \"default_revision\" : \"1\",\n  \"field_activity_participants\" : { \"und\" : [ { \"target_id\" : \"4\" } ] },\n  \"field_activity_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-09-04 11:08:30\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_activity_notes\" : [],\n  \"field_cmcev_amount\" : { \"und\" : [ { \"value\" : \"50.00\" } ] },\n  \"field_cmcev_event\" : { \"und\" : [ { \"target_id\" : \"{$nids[$content_uuids['simple_many_form']]}\" } ] },\n  \"field_cmcev_public\" : { \"und\" : [ { \"value\" : \"0\" } ] },\n  \"field_cmcev_reg_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-08-28 11:15:00\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_cmcev_source\" : { \"und\" : [ { \"value\" : \"Online Registration\" } ] },\n  \"field_cmcev_status\" : { \"und\" : [ { \"value\" : \"Registered\" } ] },\n  \"rdf_mapping\" : []\n}",
-      22 => "{\n  \"revision_id\" : \"62\",\n  \"uid\" : \"1\",\n  \"title\" : \"On-line Event Registration\",\n  \"created\" : \"1378292946\",\n  \"changed\" : \"1378292946\",\n  \"activity_id\" : \"62\",\n  \"type\" : \"cmcev_event_registration\",\n  \"activity_type_id\" : \"3\",\n  \"default_revision\" : \"1\",\n  \"field_activity_participants\" : { \"und\" : [ { \"target_id\" : \"2\" } ] },\n  \"field_activity_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-09-04 11:09:06\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_activity_notes\" : [],\n  \"field_cmcev_amount\" : { \"und\" : [ { \"value\" : \"50.00\" } ] },\n  \"field_cmcev_event\" : { \"und\" : [ { \"target_id\" : \"{$nids[$content_uuids['simple_many_form']]}\" } ] },\n  \"field_cmcev_public\" : { \"und\" : [ { \"value\" : \"0\" } ] },\n  \"field_cmcev_reg_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-08-18 11:15:00\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_cmcev_source\" : { \"und\" : [ { \"value\" : \"Online Registration\" } ] },\n  \"field_cmcev_status\" : { \"und\" : [ { \"value\" : \"Registered\" } ] },\n  \"rdf_mapping\" : []\n}",
-      23 => "{\n  \"revision_id\" : \"63\",\n  \"uid\" : \"1\",\n  \"title\" : \"On-line Event Registration\",\n  \"created\" : \"1378292979\",\n  \"changed\" : \"1378292979\",\n  \"activity_id\" : \"63\",\n  \"type\" : \"cmcev_event_registration\",\n  \"activity_type_id\" : \"3\",\n  \"default_revision\" : \"1\",\n  \"field_activity_participants\" : { \"und\" : [ { \"target_id\" : \"11\" } ] },\n  \"field_activity_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-09-04 11:09:39\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_activity_notes\" : [],\n  \"field_cmcev_amount\" : { \"und\" : [ { \"value\" : \"200.00\" } ] },\n  \"field_cmcev_event\" : { \"und\" : [ { \"target_id\" : \"{$nids[$content_uuids['simple_many_form']]}\" } ] },\n  \"field_cmcev_public\" : { \"und\" : [ { \"value\" : \"0\" } ] },\n  \"field_cmcev_reg_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-08-25 11:15:00\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_cmcev_source\" : { \"und\" : [ { \"value\" : \"Telephone\" } ] },\n  \"field_cmcev_status\" : { \"und\" : [ { \"value\" : \"Registered\" } ] },\n  \"rdf_mapping\" : []\n}",
-      24 => "{\n  \"revision_id\" : \"64\",\n  \"uid\" : \"1\",\n  \"title\" : \"On-line Event Registration\",\n  \"created\" : \"1378293129\",\n  \"changed\" : \"1378293129\",\n  \"activity_id\" : \"64\",\n  \"type\" : \"cmcev_event_registration\",\n  \"activity_type_id\" : \"3\",\n  \"default_revision\" : \"1\",\n  \"field_activity_participants\" : { \"und\" : [ { \"target_id\" : \"8\" } ] },\n  \"field_activity_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-09-04 11:12:10\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_activity_notes\" : [],\n  \"field_cmcev_amount\" : { \"und\" : [ { \"value\" : \"250.00\" } ] },\n  \"field_cmcev_event\" : { \"und\" : [ { \"target_id\" : \"{$nids[$content_uuids['simple_reg_form']]}\" } ] },\n  \"field_cmcev_public\" : { \"und\" : [ { \"value\" : \"0\" } ] },\n  \"field_cmcev_reg_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-08-26 11:15:00\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_cmcev_source\" : { \"und\" : [ { \"value\" : \"Telephone\" } ] },\n  \"field_cmcev_status\" : { \"und\" : [ { \"value\" : \"Attended\" } ] },\n  \"rdf_mapping\" : []\n}",
-      25 => "{\n  \"revision_id\" : \"65\",\n  \"uid\" : \"1\",\n  \"title\" : \"On-line Event Registration\",\n  \"created\" : \"1378294466\",\n  \"changed\" : \"1378294466\",\n  \"activity_id\" : \"65\",\n  \"type\" : \"cmcev_event_registration\",\n  \"activity_type_id\" : \"3\",\n  \"default_revision\" : \"1\",\n  \"field_activity_participants\" : { \"und\" : [ { \"target_id\" : \"4\" } ] },\n  \"field_activity_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-09-04 11:34:26\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_activity_notes\" : [],\n  \"field_cmcev_amount\" : { \"und\" : [ { \"value\" : \"0.00\" } ] },\n  \"field_cmcev_event\" : { \"und\" : [ { \"target_id\" : \"{$nids[$content_uuids['simple_reg_form']]}\" } ] },\n  \"field_cmcev_public\" : { \"und\" : [ { \"value\" : \"0\" } ] },\n  \"field_cmcev_reg_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-08-26 11:30:00\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_cmcev_source\" : { \"und\" : [ { \"value\" : \"Walk Up\" } ] },\n  \"field_cmcev_status\" : { \"und\" : [ { \"value\" : \"Attended\" } ] },\n  \"rdf_mapping\" : []\n}",
-      26 => "{\n  \"revision_id\" : \"66\",\n  \"uid\" : \"1\",\n  \"title\" : \"On-line Event Registration\",\n  \"created\" : \"1378294516\",\n  \"changed\" : \"1378294516\",\n  \"activity_id\" : \"66\",\n  \"type\" : \"cmcev_event_registration\",\n  \"activity_type_id\" : \"3\",\n  \"default_revision\" : \"1\",\n  \"field_activity_participants\" : { \"und\" : [ { \"target_id\" : \"2\" } ] },\n  \"field_activity_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-09-04 11:35:16\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_activity_notes\" : [],\n  \"field_cmcev_amount\" : { \"und\" : [ { \"value\" : \"150.00\" } ] },\n  \"field_cmcev_event\" : { \"und\" : [ { \"target_id\" : \"{$nids[$content_uuids['simple_reg_form']]}\" } ] },\n  \"field_cmcev_public\" : { \"und\" : [ { \"value\" : \"0\" } ] },\n  \"field_cmcev_reg_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-08-26 11:30:00\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_cmcev_source\" : { \"und\" : [ { \"value\" : \"Online Registration\" } ] },\n  \"field_cmcev_status\" : { \"und\" : [ { \"value\" : \"Attended\" } ] },\n  \"rdf_mapping\" : []\n}",
-      27 => "{\n  \"revision_id\" : \"67\",\n  \"uid\" : \"1\",\n  \"title\" : \"On-line Event Registration\",\n  \"created\" : \"1378294658\",\n  \"changed\" : \"1378294658\",\n  \"activity_id\" : \"67\",\n  \"type\" : \"cmcev_event_registration\",\n  \"activity_type_id\" : \"3\",\n  \"default_revision\" : \"1\",\n  \"field_activity_participants\" : { \"und\" : [ { \"target_id\" : \"11\" } ] },\n  \"field_activity_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-09-04 11:37:39\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_activity_notes\" : [],\n  \"field_cmcev_amount\" : { \"und\" : [ { \"value\" : \"400.00\" } ] },\n  \"field_cmcev_event\" : { \"und\" : [ { \"target_id\" : \"{$nids[$content_uuids['simple_reg_form']]}\" } ] },\n  \"field_cmcev_public\" : { \"und\" : [ { \"value\" : \"0\" } ] },\n  \"field_cmcev_reg_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-08-21 11:30:00\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_cmcev_source\" : { \"und\" : [ { \"value\" : \"Walk Up\" } ] },\n  \"field_cmcev_status\" : { \"und\" : [ { \"value\" : \"Attended\" } ] },\n  \"rdf_mapping\" : []\n}",
-      28 => "{\n  \"revision_id\" : \"68\",\n  \"uid\" : \"1\",\n  \"title\" : \"On-line Event Registration\",\n  \"created\" : \"1378294837\",\n  \"changed\" : \"1378294837\",\n  \"activity_id\" : \"68\",\n  \"type\" : \"cmcev_event_registration\",\n  \"activity_type_id\" : \"3\",\n  \"default_revision\" : \"1\",\n  \"field_activity_participants\" : { \"und\" : [ { \"target_id\" : \"7\" } ] },\n  \"field_activity_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-09-04 11:40:37\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_activity_notes\" : [],\n  \"field_cmcev_amount\" : { \"und\" : [ { \"value\" : \"50.00\" } ] },\n  \"field_cmcev_event\" : { \"und\" : [ { \"target_id\" : \"{$nids[$content_uuids['simple_reg_form']]}\" } ] },\n  \"field_cmcev_public\" : { \"und\" : [ { \"value\" : \"0\" } ] },\n  \"field_cmcev_reg_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-08-22 11:45:00\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_cmcev_source\" : { \"und\" : [ { \"value\" : \"Online Registration\" } ] },\n  \"field_cmcev_status\" : { \"und\" : [ { \"value\" : \"Registered\" } ] },\n  \"rdf_mapping\" : []\n}",
+      1 => "{\n  \"revision_id\" : \"41\",\n  \"uid\" : \"1\",\n  \"title\" : \"Event Registration\",\n  \"created\" : \"1378290173\",\n  \"changed\" : \"1378291143\",\n  \"activity_id\" : \"41\",\n  \"type\" : \"cmcev_event_registration\",\n  \"default_revision\" : \"1\",\n  \"field_activity_participants\" : { \"und\" : [ { \"target_id\" : \"11\" } ] },\n  \"field_activity_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-09-04 10:30:00\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_activity_notes\" : [],\n  \"field_cmcev_amount\" : [],\n  \"field_cmcev_event\" : { \"und\" : [ { \"target_id\" : \"{$nids[$content_uuids['simple_quantity_form']]}\" } ] },\n  \"field_cmcev_public\" : { \"und\" : [ { \"value\" : \"0\" } ] },\n  \"field_cmcev_reg_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-09-01 10:30:00\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_cmcev_source\" : { \"und\" : [ { \"value\" : \"Online Registration\" } ] },\n  \"field_cmcev_status\" : { \"und\" : [ { \"value\" : \"Registered\" } ] },\n  \"rdf_mapping\" : []\n}",
+      2 => "{\n  \"revision_id\" : \"42\",\n  \"uid\" : \"1\",\n  \"title\" : \"Event Registration\",\n  \"created\" : \"1378290823\",\n  \"changed\" : \"1378291165\",\n  \"activity_id\" : \"42\",\n  \"type\" : \"cmcev_event_registration\",\n  \"default_revision\" : \"1\",\n  \"field_activity_participants\" : { \"und\" : [ { \"target_id\" : \"9\" } ] },\n  \"field_activity_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-09-02 07:30:00\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_activity_notes\" : [],\n  \"field_cmcev_amount\" : [],\n  \"field_cmcev_event\" : { \"und\" : [ { \"target_id\" : \"{$nids[$content_uuids['simple_quantity_form']]}\" } ] },\n  \"field_cmcev_public\" : { \"und\" : [ { \"value\" : \"0\" } ] },\n  \"field_cmcev_reg_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-09-04 10:30:00\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_cmcev_source\" : { \"und\" : [ { \"value\" : \"Online Registration\" } ] },\n  \"field_cmcev_status\" : { \"und\" : [ { \"value\" : \"Registered\" } ] },\n  \"rdf_mapping\" : []\n}",
+      3 => "{\n  \"revision_id\" : \"43\",\n  \"uid\" : \"1\",\n  \"title\" : \"Event Registration\",\n  \"created\" : \"1378290863\",\n  \"changed\" : \"1378291185\",\n  \"activity_id\" : \"43\",\n  \"type\" : \"cmcev_event_registration\",\n  \"default_revision\" : \"1\",\n  \"field_activity_participants\" : { \"und\" : [ { \"target_id\" : \"7\" } ] },\n  \"field_activity_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-09-03 09:00:00\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_activity_notes\" : [],\n  \"field_cmcev_amount\" : [],\n  \"field_cmcev_event\" : { \"und\" : [ { \"target_id\" : \"{$nids[$content_uuids['simple_quantity_form']]}\" } ] },\n  \"field_cmcev_public\" : { \"und\" : [ { \"value\" : \"0\" } ] },\n  \"field_cmcev_reg_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-09-04 10:30:00\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_cmcev_source\" : { \"und\" : [ { \"value\" : \"Online Registration\" } ] },\n  \"field_cmcev_status\" : { \"und\" : [ { \"value\" : \"Registered\" } ] },\n  \"rdf_mapping\" : []\n}",
+      4 => "{\n  \"revision_id\" : \"44\",\n  \"uid\" : \"1\",\n  \"title\" : \"Event Registration\",\n  \"created\" : \"1378290895\",\n  \"changed\" : \"1378291198\",\n  \"activity_id\" : \"44\",\n  \"type\" : \"cmcev_event_registration\",\n  \"default_revision\" : \"1\",\n  \"field_activity_participants\" : { \"und\" : [ { \"target_id\" : \"5\" } ] },\n  \"field_activity_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-09-02 13:30:00\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_activity_notes\" : [],\n  \"field_cmcev_amount\" : [],\n  \"field_cmcev_event\" : { \"und\" : [ { \"target_id\" : \"{$nids[$content_uuids['simple_quantity_form']]}\" } ] },\n  \"field_cmcev_public\" : { \"und\" : [ { \"value\" : \"0\" } ] },\n  \"field_cmcev_reg_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-09-04 10:30:00\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_cmcev_source\" : { \"und\" : [ { \"value\" : \"Online Registration\" } ] },\n  \"field_cmcev_status\" : { \"und\" : [ { \"value\" : \"Registered\" } ] },\n  \"rdf_mapping\" : []\n}",
+      5 => "{\n  \"revision_id\" : \"45\",\n  \"uid\" : \"1\",\n  \"title\" : \"Event Registration\",\n  \"created\" : \"1378290913\",\n  \"changed\" : \"1378291212\",\n  \"activity_id\" : \"45\",\n  \"type\" : \"cmcev_event_registration\",\n  \"default_revision\" : \"1\",\n  \"field_activity_participants\" : { \"und\" : [ { \"target_id\" : \"3\" } ] },\n  \"field_activity_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-09-02 16:30:00\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_activity_notes\" : [],\n  \"field_cmcev_amount\" : [],\n  \"field_cmcev_event\" : { \"und\" : [ { \"target_id\" : \"{$nids[$content_uuids['simple_quantity_form']]}\" } ] },\n  \"field_cmcev_public\" : { \"und\" : [ { \"value\" : \"0\" } ] },\n  \"field_cmcev_reg_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-09-04 10:30:00\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_cmcev_source\" : { \"und\" : [ { \"value\" : \"Online Registration\" } ] },\n  \"field_cmcev_status\" : { \"und\" : [ { \"value\" : \"Registered\" } ] },\n  \"rdf_mapping\" : []\n}",
+      6 => "{\n  \"revision_id\" : \"46\",\n  \"uid\" : \"1\",\n  \"title\" : \"Event Registration\",\n  \"created\" : \"1378290935\",\n  \"changed\" : \"1378291224\",\n  \"activity_id\" : \"46\",\n  \"type\" : \"cmcev_event_registration\",\n  \"default_revision\" : \"1\",\n  \"field_activity_participants\" : { \"und\" : [ { \"target_id\" : \"10\" } ] },\n  \"field_activity_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-09-06 10:30:00\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_activity_notes\" : [],\n  \"field_cmcev_amount\" : [],\n  \"field_cmcev_event\" : { \"und\" : [ { \"target_id\" : \"{$nids[$content_uuids['simple_quantity_form']]}\" } ] },\n  \"field_cmcev_public\" : { \"und\" : [ { \"value\" : \"0\" } ] },\n  \"field_cmcev_reg_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-09-04 10:30:00\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_cmcev_source\" : { \"und\" : [ { \"value\" : \"Online Registration\" } ] },\n  \"field_cmcev_status\" : { \"und\" : [ { \"value\" : \"Registered\" } ] },\n  \"rdf_mapping\" : []\n}",
+      7 => "{\n  \"revision_id\" : \"47\",\n  \"uid\" : \"1\",\n  \"title\" : \"Event Registration\",\n  \"created\" : \"1378290958\",\n  \"changed\" : \"1378291239\",\n  \"activity_id\" : \"47\",\n  \"type\" : \"cmcev_event_registration\",\n  \"default_revision\" : \"1\",\n  \"field_activity_participants\" : { \"und\" : [ { \"target_id\" : \"8\" } ] },\n  \"field_activity_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-09-05 06:30:00\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_activity_notes\" : [],\n  \"field_cmcev_amount\" : [],\n  \"field_cmcev_event\" : { \"und\" : [ { \"target_id\" : \"{$nids[$content_uuids['simple_quantity_form']]}\" } ] },\n  \"field_cmcev_public\" : { \"und\" : [ { \"value\" : \"0\" } ] },\n  \"field_cmcev_reg_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-09-04 10:30:00\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_cmcev_source\" : { \"und\" : [ { \"value\" : \"Online Registration\" } ] },\n  \"field_cmcev_status\" : { \"und\" : [ { \"value\" : \"Registered\" } ] },\n  \"rdf_mapping\" : []\n}",
+      8 => "{\n  \"revision_id\" : \"48\",\n  \"uid\" : \"1\",\n  \"title\" : \"Event Registration\",\n  \"created\" : \"1378290977\",\n  \"changed\" : \"1378291347\",\n  \"activity_id\" : \"48\",\n  \"type\" : \"cmcev_event_registration\",\n  \"default_revision\" : \"1\",\n  \"field_activity_participants\" : { \"und\" : [ { \"target_id\" : \"6\" } ] },\n  \"field_activity_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-09-07 18:30:00\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_activity_notes\" : [],\n  \"field_cmcev_amount\" : [],\n  \"field_cmcev_event\" : { \"und\" : [ { \"target_id\" : \"{$nids[$content_uuids['simple_quantity_form']]}\" } ] },\n  \"field_cmcev_public\" : { \"und\" : [ { \"value\" : \"0\" } ] },\n  \"field_cmcev_reg_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-09-04 10:30:00\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_cmcev_source\" : { \"und\" : [ { \"value\" : \"Telephone\" } ] },\n  \"field_cmcev_status\" : { \"und\" : [ { \"value\" : \"Registered\" } ] },\n  \"rdf_mapping\" : []\n}",
+      9 => "{\n  \"revision_id\" : \"49\",\n  \"uid\" : \"1\",\n  \"title\" : \"Event Registration\",\n  \"created\" : \"1378290998\",\n  \"changed\" : \"1378291357\",\n  \"activity_id\" : \"49\",\n  \"type\" : \"cmcev_event_registration\",\n  \"default_revision\" : \"1\",\n  \"field_activity_participants\" : { \"und\" : [ { \"target_id\" : \"4\" } ] },\n  \"field_activity_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-09-06 07:30:00\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_activity_notes\" : [],\n  \"field_cmcev_amount\" : [],\n  \"field_cmcev_event\" : { \"und\" : [ { \"target_id\" : \"{$nids[$content_uuids['simple_quantity_form']]}\" } ] },\n  \"field_cmcev_public\" : { \"und\" : [ { \"value\" : \"0\" } ] },\n  \"field_cmcev_reg_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-09-04 10:30:00\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_cmcev_source\" : { \"und\" : [ { \"value\" : \"Walk Up\" } ] },\n  \"field_cmcev_status\" : { \"und\" : [ { \"value\" : \"Registered\" } ] },\n  \"rdf_mapping\" : []\n}",
+      10 => "{\n  \"revision_id\" : \"50\",\n  \"uid\" : \"1\",\n  \"title\" : \"Event Registration\",\n  \"created\" : \"1378291020\",\n  \"changed\" : \"1378291365\",\n  \"activity_id\" : \"50\",\n  \"type\" : \"cmcev_event_registration\",\n  \"default_revision\" : \"1\",\n  \"field_activity_participants\" : { \"und\" : [ { \"target_id\" : \"2\" } ] },\n  \"field_activity_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-09-02 07:30:00\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_activity_notes\" : [],\n  \"field_cmcev_amount\" : [],\n  \"field_cmcev_event\" : { \"und\" : [ { \"target_id\" : \"{$nids[$content_uuids['simple_quantity_form']]}\" } ] },\n  \"field_cmcev_public\" : { \"und\" : [ { \"value\" : \"0\" } ] },\n  \"field_cmcev_reg_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-09-04 10:30:00\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_cmcev_source\" : { \"und\" : [ { \"value\" : \"Walk Up\" } ] },\n  \"field_cmcev_status\" : { \"und\" : [ { \"value\" : \"Registered\" } ] },\n  \"rdf_mapping\" : []\n}",
+      11 => "{\n  \"revision_id\" : \"51\",\n  \"uid\" : \"1\",\n  \"title\" : \"On-line Event Registration\",\n  \"created\" : \"1378291498\",\n  \"changed\" : \"1378291601\",\n  \"activity_id\" : \"51\",\n  \"type\" : \"cmcev_event_registration\",\n  \"default_revision\" : \"1\",\n  \"field_activity_participants\" : { \"und\" : [ { \"target_id\" : \"5\" } ] },\n  \"field_activity_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-09-04 10:45:00\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_activity_notes\" : [],\n  \"field_cmcev_amount\" : { \"und\" : [ { \"value\" : \"50.00\" } ] },\n  \"field_cmcev_event\" : { \"und\" : [ { \"target_id\" : \"{$nids[$content_uuids['simple_single_form']]}\" } ] },\n  \"field_cmcev_public\" : { \"und\" : [ { \"value\" : \"0\" } ] },\n  \"field_cmcev_reg_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-08-04 10:45:00\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_cmcev_source\" : { \"und\" : [ { \"value\" : \"Online Registration\" } ] },\n  \"field_cmcev_status\" : { \"und\" : [ { \"value\" : \"Registered\" } ] },\n  \"rdf_mapping\" : []\n}",
+      12 => "{\n  \"revision_id\" : \"52\",\n  \"uid\" : \"1\",\n  \"title\" : \"On-line Event Registration\",\n  \"created\" : \"1378291639\",\n  \"changed\" : \"1378291639\",\n  \"activity_id\" : \"52\",\n  \"type\" : \"cmcev_event_registration\",\n  \"default_revision\" : \"1\",\n  \"field_activity_participants\" : { \"und\" : [ { \"target_id\" : \"10\" } ] },\n  \"field_activity_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-09-04 10:47:19\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_activity_notes\" : [],\n  \"field_cmcev_amount\" : { \"und\" : [ { \"value\" : \"50.00\" } ] },\n  \"field_cmcev_event\" : { \"und\" : [ { \"target_id\" : \"{$nids[$content_uuids['simple_single_form']]}\" } ] },\n  \"field_cmcev_public\" : { \"und\" : [ { \"value\" : \"0\" } ] },\n  \"field_cmcev_reg_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-08-10 06:45:00\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_cmcev_source\" : { \"und\" : [ { \"value\" : \"Online Registration\" } ] },\n  \"field_cmcev_status\" : { \"und\" : [ { \"value\" : \"Registered\" } ] },\n  \"rdf_mapping\" : []\n}",
+      13 => "{\n  \"revision_id\" : \"53\",\n  \"uid\" : \"1\",\n  \"title\" : \"On-line Event Registration\",\n  \"created\" : \"1378292127\",\n  \"changed\" : \"1378292127\",\n  \"activity_id\" : \"53\",\n  \"type\" : \"cmcev_event_registration\",\n  \"default_revision\" : \"1\",\n  \"field_activity_participants\" : { \"und\" : [ { \"target_id\" : \"8\" } ] },\n  \"field_activity_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-09-04 10:55:28\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_activity_notes\" : [],\n  \"field_cmcev_amount\" : { \"und\" : [ { \"value\" : \"50.00\" } ] },\n  \"field_cmcev_event\" : { \"und\" : [ { \"target_id\" : \"{$nids[$content_uuids['simple_single_form']]}\" } ] },\n  \"field_cmcev_public\" : { \"und\" : [ { \"value\" : \"0\" } ] },\n  \"field_cmcev_reg_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-08-06 11:00:00\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_cmcev_source\" : { \"und\" : [ { \"value\" : \"Online Registration\" } ] },\n  \"field_cmcev_status\" : { \"und\" : [ { \"value\" : \"Registered\" } ] },\n  \"rdf_mapping\" : []\n}",
+      14 => "{\n  \"revision_id\" : \"54\",\n  \"uid\" : \"1\",\n  \"title\" : \"On-line Event Registration\",\n  \"created\" : \"1378292173\",\n  \"changed\" : \"1378292173\",\n  \"activity_id\" : \"54\",\n  \"type\" : \"cmcev_event_registration\",\n  \"default_revision\" : \"1\",\n  \"field_activity_participants\" : { \"und\" : [ { \"target_id\" : \"4\" } ] },\n  \"field_activity_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-09-04 10:56:13\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_activity_notes\" : [],\n  \"field_cmcev_amount\" : { \"und\" : [ { \"value\" : \"50.00\" } ] },\n  \"field_cmcev_event\" : { \"und\" : [ { \"target_id\" : \"{$nids[$content_uuids['simple_single_form']]}\" } ] },\n  \"field_cmcev_public\" : { \"und\" : [ { \"value\" : \"0\" } ] },\n  \"field_cmcev_reg_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-08-05 06:00:00\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_cmcev_source\" : { \"und\" : [ { \"value\" : \"Online Registration\" } ] },\n  \"field_cmcev_status\" : { \"und\" : [ { \"value\" : \"Registered\" } ] },\n  \"rdf_mapping\" : []\n}",
+      15 => "{\n  \"revision_id\" : \"55\",\n  \"uid\" : \"1\",\n  \"title\" : \"On-line Event Registration\",\n  \"created\" : \"1378292241\",\n  \"changed\" : \"1378292241\",\n  \"activity_id\" : \"55\",\n  \"type\" : \"cmcev_event_registration\",\n  \"default_revision\" : \"1\",\n  \"field_activity_participants\" : { \"und\" : [ { \"target_id\" : \"2\" } ] },\n  \"field_activity_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-09-04 10:57:21\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_activity_notes\" : [],\n  \"field_cmcev_amount\" : { \"und\" : [ { \"value\" : \"50.00\" } ] },\n  \"field_cmcev_event\" : { \"und\" : [ { \"target_id\" : \"{$nids[$content_uuids['simple_single_form']]}\" } ] },\n  \"field_cmcev_public\" : { \"und\" : [ { \"value\" : \"0\" } ] },\n  \"field_cmcev_reg_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-08-06 11:00:00\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_cmcev_source\" : { \"und\" : [ { \"value\" : \"Online Registration\" } ] },\n  \"field_cmcev_status\" : { \"und\" : [ { \"value\" : \"Registered\" } ] },\n  \"rdf_mapping\" : []\n}",
+      16 => "{\n  \"revision_id\" : \"56\",\n  \"uid\" : \"1\",\n  \"title\" : \"On-line Event Registration\",\n  \"created\" : \"1378292276\",\n  \"changed\" : \"1378292276\",\n  \"activity_id\" : \"56\",\n  \"type\" : \"cmcev_event_registration\",\n  \"default_revision\" : \"1\",\n  \"field_activity_participants\" : { \"und\" : [ { \"target_id\" : \"11\" } ] },\n  \"field_activity_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-09-04 10:57:56\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_activity_notes\" : [],\n  \"field_cmcev_amount\" : { \"und\" : [ { \"value\" : \"50.00\" } ] },\n  \"field_cmcev_event\" : { \"und\" : [ { \"target_id\" : \"{$nids[$content_uuids['simple_single_form']]}\" } ] },\n  \"field_cmcev_public\" : { \"und\" : [ { \"value\" : \"0\" } ] },\n  \"field_cmcev_reg_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-09-02 13:15:00\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_cmcev_source\" : { \"und\" : [ { \"value\" : \"Online Registration\" } ] },\n  \"field_cmcev_status\" : { \"und\" : [ { \"value\" : \"Registered\" } ] },\n  \"rdf_mapping\" : []\n}",
+      17 => "{\n  \"revision_id\" : \"57\",\n  \"uid\" : \"1\",\n  \"title\" : \"On-line Event Registration\",\n  \"created\" : \"1378292706\",\n  \"changed\" : \"1378292706\",\n  \"activity_id\" : \"57\",\n  \"type\" : \"cmcev_event_registration\",\n  \"default_revision\" : \"1\",\n  \"field_activity_participants\" : { \"und\" : [ { \"target_id\" : \"9\" } ] },\n  \"field_activity_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-09-04 11:05:06\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_activity_notes\" : [],\n  \"field_cmcev_amount\" : { \"und\" : [ { \"value\" : \"50.00\" } ] },\n  \"field_cmcev_event\" : { \"und\" : [ { \"target_id\" : \"{$nids[$content_uuids['simple_many_form']]}\" } ] },\n  \"field_cmcev_public\" : { \"und\" : [ { \"value\" : \"0\" } ] },\n  \"field_cmcev_reg_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-09-03 11:00:00\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_cmcev_source\" : { \"und\" : [ { \"value\" : \"Online Registration\" } ] },\n  \"field_cmcev_status\" : { \"und\" : [ { \"value\" : \"Registered\" } ] },\n  \"rdf_mapping\" : []\n}",
+      18 => "{\n  \"revision_id\" : \"58\",\n  \"uid\" : \"1\",\n  \"title\" : \"On-line Event Registration\",\n  \"created\" : \"1378292733\",\n  \"changed\" : \"1378292733\",\n  \"activity_id\" : \"58\",\n  \"type\" : \"cmcev_event_registration\",\n  \"default_revision\" : \"1\",\n  \"field_activity_participants\" : { \"und\" : [ { \"target_id\" : \"3\" } ] },\n  \"field_activity_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-09-04 11:05:33\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_activity_notes\" : [],\n  \"field_cmcev_amount\" : { \"und\" : [ { \"value\" : \"200.00\" } ] },\n  \"field_cmcev_event\" : { \"und\" : [ { \"target_id\" : \"{$nids[$content_uuids['simple_many_form']]}\" } ] },\n  \"field_cmcev_public\" : { \"und\" : [ { \"value\" : \"0\" } ] },\n  \"field_cmcev_reg_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-08-13 11:00:00\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_cmcev_source\" : { \"und\" : [ { \"value\" : \"Telephone\" } ] },\n  \"field_cmcev_status\" : { \"und\" : [ { \"value\" : \"Registered\" } ] },\n  \"rdf_mapping\" : []\n}",
+      19 => "{\n  \"revision_id\" : \"59\",\n  \"uid\" : \"1\",\n  \"title\" : \"On-line Event Registration\",\n  \"created\" : \"1378292831\",\n  \"changed\" : \"1378292831\",\n  \"activity_id\" : \"59\",\n  \"type\" : \"cmcev_event_registration\",\n  \"default_revision\" : \"1\",\n  \"field_activity_participants\" : { \"und\" : [ { \"target_id\" : \"5\" } ] },\n  \"field_activity_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-09-04 11:07:11\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_activity_notes\" : [],\n  \"field_cmcev_amount\" : { \"und\" : [ { \"value\" : \"0.00\" } ] },\n  \"field_cmcev_event\" : { \"und\" : [ { \"target_id\" : \"{$nids[$content_uuids['simple_many_form']]}\" } ] },\n  \"field_cmcev_public\" : { \"und\" : [ { \"value\" : \"0\" } ] },\n  \"field_cmcev_reg_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-08-15 11:00:00\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_cmcev_source\" : { \"und\" : [ { \"value\" : \"Walk Up\" } ] },\n  \"field_cmcev_status\" : { \"und\" : [ { \"value\" : \"Registered\" } ] },\n  \"rdf_mapping\" : []\n}",
+      20 => "{\n  \"revision_id\" : \"60\",\n  \"uid\" : \"1\",\n  \"title\" : \"On-line Event Registration\",\n  \"created\" : \"1378292867\",\n  \"changed\" : \"1378292867\",\n  \"activity_id\" : \"60\",\n  \"type\" : \"cmcev_event_registration\",\n  \"default_revision\" : \"1\",\n  \"field_activity_participants\" : { \"und\" : [ { \"target_id\" : \"8\" } ] },\n  \"field_activity_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-09-04 11:07:48\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_activity_notes\" : [],\n  \"field_cmcev_amount\" : { \"und\" : [ { \"value\" : \"200.00\" } ] },\n  \"field_cmcev_event\" : { \"und\" : [ { \"target_id\" : \"{$nids[$content_uuids['simple_many_form']]}\" } ] },\n  \"field_cmcev_public\" : { \"und\" : [ { \"value\" : \"0\" } ] },\n  \"field_cmcev_reg_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-08-20 11:00:00\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_cmcev_source\" : { \"und\" : [ { \"value\" : \"Walk Up\" } ] },\n  \"field_cmcev_status\" : { \"und\" : [ { \"value\" : \"Registered\" } ] },\n  \"rdf_mapping\" : []\n}",
+      21 => "{\n  \"revision_id\" : \"61\",\n  \"uid\" : \"1\",\n  \"title\" : \"On-line Event Registration\",\n  \"created\" : \"1378292909\",\n  \"changed\" : \"1378292909\",\n  \"activity_id\" : \"61\",\n  \"type\" : \"cmcev_event_registration\",\n  \"default_revision\" : \"1\",\n  \"field_activity_participants\" : { \"und\" : [ { \"target_id\" : \"4\" } ] },\n  \"field_activity_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-09-04 11:08:30\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_activity_notes\" : [],\n  \"field_cmcev_amount\" : { \"und\" : [ { \"value\" : \"50.00\" } ] },\n  \"field_cmcev_event\" : { \"und\" : [ { \"target_id\" : \"{$nids[$content_uuids['simple_many_form']]}\" } ] },\n  \"field_cmcev_public\" : { \"und\" : [ { \"value\" : \"0\" } ] },\n  \"field_cmcev_reg_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-08-28 11:15:00\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_cmcev_source\" : { \"und\" : [ { \"value\" : \"Online Registration\" } ] },\n  \"field_cmcev_status\" : { \"und\" : [ { \"value\" : \"Registered\" } ] },\n  \"rdf_mapping\" : []\n}",
+      22 => "{\n  \"revision_id\" : \"62\",\n  \"uid\" : \"1\",\n  \"title\" : \"On-line Event Registration\",\n  \"created\" : \"1378292946\",\n  \"changed\" : \"1378292946\",\n  \"activity_id\" : \"62\",\n  \"type\" : \"cmcev_event_registration\",\n  \"default_revision\" : \"1\",\n  \"field_activity_participants\" : { \"und\" : [ { \"target_id\" : \"2\" } ] },\n  \"field_activity_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-09-04 11:09:06\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_activity_notes\" : [],\n  \"field_cmcev_amount\" : { \"und\" : [ { \"value\" : \"50.00\" } ] },\n  \"field_cmcev_event\" : { \"und\" : [ { \"target_id\" : \"{$nids[$content_uuids['simple_many_form']]}\" } ] },\n  \"field_cmcev_public\" : { \"und\" : [ { \"value\" : \"0\" } ] },\n  \"field_cmcev_reg_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-08-18 11:15:00\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_cmcev_source\" : { \"und\" : [ { \"value\" : \"Online Registration\" } ] },\n  \"field_cmcev_status\" : { \"und\" : [ { \"value\" : \"Registered\" } ] },\n  \"rdf_mapping\" : []\n}",
+      23 => "{\n  \"revision_id\" : \"63\",\n  \"uid\" : \"1\",\n  \"title\" : \"On-line Event Registration\",\n  \"created\" : \"1378292979\",\n  \"changed\" : \"1378292979\",\n  \"activity_id\" : \"63\",\n  \"type\" : \"cmcev_event_registration\",\n  \"default_revision\" : \"1\",\n  \"field_activity_participants\" : { \"und\" : [ { \"target_id\" : \"11\" } ] },\n  \"field_activity_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-09-04 11:09:39\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_activity_notes\" : [],\n  \"field_cmcev_amount\" : { \"und\" : [ { \"value\" : \"200.00\" } ] },\n  \"field_cmcev_event\" : { \"und\" : [ { \"target_id\" : \"{$nids[$content_uuids['simple_many_form']]}\" } ] },\n  \"field_cmcev_public\" : { \"und\" : [ { \"value\" : \"0\" } ] },\n  \"field_cmcev_reg_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-08-25 11:15:00\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_cmcev_source\" : { \"und\" : [ { \"value\" : \"Telephone\" } ] },\n  \"field_cmcev_status\" : { \"und\" : [ { \"value\" : \"Registered\" } ] },\n  \"rdf_mapping\" : []\n}",
+      24 => "{\n  \"revision_id\" : \"64\",\n  \"uid\" : \"1\",\n  \"title\" : \"On-line Event Registration\",\n  \"created\" : \"1378293129\",\n  \"changed\" : \"1378293129\",\n  \"activity_id\" : \"64\",\n  \"type\" : \"cmcev_event_registration\",\n  \"default_revision\" : \"1\",\n  \"field_activity_participants\" : { \"und\" : [ { \"target_id\" : \"8\" } ] },\n  \"field_activity_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-09-04 11:12:10\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_activity_notes\" : [],\n  \"field_cmcev_amount\" : { \"und\" : [ { \"value\" : \"250.00\" } ] },\n  \"field_cmcev_event\" : { \"und\" : [ { \"target_id\" : \"{$nids[$content_uuids['simple_reg_form']]}\" } ] },\n  \"field_cmcev_public\" : { \"und\" : [ { \"value\" : \"0\" } ] },\n  \"field_cmcev_reg_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-08-26 11:15:00\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_cmcev_source\" : { \"und\" : [ { \"value\" : \"Telephone\" } ] },\n  \"field_cmcev_status\" : { \"und\" : [ { \"value\" : \"Attended\" } ] },\n  \"rdf_mapping\" : []\n}",
+      25 => "{\n  \"revision_id\" : \"65\",\n  \"uid\" : \"1\",\n  \"title\" : \"On-line Event Registration\",\n  \"created\" : \"1378294466\",\n  \"changed\" : \"1378294466\",\n  \"activity_id\" : \"65\",\n  \"type\" : \"cmcev_event_registration\",\n  \"default_revision\" : \"1\",\n  \"field_activity_participants\" : { \"und\" : [ { \"target_id\" : \"4\" } ] },\n  \"field_activity_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-09-04 11:34:26\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_activity_notes\" : [],\n  \"field_cmcev_amount\" : { \"und\" : [ { \"value\" : \"0.00\" } ] },\n  \"field_cmcev_event\" : { \"und\" : [ { \"target_id\" : \"{$nids[$content_uuids['simple_reg_form']]}\" } ] },\n  \"field_cmcev_public\" : { \"und\" : [ { \"value\" : \"0\" } ] },\n  \"field_cmcev_reg_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-08-26 11:30:00\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_cmcev_source\" : { \"und\" : [ { \"value\" : \"Walk Up\" } ] },\n  \"field_cmcev_status\" : { \"und\" : [ { \"value\" : \"Attended\" } ] },\n  \"rdf_mapping\" : []\n}",
+      26 => "{\n  \"revision_id\" : \"66\",\n  \"uid\" : \"1\",\n  \"title\" : \"On-line Event Registration\",\n  \"created\" : \"1378294516\",\n  \"changed\" : \"1378294516\",\n  \"activity_id\" : \"66\",\n  \"type\" : \"cmcev_event_registration\",\n  \"default_revision\" : \"1\",\n  \"field_activity_participants\" : { \"und\" : [ { \"target_id\" : \"2\" } ] },\n  \"field_activity_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-09-04 11:35:16\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_activity_notes\" : [],\n  \"field_cmcev_amount\" : { \"und\" : [ { \"value\" : \"150.00\" } ] },\n  \"field_cmcev_event\" : { \"und\" : [ { \"target_id\" : \"{$nids[$content_uuids['simple_reg_form']]}\" } ] },\n  \"field_cmcev_public\" : { \"und\" : [ { \"value\" : \"0\" } ] },\n  \"field_cmcev_reg_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-08-26 11:30:00\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_cmcev_source\" : { \"und\" : [ { \"value\" : \"Online Registration\" } ] },\n  \"field_cmcev_status\" : { \"und\" : [ { \"value\" : \"Attended\" } ] },\n  \"rdf_mapping\" : []\n}",
+      27 => "{\n  \"revision_id\" : \"67\",\n  \"uid\" : \"1\",\n  \"title\" : \"On-line Event Registration\",\n  \"created\" : \"1378294658\",\n  \"changed\" : \"1378294658\",\n  \"activity_id\" : \"67\",\n  \"type\" : \"cmcev_event_registration\",\n  \"default_revision\" : \"1\",\n  \"field_activity_participants\" : { \"und\" : [ { \"target_id\" : \"11\" } ] },\n  \"field_activity_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-09-04 11:37:39\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_activity_notes\" : [],\n  \"field_cmcev_amount\" : { \"und\" : [ { \"value\" : \"400.00\" } ] },\n  \"field_cmcev_event\" : { \"und\" : [ { \"target_id\" : \"{$nids[$content_uuids['simple_reg_form']]}\" } ] },\n  \"field_cmcev_public\" : { \"und\" : [ { \"value\" : \"0\" } ] },\n  \"field_cmcev_reg_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-08-21 11:30:00\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_cmcev_source\" : { \"und\" : [ { \"value\" : \"Walk Up\" } ] },\n  \"field_cmcev_status\" : { \"und\" : [ { \"value\" : \"Attended\" } ] },\n  \"rdf_mapping\" : []\n}",
+      28 => "{\n  \"revision_id\" : \"68\",\n  \"uid\" : \"1\",\n  \"title\" : \"On-line Event Registration\",\n  \"created\" : \"1378294837\",\n  \"changed\" : \"1378294837\",\n  \"activity_id\" : \"68\",\n  \"type\" : \"cmcev_event_registration\",\n  \"default_revision\" : \"1\",\n  \"field_activity_participants\" : { \"und\" : [ { \"target_id\" : \"7\" } ] },\n  \"field_activity_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-09-04 11:40:37\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_activity_notes\" : [],\n  \"field_cmcev_amount\" : { \"und\" : [ { \"value\" : \"50.00\" } ] },\n  \"field_cmcev_event\" : { \"und\" : [ { \"target_id\" : \"{$nids[$content_uuids['simple_reg_form']]}\" } ] },\n  \"field_cmcev_public\" : { \"und\" : [ { \"value\" : \"0\" } ] },\n  \"field_cmcev_reg_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-08-22 11:45:00\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_cmcev_source\" : { \"und\" : [ { \"value\" : \"Online Registration\" } ] },\n  \"field_cmcev_status\" : { \"und\" : [ { \"value\" : \"Registered\" } ] },\n  \"rdf_mapping\" : []\n}",
     ),
   );
 
@@ -2633,7 +2593,6 @@ function ableorganizer_petition_sample_data() {
   "changed" : "1378479518",
   "activity_id" : "69",
   "type" : "cmcp_petition_signature",
-  "activity_type_id" : "3",
   "default_revision" : "1",
   "field_activity_participants" : { "und" : [ { "target_id" : "10" } ] },
   "field_activity_date" : { "und" : [
@@ -2676,7 +2635,6 @@ function ableorganizer_petition_sample_data() {
   "changed" : "1378479987",
   "activity_id" : "70",
   "type" : "cmcp_petition_signature",
-  "activity_type_id" : "3",
   "default_revision" : "1",
   "field_activity_participants" : { "und" : [ { "target_id" : "8" } ] },
   "field_activity_date" : { "und" : [
@@ -2719,7 +2677,6 @@ function ableorganizer_petition_sample_data() {
   "changed" : "1378480199",
   "activity_id" : "71",
   "type" : "cmcp_petition_signature",
-  "activity_type_id" : "3",
   "default_revision" : "1",
   "field_activity_participants" : { "und" : [ { "target_id" : "6" } ] },
   "field_activity_date" : { "und" : [
@@ -2763,7 +2720,6 @@ function ableorganizer_petition_sample_data() {
   "changed" : "1378480352",
   "activity_id" : "72",
   "type" : "cmcp_petition_signature",
-  "activity_type_id" : "3",
   "default_revision" : "1",
   "field_activity_participants" : { "und" : [ { "target_id" : "4" } ] },
   "field_activity_date" : { "und" : [
@@ -2807,7 +2763,6 @@ function ableorganizer_petition_sample_data() {
   "changed" : "1378480442",
   "activity_id" : "73",
   "type" : "cmcp_petition_signature",
-  "activity_type_id" : "3",
   "default_revision" : "1",
   "field_activity_participants" : { "und" : [ { "target_id" : "2" } ] },
   "field_activity_date" : { "und" : [
@@ -2851,7 +2806,6 @@ function ableorganizer_petition_sample_data() {
   "changed" : "1378480551",
   "activity_id" : "74",
   "type" : "cmcp_petition_signature",
-  "activity_type_id" : "3",
   "default_revision" : "1",
   "field_activity_participants" : { "und" : [ { "target_id" : "11" } ] },
   "field_activity_date" : { "und" : [
@@ -2895,7 +2849,6 @@ function ableorganizer_petition_sample_data() {
   "changed" : "1378480633",
   "activity_id" : "75",
   "type" : "cmcp_petition_signature",
-  "activity_type_id" : "3",
   "default_revision" : "1",
   "field_activity_participants" : { "und" : [ { "target_id" : "9" } ] },
   "field_activity_date" : { "und" : [
@@ -2939,7 +2892,6 @@ function ableorganizer_petition_sample_data() {
   "changed" : "1378480747",
   "activity_id" : "76",
   "type" : "cmcp_petition_signature",
-  "activity_type_id" : "3",
   "default_revision" : "1",
   "field_activity_participants" : { "und" : [ { "target_id" : "7" } ] },
   "field_activity_date" : { "und" : [
@@ -2983,7 +2935,6 @@ function ableorganizer_petition_sample_data() {
   "changed" : "1378480840",
   "activity_id" : "77",
   "type" : "cmcp_petition_signature",
-  "activity_type_id" : "3",
   "default_revision" : "1",
   "field_activity_participants" : { "und" : [ { "target_id" : "5" } ] },
   "field_activity_date" : { "und" : [
@@ -3027,7 +2978,6 @@ function ableorganizer_petition_sample_data() {
   "changed" : "1378480937",
   "activity_id" : "78",
   "type" : "cmcp_petition_signature",
-  "activity_type_id" : "3",
   "default_revision" : "1",
   "field_activity_participants" : { "und" : [ { "target_id" : "3" } ] },
   "field_activity_date" : { "und" : [
@@ -3071,7 +3021,6 @@ function ableorganizer_petition_sample_data() {
   "changed" : "1378483638",
   "activity_id" : "79",
   "type" : "cmcp_petition_signature",
-  "activity_type_id" : "3",
   "default_revision" : "1",
   "field_activity_participants" : { "und" : [ { "target_id" : "1" } ] },
   "field_activity_date" : { "und" : [
@@ -3115,7 +3064,6 @@ function ableorganizer_petition_sample_data() {
   "changed" : "1379058216",
   "activity_id" : "80",
   "type" : "cmcp_petition_signature",
-  "activity_type_id" : "3",
   "default_revision" : "1",
   "field_activity_participants" : { "und" : [ { "target_id" : "8" } ] },
   "field_activity_date" : { "und" : [
@@ -3152,7 +3100,6 @@ function ableorganizer_petition_sample_data() {
   "changed" : "1379059941",
   "activity_id" : "81",
   "type" : "cmcp_petition_signature",
-  "activity_type_id" : "3",
   "default_revision" : "1",
   "field_activity_participants" : { "und" : [ { "target_id" : "11" } ] },
   "field_activity_date" : { "und" : [
@@ -3189,7 +3136,6 @@ function ableorganizer_petition_sample_data() {
   "changed" : "1379060017",
   "activity_id" : "82",
   "type" : "cmcp_petition_signature",
-  "activity_type_id" : "3",
   "default_revision" : "1",
   "field_activity_participants" : { "und" : [ { "target_id" : "9" } ] },
   "field_activity_date" : { "und" : [
@@ -3226,7 +3172,6 @@ function ableorganizer_petition_sample_data() {
   "changed" : "1379060057",
   "activity_id" : "83",
   "type" : "cmcp_petition_signature",
-  "activity_type_id" : "3",
   "default_revision" : "1",
   "field_activity_participants" : { "und" : [ { "target_id" : "4" } ] },
   "field_activity_date" : { "und" : [
@@ -3263,7 +3208,6 @@ function ableorganizer_petition_sample_data() {
   "changed" : "1379060090",
   "activity_id" : "84",
   "type" : "cmcp_petition_signature",
-  "activity_type_id" : "3",
   "default_revision" : "1",
   "field_activity_participants" : { "und" : [ { "target_id" : "5" } ] },
   "field_activity_date" : { "und" : [
@@ -3300,7 +3244,6 @@ function ableorganizer_petition_sample_data() {
   "changed" : "1379060121",
   "activity_id" : "85",
   "type" : "cmcp_petition_signature",
-  "activity_type_id" : "3",
   "default_revision" : "1",
   "field_activity_participants" : { "und" : [ { "target_id" : "7" } ] },
   "field_activity_date" : { "und" : [
@@ -3337,7 +3280,6 @@ function ableorganizer_petition_sample_data() {
   "changed" : "1379060186",
   "activity_id" : "86",
   "type" : "cmcp_petition_signature",
-  "activity_type_id" : "3",
   "default_revision" : "1",
   "field_activity_participants" : { "und" : [ { "target_id" : "10" } ] },
   "field_activity_date" : { "und" : [
@@ -3374,7 +3316,6 @@ function ableorganizer_petition_sample_data() {
   "changed" : "1379060212",
   "activity_id" : "87",
   "type" : "cmcp_petition_signature",
-  "activity_type_id" : "3",
   "default_revision" : "1",
   "field_activity_participants" : { "und" : [ { "target_id" : "6" } ] },
   "field_activity_date" : { "und" : [
@@ -3435,7 +3376,6 @@ function ableorganizer_volunteer_sample_data() {
   "changed" : "1379606212",
   "activity_id" : "88",
   "type" : "cmcv_volunteer_commitment",
-  "activity_type_id" : "3",
   "default_revision" : "1",
   "field_activity_participants" : { "und" : [ { "target_id" : "4" } ] },
   "field_activity_date" : { "und" : [
@@ -3478,7 +3418,6 @@ function ableorganizer_volunteer_sample_data() {
   "changed" : "1379606324",
   "activity_id" : "89",
   "type" : "cmcv_volunteer_commitment",
-  "activity_type_id" : "3",
   "default_revision" : "1",
   "field_activity_participants" : { "und" : [ { "target_id" : "6" } ] },
   "field_activity_date" : { "und" : [
@@ -3514,7 +3453,6 @@ function ableorganizer_volunteer_sample_data() {
   "changed" : "1379608711",
   "activity_id" : "90",
   "type" : "cmcv_volunteer_commitment",
-  "activity_type_id" : "3",
   "default_revision" : "1",
   "field_activity_participants" : { "und" : [ { "target_id" : "7" } ] },
   "field_activity_date" : { "und" : [
@@ -3550,7 +3488,6 @@ function ableorganizer_volunteer_sample_data() {
   "changed" : "1379608731",
   "activity_id" : "91",
   "type" : "cmcv_volunteer_commitment",
-  "activity_type_id" : "3",
   "default_revision" : "1",
   "field_activity_participants" : { "und" : [ { "target_id" : "7" } ] },
   "field_activity_date" : { "und" : [
@@ -3586,7 +3523,6 @@ function ableorganizer_volunteer_sample_data() {
   "changed" : "1379608753",
   "activity_id" : "92",
   "type" : "cmcv_volunteer_commitment",
-  "activity_type_id" : "3",
   "default_revision" : "1",
   "field_activity_participants" : { "und" : [ { "target_id" : "7" } ] },
   "field_activity_date" : { "und" : [
@@ -3622,7 +3558,6 @@ function ableorganizer_volunteer_sample_data() {
   "changed" : "1379608770",
   "activity_id" : "93",
   "type" : "cmcv_volunteer_commitment",
-  "activity_type_id" : "3",
   "default_revision" : "1",
   "field_activity_participants" : { "und" : [ { "target_id" : "7" } ] },
   "field_activity_date" : { "und" : [
@@ -3658,7 +3593,6 @@ function ableorganizer_volunteer_sample_data() {
   "changed" : "1379608841",
   "activity_id" : "94",
   "type" : "cmcv_volunteer_commitment",
-  "activity_type_id" : "3",
   "default_revision" : "1",
   "field_activity_participants" : { "und" : [ { "target_id" : "2" } ] },
   "field_activity_date" : { "und" : [
@@ -3694,7 +3628,6 @@ function ableorganizer_volunteer_sample_data() {
   "changed" : "1379608861",
   "activity_id" : "95",
   "type" : "cmcv_volunteer_commitment",
-  "activity_type_id" : "3",
   "default_revision" : "1",
   "field_activity_participants" : { "und" : [ { "target_id" : "2" } ] },
   "field_activity_date" : { "und" : [
@@ -3730,7 +3663,6 @@ function ableorganizer_volunteer_sample_data() {
   "changed" : "1379608889",
   "activity_id" : "96",
   "type" : "cmcv_volunteer_commitment",
-  "activity_type_id" : "3",
   "default_revision" : "1",
   "field_activity_participants" : { "und" : [ { "target_id" : "5" } ] },
   "field_activity_date" : { "und" : [
@@ -3766,7 +3698,6 @@ function ableorganizer_volunteer_sample_data() {
   "changed" : "1379608915",
   "activity_id" : "97",
   "type" : "cmcv_volunteer_commitment",
-  "activity_type_id" : "3",
   "default_revision" : "1",
   "field_activity_participants" : { "und" : [ { "target_id" : "10" } ] },
   "field_activity_date" : { "und" : [
@@ -3802,7 +3733,6 @@ function ableorganizer_volunteer_sample_data() {
   "changed" : "1379608954",
   "activity_id" : "98",
   "type" : "cmcv_volunteer_commitment",
-  "activity_type_id" : "3",
   "default_revision" : "1",
   "field_activity_participants" : { "und" : [ { "target_id" : "4" } ] },
   "field_activity_date" : { "und" : [
@@ -3838,7 +3768,6 @@ function ableorganizer_volunteer_sample_data() {
   "changed" : "1379608984",
   "activity_id" : "99",
   "type" : "cmcv_volunteer_commitment",
-  "activity_type_id" : "3",
   "default_revision" : "1",
   "field_activity_participants" : { "und" : [ { "target_id" : "6" } ] },
   "field_activity_date" : { "und" : [
@@ -3874,7 +3803,6 @@ function ableorganizer_volunteer_sample_data() {
   "changed" : "1379609026",
   "activity_id" : "100",
   "type" : "cmcv_volunteer_commitment",
-  "activity_type_id" : "3",
   "default_revision" : "1",
   "field_activity_participants" : { "und" : [ { "target_id" : "9" } ] },
   "field_activity_date" : { "und" : [
@@ -3910,7 +3838,6 @@ function ableorganizer_volunteer_sample_data() {
   "changed" : "1379609044",
   "activity_id" : "101",
   "type" : "cmcv_volunteer_commitment",
-  "activity_type_id" : "3",
   "default_revision" : "1",
   "field_activity_participants" : { "und" : [ { "target_id" : "9" } ] },
   "field_activity_date" : { "und" : [
