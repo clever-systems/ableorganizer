@@ -303,14 +303,14 @@ The amounts displayed as buttons are set within the content type, using the Reco
   'body' => array(
     'und' => array(
       0 => array(
-        'value' => '<a href="/donate/online-donation">Online Donation</a>
-<a href="/donate/annual-appeal">Annual Appeal</a>
-<a href="/donate/fundraiser">Fundraiser</a>
-<a href="/donate/walkup">Walk Up Donation</a>
+        'value' => '<a href="donate/online-donation">Online Donation</a>
+<a href="donate/annual-appeal">Annual Appeal</a>
+<a href="donate/fundraiser">Fundraiser</a>
+<a href="donate/walkup">Walk Up Donation</a>
 ',
         'summary' => '',
         'format' => 'filtered_html',
-        'safe_value' => '<p><a href="/donate/online-donation">Online Donation</a><br /><a href="/donate/annual-appeal">Annual Appeal</a><br /><a href="/donate/fundraiser">Fundraiser</a><br /><a href="/donate/walkup">Walk Up Donation</a></p>
+        'safe_value' => '<p><a href="donate/online-donation">Online Donation</a><br /><a href="donate/annual-appeal">Annual Appeal</a><br /><a href="donate/fundraiser">Fundraiser</a><br /><a href="donate/walkup">Walk Up Donation</a></p>
 ',
         'safe_summary' => '',
       ),
