@@ -1,4 +1,4 @@
-; crm core event demo make file
+; ableorganizer demo make file
 api = 2
 core = 7.23
 
@@ -26,7 +26,7 @@ projects[libraries][version] = 2.1
 projects[libraries][subdir] = "contrib"
 projects[features][version] = 2.0-rc3
 projects[features][subdir] = "contrib"
-projects[context][version] = 3.0-beta7
+projects[context][version] = 3.0-rc1
 projects[context][subdir] = "contrib"
 projects[strongarm][version] = 2.0
 projects[strongarm][subdir] = "contrib"
@@ -39,7 +39,7 @@ projects[name][download][type] = git
 projects[name][download][revision] = 81f94b50be6af80d02656896a66692b34f4adf3e
 projects[name][download][branch] = 7.x-1.x
 projects[name][subdir] = "contrib"
-projects[field_group][version] = 1.2
+projects[field_group][version] = 1.3
 projects[field_group][subdir] = "contrib"
 projects[cck_phone][type] = module
 projects[cck_phone][download][type] = git
@@ -74,11 +74,23 @@ projects[wysiwyg][version] = "2.2"
 
 ; media
 projects[media][subdir] = "contrib"
-projects[media][version] = "2.0-unstable7+54-dev"
+projects[media][type] = "module"
+projects[media][download][type] = "git"
+projects[media][download][url] = "http://git.drupal.org/project/media.git"
+projects[media][download][branch] = "7.x-2.x"
+projects[media][download][revision] = "e2625edf88f98782396cb879e036810583893335"
 projects[colorbox][subdir] = "contrib"
-projects[colorbox][version] = "2.4+4-dev"
+projects[colorbox][type] = "module"
+projects[colorbox][download][type] = "git"
+projects[colorbox][download][url] = "http://git.drupal.org/project/colorbox.git"
+projects[colorbox][download][branch] = "7.x-2.x"
+projects[colorbox][download][revision] = "8ba01e891fef668c11eaea561a7fd06672e7f343"
 projects[media_colorbox][subdir] = "contrib"
-projects[media_colorbox][version] = "1.0-rc3+0-dev"
+projects[media_colorbox][type] = "module"
+projects[media_colorbox][download][type] = "git"
+projects[media_colorbox][download][url] = "http://git.drupal.org/project/media_colorbox.git"
+projects[media_colorbox][download][branch] = "7.x-1.x"
+projects[media_colorbox][download][revision] = "d018199fc4fd94d21d3f92233955747f7260c7fe"
 projects[adaptive_image][subdir] = "contrib"
 projects[adaptive_image][version] = "1.4"
 projects[media_wysiwyg_view_mode][type] = "module"
@@ -89,7 +101,12 @@ projects[media_wysiwyg_view_mode][download][revision] = "0c38b2b6ef1d5bbe647e300
 projects[imce][subdir] = "contrib"
 projects[imce][version] = "1.7"
 projects[file_entity][subdir] = "contrib"
-projects[file_entity][version] = "2.0-unstable7+85-dev"
+projects[file_entity][type] = "module"
+projects[file_entity][download][type] = "git"
+projects[file_entity][download][url] = "http://git.drupal.org/project/file_entity.git"
+projects[file_entity][download][branch] = "7.x-2.x"
+projects[file_entity][download][revision] = "af6c71433011a0525bb9d3d3c87a93a2e09cf75d"
+
 
 ; commerce modules
 projects[commerce][version] = 1.8
@@ -141,7 +158,7 @@ projects[omega_tools][version] = "3.0-rc4"
 ; crm core modules
 projects[crm_core][version] = 0.961
 projects[crm_core][subdir] = "contrib"
-projects[crm_core_profile][version] = 1.0-beta6
+projects[crm_core_profile][version] = 1.0-beta7
 projects[crm_core_profile][subdir] = "contrib"
 projects[crm_core_profile_commerce_items][version] = 0.3
 projects[crm_core_profile_commerce_items][subdir] = "contrib"
@@ -151,13 +168,13 @@ projects[crm_core_demo_standard_fields][subdir] = "contrib"
 projects[crm_core_donation][version] = 1.7
 projects[crm_core_donation][subdir] = "contrib"
 ; events
-projects[crm_core_event][version] = 0.5
+projects[crm_core_event][version] = 0.6
 projects[crm_core_event][subdir] = "contrib"
 ; petitions
 projects[crm_core_petition][version] = 0.5
 projects[crm_core_petition][subdir] = "contrib"
 ; volunteers
-projects[crm_core_volunteer][version] = 0.5
+projects[crm_core_volunteer][version] = 0.6
 projects[crm_core_volunteer][subdir] = "contrib"
 
 ; libraries
