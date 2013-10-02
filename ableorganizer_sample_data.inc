@@ -3302,7 +3302,7 @@ function ableorganizer_petition_sample_data() {
   "type" : "cmcp_petition_signature",
   "activity_type_id" : "3",
   "default_revision" : "1",
-  "field_activity_participants" : { "und" : [ { "target_id" : "' . $nids[$content_uuids['without_personal_message']] . '" } ] },
+  "field_activity_participants" : { "und" : [ { "target_id" : "7" } ] },
   "field_activity_date" : { "und" : [
       {
         "value" : "2013-09-13 08:15:21",
