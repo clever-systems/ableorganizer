@@ -67,7 +67,7 @@ projects[mimemail][version] = 1.0-alpha2
 projects[mimemail][subdir] = "contrib"
 
 ; content
-projects[pathologic] = 2.10
+projects[pathologic] = 2.11
 projects[pathologic][subdir] = "contrib"
 projects[wysiwyg][subdir] = "contrib"
 projects[wysiwyg][version] = "2.2"
