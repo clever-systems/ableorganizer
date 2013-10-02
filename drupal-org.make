@@ -187,3 +187,6 @@ projects[uuid][version] = 1.0-alpha5
 projects[uuid][subdir] = "contrib"
 projects[uuid_features][version] = 1.0-alpha3
 projects[uuid_features][subdir] = "contrib"
+
+;themes
+projects[omega] = 3.1

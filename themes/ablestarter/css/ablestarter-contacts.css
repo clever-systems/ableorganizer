@@ -1,0 +1,51 @@
+/**
+  * Theming for contact records 
+  */
+
+.activity,
+.contact {
+  border: 1px solid #CCC;
+  background-color: White;
+  margin-bottom: 24px;
+  padding: 12px;
+}
+.activity .content,
+.contact .content {
+	display: table;
+  border: 1px solid #CCC;
+  width: 48%;
+}
+.activity .content .field,
+.contact .content .field {
+	display: table-row;
+}
+.activity h2,
+.contact h2 {
+  color: #248bd1;
+}
+.activity .content .field .field-label,
+.activity .content .field .field-items,
+.contact .content .field .field-label,
+.contact .content .field .field-items {
+	display: table-cell;
+  border-bottom: 1px solid #CCC;
+  padding: 4px 4px;
+}
+.activity .content .field:last-child .field-label,
+.activity .content .field:last-child .field-items,
+.contact .content .field:last-child .field-label,
+.contact .content .field:last-child .field-items {
+  border-bottom: none;
+}
+.activity .content .field .field-label,
+.contact .content .field .field-label {
+	padding-right: 20px;
+	color: #999;
+	text-transform: uppercase;
+	font-size: 0.9em;
+	font-weight: normal;
+	border-right: 1px solid #CCC; 
+  white-space: nowrap;
+}
+
+

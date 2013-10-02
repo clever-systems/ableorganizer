@@ -514,6 +514,11 @@ function ableorganizer_install() {
   // Setup mimemail format and off mimemail sitestyle.
   variable_set('mimemail_format', 'full_html');
   variable_set('mimemail_sitestyle', 0);
+
+  // Setting default theme for CRM Core.
+  theme_enable(array('ablestarter'));
+  variable_set('crm_core_theme_enabled', 1);
+  variable_set('crm_core_theme', 'ablestarter');
 }
 
 /**
