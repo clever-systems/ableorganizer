@@ -127,15 +127,15 @@ function _ableorganizer_petition_sample_content_set_config() {
   $content_aliases = array();
   $content_aliases[] = array(
     'source' => 'node/' . $thank_you_id,
-    'alias' => 'petition/thank-you',
+    'alias' => 'petitions/thank-you',
   );
   $content_aliases[] = array (
     'source' => 'node/' . $nids[$content_uuids['on_line_petition']],
-    'alias' => 'petition/online-petition',
+    'alias' => 'petitions/online-petition',
   );
   $content_aliases[] = array(
     'source' => 'node/' . $nids[$content_uuids['without_personal_message']],
-    'alias' => 'petition/single-ticket',
+    'alias' => 'petitions/single-ticket',
   );
   foreach($content_aliases as $path) {
     path_save($path);

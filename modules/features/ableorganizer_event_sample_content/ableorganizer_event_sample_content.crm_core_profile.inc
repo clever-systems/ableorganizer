@@ -288,7 +288,7 @@ Corporate|1000',
   $crm_core_profile->page = TRUE;
   $crm_core_profile->page_title = '';
   $crm_core_profile->page_path = '';
-  $crm_core_profile->page_redirect = 'event/thank-you';
+  $crm_core_profile->page_redirect = 'events/thank-you';
   $crm_core_profile->message = 'Thank you for registration!';
   $crm_core_profile->status = TRUE;
   $crm_core_profile->uid = 1;
@@ -576,7 +576,7 @@ Corporate|1000',
   $crm_core_profile->page = TRUE;
   $crm_core_profile->page_title = '';
   $crm_core_profile->page_path = '';
-  $crm_core_profile->page_redirect = 'event/thank-you';
+  $crm_core_profile->page_redirect = 'events/thank-you';
   $crm_core_profile->message = 'Thank you for registration!';
   $crm_core_profile->status = TRUE;
   $crm_core_profile->uid = 1;
@@ -796,7 +796,7 @@ Corporate|1000',
   $crm_core_profile->page = TRUE;
   $crm_core_profile->page_title = '';
   $crm_core_profile->page_path = '';
-  $crm_core_profile->page_redirect = 'event/thank-you';
+  $crm_core_profile->page_redirect = 'events/thank-you';
   $crm_core_profile->message = 'Thank you for registration!';
   $crm_core_profile->status = TRUE;
   $crm_core_profile->uid = 1;
@@ -1083,7 +1083,7 @@ Corporate|1000',
   $crm_core_profile->page = TRUE;
   $crm_core_profile->page_title = '';
   $crm_core_profile->page_path = '';
-  $crm_core_profile->page_redirect = 'event/thank-you';
+  $crm_core_profile->page_redirect = 'events/thank-you';
   $crm_core_profile->message = 'Thank you for registration!';
   $crm_core_profile->status = TRUE;
   $crm_core_profile->uid = 1;

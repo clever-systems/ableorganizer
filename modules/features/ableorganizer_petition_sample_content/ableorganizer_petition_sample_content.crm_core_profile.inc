@@ -422,7 +422,7 @@ function ableorganizer_petition_sample_content_default_crm_core_profile() {
   $crm_core_profile->page = TRUE;
   $crm_core_profile->page_title = '';
   $crm_core_profile->page_path = '';
-  $crm_core_profile->page_redirect = 'petition/thank-you';
+  $crm_core_profile->page_redirect = 'petitions/thank-you';
   $crm_core_profile->message = 'Thank you for signing this petition!';
   $crm_core_profile->status = TRUE;
   $crm_core_profile->uid = 1;

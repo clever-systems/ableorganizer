@@ -161,27 +161,27 @@ function _ableorganizer_event_sample_content_set_config() {
   $content_aliases = array();
   $content_aliases[] = array(
     'source' => 'node/' . $thank_you_id,
-    'alias' => 'event/thank-you',
+    'alias' => 'events/thank-you',
   );
   $content_aliases[] = array (
     'source' => 'node/' . $nids[$content_uuids['simple_reg_form']],
-    'alias' => 'event/basic',
+    'alias' => 'events/basic',
   );
   $content_aliases[] = array(
     'source' => 'node/' . $nids[$content_uuids['simple_single_form']],
-    'alias' => 'event/single-ticket',
+    'alias' => 'events/single-ticket',
   );
   $content_aliases[] = array(
     'source' => 'node/' . $nids[$content_uuids['simple_many_form']],
-    'alias' => 'event/multiple-ticket-level',
+    'alias' => 'events/multiple-ticket-level',
   );
   $content_aliases[] = array(
     'source' => 'node/' . $nids[$content_uuids['simple_quantity_form']],
-    'alias' => 'event/multiple-ticket-levels-quantity',
+    'alias' => 'events/multiple-ticket-levels-quantity',
   );
   $content_aliases[] = array(
     'source' => 'node/' . $nids[$content_uuids['phonebank']],
-    'alias' => 'event/phonebank',
+    'alias' => 'events/phonebank',
   );
   foreach($content_aliases as $path) {
     path_save($path);

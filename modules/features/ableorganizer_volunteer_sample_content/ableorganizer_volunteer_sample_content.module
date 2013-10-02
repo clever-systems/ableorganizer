@@ -125,27 +125,27 @@ function _ableorganizer_volunteer_sample_content_set_config() {
   $content_aliases = array();
   $content_aliases[] = array(
     'source' => 'node/' . $thank_you_id,
-    'alias' => 'volunteer/thank-you',
+    'alias' => 'volunteers/thank-you',
   );
   $content_aliases[] = array (
     'source' => 'node/' . $nids[$content_uuids['after_school_tutors_needed']],
-    'alias' => 'volunteer/after-school-tutors-needed',
+    'alias' => 'volunteers/after-school-tutors-needed',
   );
   $content_aliases[] = array (
     'source' => 'node/' . $nids[$content_uuids['get_out_the_vote']],
-    'alias' => 'volunteer/get-out-the-vote',
+    'alias' => 'volunteers/get-out-the-vote',
   );
   $content_aliases[] = array (
     'source' => 'node/' . $nids[$content_uuids['keep_our_creek_clean']],
-    'alias' => 'volunteer/keep-our-creek-clean',
+    'alias' => 'volunteers/keep-our-creek-clean',
   );
   $content_aliases[] = array (
     'source' => 'node/' . $nids[$content_uuids['support_the_food_bank']],
-    'alias' => 'volunteer/support-the-food-bank',
+    'alias' => 'volunteers/support-the-food-bank',
   );
   $content_aliases[] = array (
     'source' => 'node/' . $nids[$content_uuids['work_with_homeless_animals']],
-    'alias' => 'volunteer/work-with-homeless-animals',
+    'alias' => 'volunteers/work-with-homeless-animals',
   );
   foreach($content_aliases as $path) {
     path_save($path);

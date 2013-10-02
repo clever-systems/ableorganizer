@@ -61,7 +61,7 @@ function ableorganizer_volunteer_sample_content_views_default_views() {
 
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page');
-  $handler->display->display_options['path'] = 'volunteer';
+  $handler->display->display_options['path'] = 'volunteers';
   $handler->display->display_options['menu']['type'] = 'normal';
   $handler->display->display_options['menu']['title'] = 'Volunteer Opportunities';
   $handler->display->display_options['menu']['weight'] = '4';
