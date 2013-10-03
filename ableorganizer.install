@@ -972,7 +972,7 @@ function ableorganizer_sample_content($form, &$form_state, &$install_state) {
     $form['sample_data_wrapper']['volunteer_sample_data'] = array(
       '#type' => 'checkbox',
       '#default_value' => TRUE,
-      '#title' => $t('Volunteer commitements'),
+      '#title' => $t('Volunteer Commitments'),
     );
   }
 
