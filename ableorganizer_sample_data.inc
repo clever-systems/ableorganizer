@@ -837,7 +837,7 @@ function ableorganizer_donation_sample_data() {
   $sample_data['crm_core_activity'] = array();
 
   $sample_data['crm_core_activity'][] = '{
-      "activity_id" : "1",
+      "activity_id" : "",
       "type" : "cmcd_donation",
       "title" : "Annual Appeal",
       "uid" : "1",
@@ -879,7 +879,7 @@ function ableorganizer_donation_sample_data() {
     }';
 
   $sample_data['crm_core_activity'][] = '{
-      "activity_id" : "2",
+      "activity_id" : "",
       "type" : "cmcd_donation",
       "title" : "Annual Appeal",
       "uid" : "1",
@@ -921,7 +921,7 @@ function ableorganizer_donation_sample_data() {
     }';
 
   $sample_data['crm_core_activity'][] = '{
-      "activity_id" : "3",
+      "activity_id" : "",
       "type" : "cmcd_donation",
       "title" : "Annual Appeal",
       "uid" : "1",
@@ -963,7 +963,7 @@ function ableorganizer_donation_sample_data() {
     }';
 
   $sample_data['crm_core_activity'][] = '{
-      "activity_id" : "4",
+      "activity_id" : "",
       "type" : "cmcd_donation",
       "title" : "Annual Appeal",
       "uid" : "1",
@@ -1005,7 +1005,7 @@ function ableorganizer_donation_sample_data() {
     }';
 
   $sample_data['crm_core_activity'][] = '{
-      "activity_id" : "5",
+      "activity_id" : "",
       "type" : "cmcd_donation",
       "title" : "Annual Appeal",
       "uid" : "1",
@@ -1047,7 +1047,7 @@ function ableorganizer_donation_sample_data() {
     }';
 
   $sample_data['crm_core_activity'][] = '{
-      "activity_id" : "6",
+      "activity_id" : "",
       "type" : "cmcd_donation",
       "title" : "Annual Appeal",
       "uid" : "1",
@@ -1089,7 +1089,7 @@ function ableorganizer_donation_sample_data() {
     }';
 
   $sample_data['crm_core_activity'][] = '{
-      "activity_id" : "7",
+      "activity_id" : "",
       "type" : "cmcd_donation",
       "title" : "Annual Appeal",
       "uid" : "1",
@@ -1131,7 +1131,7 @@ function ableorganizer_donation_sample_data() {
     }';
 
   $sample_data['crm_core_activity'][] = '{
-      "activity_id" : "8",
+      "activity_id" : "",
       "type" : "cmcd_donation",
       "title" : "Annual Appeal",
       "uid" : "1",
@@ -1173,7 +1173,7 @@ function ableorganizer_donation_sample_data() {
     }';
 
   $sample_data['crm_core_activity'][] = '{
-      "activity_id" : "9",
+      "activity_id" : "",
       "type" : "cmcd_donation",
       "title" : "Annual Appeal",
       "uid" : "1",
@@ -1215,7 +1215,7 @@ function ableorganizer_donation_sample_data() {
     }';
 
   $sample_data['crm_core_activity'][] = '{
-      "activity_id" : "10",
+      "activity_id" : "",
       "type" : "cmcd_donation",
       "title" : "Annual Appeal",
       "uid" : "1",
@@ -1257,7 +1257,7 @@ function ableorganizer_donation_sample_data() {
     }';
 
   $sample_data['crm_core_activity'][] = '{
-      "activity_id" : "11",
+      "activity_id" : "",
       "type" : "cmcd_donation",
       "title" : "Fundraiser",
       "uid" : "1",
@@ -1299,7 +1299,7 @@ function ableorganizer_donation_sample_data() {
     }';
 
   $sample_data['crm_core_activity'][] = '{
-      "activity_id" : "12",
+      "activity_id" : "",
       "type" : "cmcd_donation",
       "title" : "Fundraiser",
       "uid" : "1",
@@ -1341,7 +1341,7 @@ function ableorganizer_donation_sample_data() {
     }';
 
   $sample_data['crm_core_activity'][] = '{
-      "activity_id" : "13",
+      "activity_id" : "",
       "type" : "cmcd_donation",
       "title" : "Fundraiser",
       "uid" : "1",
@@ -1383,7 +1383,7 @@ function ableorganizer_donation_sample_data() {
     }';
 
   $sample_data['crm_core_activity'][] = '{
-      "activity_id" : "14",
+      "activity_id" : "",
       "type" : "cmcd_donation",
       "title" : "Fundraiser",
       "uid" : "1",
@@ -1425,7 +1425,7 @@ function ableorganizer_donation_sample_data() {
     }';
 
   $sample_data['crm_core_activity'][] = '{
-      "activity_id" : "15",
+      "activity_id" : "",
       "type" : "cmcd_donation",
       "title" : "Fundraiser",
       "uid" : "1",
@@ -1467,7 +1467,7 @@ function ableorganizer_donation_sample_data() {
     }';
 
   $sample_data['crm_core_activity'][] = '{
-      "activity_id" : "16",
+      "activity_id" : "",
       "type" : "cmcd_donation",
       "title" : "Fundraiser",
       "uid" : "1",
@@ -1509,7 +1509,7 @@ function ableorganizer_donation_sample_data() {
     }';
 
   $sample_data['crm_core_activity'][] = '{
-      "activity_id" : "17",
+      "activity_id" : "",
       "type" : "cmcd_donation",
       "title" : "Fundraiser",
       "uid" : "1",
@@ -1551,7 +1551,7 @@ function ableorganizer_donation_sample_data() {
     }';
 
   $sample_data['crm_core_activity'][] = '{
-      "activity_id" : "18",
+      "activity_id" : "",
       "type" : "cmcd_donation",
       "title" : "Fundraiser",
       "uid" : "1",
@@ -1593,7 +1593,7 @@ function ableorganizer_donation_sample_data() {
     }';
 
   $sample_data['crm_core_activity'][] = '{
-      "activity_id" : "19",
+      "activity_id" : "",
       "type" : "cmcd_donation",
       "title" : "Fundraiser",
       "uid" : "1",
@@ -1635,7 +1635,7 @@ function ableorganizer_donation_sample_data() {
     }';
 
   $sample_data['crm_core_activity'][] = '{
-      "activity_id" : "20",
+      "activity_id" : "",
       "type" : "cmcd_donation",
       "title" : "Fundraiser",
       "uid" : "1",
@@ -1677,7 +1677,7 @@ function ableorganizer_donation_sample_data() {
     }';
 
   $sample_data['crm_core_activity'][] = '{
-      "activity_id" : "21",
+      "activity_id" : "",
       "type" : "cmcd_donation",
       "title" : "Online Donation",
       "uid" : "1",
@@ -1719,7 +1719,7 @@ function ableorganizer_donation_sample_data() {
     }';
 
   $sample_data['crm_core_activity'][] = '{
-      "activity_id" : "22",
+      "activity_id" : "",
       "type" : "cmcd_donation",
       "title" : "Online Donation",
       "uid" : "1",
@@ -1761,7 +1761,7 @@ function ableorganizer_donation_sample_data() {
     }';
 
   $sample_data['crm_core_activity'][] = '{
-      "activity_id" : "23",
+      "activity_id" : "",
       "type" : "cmcd_donation",
       "title" : "Online Donation",
       "uid" : "1",
@@ -1803,7 +1803,7 @@ function ableorganizer_donation_sample_data() {
     }';
 
   $sample_data['crm_core_activity'][] = '{
-      "activity_id" : "24",
+      "activity_id" : "",
       "type" : "cmcd_donation",
       "title" : "Online Donation",
       "uid" : "1",
@@ -1845,7 +1845,7 @@ function ableorganizer_donation_sample_data() {
     }';
 
   $sample_data['crm_core_activity'][] = '{
-      "activity_id" : "25",
+      "activity_id" : "",
       "type" : "cmcd_donation",
       "title" : "Online Donation",
       "uid" : "1",
@@ -1887,7 +1887,7 @@ function ableorganizer_donation_sample_data() {
     }';
 
   $sample_data['crm_core_activity'][] = '{
-      "activity_id" : "26",
+      "activity_id" : "",
       "type" : "cmcd_donation",
       "title" : "Online Donation",
       "uid" : "1",
@@ -1929,7 +1929,7 @@ function ableorganizer_donation_sample_data() {
     }';
 
   $sample_data['crm_core_activity'][] = '{
-      "activity_id" : "27",
+      "activity_id" : "",
       "type" : "cmcd_donation",
       "title" : "Online Donation",
       "uid" : "1",
@@ -1971,7 +1971,7 @@ function ableorganizer_donation_sample_data() {
     }';
 
   $sample_data['crm_core_activity'][] = '{
-      "activity_id" : "28",
+      "activity_id" : "",
       "type" : "cmcd_donation",
       "title" : "Online Donation",
       "uid" : "1",
@@ -2013,7 +2013,7 @@ function ableorganizer_donation_sample_data() {
     }';
 
   $sample_data['crm_core_activity'][] = '{
-      "activity_id" : "29",
+      "activity_id" : "",
       "type" : "cmcd_donation",
       "title" : "Online Donation",
       "uid" : "1",
@@ -2055,7 +2055,7 @@ function ableorganizer_donation_sample_data() {
     }';
 
   $sample_data['crm_core_activity'][] = '{
-      "activity_id" : "30",
+      "activity_id" : "",
       "type" : "cmcd_donation",
       "title" : "Online Donation",
       "uid" : "1",
@@ -2097,7 +2097,7 @@ function ableorganizer_donation_sample_data() {
     }';
 
   $sample_data['crm_core_activity'][] = '{
-  "activity_id" : "31",
+  "activity_id" : "",
   "type" : "cmcd_donation",
   "title" : "Walk Up Donation",
   "uid" : "1",
@@ -2139,7 +2139,7 @@ function ableorganizer_donation_sample_data() {
 }';
 
   $sample_data['crm_core_activity'][] = '{
-  "activity_id" : "32",
+  "activity_id" : "",
   "type" : "cmcd_donation",
   "title" : "Walk Up Donation",
   "uid" : "1",
@@ -2181,7 +2181,7 @@ function ableorganizer_donation_sample_data() {
 }';
 
   $sample_data['crm_core_activity'][] = '{
-  "activity_id" : "33",
+  "activity_id" : "",
   "type" : "cmcd_donation",
   "title" : "Walk Up Donation",
   "uid" : "1",
@@ -2223,7 +2223,7 @@ function ableorganizer_donation_sample_data() {
 }';
 
   $sample_data['crm_core_activity'][] = '{
-  "activity_id" : "34",
+  "activity_id" : "",
   "type" : "cmcd_donation",
   "title" : "Walk Up Donation",
   "uid" : "1",
@@ -2265,7 +2265,7 @@ function ableorganizer_donation_sample_data() {
 }';
 
   $sample_data['crm_core_activity'][] = '{
-  "activity_id" : "35",
+  "activity_id" : "",
   "type" : "cmcd_donation",
   "title" : "Walk Up Donation",
   "uid" : "1",
@@ -2307,7 +2307,7 @@ function ableorganizer_donation_sample_data() {
 }';
 
   $sample_data['crm_core_activity'][] = '{
-  "activity_id" : "36",
+  "activity_id" : "",
   "type" : "cmcd_donation",
   "title" : "Walk Up Donation",
   "uid" : "1",
@@ -2349,7 +2349,7 @@ function ableorganizer_donation_sample_data() {
 }';
 
   $sample_data['crm_core_activity'][] = '{
-  "activity_id" : "37",
+  "activity_id" : "",
   "type" : "cmcd_donation",
   "title" : "Walk Up Donation",
   "uid" : "1",
@@ -2391,7 +2391,7 @@ function ableorganizer_donation_sample_data() {
 }';
 
   $sample_data['crm_core_activity'][] = '{
-  "activity_id" : "38",
+  "activity_id" : "",
   "type" : "cmcd_donation",
   "title" : "Walk Up Donation",
   "uid" : "1",
@@ -2433,7 +2433,7 @@ function ableorganizer_donation_sample_data() {
 }';
 
   $sample_data['crm_core_activity'][] = '{
-  "activity_id" : "39",
+  "activity_id" : "",
   "type" : "cmcd_donation",
   "title" : "Walk Up Donation",
   "uid" : "1",
@@ -2475,7 +2475,7 @@ function ableorganizer_donation_sample_data() {
 }';
 
   $sample_data['crm_core_activity'][] = '{
-  "activity_id" : "40",
+  "activity_id" : "",
   "type" : "cmcd_donation",
   "title" : "Walk Up Donation",
   "uid" : "1",
@@ -2574,24 +2574,26 @@ function ableorganizer_event_sample_data() {
  * Sample data for CRM Core Petition.
  */
 function ableorganizer_petition_sample_data() {
-  $content_uuids = array(
-    'on_line_petition' => '67720e58-b9b4-43c4-98cf-ad29bc13068d',
-    'without_personal_message' => 'dcb2bfb1-c860-4713-afd1-cdcf868c88f0',
+  $uuids = array(
+    2 => '71378697-11e3-4d26-bfbd-b9c669b4b14a',
+    3 => '7f7cf4e3-560a-49a5-b753-59ddb08141d7',
+    4 => '9e015f78-02b6-465d-9a22-7ef48de06969',
+    5 => 'a1a630ad-2b43-4a79-b876-b38db525fa0e',
+    6 => 'c6c7bd28-a9a5-4c29-b4b7-a11cbe7e5450',
   );
 
   // Getting local IDs from universal.
-  $nids = entity_get_id_by_uuid('node', $content_uuids);
+  $nids = entity_get_id_by_uuid('node', $uuids);
 
-  $sample_data = array (
-    'crm_core_activity' =>
-    array (
-      1 => '{
-  "revision_id" : "69",
+  $sample_data = array ('crm_core_activity' =>
+      array (
+        1 => '{
+  "revision_id" : "",
   "uid" : "1",
   "title" : "On-line petition signature",
   "created" : "1378479518",
   "changed" : "1378479518",
-  "activity_id" : "69",
+  "activity_id" : "",
   "type" : "cmcp_petition_signature",
   "default_revision" : "1",
   "field_activity_participants" : { "und" : [ { "target_id" : "10" } ] },
@@ -2605,7 +2607,7 @@ function ableorganizer_petition_sample_data() {
     ]
   },
   "field_activity_notes" : [],
-  "field_cmcp_petition_page" : { "und" : [ { "target_id" : "' . $nids[$content_uuids['on_line_petition']] . '" } ] },
+  "field_cmcp_petition_page" : { "und" : [ { "target_id" : "' . $nids[$uuids[2]] . '" } ] },
   "field_cmcp_petition_targets" : [],
   "field_cmcp_pm_content" : { "und" : [
       {
@@ -2627,13 +2629,13 @@ function ableorganizer_petition_sample_data() {
   "field_cmcp_source" : { "und" : [ { "value" : "Online Petition" } ] },
   "rdf_mapping" : []
 }',
-      2 => '{
-  "revision_id" : "70",
+        2 => '{
+  "revision_id" : "",
   "uid" : "1",
   "title" : "On-line petition signature",
   "created" : "1378479987",
   "changed" : "1378479987",
-  "activity_id" : "70",
+  "activity_id" : "",
   "type" : "cmcp_petition_signature",
   "default_revision" : "1",
   "field_activity_participants" : { "und" : [ { "target_id" : "8" } ] },
@@ -2647,7 +2649,7 @@ function ableorganizer_petition_sample_data() {
     ]
   },
   "field_activity_notes" : [],
-  "field_cmcp_petition_page" : { "und" : [ { "target_id" : "' . $nids[$content_uuids['on_line_petition']] . '" } ] },
+  "field_cmcp_petition_page" : { "und" : [ { "target_id" : "' . $nids[$uuids[2]] . '" } ] },
   "field_cmcp_petition_targets" : [],
   "field_cmcp_pm_content" : { "und" : [
       {
@@ -2669,13 +2671,13 @@ function ableorganizer_petition_sample_data() {
   "field_cmcp_source" : { "und" : [ { "value" : "Online Petition" } ] },
   "rdf_mapping" : []
 }',
-      3 => '{
-  "revision_id" : "71",
+        3 => '{
+  "revision_id" : "",
   "uid" : "1",
   "title" : "On-line petition signature",
   "created" : "1378480199",
   "changed" : "1378480199",
-  "activity_id" : "71",
+  "activity_id" : "",
   "type" : "cmcp_petition_signature",
   "default_revision" : "1",
   "field_activity_participants" : { "und" : [ { "target_id" : "6" } ] },
@@ -2689,7 +2691,7 @@ function ableorganizer_petition_sample_data() {
     ]
   },
   "field_activity_notes" : [],
-  "field_cmcp_petition_page" : { "und" : [ { "target_id" : "' . $nids[$content_uuids['on_line_petition']] . '" } ] },
+  "field_cmcp_petition_page" : { "und" : [ { "target_id" : "' . $nids[$uuids[2]] . '" } ] },
   "field_cmcp_petition_targets" : [],
   "field_cmcp_pm_content" : { "und" : [
       {
@@ -2712,14 +2714,15 @@ function ableorganizer_petition_sample_data() {
   "field_cmcp_source" : { "und" : [ { "value" : "Online Petition" } ] },
   "rdf_mapping" : []
 }',
-      4 => '{
-  "revision_id" : "72",
+        4 => '{
+  "revision_id" : "",
   "uid" : "1",
   "title" : "On-line petition signature",
   "created" : "1378480352",
   "changed" : "1378480352",
-  "activity_id" : "72",
+  "activity_id" : "",
   "type" : "cmcp_petition_signature",
+
   "default_revision" : "1",
   "field_activity_participants" : { "und" : [ { "target_id" : "4" } ] },
   "field_activity_date" : { "und" : [
@@ -2732,7 +2735,7 @@ function ableorganizer_petition_sample_data() {
     ]
   },
   "field_activity_notes" : [],
-  "field_cmcp_petition_page" : { "und" : [ { "target_id" : "' . $nids[$content_uuids['on_line_petition']] . '" } ] },
+  "field_cmcp_petition_page" : { "und" : [ { "target_id" : "' . $nids[$uuids[2]] . '" } ] },
   "field_cmcp_petition_targets" : [],
   "field_cmcp_pm_content" : { "und" : [
       {
@@ -2755,14 +2758,15 @@ function ableorganizer_petition_sample_data() {
   "field_cmcp_source" : { "und" : [ { "value" : "Online Petition" } ] },
   "rdf_mapping" : []
 }',
-      5 => '{
-  "revision_id" : "73",
+        5 => '{
+  "revision_id" : "",
   "uid" : "1",
   "title" : "On-line petition signature",
   "created" : "1378480442",
   "changed" : "1378480442",
-  "activity_id" : "73",
+  "activity_id" : "",
   "type" : "cmcp_petition_signature",
+
   "default_revision" : "1",
   "field_activity_participants" : { "und" : [ { "target_id" : "2" } ] },
   "field_activity_date" : { "und" : [
@@ -2775,7 +2779,7 @@ function ableorganizer_petition_sample_data() {
     ]
   },
   "field_activity_notes" : [],
-  "field_cmcp_petition_page" : { "und" : [ { "target_id" : "' . $nids[$content_uuids['on_line_petition']] . '" } ] },
+  "field_cmcp_petition_page" : { "und" : [ { "target_id" : "' . $nids[$uuids[2]] . '" } ] },
   "field_cmcp_petition_targets" : [],
   "field_cmcp_pm_content" : { "und" : [
       {
@@ -2798,14 +2802,15 @@ function ableorganizer_petition_sample_data() {
   "field_cmcp_source" : { "und" : [ { "value" : "Online Petition" } ] },
   "rdf_mapping" : []
 }',
-      6 => '{
-  "revision_id" : "74",
+        6 => '{
+  "revision_id" : "",
   "uid" : "1",
   "title" : "On-line petition signature",
   "created" : "1378480551",
   "changed" : "1378480551",
-  "activity_id" : "74",
+  "activity_id" : "",
   "type" : "cmcp_petition_signature",
+
   "default_revision" : "1",
   "field_activity_participants" : { "und" : [ { "target_id" : "11" } ] },
   "field_activity_date" : { "und" : [
@@ -2818,7 +2823,7 @@ function ableorganizer_petition_sample_data() {
     ]
   },
   "field_activity_notes" : [],
-  "field_cmcp_petition_page" : { "und" : [ { "target_id" : "' . $nids[$content_uuids['on_line_petition']] . '" } ] },
+  "field_cmcp_petition_page" : { "und" : [ { "target_id" : "' . $nids[$uuids[2]] . '" } ] },
   "field_cmcp_petition_targets" : [],
   "field_cmcp_pm_content" : { "und" : [
       {
@@ -2841,14 +2846,15 @@ function ableorganizer_petition_sample_data() {
   "field_cmcp_source" : { "und" : [ { "value" : "Signature Drive" } ] },
   "rdf_mapping" : []
 }',
-      7 => '{
-  "revision_id" : "75",
+        7 => '{
+  "revision_id" : "",
   "uid" : "1",
   "title" : "On-line petition signature",
   "created" : "1378480633",
   "changed" : "1378480633",
-  "activity_id" : "75",
+  "activity_id" : "",
   "type" : "cmcp_petition_signature",
+
   "default_revision" : "1",
   "field_activity_participants" : { "und" : [ { "target_id" : "9" } ] },
   "field_activity_date" : { "und" : [
@@ -2861,7 +2867,7 @@ function ableorganizer_petition_sample_data() {
     ]
   },
   "field_activity_notes" : [],
-  "field_cmcp_petition_page" : { "und" : [ { "target_id" : "' . $nids[$content_uuids['on_line_petition']] . '" } ] },
+  "field_cmcp_petition_page" : { "und" : [ { "target_id" : "' . $nids[$uuids[2]] . '" } ] },
   "field_cmcp_petition_targets" : [],
   "field_cmcp_pm_content" : { "und" : [
       {
@@ -2884,14 +2890,15 @@ function ableorganizer_petition_sample_data() {
   "field_cmcp_source" : { "und" : [ { "value" : "Signature Drive" } ] },
   "rdf_mapping" : []
 }',
-      8 => '{
-  "revision_id" : "76",
+        8 => '{
+  "revision_id" : "",
   "uid" : "1",
   "title" : "On-line petition signature",
   "created" : "1378480747",
   "changed" : "1378480747",
-  "activity_id" : "76",
+  "activity_id" : "",
   "type" : "cmcp_petition_signature",
+
   "default_revision" : "1",
   "field_activity_participants" : { "und" : [ { "target_id" : "7" } ] },
   "field_activity_date" : { "und" : [
@@ -2904,7 +2911,7 @@ function ableorganizer_petition_sample_data() {
     ]
   },
   "field_activity_notes" : [],
-  "field_cmcp_petition_page" : { "und" : [ { "target_id" : "' . $nids[$content_uuids['on_line_petition']] . '" } ] },
+  "field_cmcp_petition_page" : { "und" : [ { "target_id" : "' . $nids[$uuids[2]] . '" } ] },
   "field_cmcp_petition_targets" : [],
   "field_cmcp_pm_content" : { "und" : [
       {
@@ -2927,14 +2934,15 @@ function ableorganizer_petition_sample_data() {
   "field_cmcp_source" : { "und" : [ { "value" : "Online Petition" } ] },
   "rdf_mapping" : []
 }',
-      9 => '{
-  "revision_id" : "77",
+        9 => '{
+  "revision_id" : "",
   "uid" : "1",
   "title" : "On-line petition signature",
   "created" : "1378480840",
   "changed" : "1378480840",
-  "activity_id" : "77",
+  "activity_id" : "",
   "type" : "cmcp_petition_signature",
+
   "default_revision" : "1",
   "field_activity_participants" : { "und" : [ { "target_id" : "5" } ] },
   "field_activity_date" : { "und" : [
@@ -2947,7 +2955,7 @@ function ableorganizer_petition_sample_data() {
     ]
   },
   "field_activity_notes" : [],
-  "field_cmcp_petition_page" : { "und" : [ { "target_id" : "' . $nids[$content_uuids['on_line_petition']] . '" } ] },
+  "field_cmcp_petition_page" : { "und" : [ { "target_id" : "' . $nids[$uuids[2]] . '" } ] },
   "field_cmcp_petition_targets" : [],
   "field_cmcp_pm_content" : { "und" : [
       {
@@ -2970,14 +2978,15 @@ function ableorganizer_petition_sample_data() {
   "field_cmcp_source" : { "und" : [ { "value" : "Online Petition" } ] },
   "rdf_mapping" : []
 }',
-      10 => '{
-  "revision_id" : "78",
+        10 => '{
+  "revision_id" : "",
   "uid" : "1",
   "title" : "On-line petition signature",
   "created" : "1378480937",
   "changed" : "1378480937",
-  "activity_id" : "78",
+  "activity_id" : "",
   "type" : "cmcp_petition_signature",
+
   "default_revision" : "1",
   "field_activity_participants" : { "und" : [ { "target_id" : "3" } ] },
   "field_activity_date" : { "und" : [
@@ -2990,7 +2999,7 @@ function ableorganizer_petition_sample_data() {
     ]
   },
   "field_activity_notes" : [],
-  "field_cmcp_petition_page" : { "und" : [ { "target_id" : "' . $nids[$content_uuids['on_line_petition']] . '" } ] },
+  "field_cmcp_petition_page" : { "und" : [ { "target_id" : "' . $nids[$uuids[2]] . '" } ] },
   "field_cmcp_petition_targets" : [],
   "field_cmcp_pm_content" : { "und" : [
       {
@@ -3013,14 +3022,15 @@ function ableorganizer_petition_sample_data() {
   "field_cmcp_source" : { "und" : [ { "value" : "Online Petition" } ] },
   "rdf_mapping" : []
 }',
-      11 => '{
-  "revision_id" : "79",
+        11 => '{
+  "revision_id" : "",
   "uid" : "1",
   "title" : "On-line petition signature",
   "created" : "1378481067",
   "changed" : "1378483638",
-  "activity_id" : "79",
+  "activity_id" : "",
   "type" : "cmcp_petition_signature",
+
   "default_revision" : "1",
   "field_activity_participants" : { "und" : [ { "target_id" : "1" } ] },
   "field_activity_date" : { "und" : [
@@ -3033,7 +3043,7 @@ function ableorganizer_petition_sample_data() {
     ]
   },
   "field_activity_notes" : [],
-  "field_cmcp_petition_page" : { "und" : [ { "target_id" : "' . $nids[$content_uuids['on_line_petition']] . '" } ] },
+  "field_cmcp_petition_page" : { "und" : [ { "target_id" : "' . $nids[$uuids[2]] . '" } ] },
   "field_cmcp_petition_targets" : [],
   "field_cmcp_pm_content" : { "und" : [
       {
@@ -3056,14 +3066,15 @@ function ableorganizer_petition_sample_data() {
   "field_cmcp_source" : { "und" : [ { "value" : "Online Petition" } ] },
   "rdf_mapping" : []
 }',
-      12 => '{
-  "revision_id" : "80",
+        12 => '{
+  "revision_id" : "",
   "uid" : "1",
   "title" : "On-line petition signature of \\u0022Petition without personal message\\u0022",
   "created" : "1379058216",
   "changed" : "1379058216",
-  "activity_id" : "80",
+  "activity_id" : "",
   "type" : "cmcp_petition_signature",
+
   "default_revision" : "1",
   "field_activity_participants" : { "und" : [ { "target_id" : "8" } ] },
   "field_activity_date" : { "und" : [
@@ -3076,7 +3087,7 @@ function ableorganizer_petition_sample_data() {
     ]
   },
   "field_activity_notes" : [],
-  "field_cmcp_petition_page" : { "und" : [ { "target_id" : "' . $nids[$content_uuids['without_personal_message']] . '" } ] },
+  "field_cmcp_petition_page" : { "und" : [ { "target_id" : "' . $nids[$uuids[3]] . '" } ] },
   "field_cmcp_petition_targets" : [],
   "field_cmcp_pm_content" : [],
   "field_cmcp_public_display" : { "und" : [ { "value" : "0" } ] },
@@ -3092,14 +3103,15 @@ function ableorganizer_petition_sample_data() {
   "field_cmcp_source" : { "und" : [ { "value" : "Online Petition" } ] },
   "rdf_mapping" : []
 }',
-      13 => '{
-  "revision_id" : "81",
+        13 => '{
+  "revision_id" : "",
   "uid" : "1",
   "title" : "On-line petition signature of \\u0022Petition without personal message\\u0022",
   "created" : "1379059941",
   "changed" : "1379059941",
-  "activity_id" : "81",
+  "activity_id" : "",
   "type" : "cmcp_petition_signature",
+
   "default_revision" : "1",
   "field_activity_participants" : { "und" : [ { "target_id" : "11" } ] },
   "field_activity_date" : { "und" : [
@@ -3112,7 +3124,7 @@ function ableorganizer_petition_sample_data() {
     ]
   },
   "field_activity_notes" : [],
-  "field_cmcp_petition_page" : { "und" : [ { "target_id" : "' . $nids[$content_uuids['without_personal_message']] . '" } ] },
+  "field_cmcp_petition_page" : { "und" : [ { "target_id" : "' . $nids[$uuids[3]] . '" } ] },
   "field_cmcp_petition_targets" : [],
   "field_cmcp_pm_content" : [],
   "field_cmcp_public_display" : { "und" : [ { "value" : "1" } ] },
@@ -3128,14 +3140,15 @@ function ableorganizer_petition_sample_data() {
   "field_cmcp_source" : { "und" : [ { "value" : "Online Petition" } ] },
   "rdf_mapping" : []
 }',
-      14 => '{
-  "revision_id" : "82",
+        14 => '{
+  "revision_id" : "",
   "uid" : "1",
   "title" : "On-line petition signature of \\u0022Petition without personal message\\u0022",
   "created" : "1379060017",
   "changed" : "1379060017",
-  "activity_id" : "82",
+  "activity_id" : "",
   "type" : "cmcp_petition_signature",
+
   "default_revision" : "1",
   "field_activity_participants" : { "und" : [ { "target_id" : "9" } ] },
   "field_activity_date" : { "und" : [
@@ -3148,7 +3161,7 @@ function ableorganizer_petition_sample_data() {
     ]
   },
   "field_activity_notes" : [],
-  "field_cmcp_petition_page" : { "und" : [ { "target_id" : "' . $nids[$content_uuids['without_personal_message']] . '" } ] },
+  "field_cmcp_petition_page" : { "und" : [ { "target_id" : "' . $nids[$uuids[3]] . '" } ] },
   "field_cmcp_petition_targets" : [],
   "field_cmcp_pm_content" : [],
   "field_cmcp_public_display" : { "und" : [ { "value" : "0" } ] },
@@ -3164,14 +3177,15 @@ function ableorganizer_petition_sample_data() {
   "field_cmcp_source" : { "und" : [ { "value" : "Online Petition" } ] },
   "rdf_mapping" : []
 }',
-      15 => '{
-  "revision_id" : "83",
+        15 => '{
+  "revision_id" : "",
   "uid" : "1",
   "title" : "On-line petition signature of \\u0022Petition without personal message\\u0022",
   "created" : "1379060057",
   "changed" : "1379060057",
-  "activity_id" : "83",
+  "activity_id" : "",
   "type" : "cmcp_petition_signature",
+
   "default_revision" : "1",
   "field_activity_participants" : { "und" : [ { "target_id" : "4" } ] },
   "field_activity_date" : { "und" : [
@@ -3184,7 +3198,7 @@ function ableorganizer_petition_sample_data() {
     ]
   },
   "field_activity_notes" : [],
-  "field_cmcp_petition_page" : { "und" : [ { "target_id" : "' . $nids[$content_uuids['without_personal_message']] . '" } ] },
+  "field_cmcp_petition_page" : { "und" : [ { "target_id" : "' . $nids[$uuids[3]] . '" } ] },
   "field_cmcp_petition_targets" : [],
   "field_cmcp_pm_content" : [],
   "field_cmcp_public_display" : { "und" : [ { "value" : "0" } ] },
@@ -3200,14 +3214,15 @@ function ableorganizer_petition_sample_data() {
   "field_cmcp_source" : { "und" : [ { "value" : "Online Petition" } ] },
   "rdf_mapping" : []
 }',
-      16 => '{
-  "revision_id" : "84",
+        16 => '{
+  "revision_id" : "",
   "uid" : "1",
   "title" : "On-line petition signature of \\u0022Petition without personal message\\u0022",
   "created" : "1379060090",
   "changed" : "1379060090",
-  "activity_id" : "84",
+  "activity_id" : "",
   "type" : "cmcp_petition_signature",
+
   "default_revision" : "1",
   "field_activity_participants" : { "und" : [ { "target_id" : "5" } ] },
   "field_activity_date" : { "und" : [
@@ -3220,7 +3235,7 @@ function ableorganizer_petition_sample_data() {
     ]
   },
   "field_activity_notes" : [],
-  "field_cmcp_petition_page" : { "und" : [ { "target_id" : "' . $nids[$content_uuids['without_personal_message']] . '" } ] },
+  "field_cmcp_petition_page" : { "und" : [ { "target_id" : "' . $nids[$uuids[3]] . '" } ] },
   "field_cmcp_petition_targets" : [],
   "field_cmcp_pm_content" : [],
   "field_cmcp_public_display" : { "und" : [ { "value" : "1" } ] },
@@ -3236,16 +3251,17 @@ function ableorganizer_petition_sample_data() {
   "field_cmcp_source" : { "und" : [ { "value" : "Online Petition" } ] },
   "rdf_mapping" : []
 }',
-      17 => '{
-  "revision_id" : "85",
+        17 => '{
+  "revision_id" : "",
   "uid" : "1",
   "title" : "On-line petition signature of \\u0022Petition without personal message\\u0022",
   "created" : "1379060121",
   "changed" : "1379060121",
-  "activity_id" : "85",
+  "activity_id" : "",
   "type" : "cmcp_petition_signature",
+
   "default_revision" : "1",
-  "field_activity_participants" : { "und" : [ { "target_id" : "7" } ] },
+  "field_activity_participants" : { "und" : [ { "target_id" : "3" } ] },
   "field_activity_date" : { "und" : [
       {
         "value" : "2013-09-13 08:15:21",
@@ -3256,7 +3272,7 @@ function ableorganizer_petition_sample_data() {
     ]
   },
   "field_activity_notes" : [],
-  "field_cmcp_petition_page" : { "und" : [ { "target_id" : "' . $nids[$content_uuids['without_personal_message']] . '" } ] },
+  "field_cmcp_petition_page" : { "und" : [ { "target_id" : "' . $nids[$uuids[3]] . '" } ] },
   "field_cmcp_petition_targets" : [],
   "field_cmcp_pm_content" : [],
   "field_cmcp_public_display" : { "und" : [ { "value" : "1" } ] },
@@ -3272,14 +3288,15 @@ function ableorganizer_petition_sample_data() {
   "field_cmcp_source" : { "und" : [ { "value" : "Online Petition" } ] },
   "rdf_mapping" : []
 }',
-      18 => '{
-  "revision_id" : "86",
+        18 => '{
+  "revision_id" : "",
   "uid" : "1",
   "title" : "On-line petition signature of \\u0022Petition without personal message\\u0022",
   "created" : "1379060186",
   "changed" : "1379060186",
-  "activity_id" : "86",
+  "activity_id" : "",
   "type" : "cmcp_petition_signature",
+
   "default_revision" : "1",
   "field_activity_participants" : { "und" : [ { "target_id" : "10" } ] },
   "field_activity_date" : { "und" : [
@@ -3292,7 +3309,7 @@ function ableorganizer_petition_sample_data() {
     ]
   },
   "field_activity_notes" : [],
-  "field_cmcp_petition_page" : { "und" : [ { "target_id" : "' . $nids[$content_uuids['without_personal_message']] . '" } ] },
+  "field_cmcp_petition_page" : { "und" : [ { "target_id" : "' . $nids[$uuids[3]] . '" } ] },
   "field_cmcp_petition_targets" : [],
   "field_cmcp_pm_content" : [],
   "field_cmcp_public_display" : { "und" : [ { "value" : "1" } ] },
@@ -3308,14 +3325,15 @@ function ableorganizer_petition_sample_data() {
   "field_cmcp_source" : { "und" : [ { "value" : "Online Petition" } ] },
   "rdf_mapping" : []
 }',
-      19 => '{
-  "revision_id" : "87",
+        19 => '{
+  "revision_id" : "",
   "uid" : "1",
   "title" : "On-line petition signature of \\u0022Petition without personal message\\u0022",
   "created" : "1379060212",
   "changed" : "1379060212",
-  "activity_id" : "87",
+  "activity_id" : "",
   "type" : "cmcp_petition_signature",
+
   "default_revision" : "1",
   "field_activity_participants" : { "und" : [ { "target_id" : "6" } ] },
   "field_activity_date" : { "und" : [
@@ -3328,7 +3346,7 @@ function ableorganizer_petition_sample_data() {
     ]
   },
   "field_activity_notes" : [],
-  "field_cmcp_petition_page" : { "und" : [ { "target_id" : "' . $nids[$content_uuids['without_personal_message']] . '" } ] },
+  "field_cmcp_petition_page" : { "und" : [ { "target_id" : "' . $nids[$uuids[3]] . '" } ] },
   "field_cmcp_petition_targets" : [],
   "field_cmcp_pm_content" : [],
   "field_cmcp_public_display" : { "und" : [ { "value" : "1" } ] },
@@ -3344,7 +3362,785 @@ function ableorganizer_petition_sample_data() {
   "field_cmcp_source" : { "und" : [ { "value" : "Online Petition" } ] },
   "rdf_mapping" : []
 }',
-    ),
+        20 => '{
+  "revision_id" : "",
+  "uid" : "1",
+  "title" : "On-line petition signature of \\u0022Petition without personal message\\u0022",
+  "created" : "1379058216",
+  "changed" : "1379058216",
+  "activity_id" : "",
+  "type" : "cmcp_petition_signature",
+
+  "default_revision" : "1",
+  "field_activity_participants" : { "und" : [ { "target_id" : "8" } ] },
+  "field_activity_date" : { "und" : [
+      {
+        "value" : "2013-09-13 07:43:36",
+        "timezone" : "UTC",
+        "timezone_db" : "UTC",
+        "date_type" : "datetime"
+      }
+    ]
+  },
+  "field_activity_notes" : [],
+  "field_cmcp_petition_page" : { "und" : [ { "target_id" : "' . $nids[$uuids[5]] . '" } ] },
+  "field_cmcp_petition_targets" : [],
+  "field_cmcp_pm_content" : [],
+  "field_cmcp_public_display" : { "und" : [ { "value" : "0" } ] },
+  "field_cmcp_received_date" : { "und" : [
+      {
+        "value" : "2013-09-13 07:45:00",
+        "timezone" : "UTC",
+        "timezone_db" : "UTC",
+        "date_type" : "datetime"
+      }
+    ]
+  },
+  "field_cmcp_source" : { "und" : [ { "value" : "Online Petition" } ] },
+  "rdf_mapping" : []
+}',
+        21 => '{
+  "revision_id" : "",
+  "uid" : "1",
+  "title" : "On-line petition signature of \\u0022Petition without personal message\\u0022",
+  "created" : "1379059941",
+  "changed" : "1379059941",
+  "activity_id" : "",
+  "type" : "cmcp_petition_signature",
+
+  "default_revision" : "1",
+  "field_activity_participants" : { "und" : [ { "target_id" : "11" } ] },
+  "field_activity_date" : { "und" : [
+      {
+        "value" : "2013-09-13 08:12:21",
+        "timezone" : "UTC",
+        "timezone_db" : "UTC",
+        "date_type" : "datetime"
+      }
+    ]
+  },
+  "field_activity_notes" : [],
+  "field_cmcp_petition_page" : { "und" : [ { "target_id" : "' . $nids[$uuids[5]] . '" } ] },
+  "field_cmcp_petition_targets" : [],
+  "field_cmcp_pm_content" : [],
+  "field_cmcp_public_display" : { "und" : [ { "value" : "1" } ] },
+  "field_cmcp_received_date" : { "und" : [
+      {
+        "value" : "2013-09-13 08:15:00",
+        "timezone" : "UTC",
+        "timezone_db" : "UTC",
+        "date_type" : "datetime"
+      }
+    ]
+  },
+  "field_cmcp_source" : { "und" : [ { "value" : "Online Petition" } ] },
+  "rdf_mapping" : []
+}',
+        22 => '{
+  "revision_id" : "",
+  "uid" : "1",
+  "title" : "On-line petition signature of \\u0022Petition without personal message\\u0022",
+  "created" : "1379060017",
+  "changed" : "1379060017",
+  "activity_id" : "",
+  "type" : "cmcp_petition_signature",
+
+  "default_revision" : "1",
+  "field_activity_participants" : { "und" : [ { "target_id" : "9" } ] },
+  "field_activity_date" : { "und" : [
+      {
+        "value" : "2013-09-13 08:13:37",
+        "timezone" : "UTC",
+        "timezone_db" : "UTC",
+        "date_type" : "datetime"
+      }
+    ]
+  },
+  "field_activity_notes" : [],
+  "field_cmcp_petition_page" : { "und" : [ { "target_id" : "' . $nids[$uuids[5]] . '" } ] },
+  "field_cmcp_petition_targets" : [],
+  "field_cmcp_pm_content" : [],
+  "field_cmcp_public_display" : { "und" : [ { "value" : "0" } ] },
+  "field_cmcp_received_date" : { "und" : [
+      {
+        "value" : "2013-09-13 08:15:00",
+        "timezone" : "UTC",
+        "timezone_db" : "UTC",
+        "date_type" : "datetime"
+      }
+    ]
+  },
+  "field_cmcp_source" : { "und" : [ { "value" : "Online Petition" } ] },
+  "rdf_mapping" : []
+}',
+        23 => '{
+  "revision_id" : "",
+  "uid" : "1",
+  "title" : "On-line petition signature of \\u0022Petition without personal message\\u0022",
+  "created" : "1379060057",
+  "changed" : "1379060057",
+  "activity_id" : "",
+  "type" : "cmcp_petition_signature",
+
+  "default_revision" : "1",
+  "field_activity_participants" : { "und" : [ { "target_id" : "4" } ] },
+  "field_activity_date" : { "und" : [
+      {
+        "value" : "2013-09-13 08:14:18",
+        "timezone" : "UTC",
+        "timezone_db" : "UTC",
+        "date_type" : "datetime"
+      }
+    ]
+  },
+  "field_activity_notes" : [],
+  "field_cmcp_petition_page" : { "und" : [ { "target_id" : "' . $nids[$uuids[5]] . '" } ] },
+  "field_cmcp_petition_targets" : [],
+  "field_cmcp_pm_content" : [],
+  "field_cmcp_public_display" : { "und" : [ { "value" : "0" } ] },
+  "field_cmcp_received_date" : { "und" : [
+      {
+        "value" : "2013-09-13 08:15:00",
+        "timezone" : "UTC",
+        "timezone_db" : "UTC",
+        "date_type" : "datetime"
+      }
+    ]
+  },
+  "field_cmcp_source" : { "und" : [ { "value" : "Online Petition" } ] },
+  "rdf_mapping" : []
+}',
+        24 => '{
+  "revision_id" : "",
+  "uid" : "1",
+  "title" : "On-line petition signature of \\u0022Petition without personal message\\u0022",
+  "created" : "1379060090",
+  "changed" : "1379060090",
+  "activity_id" : "",
+  "type" : "cmcp_petition_signature",
+
+  "default_revision" : "1",
+  "field_activity_participants" : { "und" : [ { "target_id" : "5" } ] },
+  "field_activity_date" : { "und" : [
+      {
+        "value" : "2013-09-13 08:14:50",
+        "timezone" : "UTC",
+        "timezone_db" : "UTC",
+        "date_type" : "datetime"
+      }
+    ]
+  },
+  "field_activity_notes" : [],
+  "field_cmcp_petition_page" : { "und" : [ { "target_id" : "' . $nids[$uuids[5]] . '" } ] },
+  "field_cmcp_petition_targets" : [],
+  "field_cmcp_pm_content" : [],
+  "field_cmcp_public_display" : { "und" : [ { "value" : "1" } ] },
+  "field_cmcp_received_date" : { "und" : [
+      {
+        "value" : "2013-09-13 08:15:00",
+        "timezone" : "UTC",
+        "timezone_db" : "UTC",
+        "date_type" : "datetime"
+      }
+    ]
+  },
+  "field_cmcp_source" : { "und" : [ { "value" : "Online Petition" } ] },
+  "rdf_mapping" : []
+}',
+        25 => '{
+  "revision_id" : "",
+  "uid" : "1",
+  "title" : "On-line petition signature of \\u0022Petition without personal message\\u0022",
+  "created" : "1379060121",
+  "changed" : "1379060121",
+  "activity_id" : "",
+  "type" : "cmcp_petition_signature",
+
+  "default_revision" : "1",
+  "field_activity_participants" : { "und" : [ { "target_id" : "3" } ] },
+  "field_activity_date" : { "und" : [
+      {
+        "value" : "2013-09-13 08:15:21",
+        "timezone" : "UTC",
+        "timezone_db" : "UTC",
+        "date_type" : "datetime"
+      }
+    ]
+  },
+  "field_activity_notes" : [],
+  "field_cmcp_petition_page" : { "und" : [ { "target_id" : "' . $nids[$uuids[5]] . '" } ] },
+  "field_cmcp_petition_targets" : [],
+  "field_cmcp_pm_content" : [],
+  "field_cmcp_public_display" : { "und" : [ { "value" : "1" } ] },
+  "field_cmcp_received_date" : { "und" : [
+      {
+        "value" : "2013-09-13 08:15:00",
+        "timezone" : "UTC",
+        "timezone_db" : "UTC",
+        "date_type" : "datetime"
+      }
+    ]
+  },
+  "field_cmcp_source" : { "und" : [ { "value" : "Online Petition" } ] },
+  "rdf_mapping" : []
+}',
+        26 => '{
+  "revision_id" : "",
+  "uid" : "1",
+  "title" : "On-line petition signature of \\u0022Petition without personal message\\u0022",
+  "created" : "1379060186",
+  "changed" : "1379060186",
+  "activity_id" : "",
+  "type" : "cmcp_petition_signature",
+
+  "default_revision" : "1",
+  "field_activity_participants" : { "und" : [ { "target_id" : "10" } ] },
+  "field_activity_date" : { "und" : [
+      {
+        "value" : "2013-09-13 08:16:26",
+        "timezone" : "UTC",
+        "timezone_db" : "UTC",
+        "date_type" : "datetime"
+      }
+    ]
+  },
+  "field_activity_notes" : [],
+  "field_cmcp_petition_page" : { "und" : [ { "target_id" : "' . $nids[$uuids[5]] . '" } ] },
+  "field_cmcp_petition_targets" : [],
+  "field_cmcp_pm_content" : [],
+  "field_cmcp_public_display" : { "und" : [ { "value" : "1" } ] },
+  "field_cmcp_received_date" : { "und" : [
+      {
+        "value" : "2013-09-13 08:15:00",
+        "timezone" : "UTC",
+        "timezone_db" : "UTC",
+        "date_type" : "datetime"
+      }
+    ]
+  },
+  "field_cmcp_source" : { "und" : [ { "value" : "Online Petition" } ] },
+  "rdf_mapping" : []
+}',
+        27 => '{
+  "revision_id" : "",
+  "uid" : "1",
+  "title" : "On-line petition signature of \\u0022Petition without personal message\\u0022",
+  "created" : "1379060212",
+  "changed" : "1379060212",
+  "activity_id" : "",
+  "type" : "cmcp_petition_signature",
+
+  "default_revision" : "1",
+  "field_activity_participants" : { "und" : [ { "target_id" : "6" } ] },
+  "field_activity_date" : { "und" : [
+      {
+        "value" : "2013-09-13 08:16:53",
+        "timezone" : "UTC",
+        "timezone_db" : "UTC",
+        "date_type" : "datetime"
+      }
+    ]
+  },
+  "field_activity_notes" : [],
+  "field_cmcp_petition_page" : { "und" : [ { "target_id" : "' . $nids[$uuids[5]] . '" } ] },
+  "field_cmcp_petition_targets" : [],
+  "field_cmcp_pm_content" : [],
+  "field_cmcp_public_display" : { "und" : [ { "value" : "1" } ] },
+  "field_cmcp_received_date" : { "und" : [
+      {
+        "value" : "2013-09-13 08:15:00",
+        "timezone" : "UTC",
+        "timezone_db" : "UTC",
+        "date_type" : "datetime"
+      }
+    ]
+  },
+  "field_cmcp_source" : { "und" : [ { "value" : "Online Petition" } ] },
+  "rdf_mapping" : []
+}',
+        28 => '{
+  "revision_id" : "",
+  "uid" : "1",
+  "title" : "On-line petition signature",
+  "created" : "1378479518",
+  "changed" : "1378479518",
+  "activity_id" : "",
+  "type" : "cmcp_petition_signature",
+
+  "default_revision" : "1",
+  "field_activity_participants" : { "und" : [ { "target_id" : "10" } ] },
+  "field_activity_date" : { "und" : [
+      {
+        "value" : "2013-09-06 14:58:39",
+        "timezone" : "UTC",
+        "timezone_db" : "UTC",
+        "date_type" : "datetime"
+      }
+    ]
+  },
+  "field_activity_notes" : [],
+  "field_cmcp_petition_page" : { "und" : [ { "target_id" : "' . $nids[$uuids[4]] . '" } ] },
+  "field_cmcp_petition_targets" : [],
+  "field_cmcp_pm_content" : { "und" : [
+      {
+        "value" : "This personal message will be sent to petition targets.",
+        "format" : null
+      }
+    ]
+  },
+  "field_cmcp_public_display" : { "und" : [ { "value" : "0" } ] },
+  "field_cmcp_received_date" : { "und" : [
+      {
+        "value" : "2013-09-06 15:00:00",
+        "timezone" : "UTC",
+        "timezone_db" : "UTC",
+        "date_type" : "datetime"
+      }
+    ]
+  },
+  "field_cmcp_source" : { "und" : [ { "value" : "Online Petition" } ] },
+  "rdf_mapping" : []
+}',
+        29 => '{
+  "revision_id" : "",
+  "uid" : "1",
+  "title" : "On-line petition signature",
+  "created" : "1378479987",
+  "changed" : "1378479987",
+  "activity_id" : "",
+  "type" : "cmcp_petition_signature",
+
+  "default_revision" : "1",
+  "field_activity_participants" : { "und" : [ { "target_id" : "8" } ] },
+  "field_activity_date" : { "und" : [
+      {
+        "value" : "2013-09-06 15:06:27",
+        "timezone" : "UTC",
+        "timezone_db" : "UTC",
+        "date_type" : "datetime"
+      }
+    ]
+  },
+  "field_activity_notes" : [],
+  "field_cmcp_petition_page" : { "und" : [ { "target_id" : "' . $nids[$uuids[4]] . '" } ] },
+  "field_cmcp_petition_targets" : [],
+  "field_cmcp_pm_content" : { "und" : [
+      {
+        "value" : "This personal message will be sent to petition targets.\\r\\nAdditional user submitted text.",
+        "format" : null
+      }
+    ]
+  },
+  "field_cmcp_public_display" : { "und" : [ { "value" : "1" } ] },
+  "field_cmcp_received_date" : { "und" : [
+      {
+        "value" : "2013-09-06 15:00:00",
+        "timezone" : "UTC",
+        "timezone_db" : "UTC",
+        "date_type" : "datetime"
+      }
+    ]
+  },
+  "field_cmcp_source" : { "und" : [ { "value" : "Online Petition" } ] },
+  "rdf_mapping" : []
+}',
+        30 => '{
+  "revision_id" : "",
+  "uid" : "1",
+  "title" : "On-line petition signature",
+  "created" : "1378480199",
+  "changed" : "1378480199",
+  "activity_id" : "",
+  "type" : "cmcp_petition_signature",
+
+  "default_revision" : "1",
+  "field_activity_participants" : { "und" : [ { "target_id" : "6" } ] },
+  "field_activity_date" : { "und" : [
+      {
+        "value" : "2013-09-06 15:15:00",
+        "timezone" : "UTC",
+        "timezone_db" : "UTC",
+        "date_type" : "datetime"
+      }
+    ]
+  },
+  "field_activity_notes" : [],
+  "field_cmcp_petition_page" : { "und" : [ { "target_id" : "' . $nids[$uuids[4]] . '" } ] },
+  "field_cmcp_petition_targets" : [],
+  "field_cmcp_pm_content" : { "und" : [
+      {
+        "value" : "This personal message will be sent to petition targets.",
+        "format" : "filtered_html",
+        "safe_value" : "\\u003Cp\\u003EThis personal message will be sent to petition targets.\\u003C\\/p\\u003E\\n"
+      }
+    ]
+  },
+  "field_cmcp_public_display" : { "und" : [ { "value" : "1" } ] },
+  "field_cmcp_received_date" : { "und" : [
+      {
+        "value" : "2013-09-05 15:15:00",
+        "timezone" : "UTC",
+        "timezone_db" : "UTC",
+        "date_type" : "datetime"
+      }
+    ]
+  },
+  "field_cmcp_source" : { "und" : [ { "value" : "Online Petition" } ] },
+  "rdf_mapping" : []
+}',
+        31 => '{
+  "revision_id" : "",
+  "uid" : "1",
+  "title" : "On-line petition signature",
+  "created" : "1378480352",
+  "changed" : "1378480352",
+  "activity_id" : "",
+  "type" : "cmcp_petition_signature",
+
+  "default_revision" : "1",
+  "field_activity_participants" : { "und" : [ { "target_id" : "4" } ] },
+  "field_activity_date" : { "und" : [
+      {
+        "value" : "2013-09-06 15:15:00",
+        "timezone" : "UTC",
+        "timezone_db" : "UTC",
+        "date_type" : "datetime"
+      }
+    ]
+  },
+  "field_activity_notes" : [],
+  "field_cmcp_petition_page" : { "und" : [ { "target_id" : "' . $nids[$uuids[4]] . '" } ] },
+  "field_cmcp_petition_targets" : [],
+  "field_cmcp_pm_content" : { "und" : [
+      {
+        "value" : "This personal message will be sent to petition targets.",
+        "format" : "filtered_html",
+        "safe_value" : "\\u003Cp\\u003EThis personal message will be sent to petition targets.\\u003C\\/p\\u003E\\n"
+      }
+    ]
+  },
+  "field_cmcp_public_display" : { "und" : [ { "value" : "1" } ] },
+  "field_cmcp_received_date" : { "und" : [
+      {
+        "value" : "2013-09-04 15:15:00",
+        "timezone" : "UTC",
+        "timezone_db" : "UTC",
+        "date_type" : "datetime"
+      }
+    ]
+  },
+  "field_cmcp_source" : { "und" : [ { "value" : "Online Petition" } ] },
+  "rdf_mapping" : []
+}',
+        32 => '{
+  "revision_id" : "",
+  "uid" : "1",
+  "title" : "On-line petition signature",
+  "created" : "1378480442",
+  "changed" : "1378480442",
+  "activity_id" : "",
+  "type" : "cmcp_petition_signature",
+
+  "default_revision" : "1",
+  "field_activity_participants" : { "und" : [ { "target_id" : "2" } ] },
+  "field_activity_date" : { "und" : [
+      {
+        "value" : "2013-09-06 15:15:00",
+        "timezone" : "UTC",
+        "timezone_db" : "UTC",
+        "date_type" : "datetime"
+      }
+    ]
+  },
+  "field_activity_notes" : [],
+  "field_cmcp_petition_page" : { "und" : [ { "target_id" : "' . $nids[$uuids[4]] . '" } ] },
+  "field_cmcp_petition_targets" : [],
+  "field_cmcp_pm_content" : { "und" : [
+      {
+        "value" : "This personal message will be sent to petition targets.",
+        "format" : "filtered_html",
+        "safe_value" : "\\u003Cp\\u003EThis personal message will be sent to petition targets.\\u003C\\/p\\u003E\\n"
+      }
+    ]
+  },
+  "field_cmcp_public_display" : { "und" : [ { "value" : "0" } ] },
+  "field_cmcp_received_date" : { "und" : [
+      {
+        "value" : "2013-09-04 15:15:00",
+        "timezone" : "UTC",
+        "timezone_db" : "UTC",
+        "date_type" : "datetime"
+      }
+    ]
+  },
+  "field_cmcp_source" : { "und" : [ { "value" : "Online Petition" } ] },
+  "rdf_mapping" : []
+}',
+        33 => '{
+  "revision_id" : "",
+  "uid" : "1",
+  "title" : "On-line petition signature",
+  "created" : "1378480551",
+  "changed" : "1378480551",
+  "activity_id" : "",
+  "type" : "cmcp_petition_signature",
+
+  "default_revision" : "1",
+  "field_activity_participants" : { "und" : [ { "target_id" : "11" } ] },
+  "field_activity_date" : { "und" : [
+      {
+        "value" : "2013-09-06 15:15:00",
+        "timezone" : "UTC",
+        "timezone_db" : "UTC",
+        "date_type" : "datetime"
+      }
+    ]
+  },
+  "field_activity_notes" : [],
+  "field_cmcp_petition_page" : { "und" : [ { "target_id" : "' . $nids[$uuids[4]] . '" } ] },
+  "field_cmcp_petition_targets" : [],
+  "field_cmcp_pm_content" : { "und" : [
+      {
+        "value" : "This personal message will be sent to petition targets.",
+        "format" : "filtered_html",
+        "safe_value" : "\\u003Cp\\u003EThis personal message will be sent to petition targets.\\u003C\\/p\\u003E\\n"
+      }
+    ]
+  },
+  "field_cmcp_public_display" : { "und" : [ { "value" : "1" } ] },
+  "field_cmcp_received_date" : { "und" : [
+      {
+        "value" : "2013-09-06 15:15:00",
+        "timezone" : "UTC",
+        "timezone_db" : "UTC",
+        "date_type" : "datetime"
+      }
+    ]
+  },
+  "field_cmcp_source" : { "und" : [ { "value" : "Signature Drive" } ] },
+  "rdf_mapping" : []
+}',
+        34 => '{
+  "revision_id" : "",
+  "uid" : "1",
+  "title" : "On-line petition signature",
+  "created" : "1378480633",
+  "changed" : "1378480633",
+  "activity_id" : "",
+  "type" : "cmcp_petition_signature",
+
+  "default_revision" : "1",
+  "field_activity_participants" : { "und" : [ { "target_id" : "9" } ] },
+  "field_activity_date" : { "und" : [
+      {
+        "value" : "2013-09-06 15:15:00",
+        "timezone" : "UTC",
+        "timezone_db" : "UTC",
+        "date_type" : "datetime"
+      }
+    ]
+  },
+  "field_activity_notes" : [],
+  "field_cmcp_petition_page" : { "und" : [ { "target_id" : "' . $nids[$uuids[4]] . '" } ] },
+  "field_cmcp_petition_targets" : [],
+  "field_cmcp_pm_content" : { "und" : [
+      {
+        "value" : "This personal message will be sent to petition targets.",
+        "format" : "filtered_html",
+        "safe_value" : "\\u003Cp\\u003EThis personal message will be sent to petition targets.\\u003C\\/p\\u003E\\n"
+      }
+    ]
+  },
+  "field_cmcp_public_display" : { "und" : [ { "value" : "1" } ] },
+  "field_cmcp_received_date" : { "und" : [
+      {
+        "value" : "2013-09-02 15:15:00",
+        "timezone" : "UTC",
+        "timezone_db" : "UTC",
+        "date_type" : "datetime"
+      }
+    ]
+  },
+  "field_cmcp_source" : { "und" : [ { "value" : "Signature Drive" } ] },
+  "rdf_mapping" : []
+}',
+        35 => '{
+  "revision_id" : "",
+  "uid" : "1",
+  "title" : "On-line petition signature",
+  "created" : "1378480747",
+  "changed" : "1378480747",
+  "activity_id" : "",
+  "type" : "cmcp_petition_signature",
+
+  "default_revision" : "1",
+  "field_activity_participants" : { "und" : [ { "target_id" : "7" } ] },
+  "field_activity_date" : { "und" : [
+      {
+        "value" : "2013-09-06 15:15:00",
+        "timezone" : "UTC",
+        "timezone_db" : "UTC",
+        "date_type" : "datetime"
+      }
+    ]
+  },
+  "field_activity_notes" : [],
+  "field_cmcp_petition_page" : { "und" : [ { "target_id" : "' . $nids[$uuids[4]] . '" } ] },
+  "field_cmcp_petition_targets" : [],
+  "field_cmcp_pm_content" : { "und" : [
+      {
+        "value" : "This personal message will be sent to petition targets.",
+        "format" : "filtered_html",
+        "safe_value" : "\\u003Cp\\u003EThis personal message will be sent to petition targets.\\u003C\\/p\\u003E\\n"
+      }
+    ]
+  },
+  "field_cmcp_public_display" : { "und" : [ { "value" : "1" } ] },
+  "field_cmcp_received_date" : { "und" : [
+      {
+        "value" : "2013-09-02 15:15:00",
+        "timezone" : "UTC",
+        "timezone_db" : "UTC",
+        "date_type" : "datetime"
+      }
+    ]
+  },
+  "field_cmcp_source" : { "und" : [ { "value" : "Online Petition" } ] },
+  "rdf_mapping" : []
+}',
+        36 => '{
+  "revision_id" : "",
+  "uid" : "1",
+  "title" : "On-line petition signature",
+  "created" : "1378480840",
+  "changed" : "1378480840",
+  "activity_id" : "",
+  "type" : "cmcp_petition_signature",
+
+  "default_revision" : "1",
+  "field_activity_participants" : { "und" : [ { "target_id" : "5" } ] },
+  "field_activity_date" : { "und" : [
+      {
+        "value" : "2013-09-06 15:15:00",
+        "timezone" : "UTC",
+        "timezone_db" : "UTC",
+        "date_type" : "datetime"
+      }
+    ]
+  },
+  "field_activity_notes" : [],
+  "field_cmcp_petition_page" : { "und" : [ { "target_id" : "' . $nids[$uuids[4]] . '" } ] },
+  "field_cmcp_petition_targets" : [],
+  "field_cmcp_pm_content" : { "und" : [
+      {
+        "value" : "This personal message will be sent to petition targets.",
+        "format" : "filtered_html",
+        "safe_value" : "\\u003Cp\\u003EThis personal message will be sent to petition targets.\\u003C\\/p\\u003E\\n"
+      }
+    ]
+  },
+  "field_cmcp_public_display" : { "und" : [ { "value" : "1" } ] },
+  "field_cmcp_received_date" : { "und" : [
+      {
+        "value" : "2013-09-03 15:15:00",
+        "timezone" : "UTC",
+        "timezone_db" : "UTC",
+        "date_type" : "datetime"
+      }
+    ]
+  },
+  "field_cmcp_source" : { "und" : [ { "value" : "Online Petition" } ] },
+  "rdf_mapping" : []
+}',
+        37 => '{
+  "revision_id" : "",
+  "uid" : "1",
+  "title" : "On-line petition signature",
+  "created" : "1378480937",
+  "changed" : "1378480937",
+  "activity_id" : "",
+  "type" : "cmcp_petition_signature",
+
+  "default_revision" : "1",
+  "field_activity_participants" : { "und" : [ { "target_id" : "3" } ] },
+  "field_activity_date" : { "und" : [
+      {
+        "value" : "2013-09-06 15:15:00",
+        "timezone" : "UTC",
+        "timezone_db" : "UTC",
+        "date_type" : "datetime"
+      }
+    ]
+  },
+  "field_activity_notes" : [],
+  "field_cmcp_petition_page" : { "und" : [ { "target_id" : "' . $nids[$uuids[4]] . '" } ] },
+  "field_cmcp_petition_targets" : [],
+  "field_cmcp_pm_content" : { "und" : [
+      {
+        "value" : "This personal message will be sent to petition targets.",
+        "format" : "filtered_html",
+        "safe_value" : "\\u003Cp\\u003EThis personal message will be sent to petition targets.\\u003C\\/p\\u003E\\n"
+      }
+    ]
+  },
+  "field_cmcp_public_display" : { "und" : [ { "value" : "1" } ] },
+  "field_cmcp_received_date" : { "und" : [
+      {
+        "value" : "2013-09-04 15:15:00",
+        "timezone" : "UTC",
+        "timezone_db" : "UTC",
+        "date_type" : "datetime"
+      }
+    ]
+  },
+  "field_cmcp_source" : { "und" : [ { "value" : "Online Petition" } ] },
+  "rdf_mapping" : []
+}',
+        38 => '{
+  "revision_id" : "",
+  "uid" : "1",
+  "title" : "On-line petition signature",
+  "created" : "1378481067",
+  "changed" : "1378483638",
+  "activity_id" : "",
+  "type" : "cmcp_petition_signature",
+
+  "default_revision" : "1",
+  "field_activity_participants" : { "und" : [ { "target_id" : "1" } ] },
+  "field_activity_date" : { "und" : [
+      {
+        "value" : "2013-09-06 15:30:00",
+        "timezone" : "UTC",
+        "timezone_db" : "UTC",
+        "date_type" : "datetime"
+      }
+    ]
+  },
+  "field_activity_notes" : [],
+  "field_cmcp_petition_page" : { "und" : [ { "target_id" : "' . $nids[$uuids[4]] . '" } ] },
+  "field_cmcp_petition_targets" : [],
+  "field_cmcp_pm_content" : { "und" : [
+      {
+        "value" : "What the hell are you talking about?",
+        "format" : "filtered_html",
+        "safe_value" : "\\u003Cp\\u003EWhat the hell are you talking about?\\u003C\\/p\\u003E\\n"
+      }
+    ]
+  },
+  "field_cmcp_public_display" : { "und" : [ { "value" : "0" } ] },
+  "field_cmcp_received_date" : { "und" : [
+      {
+        "value" : "2013-09-01 15:30:00",
+        "timezone" : "UTC",
+        "timezone_db" : "UTC",
+        "date_type" : "datetime"
+      }
+    ]
+  },
+  "field_cmcp_source" : { "und" : [ { "value" : "Online Petition" } ] },
+  "rdf_mapping" : []
+}',
+      ),
   );
 
   return $sample_data;
@@ -3369,12 +4165,12 @@ function ableorganizer_volunteer_sample_data() {
     'crm_core_activity' =>
     array (
       11 => '{
-  "revision_id" : "88",
+  "revision_id" : "",
   "uid" : "1",
   "title" : "Commitment for Volunteer Opportunity to \\u0022Support the Food Bank\\u0022",
   "created" : "1379606020",
   "changed" : "1379606212",
-  "activity_id" : "88",
+  "activity_id" : "",
   "type" : "cmcv_volunteer_commitment",
   "default_revision" : "1",
   "field_activity_participants" : { "und" : [ { "target_id" : "4" } ] },
@@ -3411,12 +4207,12 @@ function ableorganizer_volunteer_sample_data() {
   "rdf_mapping" : []
 }',
       12 => '{
-  "revision_id" : "89",
+  "revision_id" : "",
   "uid" : "1",
   "title" : "Commitment for Volunteer Opportunity to \\u0022Support the Food Bank\\u0022",
   "created" : "1379606128",
   "changed" : "1379606324",
-  "activity_id" : "89",
+  "activity_id" : "",
   "type" : "cmcv_volunteer_commitment",
   "default_revision" : "1",
   "field_activity_participants" : { "und" : [ { "target_id" : "6" } ] },
@@ -3446,12 +4242,12 @@ function ableorganizer_volunteer_sample_data() {
   "rdf_mapping" : []
 }',
       23 => '{
-  "revision_id" : "90",
+  "revision_id" : "",
   "uid" : "1",
   "title" : "Commitment for Volunteer Opportunity to \\u0022Support the Food Bank\\u0022",
   "created" : "1379608711",
   "changed" : "1379608711",
-  "activity_id" : "90",
+  "activity_id" : "",
   "type" : "cmcv_volunteer_commitment",
   "default_revision" : "1",
   "field_activity_participants" : { "und" : [ { "target_id" : "7" } ] },
@@ -3481,12 +4277,12 @@ function ableorganizer_volunteer_sample_data() {
   "rdf_mapping" : []
 }',
       24 => '{
-  "revision_id" : "91",
+  "revision_id" : "",
   "uid" : "1",
   "title" : "Commitment for Volunteer Opportunity to \\u0022Work with Homeless Animals\\u0022",
   "created" : "1379608731",
   "changed" : "1379608731",
-  "activity_id" : "91",
+  "activity_id" : "",
   "type" : "cmcv_volunteer_commitment",
   "default_revision" : "1",
   "field_activity_participants" : { "und" : [ { "target_id" : "7" } ] },
@@ -3516,12 +4312,12 @@ function ableorganizer_volunteer_sample_data() {
   "rdf_mapping" : []
 }',
       25 => '{
-  "revision_id" : "92",
+  "revision_id" : "",
   "uid" : "1",
   "title" : "Commitment for Volunteer Opportunity to \\u0022Get Out The Vote!\\u0022",
   "created" : "1379608753",
   "changed" : "1379608753",
-  "activity_id" : "92",
+  "activity_id" : "",
   "type" : "cmcv_volunteer_commitment",
   "default_revision" : "1",
   "field_activity_participants" : { "und" : [ { "target_id" : "7" } ] },
@@ -3551,12 +4347,12 @@ function ableorganizer_volunteer_sample_data() {
   "rdf_mapping" : []
 }',
       26 => '{
-  "revision_id" : "93",
+  "revision_id" : "",
   "uid" : "1",
   "title" : "Commitment for Volunteer Opportunity to \\u0022After School Tutors Needed\\u0022",
   "created" : "1379608770",
   "changed" : "1379608770",
-  "activity_id" : "93",
+  "activity_id" : "",
   "type" : "cmcv_volunteer_commitment",
   "default_revision" : "1",
   "field_activity_participants" : { "und" : [ { "target_id" : "7" } ] },
@@ -3586,12 +4382,12 @@ function ableorganizer_volunteer_sample_data() {
   "rdf_mapping" : []
 }',
       27 => '{
-  "revision_id" : "94",
+  "revision_id" : "",
   "uid" : "1",
   "title" : "Commitment for Volunteer Opportunity to \\u0022After School Tutors Needed\\u0022",
   "created" : "1379608841",
   "changed" : "1379608841",
-  "activity_id" : "94",
+  "activity_id" : "",
   "type" : "cmcv_volunteer_commitment",
   "default_revision" : "1",
   "field_activity_participants" : { "und" : [ { "target_id" : "2" } ] },
@@ -3621,12 +4417,12 @@ function ableorganizer_volunteer_sample_data() {
   "rdf_mapping" : []
 }',
       28 => '{
-  "revision_id" : "95",
+  "revision_id" : "",
   "uid" : "1",
   "title" : "Commitment for Volunteer Opportunity to \\u0022Work with Homeless Animals\\u0022",
   "created" : "1379608861",
   "changed" : "1379608861",
-  "activity_id" : "95",
+  "activity_id" : "",
   "type" : "cmcv_volunteer_commitment",
   "default_revision" : "1",
   "field_activity_participants" : { "und" : [ { "target_id" : "2" } ] },
@@ -3656,12 +4452,12 @@ function ableorganizer_volunteer_sample_data() {
   "rdf_mapping" : []
 }',
       29 => '{
-  "revision_id" : "96",
+  "revision_id" : "",
   "uid" : "1",
   "title" : "Commitment for Volunteer Opportunity to \\u0022Keep Our Creek Clean\\u0022",
   "created" : "1379608889",
   "changed" : "1379608889",
-  "activity_id" : "96",
+  "activity_id" : "",
   "type" : "cmcv_volunteer_commitment",
   "default_revision" : "1",
   "field_activity_participants" : { "und" : [ { "target_id" : "5" } ] },
@@ -3691,12 +4487,12 @@ function ableorganizer_volunteer_sample_data() {
   "rdf_mapping" : []
 }',
       30 => '{
-  "revision_id" : "97",
+  "revision_id" : "",
   "uid" : "1",
   "title" : "Commitment for Volunteer Opportunity to \\u0022Get Out The Vote!\\u0022",
   "created" : "1379608915",
   "changed" : "1379608915",
-  "activity_id" : "97",
+  "activity_id" : "",
   "type" : "cmcv_volunteer_commitment",
   "default_revision" : "1",
   "field_activity_participants" : { "und" : [ { "target_id" : "10" } ] },
@@ -3726,12 +4522,12 @@ function ableorganizer_volunteer_sample_data() {
   "rdf_mapping" : []
 }',
       31 => '{
-  "revision_id" : "98",
+  "revision_id" : "",
   "uid" : "1",
   "title" : "Commitment for Volunteer Opportunity to \\u0022Work with Homeless Animals\\u0022",
   "created" : "1379608954",
   "changed" : "1379608954",
-  "activity_id" : "98",
+  "activity_id" : "",
   "type" : "cmcv_volunteer_commitment",
   "default_revision" : "1",
   "field_activity_participants" : { "und" : [ { "target_id" : "4" } ] },
@@ -3761,12 +4557,12 @@ function ableorganizer_volunteer_sample_data() {
   "rdf_mapping" : []
 }',
       32 => '{
-  "revision_id" : "99",
+  "revision_id" : "",
   "uid" : "1",
   "title" : "Commitment for Volunteer Opportunity to \\u0022Keep Our Creek Clean\\u0022",
   "created" : "1379608984",
   "changed" : "1379608984",
-  "activity_id" : "99",
+  "activity_id" : "",
   "type" : "cmcv_volunteer_commitment",
   "default_revision" : "1",
   "field_activity_participants" : { "und" : [ { "target_id" : "6" } ] },
@@ -3796,12 +4592,12 @@ function ableorganizer_volunteer_sample_data() {
   "rdf_mapping" : []
 }',
       33 => '{
-  "revision_id" : "100",
+  "revision_id" : "",
   "uid" : "1",
   "title" : "Commitment for Volunteer Opportunity to \\u0022After School Tutors Needed\\u0022",
   "created" : "1379609026",
   "changed" : "1379609026",
-  "activity_id" : "100",
+  "activity_id" : "",
   "type" : "cmcv_volunteer_commitment",
   "default_revision" : "1",
   "field_activity_participants" : { "und" : [ { "target_id" : "9" } ] },
@@ -3831,12 +4627,12 @@ function ableorganizer_volunteer_sample_data() {
   "rdf_mapping" : []
 }',
       34 => '{
-  "revision_id" : "101",
+  "revision_id" : "",
   "uid" : "1",
   "title" : "Commitment for Volunteer Opportunity to \\u0022Keep Our Creek Clean\\u0022",
   "created" : "1379609044",
   "changed" : "1379609044",
-  "activity_id" : "101",
+  "activity_id" : "",
   "type" : "cmcv_volunteer_commitment",
   "default_revision" : "1",
   "field_activity_participants" : { "und" : [ { "target_id" : "9" } ] },
