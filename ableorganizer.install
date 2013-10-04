@@ -528,10 +528,17 @@ function ableorganizer_install() {
   // now set CRM Core to use the CRM Core menu
   variable_set('crm_core_theme_replace_links', 1);
   
-  // now set the dashboard
+  // now turn on the dashboard
   variable_set('crm_core_dashboard_enabled', 1);
   variable_set('crm_core_dashboard_path', 'crm-core/ableorganizer_dashboard');
-  
+  $item = array(
+    'link_path' => 'crm-core/dashboard',
+    'link_title' => 'Dashboard',
+    'menu_name' => 'crm-core-menu',
+    'weight' => 0,
+  );
+  menu_link_save($item);
+    
   // now set the default logo
   $theme_name = 'ablestarter';  
   $var_name = 'theme_' . $theme_name . '_settings';

@@ -1,6 +1,6 @@
-name = Able Organizer
+name = AbleOrganizer
 core = 7.x
-package = Able Organizer
+package = AbleOrganizer
 dependencies[] = ctools
 dependencies[] = features
 dependencies[] = geocoder
