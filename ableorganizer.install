@@ -542,12 +542,10 @@ function ableorganizer_install() {
   // now set the default logo
   $theme_name = 'ablestarter';  
   $var_name = 'theme_' . $theme_name . '_settings';
-  $new_path = 'profiles/ableorganizer/logo.png';
+  $new_path = 'profiles/ableorganizer/ao-logo.png';
   
   $settings = variable_get($var_name, array());
-  
   $settings['logo_path'] = $new_path;
-  
   variable_set($var_name, $settings);
   
 }
