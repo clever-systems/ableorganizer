@@ -68,7 +68,7 @@ function ableorganizer_dashboard_views_default_views() {
   $handler->display->display_options['fields']['field_cmcd_page']['settings'] = array(
     'link' => 1,
   );
-  /* Field: Broken/missing handler */
+  /* Field: CRM Activity: Event */
   $handler->display->display_options['fields']['field_cmcev_event']['id'] = 'field_cmcev_event';
   $handler->display->display_options['fields']['field_cmcev_event']['table'] = 'field_data_field_cmcev_event';
   $handler->display->display_options['fields']['field_cmcev_event']['field'] = 'field_cmcev_event';

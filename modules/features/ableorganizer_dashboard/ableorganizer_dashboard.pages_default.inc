@@ -236,7 +236,7 @@ function ableorganizer_dashboard_default_page_manager_pages() {
     $pane->panel = 'right';
     $pane->type = 'event_metrics';
     $pane->subtype = 'event_metrics';
-    $pane->shown = FALSE;
+    $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
       'text' => '',
