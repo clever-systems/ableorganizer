@@ -24,7 +24,7 @@ projects[rules][version] = 2.5
 projects[rules][subdir] = "contrib"
 projects[libraries][version] = 2.1
 projects[libraries][subdir] = "contrib"
-projects[features][version] = 2.0-rc3
+projects[features][version] = 2.0-rc4
 projects[features][subdir] = "contrib"
 projects[context][version] = 3.0-rc1
 projects[context][subdir] = "contrib"
@@ -168,7 +168,7 @@ projects[crm_core_demo_standard_fields][subdir] = "contrib"
 projects[crm_core_donation][version] = 1.7
 projects[crm_core_donation][subdir] = "contrib"
 ; events
-projects[crm_core_event][version] = 0.6
+projects[crm_core_event][version] = 0.7
 projects[crm_core_event][subdir] = "contrib"
 ; petitions
 projects[crm_core_petition][version] = 0.5
