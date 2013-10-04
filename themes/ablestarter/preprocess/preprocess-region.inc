@@ -28,14 +28,13 @@ function ablestarter_alpha_preprocess_region(&$vars) {
     $options = array(
       'attributes' => array('class' => array('ao_settings')),
       'html' => TRUE,
-      'fragment' => '#',
     );
     $uoptions = array(
       'attributes' => array('class' => array('ao_logged_in')),
       'html' => TRUE,
     );
 
-    $vars['settings'] = l($settings_text, $_GET['q'], $options);
+    $vars['settings'] = l($settings_text, 'admin/config/crm-core', $options);
     $vars['current_user'] = l($user_text, 'user', $uoptions);
     $vars['logout'] = l(t('Log Out'), 'user/logout');
   }
