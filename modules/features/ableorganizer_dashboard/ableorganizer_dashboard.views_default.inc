@@ -39,11 +39,11 @@ function ableorganizer_dashboard_views_default_views() {
   $handler->display->display_options['relationships']['field_activity_participants_target_id']['field'] = 'field_activity_participants_target_id';
   $handler->display->display_options['relationships']['field_activity_participants_target_id']['ui_name'] = 'Contacts Relationship';
   $handler->display->display_options['relationships']['field_activity_participants_target_id']['label'] = 'Contacts Relationship';
-  /* Field: CRM activity: Activity ID */
+  /* Field: CRM Activity: Activity ID */
   $handler->display->display_options['fields']['activity_id']['id'] = 'activity_id';
   $handler->display->display_options['fields']['activity_id']['table'] = 'crm_core_activity';
   $handler->display->display_options['fields']['activity_id']['field'] = 'activity_id';
-  /* Field: CRM activity: Date created */
+  /* Field: CRM Activity: Date created */
   $handler->display->display_options['fields']['created']['id'] = 'created';
   $handler->display->display_options['fields']['created']['table'] = 'crm_core_activity';
   $handler->display->display_options['fields']['created']['field'] = 'created';
@@ -78,7 +78,7 @@ function ableorganizer_dashboard_views_default_views() {
   $handler->display->display_options['fields']['field_cmcev_event']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_cmcev_event']['element_wrapper_type'] = '0';
   $handler->display->display_options['fields']['field_cmcev_event']['element_default_classes'] = FALSE;
-  /* Field: CRM Activity: Online Petition Page */
+  /* Field: CRM Activity: Petition */
   $handler->display->display_options['fields']['field_cmcp_petition_page']['id'] = 'field_cmcp_petition_page';
   $handler->display->display_options['fields']['field_cmcp_petition_page']['table'] = 'field_data_field_cmcp_petition_page';
   $handler->display->display_options['fields']['field_cmcp_petition_page']['field'] = 'field_cmcp_petition_page';
@@ -91,7 +91,7 @@ function ableorganizer_dashboard_views_default_views() {
   $handler->display->display_options['fields']['field_cmcp_petition_page']['settings'] = array(
     'link' => 1,
   );
-  /* Field: CRM activity: Type */
+  /* Field: CRM Activity: Type */
   $handler->display->display_options['fields']['type']['id'] = 'type';
   $handler->display->display_options['fields']['type']['table'] = 'crm_core_activity';
   $handler->display->display_options['fields']['type']['field'] = 'type';
@@ -122,7 +122,7 @@ function ableorganizer_dashboard_views_default_views() {
   $handler->display->display_options['fields']['contact_id']['label'] = '';
   $handler->display->display_options['fields']['contact_id']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['contact_id']['link_to_contact'] = 0;
-  /* Field: CRM Contact: Household name */
+  /* Field: CRM Core Contact: Household */
   $handler->display->display_options['fields']['contact_name']['id'] = 'contact_name';
   $handler->display->display_options['fields']['contact_name']['table'] = 'field_data_contact_name';
   $handler->display->display_options['fields']['contact_name']['field'] = 'contact_name';

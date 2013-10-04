@@ -146,39 +146,14 @@ function ableorganizer_dashboard_default_page_manager_pages() {
     $pane = new stdClass();
     $pane->pid = 'new-2';
     $pane->panel = 'right';
-    $pane->type = 'custom';
-    $pane->subtype = 'custom';
+    $pane->type = 'quick_links';
+    $pane->subtype = 'quick_links';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'admin_title' => '',
-      'title' => 'Quick Links',
-      'body' => '<div class="container-12-fluid">
-<div class="grid-6">
-<div class="btn btn-blue btn-simple">
-<a href="crm-core/contact/add">Add a Contact</a>
-</div>
-<strong>Create a New</strong>
-<a href="crm-core/contact/add" class="quick-link">Donation Page</a>
-<a href="crm-core/contact/add" class="quick-link">Event</a>
-<a href="crm-core/contact/add" class="quick-link">Volunteer Opportunity</a>
-<a href="crm-core/contact/add" class="quick-link">Petition</a>
-</div>
-<div class="grid-6">
-<div class="btn btn-blue btn-simple">
-<a href="crm-core/contact/add">Manage Profiles</a>
-</div>
-<strong>Record a New</strong>
-<a href="crm-core/contact/add" class="quick-link">Donation</a>
-<a href="crm-core/contact/add" class="quick-link">Event Registration</a>
-<a href="crm-core/contact/add" class="quick-link">Volunteer Registration</a>
-<a href="crm-core/contact/add" class="quick-link">Petition Signature</a>
-</div>
-</div>
-<div class="clearfix" />
-',
-      'format' => 'full_html',
-      'substitute' => TRUE,
+      'display_title' => 1,
+      'override_title' => 0,
+      'override_title_text' => '',
     );
     $pane->cache = array();
     $pane->style = array(
