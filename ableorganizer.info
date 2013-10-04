@@ -102,8 +102,9 @@ dependencies[] = crm_core_profile
 dependencies[] = crm_core_profile_commerce_items
 dependencies[] = crm_core_demo_standard_fields
 
-; Able Organizer customs
+; AbleOrganizer customizations
 dependencies[] = ao
+dependencies[] = ableorganizer_dashboard
 
 ; System Requirements.
 php_memory_limit = 128M
