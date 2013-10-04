@@ -264,14 +264,18 @@
 #breadcrumb UL.breadcrumbs {
   list-style-type:none;
   margin-left: 0px;
-  height: 12px;
   float: left;
-  margin-top: 10px;
+  margin-top: 16px;
+  background-color: #bcacc1;
+  height: 19px;
+  border-radius: 5px; 
+  -moz-border-radius: 5px; 
+  -webkit-border-radius: 5px; 
+  padding: 0px;
 }
 #breadcrumb UL.breadcrumbs LI {
   float: left;
   margin-right: 2px;
-  color: #c3d2da;
   height: 19px;
   padding: 0px;
 }
@@ -282,27 +286,24 @@
   padding: 0;
   height: 19px;
   width: 23px;
-  background: url('../images/ao_starter_icons.png') -4px -79px no-repeat #c3d2da; 
   text-indent: -9999px;
   overflow: hidden;
+  margin-left: 0em;
+  background: url('../images/home.png') center right no-repeat;
 }
 #breadcrumb UL.breadcrumbs LI A {
-  background-color: #c3d2da;
   height: 19px;
   display: block;
   float: left;
   font-size: 0.9em;
   margin: 0;
-  padding: 0em 4px 0em 8px;
-  font-weight: bold;
+  padding: 0px 4px 0px 20px;
   text-decoration: none;
-  color: #708c9b;
+  color: White;
+  background: url('../images/white-arrow.png') center left no-repeat;
 }
 #breadcrumb UL.breadcrumbs LI div.bc_arrow {
-  background: url('../images/ao_starter_icons.png') -39px -79px no-repeat; 
-  height: 19px;
-  width: 19px;
-  float: right;
+  display: none;
 }
 
 /* activity items */
@@ -402,6 +403,7 @@ div.tabs UL.tabs LI A {
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFe5e5e5',endColorstr='#FFdddddd',GradientType=0);
   filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+  margin-right: 0px;
 }
 div.tabs UL.tabs LI.active A {
   padding-bottom: 9px;
