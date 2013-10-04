@@ -524,6 +524,18 @@ function ableorganizer_install() {
     ->execute();
   variable_set('crm_core_theme_enabled', 1);
   variable_set('crm_core_theme', 'ablestarter');
+  // Replace primary links with ;inks from CRM Core menu.
+  variable_set('crm_core_theme_replace_links', 1);
+  // Enabling dashboard.
+  variable_set('crm_core_dashboard_enabled', 1);
+  variable_set('crm_core_dashboard_path', 'crm-core/ableorganizer_dashboard');
+  $item = array(
+    'link_path' => 'crm-core/dashboard',
+    'link_title' => 'Dashboard',
+    'menu_name' => 'crm-core-menu',
+    'weight' => 0,
+  );
+  menu_link_save($item);
 }
 
 /**
