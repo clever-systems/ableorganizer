@@ -27,7 +27,7 @@ zzz.page-crm-core-contact-edit #region-content UL.tabs {
   box-sizing: border-box;         /* Opera/IE 8+ */
 }
 .page-crm-core-contact-edit #region-content DIV.content > FORM > DIV {
-  background-color: #f0f3f6;
+  background-color: #f1f1f1;
   padding: 12px;
   border: 1px solid #CCC;
   margin-bottom: 24px;
@@ -116,6 +116,7 @@ FIELDSET {
   margin-bottom: 0px !important;
 }
 
+.form-type-name-element LABEL,
 legend {
   display: block;
   width: 100%;
@@ -123,31 +124,46 @@ legend {
   margin-bottom: 0px;
   font-size: 14px;
   line-height: 40px;
-  color: #333333;
   border: 0;
   border-bottom: 1px solid #e5e5e5;
   font-weight: 700;
-  color: #248bd1;
+  color: #0062a0;
   font-size: 18px;
   font-weight: normal;
   font-family: Montserrat, Helvetica, sans-serif;  
 }
+.description,
+.fieldset-description {
+  font-style: italic;
+}
 
 /* specific form field types */
-
+.form-item,
+.form-type-phone-number,
+.form-type-name-element,
 .field-type-datetime,
 .field-type-addressfield {
   background-color: White;
   margin-top: 0em;
-  margin-bottom: .3em;
   border: 1px solid #BBB;
   padding: 8px;
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
   border-radius: 8px;
 }
+.field-type-datetime,
+.field-type-addressfield {
+  margin-bottom: 1em;
+}
 .field-type-datetime .form-item,
 .field-type-addressfield .form-item {
   border: none;
   padding: 0px;
 }
+.form-type-checkbox {
+  border: none;
+  margin: 0em;
+  padding: 0em;
+  background-color: transparent;
+}
+
