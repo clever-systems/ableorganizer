@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Able Organizer Dashboard feature.
+ */
+
+include_once 'ableorganizer_dashboard.features.inc';
