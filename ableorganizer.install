@@ -731,21 +731,89 @@ function ableorganizer_features_submit($form, &$form_state) {
   if (isset($form_state['values']['install_donations'])) {
     $modules[] = 'crm_core_donation';
     variable_set('donations_enabled', 1);
+    
+    // set default colors for reports
+    variable_set('crm_core_donation_background_color', 'rgba(148, 186, 101, 0.4)
+rgba(148, 186, 101, 0)');
+    variable_set('crm_core_donation_chart_color', 'rgba(255,255,255,1)');
+    variable_set('crm_core_donation_column_width', '0.8');
+    variable_set('crm_core_donation_display_labels', '0');
+    variable_set('crm_core_donation_height', '200');
+    variable_set('crm_core_donation_include_legend', '0');
+    variable_set('crm_core_donation_line_color', 'rgba(148, 186, 101, 1)');
+    variable_set('crm_core_donation_series_colors', 'rgba(49, 165, 189, 1)
+rgba(148, 186, 101, 1)
+rgba(207, 68, 68, 1)
+rgba(155, 89, 168, 1)
+rgba(49, 81, 189, 1)');
+    variable_set('crm_core_donation_xaxis_tickmarks', '7');
+    
   }
 
   if (isset($form_state['values']['install_events'])) {
     $modules[] = 'crm_core_event';
     variable_set('events_enabled', 1);
+    
+    // set defaults for reports
+    variable_set('crm_core_event_background_color', 'rgba(49, 165, 189, 0.4)
+rgba(49, 165, 189, 0)');
+    variable_set('crm_core_event_chart_color', 'rgba(255,255,255,1)');
+    variable_set('crm_core_event_column_width', '0.8');
+    variable_set('crm_core_event_display_labels', '0');
+    variable_set('crm_core_event_height', '200');
+    variable_set('crm_core_event_include_legend', '0');
+    variable_set('crm_core_event_line_color', 'rgba(49, 165, 189, 1)');
+    variable_set('crm_core_event_series_colors', 'rgba(49, 165, 189, 1)
+rgba(207, 68, 68, 1)
+rgba(148, 186, 101, 1)
+rgba(155, 89, 168, 1)
+rgba(49, 81, 189, 1)');
+    variable_set('crm_core_event_xaxis_tickmarks', '7');
   }
 
   if (isset($form_state['values']['install_petitions'])) {
     $modules[] = 'crm_core_petition';
     variable_set('petitions_enabled', 1);
+    
+    // report defaults
+    variable_set('crm_core_petition_background_color', 'rgba(49, 81, 189, 0.4)
+rgba(49, 81, 189, 0)');
+    variable_set('crm_core_petition_chart_color', 'rgba(255,255,255,1)');
+    variable_set('crm_core_petition_column_width', '0.8');
+    variable_set('crm_core_petition_display_labels', '0');
+    variable_set('crm_core_petition_height', '200');
+    variable_set('crm_core_petition_include_legend', '0');
+    variable_set('crm_core_petition_line_color', 'rgba(49, 81, 189, 1)');
+    variable_set('crm_core_petition_series_colors', 'rgba(49, 81, 189, 1)
+rgba(49, 165, 189, 1)
+rgba(207, 68, 68, 1)
+rgba(148, 186, 101, 1)
+rgba(155, 89, 168, 1)');
+  variable_set('crm_core_petition_show_counter', '1');
+  variable_set('crm_core_petition_xaxis_tickmarks', '7');
+    
   }
 
   if (isset($form_state['values']['install_volunteer'])) {
     $modules[] = 'crm_core_volunteer';
     variable_set('volunteer_enabled', 1);
+    
+    // report defaults
+    variable_set('crm_core_volunteer_background_color', 'rgba(207, 68, 68, 0.4)
+rgba(207, 68, 68, 0)');
+    variable_set('crm_core_volunteer_chart_color', 'rgba(255,255,255,1)');
+    variable_set('crm_core_volunteer_chart_height', '200');
+    variable_set('crm_core_volunteer_column_width', '0.8');
+    variable_set('crm_core_volunteer_display_labels', '0');
+    variable_set('crm_core_volunteer_include_legend', '0');
+    variable_set('crm_core_volunteer_line_color', 'rgba(207, 68, 68, 1)');
+    variable_set('crm_core_volunteer_series_colors', 'rgba(207, 68, 68, 1)
+rgba(49, 165, 189, 1)
+rgba(148, 186, 101, 1)
+rgba(155, 89, 168, 1)
+rgba(49, 81, 189, 1)');
+    variable_set('crm_core_volunteer_xaxis_tickmarks', '7');
+    
   }
 
   module_enable($modules);
