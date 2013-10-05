@@ -79,7 +79,7 @@ function ableorganizer_install() {
   filter_format_save($full_html_format);
 
   // Enable some standard blocks.
-  $default_theme = variable_get('theme_default', 'bartik');
+  $default_theme = variable_get('theme_default', 'abletemplate');
   $admin_theme = 'seven';
   $blocks = array(
     array(
@@ -93,42 +93,22 @@ function ableorganizer_install() {
       'cache' => -1,
     ),
     array(
-      'module' => 'search',
-      'delta' => 'form',
-      'theme' => $default_theme,
-      'status' => 1,
-      'weight' => -1,
-      'region' => 'sidebar_first',
-      'pages' => '',
-      'cache' => -1,
-    ),
-    array(
-      'module' => 'user',
-      'delta' => 'login',
-      'theme' => $default_theme,
-      'status' => 1,
-      'weight' => 0,
-      'region' => 'sidebar_first',
-      'pages' => '',
-      'cache' => -1,
-    ),
-    array(
-      'module' => 'system',
-      'delta' => 'powered-by',
-      'theme' => $default_theme,
-      'status' => 1,
-      'weight' => 10,
-      'region' => 'footer',
-      'pages' => '',
-      'cache' => -1,
-    ),
-    array(
       'module' => 'system',
       'delta' => 'help',
       'theme' => $default_theme,
       'status' => 1,
       'weight' => 0,
       'region' => 'help',
+      'pages' => '',
+      'cache' => -1,
+    ),
+    array(
+      'module' => 'crm_core_profile',
+      'delta' => 'crm_core_profile_form_viewer',
+      'theme' => $default_theme,
+      'status' => 1,
+      'weight' => 10,
+      'region' => 'sidebar_second',
       'pages' => '',
       'cache' => -1,
     ),
@@ -149,16 +129,6 @@ function ableorganizer_install() {
       'status' => 1,
       'weight' => 0,
       'region' => 'help',
-      'pages' => '',
-      'cache' => -1,
-    ),
-    array(
-      'module' => 'user',
-      'delta' => 'login',
-      'theme' => $admin_theme,
-      'status' => 1,
-      'weight' => 10,
-      'region' => 'content',
       'pages' => '',
       'cache' => -1,
     ),
@@ -173,6 +143,7 @@ function ableorganizer_install() {
     'pages',
     'cache',
   ));
+  
   foreach ($blocks as $block) {
     $query->values($block);
   }
