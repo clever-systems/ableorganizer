@@ -1,11 +1,10 @@
 <div<?php print $attributes; ?>>
   <div<?php print $content_attributes; ?>>
-    <?php if ($linked_logo_img): ?>
     <div class="branding-data clearfix">
-      <?php if ($linked_logo_img): ?>
-      <div class="logo-img">
-        <?php print $linked_logo_img; ?>
-      </div>
+      <?php if ($logo): ?>
+        <div class="logo-img">
+            <a href="<?php print base_path(); ?>crm-core" title=""><img src="<?php print $logo; ?>" alt="" /></a>
+        </div>
       <?php endif; ?>
 	    <?php if ($main_menu || $secondary_menu): ?>
 		    <nav class="navigation">
@@ -13,7 +12,6 @@
 		    </nav>
 	    <?php endif; ?>
     </div>
-    <?php endif; ?>
     <?php print $content; ?>
   </div>
 </div>

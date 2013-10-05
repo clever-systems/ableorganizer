@@ -65,15 +65,14 @@
 
 /* basic report metrics */
 .results-summary {
-	background-color: #85a3b3;
-  -moz-border-radius: 4000px;
-  -webkit-border-radius: 4000px;
-  border-radius: 4000px;
+  background-color: #c1b1cc;
   padding: 4px 8px;
   display: inline-block;
   color: White;
-  font-size: 0.8em;
-  text-shadow: 1px 1px #000000;
+  font-size: 0.9em;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;  
 }
 .detail-buttons {
 	float: right;

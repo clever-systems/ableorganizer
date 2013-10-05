@@ -282,12 +282,13 @@
 #breadcrumb UL.breadcrumbs LI.cmc_home A {
   display: block;
   padding: 0;
+  padding-left: 6px;
   height: 19px;
   width: 23px;
   text-indent: -9999px;
   overflow: hidden;
   margin-left: 0em;
-  background: url('../images/home.png') center right no-repeat;
+  background: url('../images/home.png') center center no-repeat;
 }
 #breadcrumb UL.breadcrumbs LI A {
   height: 19px;
@@ -299,6 +300,11 @@
   text-decoration: none;
   color: White;
   background: url('../images/white-arrow.png') center left no-repeat;
+}
+#breadcrumb UL.breadcrumbs LI:nth-child(2) A {
+  padding: 0px 4px 0px 8px;
+  background: none;
+  border-left: 1px solid White;
 }
 #breadcrumb UL.breadcrumbs LI div.bc_arrow {
   display: none;
@@ -362,7 +368,6 @@ div.tabs-wrapper.btn > span {
   display: block;
 }
 div.tabs {
-  font-size: 14px;
   margin-bottom: 8px;
 }
 div.tabs UL.tabs {
@@ -511,7 +516,6 @@ UL.action-links LI.add-a-relationship .action_link_icon {
 HTML, BODY {
   font-family: Open Sans, Helvetica, sans-serif;
   color: #333;
-  font-size: 14px;
 }
 H1, H2, H3, H4, H5, H6 {
   font-family: Montserrat, Helvetica, sans-serif;

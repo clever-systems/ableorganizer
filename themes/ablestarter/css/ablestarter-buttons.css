@@ -33,7 +33,7 @@ input[type="button"].btn,
   background: -ms-linear-gradient(top,  #dfe4e6 31%,#c3d2da 100%);
   background: linear-gradient(to bottom,  #dfe4e6 31%,#c3d2da 100%);
   box-shadow: inset 0px 6px 4px .5px rgba(255, 255, 255, .6);
-  font-size: 0.8em;
+  font-size: 0.9em;
   text-transform: uppercase;
   letter-spacing: 2px;
   margin-right: 4px;
