@@ -165,16 +165,16 @@ projects[crm_core_profile_commerce_items][subdir] = "contrib"
 projects[crm_core_demo_standard_fields][version] = 1.2
 projects[crm_core_demo_standard_fields][subdir] = "contrib"
 ; donations
-projects[crm_core_donation][version] = 1.7
+projects[crm_core_donation][version] = 1.8
 projects[crm_core_donation][subdir] = "contrib"
 ; events
 projects[crm_core_event][version] = 0.7
 projects[crm_core_event][subdir] = "contrib"
 ; petitions
-projects[crm_core_petition][version] = 0.5
+projects[crm_core_petition][version] = 0.6
 projects[crm_core_petition][subdir] = "contrib"
 ; volunteers
-projects[crm_core_volunteer][version] = 0.6
+projects[crm_core_volunteer][version] = 0.7
 projects[crm_core_volunteer][subdir] = "contrib"
 
 ; libraries
