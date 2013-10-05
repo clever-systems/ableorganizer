@@ -1,2 +1,85 @@
 /* This file will hold styles for the mobile version of your website (mobile first). */
 /* This also can include ANY global CSS that applies site-wide. Unless overwritten by a more specific style rule, CSS declarations in global.css will apply site-wide. */
+
+#zone-branding-wrapper {
+  background-color: #e1e1e1;
+  padding: 0.5em 0em;
+}
+#zone-branding-wrapper #main-menu {
+  padding-top: 0.5em;
+}
+#zone-branding-wrapper #main-menu LI {
+  margin-top: 0.5em;
+  padding-top: 0.5em;
+  display: inline-block;
+}
+#zone-branding-wrapper #main-menu LI A {
+  color: #824aa0;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.2em;
+}
+#section-content {
+  padding-top: 1em;
+}
+#region-page-bottom {
+  background-color: Black;
+  height: 500px;
+}
+
+/* fonts */
+BODY {
+  font-size: 13px;
+}
+P {
+  line-height:160%
+}
+A {
+  text-decoration: none;
+}
+.node {
+  margin-bottom: 1em;
+}
+h1, h2, h3, h4, h5, h6 {
+  letter-spacing:-1px;
+}
+h1 {
+  font-size: 1.8em;
+  margin-bottom: 1em;
+}
+h2 {
+  font-size: 1.6em;
+  margin-bottom: .8em;
+}
+h3 {
+  font-size: 1.5em;
+  margin-bottom: .6em;
+}
+h4 {
+  font-size: 1.4em;
+  margin-bottom: .6em;
+}
+h5 {
+  font-size: 1.2em;
+  margin-bottom: .6em;
+}
+h6 {
+  font-size: 1em;
+  margin-bottom: .6em;
+}
+.field {
+  margin-bottom: .5em;
+}
+.field-label,
+LABEL {
+  margin-bottom: .5em;
+}
+
+/* forms */
+.form-item {
+}
+.form-item INPUT {
+}
+form TABLE {
+  width: 100%;
+}
