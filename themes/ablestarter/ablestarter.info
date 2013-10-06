@@ -502,3 +502,11 @@ core = "7.x"
 project = "ableorganizer"
 datestamp = "1380900998"
 
+
+
+; Information added by drush on 2013-10-06
+version = "7.x-1.0-beta6+55-dev"
+core = "7.x"
+project = "ableorganizer"
+datestamp = "1381054653"
+

@@ -16,6 +16,7 @@
  *   - widgets: A list of widgets indexed by CRM Core. These can be ignored
  *     in this template, or used if you want to be funny.
  */
+
 ?>
 <div class="crm_core_reports">
   <div class="column_a">
