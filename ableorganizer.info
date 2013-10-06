@@ -64,6 +64,9 @@ dependencies[] = features
 dependencies[] = context
 dependencies[] = strongarm
 dependencies[] = pathologic
+dependencies[] = fontyourface
+dependencies[] = fontyourface_ui
+dependencies[] = google_fonts_api
 
 ; commerce modules
 dependencies[] = commerce
