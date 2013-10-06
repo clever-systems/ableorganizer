@@ -13,6 +13,79 @@ function ao_ctools_plugin_directory($owner, $plugin_type) {
   if ($owner == 'ctools' && $plugin_type == 'content_types') {
     return 'plugins/' . $plugin_type;
   }
-
   return NULL;
 }
+
+/**
+ * Implements hook_uuid_node_features_export_render_alter().
+ */
+function ao_uuid_node_features_export_render_alter(&$export, $node, $module) {
+  
+  // just going to use this to export a url alias with a node
+  // uuid_path does not seem to want to play ball
+  $nids = entity_get_id_by_uuid('node', array($node->uuid));
+  $path = 'node/' . $nids[$node->uuid];
+  $alias = drupal_get_path_alias($path);
+  if($path !== $alias){
+    $export->url_alias = $alias;
+  }
+ 
+  // export the menu, if it's attached to the node
+  if(module_exists('menu')){
+    $uuid = $node->uuid;
+    $nids = entity_get_id_by_uuid('node', array($uuid));
+    $node->nid = $nids[$uuid];
+    menu_node_prepare($node);
+    if(isset($node->menu)){
+      if(isset($node->menu['link_title']) && !empty($node->menu['link_title'])){
+        // dpm($export);
+        $export->new_menu = $node->menu;
+      }
+    }
+    unset($node->nid);
+    unset($node->menu);
+  }
+}
+/**
+ * Implements hook_node_insert
+ * @param unknown_type $node
+ */
+function ao_node_insert($node){
+  
+  if(isset($node->url_alias)){
+    // get the uuid
+    $uuid = $node->uuid;
+    // check to see if the alias already exists
+    $check = drupal_get_normal_path($node->url_alias);
+    // if so, delete the alias so we can create it again
+    if($check === $node->url_alias){
+      // delete the alias
+      path_delete(array('alias' => $check));
+    }
+    // save the alias
+    $path = array(
+      'alias' => $node->url_alias,
+      'source' => 'node/' . $node->nid,
+    );
+    // save
+    path_save($path);
+    unset($node->url_alias);
+  } 
+  
+  // when content is imported, let's make sure we save whatever menu stuff needs saving
+  // there should be an item with an exported menu item
+  if(module_exists('menu') && isset($node->new_menu)){
+    // add the menu item
+    $item = array(
+      'link_path' => 'node/' . $node->nid,
+      'link_title' => $node->new_menu['link_title'],
+      'menu_name' => $node->new_menu['menu_name'],
+      'hidden' => 0,
+      'weight' => 0
+    );
+    menu_link_save($item);
+    // but you can't do this every time... only when you are importing content
+    unset($node->new_menu);
+  }
+}
+

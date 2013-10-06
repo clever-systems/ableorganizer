@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the AbleOrganizer Sample Donation Pages feature.
+ */
+
+include_once 'ableorganizer_sample_donation_pages.features.inc';

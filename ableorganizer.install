@@ -302,17 +302,6 @@ function ableorganizer_install() {
     ->fields(array('uid' => 1, 'rid' => $admin_role->rid))
     ->execute();
 
-  // Create a Home link in the main menu.
-  $item = array(
-    'link_title' => $t('Home'),
-    'link_path' => '<front>',
-    'menu_name' => 'main-menu',
-  );
-  menu_link_save($item);
-
-  // Update the menu router information.
-  menu_rebuild();
-
   // Enable the admin theme.
   db_update('system')
     ->fields(array('status' => 1))
@@ -1080,7 +1069,8 @@ function ableorganizer_sample_content_submit($form, &$form_state) {
 
     $modules = array('uuid', 'uuid_path', 'uuid_features');
     if ($form_state['values']['donation_sample_content'] === 1) {
-      $modules[] = 'ableorganizer_donation_sample_content';
+      // $modules[] = 'ableorganizer_donation_sample_content';
+      $modules[] = 'ableorganizer_sample_donation_pages';
     }
     if ($form_state['values']['event_sample_content'] === 1) {
       $modules[] = 'ableorganizer_event_sample_content';
