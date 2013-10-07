@@ -466,7 +466,7 @@ function ableorganizer_install() {
       'theme' => $default_theme,
       'status' => 1,
       'weight' => 0,
-      'region' => 'help',
+      'region' => 'content',
       'pages' => '',
       'cache' => -1,
     ),
@@ -697,7 +697,7 @@ function ableorganizer_features_submit($form, &$form_state) {
   variable_set('volunteer_enabled', 0);
 
   // this is where we turn on various features
-  if (isset($form_state['values']['install_donations'])) {
+  if (!empty($form_state['values']['install_donations'])) {
     $modules[] = 'crm_core_donation';
     variable_set('donations_enabled', 1);
     
@@ -719,7 +719,7 @@ rgba(49, 81, 189, 1)');
     
   }
 
-  if (isset($form_state['values']['install_events'])) {
+  if (!empty($form_state['values']['install_events'])) {
     $modules[] = 'crm_core_event';
     variable_set('events_enabled', 1);
     
@@ -740,7 +740,7 @@ rgba(49, 81, 189, 1)');
     variable_set('crm_core_event_xaxis_tickmarks', '7');
   }
 
-  if (isset($form_state['values']['install_petitions'])) {
+  if (!empty($form_state['values']['install_petitions'])) {
     $modules[] = 'crm_core_petition';
     variable_set('petitions_enabled', 1);
     
@@ -763,7 +763,7 @@ rgba(155, 89, 168, 1)');
     
   }
 
-  if (isset($form_state['values']['install_volunteer'])) {
+  if (!empty($form_state['values']['install_volunteer'])) {
     $modules[] = 'crm_core_volunteer';
     variable_set('volunteer_enabled', 1);
     
@@ -802,9 +802,6 @@ function ableorganizer_profile_settings($form, &$form_state, &$install_state) {
   $t = get_t();
 
   drupal_set_title($t('Configure profile settings'));
-
-  $form = array();
-
   // check to make sure we have at least one feature enabled
   if (variable_get('donations_enabled', 0) == 1 || variable_get('events_enabled', 0) == 1 || variable_get('petitions_enabled', 0) == 1 || variable_get('volunteer_enabled', 0) == 1) {
 
@@ -907,16 +904,16 @@ function ableorganizer_profile_settings_submit($form, &$form_state) {
   global $install_state;
 
   // This is where we enable the default emails for each feature
-  if ($form_state['values']['donation_emails'] === 1) {
+  if (!empty($form_state['values']['donation_emails'])) {
     variable_set('configure_donation_email', 1);
   }
-  if ($form_state['values']['event_emails'] === 1) {
+  if (!empty($form_state['values']['event_emails'])) {
     variable_set('configure_event_email', 1);
   }
-  if ($form_state['values']['petition_emails'] === 1) {
+  if (!empty($form_state['values']['petition_emails'])) {
     variable_set('configure_petition_email', 1);
   }
-  if ($form_state['values']['volunteer_emails'] === 1) {
+  if (!empty($form_state['values']['volunteer_emails'])) {
     variable_set('configure_volunteer_email', 1);
   }
 
@@ -1054,89 +1051,63 @@ function ableorganizer_sample_content_submit($form, &$form_state) {
 
   global $install_state;
 
-  if ($form_state['values']['donation_sample_content'] === 1 || $form_state['values']['event_sample_content'] === 1 || $form_state['values']['petition_sample_content'] === 1 || $form_state['values']['volunteer_sample_content'] === 1) {
-
-    // we should have a sample content feature for ableorganizer
-    // there should be some way to turn donations / events / petitions / volunteer opportunities on individually,
-    // without needing a thing for each one
-    // just not sure how to do it...
-
-    // maybe we should enable the feature
-    // and delete the content that does not apply
-    // i.e. select nodes from the database of type X and delete them programmatically
-
-    // module_enable('ableorganizer_sample_content');
-
-    $modules = array('uuid', 'uuid_path', 'uuid_features');
-    if ($form_state['values']['donation_sample_content'] === 1) {
-      // $modules[] = 'ableorganizer_donation_sample_content';
-      $modules[] = 'ableorganizer_sample_donation_pages';
-    }
-    if ($form_state['values']['event_sample_content'] === 1) {
-      $modules[] = 'ableorganizer_event_sample_content';
-    }
-    if ($form_state['values']['petition_sample_content'] === 1) {
-      $modules[] = 'ableorganizer_petition_sample_content';
-    }
-    if ($form_state['values']['volunteer_sample_content'] === 1) {
-      $modules[] = 'ableorganizer_volunteer_sample_content';
-    }
-    module_enable($modules);
+  $modules = array();
+  if (!empty($form_state['values']['donation_sample_content'])) {
+    $modules[] = 'ableorganizer_sample_donation_pages';
   }
+  if (!empty($form_state['values']['event_sample_content'])) {
+    $modules[] = 'ableorganizer_sample_event_pages';
+  }
+  if (!empty($form_state['values']['petition_sample_content'])) {
+    $modules[] = 'ableorganizer_petition_sample_content';
+  }
+  if (!empty($form_state['values']['volunteer_sample_content'])) {
+    $modules[] = 'ableorganizer_volunteer_sample_content';
+  }
+  module_enable($modules);
 
   // Configure sample data.
-  if ($form_state['values']['donation_sample_data'] === 1 || $form_state['values']['event_sample_data'] === 1 || $form_state['values']['petition_sample_data'] === 1 || $form_state['values']['volunteer_sample_data'] === 1) {
+  // Import sample contacts and activities.
+  module_load_include('inc', 'ableorganizer', 'ableorganizer_sample_data');
 
-    // Import sample contacts and activities.
-    module_load_include('inc', 'ableorganizer', 'ableorganizer_sample_data');
+  $sample_data = ableorganizer_sample_data();
 
-    $sample_data = ableorganizer_sample_data();
+  // this is where we create the sample contacts
+  foreach ($sample_data['crm_core_contact'] as $contact) {
+    $new_contact = entity_import('crm_core_contact', $contact);
+    entity_save('crm_core_contact', $new_contact);
+  }
 
-    // this is where we create the sample contacts
-    foreach ($sample_data['crm_core_contact'] as $contact) {
-      $new_contact = entity_import('crm_core_contact', $contact);
-      entity_save('crm_core_contact', $new_contact);
+  if (!empty($form_state['values']['donation_sample_data'])) {
+    $sample_data = ableorganizer_donation_sample_data();
+    foreach ($sample_data['crm_core_activity'] as $activity) {
+      $new_activity = entity_import('crm_core_activity', $activity);
+      $new_activity->field_cmcd_receive_date = _ableorganizer_set_activity_date();
+      entity_save('crm_core_activity', $new_activity);
     }
-
-    // this is where we are creating the sample activities
-    // need to break this out based on activity type
+  }
+  if (!empty($form_state['values']['event_sample_data'])) {
+    $sample_data = ableorganizer_event_sample_data();
     foreach ($sample_data['crm_core_activity'] as $activity) {
       $new_activity = entity_import('crm_core_activity', $activity);
       $new_activity->field_cmcev_reg_date = _ableorganizer_set_activity_date();
       entity_save('crm_core_activity', $new_activity);
     }
-
-    if ($form_state['values']['donation_sample_data'] === 1) {
-      $sample_data = ableorganizer_donation_sample_data();
-      foreach ($sample_data['crm_core_activity'] as $activity) {
-        $new_activity = entity_import('crm_core_activity', $activity);
-        $new_activity->field_cmcd_receive_date = _ableorganizer_set_activity_date();
-        entity_save('crm_core_activity', $new_activity);
-      }
+  }
+  if (!empty($form_state['values']['petition_sample_data'])) {
+    $sample_data = ableorganizer_petition_sample_data();
+    foreach ($sample_data['crm_core_activity'] as $activity) {
+      $new_activity = entity_import('crm_core_activity', $activity);
+      $new_activity->field_cmcp_received_date = _ableorganizer_set_activity_date();
+      entity_save('crm_core_activity', $new_activity);
     }
-    if ($form_state['values']['event_sample_data'] === 1) {
-      $sample_data = ableorganizer_event_sample_data();
-      foreach ($sample_data['crm_core_activity'] as $activity) {
-        $new_activity = entity_import('crm_core_activity', $activity);
-        $new_activity->field_cmcev_reg_date = _ableorganizer_set_activity_date();
-        entity_save('crm_core_activity', $new_activity);
-      }
-    }
-    if ($form_state['values']['petition_sample_data'] === 1) {
-      $sample_data = ableorganizer_petition_sample_data();
-      foreach ($sample_data['crm_core_activity'] as $activity) {
-        $new_activity = entity_import('crm_core_activity', $activity);
-        $new_activity->field_cmcp_received_date = _ableorganizer_set_activity_date();
-        entity_save('crm_core_activity', $new_activity);
-      }
-    }
-    if ($form_state['values']['volunteer_sample_data'] === 1) {
-      $sample_data = ableorganizer_volunteer_sample_data();
-      foreach ($sample_data['crm_core_activity'] as $activity) {
-        $new_activity = entity_import('crm_core_activity', $activity);
-        $new_activity->field_cmcv_reg_date = _ableorganizer_set_activity_date();
-        entity_save('crm_core_activity', $new_activity);
-      }
+  }
+  if (!empty($form_state['values']['volunteer_sample_data'])) {
+    $sample_data = ableorganizer_volunteer_sample_data();
+    foreach ($sample_data['crm_core_activity'] as $activity) {
+      $new_activity = entity_import('crm_core_activity', $activity);
+      $new_activity->field_cmcv_reg_date = _ableorganizer_set_activity_date();
+      entity_save('crm_core_activity', $new_activity);
     }
   }
 

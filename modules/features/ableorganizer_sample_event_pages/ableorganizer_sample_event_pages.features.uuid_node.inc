@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * ableorganizer_event_sample_content.features.uuid_node.inc
+ * ableorganizer_sample_event_pages.features.uuid_node.inc
  */
 
 /**
  * Implements hook_uuid_features_default_content().
  */
-function ableorganizer_event_sample_content_uuid_features_default_content() {
+function ableorganizer_sample_event_pages_uuid_features_default_content() {
   $nodes = array();
 
   $nodes[] = array(
@@ -43,7 +43,7 @@ function ableorganizer_event_sample_content_uuid_features_default_content() {
       0 => array(
         'value' => '2013-10-01 09:00:00',
         'value2' => '2013-10-06 19:00:00',
-        'timezone' => 'America/New_York',
+        'timezone' => 'UTC',
         'timezone_db' => 'UTC',
         'date_type' => 'datetime',
       ),
@@ -134,7 +134,7 @@ function ableorganizer_event_sample_content_uuid_features_default_content() {
   'name' => '',
   'picture' => 0,
   'data' => NULL,
-  'date' => '2013-09-03 11:53:11 -0400',
+  'date' => '2013-09-03 15:53:11 +0000',
   'url_alias' => 'events/multiple-ticket-levels-quantity',
   'crm_core_profile_node_config' => array(
     'nid' => '37106c78-84c8-4e74-a387-5c04b03f5375',
@@ -142,6 +142,13 @@ function ableorganizer_event_sample_content_uuid_features_default_content() {
     'profile_name' => 'ao_cmcev_simple_quantity_form',
     'display_profile' => 0,
     'inline_title' => 'Registration form',
+  ),
+  'crm_core_event_node_config' => array(
+    'nid' => '37106c78-84c8-4e74-a387-5c04b03f5375',
+    'display_registrants' => 1,
+    'thanks_email' => '',
+    'tickets' => '',
+    'max_registration' => 0,
   ),
 );
   $nodes[] = array(
@@ -182,7 +189,7 @@ Contributions to Lowell Katz for Congress are not tax deductible.
       0 => array(
         'value' => '2013-10-07 09:00:00',
         'value2' => '2013-10-12 19:00:00',
-        'timezone' => 'America/New_York',
+        'timezone' => 'UTC',
         'timezone_db' => 'UTC',
         'date_type' => 'datetime',
       ),
@@ -271,7 +278,7 @@ Contributions to Lowell Katz for Congress are not tax deductible.
   'name' => '',
   'picture' => 0,
   'data' => NULL,
-  'date' => '2013-09-03 11:29:19 -0400',
+  'date' => '2013-09-03 15:29:19 +0000',
   'url_alias' => 'events/single-ticket',
   'crm_core_profile_node_config' => array(
     'nid' => '52a80050-d98f-4bbf-90e8-9526dd3c77a1',
@@ -279,6 +286,13 @@ Contributions to Lowell Katz for Congress are not tax deductible.
     'profile_name' => 'ao_cmcev_simple_single_form',
     'display_profile' => 0,
     'inline_title' => 'Registration form',
+  ),
+  'crm_core_event_node_config' => array(
+    'nid' => '52a80050-d98f-4bbf-90e8-9526dd3c77a1',
+    'display_registrants' => 1,
+    'thanks_email' => '',
+    'tickets' => '',
+    'max_registration' => 0,
   ),
 );
   $nodes[] = array(
@@ -370,7 +384,7 @@ Contributions to Lowell Katz for Congress are not tax deductible.
   'name' => '',
   'picture' => 0,
   'data' => NULL,
-  'date' => '2013-09-04 09:38:10 -0400',
+  'date' => '2013-09-04 13:38:10 +0000',
   'url_alias' => 'events/thank-you',
 );
   $nodes[] = array(
@@ -406,7 +420,7 @@ Contributions to Lowell Katz for Congress are not tax deductible.
       0 => array(
         'value' => '2013-10-13 09:00:00',
         'value2' => '2013-10-18 19:00:00',
-        'timezone' => 'America/New_York',
+        'timezone' => 'UTC',
         'timezone_db' => 'UTC',
         'date_type' => 'datetime',
       ),
@@ -497,7 +511,7 @@ Contributions to Lowell Katz for Congress are not tax deductible.
   'name' => '',
   'picture' => 0,
   'data' => NULL,
-  'date' => '2013-09-03 11:49:30 -0400',
+  'date' => '2013-09-03 15:49:30 +0000',
   'url_alias' => 'events/multiple-ticket-level',
   'crm_core_profile_node_config' => array(
     'nid' => '8cbf5460-9633-4fcd-a730-c5832c19e5f0',
@@ -505,6 +519,13 @@ Contributions to Lowell Katz for Congress are not tax deductible.
     'profile_name' => 'ao_cmcev_simple_many_form',
     'display_profile' => 0,
     'inline_title' => 'Registration form',
+  ),
+  'crm_core_event_node_config' => array(
+    'nid' => '8cbf5460-9633-4fcd-a730-c5832c19e5f0',
+    'display_registrants' => 1,
+    'thanks_email' => '',
+    'tickets' => '',
+    'max_registration' => 0,
   ),
 );
   $nodes[] = array(
@@ -541,7 +562,7 @@ Contributions to Lowell Katz for Congress are not tax deductible.
       0 => array(
         'value' => '2013-10-19 09:00:00',
         'value2' => '2013-10-24 19:00:00',
-        'timezone' => 'America/New_York',
+        'timezone' => 'UTC',
         'timezone_db' => 'UTC',
         'date_type' => 'datetime',
       ),
@@ -630,7 +651,7 @@ Contributions to Lowell Katz for Congress are not tax deductible.
   'name' => '',
   'picture' => 0,
   'data' => NULL,
-  'date' => '2013-09-03 11:21:01 -0400',
+  'date' => '2013-09-03 15:21:01 +0000',
   'url_alias' => 'events/basic',
   'crm_core_profile_node_config' => array(
     'nid' => 'c4e0254b-e193-4f95-b843-fde40151fd81',
@@ -638,6 +659,13 @@ Contributions to Lowell Katz for Congress are not tax deductible.
     'profile_name' => 'ao_cmcev_simple_reg_form',
     'display_profile' => 0,
     'inline_title' => 'Registration form',
+  ),
+  'crm_core_event_node_config' => array(
+    'nid' => 'c4e0254b-e193-4f95-b843-fde40151fd81',
+    'display_registrants' => 1,
+    'thanks_email' => '',
+    'tickets' => '',
+    'max_registration' => 0,
   ),
 );
   $nodes[] = array(
@@ -673,7 +701,7 @@ Contributions to Lowell Katz for Congress are not tax deductible.
       0 => array(
         'value' => '2013-10-25 09:00:00',
         'value2' => '2013-10-30 19:00:00',
-        'timezone' => 'America/New_York',
+        'timezone' => 'UTC',
         'timezone_db' => 'UTC',
         'date_type' => 'datetime',
       ),
@@ -762,7 +790,7 @@ Contributions to Lowell Katz for Congress are not tax deductible.
   'name' => '',
   'picture' => 0,
   'data' => NULL,
-  'date' => '2013-09-19 13:52:07 -0400',
+  'date' => '2013-09-19 17:52:07 +0000',
   'url_alias' => 'events/phonebank',
   'crm_core_profile_node_config' => array(
     'nid' => 'e340d2ab-485b-4e68-b35c-c4e07a7b80c5',
@@ -770,6 +798,13 @@ Contributions to Lowell Katz for Congress are not tax deductible.
     'profile_name' => 'ao_cmcev_simple_single_form',
     'display_profile' => 0,
     'inline_title' => 'Register Now',
+  ),
+  'crm_core_event_node_config' => array(
+    'nid' => 'e340d2ab-485b-4e68-b35c-c4e07a7b80c5',
+    'display_registrants' => 1,
+    'thanks_email' => '',
+    'tickets' => '',
+    'max_registration' => 0,
   ),
 );
   return $nodes;

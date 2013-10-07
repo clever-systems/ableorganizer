@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * ableorganizer_event_sample_content.views_default.inc
+ * ableorganizer_sample_event_pages.views_default.inc
  */
 
 /**
  * Implements hook_views_default_views().
  */
-function ableorganizer_event_sample_content_views_default_views() {
+function ableorganizer_sample_event_pages_views_default_views() {
   $export = array();
 
   $view = new view();
