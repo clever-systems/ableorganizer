@@ -833,6 +833,14 @@ function ableorganizer_sample_data() {
  * Sample data for CRM Core Donation.
  */
 function ableorganizer_donation_sample_data() {
+  $uuids = array(
+    'ao_fundraiser_form' => '2b66066f-0a98-43b7-bc0e-a74c6e4130e6',
+    'ao_annual_appeal_form' => '3e876d31-271a-47da-8564-2bb667953ade',
+    'ao_donation_form' => 'e5742cc9-af29-4b1a-930b-24921ae633d4',
+  );
+  // Getting local IDs from universal.
+  $nids = entity_get_id_by_uuid('node', $uuids);
+  
   $sample_data = array();
   $sample_data['crm_core_activity'] = array();
 
@@ -863,7 +871,7 @@ function ableorganizer_donation_sample_data() {
       },
       "field_cmcd_amount" : { "und" : [ { "value" : "25.00" } ] },
       "field_cmcd_order" : { "und" : [ { "order_id" : "1" } ] },
-      "field_cmcd_page" : { "und" : [ { "target_id" : "2" } ] },
+      "field_cmcd_page" : { "und" : [ { "target_id" : "' . $nids[$uuids['ao_annual_appeal_form']] . '" } ] },
       "field_cmcd_payment_type" : { "und" : [ { "value" : "Credit Card" } ] },
       "field_cmcd_receive_date" : { "und" : [
           {
@@ -905,7 +913,7 @@ function ableorganizer_donation_sample_data() {
       },
       "field_cmcd_amount" : { "und" : [ { "value" : "50.00" } ] },
       "field_cmcd_order" : { "und" : [ { "order_id" : "2" } ] },
-      "field_cmcd_page" : { "und" : [ { "target_id" : "2" } ] },
+      "field_cmcd_page" : { "und" : [ { "target_id" : "' . $nids[$uuids['ao_annual_appeal_form']] . '" } ] },
       "field_cmcd_payment_type" : { "und" : [ { "value" : "Credit Card" } ] },
       "field_cmcd_receive_date" : { "und" : [
           {
@@ -947,7 +955,7 @@ function ableorganizer_donation_sample_data() {
       },
       "field_cmcd_amount" : { "und" : [ { "value" : "75.00" } ] },
       "field_cmcd_order" : { "und" : [ { "order_id" : "3" } ] },
-      "field_cmcd_page" : { "und" : [ { "target_id" : "2" } ] },
+      "field_cmcd_page" : { "und" : [ { "target_id" : "' . $nids[$uuids['ao_annual_appeal_form']] . '" } ] },
       "field_cmcd_payment_type" : { "und" : [ { "value" : "Credit Card" } ] },
       "field_cmcd_receive_date" : { "und" : [
           {
@@ -989,7 +997,7 @@ function ableorganizer_donation_sample_data() {
       },
       "field_cmcd_amount" : { "und" : [ { "value" : "100.00" } ] },
       "field_cmcd_order" : { "und" : [ { "order_id" : "4" } ] },
-      "field_cmcd_page" : { "und" : [ { "target_id" : "2" } ] },
+      "field_cmcd_page" : { "und" : [ { "target_id" : "' . $nids[$uuids['ao_annual_appeal_form']] . '" } ] },
       "field_cmcd_payment_type" : { "und" : [ { "value" : "Credit Card" } ] },
       "field_cmcd_receive_date" : { "und" : [
           {
@@ -1031,7 +1039,7 @@ function ableorganizer_donation_sample_data() {
       },
       "field_cmcd_amount" : { "und" : [ { "value" : "75.00" } ] },
       "field_cmcd_order" : { "und" : [ { "order_id" : "5" } ] },
-      "field_cmcd_page" : { "und" : [ { "target_id" : "2" } ] },
+      "field_cmcd_page" : { "und" : [ { "target_id" : "' . $nids[$uuids['ao_annual_appeal_form']] . '" } ] },
       "field_cmcd_payment_type" : { "und" : [ { "value" : "Credit Card" } ] },
       "field_cmcd_receive_date" : { "und" : [
           {
@@ -1073,7 +1081,7 @@ function ableorganizer_donation_sample_data() {
       },
       "field_cmcd_amount" : { "und" : [ { "value" : "100.00" } ] },
       "field_cmcd_order" : { "und" : [ { "order_id" : "6" } ] },
-      "field_cmcd_page" : { "und" : [ { "target_id" : "2" } ] },
+      "field_cmcd_page" : { "und" : [ { "target_id" : "' . $nids[$uuids['ao_annual_appeal_form']] . '" } ] },
       "field_cmcd_payment_type" : { "und" : [ { "value" : "Credit Card" } ] },
       "field_cmcd_receive_date" : { "und" : [
           {
@@ -1115,7 +1123,7 @@ function ableorganizer_donation_sample_data() {
       },
       "field_cmcd_amount" : { "und" : [ { "value" : "50.00" } ] },
       "field_cmcd_order" : { "und" : [ { "order_id" : "7" } ] },
-      "field_cmcd_page" : { "und" : [ { "target_id" : "2" } ] },
+      "field_cmcd_page" : { "und" : [ { "target_id" : "' . $nids[$uuids['ao_annual_appeal_form']] . '" } ] },
       "field_cmcd_payment_type" : { "und" : [ { "value" : "Credit Card" } ] },
       "field_cmcd_receive_date" : { "und" : [
           {
@@ -1157,7 +1165,7 @@ function ableorganizer_donation_sample_data() {
       },
       "field_cmcd_amount" : { "und" : [ { "value" : "75.00" } ] },
       "field_cmcd_order" : { "und" : [ { "order_id" : "8" } ] },
-      "field_cmcd_page" : { "und" : [ { "target_id" : "2" } ] },
+      "field_cmcd_page" : { "und" : [ { "target_id" : "' . $nids[$uuids['ao_annual_appeal_form']] . '" } ] },
       "field_cmcd_payment_type" : { "und" : [ { "value" : "Credit Card" } ] },
       "field_cmcd_receive_date" : { "und" : [
           {
@@ -1199,7 +1207,7 @@ function ableorganizer_donation_sample_data() {
       },
       "field_cmcd_amount" : { "und" : [ { "value" : "25.00" } ] },
       "field_cmcd_order" : { "und" : [ { "order_id" : "9" } ] },
-      "field_cmcd_page" : { "und" : [ { "target_id" : "2" } ] },
+      "field_cmcd_page" : { "und" : [ { "target_id" : "' . $nids[$uuids['ao_annual_appeal_form']] . '" } ] },
       "field_cmcd_payment_type" : { "und" : [ { "value" : "Credit Card" } ] },
       "field_cmcd_receive_date" : { "und" : [
           {
@@ -1241,7 +1249,7 @@ function ableorganizer_donation_sample_data() {
       },
       "field_cmcd_amount" : { "und" : [ { "value" : "50.00" } ] },
       "field_cmcd_order" : { "und" : [ { "order_id" : "10" } ] },
-      "field_cmcd_page" : { "und" : [ { "target_id" : "2" } ] },
+      "field_cmcd_page" : { "und" : [ { "target_id" : "' . $nids[$uuids['ao_annual_appeal_form']] . '" } ] },
       "field_cmcd_payment_type" : { "und" : [ { "value" : "Credit Card" } ] },
       "field_cmcd_receive_date" : { "und" : [
           {
@@ -1283,7 +1291,7 @@ function ableorganizer_donation_sample_data() {
       },
       "field_cmcd_amount" : { "und" : [ { "value" : "100.00" } ] },
       "field_cmcd_order" : { "und" : [ { "order_id" : "11" } ] },
-      "field_cmcd_page" : { "und" : [ { "target_id" : "1" } ] },
+      "field_cmcd_page" : { "und" : [ { "target_id" : "' . $nids[$uuids['ao_fundraiser_form']] . '" } ] },
       "field_cmcd_payment_type" : { "und" : [ { "value" : "Other" } ] },
       "field_cmcd_receive_date" : { "und" : [
           {
@@ -1325,7 +1333,7 @@ function ableorganizer_donation_sample_data() {
       },
       "field_cmcd_amount" : { "und" : [ { "value" : "250.00" } ] },
       "field_cmcd_order" : { "und" : [ { "order_id" : "12" } ] },
-      "field_cmcd_page" : { "und" : [ { "target_id" : "1" } ] },
+      "field_cmcd_page" : { "und" : [ { "target_id" : "' . $nids[$uuids['ao_fundraiser_form']] . '" } ] },
       "field_cmcd_payment_type" : { "und" : [ { "value" : "Other" } ] },
       "field_cmcd_receive_date" : { "und" : [
           {
@@ -1367,7 +1375,7 @@ function ableorganizer_donation_sample_data() {
       },
       "field_cmcd_amount" : { "und" : [ { "value" : "500.00" } ] },
       "field_cmcd_order" : { "und" : [ { "order_id" : "13" } ] },
-      "field_cmcd_page" : { "und" : [ { "target_id" : "1" } ] },
+      "field_cmcd_page" : { "und" : [ { "target_id" : "' . $nids[$uuids['ao_fundraiser_form']] . '" } ] },
       "field_cmcd_payment_type" : { "und" : [ { "value" : "Other" } ] },
       "field_cmcd_receive_date" : { "und" : [
           {
@@ -1409,7 +1417,7 @@ function ableorganizer_donation_sample_data() {
       },
       "field_cmcd_amount" : { "und" : [ { "value" : "250.00" } ] },
       "field_cmcd_order" : { "und" : [ { "order_id" : "14" } ] },
-      "field_cmcd_page" : { "und" : [ { "target_id" : "1" } ] },
+      "field_cmcd_page" : { "und" : [ { "target_id" : "' . $nids[$uuids['ao_fundraiser_form']] . '" } ] },
       "field_cmcd_payment_type" : { "und" : [ { "value" : "Other" } ] },
       "field_cmcd_receive_date" : { "und" : [
           {
@@ -1451,7 +1459,7 @@ function ableorganizer_donation_sample_data() {
       },
       "field_cmcd_amount" : { "und" : [ { "value" : "100.00" } ] },
       "field_cmcd_order" : { "und" : [ { "order_id" : "15" } ] },
-      "field_cmcd_page" : { "und" : [ { "target_id" : "1" } ] },
+      "field_cmcd_page" : { "und" : [ { "target_id" : "' . $nids[$uuids['ao_fundraiser_form']] . '" } ] },
       "field_cmcd_payment_type" : { "und" : [ { "value" : "Other" } ] },
       "field_cmcd_receive_date" : { "und" : [
           {
@@ -1493,7 +1501,7 @@ function ableorganizer_donation_sample_data() {
       },
       "field_cmcd_amount" : { "und" : [ { "value" : "50.00" } ] },
       "field_cmcd_order" : { "und" : [ { "order_id" : "16" } ] },
-      "field_cmcd_page" : { "und" : [ { "target_id" : "1" } ] },
+      "field_cmcd_page" : { "und" : [ { "target_id" : "' . $nids[$uuids['ao_fundraiser_form']] . '" } ] },
       "field_cmcd_payment_type" : { "und" : [ { "value" : "Other" } ] },
       "field_cmcd_receive_date" : { "und" : [
           {
@@ -1535,7 +1543,7 @@ function ableorganizer_donation_sample_data() {
       },
       "field_cmcd_amount" : { "und" : [ { "value" : "150.00" } ] },
       "field_cmcd_order" : { "und" : [ { "order_id" : "17" } ] },
-      "field_cmcd_page" : { "und" : [ { "target_id" : "1" } ] },
+      "field_cmcd_page" : { "und" : [ { "target_id" : "' . $nids[$uuids['ao_fundraiser_form']] . '" } ] },
       "field_cmcd_payment_type" : { "und" : [ { "value" : "Other" } ] },
       "field_cmcd_receive_date" : { "und" : [
           {
@@ -1577,7 +1585,7 @@ function ableorganizer_donation_sample_data() {
       },
       "field_cmcd_amount" : { "und" : [ { "value" : "200.00" } ] },
       "field_cmcd_order" : { "und" : [ { "order_id" : "18" } ] },
-      "field_cmcd_page" : { "und" : [ { "target_id" : "1" } ] },
+      "field_cmcd_page" : { "und" : [ { "target_id" : "' . $nids[$uuids['ao_fundraiser_form']] . '" } ] },
       "field_cmcd_payment_type" : { "und" : [ { "value" : "Other" } ] },
       "field_cmcd_receive_date" : { "und" : [
           {
@@ -1619,7 +1627,7 @@ function ableorganizer_donation_sample_data() {
       },
       "field_cmcd_amount" : { "und" : [ { "value" : "250.00" } ] },
       "field_cmcd_order" : { "und" : [ { "order_id" : "19" } ] },
-      "field_cmcd_page" : { "und" : [ { "target_id" : "1" } ] },
+      "field_cmcd_page" : { "und" : [ { "target_id" : "' . $nids[$uuids['ao_fundraiser_form']] . '" } ] },
       "field_cmcd_payment_type" : { "und" : [ { "value" : "Other" } ] },
       "field_cmcd_receive_date" : { "und" : [
           {
@@ -1661,7 +1669,7 @@ function ableorganizer_donation_sample_data() {
       },
       "field_cmcd_amount" : { "und" : [ { "value" : "200.00" } ] },
       "field_cmcd_order" : { "und" : [ { "order_id" : "20" } ] },
-      "field_cmcd_page" : { "und" : [ { "target_id" : "1" } ] },
+      "field_cmcd_page" : { "und" : [ { "target_id" : "' . $nids[$uuids['ao_fundraiser_form']] . '" } ] },
       "field_cmcd_payment_type" : { "und" : [ { "value" : "Other" } ] },
       "field_cmcd_receive_date" : { "und" : [
           {
@@ -1703,7 +1711,7 @@ function ableorganizer_donation_sample_data() {
       },
       "field_cmcd_amount" : { "und" : [ { "value" : "50.00" } ] },
       "field_cmcd_order" : { "und" : [ { "order_id" : "21" } ] },
-      "field_cmcd_page" : { "und" : [ { "target_id" : "4" } ] },
+      "field_cmcd_page" : { "und" : [ { "target_id" : "' . $nids[$uuids['ao_donation_form']] . '" } ] },
       "field_cmcd_payment_type" : { "und" : [ { "value" : "Credit Card" } ] },
       "field_cmcd_receive_date" : { "und" : [
           {
@@ -1745,7 +1753,7 @@ function ableorganizer_donation_sample_data() {
       },
       "field_cmcd_amount" : { "und" : [ { "value" : "75.00" } ] },
       "field_cmcd_order" : { "und" : [ { "order_id" : "22" } ] },
-      "field_cmcd_page" : { "und" : [ { "target_id" : "4" } ] },
+      "field_cmcd_page" : { "und" : [ { "target_id" : "' . $nids[$uuids['ao_donation_form']] . '" } ] },
       "field_cmcd_payment_type" : { "und" : [ { "value" : "Credit Card" } ] },
       "field_cmcd_receive_date" : { "und" : [
           {
@@ -1787,7 +1795,7 @@ function ableorganizer_donation_sample_data() {
       },
       "field_cmcd_amount" : { "und" : [ { "value" : "100.00" } ] },
       "field_cmcd_order" : { "und" : [ { "order_id" : "23" } ] },
-      "field_cmcd_page" : { "und" : [ { "target_id" : "4" } ] },
+      "field_cmcd_page" : { "und" : [ { "target_id" : "' . $nids[$uuids['ao_donation_form']] . '" } ] },
       "field_cmcd_payment_type" : { "und" : [ { "value" : "Credit Card" } ] },
       "field_cmcd_receive_date" : { "und" : [
           {
@@ -1829,7 +1837,7 @@ function ableorganizer_donation_sample_data() {
       },
       "field_cmcd_amount" : { "und" : [ { "value" : "150.00" } ] },
       "field_cmcd_order" : { "und" : [ { "order_id" : "24" } ] },
-      "field_cmcd_page" : { "und" : [ { "target_id" : "4" } ] },
+      "field_cmcd_page" : { "und" : [ { "target_id" : "' . $nids[$uuids['ao_donation_form']] . '" } ] },
       "field_cmcd_payment_type" : { "und" : [ { "value" : "Credit Card" } ] },
       "field_cmcd_receive_date" : { "und" : [
           {
@@ -1871,7 +1879,7 @@ function ableorganizer_donation_sample_data() {
       },
       "field_cmcd_amount" : { "und" : [ { "value" : "200.00" } ] },
       "field_cmcd_order" : { "und" : [ { "order_id" : "25" } ] },
-      "field_cmcd_page" : { "und" : [ { "target_id" : "4" } ] },
+      "field_cmcd_page" : { "und" : [ { "target_id" : "' . $nids[$uuids['ao_donation_form']] . '" } ] },
       "field_cmcd_payment_type" : { "und" : [ { "value" : "Credit Card" } ] },
       "field_cmcd_receive_date" : { "und" : [
           {
@@ -1913,7 +1921,7 @@ function ableorganizer_donation_sample_data() {
       },
       "field_cmcd_amount" : { "und" : [ { "value" : "250.00" } ] },
       "field_cmcd_order" : { "und" : [ { "order_id" : "26" } ] },
-      "field_cmcd_page" : { "und" : [ { "target_id" : "4" } ] },
+      "field_cmcd_page" : { "und" : [ { "target_id" : "' . $nids[$uuids['ao_donation_form']] . '" } ] },
       "field_cmcd_payment_type" : { "und" : [ { "value" : "Credit Card" } ] },
       "field_cmcd_receive_date" : { "und" : [
           {
@@ -1955,7 +1963,7 @@ function ableorganizer_donation_sample_data() {
       },
       "field_cmcd_amount" : { "und" : [ { "value" : "175.00" } ] },
       "field_cmcd_order" : { "und" : [ { "order_id" : "27" } ] },
-      "field_cmcd_page" : { "und" : [ { "target_id" : "4" } ] },
+      "field_cmcd_page" : { "und" : [ { "target_id" : "' . $nids[$uuids['ao_donation_form']] . '" } ] },
       "field_cmcd_payment_type" : { "und" : [ { "value" : "Credit Card" } ] },
       "field_cmcd_receive_date" : { "und" : [
           {
@@ -1997,7 +2005,7 @@ function ableorganizer_donation_sample_data() {
       },
       "field_cmcd_amount" : { "und" : [ { "value" : "100.00" } ] },
       "field_cmcd_order" : { "und" : [ { "order_id" : "28" } ] },
-      "field_cmcd_page" : { "und" : [ { "target_id" : "4" } ] },
+      "field_cmcd_page" : { "und" : [ { "target_id" : "' . $nids[$uuids['ao_donation_form']] . '" } ] },
       "field_cmcd_payment_type" : { "und" : [ { "value" : "Credit Card" } ] },
       "field_cmcd_receive_date" : { "und" : [
           {
@@ -2039,7 +2047,7 @@ function ableorganizer_donation_sample_data() {
       },
       "field_cmcd_amount" : { "und" : [ { "value" : "75.00" } ] },
       "field_cmcd_order" : { "und" : [ { "order_id" : "29" } ] },
-      "field_cmcd_page" : { "und" : [ { "target_id" : "4" } ] },
+      "field_cmcd_page" : { "und" : [ { "target_id" : "' . $nids[$uuids['ao_donation_form']] . '" } ] },
       "field_cmcd_payment_type" : { "und" : [ { "value" : "Credit Card" } ] },
       "field_cmcd_receive_date" : { "und" : [
           {
@@ -2081,7 +2089,7 @@ function ableorganizer_donation_sample_data() {
       },
       "field_cmcd_amount" : { "und" : [ { "value" : "175.00" } ] },
       "field_cmcd_order" : { "und" : [ { "order_id" : "30" } ] },
-      "field_cmcd_page" : { "und" : [ { "target_id" : "4" } ] },
+      "field_cmcd_page" : { "und" : [ { "target_id" : "' . $nids[$uuids['ao_donation_form']] . '" } ] },
       "field_cmcd_payment_type" : { "und" : [ { "value" : "Credit Card" } ] },
       "field_cmcd_receive_date" : { "und" : [
           {
@@ -2567,8 +2575,8 @@ function ableorganizer_event_sample_data() {
       }
     ]
   },
-  "field_cmcev_source" : { "und" : [ { "value" : "Online Registration" } ] },
-  "field_cmcev_status" : { "und" : [ { "value" : "Registered" } ] },
+  "field_cmcev_source" : { "und" : [ { "value" : "Telephone" } ] },
+  "field_cmcev_status" : { "und" : [ { "value" : "Attended" } ] },
   "rdf_mapping" : []
 }',
       1 => '{
@@ -2660,7 +2668,7 @@ function ableorganizer_event_sample_data() {
   },
   "field_activity_notes" : [],
   "field_cmcev_amount" : { "und" : [ { "value" : "321.00" } ] },
-  "field_cmcev_event" : { "und" : [ { "target_id" : "' . $nids[$uuids['simple_reg_form']] . '" } ] },
+  "field_cmcev_event" : { "und" : [ { "target_id" : "' . $nids[$uuids['phonebank']] . '" } ] },
   "field_cmcev_order" : [],
   "field_cmcev_public" : { "und" : [ { "value" : "1" } ] },
   "field_cmcev_reg_date" : { "und" : [
@@ -2672,8 +2680,8 @@ function ableorganizer_event_sample_data() {
       }
     ]
   },
-  "field_cmcev_source" : { "und" : [ { "value" : "Online Registration" } ] },
-  "field_cmcev_status" : { "und" : [ { "value" : "Registered" } ] },
+  "field_cmcev_source" : { "und" : [ { "value" : "Telephone" } ] },
+  "field_cmcev_status" : { "und" : [ { "value" : "Attended" } ] },
   "rdf_mapping" : []
 }',
       4 => '{
@@ -2835,7 +2843,7 @@ function ableorganizer_event_sample_data() {
   },
   "field_activity_notes" : [],
   "field_cmcev_amount" : { "und" : [ { "value" : "469.00" } ] },
-  "field_cmcev_event" : { "und" : [ { "target_id" : "' . $nids[$uuids['simple_reg_form']] . '" } ] },
+  "field_cmcev_event" : { "und" : [ { "target_id" : "' . $nids[$uuids['phonebank']] . '" } ] },
   "field_cmcev_order" : [],
   "field_cmcev_public" : { "und" : [ { "value" : "1" } ] },
   "field_cmcev_reg_date" : { "und" : [
@@ -2847,7 +2855,7 @@ function ableorganizer_event_sample_data() {
       }
     ]
   },
-  "field_cmcev_source" : { "und" : [ { "value" : "Online Registration" } ] },
+  "field_cmcev_source" : { "und" : [ { "value" : "Telephone" } ] },
   "field_cmcev_status" : { "und" : [ { "value" : "Registered" } ] },
   "rdf_mapping" : []
 }',
@@ -2883,7 +2891,7 @@ function ableorganizer_event_sample_data() {
     ]
   },
   "field_cmcev_source" : { "und" : [ { "value" : "Online Registration" } ] },
-  "field_cmcev_status" : { "und" : [ { "value" : "Registered" } ] },
+  "field_cmcev_status" : { "und" : [ { "value" : "Attended" } ] },
   "rdf_mapping" : []
 }',
       10 => '{
@@ -2987,7 +2995,7 @@ function ableorganizer_event_sample_data() {
       }
     ]
   },
-  "field_cmcev_source" : { "und" : [ { "value" : "Online Registration" } ] },
+  "field_cmcev_source" : { "und" : [ { "value" : "Telephone" } ] },
   "field_cmcev_status" : { "und" : [ { "value" : "Registered" } ] },
   "rdf_mapping" : []
 }',
@@ -3010,7 +3018,7 @@ function ableorganizer_event_sample_data() {
   },
   "field_activity_notes" : [],
   "field_cmcev_amount" : { "und" : [ { "value" : "337.00" } ] },
-  "field_cmcev_event" : { "und" : [ { "target_id" : "' . $nids[$uuids['simple_reg_form']] . '" } ] },
+  "field_cmcev_event" : { "und" : [ { "target_id" : "' . $nids[$uuids['phonebank']] . '" } ] },
   "field_cmcev_order" : [],
   "field_cmcev_public" : { "und" : [ { "value" : "1" } ] },
   "field_cmcev_reg_date" : { "und" : [
@@ -3058,7 +3066,7 @@ function ableorganizer_event_sample_data() {
     ]
   },
   "field_cmcev_source" : { "und" : [ { "value" : "Online Registration" } ] },
-  "field_cmcev_status" : { "und" : [ { "value" : "Registered" } ] },
+  "field_cmcev_status" : { "und" : [ { "value" : "Attended" } ] },
   "rdf_mapping" : []
 }',
       15 => '{
@@ -3185,7 +3193,7 @@ function ableorganizer_event_sample_data() {
   },
   "field_activity_notes" : [],
   "field_cmcev_amount" : { "und" : [ { "value" : "657.00" } ] },
-  "field_cmcev_event" : { "und" : [ { "target_id" : "' . $nids[$uuids['simple_reg_form']] . '" } ] },
+  "field_cmcev_event" : { "und" : [ { "target_id" : "' . $nids[$uuids['phonebank']] . '" } ] },
   "field_cmcev_order" : [],
   "field_cmcev_public" : { "und" : [ { "value" : "1" } ] },
   "field_cmcev_reg_date" : { "und" : [
@@ -3197,7 +3205,7 @@ function ableorganizer_event_sample_data() {
       }
     ]
   },
-  "field_cmcev_source" : { "und" : [ { "value" : "Online Registration" } ] },
+  "field_cmcev_source" : { "und" : [ { "value" : "Telephone" } ] },
   "field_cmcev_status" : { "und" : [ { "value" : "Registered" } ] },
   "rdf_mapping" : []
 }',
@@ -3233,7 +3241,7 @@ function ableorganizer_event_sample_data() {
     ]
   },
   "field_cmcev_source" : { "und" : [ { "value" : "Online Registration" } ] },
-  "field_cmcev_status" : { "und" : [ { "value" : "Registered" } ] },
+  "field_cmcev_status" : { "und" : [ { "value" : "Attended" } ] },
   "rdf_mapping" : []
 }',
       20 => '{
@@ -3338,7 +3346,7 @@ function ableorganizer_event_sample_data() {
     ]
   },
   "field_cmcev_source" : { "und" : [ { "value" : "Online Registration" } ] },
-  "field_cmcev_status" : { "und" : [ { "value" : "Registered" } ] },
+  "field_cmcev_status" : { "und" : [ { "value" : "Attended" } ] },
   "rdf_mapping" : []
 }',
       23 => '{
@@ -3360,7 +3368,7 @@ function ableorganizer_event_sample_data() {
   },
   "field_activity_notes" : [],
   "field_cmcev_amount" : { "und" : [ { "value" : "251.00" } ] },
-  "field_cmcev_event" : { "und" : [ { "target_id" : "' . $nids[$uuids['simple_reg_form']] . '" } ] },
+  "field_cmcev_event" : { "und" : [ { "target_id" : "' . $nids[$uuids['phonebank']] . '" } ] },
   "field_cmcev_order" : [],
   "field_cmcev_public" : { "und" : [ { "value" : "1" } ] },
   "field_cmcev_reg_date" : { "und" : [
@@ -3407,7 +3415,7 @@ function ableorganizer_event_sample_data() {
       }
     ]
   },
-  "field_cmcev_source" : { "und" : [ { "value" : "Online Registration" } ] },
+  "field_cmcev_source" : { "und" : [ { "value" : "Telephone" } ] },
   "field_cmcev_status" : { "und" : [ { "value" : "Registered" } ] },
   "rdf_mapping" : []
 }',
@@ -3535,7 +3543,7 @@ function ableorganizer_event_sample_data() {
   },
   "field_activity_notes" : [],
   "field_cmcev_amount" : { "und" : [ { "value" : "521.00" } ] },
-  "field_cmcev_event" : { "und" : [ { "target_id" : "' . $nids[$uuids['simple_reg_form']] . '" } ] },
+  "field_cmcev_event" : { "und" : [ { "target_id" : "' . $nids[$uuids['phonebank']] . '" } ] },
   "field_cmcev_order" : [],
   "field_cmcev_public" : { "und" : [ { "value" : "1" } ] },
   "field_cmcev_reg_date" : { "und" : [
@@ -3548,7 +3556,7 @@ function ableorganizer_event_sample_data() {
     ]
   },
   "field_cmcev_source" : { "und" : [ { "value" : "Online Registration" } ] },
-  "field_cmcev_status" : { "und" : [ { "value" : "Registered" } ] },
+  "field_cmcev_status" : { "und" : [ { "value" : "Attended" } ] },
   "rdf_mapping" : []
 }',
       29 => '{
@@ -3582,7 +3590,7 @@ function ableorganizer_event_sample_data() {
       }
     ]
   },
-  "field_cmcev_source" : { "und" : [ { "value" : "Online Registration" } ] },
+  "field_cmcev_source" : { "und" : [ { "value" : "Telephone" } ] },
   "field_cmcev_status" : { "und" : [ { "value" : "Registered" } ] },
   "rdf_mapping" : []
 }',
@@ -3617,7 +3625,7 @@ function ableorganizer_event_sample_data() {
       }
     ]
   },
-  "field_cmcev_source" : { "und" : [ { "value" : "Online Registration" } ] },
+  "field_cmcev_source" : { "und" : [ { "value" : "Walk Up" } ] },
   "field_cmcev_status" : { "und" : [ { "value" : "Registered" } ] },
   "rdf_mapping" : []
 }',
@@ -3687,7 +3695,7 @@ function ableorganizer_event_sample_data() {
       }
     ]
   },
-  "field_cmcev_source" : { "und" : [ { "value" : "Online Registration" } ] },
+  "field_cmcev_source" : { "und" : [ { "value" : "Walk Up" } ] },
   "field_cmcev_status" : { "und" : [ { "value" : "Registered" } ] },
   "rdf_mapping" : []
 }',
@@ -3710,7 +3718,7 @@ function ableorganizer_event_sample_data() {
   },
   "field_activity_notes" : [],
   "field_cmcev_amount" : { "und" : [ { "value" : "624.00" } ] },
-  "field_cmcev_event" : { "und" : [ { "target_id" : "' . $nids[$uuids['simple_reg_form']] . '" } ] },
+  "field_cmcev_event" : { "und" : [ { "target_id" : "' . $nids[$uuids['phonebank']] . '" } ] },
   "field_cmcev_order" : [],
   "field_cmcev_public" : { "und" : [ { "value" : "1" } ] },
   "field_cmcev_reg_date" : { "und" : [
@@ -3723,7 +3731,7 @@ function ableorganizer_event_sample_data() {
     ]
   },
   "field_cmcev_source" : { "und" : [ { "value" : "Online Registration" } ] },
-  "field_cmcev_status" : { "und" : [ { "value" : "Registered" } ] },
+  "field_cmcev_status" : { "und" : [ { "value" : "Attended" } ] },
   "rdf_mapping" : []
 }',
       34 => '{
@@ -3792,7 +3800,7 @@ function ableorganizer_event_sample_data() {
       }
     ]
   },
-  "field_cmcev_source" : { "und" : [ { "value" : "Online Registration" } ] },
+  "field_cmcev_source" : { "und" : [ { "value" : "Walk Up" } ] },
   "field_cmcev_status" : { "und" : [ { "value" : "Registered" } ] },
   "rdf_mapping" : []
 }',
@@ -3885,7 +3893,7 @@ function ableorganizer_event_sample_data() {
   },
   "field_activity_notes" : [],
   "field_cmcev_amount" : { "und" : [ { "value" : "756.00" } ] },
-  "field_cmcev_event" : { "und" : [ { "target_id" : "' . $nids[$uuids['simple_reg_form']] . '" } ] },
+  "field_cmcev_event" : { "und" : [ { "target_id" : "' . $nids[$uuids['phonebank']] . '" } ] },
   "field_cmcev_order" : [],
   "field_cmcev_public" : { "und" : [ { "value" : "1" } ] },
   "field_cmcev_reg_date" : { "und" : [
@@ -3897,8 +3905,8 @@ function ableorganizer_event_sample_data() {
       }
     ]
   },
-  "field_cmcev_source" : { "und" : [ { "value" : "Online Registration" } ] },
-  "field_cmcev_status" : { "und" : [ { "value" : "Registered" } ] },
+  "field_cmcev_source" : { "und" : [ { "value" : "Walk Up" } ] },
+  "field_cmcev_status" : { "und" : [ { "value" : "Attended" } ] },
   "rdf_mapping" : []
 }',
       39 => '{
@@ -4003,7 +4011,7 @@ function ableorganizer_event_sample_data() {
     ]
   },
   "field_cmcev_source" : { "und" : [ { "value" : "Online Registration" } ] },
-  "field_cmcev_status" : { "und" : [ { "value" : "Registered" } ] },
+  "field_cmcev_status" : { "und" : [ { "value" : "Attended" } ] },
   "rdf_mapping" : []
 }',
       42 => '{
@@ -4060,7 +4068,7 @@ function ableorganizer_event_sample_data() {
   },
   "field_activity_notes" : [],
   "field_cmcev_amount" : { "und" : [ { "value" : "977.00" } ] },
-  "field_cmcev_event" : { "und" : [ { "target_id" : "' . $nids[$uuids['simple_reg_form']] . '" } ] },
+  "field_cmcev_event" : { "und" : [ { "target_id" : "' . $nids[$uuids['phonebank']] . '" } ] },
   "field_cmcev_order" : [],
   "field_cmcev_public" : { "und" : [ { "value" : "1" } ] },
   "field_cmcev_reg_date" : { "und" : [
@@ -4107,8 +4115,8 @@ function ableorganizer_event_sample_data() {
       }
     ]
   },
-  "field_cmcev_source" : { "und" : [ { "value" : "Online Registration" } ] },
-  "field_cmcev_status" : { "und" : [ { "value" : "Registered" } ] },
+  "field_cmcev_source" : { "und" : [ { "value" : "Walk Up" } ] },
+  "field_cmcev_status" : { "und" : [ { "value" : "Attended" } ] },
   "rdf_mapping" : []
 }',
       45 => '{
@@ -4235,7 +4243,7 @@ function ableorganizer_event_sample_data() {
   },
   "field_activity_notes" : [],
   "field_cmcev_amount" : { "und" : [ { "value" : "371.00" } ] },
-  "field_cmcev_event" : { "und" : [ { "target_id" : "' . $nids[$uuids['simple_reg_form']] . '" } ] },
+  "field_cmcev_event" : { "und" : [ { "target_id" : "' . $nids[$uuids['phonebank']] . '" } ] },
   "field_cmcev_order" : [],
   "field_cmcev_public" : { "und" : [ { "value" : "1" } ] },
   "field_cmcev_reg_date" : { "und" : [
@@ -4247,8 +4255,8 @@ function ableorganizer_event_sample_data() {
       }
     ]
   },
-  "field_cmcev_source" : { "und" : [ { "value" : "Online Registration" } ] },
-  "field_cmcev_status" : { "und" : [ { "value" : "Registered" } ] },
+  "field_cmcev_source" : { "und" : [ { "value" : "Walk Up" } ] },
+  "field_cmcev_status" : { "und" : [ { "value" : "Attended" } ] },
   "rdf_mapping" : []
 }',
       49 => '{
@@ -4282,7 +4290,7 @@ function ableorganizer_event_sample_data() {
       }
     ]
   },
-  "field_cmcev_source" : { "und" : [ { "value" : "Online Registration" } ] },
+  "field_cmcev_source" : { "und" : [ { "value" : "Walk Up" } ] },
   "field_cmcev_status" : { "und" : [ { "value" : "Registered" } ] },
   "rdf_mapping" : []
 }',
