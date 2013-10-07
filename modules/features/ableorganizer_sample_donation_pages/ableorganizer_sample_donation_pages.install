@@ -1,0 +1,19 @@
+<?php
+/**
+ * @file
+ * Code for the AbleOrganizer Sample Event Pages feature.
+ */
+
+
+/**
+ * Implements hook_enable().
+ */
+function ableorganizer_sample_donation_pages_enable() {
+  // Configure the default email settings, if they are enabled.
+  if (variable_get('configure_donation_email', 0) === 1) {
+    _ableorganizer_sample_donation_pages_rebuild_nodes();
+    $fields = array();
+    $fields['thanks_email'] = 'rules_cmcd_thank_you_message';
+    db_update('crm_core_donation_nodes')->fields($fields)->execute();
+  }
+}

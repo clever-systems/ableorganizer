@@ -110,6 +110,11 @@ The amounts displayed as buttons are set within the content type, using the Reco
     'display_profile' => 0,
     'inline_title' => 'Fundraiser form',
   ),
+  'crm_core_donation_node_config' => array(
+    'nid' => '2b66066f-0a98-43b7-bc0e-a74c6e4130e6',
+    'thanks_email' => '',
+    'recommended_amounts' => '',
+  ),
 );
   $nodes[] = array(
   'uid' => 1,
@@ -207,6 +212,11 @@ The amounts displayed as buttons are set within the content type, using the Reco
     'profile_name' => 'ao_annual_appeal_form',
     'display_profile' => 0,
     'inline_title' => 'Annual appeal form',
+  ),
+  'crm_core_donation_node_config' => array(
+    'nid' => '3e876d31-271a-47da-8564-2bb667953ade',
+    'thanks_email' => '',
+    'recommended_amounts' => '',
   ),
 );
   $nodes[] = array(
@@ -549,6 +559,11 @@ The amounts displayed as buttons are set within the content type, using the Reco
     'profile_name' => 'ao_donation_form',
     'display_profile' => 0,
     'inline_title' => 'Donation form',
+  ),
+  'crm_core_donation_node_config' => array(
+    'nid' => 'e5742cc9-af29-4b1a-930b-24921ae633d4',
+    'thanks_email' => '',
+    'recommended_amounts' => '',
   ),
 );
   return $nodes;
