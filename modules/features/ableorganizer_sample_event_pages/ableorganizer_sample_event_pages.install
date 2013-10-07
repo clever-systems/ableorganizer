@@ -16,23 +16,18 @@ function ableorganizer_sample_event_pages_enable() {
  * Helper to set config for event content.
  */
 function _ableorganizer_sample_event_pages_set_config() {
-  // Saving profile nodes configuration.
-  $module = 'ableorganizer_sample_event_pages';
-  // Including sample nodes definitions.
-  module_load_include('inc', $module, $module . '.features.uuid_node');
-  // Including helper.
-  module_load_include('inc', 'uuid_features', 'includes/uuid_node.features');
-  // Creating sample content in DB.
-  uuid_node_features_rebuild($module);
   // Configure the default email settings, if they are enabled.
-  $thank_you_email = '';
   if (variable_get('configure_event_email', 0) === 1) {
-    $thank_you_email = 'rules_cmcev_thank_you_message';
+    // Saving profile nodes configuration.
+    $module = 'ableorganizer_sample_event_pages';
+    // Including sample nodes definitions.
+    module_load_include('inc', $module, $module . '.features.uuid_node');
+    // Including helper.
+    module_load_include('inc', 'uuid_features', 'includes/uuid_node.features');
+    // Creating sample content in DB.
+    uuid_node_features_rebuild($module);
+    $fields = array();
+    $fields['thanks_email'] = 'rules_cmcev_thank_you_message';
+    db_update('crm_core_event_nodes')->fields($fields)->execute();
   }
-  $events = db_select('node')->fields('node', array('nid'))->condition('type', 'cmcev_event')->execute()->fetchCol();
-  $query = db_insert('crm_core_event_nodes')->fields(array('nid', 'thanks_email'));
-  foreach ($events as $event) {
-    $query->values(array($event, $thank_you_email));
-  }
-  $query->execute();
 }
