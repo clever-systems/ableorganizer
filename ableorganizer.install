@@ -1062,7 +1062,7 @@ function ableorganizer_sample_content_submit($form, &$form_state) {
     $modules[] = 'ableorganizer_sample_petition_pages';
   }
   if (!empty($form_state['values']['volunteer_sample_content'])) {
-    $modules[] = 'ableorganizer_volunteer_sample_content';
+    $modules[] = 'ableorganizer_sample_volunteer_pages';
   }
   module_enable($modules);
 

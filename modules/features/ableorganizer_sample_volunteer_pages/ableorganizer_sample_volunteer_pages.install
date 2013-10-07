@@ -1,0 +1,26 @@
+<?php
+/**
+ * @file
+ * Code for the CRM Core Volunteer sample content feature.
+ */
+
+/**
+ * Implements hook_enable().
+ */
+function ableorganizer_sample_volunteer_pages_enable() {
+  // Configure the default email settings, if they are enabled.
+  if (variable_get('configure_volunteer_email', 0) === 1) {
+    // Saving profile nodes configuration.
+    $module = 'ableorganizer_sample_volunteer_pages';
+    // Including sample nodes definitions.
+    module_load_include('inc', $module, $module . '.features.uuid_node');
+    // Including helper.
+    module_load_include('inc', 'uuid_features', 'includes/uuid_node.features');
+    // Creating sample content in DB.
+    uuid_node_features_rebuild($module);
+    $fields = array();
+    $fields['wait_email'] = 'rules_cmcv_wl_notify';
+    $fields['sign_email'] = 'rules_cmcv_opportunity_signup';
+    db_update('crm_core_volunteer_nodes')->fields($fields)->execute();
+  }
+}

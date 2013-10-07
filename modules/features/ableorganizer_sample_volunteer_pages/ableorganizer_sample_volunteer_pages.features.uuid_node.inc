@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * ableorganizer_volunteer_sample_content.features.uuid_node.inc
+ * ableorganizer_sample_volunteer_pages.features.uuid_node.inc
  */
 
 /**
  * Implements hook_uuid_features_default_content().
  */
-function ableorganizer_volunteer_sample_content_uuid_features_default_content() {
+function ableorganizer_sample_volunteer_pages_uuid_features_default_content() {
   $nodes = array();
 
   $nodes[] = array(
@@ -172,6 +172,12 @@ Come to our Volunteer Open House to learn more and sign up.',
     'display_profile' => 0,
     'inline_title' => 'Volunteer form',
   ),
+  'crm_core_volunteer_node_config' => array(
+    'nid' => '0b621efb-62fa-4312-b0bd-479c6d8d8be4',
+    'wait_list' => 0,
+    'sign_email' => '',
+    'wait_email' => '',
+  ),
 );
   $nodes[] = array(
   'uid' => 1,
@@ -316,6 +322,12 @@ On Saturday, we\'ll be picking up trash and litter over a three mile stretch of 
     'profile_name' => 'ao_volunteer_commitment_form',
     'display_profile' => 0,
     'inline_title' => 'Volunteer form',
+  ),
+  'crm_core_volunteer_node_config' => array(
+    'nid' => '0d86ea2a-fb8a-4ec5-8a00-3361772433d3',
+    'wait_list' => 0,
+    'sign_email' => '',
+    'wait_email' => '',
   ),
 );
   $nodes[] = array(
@@ -468,8 +480,14 @@ On Saturday, we\'ll be picking up trash and litter over a three mile stretch of 
     'nid' => '2a0e3955-18a5-4be1-a2c4-8dff6e05be73',
     'use_profile' => 1,
     'profile_name' => 'ao_volunteer_commitment_form_2',
-    'display_profile' => 1,
+    'display_profile' => 0,
     'inline_title' => 'Volunteer form',
+  ),
+  'crm_core_volunteer_node_config' => array(
+    'nid' => '2a0e3955-18a5-4be1-a2c4-8dff6e05be73',
+    'wait_list' => 0,
+    'sign_email' => '',
+    'wait_email' => '',
   ),
 );
   $nodes[] = array(
@@ -622,8 +640,14 @@ On Saturday, we\'ll be picking up trash and litter over a three mile stretch of 
     'nid' => '85b8792e-c6f0-41e1-bb04-7cbf6b522abf',
     'use_profile' => 1,
     'profile_name' => 'ao_volunteer_commitment_form',
-    'display_profile' => 1,
+    'display_profile' => 0,
     'inline_title' => 'Volunteer form',
+  ),
+  'crm_core_volunteer_node_config' => array(
+    'nid' => '85b8792e-c6f0-41e1-bb04-7cbf6b522abf',
+    'wait_list' => 0,
+    'sign_email' => '',
+    'wait_email' => '',
   ),
 );
   $nodes[] = array(
@@ -771,8 +795,14 @@ On Saturday, we\'ll be picking up trash and litter over a three mile stretch of 
     'nid' => '9c84b384-91ef-438d-a442-b7aa4158823f',
     'use_profile' => 1,
     'profile_name' => 'ao_volunteer_commitment_form',
-    'display_profile' => 1,
+    'display_profile' => 0,
     'inline_title' => 'Volunteer form',
+  ),
+  'crm_core_volunteer_node_config' => array(
+    'nid' => '9c84b384-91ef-438d-a442-b7aa4158823f',
+    'wait_list' => 0,
+    'sign_email' => '',
+    'wait_email' => '',
   ),
 );
   $nodes[] = array(

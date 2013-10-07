@@ -1,10 +1,7 @@
-name = AbleOrganizer Volunteer Sample Content
+name = AbleOrganizer Sample Volunteer Pages
 description = Sample content for the CRM Core Volunteer
 core = 7.x
-package = CRM Core
-version = 7.x-1.0
-project = ableorganizer_volunteer_sample_content
-dependencies[] = ableorganizer_sample_donation_pages
+package = AbleOrganizer
 dependencies[] = crm_core_profile
 dependencies[] = crm_core_volunteer
 dependencies[] = ctools

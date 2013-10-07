@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * ableorganizer_volunteer_sample_content.crm_core_profile.inc
+ * ableorganizer_sample_volunteer_pages.crm_core_profile.inc
  */
 
 /**
  * Implements hook_default_crm_core_profile().
  */
-function ableorganizer_volunteer_sample_content_default_crm_core_profile() {
+function ableorganizer_sample_volunteer_pages_default_crm_core_profile() {
   $export = array();
 
   $crm_core_profile = new stdClass();
