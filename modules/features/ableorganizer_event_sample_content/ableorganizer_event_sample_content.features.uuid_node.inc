@@ -11,7 +11,7 @@ function ableorganizer_event_sample_content_uuid_features_default_content() {
   $nodes = array();
 
   $nodes[] = array(
-  'uid' => 1,
+  'uid' => 0,
   'title' => 'Pepperhill Women in Law Anniversary Dinner ',
   'log' => '',
   'status' => 1,
@@ -29,10 +29,10 @@ function ableorganizer_event_sample_content_uuid_features_default_content() {
   'body' => array(
     'und' => array(
       0 => array(
-        'value' => '<br><strong>We invite you to join us to celebrate the 60th anniversary of women being accepted into Pepperhill University\'s School of Law. We will have a variety of high-profile speakers and Pepperhill Alumni in attendance. To purchase tickets please fill out the form below. Attire is formal.<strong></br> ',
+        'value' => 'We invite you to join us to celebrate the 60th anniversary of women being accepted into Pepperhill University\'s School of Law. We will have a variety of high-profile speakers and Pepperhill Alumni in attendance. To purchase tickets please fill out the form below. Attire is formal. ',
         'summary' => '',
         'format' => 'full_html',
-        'safe_value' => '<p><br /><strong>We invite you to join us to celebrate the 60th anniversary of women being accepted into Pepperhill University\'s School of Law. We will have a variety of high-profile speakers and Pepperhill Alumni in attendance. To purchase tickets please fill out the form below. Attire is formal.<strong> </strong></strong></p>
+        'safe_value' => '<p>We invite you to join us to celebrate the 60th anniversary of women being accepted into Pepperhill University\'s School of Law. We will have a variety of high-profile speakers and Pepperhill Alumni in attendance. To purchase tickets please fill out the form below. Attire is formal. </p>
 ',
         'safe_summary' => '',
       ),
@@ -41,9 +41,9 @@ function ableorganizer_event_sample_content_uuid_features_default_content() {
   'field_cmcev_date' => array(
     'und' => array(
       0 => array(
-        'value' => '2013-09-01 09:00:00',
-        'value2' => '2013-09-06 19:00:00',
-        'timezone' => 'Europe/Helsinki',
+        'value' => '2013-10-01 09:00:00',
+        'value2' => '2013-10-06 19:00:00',
+        'timezone' => 'America/New_York',
         'timezone_db' => 'UTC',
         'date_type' => 'datetime',
       ),
@@ -134,10 +134,18 @@ function ableorganizer_event_sample_content_uuid_features_default_content() {
   'name' => '',
   'picture' => 0,
   'data' => NULL,
-  'date' => '2013-09-03 18:53:11 +0300',
+  'date' => '2013-09-03 11:53:11 -0400',
+  'url_alias' => 'events/multiple-ticket-levels-quantity',
+  'crm_core_profile_node_config' => array(
+    'nid' => '37106c78-84c8-4e74-a387-5c04b03f5375',
+    'use_profile' => 1,
+    'profile_name' => 'ao_cmcev_simple_quantity_form',
+    'display_profile' => 0,
+    'inline_title' => 'Registration form',
+  ),
 );
   $nodes[] = array(
-  'uid' => 1,
+  'uid' => 0,
   'title' => 'Breakfast with Lowell Katz',
   'log' => '',
   'status' => 1,
@@ -155,15 +163,15 @@ function ableorganizer_event_sample_content_uuid_features_default_content() {
   'body' => array(
     'und' => array(
       0 => array(
-        'value' => '<br><strong>Lowell Katz is a progressive leader with an unrivaled and unmatched record of results. Please join us at the event below to meet Lowell, and help send him to Washington, D.C. next year!</strong></br>
+        'value' => 'Lowell Katz is a progressive leader with an unrivaled and unmatched record of results. Please join us at the event below to meet Lowell, and help send him to Washington, D.C. next year!
 
-<em><center>Contributions to Lowell Katz for Congress are not tax deductible.</center></em><br></br> 
+Contributions to Lowell Katz for Congress are not tax deductible.
 
  ',
         'summary' => '',
         'format' => 'full_html',
-        'safe_value' => '<p><br /><strong>Lowell Katz is a progressive leader with an unrivaled and unmatched record of results. Please join us at the event below to meet Lowell, and help send him to Washington, D.C. next year!</strong></p>
-<p><em><center>Contributions to Lowell Katz for Congress are not tax deductible.</center></em><br /></p>
+        'safe_value' => '<p>Lowell Katz is a progressive leader with an unrivaled and unmatched record of results. Please join us at the event below to meet Lowell, and help send him to Washington, D.C. next year!</p>
+<p>Contributions to Lowell Katz for Congress are not tax deductible.</p>
 ',
         'safe_summary' => '',
       ),
@@ -172,9 +180,9 @@ function ableorganizer_event_sample_content_uuid_features_default_content() {
   'field_cmcev_date' => array(
     'und' => array(
       0 => array(
-        'value' => '2013-09-07 09:00:00',
-        'value2' => '2013-09-12 19:00:00',
-        'timezone' => 'Europe/Helsinki',
+        'value' => '2013-10-07 09:00:00',
+        'value2' => '2013-10-12 19:00:00',
+        'timezone' => 'America/New_York',
         'timezone_db' => 'UTC',
         'date_type' => 'datetime',
       ),
@@ -263,10 +271,18 @@ function ableorganizer_event_sample_content_uuid_features_default_content() {
   'name' => '',
   'picture' => 0,
   'data' => NULL,
-  'date' => '2013-09-03 18:29:19 +0300',
+  'date' => '2013-09-03 11:29:19 -0400',
+  'url_alias' => 'events/single-ticket',
+  'crm_core_profile_node_config' => array(
+    'nid' => '52a80050-d98f-4bbf-90e8-9526dd3c77a1',
+    'use_profile' => 1,
+    'profile_name' => 'ao_cmcev_simple_single_form',
+    'display_profile' => 0,
+    'inline_title' => 'Registration form',
+  ),
 );
   $nodes[] = array(
-  'uid' => 1,
+  'uid' => 0,
   'title' => 'Thank you',
   'log' => '',
   'status' => 1,
@@ -354,10 +370,11 @@ function ableorganizer_event_sample_content_uuid_features_default_content() {
   'name' => '',
   'picture' => 0,
   'data' => NULL,
-  'date' => '2013-09-04 16:38:10 +0300',
+  'date' => '2013-09-04 09:38:10 -0400',
+  'url_alias' => 'events/thank-you',
 );
   $nodes[] = array(
-  'uid' => 1,
+  'uid' => 0,
   'title' => 'Aids Walk Luckenbach',
   'log' => '',
   'status' => 1,
@@ -375,10 +392,10 @@ function ableorganizer_event_sample_content_uuid_features_default_content() {
   'body' => array(
     'und' => array(
       0 => array(
-        'value' => '<br><strong>Aids Walk Luckenbach is a fundraising walk and 5k timed run to benefit AIDS research in Luckenbach. Fill out the form below to become an event sponsor!</strong></br>',
+        'value' => 'Aids Walk Luckenbach is a fundraising walk and 5k timed run to benefit AIDS research in Luckenbach. Fill out the form below to become an event sponsor!',
         'summary' => '',
         'format' => 'full_html',
-        'safe_value' => '<p><br /><strong>Aids Walk Luckenbach is a fundraising walk and 5k timed run to benefit AIDS research in Luckenbach. Fill out the form below to become an event sponsor!</strong></p>
+        'safe_value' => '<p>Aids Walk Luckenbach is a fundraising walk and 5k timed run to benefit AIDS research in Luckenbach. Fill out the form below to become an event sponsor!</p>
 ',
         'safe_summary' => '',
       ),
@@ -387,9 +404,9 @@ function ableorganizer_event_sample_content_uuid_features_default_content() {
   'field_cmcev_date' => array(
     'und' => array(
       0 => array(
-        'value' => '2013-09-13 09:00:00',
-        'value2' => '2013-09-18 19:00:00',
-        'timezone' => 'Europe/Helsinki',
+        'value' => '2013-10-13 09:00:00',
+        'value2' => '2013-10-18 19:00:00',
+        'timezone' => 'America/New_York',
         'timezone_db' => 'UTC',
         'date_type' => 'datetime',
       ),
@@ -480,10 +497,18 @@ function ableorganizer_event_sample_content_uuid_features_default_content() {
   'name' => '',
   'picture' => 0,
   'data' => NULL,
-  'date' => '2013-09-03 18:49:30 +0300',
+  'date' => '2013-09-03 11:49:30 -0400',
+  'url_alias' => 'events/multiple-ticket-level',
+  'crm_core_profile_node_config' => array(
+    'nid' => '8cbf5460-9633-4fcd-a730-c5832c19e5f0',
+    'use_profile' => 1,
+    'profile_name' => 'ao_cmcev_simple_many_form',
+    'display_profile' => 0,
+    'inline_title' => 'Registration form',
+  ),
 );
   $nodes[] = array(
-  'uid' => 1,
+  'uid' => 0,
   'title' => 'Health and Resource Fair',
   'log' => '',
   'status' => 1,
@@ -501,11 +526,11 @@ function ableorganizer_event_sample_content_uuid_features_default_content() {
   'body' => array(
     'und' => array(
       0 => array(
-        'value' => '<br><strong>Join us this Saturday where over 100 local organizations will be on hand to provide free services including free blood pressure testing, dental screenings, flu shots and more!</strong></br>
+        'value' => 'Join us this Saturday where over 100 local organizations will be on hand to provide free services including free blood pressure testing, dental screenings, flu shots and more!
 ',
         'summary' => '',
         'format' => 'full_html',
-        'safe_value' => '<p><br /><strong>Join us this Saturday where over 100 local organizations will be on hand to provide free services including free blood pressure testing, dental screenings, flu shots and more!</strong></p>
+        'safe_value' => '<p>Join us this Saturday where over 100 local organizations will be on hand to provide free services including free blood pressure testing, dental screenings, flu shots and more!</p>
 ',
         'safe_summary' => '',
       ),
@@ -514,9 +539,9 @@ function ableorganizer_event_sample_content_uuid_features_default_content() {
   'field_cmcev_date' => array(
     'und' => array(
       0 => array(
-        'value' => '2013-09-19 09:00:00',
-        'value2' => '2013-09-24 19:00:00',
-        'timezone' => 'Europe/Helsinki',
+        'value' => '2013-10-19 09:00:00',
+        'value2' => '2013-10-24 19:00:00',
+        'timezone' => 'America/New_York',
         'timezone_db' => 'UTC',
         'date_type' => 'datetime',
       ),
@@ -605,10 +630,18 @@ function ableorganizer_event_sample_content_uuid_features_default_content() {
   'name' => '',
   'picture' => 0,
   'data' => NULL,
-  'date' => '2013-09-03 18:21:01 +0300',
+  'date' => '2013-09-03 11:21:01 -0400',
+  'url_alias' => 'events/basic',
+  'crm_core_profile_node_config' => array(
+    'nid' => 'c4e0254b-e193-4f95-b843-fde40151fd81',
+    'use_profile' => 1,
+    'profile_name' => 'ao_cmcev_simple_reg_form',
+    'display_profile' => 0,
+    'inline_title' => 'Registration form',
+  ),
 );
   $nodes[] = array(
-  'uid' => 1,
+  'uid' => 0,
   'title' => 'Tuesday Phonebank',
   'log' => '',
   'status' => 1,
@@ -626,10 +659,10 @@ function ableorganizer_event_sample_content_uuid_features_default_content() {
   'body' => array(
     'und' => array(
       0 => array(
-        'value' => '<br><strong>Come phonebank with us this Tuesday and help ensure more progressive leaders have a voice in Washington!</strong></br>',
+        'value' => 'Come phonebank with us this Tuesday and help ensure more progressive leaders have a voice in Washington!',
         'summary' => '',
         'format' => 'full_html',
-        'safe_value' => '<p><br /><strong>Come phonebank with us this Tuesday and help ensure more progressive leaders have a voice in Washington!</strong></p>
+        'safe_value' => '<p>Come phonebank with us this Tuesday and help ensure more progressive leaders have a voice in Washington!</p>
 ',
         'safe_summary' => '',
       ),
@@ -638,9 +671,9 @@ function ableorganizer_event_sample_content_uuid_features_default_content() {
   'field_cmcev_date' => array(
     'und' => array(
       0 => array(
-        'value' => '2013-09-25 09:00:00',
-        'value2' => '2013-09-30 19:00:00',
-        'timezone' => 'Europe/Helsinki',
+        'value' => '2013-10-25 09:00:00',
+        'value2' => '2013-10-30 19:00:00',
+        'timezone' => 'America/New_York',
         'timezone_db' => 'UTC',
         'date_type' => 'datetime',
       ),
@@ -725,10 +758,19 @@ function ableorganizer_event_sample_content_uuid_features_default_content() {
   'last_comment_name' => NULL,
   'last_comment_uid' => 0,
   'comment_count' => 0,
+  'crm_core_profile_data' => array(),
   'name' => '',
   'picture' => 0,
   'data' => NULL,
-  'date' => '2013-09-19 20:52:07 +0300',
+  'date' => '2013-09-19 13:52:07 -0400',
+  'url_alias' => 'events/phonebank',
+  'crm_core_profile_node_config' => array(
+    'nid' => 'e340d2ab-485b-4e68-b35c-c4e07a7b80c5',
+    'use_profile' => 1,
+    'profile_name' => 'ao_cmcev_simple_single_form',
+    'display_profile' => 0,
+    'inline_title' => 'Register Now',
+  ),
 );
   return $nodes;
 }

@@ -63,7 +63,7 @@ function ableorganizer_petition_sample_content_views_default_views() {
   $handler = $view->new_display('page', 'Page', 'page');
   $handler->display->display_options['path'] = 'petitions';
   $handler->display->display_options['menu']['type'] = 'normal';
-  $handler->display->display_options['menu']['title'] = 'Current Petitions';
+  $handler->display->display_options['menu']['title'] = 'Petitions';
   $handler->display->display_options['menu']['weight'] = '3';
   $handler->display->display_options['menu']['name'] = 'main-menu';
   $handler->display->display_options['menu']['context'] = 0;

@@ -32,21 +32,22 @@ function ableorganizer_volunteer_sample_content_uuid_features_default_content() 
         'value' => 'The animal shelter needs your help.
 
 We are looking for volunteers in a variety of roles:
-<ol>
+<ul>
 <li> Animal Socializer: Work with the animals to make them more adoptable
 <li> Adoption Counselor: Help people find the perfect animal to join their family
 <li> Animal Care: Make sure our animals are fed and kept clean
+</ul>
 
 Come to our Volunteer Open House to learn more and sign up.',
         'summary' => '',
         'format' => 'filtered_html',
         'safe_value' => '<p>The animal shelter needs your help.</p>
 <p>We are looking for volunteers in a variety of roles:</p>
-<ol><li> Animal Socializer: Work with the animals to make them more adoptable
+<ul><li> Animal Socializer: Work with the animals to make them more adoptable
 </li><li> Adoption Counselor: Help people find the perfect animal to join their family
 </li><li> Animal Care: Make sure our animals are fed and kept clean
-<p>Come to our Volunteer Open House to learn more and sign up.</p>
-</li></ol>',
+</li></ul><p>Come to our Volunteer Open House to learn more and sign up.</p>
+',
         'safe_summary' => '',
       ),
     ),
@@ -57,7 +58,7 @@ Come to our Volunteer Open House to learn more and sign up.',
       0 => array(
         'value' => 1386099000,
         'value2' => 1386099000,
-        'timezone' => 'Europe/Helsinki',
+        'timezone' => 'America/New_York',
         'timezone_db' => 'UTC',
         'date_type' => 'datestamp',
       ),
@@ -158,10 +159,19 @@ Come to our Volunteer Open House to learn more and sign up.',
   'last_comment_name' => NULL,
   'last_comment_uid' => 1,
   'comment_count' => 0,
+  'crm_core_profile_data' => array(),
   'name' => 'admin',
   'picture' => 0,
   'data' => 'a:1:{s:17:"mimemail_textonly";i:0;}',
-  'date' => '2013-09-18 23:37:32 +0300',
+  'date' => '2013-09-18 16:37:32 -0400',
+  'url_alias' => 'volunteers/work-with-homeless-animals',
+  'crm_core_profile_node_config' => array(
+    'nid' => '0b621efb-62fa-4312-b0bd-479c6d8d8be4',
+    'use_profile' => 1,
+    'profile_name' => 'ao_volunteer_commitment_form',
+    'display_profile' => 0,
+    'inline_title' => 'Volunteer form',
+  ),
 );
   $nodes[] = array(
   'uid' => 1,
@@ -201,7 +211,7 @@ On Saturday, we\'ll be picking up trash and litter over a three mile stretch of 
       0 => array(
         'value' => 1382796000,
         'value2' => 1382796000,
-        'timezone' => 'Europe/Helsinki',
+        'timezone' => 'America/New_York',
         'timezone_db' => 'UTC',
         'date_type' => 'datestamp',
       ),
@@ -294,10 +304,19 @@ On Saturday, we\'ll be picking up trash and litter over a three mile stretch of 
   'last_comment_name' => NULL,
   'last_comment_uid' => 1,
   'comment_count' => 0,
+  'crm_core_profile_data' => array(),
   'name' => 'admin',
   'picture' => 0,
   'data' => 'a:1:{s:17:"mimemail_textonly";i:0;}',
-  'date' => '2013-09-19 18:40:38 +0300',
+  'date' => '2013-09-19 11:40:38 -0400',
+  'url_alias' => 'volunteers/keep-our-creek-clean',
+  'crm_core_profile_node_config' => array(
+    'nid' => '0d86ea2a-fb8a-4ec5-8a00-3361772433d3',
+    'use_profile' => 1,
+    'profile_name' => 'ao_volunteer_commitment_form',
+    'display_profile' => 0,
+    'inline_title' => 'Volunteer form',
+  ),
 );
   $nodes[] = array(
   'uid' => 1,
@@ -341,7 +360,7 @@ On Saturday, we\'ll be picking up trash and litter over a three mile stretch of 
       0 => array(
         'value' => 1378148400,
         'value2' => 1387396800,
-        'timezone' => 'Europe/Helsinki',
+        'timezone' => 'America/New_York',
         'timezone_db' => 'UTC',
         'date_type' => 'datestamp',
       ),
@@ -434,10 +453,24 @@ On Saturday, we\'ll be picking up trash and litter over a three mile stretch of 
   'last_comment_name' => NULL,
   'last_comment_uid' => 1,
   'comment_count' => 0,
+  'crm_core_profile_data' => array(
+    'access_override' => array(
+      'access' => FALSE,
+      'message' => 'Registration closed!',
+    ),
+  ),
   'name' => 'admin',
   'picture' => 0,
   'data' => 'a:1:{s:17:"mimemail_textonly";i:0;}',
-  'date' => '2013-09-19 19:01:53 +0300',
+  'date' => '2013-09-19 12:01:53 -0400',
+  'url_alias' => 'volunteers/after-school-tutors-needed',
+  'crm_core_profile_node_config' => array(
+    'nid' => '2a0e3955-18a5-4be1-a2c4-8dff6e05be73',
+    'use_profile' => 1,
+    'profile_name' => 'ao_volunteer_commitment_form_2',
+    'display_profile' => 1,
+    'inline_title' => 'Volunteer form',
+  ),
 );
   $nodes[] = array(
   'uid' => 1,
@@ -481,7 +514,7 @@ On Saturday, we\'ll be picking up trash and litter over a three mile stretch of 
       0 => array(
         'value' => 1379602800,
         'value2' => 1383584400,
-        'timezone' => 'Europe/Helsinki',
+        'timezone' => 'America/New_York',
         'timezone_db' => 'UTC',
         'date_type' => 'datestamp',
       ),
@@ -574,10 +607,24 @@ On Saturday, we\'ll be picking up trash and litter over a three mile stretch of 
   'last_comment_name' => NULL,
   'last_comment_uid' => 1,
   'comment_count' => 0,
+  'crm_core_profile_data' => array(
+    'access_override' => array(
+      'access' => FALSE,
+      'message' => 'Registration closed!',
+    ),
+  ),
   'name' => 'admin',
   'picture' => 0,
   'data' => 'a:1:{s:17:"mimemail_textonly";i:0;}',
-  'date' => '2013-09-19 18:46:07 +0300',
+  'date' => '2013-09-19 11:46:07 -0400',
+  'url_alias' => 'volunteers/get-out-the-vote',
+  'crm_core_profile_node_config' => array(
+    'nid' => '85b8792e-c6f0-41e1-bb04-7cbf6b522abf',
+    'use_profile' => 1,
+    'profile_name' => 'ao_volunteer_commitment_form',
+    'display_profile' => 1,
+    'inline_title' => 'Volunteer form',
+  ),
 );
   $nodes[] = array(
   'uid' => 1,
@@ -616,7 +663,7 @@ On Saturday, we\'ll be picking up trash and litter over a three mile stretch of 
       0 => array(
         'value' => 1387404000,
         'value2' => 1387404000,
-        'timezone' => 'Europe/Helsinki',
+        'timezone' => 'America/New_York',
         'timezone_db' => 'UTC',
         'date_type' => 'datestamp',
       ),
@@ -709,10 +756,24 @@ On Saturday, we\'ll be picking up trash and litter over a three mile stretch of 
   'last_comment_name' => NULL,
   'last_comment_uid' => 1,
   'comment_count' => 0,
+  'crm_core_profile_data' => array(
+    'access_override' => array(
+      'access' => FALSE,
+      'message' => 'Registration closed!',
+    ),
+  ),
   'name' => 'admin',
   'picture' => 0,
   'data' => 'a:1:{s:17:"mimemail_textonly";i:0;}',
-  'date' => '2013-09-19 18:53:06 +0300',
+  'date' => '2013-09-19 11:53:06 -0400',
+  'url_alias' => 'volunteers/support-the-food-bank',
+  'crm_core_profile_node_config' => array(
+    'nid' => '9c84b384-91ef-438d-a442-b7aa4158823f',
+    'use_profile' => 1,
+    'profile_name' => 'ao_volunteer_commitment_form',
+    'display_profile' => 1,
+    'inline_title' => 'Volunteer form',
+  ),
 );
   $nodes[] = array(
   'uid' => 1,
@@ -803,7 +864,8 @@ On Saturday, we\'ll be picking up trash and litter over a three mile stretch of 
   'name' => 'admin',
   'picture' => 0,
   'data' => 'a:1:{s:17:"mimemail_textonly";i:0;}',
-  'date' => '2013-09-09 14:15:06 +0300',
+  'date' => '2013-09-09 07:15:06 -0400',
+  'url_alias' => 'volunteers/thank-you',
 );
   return $nodes;
 }

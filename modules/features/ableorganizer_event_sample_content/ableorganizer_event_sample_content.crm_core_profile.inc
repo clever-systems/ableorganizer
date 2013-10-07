@@ -608,7 +608,7 @@ Corporate|1000',
           'field_ao_twitter' => 0,
         ),
       ),
-      'prepopulate' => 1,
+      'prepopulate' => 0,
       'prepopulate_type' => 'current_user',
     ),
     'crm_core_activity' => array(
