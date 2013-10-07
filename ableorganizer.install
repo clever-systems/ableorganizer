@@ -1059,7 +1059,7 @@ function ableorganizer_sample_content_submit($form, &$form_state) {
     $modules[] = 'ableorganizer_sample_event_pages';
   }
   if (!empty($form_state['values']['petition_sample_content'])) {
-    $modules[] = 'ableorganizer_petition_sample_content';
+    $modules[] = 'ableorganizer_sample_petition_pages';
   }
   if (!empty($form_state['values']['volunteer_sample_content'])) {
     $modules[] = 'ableorganizer_volunteer_sample_content';
@@ -1082,7 +1082,9 @@ function ableorganizer_sample_content_submit($form, &$form_state) {
     $sample_data = ableorganizer_donation_sample_data();
     foreach ($sample_data['crm_core_activity'] as $activity) {
       $new_activity = entity_import('crm_core_activity', $activity);
-      $new_activity->field_cmcd_receive_date = _ableorganizer_set_activity_date();
+      $date = _ableorganizer_set_activity_date();
+      $new_activity->field_activity_date = $date;
+      $new_activity->field_cmcd_receive_date = $date;
       entity_save('crm_core_activity', $new_activity);
     }
   }
@@ -1090,7 +1092,9 @@ function ableorganizer_sample_content_submit($form, &$form_state) {
     $sample_data = ableorganizer_event_sample_data();
     foreach ($sample_data['crm_core_activity'] as $activity) {
       $new_activity = entity_import('crm_core_activity', $activity);
-      $new_activity->field_cmcev_reg_date = _ableorganizer_set_activity_date();
+      $date = _ableorganizer_set_activity_date();
+      $new_activity->field_activity_date = $date;
+      $new_activity->field_cmcev_reg_date = $date;
       entity_save('crm_core_activity', $new_activity);
     }
   }
@@ -1098,7 +1102,9 @@ function ableorganizer_sample_content_submit($form, &$form_state) {
     $sample_data = ableorganizer_petition_sample_data();
     foreach ($sample_data['crm_core_activity'] as $activity) {
       $new_activity = entity_import('crm_core_activity', $activity);
-      $new_activity->field_cmcp_received_date = _ableorganizer_set_activity_date();
+      $date = _ableorganizer_set_activity_date();
+      $new_activity->field_activity_date = $date;
+      $new_activity->field_cmcp_received_date = $date;
       entity_save('crm_core_activity', $new_activity);
     }
   }
@@ -1106,7 +1112,9 @@ function ableorganizer_sample_content_submit($form, &$form_state) {
     $sample_data = ableorganizer_volunteer_sample_data();
     foreach ($sample_data['crm_core_activity'] as $activity) {
       $new_activity = entity_import('crm_core_activity', $activity);
-      $new_activity->field_cmcv_reg_date = _ableorganizer_set_activity_date();
+      $date = _ableorganizer_set_activity_date();
+      $new_activity->field_activity_date = $date;
+      $new_activity->field_cmcv_reg_date = $date;
       entity_save('crm_core_activity', $new_activity);
     }
   }

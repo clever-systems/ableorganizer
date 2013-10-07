@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * ableorganizer_petition_sample_content.features.inc
+ * ableorganizer_sample_petition_pages.features.inc
  */
 
 /**
  * Implements hook_ctools_plugin_api().
  */
-function ableorganizer_petition_sample_content_ctools_plugin_api($module = NULL, $api = NULL) {
+function ableorganizer_sample_petition_pages_ctools_plugin_api($module = NULL, $api = NULL) {
   if ($module == "crm_core_profile" && $api == "crm_core_profile") {
     return array("version" => "1");
   }
@@ -19,6 +19,6 @@ function ableorganizer_petition_sample_content_ctools_plugin_api($module = NULL,
 /**
  * Implements hook_views_api().
  */
-function ableorganizer_petition_sample_content_views_api($module = NULL, $api = NULL) {
+function ableorganizer_sample_petition_pages_views_api($module = NULL, $api = NULL) {
   return array("api" => "3.0");
 }
