@@ -67,6 +67,7 @@ dependencies[] = pathologic
 dependencies[] = fontyourface
 dependencies[] = fontyourface_ui
 dependencies[] = google_fonts_api
+dependencies[] = compact_forms
 
 ; commerce modules
 dependencies[] = commerce
