@@ -32,8 +32,8 @@ function ableorganizer_sample_event_pages_default_crm_core_profile() {
           'field_ao_twitter' => 0,
         ),
       ),
-      'prepopulate' => 1,
-      'prepopulate_type' => 'current_user',
+      'prepopulate' => 0,
+      'prepopulate_type' => '',
     ),
     'crm_core_activity' => array(
       'label' => 'CRM Core Activity',
@@ -285,7 +285,7 @@ Corporate|1000',
   );
   $crm_core_profile->block = FALSE;
   $crm_core_profile->block_title = '';
-  $crm_core_profile->page = TRUE;
+  $crm_core_profile->page = FALSE;
   $crm_core_profile->page_title = '';
   $crm_core_profile->page_path = '';
   $crm_core_profile->page_redirect = 'events/thank-you';
@@ -320,8 +320,8 @@ Corporate|1000',
           'field_ao_twitter' => 0,
         ),
       ),
-      'prepopulate' => 1,
-      'prepopulate_type' => 'current_user',
+      'prepopulate' => 0,
+      'prepopulate_type' => '',
     ),
     'crm_core_activity' => array(
       'label' => 'CRM Core Activity',
@@ -573,7 +573,7 @@ Corporate|1000',
   );
   $crm_core_profile->block = FALSE;
   $crm_core_profile->block_title = '';
-  $crm_core_profile->page = TRUE;
+  $crm_core_profile->page = FALSE;
   $crm_core_profile->page_title = '';
   $crm_core_profile->page_path = '';
   $crm_core_profile->page_redirect = 'events/thank-you';
@@ -609,7 +609,7 @@ Corporate|1000',
         ),
       ),
       'prepopulate' => 0,
-      'prepopulate_type' => 'current_user',
+      'prepopulate_type' => '',
     ),
     'crm_core_activity' => array(
       'label' => 'CRM Core Activity',
@@ -793,7 +793,7 @@ Corporate|1000',
   );
   $crm_core_profile->block = FALSE;
   $crm_core_profile->block_title = '';
-  $crm_core_profile->page = TRUE;
+  $crm_core_profile->page = FALSE;
   $crm_core_profile->page_title = '';
   $crm_core_profile->page_path = '';
   $crm_core_profile->page_redirect = 'events/thank-you';
@@ -828,8 +828,8 @@ Corporate|1000',
           'field_ao_twitter' => 0,
         ),
       ),
-      'prepopulate' => 1,
-      'prepopulate_type' => 'current_user',
+      'prepopulate' => 0,
+      'prepopulate_type' => '',
     ),
     'crm_core_activity' => array(
       'label' => 'CRM Core Activity',
@@ -1080,7 +1080,7 @@ Corporate|1000',
   );
   $crm_core_profile->block = FALSE;
   $crm_core_profile->block_title = '';
-  $crm_core_profile->page = TRUE;
+  $crm_core_profile->page = FALSE;
   $crm_core_profile->page_title = '';
   $crm_core_profile->page_path = '';
   $crm_core_profile->page_redirect = 'events/thank-you';
