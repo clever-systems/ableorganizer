@@ -838,6 +838,7 @@ function ableorganizer_donation_sample_data() {
     'ao_fundraiser_form' => '2b66066f-0a98-43b7-bc0e-a74c6e4130e6',
     'ao_annual_appeal_form' => '3e876d31-271a-47da-8564-2bb667953ade',
     'ao_donation_form' => 'e5742cc9-af29-4b1a-930b-24921ae633d4',
+    'ao_walk_up_donation' => 'd2ce8616-ab53-4c71-8c87-9c438c6a1cad'
   );
   // Getting local IDs from universal.
   $nids = entity_get_id_by_uuid('node', $uuids);
@@ -2132,7 +2133,7 @@ function ableorganizer_donation_sample_data() {
   },
   "field_cmcd_amount" : { "und" : [ { "value" : "25.00" } ] },
   "field_cmcd_order" : [],
-  "field_cmcd_page" : [],
+  "field_cmcd_page" : { "und" : [ { "target_id" : "' . $nids[$uuids['ao_walk_up_donation']] . '" } ] },
   "field_cmcd_payment_type" : { "und" : [ { "value" : "Check" } ] },
   "field_cmcd_receive_date" : { "und" : [
       {
@@ -2174,7 +2175,7 @@ function ableorganizer_donation_sample_data() {
   },
   "field_cmcd_amount" : { "und" : [ { "value" : "50.00" } ] },
   "field_cmcd_order" : [],
-  "field_cmcd_page" : [],
+  "field_cmcd_page" : { "und" : [ { "target_id" : "' . $nids[$uuids['ao_walk_up_donation']] . '" } ] },
   "field_cmcd_payment_type" : { "und" : [ { "value" : "Check" } ] },
   "field_cmcd_receive_date" : { "und" : [
       {
@@ -2216,7 +2217,7 @@ function ableorganizer_donation_sample_data() {
   },
   "field_cmcd_amount" : { "und" : [ { "value" : "25.00" } ] },
   "field_cmcd_order" : [],
-  "field_cmcd_page" : [],
+  "field_cmcd_page" : { "und" : [ { "target_id" : "' . $nids[$uuids['ao_walk_up_donation']] . '" } ] },
   "field_cmcd_payment_type" : { "und" : [ { "value" : "Check" } ] },
   "field_cmcd_receive_date" : { "und" : [
       {
@@ -2258,7 +2259,7 @@ function ableorganizer_donation_sample_data() {
   },
   "field_cmcd_amount" : { "und" : [ { "value" : "75.00" } ] },
   "field_cmcd_order" : [],
-  "field_cmcd_page" : [],
+  "field_cmcd_page" : { "und" : [ { "target_id" : "' . $nids[$uuids['ao_walk_up_donation']] . '" } ] },
   "field_cmcd_payment_type" : { "und" : [ { "value" : "Check" } ] },
   "field_cmcd_receive_date" : { "und" : [
       {
@@ -2300,7 +2301,7 @@ function ableorganizer_donation_sample_data() {
   },
   "field_cmcd_amount" : { "und" : [ { "value" : "25.00" } ] },
   "field_cmcd_order" : [],
-  "field_cmcd_page" : [],
+  "field_cmcd_page" : { "und" : [ { "target_id" : "' . $nids[$uuids['ao_walk_up_donation']] . '" } ] },
   "field_cmcd_payment_type" : { "und" : [ { "value" : "Check" } ] },
   "field_cmcd_receive_date" : { "und" : [
       {
@@ -2342,7 +2343,7 @@ function ableorganizer_donation_sample_data() {
   },
   "field_cmcd_amount" : { "und" : [ { "value" : "25.00" } ] },
   "field_cmcd_order" : [],
-  "field_cmcd_page" : [],
+  "field_cmcd_page" : { "und" : [ { "target_id" : "' . $nids[$uuids['ao_walk_up_donation']] . '" } ] },
   "field_cmcd_payment_type" : { "und" : [ { "value" : "Check" } ] },
   "field_cmcd_receive_date" : { "und" : [
       {
@@ -2384,7 +2385,7 @@ function ableorganizer_donation_sample_data() {
   },
   "field_cmcd_amount" : { "und" : [ { "value" : "50.00" } ] },
   "field_cmcd_order" : [],
-  "field_cmcd_page" : [],
+  "field_cmcd_page" : { "und" : [ { "target_id" : "' . $nids[$uuids['ao_walk_up_donation']] . '" } ] },
   "field_cmcd_payment_type" : { "und" : [ { "value" : "Check" } ] },
   "field_cmcd_receive_date" : { "und" : [
       {
@@ -2426,7 +2427,7 @@ function ableorganizer_donation_sample_data() {
   },
   "field_cmcd_amount" : { "und" : [ { "value" : "25.00" } ] },
   "field_cmcd_order" : [],
-  "field_cmcd_page" : [],
+  "field_cmcd_page" : { "und" : [ { "target_id" : "' . $nids[$uuids['ao_walk_up_donation']] . '" } ] },
   "field_cmcd_payment_type" : { "und" : [ { "value" : "Check" } ] },
   "field_cmcd_receive_date" : { "und" : [
       {
@@ -2468,7 +2469,7 @@ function ableorganizer_donation_sample_data() {
   },
   "field_cmcd_amount" : { "und" : [ { "value" : "100.00" } ] },
   "field_cmcd_order" : [],
-  "field_cmcd_page" : [],
+  "field_cmcd_page" : { "und" : [ { "target_id" : "' . $nids[$uuids['ao_walk_up_donation']] . '" } ] },
   "field_cmcd_payment_type" : { "und" : [ { "value" : "Check" } ] },
   "field_cmcd_receive_date" : { "und" : [
       {
@@ -2510,7 +2511,7 @@ function ableorganizer_donation_sample_data() {
   },
   "field_cmcd_amount" : { "und" : [ { "value" : "125.00" } ] },
   "field_cmcd_order" : [],
-  "field_cmcd_page" : [],
+  "field_cmcd_page" : { "und" : [ { "target_id" : "' . $nids[$uuids['ao_walk_up_donation']] . '" } ] },
   "field_cmcd_payment_type" : { "und" : [ { "value" : "Check" } ] },
   "field_cmcd_receive_date" : { "und" : [
       {
@@ -2532,6 +2533,7 @@ function ableorganizer_donation_sample_data() {
  * Sample data for CRM Core Event.
  */
 function ableorganizer_event_sample_data() {
+  _ableorganizer_sample_event_pages_rebuild_nodes();
   $uuids = array(
     'simple_reg_form' => 'c4e0254b-e193-4f95-b843-fde40151fd81',
     'simple_single_form' => '52a80050-d98f-4bbf-90e8-9526dd3c77a1',
@@ -4305,6 +4307,7 @@ function ableorganizer_event_sample_data() {
  * Sample data for CRM Core Petition.
  */
 function ableorganizer_petition_sample_data() {
+  _ableorganizer_sample_petition_pages_rebuild_nodes();
   $uuids = array(
     2 => '71378697-11e3-4d26-bfbd-b9c669b4b14a',
     3 => '7f7cf4e3-560a-49a5-b753-59ddb08141d7',
@@ -5881,6 +5884,7 @@ function ableorganizer_petition_sample_data() {
  * Sample data for CRM Core Volunteer.
  */
 function ableorganizer_volunteer_sample_data() {
+  _ableorganizer_sample_volunteer_pages_rebuild_nodes();
   $content_uuids = array(
     'after_school_tutors_needed' => '2a0e3955-18a5-4be1-a2c4-8dff6e05be73',
     'get_out_the_vote' => '85b8792e-c6f0-41e1-bb04-7cbf6b522abf',

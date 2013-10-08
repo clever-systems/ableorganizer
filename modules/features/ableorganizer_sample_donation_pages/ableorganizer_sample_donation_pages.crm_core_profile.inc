@@ -1175,15 +1175,15 @@ function ableorganizer_sample_donation_pages_default_crm_core_profile() {
       'bundle' => 'cmcd_donation',
       'status' => 1,
       'hidden' => 0,
-      'default' => '0',
+      'default' => 'Walk Up',
       'weight' => '-45',
     ),
   );
   $crm_core_profile->block = FALSE;
   $crm_core_profile->block_title = '';
-  $crm_core_profile->page = TRUE;
-  $crm_core_profile->page_title = 'Walk Up Donation';
-  $crm_core_profile->page_path = 'donate/walkup';
+  $crm_core_profile->page = FALSE;
+  $crm_core_profile->page_title = '';
+  $crm_core_profile->page_path = '';
   $crm_core_profile->page_redirect = 'donate/thank-you';
   $crm_core_profile->message = 'Your contribution has been saved.';
   $crm_core_profile->status = TRUE;
