@@ -309,7 +309,7 @@ The amounts displayed as buttons are set within the content type, using the Reco
   'picture' => 0,
   'data' => 'a:1:{s:17:"mimemail_textonly";i:0;}',
   'date' => '2013-08-20 12:52:34 +0000',
-  'url_alias' => 'donate/thank_you',
+  'url_alias' => 'donate/thank-you',
 );
   $nodes[] = array(
   'uid' => 1,
