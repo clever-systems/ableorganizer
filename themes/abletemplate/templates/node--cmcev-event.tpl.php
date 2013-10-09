@@ -12,6 +12,15 @@
   <?php endif; ?>  
   
   <div<?php print $content_attributes; ?>>
+    <div class="">
+      <label>When</label>
+      <?php print render($content['field_cmcev_date']); ?>
+    </div>
+    <div class="">
+      <label>Where</label>
+      <?php print render($content['field_cmcev_location']); ?>
+    </div>
+  
     <?php
       // We hide the comments and links now so that we can render them later.
       hide($content['comments']);

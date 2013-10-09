@@ -76,8 +76,7 @@ h6 {
 .field {
   margin-bottom: .5em;
 }
-.field-label,
-LABEL {
+.field-label, LABEL {
   margin-bottom: .5em;
 }
 
@@ -95,6 +94,37 @@ LABEL {
 .field-type-addressfield DIV.field-items DIV {
   margin-bottom: 1em;
 }
+.field-type-addressfield .fieldset-wrapper {
+}
+fieldset LEGEND {
+  margin-bottom: 1em;
+}
+fieldset {
+  margin-top: 1em;
+}
+.field-type-addressfield .fieldset-wrapper .locality-block {
+}
+.field-type-addressfield .fieldset-wrapper .locality-block .form-item {
+}
+.field-type-addressfield .fieldset-wrapper .locality-block .form-type-textfield {
+}
+.field-type-addressfield .fieldset-wrapper .locality-block .form-type-select {
+  width: 36%;
+}
+.field-type-addressfield .fieldset-wrapper .locality-block .form-type-select LABEL {
+  display: none;
+}
+.field-type-addressfield .fieldset-wrapper .locality-block .form-type-textfield INPUT {
+  margin-bottom: inherit;
+}
+div.addressfield-container-inline > div.form-item {
+  float: none;
+  margin-right: 0em;
+  margin-bottom: inherit;
+}
+.field-type-addressfield .fieldset-wrapper .locality-block .form-item {
+}
+
 
 
 /* lists */
@@ -107,7 +137,12 @@ ul LI, ol LI {
 
 
 /* forms */
-.form-item {
+.form-required { 
+  width: 5px;
+}
+.form-item, .form-actions {
+  margin-top: .5em;
+  margin-bottom: .5em;
 }
 .form-item INPUT {
 }
@@ -142,7 +177,78 @@ input[type="search"]::-webkit-search-decoration {
 input, button, select, textarea {
 }
 
-button, input[type="reset"], input[type="submit"], input[type="button"] {
+.form-actions button, .form-actions input[type="reset"], .form-actions input[type="submit"], .form-actions input[type="button"] {
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  padding: .5em 1em;
+  width: 100%;
+  color: White;
+  background: #f4412e;
+  background: linear-gradient(to bottom,  #f4412e 31%,#cf3a29 100%);
+  text-shadow: 1px 1px 3px #444;
+  font-weight: normal;
+  font: inherit;
+  font-size: 1.1em;
+}
+.amounts button, .amounts input[type="reset"], .amounts input[type="submit"], .amounts input[type="button"] {
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  padding: .5em 1em;
+  color: White;
+  background: transparent;
+  background-color: #777;
+  text-shadow: 1px 1px 3px #444;
+  font-weight: normal;
+  font: inherit;
+  font-size: 0.8em;
+  margin-bottom: .2em;
+}
+#region-content #crm-core-profile-entry-form {
+  border: 1px solid #CCC;
+  padding: 1em;
+  margin-bottom: 2em;
+}
+
+FORM TABLE {
+  font-size: 0.8em;
+  margin-top: 1em;
+}
+FORM TABLE TR TD {
+  background-color: #999;
+  color: White;
+  padding: .4em .2em;
+}
+FORM TABLE CAPTION {
+  display: none;
+}
+FORM TABLE thead TR {
+  background-color: #777;
+  color: white;
+}
+FORM TABLE thead th {
+  padding: .2em .2em;
+}
+#crm-core-profile-commerce-cart-ajax { 
+}
+#crm-core-profile-commerce-cart-ajax .cart-summary { 
+  margin-top: .5em;
+  text-align: right;
+  margin-right: .5em;
+  font-size: 1em;
+  font-weight: 700;
+}
+.crm-core-profile-commerce-cart-ajax .cart-summary-total { 
+  text-align: right;
+}
+.crm-core-profile-commerce-cart-ajax .cart-summary-total #edit-actions { 
+  text-align: right;
+}
+#edit-cart-wrapper {
+}
+#edit-cart-wrapper .caption {
+  display: none;
 }
 
 button {
@@ -183,6 +289,8 @@ button[disabled], input[disabled], select[disabled], select[disabled] option, se
 }
 
 textarea, select[size], select[multiple] {
+  padding: .2em;
+  width: auto;
 }
 
 
