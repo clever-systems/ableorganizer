@@ -38,12 +38,9 @@ function ao_uuid_node_features_export_render_alter(&$export, $node, $module) {
     menu_node_prepare($node);
     if(isset($node->menu)){
       if(isset($node->menu['link_title']) && !empty($node->menu['link_title'])){
-        // dpm($export);
         $export->new_menu = $node->menu;
       }
     }
-    unset($node->nid);
-    unset($node->menu);
   }
 }
 /**
@@ -70,7 +67,7 @@ function ao_node_insert($node){
     // save
     path_save($path);
     unset($node->url_alias);
-  } 
+  }
   
   // when content is imported, let's make sure we save whatever menu stuff needs saving
   // there should be an item with an exported menu item
