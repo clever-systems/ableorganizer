@@ -5,3 +5,37 @@
  */
 
 include_once 'ableorganizer_sample_donation_pages.features.inc';
+
+/**
+ * Helper to rebuild uuid_node feature component..
+ */
+function _ableorganizer_sample_donation_pages_rebuild_nodes() {
+  // Saving profile nodes configuration.
+  $module = 'ableorganizer_sample_donation_pages';
+  // Including sample nodes definitions.
+  module_load_include('inc', $module, $module . '.features.uuid_node');
+  // Including helper.
+  module_load_include('inc', 'uuid_features', 'includes/uuid_node.features');
+  // Creating sample content in DB.
+  uuid_node_features_rebuild($module);
+  ableorganizer_sample_donation_pages_post_features_rebuild('uuid_node');
+}
+
+/**
+ * Implements hook_post_features_rebuild().
+ */
+function ableorganizer_sample_donation_pages_post_features_rebuild($component) {
+  // Configure the default email settings, if they are enabled.
+  if (isset($component) && $component == 'uuid_node' && variable_get('configure_donation_email', 0) === 1) {
+    $fields = array();
+    $fields['thanks_email'] = 'rules_cmcd_thank_you_message';
+    db_update('crm_core_donation_nodes')->fields($fields)->execute();
+  }
+}
+
+/**
+ * Implements hook_post_features_rebuild().
+ */
+function ableorganizer_sample_donation_pages_post_features_revert($component) {
+  ableorganizer_sample_donation_pages_post_features_rebuild($component);
+}

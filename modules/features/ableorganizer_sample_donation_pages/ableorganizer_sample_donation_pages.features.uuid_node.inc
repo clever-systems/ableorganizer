@@ -25,7 +25,7 @@ function ableorganizer_sample_donation_pages_uuid_features_default_content() {
   'tnid' => 0,
   'translate' => 0,
   'uuid' => '2b66066f-0a98-43b7-bc0e-a74c6e4130e6',
-  'revision_uid' => 1,
+  'revision_uid' => 0,
   'field_cmcd_body' => array(
     'und' => array(
       0 => array(
@@ -101,7 +101,7 @@ The amounts displayed as buttons are set within the content type, using the Reco
   'name' => 'admin',
   'picture' => 0,
   'data' => 'a:1:{s:17:"mimemail_textonly";i:0;}',
-  'date' => '2013-08-20 09:00:18 -0400',
+  'date' => '2013-08-20 13:00:18 +0000',
   'url_alias' => 'donate/fundraiser',
   'crm_core_profile_node_config' => array(
     'nid' => '2b66066f-0a98-43b7-bc0e-a74c6e4130e6',
@@ -110,6 +110,11 @@ The amounts displayed as buttons are set within the content type, using the Reco
     'display_profile' => 0,
     'inline_title' => 'Fundraiser form',
   ),
+    'crm_core_donation_node_config' => array(
+      'nid' => '2b66066f-0a98-43b7-bc0e-a74c6e4130e6',
+      'thanks_email' => '',
+      'recommended_amounts' => '10,25,50,100',
+    ),
 );
   $nodes[] = array(
   'uid' => 1,
@@ -199,8 +204,13 @@ The amounts displayed as buttons are set within the content type, using the Reco
   'name' => 'admin',
   'picture' => 0,
   'data' => 'a:1:{s:17:"mimemail_textonly";i:0;}',
-  'date' => '2013-08-20 09:00:10 -0400',
+  'date' => '2013-08-20 13:00:10 +0000',
   'url_alias' => 'donate/annual-appeal',
+  'crm_core_donation_node_config' => array(
+    'nid' => '3e876d31-271a-47da-8564-2bb667953ade',
+    'thanks_email' => '',
+    'recommended_amounts' => '10,25,50,100',
+  ),
   'crm_core_profile_node_config' => array(
     'nid' => '3e876d31-271a-47da-8564-2bb667953ade',
     'use_profile' => 1,
@@ -224,7 +234,7 @@ The amounts displayed as buttons are set within the content type, using the Reco
   'tnid' => 0,
   'translate' => 0,
   'uuid' => '7c28ea35-4da6-4316-91ca-6e5ca19f79f1',
-  'revision_uid' => 1,
+  'revision_uid' => 0,
   'body' => array(
     'und' => array(
       0 => array(
@@ -298,44 +308,30 @@ The amounts displayed as buttons are set within the content type, using the Reco
   'name' => 'admin',
   'picture' => 0,
   'data' => 'a:1:{s:17:"mimemail_textonly";i:0;}',
-  'date' => '2013-08-20 08:52:34 -0400',
-  'url_alias' => 'donate/thank_you',
+  'date' => '2013-08-20 12:52:34 +0000',
+  'url_alias' => 'donate/thank-you',
 );
   $nodes[] = array(
   'uid' => 1,
-  'title' => 'Donate',
+  'title' => 'Walk Up Donation',
   'log' => '',
   'status' => 1,
   'comment' => 1,
   'promote' => 0,
   'sticky' => 0,
-  'vuuid' => '46cbc5bb-62db-406c-b573-d178963802f5',
-  'type' => 'page',
+  'vuuid' => '27b72778-3aa9-4ade-a1bf-fe9208f3acb7',
+  'type' => 'cmcd_page',
   'language' => 'und',
-  'created' => 1380110548,
+  'created' => 1381224489,
   'tnid' => 0,
   'translate' => 0,
-  'uuid' => 'c0bbb31c-980f-4732-ac60-c0931c74448e',
-  'revision_uid' => 1,
-  'body' => array(
-    'und' => array(
-      0 => array(
-        'value' => '<a href="donate/online-donation">Online Donation</a>
-<a href="donate/annual-appeal">Annual Appeal</a>
-<a href="donate/fundraiser">Fundraiser</a>
-<a href="donate/walkup">Walk Up Donation</a>
-',
-        'summary' => '',
-        'format' => 'filtered_html',
-        'safe_value' => '<p><a href="donate/online-donation">Online Donation</a><br /><a href="donate/annual-appeal">Annual Appeal</a><br /><a href="donate/fundraiser">Fundraiser</a><br /><a href="donate/walkup">Walk Up Donation</a></p>
-',
-        'safe_summary' => '',
-      ),
-    ),
-  ),
+  'uuid' => 'd2ce8616-ab53-4c71-8c87-9c438c6a1cad',
+  'revision_uid' => 0,
+  'field_cmcd_body' => array(),
   'rdf_mapping' => array(
     'rdftype' => array(
-      0 => 'foaf:Document',
+      0 => 'sioc:Item',
+      1 => 'foaf:Document',
     ),
     'title' => array(
       'predicates' => array(
@@ -394,64 +390,20 @@ The amounts displayed as buttons are set within the content type, using the Reco
   'name' => 'admin',
   'picture' => 0,
   'data' => 'a:1:{s:17:"mimemail_textonly";i:0;}',
-  'date' => '2013-09-25 08:02:28 -0400',
-  'url_alias' => 'donate',
-  'new_menu' => array(
-    'menu_name' => 'main-menu',
-    'mlid' => 1638,
-    'plid' => 0,
-    'link_path' => 'node/126',
-    'router_path' => 'node/%',
-    'link_title' => 'Donate',
-    'options' => array(),
-    'module' => 'menu',
-    'hidden' => 0,
-    'external' => 0,
-    'has_children' => 0,
-    'expanded' => 0,
-    'weight' => 0,
-    'depth' => 1,
-    'customized' => 0,
-    'p1' => 1638,
-    'p2' => 0,
-    'p3' => 0,
-    'p4' => 0,
-    'p5' => 0,
-    'p6' => 0,
-    'p7' => 0,
-    'p8' => 0,
-    'p9' => 0,
-    'updated' => 0,
-    'path' => 'node/%',
-    'load_functions' => array(
-      1 => 'node_load',
-    ),
-    'to_arg_functions' => '',
-    'access_callback' => 'node_access',
-    'access_arguments' => 'a:2:{i:0;s:4:"view";i:1;i:1;}',
-    'page_callback' => 'node_page_view',
-    'page_arguments' => 'a:1:{i:0;i:1;}',
-    'delivery_callback' => '',
-    'fit' => 2,
-    'number_parts' => 2,
-    'context' => 0,
-    'tab_parent' => '',
-    'tab_root' => 'node/%',
-    'title' => 'Donate',
-    'title_callback' => 'node_page_title',
-    'title_arguments' => 'a:1:{i:0;i:1;}',
-    'theme_callback' => '',
-    'theme_arguments' => 'a:0:{}',
-    'type' => 6,
-    'description' => '',
-    'position' => '',
-    'include_file' => '',
-    'link_weight' => 0,
-    'href' => 'node/126',
-    'access' => TRUE,
-    'localized_options' => array(),
-    'parent_depth_limit' => 8,
+  'date' => '2013-10-08 09:28:09 +0000',
+  'url_alias' => 'donation/walkup',
+  'crm_core_profile_node_config' => array(
+    'nid' => 'd2ce8616-ab53-4c71-8c87-9c438c6a1cad',
+    'use_profile' => 1,
+    'profile_name' => 'ao_walk_up_donation',
+    'display_profile' => 1,
+    'inline_title' => '',
   ),
+    'crm_core_donation_node_config' => array(
+      'nid' => 'd2ce8616-ab53-4c71-8c87-9c438c6a1cad',
+      'thanks_email' => '',
+      'recommended_amounts' => '10,25,50,100',
+    ),
 );
   $nodes[] = array(
   'uid' => 1,
@@ -468,7 +420,7 @@ The amounts displayed as buttons are set within the content type, using the Reco
   'tnid' => 0,
   'translate' => 0,
   'uuid' => 'e5742cc9-af29-4b1a-930b-24921ae633d4',
-  'revision_uid' => 1,
+  'revision_uid' => 0,
   'field_cmcd_body' => array(
     'und' => array(
       0 => array(
@@ -541,7 +493,7 @@ The amounts displayed as buttons are set within the content type, using the Reco
   'name' => 'admin',
   'picture' => 0,
   'data' => 'a:1:{s:17:"mimemail_textonly";i:0;}',
-  'date' => '2013-08-20 09:00:03 -0400',
+  'date' => '2013-08-20 13:00:03 +0000',
   'url_alias' => 'donate/online-donation',
   'crm_core_profile_node_config' => array(
     'nid' => 'e5742cc9-af29-4b1a-930b-24921ae633d4',
@@ -550,6 +502,11 @@ The amounts displayed as buttons are set within the content type, using the Reco
     'display_profile' => 0,
     'inline_title' => 'Donation form',
   ),
+    'crm_core_donation_node_config' => array(
+      'nid' => 'e5742cc9-af29-4b1a-930b-24921ae633d4',
+      'thanks_email' => '',
+      'recommended_amounts' => '10,25,50,100',
+    ),
 );
   return $nodes;
 }

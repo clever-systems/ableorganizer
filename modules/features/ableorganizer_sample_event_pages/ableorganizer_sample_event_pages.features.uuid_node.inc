@@ -1,102 +1,71 @@
 <?php
 /**
  * @file
- * ableorganizer_volunteer_sample_content.features.uuid_node.inc
+ * ableorganizer_sample_event_pages.features.uuid_node.inc
  */
 
 /**
  * Implements hook_uuid_features_default_content().
  */
-function ableorganizer_volunteer_sample_content_uuid_features_default_content() {
+function ableorganizer_sample_event_pages_uuid_features_default_content() {
   $nodes = array();
 
   $nodes[] = array(
-  'uid' => 1,
-  'title' => 'Work with Homeless Animals',
+  'uid' => 0,
+  'title' => 'Pepperhill Women in Law Anniversary Dinner ',
   'log' => '',
   'status' => 1,
   'comment' => 1,
   'promote' => 0,
   'sticky' => 0,
-  'vuuid' => 'cab1d30a-54b1-423c-8c90-b4c5ac7f90d4',
-  'type' => 'cmcv_volunteer',
+  'vuuid' => 'a372d0b3-d31b-4fa1-ab80-2aeeac313dc7',
+  'type' => 'cmcev_event',
   'language' => 'und',
-  'created' => 1379536652,
+  'created' => 1378223591,
   'tnid' => 0,
   'translate' => 0,
-  'uuid' => '0b621efb-62fa-4312-b0bd-479c6d8d8be4',
+  'uuid' => '37106c78-84c8-4e74-a387-5c04b03f5375',
   'revision_uid' => 1,
   'body' => array(
     'und' => array(
       0 => array(
-        'value' => 'The animal shelter needs your help.
-
-We are looking for volunteers in a variety of roles:
-<ul>
-<li> Animal Socializer: Work with the animals to make them more adoptable
-<li> Adoption Counselor: Help people find the perfect animal to join their family
-<li> Animal Care: Make sure our animals are fed and kept clean
-</ul>
-
-Come to our Volunteer Open House to learn more and sign up.',
+        'value' => 'We invite you to join us to celebrate the 60th anniversary of women being accepted into Pepperhill University\'s School of Law. We will have a variety of high-profile speakers and Pepperhill Alumni in attendance. To purchase tickets please fill out the form below. Attire is formal. ',
         'summary' => '',
-        'format' => 'filtered_html',
-        'safe_value' => '<p>The animal shelter needs your help.</p>
-<p>We are looking for volunteers in a variety of roles:</p>
-<ul><li> Animal Socializer: Work with the animals to make them more adoptable
-</li><li> Adoption Counselor: Help people find the perfect animal to join their family
-</li><li> Animal Care: Make sure our animals are fed and kept clean
-</li></ul><p>Come to our Volunteer Open House to learn more and sign up.</p>
+        'format' => 'full_html',
+        'safe_value' => '<p>We invite you to join us to celebrate the 60th anniversary of women being accepted into Pepperhill University\'s School of Law. We will have a variety of high-profile speakers and Pepperhill Alumni in attendance. To purchase tickets please fill out the form below. Attire is formal. </p>
 ',
         'safe_summary' => '',
       ),
     ),
   ),
-  'field_cmcv_contact' => array(),
-  'field_cmcv_date' => array(
+  'field_cmcev_date' => array(
     'und' => array(
       0 => array(
-        'value' => 1386099000,
-        'value2' => 1386099000,
-        'timezone' => 'America/New_York',
+        'value' => '2013-10-01 09:00:00',
+        'value2' => '2013-10-06 19:00:00',
+        'timezone' => 'UTC',
         'timezone_db' => 'UTC',
-        'date_type' => 'datestamp',
+        'date_type' => 'datetime',
       ),
     ),
   ),
-  'field_cmcv_location' => array(
+  'field_cmcev_location' => array(
     'und' => array(
       0 => array(
         'country' => 'US',
-        'administrative_area' => 'DC',
+        'administrative_area' => 'CA',
         'sub_administrative_area' => NULL,
-        'locality' => 'Washington',
+        'locality' => 'Malibu',
         'dependent_locality' => NULL,
-        'postal_code' => '',
-        'thoroughfare' => '',
-        'premise' => '',
+        'postal_code' => 90264,
+        'thoroughfare' => 'Malibu Hill Hotel',
+        'premise' => '123 Ocean Drive',
         'sub_premise' => NULL,
         'organisation_name' => NULL,
         'name_line' => NULL,
         'first_name' => NULL,
         'last_name' => NULL,
         'data' => NULL,
-      ),
-    ),
-  ),
-  'field_cmcv_roles' => array(
-    'und' => array(
-      0 => array(
-        'value' => 'Animal Socializer, Adoption Counselor, Animal Care',
-        'format' => NULL,
-        'safe_value' => 'Animal Socializer, Adoption Counselor, Animal Care',
-      ),
-    ),
-  ),
-  'field_cmcv_slots' => array(
-    'und' => array(
-      0 => array(
-        'value' => 36,
       ),
     ),
   ),
@@ -157,647 +126,198 @@ Come to our Volunteer Open House to learn more and sign up.',
   ),
   'cid' => 0,
   'last_comment_name' => NULL,
-  'last_comment_uid' => 1,
+  'last_comment_uid' => 0,
+  'comment_count' => 0,
+  'crm_core_profile_data' => array(
+    'commerce_items_cart_items' => array(),
+  ),
+  'name' => '',
+  'picture' => 0,
+  'data' => NULL,
+  'date' => '2013-09-03 15:53:11 +0000',
+  'url_alias' => 'events/multiple-ticket-levels-quantity',
+  'crm_core_profile_node_config' => array(
+    'nid' => '37106c78-84c8-4e74-a387-5c04b03f5375',
+    'use_profile' => 1,
+    'profile_name' => 'ao_cmcev_simple_quantity_form',
+    'display_profile' => 0,
+    'inline_title' => 'Registration form',
+  ),
+  'crm_core_event_node_config' => array(
+    'nid' => '37106c78-84c8-4e74-a387-5c04b03f5375',
+    'display_registrants' => 1,
+    'thanks_email' => '',
+    'tickets' => '',
+    'max_registration' => 0,
+  ),
+);
+  $nodes[] = array(
+  'uid' => 0,
+  'title' => 'Breakfast with Lowell Katz',
+  'log' => '',
+  'status' => 1,
+  'comment' => 1,
+  'promote' => 0,
+  'sticky' => 0,
+  'vuuid' => '8e58a3d6-a1e0-4c61-b6ec-f38eea599763',
+  'type' => 'cmcev_event',
+  'language' => 'und',
+  'created' => 1378222159,
+  'tnid' => 0,
+  'translate' => 0,
+  'uuid' => '52a80050-d98f-4bbf-90e8-9526dd3c77a1',
+  'revision_uid' => 1,
+  'body' => array(
+    'und' => array(
+      0 => array(
+        'value' => 'Lowell Katz is a progressive leader with an unrivaled and unmatched record of results. Please join us at the event below to meet Lowell, and help send him to Washington, D.C. next year!
+
+Contributions to Lowell Katz for Congress are not tax deductible.
+
+ ',
+        'summary' => '',
+        'format' => 'full_html',
+        'safe_value' => '<p>Lowell Katz is a progressive leader with an unrivaled and unmatched record of results. Please join us at the event below to meet Lowell, and help send him to Washington, D.C. next year!</p>
+<p>Contributions to Lowell Katz for Congress are not tax deductible.</p>
+',
+        'safe_summary' => '',
+      ),
+    ),
+  ),
+  'field_cmcev_date' => array(
+    'und' => array(
+      0 => array(
+        'value' => '2013-10-07 09:00:00',
+        'value2' => '2013-10-12 19:00:00',
+        'timezone' => 'UTC',
+        'timezone_db' => 'UTC',
+        'date_type' => 'datetime',
+      ),
+    ),
+  ),
+  'field_cmcev_location' => array(
+    'und' => array(
+      0 => array(
+        'country' => 'US',
+        'administrative_area' => 'TX',
+        'sub_administrative_area' => NULL,
+        'locality' => 'Luckenbach',
+        'dependent_locality' => NULL,
+        'postal_code' => 78647,
+        'thoroughfare' => 'Billy\'s BBQ Shack',
+        'premise' => '123 Main Street',
+        'sub_premise' => NULL,
+        'organisation_name' => NULL,
+        'name_line' => NULL,
+        'first_name' => NULL,
+        'last_name' => NULL,
+        'data' => NULL,
+      ),
+    ),
+  ),
+  'rdf_mapping' => array(
+    'rdftype' => array(
+      0 => 'sioc:Item',
+      1 => 'foaf:Document',
+    ),
+    'title' => array(
+      'predicates' => array(
+        0 => 'dc:title',
+      ),
+    ),
+    'created' => array(
+      'predicates' => array(
+        0 => 'dc:date',
+        1 => 'dc:created',
+      ),
+      'datatype' => 'xsd:dateTime',
+      'callback' => 'date_iso8601',
+    ),
+    'changed' => array(
+      'predicates' => array(
+        0 => 'dc:modified',
+      ),
+      'datatype' => 'xsd:dateTime',
+      'callback' => 'date_iso8601',
+    ),
+    'body' => array(
+      'predicates' => array(
+        0 => 'content:encoded',
+      ),
+    ),
+    'uid' => array(
+      'predicates' => array(
+        0 => 'sioc:has_creator',
+      ),
+      'type' => 'rel',
+    ),
+    'name' => array(
+      'predicates' => array(
+        0 => 'foaf:name',
+      ),
+    ),
+    'comment_count' => array(
+      'predicates' => array(
+        0 => 'sioc:num_replies',
+      ),
+      'datatype' => 'xsd:integer',
+    ),
+    'last_activity' => array(
+      'predicates' => array(
+        0 => 'sioc:last_activity_date',
+      ),
+      'datatype' => 'xsd:dateTime',
+      'callback' => 'date_iso8601',
+    ),
+  ),
+  'cid' => 0,
+  'last_comment_name' => NULL,
+  'last_comment_uid' => 0,
   'comment_count' => 0,
   'crm_core_profile_data' => array(),
-  'name' => 'admin',
+  'name' => '',
   'picture' => 0,
-  'data' => 'a:1:{s:17:"mimemail_textonly";i:0;}',
-  'date' => '2013-09-18 16:37:32 -0400',
-  'url_alias' => 'volunteers/work-with-homeless-animals',
+  'data' => NULL,
+  'date' => '2013-09-03 15:29:19 +0000',
+  'url_alias' => 'events/single-ticket',
   'crm_core_profile_node_config' => array(
-    'nid' => '0b621efb-62fa-4312-b0bd-479c6d8d8be4',
+    'nid' => '52a80050-d98f-4bbf-90e8-9526dd3c77a1',
     'use_profile' => 1,
-    'profile_name' => 'ao_volunteer_commitment_form',
+    'profile_name' => 'ao_cmcev_simple_single_form',
     'display_profile' => 0,
-    'inline_title' => 'Volunteer form',
+    'inline_title' => 'Registration form',
+  ),
+  'crm_core_event_node_config' => array(
+    'nid' => '52a80050-d98f-4bbf-90e8-9526dd3c77a1',
+    'display_registrants' => 1,
+    'thanks_email' => '',
+    'tickets' => '',
+    'max_registration' => 0,
   ),
 );
   $nodes[] = array(
-  'uid' => 1,
-  'title' => 'Keep Our Creek Clean',
-  'log' => '',
-  'status' => 1,
-  'comment' => 1,
-  'promote' => 0,
-  'sticky' => 0,
-  'vuuid' => 'e15d897f-9dbc-43c0-92e1-205be12acd18',
-  'type' => 'cmcv_volunteer',
-  'language' => 'und',
-  'created' => 1379605238,
-  'tnid' => 0,
-  'translate' => 0,
-  'uuid' => '0d86ea2a-fb8a-4ec5-8a00-3361772433d3',
-  'revision_uid' => 1,
-  'body' => array(
-    'und' => array(
-      0 => array(
-        'value' => 'Join other members of our community in cleaning up the creek. The creek is an important habitat for native animals, and it is home to a variety of rare amphibians that are important to the ecosystem.
-
-On Saturday, we\'ll be picking up trash and litter over a three mile stretch of creek. Come join us!
-',
-        'summary' => '',
-        'format' => 'filtered_html',
-        'safe_value' => '<p>Join other members of our community in cleaning up the creek. The creek is an important habitat for native animals, and it is home to a variety of rare amphibians that are important to the ecosystem.</p>
-<p>On Saturday, we\'ll be picking up trash and litter over a three mile stretch of creek. Come join us!</p>
-',
-        'safe_summary' => '',
-      ),
-    ),
-  ),
-  'field_cmcv_contact' => array(),
-  'field_cmcv_date' => array(
-    'und' => array(
-      0 => array(
-        'value' => 1382796000,
-        'value2' => 1382796000,
-        'timezone' => 'America/New_York',
-        'timezone_db' => 'UTC',
-        'date_type' => 'datestamp',
-      ),
-    ),
-  ),
-  'field_cmcv_location' => array(
-    'und' => array(
-      0 => array(
-        'country' => 'US',
-        'administrative_area' => 'DC',
-        'sub_administrative_area' => NULL,
-        'locality' => 'Washington',
-        'dependent_locality' => NULL,
-        'postal_code' => '',
-        'thoroughfare' => '',
-        'premise' => '',
-        'sub_premise' => NULL,
-        'organisation_name' => NULL,
-        'name_line' => NULL,
-        'first_name' => NULL,
-        'last_name' => NULL,
-        'data' => NULL,
-      ),
-    ),
-  ),
-  'field_cmcv_roles' => array(),
-  'field_cmcv_slots' => array(
-    'und' => array(
-      0 => array(
-        'value' => 0,
-      ),
-    ),
-  ),
-  'rdf_mapping' => array(
-    'rdftype' => array(
-      0 => 'sioc:Item',
-      1 => 'foaf:Document',
-    ),
-    'title' => array(
-      'predicates' => array(
-        0 => 'dc:title',
-      ),
-    ),
-    'created' => array(
-      'predicates' => array(
-        0 => 'dc:date',
-        1 => 'dc:created',
-      ),
-      'datatype' => 'xsd:dateTime',
-      'callback' => 'date_iso8601',
-    ),
-    'changed' => array(
-      'predicates' => array(
-        0 => 'dc:modified',
-      ),
-      'datatype' => 'xsd:dateTime',
-      'callback' => 'date_iso8601',
-    ),
-    'body' => array(
-      'predicates' => array(
-        0 => 'content:encoded',
-      ),
-    ),
-    'uid' => array(
-      'predicates' => array(
-        0 => 'sioc:has_creator',
-      ),
-      'type' => 'rel',
-    ),
-    'name' => array(
-      'predicates' => array(
-        0 => 'foaf:name',
-      ),
-    ),
-    'comment_count' => array(
-      'predicates' => array(
-        0 => 'sioc:num_replies',
-      ),
-      'datatype' => 'xsd:integer',
-    ),
-    'last_activity' => array(
-      'predicates' => array(
-        0 => 'sioc:last_activity_date',
-      ),
-      'datatype' => 'xsd:dateTime',
-      'callback' => 'date_iso8601',
-    ),
-  ),
-  'cid' => 0,
-  'last_comment_name' => NULL,
-  'last_comment_uid' => 1,
-  'comment_count' => 0,
-  'crm_core_profile_data' => array(),
-  'name' => 'admin',
-  'picture' => 0,
-  'data' => 'a:1:{s:17:"mimemail_textonly";i:0;}',
-  'date' => '2013-09-19 11:40:38 -0400',
-  'url_alias' => 'volunteers/keep-our-creek-clean',
-  'crm_core_profile_node_config' => array(
-    'nid' => '0d86ea2a-fb8a-4ec5-8a00-3361772433d3',
-    'use_profile' => 1,
-    'profile_name' => 'ao_volunteer_commitment_form',
-    'display_profile' => 0,
-    'inline_title' => 'Volunteer form',
-  ),
-);
-  $nodes[] = array(
-  'uid' => 1,
-  'title' => 'After School Tutors Needed',
-  'log' => '',
-  'status' => 1,
-  'comment' => 1,
-  'promote' => 0,
-  'sticky' => 0,
-  'vuuid' => 'f4648f85-4015-4d15-b774-da11f67c2249',
-  'type' => 'cmcv_volunteer',
-  'language' => 'und',
-  'created' => 1379606513,
-  'tnid' => 0,
-  'translate' => 0,
-  'uuid' => '2a0e3955-18a5-4be1-a2c4-8dff6e05be73',
-  'revision_uid' => 1,
-  'body' => array(
-    'und' => array(
-      0 => array(
-        'value' => 'Make a difference in a child\'s life by helping them to succeed in school. We\'re looking for people who can aid fourth and fifth grade students in all subjects. Volunteers must be 18 or over.',
-        'summary' => '',
-        'format' => 'filtered_html',
-        'safe_value' => '<p>Make a difference in a child\'s life by helping them to succeed in school. We\'re looking for people who can aid fourth and fifth grade students in all subjects. Volunteers must be 18 or over.</p>
-',
-        'safe_summary' => '',
-      ),
-    ),
-  ),
-  'field_cmcv_contact' => array(
-    'und' => array(
-      0 => array(
-        'value' => 'heytrellon@trellon.com',
-        'format' => NULL,
-        'safe_value' => 'heytrellon@trellon.com',
-      ),
-    ),
-  ),
-  'field_cmcv_date' => array(
-    'und' => array(
-      0 => array(
-        'value' => 1378148400,
-        'value2' => 1387396800,
-        'timezone' => 'America/New_York',
-        'timezone_db' => 'UTC',
-        'date_type' => 'datestamp',
-      ),
-    ),
-  ),
-  'field_cmcv_location' => array(
-    'und' => array(
-      0 => array(
-        'country' => 'US',
-        'administrative_area' => 'MA',
-        'sub_administrative_area' => NULL,
-        'locality' => 'Boston',
-        'dependent_locality' => NULL,
-        'postal_code' => '',
-        'thoroughfare' => 'Chestnut Hill Elementary School',
-        'premise' => '',
-        'sub_premise' => NULL,
-        'organisation_name' => NULL,
-        'name_line' => NULL,
-        'first_name' => NULL,
-        'last_name' => NULL,
-        'data' => NULL,
-      ),
-    ),
-  ),
-  'field_cmcv_roles' => array(),
-  'field_cmcv_slots' => array(
-    'und' => array(
-      0 => array(
-        'value' => 14,
-      ),
-    ),
-  ),
-  'rdf_mapping' => array(
-    'rdftype' => array(
-      0 => 'sioc:Item',
-      1 => 'foaf:Document',
-    ),
-    'title' => array(
-      'predicates' => array(
-        0 => 'dc:title',
-      ),
-    ),
-    'created' => array(
-      'predicates' => array(
-        0 => 'dc:date',
-        1 => 'dc:created',
-      ),
-      'datatype' => 'xsd:dateTime',
-      'callback' => 'date_iso8601',
-    ),
-    'changed' => array(
-      'predicates' => array(
-        0 => 'dc:modified',
-      ),
-      'datatype' => 'xsd:dateTime',
-      'callback' => 'date_iso8601',
-    ),
-    'body' => array(
-      'predicates' => array(
-        0 => 'content:encoded',
-      ),
-    ),
-    'uid' => array(
-      'predicates' => array(
-        0 => 'sioc:has_creator',
-      ),
-      'type' => 'rel',
-    ),
-    'name' => array(
-      'predicates' => array(
-        0 => 'foaf:name',
-      ),
-    ),
-    'comment_count' => array(
-      'predicates' => array(
-        0 => 'sioc:num_replies',
-      ),
-      'datatype' => 'xsd:integer',
-    ),
-    'last_activity' => array(
-      'predicates' => array(
-        0 => 'sioc:last_activity_date',
-      ),
-      'datatype' => 'xsd:dateTime',
-      'callback' => 'date_iso8601',
-    ),
-  ),
-  'cid' => 0,
-  'last_comment_name' => NULL,
-  'last_comment_uid' => 1,
-  'comment_count' => 0,
-  'crm_core_profile_data' => array(
-    'access_override' => array(
-      'access' => FALSE,
-      'message' => 'Registration closed!',
-    ),
-  ),
-  'name' => 'admin',
-  'picture' => 0,
-  'data' => 'a:1:{s:17:"mimemail_textonly";i:0;}',
-  'date' => '2013-09-19 12:01:53 -0400',
-  'url_alias' => 'volunteers/after-school-tutors-needed',
-  'crm_core_profile_node_config' => array(
-    'nid' => '2a0e3955-18a5-4be1-a2c4-8dff6e05be73',
-    'use_profile' => 1,
-    'profile_name' => 'ao_volunteer_commitment_form_2',
-    'display_profile' => 1,
-    'inline_title' => 'Volunteer form',
-  ),
-);
-  $nodes[] = array(
-  'uid' => 1,
-  'title' => 'Get Out The Vote!',
-  'log' => '',
-  'status' => 1,
-  'comment' => 1,
-  'promote' => 0,
-  'sticky' => 0,
-  'vuuid' => '0dc3a247-ae22-4854-b9fb-e2d3c647b96f',
-  'type' => 'cmcv_volunteer',
-  'language' => 'und',
-  'created' => 1379605567,
-  'tnid' => 0,
-  'translate' => 0,
-  'uuid' => '85b8792e-c6f0-41e1-bb04-7cbf6b522abf',
-  'revision_uid' => 1,
-  'body' => array(
-    'und' => array(
-      0 => array(
-        'value' => 'Join our street team and help your neighbors register to vote in our 2013 voter registration drive.',
-        'summary' => '',
-        'format' => 'filtered_html',
-        'safe_value' => '<p>Join our street team and help your neighbors register to vote in our 2013 voter registration drive.</p>
-',
-        'safe_summary' => '',
-      ),
-    ),
-  ),
-  'field_cmcv_contact' => array(
-    'und' => array(
-      0 => array(
-        'value' => 'heytrellon@trellon.com',
-        'format' => NULL,
-        'safe_value' => 'heytrellon@trellon.com',
-      ),
-    ),
-  ),
-  'field_cmcv_date' => array(
-    'und' => array(
-      0 => array(
-        'value' => 1379602800,
-        'value2' => 1383584400,
-        'timezone' => 'America/New_York',
-        'timezone_db' => 'UTC',
-        'date_type' => 'datestamp',
-      ),
-    ),
-  ),
-  'field_cmcv_location' => array(
-    'und' => array(
-      0 => array(
-        'country' => 'US',
-        'administrative_area' => '',
-        'sub_administrative_area' => NULL,
-        'locality' => '',
-        'dependent_locality' => NULL,
-        'postal_code' => '',
-        'thoroughfare' => '',
-        'premise' => '',
-        'sub_premise' => NULL,
-        'organisation_name' => NULL,
-        'name_line' => NULL,
-        'first_name' => NULL,
-        'last_name' => NULL,
-        'data' => NULL,
-      ),
-    ),
-  ),
-  'field_cmcv_roles' => array(),
-  'field_cmcv_slots' => array(
-    'und' => array(
-      0 => array(
-        'value' => 100,
-      ),
-    ),
-  ),
-  'rdf_mapping' => array(
-    'rdftype' => array(
-      0 => 'sioc:Item',
-      1 => 'foaf:Document',
-    ),
-    'title' => array(
-      'predicates' => array(
-        0 => 'dc:title',
-      ),
-    ),
-    'created' => array(
-      'predicates' => array(
-        0 => 'dc:date',
-        1 => 'dc:created',
-      ),
-      'datatype' => 'xsd:dateTime',
-      'callback' => 'date_iso8601',
-    ),
-    'changed' => array(
-      'predicates' => array(
-        0 => 'dc:modified',
-      ),
-      'datatype' => 'xsd:dateTime',
-      'callback' => 'date_iso8601',
-    ),
-    'body' => array(
-      'predicates' => array(
-        0 => 'content:encoded',
-      ),
-    ),
-    'uid' => array(
-      'predicates' => array(
-        0 => 'sioc:has_creator',
-      ),
-      'type' => 'rel',
-    ),
-    'name' => array(
-      'predicates' => array(
-        0 => 'foaf:name',
-      ),
-    ),
-    'comment_count' => array(
-      'predicates' => array(
-        0 => 'sioc:num_replies',
-      ),
-      'datatype' => 'xsd:integer',
-    ),
-    'last_activity' => array(
-      'predicates' => array(
-        0 => 'sioc:last_activity_date',
-      ),
-      'datatype' => 'xsd:dateTime',
-      'callback' => 'date_iso8601',
-    ),
-  ),
-  'cid' => 0,
-  'last_comment_name' => NULL,
-  'last_comment_uid' => 1,
-  'comment_count' => 0,
-  'crm_core_profile_data' => array(
-    'access_override' => array(
-      'access' => FALSE,
-      'message' => 'Registration closed!',
-    ),
-  ),
-  'name' => 'admin',
-  'picture' => 0,
-  'data' => 'a:1:{s:17:"mimemail_textonly";i:0;}',
-  'date' => '2013-09-19 11:46:07 -0400',
-  'url_alias' => 'volunteers/get-out-the-vote',
-  'crm_core_profile_node_config' => array(
-    'nid' => '85b8792e-c6f0-41e1-bb04-7cbf6b522abf',
-    'use_profile' => 1,
-    'profile_name' => 'ao_volunteer_commitment_form',
-    'display_profile' => 1,
-    'inline_title' => 'Volunteer form',
-  ),
-);
-  $nodes[] = array(
-  'uid' => 1,
-  'title' => 'Support the Food Bank',
-  'log' => '',
-  'status' => 1,
-  'comment' => 1,
-  'promote' => 0,
-  'sticky' => 0,
-  'vuuid' => '85aa7335-b5cd-4352-a820-5cfbcbd6fe51',
-  'type' => 'cmcv_volunteer',
-  'language' => 'und',
-  'created' => 1379605986,
-  'tnid' => 0,
-  'translate' => 0,
-  'uuid' => '9c84b384-91ef-438d-a442-b7aa4158823f',
-  'revision_uid' => 1,
-  'body' => array(
-    'und' => array(
-      0 => array(
-        'value' => 'Come out and help at our annual fundraising dinner.
-
-<strong>Update:</strong> All of our volunteer positions are currently filled. If you are interested in participating, sign up for the waiting list below.',
-        'summary' => '',
-        'format' => 'filtered_html',
-        'safe_value' => '<p>Come out and help at our annual fundraising dinner.</p>
-<p><strong>Update:</strong> All of our volunteer positions are currently filled. If you are interested in participating, sign up for the waiting list below.</p>
-',
-        'safe_summary' => '',
-      ),
-    ),
-  ),
-  'field_cmcv_contact' => array(),
-  'field_cmcv_date' => array(
-    'und' => array(
-      0 => array(
-        'value' => 1387404000,
-        'value2' => 1387404000,
-        'timezone' => 'America/New_York',
-        'timezone_db' => 'UTC',
-        'date_type' => 'datestamp',
-      ),
-    ),
-  ),
-  'field_cmcv_location' => array(
-    'und' => array(
-      0 => array(
-        'country' => 'US',
-        'administrative_area' => 'NY',
-        'sub_administrative_area' => NULL,
-        'locality' => 'New York',
-        'dependent_locality' => NULL,
-        'postal_code' => '',
-        'thoroughfare' => '',
-        'premise' => '',
-        'sub_premise' => NULL,
-        'organisation_name' => NULL,
-        'name_line' => NULL,
-        'first_name' => NULL,
-        'last_name' => NULL,
-        'data' => NULL,
-      ),
-    ),
-  ),
-  'field_cmcv_roles' => array(),
-  'field_cmcv_slots' => array(
-    'und' => array(
-      0 => array(
-        'value' => 2,
-      ),
-    ),
-  ),
-  'rdf_mapping' => array(
-    'rdftype' => array(
-      0 => 'sioc:Item',
-      1 => 'foaf:Document',
-    ),
-    'title' => array(
-      'predicates' => array(
-        0 => 'dc:title',
-      ),
-    ),
-    'created' => array(
-      'predicates' => array(
-        0 => 'dc:date',
-        1 => 'dc:created',
-      ),
-      'datatype' => 'xsd:dateTime',
-      'callback' => 'date_iso8601',
-    ),
-    'changed' => array(
-      'predicates' => array(
-        0 => 'dc:modified',
-      ),
-      'datatype' => 'xsd:dateTime',
-      'callback' => 'date_iso8601',
-    ),
-    'body' => array(
-      'predicates' => array(
-        0 => 'content:encoded',
-      ),
-    ),
-    'uid' => array(
-      'predicates' => array(
-        0 => 'sioc:has_creator',
-      ),
-      'type' => 'rel',
-    ),
-    'name' => array(
-      'predicates' => array(
-        0 => 'foaf:name',
-      ),
-    ),
-    'comment_count' => array(
-      'predicates' => array(
-        0 => 'sioc:num_replies',
-      ),
-      'datatype' => 'xsd:integer',
-    ),
-    'last_activity' => array(
-      'predicates' => array(
-        0 => 'sioc:last_activity_date',
-      ),
-      'datatype' => 'xsd:dateTime',
-      'callback' => 'date_iso8601',
-    ),
-  ),
-  'cid' => 0,
-  'last_comment_name' => NULL,
-  'last_comment_uid' => 1,
-  'comment_count' => 0,
-  'crm_core_profile_data' => array(
-    'access_override' => array(
-      'access' => FALSE,
-      'message' => 'Registration closed!',
-    ),
-  ),
-  'name' => 'admin',
-  'picture' => 0,
-  'data' => 'a:1:{s:17:"mimemail_textonly";i:0;}',
-  'date' => '2013-09-19 11:53:06 -0400',
-  'url_alias' => 'volunteers/support-the-food-bank',
-  'crm_core_profile_node_config' => array(
-    'nid' => '9c84b384-91ef-438d-a442-b7aa4158823f',
-    'use_profile' => 1,
-    'profile_name' => 'ao_volunteer_commitment_form',
-    'display_profile' => 1,
-    'inline_title' => 'Volunteer form',
-  ),
-);
-  $nodes[] = array(
-  'uid' => 1,
+  'uid' => 0,
   'title' => 'Thank you',
   'log' => '',
   'status' => 1,
   'comment' => 1,
   'promote' => 0,
   'sticky' => 0,
-  'vuuid' => '60861c83-d850-44fd-b63b-ec4a58ce2dd4',
+  'vuuid' => 'a224a165-00e0-49db-b643-7de512d58719',
   'type' => 'page',
   'language' => 'und',
-  'created' => 1378725306,
+  'created' => 1378301890,
   'tnid' => 0,
   'translate' => 0,
-  'uuid' => 'a6aca833-1f84-4876-93d1-cc070aad77d0',
+  'uuid' => '88e4e269-7dff-48ef-a527-c109f2e9ca6f',
   'revision_uid' => 1,
   'body' => array(
     'und' => array(
       0 => array(
-        'value' => 'Thank you for your volunteer commitment!',
+        'value' => 'Thank you for registration!',
         'summary' => '',
         'format' => 'filtered_html',
-        'safe_value' => '<p>Thank you for your volunteer commitment!</p>
+        'safe_value' => '<p>Thank you for registration!</p>
 ',
         'safe_summary' => '',
       ),
@@ -859,13 +379,433 @@ On Saturday, we\'ll be picking up trash and litter over a three mile stretch of 
   ),
   'cid' => 0,
   'last_comment_name' => NULL,
-  'last_comment_uid' => 1,
+  'last_comment_uid' => 0,
   'comment_count' => 0,
-  'name' => 'admin',
+  'name' => '',
   'picture' => 0,
-  'data' => 'a:1:{s:17:"mimemail_textonly";i:0;}',
-  'date' => '2013-09-09 07:15:06 -0400',
-  'url_alias' => 'volunteers/thank-you',
+  'data' => NULL,
+  'date' => '2013-09-04 13:38:10 +0000',
+  'url_alias' => 'events/thank-you',
+);
+  $nodes[] = array(
+  'uid' => 0,
+  'title' => 'Aids Walk Luckenbach',
+  'log' => '',
+  'status' => 1,
+  'comment' => 1,
+  'promote' => 0,
+  'sticky' => 0,
+  'vuuid' => '0d135c46-ea41-4ef1-b633-e310a75103f5',
+  'type' => 'cmcev_event',
+  'language' => 'und',
+  'created' => 1378223370,
+  'tnid' => 0,
+  'translate' => 0,
+  'uuid' => '8cbf5460-9633-4fcd-a730-c5832c19e5f0',
+  'revision_uid' => 1,
+  'body' => array(
+    'und' => array(
+      0 => array(
+        'value' => 'Aids Walk Luckenbach is a fundraising walk and 5k timed run to benefit AIDS research in Luckenbach. Fill out the form below to become an event sponsor!',
+        'summary' => '',
+        'format' => 'full_html',
+        'safe_value' => '<p>Aids Walk Luckenbach is a fundraising walk and 5k timed run to benefit AIDS research in Luckenbach. Fill out the form below to become an event sponsor!</p>
+',
+        'safe_summary' => '',
+      ),
+    ),
+  ),
+  'field_cmcev_date' => array(
+    'und' => array(
+      0 => array(
+        'value' => '2013-10-13 09:00:00',
+        'value2' => '2013-10-18 19:00:00',
+        'timezone' => 'UTC',
+        'timezone_db' => 'UTC',
+        'date_type' => 'datetime',
+      ),
+    ),
+  ),
+  'field_cmcev_location' => array(
+    'und' => array(
+      0 => array(
+        'country' => 'US',
+        'administrative_area' => 'TX',
+        'sub_administrative_area' => NULL,
+        'locality' => 'Luckenbach',
+        'dependent_locality' => NULL,
+        'postal_code' => 78647,
+        'thoroughfare' => '123 Main Street',
+        'premise' => '',
+        'sub_premise' => NULL,
+        'organisation_name' => NULL,
+        'name_line' => NULL,
+        'first_name' => NULL,
+        'last_name' => NULL,
+        'data' => NULL,
+      ),
+    ),
+  ),
+  'rdf_mapping' => array(
+    'rdftype' => array(
+      0 => 'sioc:Item',
+      1 => 'foaf:Document',
+    ),
+    'title' => array(
+      'predicates' => array(
+        0 => 'dc:title',
+      ),
+    ),
+    'created' => array(
+      'predicates' => array(
+        0 => 'dc:date',
+        1 => 'dc:created',
+      ),
+      'datatype' => 'xsd:dateTime',
+      'callback' => 'date_iso8601',
+    ),
+    'changed' => array(
+      'predicates' => array(
+        0 => 'dc:modified',
+      ),
+      'datatype' => 'xsd:dateTime',
+      'callback' => 'date_iso8601',
+    ),
+    'body' => array(
+      'predicates' => array(
+        0 => 'content:encoded',
+      ),
+    ),
+    'uid' => array(
+      'predicates' => array(
+        0 => 'sioc:has_creator',
+      ),
+      'type' => 'rel',
+    ),
+    'name' => array(
+      'predicates' => array(
+        0 => 'foaf:name',
+      ),
+    ),
+    'comment_count' => array(
+      'predicates' => array(
+        0 => 'sioc:num_replies',
+      ),
+      'datatype' => 'xsd:integer',
+    ),
+    'last_activity' => array(
+      'predicates' => array(
+        0 => 'sioc:last_activity_date',
+      ),
+      'datatype' => 'xsd:dateTime',
+      'callback' => 'date_iso8601',
+    ),
+  ),
+  'cid' => 0,
+  'last_comment_name' => NULL,
+  'last_comment_uid' => 0,
+  'comment_count' => 0,
+  'crm_core_profile_data' => array(
+    'commerce_items_cart_items' => array(),
+  ),
+  'name' => '',
+  'picture' => 0,
+  'data' => NULL,
+  'date' => '2013-09-03 15:49:30 +0000',
+  'url_alias' => 'events/multiple-ticket-level',
+  'crm_core_profile_node_config' => array(
+    'nid' => '8cbf5460-9633-4fcd-a730-c5832c19e5f0',
+    'use_profile' => 1,
+    'profile_name' => 'ao_cmcev_simple_many_form',
+    'display_profile' => 0,
+    'inline_title' => 'Registration form',
+  ),
+  'crm_core_event_node_config' => array(
+    'nid' => '8cbf5460-9633-4fcd-a730-c5832c19e5f0',
+    'display_registrants' => 1,
+    'thanks_email' => '',
+    'tickets' => '',
+    'max_registration' => 0,
+  ),
+);
+  $nodes[] = array(
+  'uid' => 0,
+  'title' => 'Health and Resource Fair',
+  'log' => '',
+  'status' => 1,
+  'comment' => 1,
+  'promote' => 0,
+  'sticky' => 0,
+  'vuuid' => '977a0ebd-c450-4ad9-a240-f82e582b0138',
+  'type' => 'cmcev_event',
+  'language' => 'und',
+  'created' => 1378221661,
+  'tnid' => 0,
+  'translate' => 0,
+  'uuid' => 'c4e0254b-e193-4f95-b843-fde40151fd81',
+  'revision_uid' => 1,
+  'body' => array(
+    'und' => array(
+      0 => array(
+        'value' => 'Join us this Saturday where over 100 local organizations will be on hand to provide free services including free blood pressure testing, dental screenings, flu shots and more!
+',
+        'summary' => '',
+        'format' => 'full_html',
+        'safe_value' => '<p>Join us this Saturday where over 100 local organizations will be on hand to provide free services including free blood pressure testing, dental screenings, flu shots and more!</p>
+',
+        'safe_summary' => '',
+      ),
+    ),
+  ),
+  'field_cmcev_date' => array(
+    'und' => array(
+      0 => array(
+        'value' => '2013-10-19 09:00:00',
+        'value2' => '2013-10-24 19:00:00',
+        'timezone' => 'UTC',
+        'timezone_db' => 'UTC',
+        'date_type' => 'datetime',
+      ),
+    ),
+  ),
+  'field_cmcev_location' => array(
+    'und' => array(
+      0 => array(
+        'country' => 'US',
+        'administrative_area' => 'TX',
+        'sub_administrative_area' => NULL,
+        'locality' => 'Luckenbach',
+        'dependent_locality' => NULL,
+        'postal_code' => 78647,
+        'thoroughfare' => '123 Main Street',
+        'premise' => '',
+        'sub_premise' => NULL,
+        'organisation_name' => NULL,
+        'name_line' => NULL,
+        'first_name' => NULL,
+        'last_name' => NULL,
+        'data' => NULL,
+      ),
+    ),
+  ),
+  'rdf_mapping' => array(
+    'rdftype' => array(
+      0 => 'sioc:Item',
+      1 => 'foaf:Document',
+    ),
+    'title' => array(
+      'predicates' => array(
+        0 => 'dc:title',
+      ),
+    ),
+    'created' => array(
+      'predicates' => array(
+        0 => 'dc:date',
+        1 => 'dc:created',
+      ),
+      'datatype' => 'xsd:dateTime',
+      'callback' => 'date_iso8601',
+    ),
+    'changed' => array(
+      'predicates' => array(
+        0 => 'dc:modified',
+      ),
+      'datatype' => 'xsd:dateTime',
+      'callback' => 'date_iso8601',
+    ),
+    'body' => array(
+      'predicates' => array(
+        0 => 'content:encoded',
+      ),
+    ),
+    'uid' => array(
+      'predicates' => array(
+        0 => 'sioc:has_creator',
+      ),
+      'type' => 'rel',
+    ),
+    'name' => array(
+      'predicates' => array(
+        0 => 'foaf:name',
+      ),
+    ),
+    'comment_count' => array(
+      'predicates' => array(
+        0 => 'sioc:num_replies',
+      ),
+      'datatype' => 'xsd:integer',
+    ),
+    'last_activity' => array(
+      'predicates' => array(
+        0 => 'sioc:last_activity_date',
+      ),
+      'datatype' => 'xsd:dateTime',
+      'callback' => 'date_iso8601',
+    ),
+  ),
+  'cid' => 0,
+  'last_comment_name' => NULL,
+  'last_comment_uid' => 0,
+  'comment_count' => 0,
+  'crm_core_profile_data' => array(),
+  'name' => '',
+  'picture' => 0,
+  'data' => NULL,
+  'date' => '2013-09-03 15:21:01 +0000',
+  'url_alias' => 'events/basic',
+  'crm_core_profile_node_config' => array(
+    'nid' => 'c4e0254b-e193-4f95-b843-fde40151fd81',
+    'use_profile' => 1,
+    'profile_name' => 'ao_cmcev_simple_reg_form',
+    'display_profile' => 0,
+    'inline_title' => 'Registration form',
+  ),
+  'crm_core_event_node_config' => array(
+    'nid' => 'c4e0254b-e193-4f95-b843-fde40151fd81',
+    'display_registrants' => 1,
+    'thanks_email' => '',
+    'tickets' => '',
+    'max_registration' => 0,
+  ),
+);
+  $nodes[] = array(
+  'uid' => 0,
+  'title' => 'Tuesday Phonebank',
+  'log' => '',
+  'status' => 1,
+  'comment' => 1,
+  'promote' => 0,
+  'sticky' => 0,
+  'vuuid' => '5a646654-27b7-4511-b4d4-77e75b3e274b',
+  'type' => 'cmcev_event',
+  'language' => 'und',
+  'created' => 1379613127,
+  'tnid' => 0,
+  'translate' => 0,
+  'uuid' => 'e340d2ab-485b-4e68-b35c-c4e07a7b80c5',
+  'revision_uid' => 1,
+  'body' => array(
+    'und' => array(
+      0 => array(
+        'value' => 'Come phonebank with us this Tuesday and help ensure more progressive leaders have a voice in Washington!',
+        'summary' => '',
+        'format' => 'full_html',
+        'safe_value' => '<p>Come phonebank with us this Tuesday and help ensure more progressive leaders have a voice in Washington!</p>
+',
+        'safe_summary' => '',
+      ),
+    ),
+  ),
+  'field_cmcev_date' => array(
+    'und' => array(
+      0 => array(
+        'value' => '2013-10-25 09:00:00',
+        'value2' => '2013-10-30 19:00:00',
+        'timezone' => 'UTC',
+        'timezone_db' => 'UTC',
+        'date_type' => 'datetime',
+      ),
+    ),
+  ),
+  'field_cmcev_location' => array(
+    'und' => array(
+      0 => array(
+        'country' => 'US',
+        'administrative_area' => 'TX',
+        'sub_administrative_area' => NULL,
+        'locality' => 'Luckenbach',
+        'dependent_locality' => NULL,
+        'postal_code' => 78647,
+        'thoroughfare' => '123 Main Street',
+        'premise' => '',
+        'sub_premise' => NULL,
+        'organisation_name' => NULL,
+        'name_line' => NULL,
+        'first_name' => NULL,
+        'last_name' => NULL,
+        'data' => NULL,
+      ),
+    ),
+  ),
+  'rdf_mapping' => array(
+    'rdftype' => array(
+      0 => 'sioc:Item',
+      1 => 'foaf:Document',
+    ),
+    'title' => array(
+      'predicates' => array(
+        0 => 'dc:title',
+      ),
+    ),
+    'created' => array(
+      'predicates' => array(
+        0 => 'dc:date',
+        1 => 'dc:created',
+      ),
+      'datatype' => 'xsd:dateTime',
+      'callback' => 'date_iso8601',
+    ),
+    'changed' => array(
+      'predicates' => array(
+        0 => 'dc:modified',
+      ),
+      'datatype' => 'xsd:dateTime',
+      'callback' => 'date_iso8601',
+    ),
+    'body' => array(
+      'predicates' => array(
+        0 => 'content:encoded',
+      ),
+    ),
+    'uid' => array(
+      'predicates' => array(
+        0 => 'sioc:has_creator',
+      ),
+      'type' => 'rel',
+    ),
+    'name' => array(
+      'predicates' => array(
+        0 => 'foaf:name',
+      ),
+    ),
+    'comment_count' => array(
+      'predicates' => array(
+        0 => 'sioc:num_replies',
+      ),
+      'datatype' => 'xsd:integer',
+    ),
+    'last_activity' => array(
+      'predicates' => array(
+        0 => 'sioc:last_activity_date',
+      ),
+      'datatype' => 'xsd:dateTime',
+      'callback' => 'date_iso8601',
+    ),
+  ),
+  'cid' => 0,
+  'last_comment_name' => NULL,
+  'last_comment_uid' => 0,
+  'comment_count' => 0,
+  'crm_core_profile_data' => array(),
+  'name' => '',
+  'picture' => 0,
+  'data' => NULL,
+  'date' => '2013-09-19 17:52:07 +0000',
+  'url_alias' => 'events/phonebank',
+  'crm_core_profile_node_config' => array(
+    'nid' => 'e340d2ab-485b-4e68-b35c-c4e07a7b80c5',
+    'use_profile' => 1,
+    'profile_name' => 'ao_cmcev_simple_single_form',
+    'display_profile' => 0,
+    'inline_title' => 'Register Now',
+  ),
+  'crm_core_event_node_config' => array(
+    'nid' => 'e340d2ab-485b-4e68-b35c-c4e07a7b80c5',
+    'display_registrants' => 1,
+    'thanks_email' => '',
+    'tickets' => '',
+    'max_registration' => 0,
+  ),
 );
   return $nodes;
 }

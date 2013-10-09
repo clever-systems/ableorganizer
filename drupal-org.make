@@ -11,7 +11,6 @@ projects[ctools][version] = 1.3
 projects[ctools][subdir] = "contrib"
 projects[entity][version] = 1.2
 projects[entity][subdir] = "contrib"
-projects[entity][patch][] = "https://drupal.org/files/entity_features_export_options_0.patch"
 projects[entity][patch][] = "https://drupal.org/files/unformatted_replacements-2082407-1.patch"
 projects[entityreference][version] = 1.0
 projects[entityreference][subdir] = "contrib"
@@ -25,7 +24,7 @@ projects[rules][version] = 2.5
 projects[rules][subdir] = "contrib"
 projects[libraries][version] = 2.1
 projects[libraries][subdir] = "contrib"
-projects[features][version] = 2.0-rc4
+projects[features][version] = 2.0-rc5
 projects[features][subdir] = "contrib"
 projects[context][version] = 3.0-rc1
 projects[context][subdir] = "contrib"
@@ -64,7 +63,7 @@ projects[calendar][patch][] = "https://drupal.org/files/calendar-php54-1471400-5
 ; email
 projects[mailsystem][version] = 2.34
 projects[mailsystem][subdir] = "contrib"
-projects[mimemail][version] = 1.0-alpha2
+projects[mimemail][version] = 1.0-beta1
 projects[mimemail][subdir] = "contrib"
 
 ; content
@@ -166,16 +165,16 @@ projects[crm_core_profile_commerce_items][subdir] = "contrib"
 projects[crm_core_demo_standard_fields][version] = 1.2
 projects[crm_core_demo_standard_fields][subdir] = "contrib"
 ; donations
-projects[crm_core_donation][version] = 1.8
+projects[crm_core_donation][version] = 1.10
 projects[crm_core_donation][subdir] = "contrib"
 ; events
-projects[crm_core_event][version] = 0.7
+projects[crm_core_event][version] = 0.9
 projects[crm_core_event][subdir] = "contrib"
 ; petitions
-projects[crm_core_petition][version] = 0.6
+projects[crm_core_petition][version] = 0.7
 projects[crm_core_petition][subdir] = "contrib"
 ; volunteers
-projects[crm_core_volunteer][version] = 0.7
+projects[crm_core_volunteer][version] = 0.8
 projects[crm_core_volunteer][subdir] = "contrib"
 
 ; libraries

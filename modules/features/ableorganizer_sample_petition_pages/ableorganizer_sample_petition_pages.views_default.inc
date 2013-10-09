@@ -1,28 +1,28 @@
 <?php
 /**
  * @file
- * ableorganizer_event_sample_content.views_default.inc
+ * ableorganizer_sample_petition_pages.views_default.inc
  */
 
 /**
  * Implements hook_views_default_views().
  */
-function ableorganizer_event_sample_content_views_default_views() {
+function ableorganizer_sample_petition_pages_views_default_views() {
   $export = array();
 
   $view = new view();
-  $view->name = 'ao_sample_event';
+  $view->name = 'ao_sample_petition';
   $view->description = '';
   $view->tag = 'default';
   $view->base_table = 'node';
-  $view->human_name = 'AbleOrganizer Sample Events';
+  $view->human_name = 'AbleOrganizer Sample Petitions';
   $view->core = 7;
   $view->api_version = '3.0';
   $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
 
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
-  $handler->display->display_options['title'] = 'Upcoming Events';
+  $handler->display->display_options['title'] = 'Current Petitions';
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'perm';
   $handler->display->display_options['cache']['type'] = 'none';
@@ -56,19 +56,19 @@ function ableorganizer_event_sample_content_views_default_views() {
   $handler->display->display_options['filters']['type']['table'] = 'node';
   $handler->display->display_options['filters']['type']['field'] = 'type';
   $handler->display->display_options['filters']['type']['value'] = array(
-    'cmcev_event' => 'cmcev_event',
+    'cmcp_petition' => 'cmcp_petition',
   );
 
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page');
-  $handler->display->display_options['path'] = 'events';
+  $handler->display->display_options['path'] = 'petitions';
   $handler->display->display_options['menu']['type'] = 'normal';
-  $handler->display->display_options['menu']['title'] = 'Events';
-  $handler->display->display_options['menu']['weight'] = '2';
+  $handler->display->display_options['menu']['title'] = 'Petitions';
+  $handler->display->display_options['menu']['weight'] = '3';
   $handler->display->display_options['menu']['name'] = 'main-menu';
   $handler->display->display_options['menu']['context'] = 0;
   $handler->display->display_options['menu']['context_only_inline'] = 0;
-  $export['ao_sample_event'] = $view;
+  $export['ao_sample_petition'] = $view;
 
   return $export;
 }

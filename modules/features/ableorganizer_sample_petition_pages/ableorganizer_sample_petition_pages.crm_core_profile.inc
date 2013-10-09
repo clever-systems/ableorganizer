@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * ableorganizer_petition_sample_content.crm_core_profile.inc
+ * ableorganizer_sample_petition_pages.crm_core_profile.inc
  */
 
 /**
  * Implements hook_default_crm_core_profile().
  */
-function ableorganizer_petition_sample_content_default_crm_core_profile() {
+function ableorganizer_sample_petition_pages_default_crm_core_profile() {
   $export = array();
 
   $crm_core_profile = new stdClass();
@@ -180,7 +180,7 @@ function ableorganizer_petition_sample_content_default_crm_core_profile() {
   $crm_core_profile->page = FALSE;
   $crm_core_profile->page_title = '';
   $crm_core_profile->page_path = '';
-  $crm_core_profile->page_redirect = '';
+  $crm_core_profile->page_redirect = 'petitions/thank-you';
   $crm_core_profile->message = '';
   $crm_core_profile->status = TRUE;
   $crm_core_profile->uid = 1;
@@ -346,10 +346,10 @@ function ableorganizer_petition_sample_content_default_crm_core_profile() {
   );
   $crm_core_profile->block = FALSE;
   $crm_core_profile->block_title = '';
-  $crm_core_profile->page = TRUE;
+  $crm_core_profile->page = FALSE;
   $crm_core_profile->page_title = '';
   $crm_core_profile->page_path = '';
-  $crm_core_profile->page_redirect = 'node/1';
+  $crm_core_profile->page_redirect = 'petitions/thank-you';
   $crm_core_profile->message = 'Thank you for adding your voice to this important cause.';
   $crm_core_profile->status = TRUE;
   $crm_core_profile->uid = 1;
@@ -576,10 +576,10 @@ function ableorganizer_petition_sample_content_default_crm_core_profile() {
   );
   $crm_core_profile->block = FALSE;
   $crm_core_profile->block_title = '';
-  $crm_core_profile->page = TRUE;
+  $crm_core_profile->page = FALSE;
   $crm_core_profile->page_title = '';
   $crm_core_profile->page_path = '';
-  $crm_core_profile->page_redirect = 'node/6';
+  $crm_core_profile->page_redirect = 'petitions/thank-you';
   $crm_core_profile->message = 'Thank you for taking action!';
   $crm_core_profile->status = TRUE;
   $crm_core_profile->uid = 1;
@@ -967,10 +967,10 @@ function ableorganizer_petition_sample_content_default_crm_core_profile() {
   );
   $crm_core_profile->block = FALSE;
   $crm_core_profile->block_title = '';
-  $crm_core_profile->page = TRUE;
+  $crm_core_profile->page = FALSE;
   $crm_core_profile->page_title = '';
   $crm_core_profile->page_path = '';
-  $crm_core_profile->page_redirect = 'node/1';
+  $crm_core_profile->page_redirect = 'petitions/thank-you';
   $crm_core_profile->message = 'Thank you for taking action.';
   $crm_core_profile->status = TRUE;
   $crm_core_profile->uid = 1;

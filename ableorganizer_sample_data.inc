@@ -833,6 +833,16 @@ function ableorganizer_sample_data() {
  * Sample data for CRM Core Donation.
  */
 function ableorganizer_donation_sample_data() {
+  _ableorganizer_sample_donation_pages_rebuild_nodes();
+  $uuids = array(
+    'ao_fundraiser_form' => '2b66066f-0a98-43b7-bc0e-a74c6e4130e6',
+    'ao_annual_appeal_form' => '3e876d31-271a-47da-8564-2bb667953ade',
+    'ao_donation_form' => 'e5742cc9-af29-4b1a-930b-24921ae633d4',
+    'ao_walk_up_donation' => 'd2ce8616-ab53-4c71-8c87-9c438c6a1cad'
+  );
+  // Getting local IDs from universal.
+  $nids = entity_get_id_by_uuid('node', $uuids);
+  
   $sample_data = array();
   $sample_data['crm_core_activity'] = array();
 
@@ -863,7 +873,7 @@ function ableorganizer_donation_sample_data() {
       },
       "field_cmcd_amount" : { "und" : [ { "value" : "25.00" } ] },
       "field_cmcd_order" : { "und" : [ { "order_id" : "1" } ] },
-      "field_cmcd_page" : { "und" : [ { "target_id" : "2" } ] },
+      "field_cmcd_page" : { "und" : [ { "target_id" : "' . $nids[$uuids['ao_annual_appeal_form']] . '" } ] },
       "field_cmcd_payment_type" : { "und" : [ { "value" : "Credit Card" } ] },
       "field_cmcd_receive_date" : { "und" : [
           {
@@ -905,7 +915,7 @@ function ableorganizer_donation_sample_data() {
       },
       "field_cmcd_amount" : { "und" : [ { "value" : "50.00" } ] },
       "field_cmcd_order" : { "und" : [ { "order_id" : "2" } ] },
-      "field_cmcd_page" : { "und" : [ { "target_id" : "2" } ] },
+      "field_cmcd_page" : { "und" : [ { "target_id" : "' . $nids[$uuids['ao_annual_appeal_form']] . '" } ] },
       "field_cmcd_payment_type" : { "und" : [ { "value" : "Credit Card" } ] },
       "field_cmcd_receive_date" : { "und" : [
           {
@@ -947,7 +957,7 @@ function ableorganizer_donation_sample_data() {
       },
       "field_cmcd_amount" : { "und" : [ { "value" : "75.00" } ] },
       "field_cmcd_order" : { "und" : [ { "order_id" : "3" } ] },
-      "field_cmcd_page" : { "und" : [ { "target_id" : "2" } ] },
+      "field_cmcd_page" : { "und" : [ { "target_id" : "' . $nids[$uuids['ao_annual_appeal_form']] . '" } ] },
       "field_cmcd_payment_type" : { "und" : [ { "value" : "Credit Card" } ] },
       "field_cmcd_receive_date" : { "und" : [
           {
@@ -989,7 +999,7 @@ function ableorganizer_donation_sample_data() {
       },
       "field_cmcd_amount" : { "und" : [ { "value" : "100.00" } ] },
       "field_cmcd_order" : { "und" : [ { "order_id" : "4" } ] },
-      "field_cmcd_page" : { "und" : [ { "target_id" : "2" } ] },
+      "field_cmcd_page" : { "und" : [ { "target_id" : "' . $nids[$uuids['ao_annual_appeal_form']] . '" } ] },
       "field_cmcd_payment_type" : { "und" : [ { "value" : "Credit Card" } ] },
       "field_cmcd_receive_date" : { "und" : [
           {
@@ -1031,7 +1041,7 @@ function ableorganizer_donation_sample_data() {
       },
       "field_cmcd_amount" : { "und" : [ { "value" : "75.00" } ] },
       "field_cmcd_order" : { "und" : [ { "order_id" : "5" } ] },
-      "field_cmcd_page" : { "und" : [ { "target_id" : "2" } ] },
+      "field_cmcd_page" : { "und" : [ { "target_id" : "' . $nids[$uuids['ao_annual_appeal_form']] . '" } ] },
       "field_cmcd_payment_type" : { "und" : [ { "value" : "Credit Card" } ] },
       "field_cmcd_receive_date" : { "und" : [
           {
@@ -1073,7 +1083,7 @@ function ableorganizer_donation_sample_data() {
       },
       "field_cmcd_amount" : { "und" : [ { "value" : "100.00" } ] },
       "field_cmcd_order" : { "und" : [ { "order_id" : "6" } ] },
-      "field_cmcd_page" : { "und" : [ { "target_id" : "2" } ] },
+      "field_cmcd_page" : { "und" : [ { "target_id" : "' . $nids[$uuids['ao_annual_appeal_form']] . '" } ] },
       "field_cmcd_payment_type" : { "und" : [ { "value" : "Credit Card" } ] },
       "field_cmcd_receive_date" : { "und" : [
           {
@@ -1115,7 +1125,7 @@ function ableorganizer_donation_sample_data() {
       },
       "field_cmcd_amount" : { "und" : [ { "value" : "50.00" } ] },
       "field_cmcd_order" : { "und" : [ { "order_id" : "7" } ] },
-      "field_cmcd_page" : { "und" : [ { "target_id" : "2" } ] },
+      "field_cmcd_page" : { "und" : [ { "target_id" : "' . $nids[$uuids['ao_annual_appeal_form']] . '" } ] },
       "field_cmcd_payment_type" : { "und" : [ { "value" : "Credit Card" } ] },
       "field_cmcd_receive_date" : { "und" : [
           {
@@ -1157,7 +1167,7 @@ function ableorganizer_donation_sample_data() {
       },
       "field_cmcd_amount" : { "und" : [ { "value" : "75.00" } ] },
       "field_cmcd_order" : { "und" : [ { "order_id" : "8" } ] },
-      "field_cmcd_page" : { "und" : [ { "target_id" : "2" } ] },
+      "field_cmcd_page" : { "und" : [ { "target_id" : "' . $nids[$uuids['ao_annual_appeal_form']] . '" } ] },
       "field_cmcd_payment_type" : { "und" : [ { "value" : "Credit Card" } ] },
       "field_cmcd_receive_date" : { "und" : [
           {
@@ -1199,7 +1209,7 @@ function ableorganizer_donation_sample_data() {
       },
       "field_cmcd_amount" : { "und" : [ { "value" : "25.00" } ] },
       "field_cmcd_order" : { "und" : [ { "order_id" : "9" } ] },
-      "field_cmcd_page" : { "und" : [ { "target_id" : "2" } ] },
+      "field_cmcd_page" : { "und" : [ { "target_id" : "' . $nids[$uuids['ao_annual_appeal_form']] . '" } ] },
       "field_cmcd_payment_type" : { "und" : [ { "value" : "Credit Card" } ] },
       "field_cmcd_receive_date" : { "und" : [
           {
@@ -1241,7 +1251,7 @@ function ableorganizer_donation_sample_data() {
       },
       "field_cmcd_amount" : { "und" : [ { "value" : "50.00" } ] },
       "field_cmcd_order" : { "und" : [ { "order_id" : "10" } ] },
-      "field_cmcd_page" : { "und" : [ { "target_id" : "2" } ] },
+      "field_cmcd_page" : { "und" : [ { "target_id" : "' . $nids[$uuids['ao_annual_appeal_form']] . '" } ] },
       "field_cmcd_payment_type" : { "und" : [ { "value" : "Credit Card" } ] },
       "field_cmcd_receive_date" : { "und" : [
           {
@@ -1283,7 +1293,7 @@ function ableorganizer_donation_sample_data() {
       },
       "field_cmcd_amount" : { "und" : [ { "value" : "100.00" } ] },
       "field_cmcd_order" : { "und" : [ { "order_id" : "11" } ] },
-      "field_cmcd_page" : { "und" : [ { "target_id" : "1" } ] },
+      "field_cmcd_page" : { "und" : [ { "target_id" : "' . $nids[$uuids['ao_fundraiser_form']] . '" } ] },
       "field_cmcd_payment_type" : { "und" : [ { "value" : "Other" } ] },
       "field_cmcd_receive_date" : { "und" : [
           {
@@ -1325,7 +1335,7 @@ function ableorganizer_donation_sample_data() {
       },
       "field_cmcd_amount" : { "und" : [ { "value" : "250.00" } ] },
       "field_cmcd_order" : { "und" : [ { "order_id" : "12" } ] },
-      "field_cmcd_page" : { "und" : [ { "target_id" : "1" } ] },
+      "field_cmcd_page" : { "und" : [ { "target_id" : "' . $nids[$uuids['ao_fundraiser_form']] . '" } ] },
       "field_cmcd_payment_type" : { "und" : [ { "value" : "Other" } ] },
       "field_cmcd_receive_date" : { "und" : [
           {
@@ -1367,7 +1377,7 @@ function ableorganizer_donation_sample_data() {
       },
       "field_cmcd_amount" : { "und" : [ { "value" : "500.00" } ] },
       "field_cmcd_order" : { "und" : [ { "order_id" : "13" } ] },
-      "field_cmcd_page" : { "und" : [ { "target_id" : "1" } ] },
+      "field_cmcd_page" : { "und" : [ { "target_id" : "' . $nids[$uuids['ao_fundraiser_form']] . '" } ] },
       "field_cmcd_payment_type" : { "und" : [ { "value" : "Other" } ] },
       "field_cmcd_receive_date" : { "und" : [
           {
@@ -1409,7 +1419,7 @@ function ableorganizer_donation_sample_data() {
       },
       "field_cmcd_amount" : { "und" : [ { "value" : "250.00" } ] },
       "field_cmcd_order" : { "und" : [ { "order_id" : "14" } ] },
-      "field_cmcd_page" : { "und" : [ { "target_id" : "1" } ] },
+      "field_cmcd_page" : { "und" : [ { "target_id" : "' . $nids[$uuids['ao_fundraiser_form']] . '" } ] },
       "field_cmcd_payment_type" : { "und" : [ { "value" : "Other" } ] },
       "field_cmcd_receive_date" : { "und" : [
           {
@@ -1451,7 +1461,7 @@ function ableorganizer_donation_sample_data() {
       },
       "field_cmcd_amount" : { "und" : [ { "value" : "100.00" } ] },
       "field_cmcd_order" : { "und" : [ { "order_id" : "15" } ] },
-      "field_cmcd_page" : { "und" : [ { "target_id" : "1" } ] },
+      "field_cmcd_page" : { "und" : [ { "target_id" : "' . $nids[$uuids['ao_fundraiser_form']] . '" } ] },
       "field_cmcd_payment_type" : { "und" : [ { "value" : "Other" } ] },
       "field_cmcd_receive_date" : { "und" : [
           {
@@ -1493,7 +1503,7 @@ function ableorganizer_donation_sample_data() {
       },
       "field_cmcd_amount" : { "und" : [ { "value" : "50.00" } ] },
       "field_cmcd_order" : { "und" : [ { "order_id" : "16" } ] },
-      "field_cmcd_page" : { "und" : [ { "target_id" : "1" } ] },
+      "field_cmcd_page" : { "und" : [ { "target_id" : "' . $nids[$uuids['ao_fundraiser_form']] . '" } ] },
       "field_cmcd_payment_type" : { "und" : [ { "value" : "Other" } ] },
       "field_cmcd_receive_date" : { "und" : [
           {
@@ -1535,7 +1545,7 @@ function ableorganizer_donation_sample_data() {
       },
       "field_cmcd_amount" : { "und" : [ { "value" : "150.00" } ] },
       "field_cmcd_order" : { "und" : [ { "order_id" : "17" } ] },
-      "field_cmcd_page" : { "und" : [ { "target_id" : "1" } ] },
+      "field_cmcd_page" : { "und" : [ { "target_id" : "' . $nids[$uuids['ao_fundraiser_form']] . '" } ] },
       "field_cmcd_payment_type" : { "und" : [ { "value" : "Other" } ] },
       "field_cmcd_receive_date" : { "und" : [
           {
@@ -1577,7 +1587,7 @@ function ableorganizer_donation_sample_data() {
       },
       "field_cmcd_amount" : { "und" : [ { "value" : "200.00" } ] },
       "field_cmcd_order" : { "und" : [ { "order_id" : "18" } ] },
-      "field_cmcd_page" : { "und" : [ { "target_id" : "1" } ] },
+      "field_cmcd_page" : { "und" : [ { "target_id" : "' . $nids[$uuids['ao_fundraiser_form']] . '" } ] },
       "field_cmcd_payment_type" : { "und" : [ { "value" : "Other" } ] },
       "field_cmcd_receive_date" : { "und" : [
           {
@@ -1619,7 +1629,7 @@ function ableorganizer_donation_sample_data() {
       },
       "field_cmcd_amount" : { "und" : [ { "value" : "250.00" } ] },
       "field_cmcd_order" : { "und" : [ { "order_id" : "19" } ] },
-      "field_cmcd_page" : { "und" : [ { "target_id" : "1" } ] },
+      "field_cmcd_page" : { "und" : [ { "target_id" : "' . $nids[$uuids['ao_fundraiser_form']] . '" } ] },
       "field_cmcd_payment_type" : { "und" : [ { "value" : "Other" } ] },
       "field_cmcd_receive_date" : { "und" : [
           {
@@ -1661,7 +1671,7 @@ function ableorganizer_donation_sample_data() {
       },
       "field_cmcd_amount" : { "und" : [ { "value" : "200.00" } ] },
       "field_cmcd_order" : { "und" : [ { "order_id" : "20" } ] },
-      "field_cmcd_page" : { "und" : [ { "target_id" : "1" } ] },
+      "field_cmcd_page" : { "und" : [ { "target_id" : "' . $nids[$uuids['ao_fundraiser_form']] . '" } ] },
       "field_cmcd_payment_type" : { "und" : [ { "value" : "Other" } ] },
       "field_cmcd_receive_date" : { "und" : [
           {
@@ -1703,7 +1713,7 @@ function ableorganizer_donation_sample_data() {
       },
       "field_cmcd_amount" : { "und" : [ { "value" : "50.00" } ] },
       "field_cmcd_order" : { "und" : [ { "order_id" : "21" } ] },
-      "field_cmcd_page" : { "und" : [ { "target_id" : "4" } ] },
+      "field_cmcd_page" : { "und" : [ { "target_id" : "' . $nids[$uuids['ao_donation_form']] . '" } ] },
       "field_cmcd_payment_type" : { "und" : [ { "value" : "Credit Card" } ] },
       "field_cmcd_receive_date" : { "und" : [
           {
@@ -1745,7 +1755,7 @@ function ableorganizer_donation_sample_data() {
       },
       "field_cmcd_amount" : { "und" : [ { "value" : "75.00" } ] },
       "field_cmcd_order" : { "und" : [ { "order_id" : "22" } ] },
-      "field_cmcd_page" : { "und" : [ { "target_id" : "4" } ] },
+      "field_cmcd_page" : { "und" : [ { "target_id" : "' . $nids[$uuids['ao_donation_form']] . '" } ] },
       "field_cmcd_payment_type" : { "und" : [ { "value" : "Credit Card" } ] },
       "field_cmcd_receive_date" : { "und" : [
           {
@@ -1787,7 +1797,7 @@ function ableorganizer_donation_sample_data() {
       },
       "field_cmcd_amount" : { "und" : [ { "value" : "100.00" } ] },
       "field_cmcd_order" : { "und" : [ { "order_id" : "23" } ] },
-      "field_cmcd_page" : { "und" : [ { "target_id" : "4" } ] },
+      "field_cmcd_page" : { "und" : [ { "target_id" : "' . $nids[$uuids['ao_donation_form']] . '" } ] },
       "field_cmcd_payment_type" : { "und" : [ { "value" : "Credit Card" } ] },
       "field_cmcd_receive_date" : { "und" : [
           {
@@ -1829,7 +1839,7 @@ function ableorganizer_donation_sample_data() {
       },
       "field_cmcd_amount" : { "und" : [ { "value" : "150.00" } ] },
       "field_cmcd_order" : { "und" : [ { "order_id" : "24" } ] },
-      "field_cmcd_page" : { "und" : [ { "target_id" : "4" } ] },
+      "field_cmcd_page" : { "und" : [ { "target_id" : "' . $nids[$uuids['ao_donation_form']] . '" } ] },
       "field_cmcd_payment_type" : { "und" : [ { "value" : "Credit Card" } ] },
       "field_cmcd_receive_date" : { "und" : [
           {
@@ -1871,7 +1881,7 @@ function ableorganizer_donation_sample_data() {
       },
       "field_cmcd_amount" : { "und" : [ { "value" : "200.00" } ] },
       "field_cmcd_order" : { "und" : [ { "order_id" : "25" } ] },
-      "field_cmcd_page" : { "und" : [ { "target_id" : "4" } ] },
+      "field_cmcd_page" : { "und" : [ { "target_id" : "' . $nids[$uuids['ao_donation_form']] . '" } ] },
       "field_cmcd_payment_type" : { "und" : [ { "value" : "Credit Card" } ] },
       "field_cmcd_receive_date" : { "und" : [
           {
@@ -1913,7 +1923,7 @@ function ableorganizer_donation_sample_data() {
       },
       "field_cmcd_amount" : { "und" : [ { "value" : "250.00" } ] },
       "field_cmcd_order" : { "und" : [ { "order_id" : "26" } ] },
-      "field_cmcd_page" : { "und" : [ { "target_id" : "4" } ] },
+      "field_cmcd_page" : { "und" : [ { "target_id" : "' . $nids[$uuids['ao_donation_form']] . '" } ] },
       "field_cmcd_payment_type" : { "und" : [ { "value" : "Credit Card" } ] },
       "field_cmcd_receive_date" : { "und" : [
           {
@@ -1955,7 +1965,7 @@ function ableorganizer_donation_sample_data() {
       },
       "field_cmcd_amount" : { "und" : [ { "value" : "175.00" } ] },
       "field_cmcd_order" : { "und" : [ { "order_id" : "27" } ] },
-      "field_cmcd_page" : { "und" : [ { "target_id" : "4" } ] },
+      "field_cmcd_page" : { "und" : [ { "target_id" : "' . $nids[$uuids['ao_donation_form']] . '" } ] },
       "field_cmcd_payment_type" : { "und" : [ { "value" : "Credit Card" } ] },
       "field_cmcd_receive_date" : { "und" : [
           {
@@ -1997,7 +2007,7 @@ function ableorganizer_donation_sample_data() {
       },
       "field_cmcd_amount" : { "und" : [ { "value" : "100.00" } ] },
       "field_cmcd_order" : { "und" : [ { "order_id" : "28" } ] },
-      "field_cmcd_page" : { "und" : [ { "target_id" : "4" } ] },
+      "field_cmcd_page" : { "und" : [ { "target_id" : "' . $nids[$uuids['ao_donation_form']] . '" } ] },
       "field_cmcd_payment_type" : { "und" : [ { "value" : "Credit Card" } ] },
       "field_cmcd_receive_date" : { "und" : [
           {
@@ -2039,7 +2049,7 @@ function ableorganizer_donation_sample_data() {
       },
       "field_cmcd_amount" : { "und" : [ { "value" : "75.00" } ] },
       "field_cmcd_order" : { "und" : [ { "order_id" : "29" } ] },
-      "field_cmcd_page" : { "und" : [ { "target_id" : "4" } ] },
+      "field_cmcd_page" : { "und" : [ { "target_id" : "' . $nids[$uuids['ao_donation_form']] . '" } ] },
       "field_cmcd_payment_type" : { "und" : [ { "value" : "Credit Card" } ] },
       "field_cmcd_receive_date" : { "und" : [
           {
@@ -2081,7 +2091,7 @@ function ableorganizer_donation_sample_data() {
       },
       "field_cmcd_amount" : { "und" : [ { "value" : "175.00" } ] },
       "field_cmcd_order" : { "und" : [ { "order_id" : "30" } ] },
-      "field_cmcd_page" : { "und" : [ { "target_id" : "4" } ] },
+      "field_cmcd_page" : { "und" : [ { "target_id" : "' . $nids[$uuids['ao_donation_form']] . '" } ] },
       "field_cmcd_payment_type" : { "und" : [ { "value" : "Credit Card" } ] },
       "field_cmcd_receive_date" : { "und" : [
           {
@@ -2123,7 +2133,7 @@ function ableorganizer_donation_sample_data() {
   },
   "field_cmcd_amount" : { "und" : [ { "value" : "25.00" } ] },
   "field_cmcd_order" : [],
-  "field_cmcd_page" : [],
+  "field_cmcd_page" : { "und" : [ { "target_id" : "' . $nids[$uuids['ao_walk_up_donation']] . '" } ] },
   "field_cmcd_payment_type" : { "und" : [ { "value" : "Check" } ] },
   "field_cmcd_receive_date" : { "und" : [
       {
@@ -2165,7 +2175,7 @@ function ableorganizer_donation_sample_data() {
   },
   "field_cmcd_amount" : { "und" : [ { "value" : "50.00" } ] },
   "field_cmcd_order" : [],
-  "field_cmcd_page" : [],
+  "field_cmcd_page" : { "und" : [ { "target_id" : "' . $nids[$uuids['ao_walk_up_donation']] . '" } ] },
   "field_cmcd_payment_type" : { "und" : [ { "value" : "Check" } ] },
   "field_cmcd_receive_date" : { "und" : [
       {
@@ -2207,7 +2217,7 @@ function ableorganizer_donation_sample_data() {
   },
   "field_cmcd_amount" : { "und" : [ { "value" : "25.00" } ] },
   "field_cmcd_order" : [],
-  "field_cmcd_page" : [],
+  "field_cmcd_page" : { "und" : [ { "target_id" : "' . $nids[$uuids['ao_walk_up_donation']] . '" } ] },
   "field_cmcd_payment_type" : { "und" : [ { "value" : "Check" } ] },
   "field_cmcd_receive_date" : { "und" : [
       {
@@ -2249,7 +2259,7 @@ function ableorganizer_donation_sample_data() {
   },
   "field_cmcd_amount" : { "und" : [ { "value" : "75.00" } ] },
   "field_cmcd_order" : [],
-  "field_cmcd_page" : [],
+  "field_cmcd_page" : { "und" : [ { "target_id" : "' . $nids[$uuids['ao_walk_up_donation']] . '" } ] },
   "field_cmcd_payment_type" : { "und" : [ { "value" : "Check" } ] },
   "field_cmcd_receive_date" : { "und" : [
       {
@@ -2291,7 +2301,7 @@ function ableorganizer_donation_sample_data() {
   },
   "field_cmcd_amount" : { "und" : [ { "value" : "25.00" } ] },
   "field_cmcd_order" : [],
-  "field_cmcd_page" : [],
+  "field_cmcd_page" : { "und" : [ { "target_id" : "' . $nids[$uuids['ao_walk_up_donation']] . '" } ] },
   "field_cmcd_payment_type" : { "und" : [ { "value" : "Check" } ] },
   "field_cmcd_receive_date" : { "und" : [
       {
@@ -2333,7 +2343,7 @@ function ableorganizer_donation_sample_data() {
   },
   "field_cmcd_amount" : { "und" : [ { "value" : "25.00" } ] },
   "field_cmcd_order" : [],
-  "field_cmcd_page" : [],
+  "field_cmcd_page" : { "und" : [ { "target_id" : "' . $nids[$uuids['ao_walk_up_donation']] . '" } ] },
   "field_cmcd_payment_type" : { "und" : [ { "value" : "Check" } ] },
   "field_cmcd_receive_date" : { "und" : [
       {
@@ -2375,7 +2385,7 @@ function ableorganizer_donation_sample_data() {
   },
   "field_cmcd_amount" : { "und" : [ { "value" : "50.00" } ] },
   "field_cmcd_order" : [],
-  "field_cmcd_page" : [],
+  "field_cmcd_page" : { "und" : [ { "target_id" : "' . $nids[$uuids['ao_walk_up_donation']] . '" } ] },
   "field_cmcd_payment_type" : { "und" : [ { "value" : "Check" } ] },
   "field_cmcd_receive_date" : { "und" : [
       {
@@ -2417,7 +2427,7 @@ function ableorganizer_donation_sample_data() {
   },
   "field_cmcd_amount" : { "und" : [ { "value" : "25.00" } ] },
   "field_cmcd_order" : [],
-  "field_cmcd_page" : [],
+  "field_cmcd_page" : { "und" : [ { "target_id" : "' . $nids[$uuids['ao_walk_up_donation']] . '" } ] },
   "field_cmcd_payment_type" : { "und" : [ { "value" : "Check" } ] },
   "field_cmcd_receive_date" : { "und" : [
       {
@@ -2459,7 +2469,7 @@ function ableorganizer_donation_sample_data() {
   },
   "field_cmcd_amount" : { "und" : [ { "value" : "100.00" } ] },
   "field_cmcd_order" : [],
-  "field_cmcd_page" : [],
+  "field_cmcd_page" : { "und" : [ { "target_id" : "' . $nids[$uuids['ao_walk_up_donation']] . '" } ] },
   "field_cmcd_payment_type" : { "und" : [ { "value" : "Check" } ] },
   "field_cmcd_receive_date" : { "und" : [
       {
@@ -2501,7 +2511,7 @@ function ableorganizer_donation_sample_data() {
   },
   "field_cmcd_amount" : { "und" : [ { "value" : "125.00" } ] },
   "field_cmcd_order" : [],
-  "field_cmcd_page" : [],
+  "field_cmcd_page" : { "und" : [ { "target_id" : "' . $nids[$uuids['ao_walk_up_donation']] . '" } ] },
   "field_cmcd_payment_type" : { "und" : [ { "value" : "Check" } ] },
   "field_cmcd_receive_date" : { "und" : [
       {
@@ -2523,7 +2533,8 @@ function ableorganizer_donation_sample_data() {
  * Sample data for CRM Core Event.
  */
 function ableorganizer_event_sample_data() {
-  $content_uuids = array(
+  _ableorganizer_sample_event_pages_rebuild_nodes();
+  $uuids = array(
     'simple_reg_form' => 'c4e0254b-e193-4f95-b843-fde40151fd81',
     'simple_single_form' => '52a80050-d98f-4bbf-90e8-9526dd3c77a1',
     'simple_many_form' => '8cbf5460-9633-4fcd-a730-c5832c19e5f0',
@@ -2532,38 +2543,1760 @@ function ableorganizer_event_sample_data() {
   );
 
   // Getting local IDs from universal.
-  $nids = entity_get_id_by_uuid('node', $content_uuids);
+  $nids = entity_get_id_by_uuid('node', $uuids);
 
   $sample_data = array(
-    'crm_core_activity' => array(
-      1 => "{\n  \"revision_id\" : \"41\",\n  \"uid\" : \"1\",\n  \"title\" : \"Event Registration\",\n  \"created\" : \"1378290173\",\n  \"changed\" : \"1378291143\",\n  \"activity_id\" : \"41\",\n  \"type\" : \"cmcev_event_registration\",\n  \"default_revision\" : \"1\",\n  \"field_activity_participants\" : { \"und\" : [ { \"target_id\" : \"11\" } ] },\n  \"field_activity_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-09-04 10:30:00\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_activity_notes\" : [],\n  \"field_cmcev_amount\" : [],\n  \"field_cmcev_event\" : { \"und\" : [ { \"target_id\" : \"{$nids[$content_uuids['simple_quantity_form']]}\" } ] },\n  \"field_cmcev_public\" : { \"und\" : [ { \"value\" : \"0\" } ] },\n  \"field_cmcev_reg_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-09-01 10:30:00\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_cmcev_source\" : { \"und\" : [ { \"value\" : \"Online Registration\" } ] },\n  \"field_cmcev_status\" : { \"und\" : [ { \"value\" : \"Registered\" } ] },\n  \"rdf_mapping\" : []\n}",
-      2 => "{\n  \"revision_id\" : \"42\",\n  \"uid\" : \"1\",\n  \"title\" : \"Event Registration\",\n  \"created\" : \"1378290823\",\n  \"changed\" : \"1378291165\",\n  \"activity_id\" : \"42\",\n  \"type\" : \"cmcev_event_registration\",\n  \"default_revision\" : \"1\",\n  \"field_activity_participants\" : { \"und\" : [ { \"target_id\" : \"9\" } ] },\n  \"field_activity_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-09-02 07:30:00\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_activity_notes\" : [],\n  \"field_cmcev_amount\" : [],\n  \"field_cmcev_event\" : { \"und\" : [ { \"target_id\" : \"{$nids[$content_uuids['simple_quantity_form']]}\" } ] },\n  \"field_cmcev_public\" : { \"und\" : [ { \"value\" : \"0\" } ] },\n  \"field_cmcev_reg_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-09-04 10:30:00\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_cmcev_source\" : { \"und\" : [ { \"value\" : \"Online Registration\" } ] },\n  \"field_cmcev_status\" : { \"und\" : [ { \"value\" : \"Registered\" } ] },\n  \"rdf_mapping\" : []\n}",
-      3 => "{\n  \"revision_id\" : \"43\",\n  \"uid\" : \"1\",\n  \"title\" : \"Event Registration\",\n  \"created\" : \"1378290863\",\n  \"changed\" : \"1378291185\",\n  \"activity_id\" : \"43\",\n  \"type\" : \"cmcev_event_registration\",\n  \"default_revision\" : \"1\",\n  \"field_activity_participants\" : { \"und\" : [ { \"target_id\" : \"7\" } ] },\n  \"field_activity_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-09-03 09:00:00\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_activity_notes\" : [],\n  \"field_cmcev_amount\" : [],\n  \"field_cmcev_event\" : { \"und\" : [ { \"target_id\" : \"{$nids[$content_uuids['simple_quantity_form']]}\" } ] },\n  \"field_cmcev_public\" : { \"und\" : [ { \"value\" : \"0\" } ] },\n  \"field_cmcev_reg_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-09-04 10:30:00\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_cmcev_source\" : { \"und\" : [ { \"value\" : \"Online Registration\" } ] },\n  \"field_cmcev_status\" : { \"und\" : [ { \"value\" : \"Registered\" } ] },\n  \"rdf_mapping\" : []\n}",
-      4 => "{\n  \"revision_id\" : \"44\",\n  \"uid\" : \"1\",\n  \"title\" : \"Event Registration\",\n  \"created\" : \"1378290895\",\n  \"changed\" : \"1378291198\",\n  \"activity_id\" : \"44\",\n  \"type\" : \"cmcev_event_registration\",\n  \"default_revision\" : \"1\",\n  \"field_activity_participants\" : { \"und\" : [ { \"target_id\" : \"5\" } ] },\n  \"field_activity_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-09-02 13:30:00\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_activity_notes\" : [],\n  \"field_cmcev_amount\" : [],\n  \"field_cmcev_event\" : { \"und\" : [ { \"target_id\" : \"{$nids[$content_uuids['simple_quantity_form']]}\" } ] },\n  \"field_cmcev_public\" : { \"und\" : [ { \"value\" : \"0\" } ] },\n  \"field_cmcev_reg_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-09-04 10:30:00\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_cmcev_source\" : { \"und\" : [ { \"value\" : \"Online Registration\" } ] },\n  \"field_cmcev_status\" : { \"und\" : [ { \"value\" : \"Registered\" } ] },\n  \"rdf_mapping\" : []\n}",
-      5 => "{\n  \"revision_id\" : \"45\",\n  \"uid\" : \"1\",\n  \"title\" : \"Event Registration\",\n  \"created\" : \"1378290913\",\n  \"changed\" : \"1378291212\",\n  \"activity_id\" : \"45\",\n  \"type\" : \"cmcev_event_registration\",\n  \"default_revision\" : \"1\",\n  \"field_activity_participants\" : { \"und\" : [ { \"target_id\" : \"3\" } ] },\n  \"field_activity_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-09-02 16:30:00\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_activity_notes\" : [],\n  \"field_cmcev_amount\" : [],\n  \"field_cmcev_event\" : { \"und\" : [ { \"target_id\" : \"{$nids[$content_uuids['simple_quantity_form']]}\" } ] },\n  \"field_cmcev_public\" : { \"und\" : [ { \"value\" : \"0\" } ] },\n  \"field_cmcev_reg_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-09-04 10:30:00\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_cmcev_source\" : { \"und\" : [ { \"value\" : \"Online Registration\" } ] },\n  \"field_cmcev_status\" : { \"und\" : [ { \"value\" : \"Registered\" } ] },\n  \"rdf_mapping\" : []\n}",
-      6 => "{\n  \"revision_id\" : \"46\",\n  \"uid\" : \"1\",\n  \"title\" : \"Event Registration\",\n  \"created\" : \"1378290935\",\n  \"changed\" : \"1378291224\",\n  \"activity_id\" : \"46\",\n  \"type\" : \"cmcev_event_registration\",\n  \"default_revision\" : \"1\",\n  \"field_activity_participants\" : { \"und\" : [ { \"target_id\" : \"10\" } ] },\n  \"field_activity_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-09-06 10:30:00\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_activity_notes\" : [],\n  \"field_cmcev_amount\" : [],\n  \"field_cmcev_event\" : { \"und\" : [ { \"target_id\" : \"{$nids[$content_uuids['simple_quantity_form']]}\" } ] },\n  \"field_cmcev_public\" : { \"und\" : [ { \"value\" : \"0\" } ] },\n  \"field_cmcev_reg_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-09-04 10:30:00\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_cmcev_source\" : { \"und\" : [ { \"value\" : \"Online Registration\" } ] },\n  \"field_cmcev_status\" : { \"und\" : [ { \"value\" : \"Registered\" } ] },\n  \"rdf_mapping\" : []\n}",
-      7 => "{\n  \"revision_id\" : \"47\",\n  \"uid\" : \"1\",\n  \"title\" : \"Event Registration\",\n  \"created\" : \"1378290958\",\n  \"changed\" : \"1378291239\",\n  \"activity_id\" : \"47\",\n  \"type\" : \"cmcev_event_registration\",\n  \"default_revision\" : \"1\",\n  \"field_activity_participants\" : { \"und\" : [ { \"target_id\" : \"8\" } ] },\n  \"field_activity_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-09-05 06:30:00\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_activity_notes\" : [],\n  \"field_cmcev_amount\" : [],\n  \"field_cmcev_event\" : { \"und\" : [ { \"target_id\" : \"{$nids[$content_uuids['simple_quantity_form']]}\" } ] },\n  \"field_cmcev_public\" : { \"und\" : [ { \"value\" : \"0\" } ] },\n  \"field_cmcev_reg_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-09-04 10:30:00\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_cmcev_source\" : { \"und\" : [ { \"value\" : \"Online Registration\" } ] },\n  \"field_cmcev_status\" : { \"und\" : [ { \"value\" : \"Registered\" } ] },\n  \"rdf_mapping\" : []\n}",
-      8 => "{\n  \"revision_id\" : \"48\",\n  \"uid\" : \"1\",\n  \"title\" : \"Event Registration\",\n  \"created\" : \"1378290977\",\n  \"changed\" : \"1378291347\",\n  \"activity_id\" : \"48\",\n  \"type\" : \"cmcev_event_registration\",\n  \"default_revision\" : \"1\",\n  \"field_activity_participants\" : { \"und\" : [ { \"target_id\" : \"6\" } ] },\n  \"field_activity_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-09-07 18:30:00\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_activity_notes\" : [],\n  \"field_cmcev_amount\" : [],\n  \"field_cmcev_event\" : { \"und\" : [ { \"target_id\" : \"{$nids[$content_uuids['simple_quantity_form']]}\" } ] },\n  \"field_cmcev_public\" : { \"und\" : [ { \"value\" : \"0\" } ] },\n  \"field_cmcev_reg_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-09-04 10:30:00\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_cmcev_source\" : { \"und\" : [ { \"value\" : \"Telephone\" } ] },\n  \"field_cmcev_status\" : { \"und\" : [ { \"value\" : \"Registered\" } ] },\n  \"rdf_mapping\" : []\n}",
-      9 => "{\n  \"revision_id\" : \"49\",\n  \"uid\" : \"1\",\n  \"title\" : \"Event Registration\",\n  \"created\" : \"1378290998\",\n  \"changed\" : \"1378291357\",\n  \"activity_id\" : \"49\",\n  \"type\" : \"cmcev_event_registration\",\n  \"default_revision\" : \"1\",\n  \"field_activity_participants\" : { \"und\" : [ { \"target_id\" : \"4\" } ] },\n  \"field_activity_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-09-06 07:30:00\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_activity_notes\" : [],\n  \"field_cmcev_amount\" : [],\n  \"field_cmcev_event\" : { \"und\" : [ { \"target_id\" : \"{$nids[$content_uuids['simple_quantity_form']]}\" } ] },\n  \"field_cmcev_public\" : { \"und\" : [ { \"value\" : \"0\" } ] },\n  \"field_cmcev_reg_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-09-04 10:30:00\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_cmcev_source\" : { \"und\" : [ { \"value\" : \"Walk Up\" } ] },\n  \"field_cmcev_status\" : { \"und\" : [ { \"value\" : \"Registered\" } ] },\n  \"rdf_mapping\" : []\n}",
-      10 => "{\n  \"revision_id\" : \"50\",\n  \"uid\" : \"1\",\n  \"title\" : \"Event Registration\",\n  \"created\" : \"1378291020\",\n  \"changed\" : \"1378291365\",\n  \"activity_id\" : \"50\",\n  \"type\" : \"cmcev_event_registration\",\n  \"default_revision\" : \"1\",\n  \"field_activity_participants\" : { \"und\" : [ { \"target_id\" : \"2\" } ] },\n  \"field_activity_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-09-02 07:30:00\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_activity_notes\" : [],\n  \"field_cmcev_amount\" : [],\n  \"field_cmcev_event\" : { \"und\" : [ { \"target_id\" : \"{$nids[$content_uuids['simple_quantity_form']]}\" } ] },\n  \"field_cmcev_public\" : { \"und\" : [ { \"value\" : \"0\" } ] },\n  \"field_cmcev_reg_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-09-04 10:30:00\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_cmcev_source\" : { \"und\" : [ { \"value\" : \"Walk Up\" } ] },\n  \"field_cmcev_status\" : { \"und\" : [ { \"value\" : \"Registered\" } ] },\n  \"rdf_mapping\" : []\n}",
-      11 => "{\n  \"revision_id\" : \"51\",\n  \"uid\" : \"1\",\n  \"title\" : \"On-line Event Registration\",\n  \"created\" : \"1378291498\",\n  \"changed\" : \"1378291601\",\n  \"activity_id\" : \"51\",\n  \"type\" : \"cmcev_event_registration\",\n  \"default_revision\" : \"1\",\n  \"field_activity_participants\" : { \"und\" : [ { \"target_id\" : \"5\" } ] },\n  \"field_activity_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-09-04 10:45:00\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_activity_notes\" : [],\n  \"field_cmcev_amount\" : { \"und\" : [ { \"value\" : \"50.00\" } ] },\n  \"field_cmcev_event\" : { \"und\" : [ { \"target_id\" : \"{$nids[$content_uuids['simple_single_form']]}\" } ] },\n  \"field_cmcev_public\" : { \"und\" : [ { \"value\" : \"0\" } ] },\n  \"field_cmcev_reg_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-08-04 10:45:00\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_cmcev_source\" : { \"und\" : [ { \"value\" : \"Online Registration\" } ] },\n  \"field_cmcev_status\" : { \"und\" : [ { \"value\" : \"Registered\" } ] },\n  \"rdf_mapping\" : []\n}",
-      12 => "{\n  \"revision_id\" : \"52\",\n  \"uid\" : \"1\",\n  \"title\" : \"On-line Event Registration\",\n  \"created\" : \"1378291639\",\n  \"changed\" : \"1378291639\",\n  \"activity_id\" : \"52\",\n  \"type\" : \"cmcev_event_registration\",\n  \"default_revision\" : \"1\",\n  \"field_activity_participants\" : { \"und\" : [ { \"target_id\" : \"10\" } ] },\n  \"field_activity_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-09-04 10:47:19\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_activity_notes\" : [],\n  \"field_cmcev_amount\" : { \"und\" : [ { \"value\" : \"50.00\" } ] },\n  \"field_cmcev_event\" : { \"und\" : [ { \"target_id\" : \"{$nids[$content_uuids['simple_single_form']]}\" } ] },\n  \"field_cmcev_public\" : { \"und\" : [ { \"value\" : \"0\" } ] },\n  \"field_cmcev_reg_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-08-10 06:45:00\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_cmcev_source\" : { \"und\" : [ { \"value\" : \"Online Registration\" } ] },\n  \"field_cmcev_status\" : { \"und\" : [ { \"value\" : \"Registered\" } ] },\n  \"rdf_mapping\" : []\n}",
-      13 => "{\n  \"revision_id\" : \"53\",\n  \"uid\" : \"1\",\n  \"title\" : \"On-line Event Registration\",\n  \"created\" : \"1378292127\",\n  \"changed\" : \"1378292127\",\n  \"activity_id\" : \"53\",\n  \"type\" : \"cmcev_event_registration\",\n  \"default_revision\" : \"1\",\n  \"field_activity_participants\" : { \"und\" : [ { \"target_id\" : \"8\" } ] },\n  \"field_activity_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-09-04 10:55:28\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_activity_notes\" : [],\n  \"field_cmcev_amount\" : { \"und\" : [ { \"value\" : \"50.00\" } ] },\n  \"field_cmcev_event\" : { \"und\" : [ { \"target_id\" : \"{$nids[$content_uuids['simple_single_form']]}\" } ] },\n  \"field_cmcev_public\" : { \"und\" : [ { \"value\" : \"0\" } ] },\n  \"field_cmcev_reg_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-08-06 11:00:00\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_cmcev_source\" : { \"und\" : [ { \"value\" : \"Online Registration\" } ] },\n  \"field_cmcev_status\" : { \"und\" : [ { \"value\" : \"Registered\" } ] },\n  \"rdf_mapping\" : []\n}",
-      14 => "{\n  \"revision_id\" : \"54\",\n  \"uid\" : \"1\",\n  \"title\" : \"On-line Event Registration\",\n  \"created\" : \"1378292173\",\n  \"changed\" : \"1378292173\",\n  \"activity_id\" : \"54\",\n  \"type\" : \"cmcev_event_registration\",\n  \"default_revision\" : \"1\",\n  \"field_activity_participants\" : { \"und\" : [ { \"target_id\" : \"4\" } ] },\n  \"field_activity_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-09-04 10:56:13\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_activity_notes\" : [],\n  \"field_cmcev_amount\" : { \"und\" : [ { \"value\" : \"50.00\" } ] },\n  \"field_cmcev_event\" : { \"und\" : [ { \"target_id\" : \"{$nids[$content_uuids['simple_single_form']]}\" } ] },\n  \"field_cmcev_public\" : { \"und\" : [ { \"value\" : \"0\" } ] },\n  \"field_cmcev_reg_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-08-05 06:00:00\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_cmcev_source\" : { \"und\" : [ { \"value\" : \"Online Registration\" } ] },\n  \"field_cmcev_status\" : { \"und\" : [ { \"value\" : \"Registered\" } ] },\n  \"rdf_mapping\" : []\n}",
-      15 => "{\n  \"revision_id\" : \"55\",\n  \"uid\" : \"1\",\n  \"title\" : \"On-line Event Registration\",\n  \"created\" : \"1378292241\",\n  \"changed\" : \"1378292241\",\n  \"activity_id\" : \"55\",\n  \"type\" : \"cmcev_event_registration\",\n  \"default_revision\" : \"1\",\n  \"field_activity_participants\" : { \"und\" : [ { \"target_id\" : \"2\" } ] },\n  \"field_activity_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-09-04 10:57:21\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_activity_notes\" : [],\n  \"field_cmcev_amount\" : { \"und\" : [ { \"value\" : \"50.00\" } ] },\n  \"field_cmcev_event\" : { \"und\" : [ { \"target_id\" : \"{$nids[$content_uuids['simple_single_form']]}\" } ] },\n  \"field_cmcev_public\" : { \"und\" : [ { \"value\" : \"0\" } ] },\n  \"field_cmcev_reg_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-08-06 11:00:00\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_cmcev_source\" : { \"und\" : [ { \"value\" : \"Online Registration\" } ] },\n  \"field_cmcev_status\" : { \"und\" : [ { \"value\" : \"Registered\" } ] },\n  \"rdf_mapping\" : []\n}",
-      16 => "{\n  \"revision_id\" : \"56\",\n  \"uid\" : \"1\",\n  \"title\" : \"On-line Event Registration\",\n  \"created\" : \"1378292276\",\n  \"changed\" : \"1378292276\",\n  \"activity_id\" : \"56\",\n  \"type\" : \"cmcev_event_registration\",\n  \"default_revision\" : \"1\",\n  \"field_activity_participants\" : { \"und\" : [ { \"target_id\" : \"11\" } ] },\n  \"field_activity_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-09-04 10:57:56\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_activity_notes\" : [],\n  \"field_cmcev_amount\" : { \"und\" : [ { \"value\" : \"50.00\" } ] },\n  \"field_cmcev_event\" : { \"und\" : [ { \"target_id\" : \"{$nids[$content_uuids['simple_single_form']]}\" } ] },\n  \"field_cmcev_public\" : { \"und\" : [ { \"value\" : \"0\" } ] },\n  \"field_cmcev_reg_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-09-02 13:15:00\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_cmcev_source\" : { \"und\" : [ { \"value\" : \"Online Registration\" } ] },\n  \"field_cmcev_status\" : { \"und\" : [ { \"value\" : \"Registered\" } ] },\n  \"rdf_mapping\" : []\n}",
-      17 => "{\n  \"revision_id\" : \"57\",\n  \"uid\" : \"1\",\n  \"title\" : \"On-line Event Registration\",\n  \"created\" : \"1378292706\",\n  \"changed\" : \"1378292706\",\n  \"activity_id\" : \"57\",\n  \"type\" : \"cmcev_event_registration\",\n  \"default_revision\" : \"1\",\n  \"field_activity_participants\" : { \"und\" : [ { \"target_id\" : \"9\" } ] },\n  \"field_activity_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-09-04 11:05:06\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_activity_notes\" : [],\n  \"field_cmcev_amount\" : { \"und\" : [ { \"value\" : \"50.00\" } ] },\n  \"field_cmcev_event\" : { \"und\" : [ { \"target_id\" : \"{$nids[$content_uuids['simple_many_form']]}\" } ] },\n  \"field_cmcev_public\" : { \"und\" : [ { \"value\" : \"0\" } ] },\n  \"field_cmcev_reg_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-09-03 11:00:00\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_cmcev_source\" : { \"und\" : [ { \"value\" : \"Online Registration\" } ] },\n  \"field_cmcev_status\" : { \"und\" : [ { \"value\" : \"Registered\" } ] },\n  \"rdf_mapping\" : []\n}",
-      18 => "{\n  \"revision_id\" : \"58\",\n  \"uid\" : \"1\",\n  \"title\" : \"On-line Event Registration\",\n  \"created\" : \"1378292733\",\n  \"changed\" : \"1378292733\",\n  \"activity_id\" : \"58\",\n  \"type\" : \"cmcev_event_registration\",\n  \"default_revision\" : \"1\",\n  \"field_activity_participants\" : { \"und\" : [ { \"target_id\" : \"3\" } ] },\n  \"field_activity_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-09-04 11:05:33\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_activity_notes\" : [],\n  \"field_cmcev_amount\" : { \"und\" : [ { \"value\" : \"200.00\" } ] },\n  \"field_cmcev_event\" : { \"und\" : [ { \"target_id\" : \"{$nids[$content_uuids['simple_many_form']]}\" } ] },\n  \"field_cmcev_public\" : { \"und\" : [ { \"value\" : \"0\" } ] },\n  \"field_cmcev_reg_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-08-13 11:00:00\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_cmcev_source\" : { \"und\" : [ { \"value\" : \"Telephone\" } ] },\n  \"field_cmcev_status\" : { \"und\" : [ { \"value\" : \"Registered\" } ] },\n  \"rdf_mapping\" : []\n}",
-      19 => "{\n  \"revision_id\" : \"59\",\n  \"uid\" : \"1\",\n  \"title\" : \"On-line Event Registration\",\n  \"created\" : \"1378292831\",\n  \"changed\" : \"1378292831\",\n  \"activity_id\" : \"59\",\n  \"type\" : \"cmcev_event_registration\",\n  \"default_revision\" : \"1\",\n  \"field_activity_participants\" : { \"und\" : [ { \"target_id\" : \"5\" } ] },\n  \"field_activity_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-09-04 11:07:11\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_activity_notes\" : [],\n  \"field_cmcev_amount\" : { \"und\" : [ { \"value\" : \"0.00\" } ] },\n  \"field_cmcev_event\" : { \"und\" : [ { \"target_id\" : \"{$nids[$content_uuids['simple_many_form']]}\" } ] },\n  \"field_cmcev_public\" : { \"und\" : [ { \"value\" : \"0\" } ] },\n  \"field_cmcev_reg_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-08-15 11:00:00\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_cmcev_source\" : { \"und\" : [ { \"value\" : \"Walk Up\" } ] },\n  \"field_cmcev_status\" : { \"und\" : [ { \"value\" : \"Registered\" } ] },\n  \"rdf_mapping\" : []\n}",
-      20 => "{\n  \"revision_id\" : \"60\",\n  \"uid\" : \"1\",\n  \"title\" : \"On-line Event Registration\",\n  \"created\" : \"1378292867\",\n  \"changed\" : \"1378292867\",\n  \"activity_id\" : \"60\",\n  \"type\" : \"cmcev_event_registration\",\n  \"default_revision\" : \"1\",\n  \"field_activity_participants\" : { \"und\" : [ { \"target_id\" : \"8\" } ] },\n  \"field_activity_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-09-04 11:07:48\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_activity_notes\" : [],\n  \"field_cmcev_amount\" : { \"und\" : [ { \"value\" : \"200.00\" } ] },\n  \"field_cmcev_event\" : { \"und\" : [ { \"target_id\" : \"{$nids[$content_uuids['simple_many_form']]}\" } ] },\n  \"field_cmcev_public\" : { \"und\" : [ { \"value\" : \"0\" } ] },\n  \"field_cmcev_reg_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-08-20 11:00:00\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_cmcev_source\" : { \"und\" : [ { \"value\" : \"Walk Up\" } ] },\n  \"field_cmcev_status\" : { \"und\" : [ { \"value\" : \"Registered\" } ] },\n  \"rdf_mapping\" : []\n}",
-      21 => "{\n  \"revision_id\" : \"61\",\n  \"uid\" : \"1\",\n  \"title\" : \"On-line Event Registration\",\n  \"created\" : \"1378292909\",\n  \"changed\" : \"1378292909\",\n  \"activity_id\" : \"61\",\n  \"type\" : \"cmcev_event_registration\",\n  \"default_revision\" : \"1\",\n  \"field_activity_participants\" : { \"und\" : [ { \"target_id\" : \"4\" } ] },\n  \"field_activity_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-09-04 11:08:30\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_activity_notes\" : [],\n  \"field_cmcev_amount\" : { \"und\" : [ { \"value\" : \"50.00\" } ] },\n  \"field_cmcev_event\" : { \"und\" : [ { \"target_id\" : \"{$nids[$content_uuids['simple_many_form']]}\" } ] },\n  \"field_cmcev_public\" : { \"und\" : [ { \"value\" : \"0\" } ] },\n  \"field_cmcev_reg_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-08-28 11:15:00\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_cmcev_source\" : { \"und\" : [ { \"value\" : \"Online Registration\" } ] },\n  \"field_cmcev_status\" : { \"und\" : [ { \"value\" : \"Registered\" } ] },\n  \"rdf_mapping\" : []\n}",
-      22 => "{\n  \"revision_id\" : \"62\",\n  \"uid\" : \"1\",\n  \"title\" : \"On-line Event Registration\",\n  \"created\" : \"1378292946\",\n  \"changed\" : \"1378292946\",\n  \"activity_id\" : \"62\",\n  \"type\" : \"cmcev_event_registration\",\n  \"default_revision\" : \"1\",\n  \"field_activity_participants\" : { \"und\" : [ { \"target_id\" : \"2\" } ] },\n  \"field_activity_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-09-04 11:09:06\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_activity_notes\" : [],\n  \"field_cmcev_amount\" : { \"und\" : [ { \"value\" : \"50.00\" } ] },\n  \"field_cmcev_event\" : { \"und\" : [ { \"target_id\" : \"{$nids[$content_uuids['simple_many_form']]}\" } ] },\n  \"field_cmcev_public\" : { \"und\" : [ { \"value\" : \"0\" } ] },\n  \"field_cmcev_reg_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-08-18 11:15:00\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_cmcev_source\" : { \"und\" : [ { \"value\" : \"Online Registration\" } ] },\n  \"field_cmcev_status\" : { \"und\" : [ { \"value\" : \"Registered\" } ] },\n  \"rdf_mapping\" : []\n}",
-      23 => "{\n  \"revision_id\" : \"63\",\n  \"uid\" : \"1\",\n  \"title\" : \"On-line Event Registration\",\n  \"created\" : \"1378292979\",\n  \"changed\" : \"1378292979\",\n  \"activity_id\" : \"63\",\n  \"type\" : \"cmcev_event_registration\",\n  \"default_revision\" : \"1\",\n  \"field_activity_participants\" : { \"und\" : [ { \"target_id\" : \"11\" } ] },\n  \"field_activity_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-09-04 11:09:39\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_activity_notes\" : [],\n  \"field_cmcev_amount\" : { \"und\" : [ { \"value\" : \"200.00\" } ] },\n  \"field_cmcev_event\" : { \"und\" : [ { \"target_id\" : \"{$nids[$content_uuids['simple_many_form']]}\" } ] },\n  \"field_cmcev_public\" : { \"und\" : [ { \"value\" : \"0\" } ] },\n  \"field_cmcev_reg_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-08-25 11:15:00\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_cmcev_source\" : { \"und\" : [ { \"value\" : \"Telephone\" } ] },\n  \"field_cmcev_status\" : { \"und\" : [ { \"value\" : \"Registered\" } ] },\n  \"rdf_mapping\" : []\n}",
-      24 => "{\n  \"revision_id\" : \"64\",\n  \"uid\" : \"1\",\n  \"title\" : \"On-line Event Registration\",\n  \"created\" : \"1378293129\",\n  \"changed\" : \"1378293129\",\n  \"activity_id\" : \"64\",\n  \"type\" : \"cmcev_event_registration\",\n  \"default_revision\" : \"1\",\n  \"field_activity_participants\" : { \"und\" : [ { \"target_id\" : \"8\" } ] },\n  \"field_activity_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-09-04 11:12:10\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_activity_notes\" : [],\n  \"field_cmcev_amount\" : { \"und\" : [ { \"value\" : \"250.00\" } ] },\n  \"field_cmcev_event\" : { \"und\" : [ { \"target_id\" : \"{$nids[$content_uuids['simple_reg_form']]}\" } ] },\n  \"field_cmcev_public\" : { \"und\" : [ { \"value\" : \"0\" } ] },\n  \"field_cmcev_reg_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-08-26 11:15:00\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_cmcev_source\" : { \"und\" : [ { \"value\" : \"Telephone\" } ] },\n  \"field_cmcev_status\" : { \"und\" : [ { \"value\" : \"Attended\" } ] },\n  \"rdf_mapping\" : []\n}",
-      25 => "{\n  \"revision_id\" : \"65\",\n  \"uid\" : \"1\",\n  \"title\" : \"On-line Event Registration\",\n  \"created\" : \"1378294466\",\n  \"changed\" : \"1378294466\",\n  \"activity_id\" : \"65\",\n  \"type\" : \"cmcev_event_registration\",\n  \"default_revision\" : \"1\",\n  \"field_activity_participants\" : { \"und\" : [ { \"target_id\" : \"4\" } ] },\n  \"field_activity_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-09-04 11:34:26\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_activity_notes\" : [],\n  \"field_cmcev_amount\" : { \"und\" : [ { \"value\" : \"0.00\" } ] },\n  \"field_cmcev_event\" : { \"und\" : [ { \"target_id\" : \"{$nids[$content_uuids['simple_reg_form']]}\" } ] },\n  \"field_cmcev_public\" : { \"und\" : [ { \"value\" : \"0\" } ] },\n  \"field_cmcev_reg_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-08-26 11:30:00\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_cmcev_source\" : { \"und\" : [ { \"value\" : \"Walk Up\" } ] },\n  \"field_cmcev_status\" : { \"und\" : [ { \"value\" : \"Attended\" } ] },\n  \"rdf_mapping\" : []\n}",
-      26 => "{\n  \"revision_id\" : \"66\",\n  \"uid\" : \"1\",\n  \"title\" : \"On-line Event Registration\",\n  \"created\" : \"1378294516\",\n  \"changed\" : \"1378294516\",\n  \"activity_id\" : \"66\",\n  \"type\" : \"cmcev_event_registration\",\n  \"default_revision\" : \"1\",\n  \"field_activity_participants\" : { \"und\" : [ { \"target_id\" : \"2\" } ] },\n  \"field_activity_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-09-04 11:35:16\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_activity_notes\" : [],\n  \"field_cmcev_amount\" : { \"und\" : [ { \"value\" : \"150.00\" } ] },\n  \"field_cmcev_event\" : { \"und\" : [ { \"target_id\" : \"{$nids[$content_uuids['simple_reg_form']]}\" } ] },\n  \"field_cmcev_public\" : { \"und\" : [ { \"value\" : \"0\" } ] },\n  \"field_cmcev_reg_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-08-26 11:30:00\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_cmcev_source\" : { \"und\" : [ { \"value\" : \"Online Registration\" } ] },\n  \"field_cmcev_status\" : { \"und\" : [ { \"value\" : \"Attended\" } ] },\n  \"rdf_mapping\" : []\n}",
-      27 => "{\n  \"revision_id\" : \"67\",\n  \"uid\" : \"1\",\n  \"title\" : \"On-line Event Registration\",\n  \"created\" : \"1378294658\",\n  \"changed\" : \"1378294658\",\n  \"activity_id\" : \"67\",\n  \"type\" : \"cmcev_event_registration\",\n  \"default_revision\" : \"1\",\n  \"field_activity_participants\" : { \"und\" : [ { \"target_id\" : \"11\" } ] },\n  \"field_activity_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-09-04 11:37:39\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_activity_notes\" : [],\n  \"field_cmcev_amount\" : { \"und\" : [ { \"value\" : \"400.00\" } ] },\n  \"field_cmcev_event\" : { \"und\" : [ { \"target_id\" : \"{$nids[$content_uuids['simple_reg_form']]}\" } ] },\n  \"field_cmcev_public\" : { \"und\" : [ { \"value\" : \"0\" } ] },\n  \"field_cmcev_reg_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-08-21 11:30:00\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_cmcev_source\" : { \"und\" : [ { \"value\" : \"Walk Up\" } ] },\n  \"field_cmcev_status\" : { \"und\" : [ { \"value\" : \"Attended\" } ] },\n  \"rdf_mapping\" : []\n}",
-      28 => "{\n  \"revision_id\" : \"68\",\n  \"uid\" : \"1\",\n  \"title\" : \"On-line Event Registration\",\n  \"created\" : \"1378294837\",\n  \"changed\" : \"1378294837\",\n  \"activity_id\" : \"68\",\n  \"type\" : \"cmcev_event_registration\",\n  \"default_revision\" : \"1\",\n  \"field_activity_participants\" : { \"und\" : [ { \"target_id\" : \"7\" } ] },\n  \"field_activity_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-09-04 11:40:37\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_activity_notes\" : [],\n  \"field_cmcev_amount\" : { \"und\" : [ { \"value\" : \"50.00\" } ] },\n  \"field_cmcev_event\" : { \"und\" : [ { \"target_id\" : \"{$nids[$content_uuids['simple_reg_form']]}\" } ] },\n  \"field_cmcev_public\" : { \"und\" : [ { \"value\" : \"0\" } ] },\n  \"field_cmcev_reg_date\" : { \"und\" : [\n      {\n        \"value\" : \"2013-08-22 11:45:00\",\n        \"timezone\" : \"Europe\\/Helsinki\",\n        \"timezone_db\" : \"UTC\",\n        \"date_type\" : \"datetime\"\n      }\n    ]\n  },\n  \"field_cmcev_source\" : { \"und\" : [ { \"value\" : \"Online Registration\" } ] },\n  \"field_cmcev_status\" : { \"und\" : [ { \"value\" : \"Registered\" } ] },\n  \"rdf_mapping\" : []\n}",
+    'crm_core_activity' => array (
+      0 => '{
+  "uid" : "1",
+  "title" : "On-line event registration",
+  "created" : "1381158001",
+  "changed" : "1381158001",
+  "type" : "cmcev_event_registration",
+  "default_revision" : "1",
+  "field_activity_participants" : { "und" : [ { "target_id" : "2" } ] },
+  "field_activity_date" : { "und" : [
+      {
+        "value" : "2013-09-09 15:00:01",
+        "timezone" : "UTC",
+        "timezone_db" : "UTC",
+        "date_type" : "datetime"
+      }
+    ]
+  },
+  "field_activity_notes" : [],
+  "field_cmcev_amount" : { "und" : [ { "value" : "365.00" } ] },
+  "field_cmcev_event" : { "und" : [ { "target_id" : "' . $nids[$uuids['simple_quantity_form']] . '" } ] },
+  "field_cmcev_order" : [],
+  "field_cmcev_public" : { "und" : [ { "value" : "1" } ] },
+  "field_cmcev_reg_date" : { "und" : [
+      {
+        "value" : "2013-09-10 15:00:01",
+        "timezone" : "UTC",
+        "timezone_db" : "UTC",
+        "date_type" : "datetime"
+      }
+    ]
+  },
+  "field_cmcev_source" : { "und" : [ { "value" : "Telephone" } ] },
+  "field_cmcev_status" : { "und" : [ { "value" : "Attended" } ] },
+  "rdf_mapping" : []
+}',
+      1 => '{
+  "uid" : "1",
+  "title" : "On-line event registration",
+  "created" : "1381158001",
+  "changed" : "1381158001",
+  "type" : "cmcev_event_registration",
+  "default_revision" : "1",
+  "field_activity_participants" : { "und" : [ { "target_id" : "2" } ] },
+  "field_activity_date" : { "und" : [
+      {
+        "value" : "2013-09-29 15:00:01",
+        "timezone" : "UTC",
+        "timezone_db" : "UTC",
+        "date_type" : "datetime"
+      }
+    ]
+  },
+  "field_activity_notes" : [],
+  "field_cmcev_amount" : { "und" : [ { "value" : "224.00" } ] },
+  "field_cmcev_event" : { "und" : [ { "target_id" : "' . $nids[$uuids['simple_single_form']] . '" } ] },
+  "field_cmcev_order" : [],
+  "field_cmcev_public" : { "und" : [ { "value" : "0" } ] },
+  "field_cmcev_reg_date" : { "und" : [
+      {
+        "value" : "2013-10-02 15:00:01",
+        "timezone" : "UTC",
+        "timezone_db" : "UTC",
+        "date_type" : "datetime"
+      }
+    ]
+  },
+  "field_cmcev_source" : { "und" : [ { "value" : "Online Registration" } ] },
+  "field_cmcev_status" : { "und" : [ { "value" : "Registered" } ] },
+  "rdf_mapping" : []
+}',
+      2 => '{
+  "uid" : "1",
+  "title" : "On-line event registration",
+  "created" : "1381158001",
+  "changed" : "1381158001",
+  "type" : "cmcev_event_registration",
+  "default_revision" : "1",
+  "field_activity_participants" : { "und" : [ { "target_id" : "2" } ] },
+  "field_activity_date" : { "und" : [
+      {
+        "value" : "2013-09-19 15:00:01",
+        "timezone" : "UTC",
+        "timezone_db" : "UTC",
+        "date_type" : "datetime"
+      }
+    ]
+  },
+  "field_activity_notes" : [],
+  "field_cmcev_amount" : { "und" : [ { "value" : "500.00" } ] },
+  "field_cmcev_event" : { "und" : [ { "target_id" : "' . $nids[$uuids['simple_many_form']] . '" } ] },
+  "field_cmcev_order" : [],
+  "field_cmcev_public" : { "und" : [ { "value" : "0" } ] },
+  "field_cmcev_reg_date" : { "und" : [
+      {
+        "value" : "2013-09-10 15:00:01",
+        "timezone" : "UTC",
+        "timezone_db" : "UTC",
+        "date_type" : "datetime"
+      }
+    ]
+  },
+  "field_cmcev_source" : { "und" : [ { "value" : "Online Registration" } ] },
+  "field_cmcev_status" : { "und" : [ { "value" : "Registered" } ] },
+  "rdf_mapping" : []
+}',
+      3 => '{
+  "uid" : "1",
+  "title" : "On-line event registration",
+  "created" : "1381158001",
+  "changed" : "1381158001",
+  "type" : "cmcev_event_registration",
+  "default_revision" : "1",
+  "field_activity_participants" : { "und" : [ { "target_id" : "2" } ] },
+  "field_activity_date" : { "und" : [
+      {
+        "value" : "2013-09-08 15:00:01",
+        "timezone" : "UTC",
+        "timezone_db" : "UTC",
+        "date_type" : "datetime"
+      }
+    ]
+  },
+  "field_activity_notes" : [],
+  "field_cmcev_amount" : { "und" : [ { "value" : "321.00" } ] },
+  "field_cmcev_event" : { "und" : [ { "target_id" : "' . $nids[$uuids['phonebank']] . '" } ] },
+  "field_cmcev_order" : [],
+  "field_cmcev_public" : { "und" : [ { "value" : "1" } ] },
+  "field_cmcev_reg_date" : { "und" : [
+      {
+        "value" : "2013-09-22 15:00:01",
+        "timezone" : "UTC",
+        "timezone_db" : "UTC",
+        "date_type" : "datetime"
+      }
+    ]
+  },
+  "field_cmcev_source" : { "und" : [ { "value" : "Telephone" } ] },
+  "field_cmcev_status" : { "und" : [ { "value" : "Attended" } ] },
+  "rdf_mapping" : []
+}',
+      4 => '{
+  "uid" : "1",
+  "title" : "On-line event registration",
+  "created" : "1381158001",
+  "changed" : "1381158001",
+  "type" : "cmcev_event_registration",
+  "default_revision" : "1",
+  "field_activity_participants" : { "und" : [ { "target_id" : "2" } ] },
+  "field_activity_date" : { "und" : [
+      {
+        "value" : "2013-09-18 15:00:01",
+        "timezone" : "UTC",
+        "timezone_db" : "UTC",
+        "date_type" : "datetime"
+      }
+    ]
+  },
+  "field_activity_notes" : [],
+  "field_cmcev_amount" : { "und" : [ { "value" : "441.00" } ] },
+  "field_cmcev_event" : { "und" : [ { "target_id" : "' . $nids[$uuids['simple_reg_form']] . '" } ] },
+  "field_cmcev_order" : [],
+  "field_cmcev_public" : { "und" : [ { "value" : "0" } ] },
+  "field_cmcev_reg_date" : { "und" : [
+      {
+        "value" : "2013-09-11 15:00:01",
+        "timezone" : "UTC",
+        "timezone_db" : "UTC",
+        "date_type" : "datetime"
+      }
+    ]
+  },
+  "field_cmcev_source" : { "und" : [ { "value" : "Online Registration" } ] },
+  "field_cmcev_status" : { "und" : [ { "value" : "Registered" } ] },
+  "rdf_mapping" : []
+}',
+      5 => '{
+  "uid" : "1",
+  "title" : "On-line event registration",
+  "created" : "1381158001",
+  "changed" : "1381158001",
+  "type" : "cmcev_event_registration",
+  "default_revision" : "1",
+  "field_activity_participants" : { "und" : [ { "target_id" : "3" } ] },
+  "field_activity_date" : { "und" : [
+      {
+        "value" : "2013-09-25 15:00:01",
+        "timezone" : "UTC",
+        "timezone_db" : "UTC",
+        "date_type" : "datetime"
+      }
+    ]
+  },
+  "field_activity_notes" : [],
+  "field_cmcev_amount" : { "und" : [ { "value" : "34.00" } ] },
+  "field_cmcev_event" : { "und" : [ { "target_id" : "' . $nids[$uuids['simple_quantity_form']] . '" } ] },
+  "field_cmcev_order" : [],
+  "field_cmcev_public" : { "und" : [ { "value" : "1" } ] },
+  "field_cmcev_reg_date" : { "und" : [
+      {
+        "value" : "2013-09-22 15:00:01",
+        "timezone" : "UTC",
+        "timezone_db" : "UTC",
+        "date_type" : "datetime"
+      }
+    ]
+  },
+  "field_cmcev_source" : { "und" : [ { "value" : "Online Registration" } ] },
+  "field_cmcev_status" : { "und" : [ { "value" : "Registered" } ] },
+  "rdf_mapping" : []
+}',
+      6 => '{
+  "uid" : "1",
+  "title" : "On-line event registration",
+  "created" : "1381158001",
+  "changed" : "1381158001",
+  "type" : "cmcev_event_registration",
+  "default_revision" : "1",
+  "field_activity_participants" : { "und" : [ { "target_id" : "3" } ] },
+  "field_activity_date" : { "und" : [
+      {
+        "value" : "2013-09-30 15:00:01",
+        "timezone" : "UTC",
+        "timezone_db" : "UTC",
+        "date_type" : "datetime"
+      }
+    ]
+  },
+  "field_activity_notes" : [],
+  "field_cmcev_amount" : { "und" : [ { "value" : "218.00" } ] },
+  "field_cmcev_event" : { "und" : [ { "target_id" : "' . $nids[$uuids['simple_single_form']] . '" } ] },
+  "field_cmcev_order" : [],
+  "field_cmcev_public" : { "und" : [ { "value" : "0" } ] },
+  "field_cmcev_reg_date" : { "und" : [
+      {
+        "value" : "2013-09-22 15:00:01",
+        "timezone" : "UTC",
+        "timezone_db" : "UTC",
+        "date_type" : "datetime"
+      }
+    ]
+  },
+  "field_cmcev_source" : { "und" : [ { "value" : "Online Registration" } ] },
+  "field_cmcev_status" : { "und" : [ { "value" : "Registered" } ] },
+  "rdf_mapping" : []
+}',
+      7 => '{
+  "uid" : "1",
+  "title" : "On-line event registration",
+  "created" : "1381158001",
+  "changed" : "1381158001",
+  "type" : "cmcev_event_registration",
+  "default_revision" : "1",
+  "field_activity_participants" : { "und" : [ { "target_id" : "3" } ] },
+  "field_activity_date" : { "und" : [
+      {
+        "value" : "2013-09-19 15:00:01",
+        "timezone" : "UTC",
+        "timezone_db" : "UTC",
+        "date_type" : "datetime"
+      }
+    ]
+  },
+  "field_activity_notes" : [],
+  "field_cmcev_amount" : { "und" : [ { "value" : "411.00" } ] },
+  "field_cmcev_event" : { "und" : [ { "target_id" : "' . $nids[$uuids['simple_many_form']] . '" } ] },
+  "field_cmcev_order" : [],
+  "field_cmcev_public" : { "und" : [ { "value" : "0" } ] },
+  "field_cmcev_reg_date" : { "und" : [
+      {
+        "value" : "2013-09-14 15:00:01",
+        "timezone" : "UTC",
+        "timezone_db" : "UTC",
+        "date_type" : "datetime"
+      }
+    ]
+  },
+  "field_cmcev_source" : { "und" : [ { "value" : "Online Registration" } ] },
+  "field_cmcev_status" : { "und" : [ { "value" : "Registered" } ] },
+  "rdf_mapping" : []
+}',
+      8 => '{
+  "uid" : "1",
+  "title" : "On-line event registration",
+  "created" : "1381158001",
+  "changed" : "1381158001",
+  "type" : "cmcev_event_registration",
+  "default_revision" : "1",
+  "field_activity_participants" : { "und" : [ { "target_id" : "3" } ] },
+  "field_activity_date" : { "und" : [
+      {
+        "value" : "2013-10-02 15:00:01",
+        "timezone" : "UTC",
+        "timezone_db" : "UTC",
+        "date_type" : "datetime"
+      }
+    ]
+  },
+  "field_activity_notes" : [],
+  "field_cmcev_amount" : { "und" : [ { "value" : "469.00" } ] },
+  "field_cmcev_event" : { "und" : [ { "target_id" : "' . $nids[$uuids['phonebank']] . '" } ] },
+  "field_cmcev_order" : [],
+  "field_cmcev_public" : { "und" : [ { "value" : "1" } ] },
+  "field_cmcev_reg_date" : { "und" : [
+      {
+        "value" : "2013-09-09 15:00:01",
+        "timezone" : "UTC",
+        "timezone_db" : "UTC",
+        "date_type" : "datetime"
+      }
+    ]
+  },
+  "field_cmcev_source" : { "und" : [ { "value" : "Telephone" } ] },
+  "field_cmcev_status" : { "und" : [ { "value" : "Registered" } ] },
+  "rdf_mapping" : []
+}',
+      9 => '{
+  "uid" : "1",
+  "title" : "On-line event registration",
+  "created" : "1381158001",
+  "changed" : "1381158001",
+  "type" : "cmcev_event_registration",
+  "default_revision" : "1",
+  "field_activity_participants" : { "und" : [ { "target_id" : "3" } ] },
+  "field_activity_date" : { "und" : [
+      {
+        "value" : "2013-09-17 15:00:01",
+        "timezone" : "UTC",
+        "timezone_db" : "UTC",
+        "date_type" : "datetime"
+      }
+    ]
+  },
+  "field_activity_notes" : [],
+  "field_cmcev_amount" : { "und" : [ { "value" : "354.00" } ] },
+  "field_cmcev_event" : { "und" : [ { "target_id" : "' . $nids[$uuids['simple_reg_form']] . '" } ] },
+  "field_cmcev_order" : [],
+  "field_cmcev_public" : { "und" : [ { "value" : "0" } ] },
+  "field_cmcev_reg_date" : { "und" : [
+      {
+        "value" : "2013-09-18 15:00:01",
+        "timezone" : "UTC",
+        "timezone_db" : "UTC",
+        "date_type" : "datetime"
+      }
+    ]
+  },
+  "field_cmcev_source" : { "und" : [ { "value" : "Online Registration" } ] },
+  "field_cmcev_status" : { "und" : [ { "value" : "Attended" } ] },
+  "rdf_mapping" : []
+}',
+      10 => '{
+  "uid" : "1",
+  "title" : "On-line event registration",
+  "created" : "1381158001",
+  "changed" : "1381158001",
+  "type" : "cmcev_event_registration",
+  "default_revision" : "1",
+  "field_activity_participants" : { "und" : [ { "target_id" : "4" } ] },
+  "field_activity_date" : { "und" : [
+      {
+        "value" : "2013-09-29 15:00:01",
+        "timezone" : "UTC",
+        "timezone_db" : "UTC",
+        "date_type" : "datetime"
+      }
+    ]
+  },
+  "field_activity_notes" : [],
+  "field_cmcev_amount" : { "und" : [ { "value" : "38.00" } ] },
+  "field_cmcev_event" : { "und" : [ { "target_id" : "' . $nids[$uuids['simple_quantity_form']] . '" } ] },
+  "field_cmcev_order" : [],
+  "field_cmcev_public" : { "und" : [ { "value" : "1" } ] },
+  "field_cmcev_reg_date" : { "und" : [
+      {
+        "value" : "2013-09-20 15:00:01",
+        "timezone" : "UTC",
+        "timezone_db" : "UTC",
+        "date_type" : "datetime"
+      }
+    ]
+  },
+  "field_cmcev_source" : { "und" : [ { "value" : "Online Registration" } ] },
+  "field_cmcev_status" : { "und" : [ { "value" : "Registered" } ] },
+  "rdf_mapping" : []
+}',
+      11 => '{
+  "uid" : "1",
+  "title" : "On-line event registration",
+  "created" : "1381158001",
+  "changed" : "1381158001",
+  "type" : "cmcev_event_registration",
+  "default_revision" : "1",
+  "field_activity_participants" : { "und" : [ { "target_id" : "4" } ] },
+  "field_activity_date" : { "und" : [
+      {
+        "value" : "2013-09-18 15:00:01",
+        "timezone" : "UTC",
+        "timezone_db" : "UTC",
+        "date_type" : "datetime"
+      }
+    ]
+  },
+  "field_activity_notes" : [],
+  "field_cmcev_amount" : { "und" : [ { "value" : "601.00" } ] },
+  "field_cmcev_event" : { "und" : [ { "target_id" : "' . $nids[$uuids['simple_single_form']] . '" } ] },
+  "field_cmcev_order" : [],
+  "field_cmcev_public" : { "und" : [ { "value" : "0" } ] },
+  "field_cmcev_reg_date" : { "und" : [
+      {
+        "value" : "2013-09-15 15:00:01",
+        "timezone" : "UTC",
+        "timezone_db" : "UTC",
+        "date_type" : "datetime"
+      }
+    ]
+  },
+  "field_cmcev_source" : { "und" : [ { "value" : "Online Registration" } ] },
+  "field_cmcev_status" : { "und" : [ { "value" : "Registered" } ] },
+  "rdf_mapping" : []
+}',
+      12 => '{
+  "uid" : "1",
+  "title" : "On-line event registration",
+  "created" : "1381158001",
+  "changed" : "1381158001",
+  "type" : "cmcev_event_registration",
+  "default_revision" : "1",
+  "field_activity_participants" : { "und" : [ { "target_id" : "4" } ] },
+  "field_activity_date" : { "und" : [
+      {
+        "value" : "2013-09-30 15:00:01",
+        "timezone" : "UTC",
+        "timezone_db" : "UTC",
+        "date_type" : "datetime"
+      }
+    ]
+  },
+  "field_activity_notes" : [],
+  "field_cmcev_amount" : { "und" : [ { "value" : "155.00" } ] },
+  "field_cmcev_event" : { "und" : [ { "target_id" : "' . $nids[$uuids['simple_many_form']] . '" } ] },
+  "field_cmcev_order" : [],
+  "field_cmcev_public" : { "und" : [ { "value" : "0" } ] },
+  "field_cmcev_reg_date" : { "und" : [
+      {
+        "value" : "2013-09-17 15:00:01",
+        "timezone" : "UTC",
+        "timezone_db" : "UTC",
+        "date_type" : "datetime"
+      }
+    ]
+  },
+  "field_cmcev_source" : { "und" : [ { "value" : "Telephone" } ] },
+  "field_cmcev_status" : { "und" : [ { "value" : "Registered" } ] },
+  "rdf_mapping" : []
+}',
+      13 => '{
+  "uid" : "1",
+  "title" : "On-line event registration",
+  "created" : "1381158001",
+  "changed" : "1381158001",
+  "type" : "cmcev_event_registration",
+  "default_revision" : "1",
+  "field_activity_participants" : { "und" : [ { "target_id" : "4" } ] },
+  "field_activity_date" : { "und" : [
+      {
+        "value" : "2013-10-06 15:00:01",
+        "timezone" : "UTC",
+        "timezone_db" : "UTC",
+        "date_type" : "datetime"
+      }
+    ]
+  },
+  "field_activity_notes" : [],
+  "field_cmcev_amount" : { "und" : [ { "value" : "337.00" } ] },
+  "field_cmcev_event" : { "und" : [ { "target_id" : "' . $nids[$uuids['phonebank']] . '" } ] },
+  "field_cmcev_order" : [],
+  "field_cmcev_public" : { "und" : [ { "value" : "1" } ] },
+  "field_cmcev_reg_date" : { "und" : [
+      {
+        "value" : "2013-09-11 15:00:01",
+        "timezone" : "UTC",
+        "timezone_db" : "UTC",
+        "date_type" : "datetime"
+      }
+    ]
+  },
+  "field_cmcev_source" : { "und" : [ { "value" : "Online Registration" } ] },
+  "field_cmcev_status" : { "und" : [ { "value" : "Registered" } ] },
+  "rdf_mapping" : []
+}',
+      14 => '{
+  "uid" : "1",
+  "title" : "On-line event registration",
+  "created" : "1381158001",
+  "changed" : "1381158001",
+  "type" : "cmcev_event_registration",
+  "default_revision" : "1",
+  "field_activity_participants" : { "und" : [ { "target_id" : "4" } ] },
+  "field_activity_date" : { "und" : [
+      {
+        "value" : "2013-10-01 15:00:01",
+        "timezone" : "UTC",
+        "timezone_db" : "UTC",
+        "date_type" : "datetime"
+      }
+    ]
+  },
+  "field_activity_notes" : [],
+  "field_cmcev_amount" : { "und" : [ { "value" : "908.00" } ] },
+  "field_cmcev_event" : { "und" : [ { "target_id" : "' . $nids[$uuids['simple_reg_form']] . '" } ] },
+  "field_cmcev_order" : [],
+  "field_cmcev_public" : { "und" : [ { "value" : "0" } ] },
+  "field_cmcev_reg_date" : { "und" : [
+      {
+        "value" : "2013-09-12 15:00:01",
+        "timezone" : "UTC",
+        "timezone_db" : "UTC",
+        "date_type" : "datetime"
+      }
+    ]
+  },
+  "field_cmcev_source" : { "und" : [ { "value" : "Online Registration" } ] },
+  "field_cmcev_status" : { "und" : [ { "value" : "Attended" } ] },
+  "rdf_mapping" : []
+}',
+      15 => '{
+  "uid" : "1",
+  "title" : "On-line event registration",
+  "created" : "1381158001",
+  "changed" : "1381158001",
+  "type" : "cmcev_event_registration",
+  "default_revision" : "1",
+  "field_activity_participants" : { "und" : [ { "target_id" : "5" } ] },
+  "field_activity_date" : { "und" : [
+      {
+        "value" : "2013-09-25 15:00:01",
+        "timezone" : "UTC",
+        "timezone_db" : "UTC",
+        "date_type" : "datetime"
+      }
+    ]
+  },
+  "field_activity_notes" : [],
+  "field_cmcev_amount" : { "und" : [ { "value" : "663.00" } ] },
+  "field_cmcev_event" : { "und" : [ { "target_id" : "' . $nids[$uuids['simple_quantity_form']] . '" } ] },
+  "field_cmcev_order" : [],
+  "field_cmcev_public" : { "und" : [ { "value" : "1" } ] },
+  "field_cmcev_reg_date" : { "und" : [
+      {
+        "value" : "2013-09-16 15:00:01",
+        "timezone" : "UTC",
+        "timezone_db" : "UTC",
+        "date_type" : "datetime"
+      }
+    ]
+  },
+  "field_cmcev_source" : { "und" : [ { "value" : "Online Registration" } ] },
+  "field_cmcev_status" : { "und" : [ { "value" : "Registered" } ] },
+  "rdf_mapping" : []
+}',
+      16 => '{
+  "uid" : "1",
+  "title" : "On-line event registration",
+  "created" : "1381158001",
+  "changed" : "1381158001",
+  "type" : "cmcev_event_registration",
+  "default_revision" : "1",
+  "field_activity_participants" : { "und" : [ { "target_id" : "5" } ] },
+  "field_activity_date" : { "und" : [
+      {
+        "value" : "2013-09-25 15:00:01",
+        "timezone" : "UTC",
+        "timezone_db" : "UTC",
+        "date_type" : "datetime"
+      }
+    ]
+  },
+  "field_activity_notes" : [],
+  "field_cmcev_amount" : { "und" : [ { "value" : "590.00" } ] },
+  "field_cmcev_event" : { "und" : [ { "target_id" : "' . $nids[$uuids['simple_single_form']] . '" } ] },
+  "field_cmcev_order" : [],
+  "field_cmcev_public" : { "und" : [ { "value" : "0" } ] },
+  "field_cmcev_reg_date" : { "und" : [
+      {
+        "value" : "2013-09-28 15:00:01",
+        "timezone" : "UTC",
+        "timezone_db" : "UTC",
+        "date_type" : "datetime"
+      }
+    ]
+  },
+  "field_cmcev_source" : { "und" : [ { "value" : "Online Registration" } ] },
+  "field_cmcev_status" : { "und" : [ { "value" : "Registered" } ] },
+  "rdf_mapping" : []
+}',
+      17 => '{
+  "uid" : "1",
+  "title" : "On-line event registration",
+  "created" : "1381158001",
+  "changed" : "1381158001",
+  "type" : "cmcev_event_registration",
+  "default_revision" : "1",
+  "field_activity_participants" : { "und" : [ { "target_id" : "5" } ] },
+  "field_activity_date" : { "und" : [
+      {
+        "value" : "2013-09-16 15:00:01",
+        "timezone" : "UTC",
+        "timezone_db" : "UTC",
+        "date_type" : "datetime"
+      }
+    ]
+  },
+  "field_activity_notes" : [],
+  "field_cmcev_amount" : { "und" : [ { "value" : "106.00" } ] },
+  "field_cmcev_event" : { "und" : [ { "target_id" : "' . $nids[$uuids['simple_many_form']] . '" } ] },
+  "field_cmcev_order" : [],
+  "field_cmcev_public" : { "und" : [ { "value" : "0" } ] },
+  "field_cmcev_reg_date" : { "und" : [
+      {
+        "value" : "2013-10-01 15:00:01",
+        "timezone" : "UTC",
+        "timezone_db" : "UTC",
+        "date_type" : "datetime"
+      }
+    ]
+  },
+  "field_cmcev_source" : { "und" : [ { "value" : "Online Registration" } ] },
+  "field_cmcev_status" : { "und" : [ { "value" : "Registered" } ] },
+  "rdf_mapping" : []
+}',
+      18 => '{
+  "uid" : "1",
+  "title" : "On-line event registration",
+  "created" : "1381158001",
+  "changed" : "1381158001",
+  "type" : "cmcev_event_registration",
+  "default_revision" : "1",
+  "field_activity_participants" : { "und" : [ { "target_id" : "5" } ] },
+  "field_activity_date" : { "und" : [
+      {
+        "value" : "2013-09-09 15:00:01",
+        "timezone" : "UTC",
+        "timezone_db" : "UTC",
+        "date_type" : "datetime"
+      }
+    ]
+  },
+  "field_activity_notes" : [],
+  "field_cmcev_amount" : { "und" : [ { "value" : "657.00" } ] },
+  "field_cmcev_event" : { "und" : [ { "target_id" : "' . $nids[$uuids['phonebank']] . '" } ] },
+  "field_cmcev_order" : [],
+  "field_cmcev_public" : { "und" : [ { "value" : "1" } ] },
+  "field_cmcev_reg_date" : { "und" : [
+      {
+        "value" : "2013-09-14 15:00:01",
+        "timezone" : "UTC",
+        "timezone_db" : "UTC",
+        "date_type" : "datetime"
+      }
+    ]
+  },
+  "field_cmcev_source" : { "und" : [ { "value" : "Telephone" } ] },
+  "field_cmcev_status" : { "und" : [ { "value" : "Registered" } ] },
+  "rdf_mapping" : []
+}',
+      19 => '{
+  "uid" : "1",
+  "title" : "On-line event registration",
+  "created" : "1381158001",
+  "changed" : "1381158001",
+  "type" : "cmcev_event_registration",
+  "default_revision" : "1",
+  "field_activity_participants" : { "und" : [ { "target_id" : "5" } ] },
+  "field_activity_date" : { "und" : [
+      {
+        "value" : "2013-09-09 15:00:01",
+        "timezone" : "UTC",
+        "timezone_db" : "UTC",
+        "date_type" : "datetime"
+      }
+    ]
+  },
+  "field_activity_notes" : [],
+  "field_cmcev_amount" : { "und" : [ { "value" : "949.00" } ] },
+  "field_cmcev_event" : { "und" : [ { "target_id" : "' . $nids[$uuids['simple_reg_form']] . '" } ] },
+  "field_cmcev_order" : [],
+  "field_cmcev_public" : { "und" : [ { "value" : "0" } ] },
+  "field_cmcev_reg_date" : { "und" : [
+      {
+        "value" : "2013-09-28 15:00:01",
+        "timezone" : "UTC",
+        "timezone_db" : "UTC",
+        "date_type" : "datetime"
+      }
+    ]
+  },
+  "field_cmcev_source" : { "und" : [ { "value" : "Online Registration" } ] },
+  "field_cmcev_status" : { "und" : [ { "value" : "Attended" } ] },
+  "rdf_mapping" : []
+}',
+      20 => '{
+  "uid" : "1",
+  "title" : "On-line event registration",
+  "created" : "1381158001",
+  "changed" : "1381158001",
+  "type" : "cmcev_event_registration",
+  "default_revision" : "1",
+  "field_activity_participants" : { "und" : [ { "target_id" : "6" } ] },
+  "field_activity_date" : { "und" : [
+      {
+        "value" : "2013-09-07 15:00:01",
+        "timezone" : "UTC",
+        "timezone_db" : "UTC",
+        "date_type" : "datetime"
+      }
+    ]
+  },
+  "field_activity_notes" : [],
+  "field_cmcev_amount" : { "und" : [ { "value" : "993.00" } ] },
+  "field_cmcev_event" : { "und" : [ { "target_id" : "' . $nids[$uuids['simple_quantity_form']] . '" } ] },
+  "field_cmcev_order" : [],
+  "field_cmcev_public" : { "und" : [ { "value" : "1" } ] },
+  "field_cmcev_reg_date" : { "und" : [
+      {
+        "value" : "2013-09-15 15:00:01",
+        "timezone" : "UTC",
+        "timezone_db" : "UTC",
+        "date_type" : "datetime"
+      }
+    ]
+  },
+  "field_cmcev_source" : { "und" : [ { "value" : "Online Registration" } ] },
+  "field_cmcev_status" : { "und" : [ { "value" : "Registered" } ] },
+  "rdf_mapping" : []
+}',
+      21 => '{
+  "uid" : "1",
+  "title" : "On-line event registration",
+  "created" : "1381158001",
+  "changed" : "1381158001",
+  "type" : "cmcev_event_registration",
+  "default_revision" : "1",
+  "field_activity_participants" : { "und" : [ { "target_id" : "6" } ] },
+  "field_activity_date" : { "und" : [
+      {
+        "value" : "2013-09-22 15:00:01",
+        "timezone" : "UTC",
+        "timezone_db" : "UTC",
+        "date_type" : "datetime"
+      }
+    ]
+  },
+  "field_activity_notes" : [],
+  "field_cmcev_amount" : { "und" : [ { "value" : "841.00" } ] },
+  "field_cmcev_event" : { "und" : [ { "target_id" : "' . $nids[$uuids['simple_single_form']] . '" } ] },
+  "field_cmcev_order" : [],
+  "field_cmcev_public" : { "und" : [ { "value" : "0" } ] },
+  "field_cmcev_reg_date" : { "und" : [
+      {
+        "value" : "2013-09-09 15:00:01",
+        "timezone" : "UTC",
+        "timezone_db" : "UTC",
+        "date_type" : "datetime"
+      }
+    ]
+  },
+  "field_cmcev_source" : { "und" : [ { "value" : "Online Registration" } ] },
+  "field_cmcev_status" : { "und" : [ { "value" : "Registered" } ] },
+  "rdf_mapping" : []
+}',
+      22 => '{
+  "uid" : "1",
+  "title" : "On-line event registration",
+  "created" : "1381158001",
+  "changed" : "1381158001",
+  "type" : "cmcev_event_registration",
+  "default_revision" : "1",
+  "field_activity_participants" : { "und" : [ { "target_id" : "6" } ] },
+  "field_activity_date" : { "und" : [
+      {
+        "value" : "2013-10-01 15:00:01",
+        "timezone" : "UTC",
+        "timezone_db" : "UTC",
+        "date_type" : "datetime"
+      }
+    ]
+  },
+  "field_activity_notes" : [],
+  "field_cmcev_amount" : { "und" : [ { "value" : "571.00" } ] },
+  "field_cmcev_event" : { "und" : [ { "target_id" : "' . $nids[$uuids['simple_many_form']] . '" } ] },
+  "field_cmcev_order" : [],
+  "field_cmcev_public" : { "und" : [ { "value" : "0" } ] },
+  "field_cmcev_reg_date" : { "und" : [
+      {
+        "value" : "2013-09-24 15:00:01",
+        "timezone" : "UTC",
+        "timezone_db" : "UTC",
+        "date_type" : "datetime"
+      }
+    ]
+  },
+  "field_cmcev_source" : { "und" : [ { "value" : "Online Registration" } ] },
+  "field_cmcev_status" : { "und" : [ { "value" : "Attended" } ] },
+  "rdf_mapping" : []
+}',
+      23 => '{
+  "uid" : "1",
+  "title" : "On-line event registration",
+  "created" : "1381158001",
+  "changed" : "1381158001",
+  "type" : "cmcev_event_registration",
+  "default_revision" : "1",
+  "field_activity_participants" : { "und" : [ { "target_id" : "6" } ] },
+  "field_activity_date" : { "und" : [
+      {
+        "value" : "2013-10-05 15:00:01",
+        "timezone" : "UTC",
+        "timezone_db" : "UTC",
+        "date_type" : "datetime"
+      }
+    ]
+  },
+  "field_activity_notes" : [],
+  "field_cmcev_amount" : { "und" : [ { "value" : "251.00" } ] },
+  "field_cmcev_event" : { "und" : [ { "target_id" : "' . $nids[$uuids['phonebank']] . '" } ] },
+  "field_cmcev_order" : [],
+  "field_cmcev_public" : { "und" : [ { "value" : "1" } ] },
+  "field_cmcev_reg_date" : { "und" : [
+      {
+        "value" : "2013-09-24 15:00:01",
+        "timezone" : "UTC",
+        "timezone_db" : "UTC",
+        "date_type" : "datetime"
+      }
+    ]
+  },
+  "field_cmcev_source" : { "und" : [ { "value" : "Online Registration" } ] },
+  "field_cmcev_status" : { "und" : [ { "value" : "Registered" } ] },
+  "rdf_mapping" : []
+}',
+      24 => '{
+  "uid" : "1",
+  "title" : "On-line event registration",
+  "created" : "1381158001",
+  "changed" : "1381158001",
+  "type" : "cmcev_event_registration",
+  "default_revision" : "1",
+  "field_activity_participants" : { "und" : [ { "target_id" : "6" } ] },
+  "field_activity_date" : { "und" : [
+      {
+        "value" : "2013-09-17 15:00:01",
+        "timezone" : "UTC",
+        "timezone_db" : "UTC",
+        "date_type" : "datetime"
+      }
+    ]
+  },
+  "field_activity_notes" : [],
+  "field_cmcev_amount" : { "und" : [ { "value" : "49.00" } ] },
+  "field_cmcev_event" : { "und" : [ { "target_id" : "' . $nids[$uuids['simple_reg_form']] . '" } ] },
+  "field_cmcev_order" : [],
+  "field_cmcev_public" : { "und" : [ { "value" : "0" } ] },
+  "field_cmcev_reg_date" : { "und" : [
+      {
+        "value" : "2013-09-30 15:00:01",
+        "timezone" : "UTC",
+        "timezone_db" : "UTC",
+        "date_type" : "datetime"
+      }
+    ]
+  },
+  "field_cmcev_source" : { "und" : [ { "value" : "Telephone" } ] },
+  "field_cmcev_status" : { "und" : [ { "value" : "Registered" } ] },
+  "rdf_mapping" : []
+}',
+      25 => '{
+  "uid" : "1",
+  "title" : "On-line event registration",
+  "created" : "1381158001",
+  "changed" : "1381158001",
+  "type" : "cmcev_event_registration",
+  "default_revision" : "1",
+  "field_activity_participants" : { "und" : [ { "target_id" : "7" } ] },
+  "field_activity_date" : { "und" : [
+      {
+        "value" : "2013-09-21 15:00:01",
+        "timezone" : "UTC",
+        "timezone_db" : "UTC",
+        "date_type" : "datetime"
+      }
+    ]
+  },
+  "field_activity_notes" : [],
+  "field_cmcev_amount" : { "und" : [ { "value" : "922.00" } ] },
+  "field_cmcev_event" : { "und" : [ { "target_id" : "' . $nids[$uuids['simple_quantity_form']] . '" } ] },
+  "field_cmcev_order" : [],
+  "field_cmcev_public" : { "und" : [ { "value" : "1" } ] },
+  "field_cmcev_reg_date" : { "und" : [
+      {
+        "value" : "2013-10-01 15:00:01",
+        "timezone" : "UTC",
+        "timezone_db" : "UTC",
+        "date_type" : "datetime"
+      }
+    ]
+  },
+  "field_cmcev_source" : { "und" : [ { "value" : "Online Registration" } ] },
+  "field_cmcev_status" : { "und" : [ { "value" : "Registered" } ] },
+  "rdf_mapping" : []
+}',
+      26 => '{
+  "uid" : "1",
+  "title" : "On-line event registration",
+  "created" : "1381158001",
+  "changed" : "1381158001",
+  "type" : "cmcev_event_registration",
+  "default_revision" : "1",
+  "field_activity_participants" : { "und" : [ { "target_id" : "7" } ] },
+  "field_activity_date" : { "und" : [
+      {
+        "value" : "2013-09-17 15:00:02",
+        "timezone" : "UTC",
+        "timezone_db" : "UTC",
+        "date_type" : "datetime"
+      }
+    ]
+  },
+  "field_activity_notes" : [],
+  "field_cmcev_amount" : { "und" : [ { "value" : "907.00" } ] },
+  "field_cmcev_event" : { "und" : [ { "target_id" : "' . $nids[$uuids['simple_single_form']] . '" } ] },
+  "field_cmcev_order" : [],
+  "field_cmcev_public" : { "und" : [ { "value" : "0" } ] },
+  "field_cmcev_reg_date" : { "und" : [
+      {
+        "value" : "2013-09-26 15:00:02",
+        "timezone" : "UTC",
+        "timezone_db" : "UTC",
+        "date_type" : "datetime"
+      }
+    ]
+  },
+  "field_cmcev_source" : { "und" : [ { "value" : "Online Registration" } ] },
+  "field_cmcev_status" : { "und" : [ { "value" : "Registered" } ] },
+  "rdf_mapping" : []
+}',
+      27 => '{
+  "uid" : "1",
+  "title" : "On-line event registration",
+  "created" : "1381158001",
+  "changed" : "1381158001",
+  "type" : "cmcev_event_registration",
+  "default_revision" : "1",
+  "field_activity_participants" : { "und" : [ { "target_id" : "7" } ] },
+  "field_activity_date" : { "und" : [
+      {
+        "value" : "2013-09-30 15:00:02",
+        "timezone" : "UTC",
+        "timezone_db" : "UTC",
+        "date_type" : "datetime"
+      }
+    ]
+  },
+  "field_activity_notes" : [],
+  "field_cmcev_amount" : { "und" : [ { "value" : "754.00" } ] },
+  "field_cmcev_event" : { "und" : [ { "target_id" : "' . $nids[$uuids['simple_many_form']] . '" } ] },
+  "field_cmcev_order" : [],
+  "field_cmcev_public" : { "und" : [ { "value" : "0" } ] },
+  "field_cmcev_reg_date" : { "und" : [
+      {
+        "value" : "2013-10-02 15:00:02",
+        "timezone" : "UTC",
+        "timezone_db" : "UTC",
+        "date_type" : "datetime"
+      }
+    ]
+  },
+  "field_cmcev_source" : { "und" : [ { "value" : "Online Registration" } ] },
+  "field_cmcev_status" : { "und" : [ { "value" : "Registered" } ] },
+  "rdf_mapping" : []
+}',
+      28 => '{
+  "uid" : "1",
+  "title" : "On-line event registration",
+  "created" : "1381158001",
+  "changed" : "1381158001",
+  "type" : "cmcev_event_registration",
+  "default_revision" : "1",
+  "field_activity_participants" : { "und" : [ { "target_id" : "7" } ] },
+  "field_activity_date" : { "und" : [
+      {
+        "value" : "2013-10-02 15:00:02",
+        "timezone" : "UTC",
+        "timezone_db" : "UTC",
+        "date_type" : "datetime"
+      }
+    ]
+  },
+  "field_activity_notes" : [],
+  "field_cmcev_amount" : { "und" : [ { "value" : "521.00" } ] },
+  "field_cmcev_event" : { "und" : [ { "target_id" : "' . $nids[$uuids['phonebank']] . '" } ] },
+  "field_cmcev_order" : [],
+  "field_cmcev_public" : { "und" : [ { "value" : "1" } ] },
+  "field_cmcev_reg_date" : { "und" : [
+      {
+        "value" : "2013-10-03 15:00:02",
+        "timezone" : "UTC",
+        "timezone_db" : "UTC",
+        "date_type" : "datetime"
+      }
+    ]
+  },
+  "field_cmcev_source" : { "und" : [ { "value" : "Online Registration" } ] },
+  "field_cmcev_status" : { "und" : [ { "value" : "Attended" } ] },
+  "rdf_mapping" : []
+}',
+      29 => '{
+  "uid" : "1",
+  "title" : "On-line event registration",
+  "created" : "1381158001",
+  "changed" : "1381158001",
+  "type" : "cmcev_event_registration",
+  "default_revision" : "1",
+  "field_activity_participants" : { "und" : [ { "target_id" : "7" } ] },
+  "field_activity_date" : { "und" : [
+      {
+        "value" : "2013-09-30 15:00:02",
+        "timezone" : "UTC",
+        "timezone_db" : "UTC",
+        "date_type" : "datetime"
+      }
+    ]
+  },
+  "field_activity_notes" : [],
+  "field_cmcev_amount" : { "und" : [ { "value" : "240.00" } ] },
+  "field_cmcev_event" : { "und" : [ { "target_id" : "' . $nids[$uuids['simple_reg_form']] . '" } ] },
+  "field_cmcev_order" : [],
+  "field_cmcev_public" : { "und" : [ { "value" : "0" } ] },
+  "field_cmcev_reg_date" : { "und" : [
+      {
+        "value" : "2013-10-04 15:00:02",
+        "timezone" : "UTC",
+        "timezone_db" : "UTC",
+        "date_type" : "datetime"
+      }
+    ]
+  },
+  "field_cmcev_source" : { "und" : [ { "value" : "Telephone" } ] },
+  "field_cmcev_status" : { "und" : [ { "value" : "Registered" } ] },
+  "rdf_mapping" : []
+}',
+      30 => '{
+  "uid" : "1",
+  "title" : "On-line event registration",
+  "created" : "1381158001",
+  "changed" : "1381158001",
+  "type" : "cmcev_event_registration",
+  "default_revision" : "1",
+  "field_activity_participants" : { "und" : [ { "target_id" : "8" } ] },
+  "field_activity_date" : { "und" : [
+      {
+        "value" : "2013-09-12 15:00:02",
+        "timezone" : "UTC",
+        "timezone_db" : "UTC",
+        "date_type" : "datetime"
+      }
+    ]
+  },
+  "field_activity_notes" : [],
+  "field_cmcev_amount" : { "und" : [ { "value" : "415.00" } ] },
+  "field_cmcev_event" : { "und" : [ { "target_id" : "' . $nids[$uuids['simple_quantity_form']] . '" } ] },
+  "field_cmcev_order" : [],
+  "field_cmcev_public" : { "und" : [ { "value" : "1" } ] },
+  "field_cmcev_reg_date" : { "und" : [
+      {
+        "value" : "2013-09-28 15:00:02",
+        "timezone" : "UTC",
+        "timezone_db" : "UTC",
+        "date_type" : "datetime"
+      }
+    ]
+  },
+  "field_cmcev_source" : { "und" : [ { "value" : "Walk Up" } ] },
+  "field_cmcev_status" : { "und" : [ { "value" : "Registered" } ] },
+  "rdf_mapping" : []
+}',
+      31 => '{
+  "uid" : "1",
+  "title" : "On-line event registration",
+  "created" : "1381158001",
+  "changed" : "1381158001",
+  "type" : "cmcev_event_registration",
+  "default_revision" : "1",
+  "field_activity_participants" : { "und" : [ { "target_id" : "8" } ] },
+  "field_activity_date" : { "und" : [
+      {
+        "value" : "2013-10-04 15:00:02",
+        "timezone" : "UTC",
+        "timezone_db" : "UTC",
+        "date_type" : "datetime"
+      }
+    ]
+  },
+  "field_activity_notes" : [],
+  "field_cmcev_amount" : { "und" : [ { "value" : "517.00" } ] },
+  "field_cmcev_event" : { "und" : [ { "target_id" : "' . $nids[$uuids['simple_single_form']] . '" } ] },
+  "field_cmcev_order" : [],
+  "field_cmcev_public" : { "und" : [ { "value" : "0" } ] },
+  "field_cmcev_reg_date" : { "und" : [
+      {
+        "value" : "2013-09-11 15:00:02",
+        "timezone" : "UTC",
+        "timezone_db" : "UTC",
+        "date_type" : "datetime"
+      }
+    ]
+  },
+  "field_cmcev_source" : { "und" : [ { "value" : "Online Registration" } ] },
+  "field_cmcev_status" : { "und" : [ { "value" : "Registered" } ] },
+  "rdf_mapping" : []
+}',
+      32 => '{
+  "uid" : "1",
+  "title" : "On-line event registration",
+  "created" : "1381158001",
+  "changed" : "1381158001",
+  "type" : "cmcev_event_registration",
+  "default_revision" : "1",
+  "field_activity_participants" : { "und" : [ { "target_id" : "8" } ] },
+  "field_activity_date" : { "und" : [
+      {
+        "value" : "2013-10-02 15:00:02",
+        "timezone" : "UTC",
+        "timezone_db" : "UTC",
+        "date_type" : "datetime"
+      }
+    ]
+  },
+  "field_activity_notes" : [],
+  "field_cmcev_amount" : { "und" : [ { "value" : "447.00" } ] },
+  "field_cmcev_event" : { "und" : [ { "target_id" : "' . $nids[$uuids['simple_many_form']] . '" } ] },
+  "field_cmcev_order" : [],
+  "field_cmcev_public" : { "und" : [ { "value" : "0" } ] },
+  "field_cmcev_reg_date" : { "und" : [
+      {
+        "value" : "2013-09-11 15:00:02",
+        "timezone" : "UTC",
+        "timezone_db" : "UTC",
+        "date_type" : "datetime"
+      }
+    ]
+  },
+  "field_cmcev_source" : { "und" : [ { "value" : "Walk Up" } ] },
+  "field_cmcev_status" : { "und" : [ { "value" : "Registered" } ] },
+  "rdf_mapping" : []
+}',
+      33 => '{
+  "uid" : "1",
+  "title" : "On-line event registration",
+  "created" : "1381158001",
+  "changed" : "1381158001",
+  "type" : "cmcev_event_registration",
+  "default_revision" : "1",
+  "field_activity_participants" : { "und" : [ { "target_id" : "8" } ] },
+  "field_activity_date" : { "und" : [
+      {
+        "value" : "2013-10-05 15:00:02",
+        "timezone" : "UTC",
+        "timezone_db" : "UTC",
+        "date_type" : "datetime"
+      }
+    ]
+  },
+  "field_activity_notes" : [],
+  "field_cmcev_amount" : { "und" : [ { "value" : "624.00" } ] },
+  "field_cmcev_event" : { "und" : [ { "target_id" : "' . $nids[$uuids['phonebank']] . '" } ] },
+  "field_cmcev_order" : [],
+  "field_cmcev_public" : { "und" : [ { "value" : "1" } ] },
+  "field_cmcev_reg_date" : { "und" : [
+      {
+        "value" : "2013-09-28 15:00:02",
+        "timezone" : "UTC",
+        "timezone_db" : "UTC",
+        "date_type" : "datetime"
+      }
+    ]
+  },
+  "field_cmcev_source" : { "und" : [ { "value" : "Online Registration" } ] },
+  "field_cmcev_status" : { "und" : [ { "value" : "Attended" } ] },
+  "rdf_mapping" : []
+}',
+      34 => '{
+  "uid" : "1",
+  "title" : "On-line event registration",
+  "created" : "1381158001",
+  "changed" : "1381158001",
+  "type" : "cmcev_event_registration",
+  "default_revision" : "1",
+  "field_activity_participants" : { "und" : [ { "target_id" : "8" } ] },
+  "field_activity_date" : { "und" : [
+      {
+        "value" : "2013-09-22 15:00:02",
+        "timezone" : "UTC",
+        "timezone_db" : "UTC",
+        "date_type" : "datetime"
+      }
+    ]
+  },
+  "field_activity_notes" : [],
+  "field_cmcev_amount" : { "und" : [ { "value" : "540.00" } ] },
+  "field_cmcev_event" : { "und" : [ { "target_id" : "' . $nids[$uuids['simple_reg_form']] . '" } ] },
+  "field_cmcev_order" : [],
+  "field_cmcev_public" : { "und" : [ { "value" : "0" } ] },
+  "field_cmcev_reg_date" : { "und" : [
+      {
+        "value" : "2013-09-18 15:00:02",
+        "timezone" : "UTC",
+        "timezone_db" : "UTC",
+        "date_type" : "datetime"
+      }
+    ]
+  },
+  "field_cmcev_source" : { "und" : [ { "value" : "Online Registration" } ] },
+  "field_cmcev_status" : { "und" : [ { "value" : "Registered" } ] },
+  "rdf_mapping" : []
+}',
+      35 => '{
+  "uid" : "1",
+  "title" : "On-line event registration",
+  "created" : "1381158001",
+  "changed" : "1381158001",
+  "type" : "cmcev_event_registration",
+  "default_revision" : "1",
+  "field_activity_participants" : { "und" : [ { "target_id" : "9" } ] },
+  "field_activity_date" : { "und" : [
+      {
+        "value" : "2013-09-19 15:00:02",
+        "timezone" : "UTC",
+        "timezone_db" : "UTC",
+        "date_type" : "datetime"
+      }
+    ]
+  },
+  "field_activity_notes" : [],
+  "field_cmcev_amount" : { "und" : [ { "value" : "850.00" } ] },
+  "field_cmcev_event" : { "und" : [ { "target_id" : "' . $nids[$uuids['simple_quantity_form']] . '" } ] },
+  "field_cmcev_order" : [],
+  "field_cmcev_public" : { "und" : [ { "value" : "1" } ] },
+  "field_cmcev_reg_date" : { "und" : [
+      {
+        "value" : "2013-10-03 15:00:02",
+        "timezone" : "UTC",
+        "timezone_db" : "UTC",
+        "date_type" : "datetime"
+      }
+    ]
+  },
+  "field_cmcev_source" : { "und" : [ { "value" : "Walk Up" } ] },
+  "field_cmcev_status" : { "und" : [ { "value" : "Registered" } ] },
+  "rdf_mapping" : []
+}',
+      36 => '{
+  "uid" : "1",
+  "title" : "On-line event registration",
+  "created" : "1381158001",
+  "changed" : "1381158001",
+  "type" : "cmcev_event_registration",
+  "default_revision" : "1",
+  "field_activity_participants" : { "und" : [ { "target_id" : "9" } ] },
+  "field_activity_date" : { "und" : [
+      {
+        "value" : "2013-09-25 15:00:02",
+        "timezone" : "UTC",
+        "timezone_db" : "UTC",
+        "date_type" : "datetime"
+      }
+    ]
+  },
+  "field_activity_notes" : [],
+  "field_cmcev_amount" : { "und" : [ { "value" : "739.00" } ] },
+  "field_cmcev_event" : { "und" : [ { "target_id" : "' . $nids[$uuids['simple_single_form']] . '" } ] },
+  "field_cmcev_order" : [],
+  "field_cmcev_public" : { "und" : [ { "value" : "0" } ] },
+  "field_cmcev_reg_date" : { "und" : [
+      {
+        "value" : "2013-09-10 15:00:02",
+        "timezone" : "UTC",
+        "timezone_db" : "UTC",
+        "date_type" : "datetime"
+      }
+    ]
+  },
+  "field_cmcev_source" : { "und" : [ { "value" : "Online Registration" } ] },
+  "field_cmcev_status" : { "und" : [ { "value" : "Registered" } ] },
+  "rdf_mapping" : []
+}',
+      37 => '{
+  "uid" : "1",
+  "title" : "On-line event registration",
+  "created" : "1381158001",
+  "changed" : "1381158001",
+  "type" : "cmcev_event_registration",
+  "default_revision" : "1",
+  "field_activity_participants" : { "und" : [ { "target_id" : "9" } ] },
+  "field_activity_date" : { "und" : [
+      {
+        "value" : "2013-09-24 15:00:02",
+        "timezone" : "UTC",
+        "timezone_db" : "UTC",
+        "date_type" : "datetime"
+      }
+    ]
+  },
+  "field_activity_notes" : [],
+  "field_cmcev_amount" : { "und" : [ { "value" : "574.00" } ] },
+  "field_cmcev_event" : { "und" : [ { "target_id" : "' . $nids[$uuids['simple_many_form']] . '" } ] },
+  "field_cmcev_order" : [],
+  "field_cmcev_public" : { "und" : [ { "value" : "0" } ] },
+  "field_cmcev_reg_date" : { "und" : [
+      {
+        "value" : "2013-09-13 15:00:02",
+        "timezone" : "UTC",
+        "timezone_db" : "UTC",
+        "date_type" : "datetime"
+      }
+    ]
+  },
+  "field_cmcev_source" : { "und" : [ { "value" : "Online Registration" } ] },
+  "field_cmcev_status" : { "und" : [ { "value" : "Registered" } ] },
+  "rdf_mapping" : []
+}',
+      38 => '{
+  "uid" : "1",
+  "title" : "On-line event registration",
+  "created" : "1381158001",
+  "changed" : "1381158001",
+  "type" : "cmcev_event_registration",
+  "default_revision" : "1",
+  "field_activity_participants" : { "und" : [ { "target_id" : "9" } ] },
+  "field_activity_date" : { "und" : [
+      {
+        "value" : "2013-09-08 15:00:02",
+        "timezone" : "UTC",
+        "timezone_db" : "UTC",
+        "date_type" : "datetime"
+      }
+    ]
+  },
+  "field_activity_notes" : [],
+  "field_cmcev_amount" : { "und" : [ { "value" : "756.00" } ] },
+  "field_cmcev_event" : { "und" : [ { "target_id" : "' . $nids[$uuids['phonebank']] . '" } ] },
+  "field_cmcev_order" : [],
+  "field_cmcev_public" : { "und" : [ { "value" : "1" } ] },
+  "field_cmcev_reg_date" : { "und" : [
+      {
+        "value" : "2013-09-21 15:00:02",
+        "timezone" : "UTC",
+        "timezone_db" : "UTC",
+        "date_type" : "datetime"
+      }
+    ]
+  },
+  "field_cmcev_source" : { "und" : [ { "value" : "Walk Up" } ] },
+  "field_cmcev_status" : { "und" : [ { "value" : "Attended" } ] },
+  "rdf_mapping" : []
+}',
+      39 => '{
+  "uid" : "1",
+  "title" : "On-line event registration",
+  "created" : "1381158001",
+  "changed" : "1381158001",
+  "type" : "cmcev_event_registration",
+  "default_revision" : "1",
+  "field_activity_participants" : { "und" : [ { "target_id" : "9" } ] },
+  "field_activity_date" : { "und" : [
+      {
+        "value" : "2013-09-07 15:00:02",
+        "timezone" : "UTC",
+        "timezone_db" : "UTC",
+        "date_type" : "datetime"
+      }
+    ]
+  },
+  "field_activity_notes" : [],
+  "field_cmcev_amount" : { "und" : [ { "value" : "640.00" } ] },
+  "field_cmcev_event" : { "und" : [ { "target_id" : "' . $nids[$uuids['simple_reg_form']] . '" } ] },
+  "field_cmcev_order" : [],
+  "field_cmcev_public" : { "und" : [ { "value" : "0" } ] },
+  "field_cmcev_reg_date" : { "und" : [
+      {
+        "value" : "2013-09-30 15:00:02",
+        "timezone" : "UTC",
+        "timezone_db" : "UTC",
+        "date_type" : "datetime"
+      }
+    ]
+  },
+  "field_cmcev_source" : { "und" : [ { "value" : "Online Registration" } ] },
+  "field_cmcev_status" : { "und" : [ { "value" : "Registered" } ] },
+  "rdf_mapping" : []
+}',
+      40 => '{
+  "uid" : "1",
+  "title" : "On-line event registration",
+  "created" : "1381158001",
+  "changed" : "1381158001",
+  "type" : "cmcev_event_registration",
+  "default_revision" : "1",
+  "field_activity_participants" : { "und" : [ { "target_id" : "10" } ] },
+  "field_activity_date" : { "und" : [
+      {
+        "value" : "2013-09-09 15:00:02",
+        "timezone" : "UTC",
+        "timezone_db" : "UTC",
+        "date_type" : "datetime"
+      }
+    ]
+  },
+  "field_activity_notes" : [],
+  "field_cmcev_amount" : { "und" : [ { "value" : "100.00" } ] },
+  "field_cmcev_event" : { "und" : [ { "target_id" : "' . $nids[$uuids['simple_quantity_form']] . '" } ] },
+  "field_cmcev_order" : [],
+  "field_cmcev_public" : { "und" : [ { "value" : "1" } ] },
+  "field_cmcev_reg_date" : { "und" : [
+      {
+        "value" : "2013-09-23 15:00:02",
+        "timezone" : "UTC",
+        "timezone_db" : "UTC",
+        "date_type" : "datetime"
+      }
+    ]
+  },
+  "field_cmcev_source" : { "und" : [ { "value" : "Online Registration" } ] },
+  "field_cmcev_status" : { "und" : [ { "value" : "Registered" } ] },
+  "rdf_mapping" : []
+}',
+      41 => '{
+  "uid" : "1",
+  "title" : "On-line event registration",
+  "created" : "1381158001",
+  "changed" : "1381158001",
+  "type" : "cmcev_event_registration",
+  "default_revision" : "1",
+  "field_activity_participants" : { "und" : [ { "target_id" : "10" } ] },
+  "field_activity_date" : { "und" : [
+      {
+        "value" : "2013-10-03 15:00:02",
+        "timezone" : "UTC",
+        "timezone_db" : "UTC",
+        "date_type" : "datetime"
+      }
+    ]
+  },
+  "field_activity_notes" : [],
+  "field_cmcev_amount" : { "und" : [ { "value" : "230.00" } ] },
+  "field_cmcev_event" : { "und" : [ { "target_id" : "' . $nids[$uuids['simple_single_form']] . '" } ] },
+  "field_cmcev_order" : [],
+  "field_cmcev_public" : { "und" : [ { "value" : "0" } ] },
+  "field_cmcev_reg_date" : { "und" : [
+      {
+        "value" : "2013-09-30 15:00:02",
+        "timezone" : "UTC",
+        "timezone_db" : "UTC",
+        "date_type" : "datetime"
+      }
+    ]
+  },
+  "field_cmcev_source" : { "und" : [ { "value" : "Online Registration" } ] },
+  "field_cmcev_status" : { "und" : [ { "value" : "Attended" } ] },
+  "rdf_mapping" : []
+}',
+      42 => '{
+  "uid" : "1",
+  "title" : "On-line event registration",
+  "created" : "1381158001",
+  "changed" : "1381158001",
+  "type" : "cmcev_event_registration",
+  "default_revision" : "1",
+  "field_activity_participants" : { "und" : [ { "target_id" : "10" } ] },
+  "field_activity_date" : { "und" : [
+      {
+        "value" : "2013-09-30 15:00:02",
+        "timezone" : "UTC",
+        "timezone_db" : "UTC",
+        "date_type" : "datetime"
+      }
+    ]
+  },
+  "field_activity_notes" : [],
+  "field_cmcev_amount" : { "und" : [ { "value" : "586.00" } ] },
+  "field_cmcev_event" : { "und" : [ { "target_id" : "' . $nids[$uuids['simple_many_form']] . '" } ] },
+  "field_cmcev_order" : [],
+  "field_cmcev_public" : { "und" : [ { "value" : "0" } ] },
+  "field_cmcev_reg_date" : { "und" : [
+      {
+        "value" : "2013-09-19 15:00:02",
+        "timezone" : "UTC",
+        "timezone_db" : "UTC",
+        "date_type" : "datetime"
+      }
+    ]
+  },
+  "field_cmcev_source" : { "und" : [ { "value" : "Online Registration" } ] },
+  "field_cmcev_status" : { "und" : [ { "value" : "Registered" } ] },
+  "rdf_mapping" : []
+}',
+      43 => '{
+  "uid" : "1",
+  "title" : "On-line event registration",
+  "created" : "1381158001",
+  "changed" : "1381158001",
+  "type" : "cmcev_event_registration",
+  "default_revision" : "1",
+  "field_activity_participants" : { "und" : [ { "target_id" : "10" } ] },
+  "field_activity_date" : { "und" : [
+      {
+        "value" : "2013-09-25 15:00:02",
+        "timezone" : "UTC",
+        "timezone_db" : "UTC",
+        "date_type" : "datetime"
+      }
+    ]
+  },
+  "field_activity_notes" : [],
+  "field_cmcev_amount" : { "und" : [ { "value" : "977.00" } ] },
+  "field_cmcev_event" : { "und" : [ { "target_id" : "' . $nids[$uuids['phonebank']] . '" } ] },
+  "field_cmcev_order" : [],
+  "field_cmcev_public" : { "und" : [ { "value" : "1" } ] },
+  "field_cmcev_reg_date" : { "und" : [
+      {
+        "value" : "2013-09-24 15:00:02",
+        "timezone" : "UTC",
+        "timezone_db" : "UTC",
+        "date_type" : "datetime"
+      }
+    ]
+  },
+  "field_cmcev_source" : { "und" : [ { "value" : "Online Registration" } ] },
+  "field_cmcev_status" : { "und" : [ { "value" : "Registered" } ] },
+  "rdf_mapping" : []
+}',
+      44 => '{
+  "uid" : "1",
+  "title" : "On-line event registration",
+  "created" : "1381158001",
+  "changed" : "1381158001",
+  "type" : "cmcev_event_registration",
+  "default_revision" : "1",
+  "field_activity_participants" : { "und" : [ { "target_id" : "10" } ] },
+  "field_activity_date" : { "und" : [
+      {
+        "value" : "2013-09-18 15:00:02",
+        "timezone" : "UTC",
+        "timezone_db" : "UTC",
+        "date_type" : "datetime"
+      }
+    ]
+  },
+  "field_activity_notes" : [],
+  "field_cmcev_amount" : { "und" : [ { "value" : "904.00" } ] },
+  "field_cmcev_event" : { "und" : [ { "target_id" : "' . $nids[$uuids['simple_reg_form']] . '" } ] },
+  "field_cmcev_order" : [],
+  "field_cmcev_public" : { "und" : [ { "value" : "0" } ] },
+  "field_cmcev_reg_date" : { "und" : [
+      {
+        "value" : "2013-10-04 15:00:02",
+        "timezone" : "UTC",
+        "timezone_db" : "UTC",
+        "date_type" : "datetime"
+      }
+    ]
+  },
+  "field_cmcev_source" : { "und" : [ { "value" : "Walk Up" } ] },
+  "field_cmcev_status" : { "und" : [ { "value" : "Attended" } ] },
+  "rdf_mapping" : []
+}',
+      45 => '{
+  "uid" : "1",
+  "title" : "On-line event registration",
+  "created" : "1381158001",
+  "changed" : "1381158001",
+  "type" : "cmcev_event_registration",
+  "default_revision" : "1",
+  "field_activity_participants" : { "und" : [ { "target_id" : "11" } ] },
+  "field_activity_date" : { "und" : [
+      {
+        "value" : "2013-09-29 15:00:02",
+        "timezone" : "UTC",
+        "timezone_db" : "UTC",
+        "date_type" : "datetime"
+      }
+    ]
+  },
+  "field_activity_notes" : [],
+  "field_cmcev_amount" : { "und" : [ { "value" : "943.00" } ] },
+  "field_cmcev_event" : { "und" : [ { "target_id" : "' . $nids[$uuids['simple_quantity_form']] . '" } ] },
+  "field_cmcev_order" : [],
+  "field_cmcev_public" : { "und" : [ { "value" : "1" } ] },
+  "field_cmcev_reg_date" : { "und" : [
+      {
+        "value" : "2013-09-20 15:00:02",
+        "timezone" : "UTC",
+        "timezone_db" : "UTC",
+        "date_type" : "datetime"
+      }
+    ]
+  },
+  "field_cmcev_source" : { "und" : [ { "value" : "Online Registration" } ] },
+  "field_cmcev_status" : { "und" : [ { "value" : "Registered" } ] },
+  "rdf_mapping" : []
+}',
+      46 => '{
+  "uid" : "1",
+  "title" : "On-line event registration",
+  "created" : "1381158001",
+  "changed" : "1381158001",
+  "type" : "cmcev_event_registration",
+  "default_revision" : "1",
+  "field_activity_participants" : { "und" : [ { "target_id" : "11" } ] },
+  "field_activity_date" : { "und" : [
+      {
+        "value" : "2013-09-16 15:00:02",
+        "timezone" : "UTC",
+        "timezone_db" : "UTC",
+        "date_type" : "datetime"
+      }
+    ]
+  },
+  "field_activity_notes" : [],
+  "field_cmcev_amount" : { "und" : [ { "value" : "398.00" } ] },
+  "field_cmcev_event" : { "und" : [ { "target_id" : "' . $nids[$uuids['simple_single_form']] . '" } ] },
+  "field_cmcev_order" : [],
+  "field_cmcev_public" : { "und" : [ { "value" : "0" } ] },
+  "field_cmcev_reg_date" : { "und" : [
+      {
+        "value" : "2013-09-28 15:00:02",
+        "timezone" : "UTC",
+        "timezone_db" : "UTC",
+        "date_type" : "datetime"
+      }
+    ]
+  },
+  "field_cmcev_source" : { "und" : [ { "value" : "Online Registration" } ] },
+  "field_cmcev_status" : { "und" : [ { "value" : "Registered" } ] },
+  "rdf_mapping" : []
+}',
+      47 => '{
+  "uid" : "1",
+  "title" : "On-line event registration",
+  "created" : "1381158001",
+  "changed" : "1381158001",
+  "type" : "cmcev_event_registration",
+  "default_revision" : "1",
+  "field_activity_participants" : { "und" : [ { "target_id" : "11" } ] },
+  "field_activity_date" : { "und" : [
+      {
+        "value" : "2013-09-10 15:00:02",
+        "timezone" : "UTC",
+        "timezone_db" : "UTC",
+        "date_type" : "datetime"
+      }
+    ]
+  },
+  "field_activity_notes" : [],
+  "field_cmcev_amount" : { "und" : [ { "value" : "988.00" } ] },
+  "field_cmcev_event" : { "und" : [ { "target_id" : "' . $nids[$uuids['simple_many_form']] . '" } ] },
+  "field_cmcev_order" : [],
+  "field_cmcev_public" : { "und" : [ { "value" : "0" } ] },
+  "field_cmcev_reg_date" : { "und" : [
+      {
+        "value" : "2013-09-13 15:00:02",
+        "timezone" : "UTC",
+        "timezone_db" : "UTC",
+        "date_type" : "datetime"
+      }
+    ]
+  },
+  "field_cmcev_source" : { "und" : [ { "value" : "Online Registration" } ] },
+  "field_cmcev_status" : { "und" : [ { "value" : "Registered" } ] },
+  "rdf_mapping" : []
+}',
+      48 => '{
+  "uid" : "1",
+  "title" : "On-line event registration",
+  "created" : "1381158001",
+  "changed" : "1381158001",
+  "type" : "cmcev_event_registration",
+  "default_revision" : "1",
+  "field_activity_participants" : { "und" : [ { "target_id" : "11" } ] },
+  "field_activity_date" : { "und" : [
+      {
+        "value" : "2013-09-15 15:00:02",
+        "timezone" : "UTC",
+        "timezone_db" : "UTC",
+        "date_type" : "datetime"
+      }
+    ]
+  },
+  "field_activity_notes" : [],
+  "field_cmcev_amount" : { "und" : [ { "value" : "371.00" } ] },
+  "field_cmcev_event" : { "und" : [ { "target_id" : "' . $nids[$uuids['phonebank']] . '" } ] },
+  "field_cmcev_order" : [],
+  "field_cmcev_public" : { "und" : [ { "value" : "1" } ] },
+  "field_cmcev_reg_date" : { "und" : [
+      {
+        "value" : "2013-10-01 15:00:02",
+        "timezone" : "UTC",
+        "timezone_db" : "UTC",
+        "date_type" : "datetime"
+      }
+    ]
+  },
+  "field_cmcev_source" : { "und" : [ { "value" : "Walk Up" } ] },
+  "field_cmcev_status" : { "und" : [ { "value" : "Attended" } ] },
+  "rdf_mapping" : []
+}',
+      49 => '{
+  "uid" : "1",
+  "title" : "On-line event registration",
+  "created" : "1381158001",
+  "changed" : "1381158001",
+  "type" : "cmcev_event_registration",
+  "default_revision" : "1",
+  "field_activity_participants" : { "und" : [ { "target_id" : "11" } ] },
+  "field_activity_date" : { "und" : [
+      {
+        "value" : "2013-09-26 15:00:02",
+        "timezone" : "UTC",
+        "timezone_db" : "UTC",
+        "date_type" : "datetime"
+      }
+    ]
+  },
+  "field_activity_notes" : [],
+  "field_cmcev_amount" : { "und" : [ { "value" : "444.00" } ] },
+  "field_cmcev_event" : { "und" : [ { "target_id" : "' . $nids[$uuids['simple_reg_form']] . '" } ] },
+  "field_cmcev_order" : [],
+  "field_cmcev_public" : { "und" : [ { "value" : "0" } ] },
+  "field_cmcev_reg_date" : { "und" : [
+      {
+        "value" : "2013-10-03 15:00:02",
+        "timezone" : "UTC",
+        "timezone_db" : "UTC",
+        "date_type" : "datetime"
+      }
+    ]
+  },
+  "field_cmcev_source" : { "und" : [ { "value" : "Walk Up" } ] },
+  "field_cmcev_status" : { "und" : [ { "value" : "Registered" } ] },
+  "rdf_mapping" : []
+}',
     ),
   );
 
@@ -2574,6 +4307,7 @@ function ableorganizer_event_sample_data() {
  * Sample data for CRM Core Petition.
  */
 function ableorganizer_petition_sample_data() {
+  _ableorganizer_sample_petition_pages_rebuild_nodes();
   $uuids = array(
     2 => '71378697-11e3-4d26-bfbd-b9c669b4b14a',
     3 => '7f7cf4e3-560a-49a5-b753-59ddb08141d7',
@@ -4150,6 +5884,7 @@ function ableorganizer_petition_sample_data() {
  * Sample data for CRM Core Volunteer.
  */
 function ableorganizer_volunteer_sample_data() {
+  _ableorganizer_sample_volunteer_pages_rebuild_nodes();
   $content_uuids = array(
     'after_school_tutors_needed' => '2a0e3955-18a5-4be1-a2c4-8dff6e05be73',
     'get_out_the_vote' => '85b8792e-c6f0-41e1-bb04-7cbf6b522abf',

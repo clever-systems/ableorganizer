@@ -31,3 +31,10 @@ function ableorganizer_sample_donation_pages_ctools_plugin_api($module = NULL, $
     return array("version" => "1");
   }
 }
+
+/**
+ * Implements hook_views_api().
+ */
+function ableorganizer_sample_donation_pages_views_api($module = NULL, $api = NULL) {
+  return array("api" => "3.0");
+}

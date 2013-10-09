@@ -1,28 +1,28 @@
 <?php
 /**
  * @file
- * ableorganizer_petition_sample_content.views_default.inc
+ * ableorganizer_sample_donation_pages.views_default.inc
  */
 
 /**
  * Implements hook_views_default_views().
  */
-function ableorganizer_petition_sample_content_views_default_views() {
+function ableorganizer_sample_donation_pages_views_default_views() {
   $export = array();
 
   $view = new view();
-  $view->name = 'ao_sample_petition';
+  $view->name = 'ao_sample_donation';
   $view->description = '';
   $view->tag = 'default';
   $view->base_table = 'node';
-  $view->human_name = 'AbleOrganizer Sample Petitions';
+  $view->human_name = 'AbleOrganizer Sample Donations';
   $view->core = 7;
   $view->api_version = '3.0';
   $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
 
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
-  $handler->display->display_options['title'] = 'Current Petitions';
+  $handler->display->display_options['title'] = 'Donate';
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'perm';
   $handler->display->display_options['cache']['type'] = 'none';
@@ -32,6 +32,7 @@ function ableorganizer_petition_sample_content_views_default_views() {
   $handler->display->display_options['pager']['options']['items_per_page'] = '10';
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['row_plugin'] = 'node';
+  $handler->display->display_options['row_options']['links'] = FALSE;
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
@@ -39,11 +40,10 @@ function ableorganizer_petition_sample_content_views_default_views() {
   $handler->display->display_options['fields']['title']['label'] = '';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
-  /* Sort criterion: Content: Post date */
-  $handler->display->display_options['sorts']['created']['id'] = 'created';
-  $handler->display->display_options['sorts']['created']['table'] = 'node';
-  $handler->display->display_options['sorts']['created']['field'] = 'created';
-  $handler->display->display_options['sorts']['created']['order'] = 'DESC';
+  /* Sort criterion: Content: Title */
+  $handler->display->display_options['sorts']['title']['id'] = 'title';
+  $handler->display->display_options['sorts']['title']['table'] = 'node';
+  $handler->display->display_options['sorts']['title']['field'] = 'title';
   /* Filter criterion: Content: Published */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
@@ -56,19 +56,19 @@ function ableorganizer_petition_sample_content_views_default_views() {
   $handler->display->display_options['filters']['type']['table'] = 'node';
   $handler->display->display_options['filters']['type']['field'] = 'type';
   $handler->display->display_options['filters']['type']['value'] = array(
-    'cmcp_petition' => 'cmcp_petition',
+    'cmcd_page' => 'cmcd_page',
   );
 
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page');
-  $handler->display->display_options['path'] = 'petitions';
+  $handler->display->display_options['path'] = 'donation';
   $handler->display->display_options['menu']['type'] = 'normal';
-  $handler->display->display_options['menu']['title'] = 'Petitions';
-  $handler->display->display_options['menu']['weight'] = '3';
+  $handler->display->display_options['menu']['title'] = 'Donation';
+  $handler->display->display_options['menu']['weight'] = '0';
   $handler->display->display_options['menu']['name'] = 'main-menu';
   $handler->display->display_options['menu']['context'] = 0;
   $handler->display->display_options['menu']['context_only_inline'] = 0;
-  $export['ao_sample_petition'] = $view;
+  $export['ao_sample_donation'] = $view;
 
   return $export;
 }

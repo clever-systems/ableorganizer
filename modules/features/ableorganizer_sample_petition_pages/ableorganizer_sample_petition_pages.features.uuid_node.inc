@@ -1,286 +1,15 @@
 <?php
 /**
  * @file
- * ableorganizer_event_sample_content.features.uuid_node.inc
+ * ableorganizer_sample_petition_pages.features.uuid_node.inc
  */
 
 /**
  * Implements hook_uuid_features_default_content().
  */
-function ableorganizer_event_sample_content_uuid_features_default_content() {
+function ableorganizer_sample_petition_pages_uuid_features_default_content() {
   $nodes = array();
 
-  $nodes[] = array(
-  'uid' => 0,
-  'title' => 'Pepperhill Women in Law Anniversary Dinner ',
-  'log' => '',
-  'status' => 1,
-  'comment' => 1,
-  'promote' => 0,
-  'sticky' => 0,
-  'vuuid' => 'a372d0b3-d31b-4fa1-ab80-2aeeac313dc7',
-  'type' => 'cmcev_event',
-  'language' => 'und',
-  'created' => 1378223591,
-  'tnid' => 0,
-  'translate' => 0,
-  'uuid' => '37106c78-84c8-4e74-a387-5c04b03f5375',
-  'revision_uid' => 1,
-  'body' => array(
-    'und' => array(
-      0 => array(
-        'value' => 'We invite you to join us to celebrate the 60th anniversary of women being accepted into Pepperhill University\'s School of Law. We will have a variety of high-profile speakers and Pepperhill Alumni in attendance. To purchase tickets please fill out the form below. Attire is formal. ',
-        'summary' => '',
-        'format' => 'full_html',
-        'safe_value' => '<p>We invite you to join us to celebrate the 60th anniversary of women being accepted into Pepperhill University\'s School of Law. We will have a variety of high-profile speakers and Pepperhill Alumni in attendance. To purchase tickets please fill out the form below. Attire is formal. </p>
-',
-        'safe_summary' => '',
-      ),
-    ),
-  ),
-  'field_cmcev_date' => array(
-    'und' => array(
-      0 => array(
-        'value' => '2013-10-01 09:00:00',
-        'value2' => '2013-10-06 19:00:00',
-        'timezone' => 'America/New_York',
-        'timezone_db' => 'UTC',
-        'date_type' => 'datetime',
-      ),
-    ),
-  ),
-  'field_cmcev_location' => array(
-    'und' => array(
-      0 => array(
-        'country' => 'US',
-        'administrative_area' => 'CA',
-        'sub_administrative_area' => NULL,
-        'locality' => 'Malibu',
-        'dependent_locality' => NULL,
-        'postal_code' => 90264,
-        'thoroughfare' => 'Malibu Hill Hotel',
-        'premise' => '123 Ocean Drive',
-        'sub_premise' => NULL,
-        'organisation_name' => NULL,
-        'name_line' => NULL,
-        'first_name' => NULL,
-        'last_name' => NULL,
-        'data' => NULL,
-      ),
-    ),
-  ),
-  'rdf_mapping' => array(
-    'rdftype' => array(
-      0 => 'sioc:Item',
-      1 => 'foaf:Document',
-    ),
-    'title' => array(
-      'predicates' => array(
-        0 => 'dc:title',
-      ),
-    ),
-    'created' => array(
-      'predicates' => array(
-        0 => 'dc:date',
-        1 => 'dc:created',
-      ),
-      'datatype' => 'xsd:dateTime',
-      'callback' => 'date_iso8601',
-    ),
-    'changed' => array(
-      'predicates' => array(
-        0 => 'dc:modified',
-      ),
-      'datatype' => 'xsd:dateTime',
-      'callback' => 'date_iso8601',
-    ),
-    'body' => array(
-      'predicates' => array(
-        0 => 'content:encoded',
-      ),
-    ),
-    'uid' => array(
-      'predicates' => array(
-        0 => 'sioc:has_creator',
-      ),
-      'type' => 'rel',
-    ),
-    'name' => array(
-      'predicates' => array(
-        0 => 'foaf:name',
-      ),
-    ),
-    'comment_count' => array(
-      'predicates' => array(
-        0 => 'sioc:num_replies',
-      ),
-      'datatype' => 'xsd:integer',
-    ),
-    'last_activity' => array(
-      'predicates' => array(
-        0 => 'sioc:last_activity_date',
-      ),
-      'datatype' => 'xsd:dateTime',
-      'callback' => 'date_iso8601',
-    ),
-  ),
-  'cid' => 0,
-  'last_comment_name' => NULL,
-  'last_comment_uid' => 0,
-  'comment_count' => 0,
-  'crm_core_profile_data' => array(
-    'commerce_items_cart_items' => array(),
-  ),
-  'name' => '',
-  'picture' => 0,
-  'data' => NULL,
-  'date' => '2013-09-03 11:53:11 -0400',
-  'url_alias' => 'events/multiple-ticket-levels-quantity',
-  'crm_core_profile_node_config' => array(
-    'nid' => '37106c78-84c8-4e74-a387-5c04b03f5375',
-    'use_profile' => 1,
-    'profile_name' => 'ao_cmcev_simple_quantity_form',
-    'display_profile' => 0,
-    'inline_title' => 'Registration form',
-  ),
-);
-  $nodes[] = array(
-  'uid' => 0,
-  'title' => 'Breakfast with Lowell Katz',
-  'log' => '',
-  'status' => 1,
-  'comment' => 1,
-  'promote' => 0,
-  'sticky' => 0,
-  'vuuid' => '8e58a3d6-a1e0-4c61-b6ec-f38eea599763',
-  'type' => 'cmcev_event',
-  'language' => 'und',
-  'created' => 1378222159,
-  'tnid' => 0,
-  'translate' => 0,
-  'uuid' => '52a80050-d98f-4bbf-90e8-9526dd3c77a1',
-  'revision_uid' => 1,
-  'body' => array(
-    'und' => array(
-      0 => array(
-        'value' => 'Lowell Katz is a progressive leader with an unrivaled and unmatched record of results. Please join us at the event below to meet Lowell, and help send him to Washington, D.C. next year!
-
-Contributions to Lowell Katz for Congress are not tax deductible.
-
- ',
-        'summary' => '',
-        'format' => 'full_html',
-        'safe_value' => '<p>Lowell Katz is a progressive leader with an unrivaled and unmatched record of results. Please join us at the event below to meet Lowell, and help send him to Washington, D.C. next year!</p>
-<p>Contributions to Lowell Katz for Congress are not tax deductible.</p>
-',
-        'safe_summary' => '',
-      ),
-    ),
-  ),
-  'field_cmcev_date' => array(
-    'und' => array(
-      0 => array(
-        'value' => '2013-10-07 09:00:00',
-        'value2' => '2013-10-12 19:00:00',
-        'timezone' => 'America/New_York',
-        'timezone_db' => 'UTC',
-        'date_type' => 'datetime',
-      ),
-    ),
-  ),
-  'field_cmcev_location' => array(
-    'und' => array(
-      0 => array(
-        'country' => 'US',
-        'administrative_area' => 'TX',
-        'sub_administrative_area' => NULL,
-        'locality' => 'Luckenbach',
-        'dependent_locality' => NULL,
-        'postal_code' => 78647,
-        'thoroughfare' => 'Billy\'s BBQ Shack',
-        'premise' => '123 Main Street',
-        'sub_premise' => NULL,
-        'organisation_name' => NULL,
-        'name_line' => NULL,
-        'first_name' => NULL,
-        'last_name' => NULL,
-        'data' => NULL,
-      ),
-    ),
-  ),
-  'rdf_mapping' => array(
-    'rdftype' => array(
-      0 => 'sioc:Item',
-      1 => 'foaf:Document',
-    ),
-    'title' => array(
-      'predicates' => array(
-        0 => 'dc:title',
-      ),
-    ),
-    'created' => array(
-      'predicates' => array(
-        0 => 'dc:date',
-        1 => 'dc:created',
-      ),
-      'datatype' => 'xsd:dateTime',
-      'callback' => 'date_iso8601',
-    ),
-    'changed' => array(
-      'predicates' => array(
-        0 => 'dc:modified',
-      ),
-      'datatype' => 'xsd:dateTime',
-      'callback' => 'date_iso8601',
-    ),
-    'body' => array(
-      'predicates' => array(
-        0 => 'content:encoded',
-      ),
-    ),
-    'uid' => array(
-      'predicates' => array(
-        0 => 'sioc:has_creator',
-      ),
-      'type' => 'rel',
-    ),
-    'name' => array(
-      'predicates' => array(
-        0 => 'foaf:name',
-      ),
-    ),
-    'comment_count' => array(
-      'predicates' => array(
-        0 => 'sioc:num_replies',
-      ),
-      'datatype' => 'xsd:integer',
-    ),
-    'last_activity' => array(
-      'predicates' => array(
-        0 => 'sioc:last_activity_date',
-      ),
-      'datatype' => 'xsd:dateTime',
-      'callback' => 'date_iso8601',
-    ),
-  ),
-  'cid' => 0,
-  'last_comment_name' => NULL,
-  'last_comment_uid' => 0,
-  'comment_count' => 0,
-  'crm_core_profile_data' => array(),
-  'name' => '',
-  'picture' => 0,
-  'data' => NULL,
-  'date' => '2013-09-03 11:29:19 -0400',
-  'url_alias' => 'events/single-ticket',
-  'crm_core_profile_node_config' => array(
-    'nid' => '52a80050-d98f-4bbf-90e8-9526dd3c77a1',
-    'use_profile' => 1,
-    'profile_name' => 'ao_cmcev_simple_single_form',
-    'display_profile' => 0,
-    'inline_title' => 'Registration form',
-  ),
-);
   $nodes[] = array(
   'uid' => 0,
   'title' => 'Thank you',
@@ -289,21 +18,21 @@ Contributions to Lowell Katz for Congress are not tax deductible.
   'comment' => 1,
   'promote' => 0,
   'sticky' => 0,
-  'vuuid' => 'a224a165-00e0-49db-b643-7de512d58719',
+  'vuuid' => 'd6949169-63be-4aba-b837-704e5b27d665',
   'type' => 'page',
   'language' => 'und',
-  'created' => 1378301890,
+  'created' => 1378397518,
   'tnid' => 0,
   'translate' => 0,
-  'uuid' => '88e4e269-7dff-48ef-a527-c109f2e9ca6f',
-  'revision_uid' => 1,
+  'uuid' => '07f62fec-73c6-406e-af38-d79c0070e4dd',
+  'revision_uid' => 0,
   'body' => array(
     'und' => array(
       0 => array(
-        'value' => 'Thank you for registration!',
+        'value' => 'Thank you for taking action!',
         'summary' => '',
         'format' => 'filtered_html',
-        'safe_value' => '<p>Thank you for registration!</p>
+        'safe_value' => '<p>Thank you for taking action!</p>
 ',
         'safe_summary' => '',
       ),
@@ -370,68 +99,67 @@ Contributions to Lowell Katz for Congress are not tax deductible.
   'name' => '',
   'picture' => 0,
   'data' => NULL,
-  'date' => '2013-09-04 09:38:10 -0400',
-  'url_alias' => 'events/thank-you',
+  'date' => '2013-09-05 16:11:58 +0000',
+  'url_alias' => 'petitions/thank-you',
 );
   $nodes[] = array(
   'uid' => 0,
-  'title' => 'Aids Walk Luckenbach',
+  'title' => 'Governor Jones: Veto HB 34',
   'log' => '',
   'status' => 1,
   'comment' => 1,
   'promote' => 0,
   'sticky' => 0,
-  'vuuid' => '0d135c46-ea41-4ef1-b633-e310a75103f5',
-  'type' => 'cmcev_event',
+  'vuuid' => '68282eb1-f063-461c-b1f0-7e4b03a8f124',
+  'type' => 'cmcp_petition',
   'language' => 'und',
-  'created' => 1378223370,
+  'created' => 1379614678,
   'tnid' => 0,
   'translate' => 0,
-  'uuid' => '8cbf5460-9633-4fcd-a730-c5832c19e5f0',
-  'revision_uid' => 1,
+  'uuid' => '71378697-11e3-4d26-bfbd-b9c669b4b14a',
+  'revision_uid' => 0,
   'body' => array(
     'und' => array(
       0 => array(
-        'value' => 'Aids Walk Luckenbach is a fundraising walk and 5k timed run to benefit AIDS research in Luckenbach. Fill out the form below to become an event sponsor!',
+        'value' => 'Last week, the State Assembly passed House Bill 34 under the auspices of "regulatory reform". The reality is that this is a harmful piece of legislation, which only serves to roll back environmental regulations that are essential to public health and the environmental future of our beautiful state.',
         'summary' => '',
-        'format' => 'full_html',
-        'safe_value' => '<p>Aids Walk Luckenbach is a fundraising walk and 5k timed run to benefit AIDS research in Luckenbach. Fill out the form below to become an event sponsor!</p>
+        'format' => 'filtered_html',
+        'safe_value' => '<p>Last week, the State Assembly passed House Bill 34 under the auspices of "regulatory reform". The reality is that this is a harmful piece of legislation, which only serves to roll back environmental regulations that are essential to public health and the environmental future of our beautiful state.</p>
 ',
         'safe_summary' => '',
       ),
     ),
   ),
-  'field_cmcev_date' => array(
+  'field_cmcp_cta' => array(
     'und' => array(
       0 => array(
-        'value' => '2013-10-13 09:00:00',
-        'value2' => '2013-10-18 19:00:00',
-        'timezone' => 'America/New_York',
-        'timezone_db' => 'UTC',
-        'date_type' => 'datetime',
+        'value' => 'Now the bill is on the Governor\'s desk and he is considering vetoing the measure. We must act now to tell the Governor to veto this dangerous bill. Add your voice today.
+
+<em><b> Governor Jones I strongly oppose HB 34. Please veto this harmful legislation.</em></b>',
+        'format' => 'filtered_html',
+        'safe_value' => '<p>Now the bill is on the Governor\'s desk and he is considering vetoing the measure. We must act now to tell the Governor to veto this dangerous bill. Add your voice today.</p>
+<p><em> Governor Jones I strongly oppose HB 34. Please veto this harmful legislation.</em></p>
+',
       ),
     ),
   ),
-  'field_cmcev_location' => array(
+  'field_cmcp_personal_message' => array(),
+  'field_cmcp_pm_customize' => array(
     'und' => array(
       0 => array(
-        'country' => 'US',
-        'administrative_area' => 'TX',
-        'sub_administrative_area' => NULL,
-        'locality' => 'Luckenbach',
-        'dependent_locality' => NULL,
-        'postal_code' => 78647,
-        'thoroughfare' => '123 Main Street',
-        'premise' => '',
-        'sub_premise' => NULL,
-        'organisation_name' => NULL,
-        'name_line' => NULL,
-        'first_name' => NULL,
-        'last_name' => NULL,
-        'data' => NULL,
+        'value' => 1,
       ),
     ),
   ),
+  'field_cmcp_target_email_subject' => array(),
+  'field_cmcp_target_emails' => array(
+    'und' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
+  ),
+  'field_cmcp_target_ids' => array(),
   'rdf_mapping' => array(
     'rdftype' => array(
       0 => 'sioc:Item',
@@ -491,82 +219,83 @@ Contributions to Lowell Katz for Congress are not tax deductible.
   'last_comment_name' => NULL,
   'last_comment_uid' => 0,
   'comment_count' => 0,
-  'crm_core_profile_data' => array(
-    'commerce_items_cart_items' => array(),
-  ),
   'name' => '',
   'picture' => 0,
   'data' => NULL,
-  'date' => '2013-09-03 11:49:30 -0400',
-  'url_alias' => 'events/multiple-ticket-level',
+  'date' => '2013-09-19 18:17:58 +0000',
+  'crm_core_petition_node_config' => array(
+    'nid' => '71378697-11e3-4d26-bfbd-b9c669b4b14a',
+    'signatories' => 1,
+    'goal' => 200,
+    'sign_email' => '',
+    'thanks_email' => '',
+  ),
   'crm_core_profile_node_config' => array(
-    'nid' => '8cbf5460-9633-4fcd-a730-c5832c19e5f0',
+    'nid' => '71378697-11e3-4d26-bfbd-b9c669b4b14a',
     'use_profile' => 1,
-    'profile_name' => 'ao_cmcev_simple_many_form',
+    'profile_name' => 'signature_drive',
     'display_profile' => 0,
-    'inline_title' => 'Registration form',
+    'inline_title' => 'Petition form',
   ),
 );
   $nodes[] = array(
   'uid' => 0,
-  'title' => 'Health and Resource Fair',
+  'title' => 'US Congress: Designate a National Holiday for First Responders',
   'log' => '',
   'status' => 1,
   'comment' => 1,
   'promote' => 0,
   'sticky' => 0,
-  'vuuid' => '977a0ebd-c450-4ad9-a240-f82e582b0138',
-  'type' => 'cmcev_event',
+  'vuuid' => '89436929-a31a-47a0-8252-09763902d8c7',
+  'type' => 'cmcp_petition',
   'language' => 'und',
-  'created' => 1378221661,
+  'created' => 1379627384,
   'tnid' => 0,
   'translate' => 0,
-  'uuid' => 'c4e0254b-e193-4f95-b843-fde40151fd81',
-  'revision_uid' => 1,
+  'uuid' => '7f7cf4e3-560a-49a5-b753-59ddb08141d7',
+  'revision_uid' => 0,
   'body' => array(
     'und' => array(
       0 => array(
-        'value' => 'Join us this Saturday where over 100 local organizations will be on hand to provide free services including free blood pressure testing, dental screenings, flu shots and more!
-',
+        'value' => 'Our first responders such as police officers and firefighters put their lives on the line for us every day. Lets recognize their bravery and hard work with a national day of appreciation.',
         'summary' => '',
-        'format' => 'full_html',
-        'safe_value' => '<p>Join us this Saturday where over 100 local organizations will be on hand to provide free services including free blood pressure testing, dental screenings, flu shots and more!</p>
+        'format' => 'filtered_html',
+        'safe_value' => '<p>Our first responders such as police officers and firefighters put their lives on the line for us every day. Lets recognize their bravery and hard work with a national day of appreciation.</p>
 ',
         'safe_summary' => '',
       ),
     ),
   ),
-  'field_cmcev_date' => array(
+  'field_cmcp_cta' => array(
     'und' => array(
       0 => array(
-        'value' => '2013-10-19 09:00:00',
-        'value2' => '2013-10-24 19:00:00',
-        'timezone' => 'America/New_York',
-        'timezone_db' => 'UTC',
-        'date_type' => 'datetime',
+        'value' => '<em> Dear Congress,
+
+The importance of our first responders is something we can all recognize. Don\'t let partisanship stand in the way: designate a national holiday to honor their service.</em>',
+        'format' => 'filtered_html',
+        'safe_value' => '<p><em> Dear Congress,</em></p>
+<p>The importance of our first responders is something we can all recognize. Don\'t let partisanship stand in the way: designate a national holiday to honor their service.</p>
+',
       ),
     ),
   ),
-  'field_cmcev_location' => array(
+  'field_cmcp_personal_message' => array(),
+  'field_cmcp_pm_customize' => array(
     'und' => array(
       0 => array(
-        'country' => 'US',
-        'administrative_area' => 'TX',
-        'sub_administrative_area' => NULL,
-        'locality' => 'Luckenbach',
-        'dependent_locality' => NULL,
-        'postal_code' => 78647,
-        'thoroughfare' => '123 Main Street',
-        'premise' => '',
-        'sub_premise' => NULL,
-        'organisation_name' => NULL,
-        'name_line' => NULL,
-        'first_name' => NULL,
-        'last_name' => NULL,
-        'data' => NULL,
+        'value' => 1,
       ),
     ),
   ),
+  'field_cmcp_target_email_subject' => array(),
+  'field_cmcp_target_emails' => array(
+    'und' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
+  ),
+  'field_cmcp_target_ids' => array(),
   'rdf_mapping' => array(
     'rdftype' => array(
       0 => 'sioc:Item',
@@ -626,79 +355,71 @@ Contributions to Lowell Katz for Congress are not tax deductible.
   'last_comment_name' => NULL,
   'last_comment_uid' => 0,
   'comment_count' => 0,
-  'crm_core_profile_data' => array(),
   'name' => '',
   'picture' => 0,
   'data' => NULL,
-  'date' => '2013-09-03 11:21:01 -0400',
-  'url_alias' => 'events/basic',
+  'date' => '2013-09-19 21:49:44 +0000',
+  'crm_core_petition_node_config' => array(
+    'nid' => '7f7cf4e3-560a-49a5-b753-59ddb08141d7',
+    'signatories' => 1,
+    'goal' => 100,
+    'sign_email' => '',
+    'thanks_email' => '',
+  ),
   'crm_core_profile_node_config' => array(
-    'nid' => 'c4e0254b-e193-4f95-b843-fde40151fd81',
+    'nid' => '7f7cf4e3-560a-49a5-b753-59ddb08141d7',
     'use_profile' => 1,
-    'profile_name' => 'ao_cmcev_simple_reg_form',
+    'profile_name' => 'short_petition_with_message',
     'display_profile' => 0,
-    'inline_title' => 'Registration form',
+    'inline_title' => 'Petition form',
   ),
 );
   $nodes[] = array(
   'uid' => 0,
-  'title' => 'Tuesday Phonebank',
+  'title' => 'Canvassing Data Entry',
   'log' => '',
   'status' => 1,
   'comment' => 1,
   'promote' => 0,
   'sticky' => 0,
-  'vuuid' => '5a646654-27b7-4511-b4d4-77e75b3e274b',
-  'type' => 'cmcev_event',
+  'vuuid' => '149d5e99-bb89-427c-82ea-ef6d6871ad38',
+  'type' => 'cmcp_petition',
   'language' => 'und',
-  'created' => 1379613127,
+  'created' => 1379623501,
   'tnid' => 0,
   'translate' => 0,
-  'uuid' => 'e340d2ab-485b-4e68-b35c-c4e07a7b80c5',
-  'revision_uid' => 1,
+  'uuid' => '9e015f78-02b6-465d-9a22-7ef48de06969',
+  'revision_uid' => 0,
   'body' => array(
     'und' => array(
       0 => array(
-        'value' => 'Come phonebank with us this Tuesday and help ensure more progressive leaders have a voice in Washington!',
+        'value' => 'Enter Canvassing Data below into your CRM Core database.',
         'summary' => '',
-        'format' => 'full_html',
-        'safe_value' => '<p>Come phonebank with us this Tuesday and help ensure more progressive leaders have a voice in Washington!</p>
+        'format' => 'filtered_html',
+        'safe_value' => '<p>Enter Canvassing Data below into your CRM Core database.</p>
 ',
         'safe_summary' => '',
       ),
     ),
   ),
-  'field_cmcev_date' => array(
+  'field_cmcp_cta' => array(),
+  'field_cmcp_personal_message' => array(),
+  'field_cmcp_pm_customize' => array(
     'und' => array(
       0 => array(
-        'value' => '2013-10-25 09:00:00',
-        'value2' => '2013-10-30 19:00:00',
-        'timezone' => 'America/New_York',
-        'timezone_db' => 'UTC',
-        'date_type' => 'datetime',
+        'value' => 0,
       ),
     ),
   ),
-  'field_cmcev_location' => array(
+  'field_cmcp_target_email_subject' => array(),
+  'field_cmcp_target_emails' => array(
     'und' => array(
       0 => array(
-        'country' => 'US',
-        'administrative_area' => 'TX',
-        'sub_administrative_area' => NULL,
-        'locality' => 'Luckenbach',
-        'dependent_locality' => NULL,
-        'postal_code' => 78647,
-        'thoroughfare' => '123 Main Street',
-        'premise' => '',
-        'sub_premise' => NULL,
-        'organisation_name' => NULL,
-        'name_line' => NULL,
-        'first_name' => NULL,
-        'last_name' => NULL,
-        'data' => NULL,
+        'value' => 0,
       ),
     ),
   ),
+  'field_cmcp_target_ids' => array(),
   'rdf_mapping' => array(
     'rdftype' => array(
       0 => 'sioc:Item',
@@ -758,18 +479,292 @@ Contributions to Lowell Katz for Congress are not tax deductible.
   'last_comment_name' => NULL,
   'last_comment_uid' => 0,
   'comment_count' => 0,
-  'crm_core_profile_data' => array(),
   'name' => '',
   'picture' => 0,
   'data' => NULL,
-  'date' => '2013-09-19 13:52:07 -0400',
-  'url_alias' => 'events/phonebank',
+  'date' => '2013-09-19 20:45:01 +0000',
+  'crm_core_petition_node_config' => array(
+    'nid' => '9e015f78-02b6-465d-9a22-7ef48de06969',
+    'signatories' => 1,
+    'goal' => 0,
+    'sign_email' => '',
+    'thanks_email' => '',
+  ),
   'crm_core_profile_node_config' => array(
-    'nid' => 'e340d2ab-485b-4e68-b35c-c4e07a7b80c5',
+    'nid' => '9e015f78-02b6-465d-9a22-7ef48de06969',
     'use_profile' => 1,
-    'profile_name' => 'ao_cmcev_simple_single_form',
+    'profile_name' => 'canvass_signatures',
     'display_profile' => 0,
-    'inline_title' => 'Register Now',
+    'inline_title' => 'Petition form',
+  ),
+);
+  $nodes[] = array(
+  'uid' => 0,
+  'title' => ' Tell City Council to Save our Park!',
+  'log' => '',
+  'status' => 1,
+  'comment' => 1,
+  'promote' => 0,
+  'sticky' => 0,
+  'vuuid' => '39e76ead-2683-421e-b337-3aa7156bbac3',
+  'type' => 'cmcp_petition',
+  'language' => 'und',
+  'created' => 1379619576,
+  'tnid' => 0,
+  'translate' => 0,
+  'uuid' => 'a1a630ad-2b43-4a79-b876-b38db525fa0e',
+  'revision_uid' => 0,
+  'body' => array(
+    'und' => array(
+      0 => array(
+        'value' => 'Turner Park is a living piece of history in our community. Its sunny lawn has been a gathering place for citizens young and old for the past 150 years. We thought our beloved Park would be there always, but today budget cuts are threatening to shut the Park down indefinitely. This closure is unacceptable and will take away a valuable resource for our city.
+
+Tell City Council to vote to keep Turner Park open for our children and families.',
+        'summary' => '',
+        'format' => 'filtered_html',
+        'safe_value' => '<p>Turner Park is a living piece of history in our community. Its sunny lawn has been a gathering place for citizens young and old for the past 150 years. We thought our beloved Park would be there always, but today budget cuts are threatening to shut the Park down indefinitely. This closure is unacceptable and will take away a valuable resource for our city.</p>
+<p>Tell City Council to vote to keep Turner Park open for our children and families.</p>
+',
+        'safe_summary' => '',
+      ),
+    ),
+  ),
+  'field_cmcp_cta' => array(
+    'und' => array(
+      0 => array(
+        'value' => '<em>Turner Park is an important part of our community. I oppose closing this important civic resource.</em>',
+        'format' => 'filtered_html',
+        'safe_value' => '<p><em>Turner Park is an important part of our community. I oppose closing this important civic resource.</em></p>
+',
+      ),
+    ),
+  ),
+  'field_cmcp_personal_message' => array(),
+  'field_cmcp_pm_customize' => array(
+    'und' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
+  ),
+  'field_cmcp_target_email_subject' => array(),
+  'field_cmcp_target_emails' => array(
+    'und' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
+  ),
+  'field_cmcp_target_ids' => array(),
+  'rdf_mapping' => array(
+    'rdftype' => array(
+      0 => 'sioc:Item',
+      1 => 'foaf:Document',
+    ),
+    'title' => array(
+      'predicates' => array(
+        0 => 'dc:title',
+      ),
+    ),
+    'created' => array(
+      'predicates' => array(
+        0 => 'dc:date',
+        1 => 'dc:created',
+      ),
+      'datatype' => 'xsd:dateTime',
+      'callback' => 'date_iso8601',
+    ),
+    'changed' => array(
+      'predicates' => array(
+        0 => 'dc:modified',
+      ),
+      'datatype' => 'xsd:dateTime',
+      'callback' => 'date_iso8601',
+    ),
+    'body' => array(
+      'predicates' => array(
+        0 => 'content:encoded',
+      ),
+    ),
+    'uid' => array(
+      'predicates' => array(
+        0 => 'sioc:has_creator',
+      ),
+      'type' => 'rel',
+    ),
+    'name' => array(
+      'predicates' => array(
+        0 => 'foaf:name',
+      ),
+    ),
+    'comment_count' => array(
+      'predicates' => array(
+        0 => 'sioc:num_replies',
+      ),
+      'datatype' => 'xsd:integer',
+    ),
+    'last_activity' => array(
+      'predicates' => array(
+        0 => 'sioc:last_activity_date',
+      ),
+      'datatype' => 'xsd:dateTime',
+      'callback' => 'date_iso8601',
+    ),
+  ),
+  'cid' => 0,
+  'last_comment_name' => NULL,
+  'last_comment_uid' => 0,
+  'comment_count' => 0,
+  'name' => '',
+  'picture' => 0,
+  'data' => NULL,
+  'date' => '2013-09-19 19:39:36 +0000',
+  'crm_core_petition_node_config' => array(
+    'nid' => 'a1a630ad-2b43-4a79-b876-b38db525fa0e',
+    'signatories' => 1,
+    'goal' => 0,
+    'sign_email' => '',
+    'thanks_email' => '',
+  ),
+  'crm_core_profile_node_config' => array(
+    'nid' => 'a1a630ad-2b43-4a79-b876-b38db525fa0e',
+    'use_profile' => 1,
+    'profile_name' => 'short_online_petition',
+    'display_profile' => 0,
+    'inline_title' => 'Petition form',
+  ),
+);
+  $nodes[] = array(
+  'uid' => 0,
+  'title' => 'We Want More CRM Core!',
+  'log' => '',
+  'status' => 1,
+  'comment' => 1,
+  'promote' => 0,
+  'sticky' => 0,
+  'vuuid' => 'ba8c0843-235b-4e8d-bc97-73fd103ec1ae',
+  'type' => 'cmcp_petition',
+  'language' => 'und',
+  'created' => 1379619552,
+  'tnid' => 0,
+  'translate' => 0,
+  'uuid' => 'c6c7bd28-a9a5-4c29-b4b7-a11cbe7e5450',
+  'revision_uid' => 0,
+  'body' => array(
+    'und' => array(
+      0 => array(
+        'value' => 'With its release of CRM Core, <a href="http://www.trellon.com/" target="_blank">Trellon </a> is changing what is possible with people data in Drupal websites. While new features like Donation, Events, Volunteer Management, and Petitions are great - we want more!',
+        'summary' => '',
+        'format' => 'filtered_html',
+        'safe_value' => '<p>With its release of CRM Core, <a href="http://www.trellon.com/" target="_blank">Trellon </a> is changing what is possible with people data in Drupal websites. While new features like Donation, Events, Volunteer Management, and Petitions are great - we want more!</p>
+',
+        'safe_summary' => '',
+      ),
+    ),
+  ),
+  'field_cmcp_cta' => array(
+    'und' => array(
+      0 => array(
+        'value' => '<b>Don\'t wait to make your voice heard. Tell the Trellon team what features YOU\'d like to see in development for CRM Core. Your messages will be emailed straight to the team.</b>',
+        'format' => 'filtered_html',
+        'safe_value' => '<p>Don\'t wait to make your voice heard. Tell the Trellon team what features YOU\'d like to see in development for CRM Core. Your messages will be emailed straight to the team.</p>
+',
+      ),
+    ),
+  ),
+  'field_cmcp_personal_message' => array(),
+  'field_cmcp_pm_customize' => array(
+    'und' => array(
+      0 => array(
+        'value' => 1,
+      ),
+    ),
+  ),
+  'field_cmcp_target_email_subject' => array(),
+  'field_cmcp_target_emails' => array(
+    'und' => array(
+      0 => array(
+        'value' => 1,
+      ),
+    ),
+  ),
+  'field_cmcp_target_ids' => array(),
+  'rdf_mapping' => array(
+    'rdftype' => array(
+      0 => 'sioc:Item',
+      1 => 'foaf:Document',
+    ),
+    'title' => array(
+      'predicates' => array(
+        0 => 'dc:title',
+      ),
+    ),
+    'created' => array(
+      'predicates' => array(
+        0 => 'dc:date',
+        1 => 'dc:created',
+      ),
+      'datatype' => 'xsd:dateTime',
+      'callback' => 'date_iso8601',
+    ),
+    'changed' => array(
+      'predicates' => array(
+        0 => 'dc:modified',
+      ),
+      'datatype' => 'xsd:dateTime',
+      'callback' => 'date_iso8601',
+    ),
+    'body' => array(
+      'predicates' => array(
+        0 => 'content:encoded',
+      ),
+    ),
+    'uid' => array(
+      'predicates' => array(
+        0 => 'sioc:has_creator',
+      ),
+      'type' => 'rel',
+    ),
+    'name' => array(
+      'predicates' => array(
+        0 => 'foaf:name',
+      ),
+    ),
+    'comment_count' => array(
+      'predicates' => array(
+        0 => 'sioc:num_replies',
+      ),
+      'datatype' => 'xsd:integer',
+    ),
+    'last_activity' => array(
+      'predicates' => array(
+        0 => 'sioc:last_activity_date',
+      ),
+      'datatype' => 'xsd:dateTime',
+      'callback' => 'date_iso8601',
+    ),
+  ),
+  'cid' => 0,
+  'last_comment_name' => NULL,
+  'last_comment_uid' => 0,
+  'comment_count' => 0,
+  'name' => '',
+  'picture' => 0,
+  'data' => NULL,
+  'date' => '2013-09-19 19:39:12 +0000',
+  'crm_core_petition_node_config' => array(
+    'nid' => 'c6c7bd28-a9a5-4c29-b4b7-a11cbe7e5450',
+    'signatories' => 0,
+    'goal' => 0,
+    'sign_email' => '',
+    'thanks_email' => '',
+  ),
+  'crm_core_profile_node_config' => array(
+    'nid' => 'c6c7bd28-a9a5-4c29-b4b7-a11cbe7e5450',
+    'use_profile' => 1,
+    'profile_name' => 'short_petition_with_message',
+    'display_profile' => 0,
+    'inline_title' => 'Petition form',
   ),
 );
   return $nodes;
