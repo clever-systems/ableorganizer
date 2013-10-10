@@ -17,6 +17,36 @@ function ao_ctools_plugin_directory($owner, $plugin_type) {
 }
 
 /**
+ * Implements hook_form_alter
+ */
+function ao_form_alter(&$form, &$form_state, $form_id){
+  // dpm($form_id);
+  
+  $forms = array(
+    'crm_core_profile_entry_form_ao_donation_form',
+    'crm_core_profile_entry_form_ao_annual_appeal_form',
+    'crm_core_profile_entry_form_ao_fundraiser_form',
+    'crm_core_profile_entry_form_ao_cmcev_simple_single_form',
+    'crm_core_profile_entry_form_ao_cmcev_simple_quantity_form',
+    'crm_core_profile_entry_form_ao_cmcev_simple_many_form',
+    'crm_core_profile_entry_form_ao_cmcev_simple_reg_form',
+    'crm_core_profile_entry_form_short_petition_with_message',
+    'crm_core_profile_entry_form_canvass_signatures',
+    'crm_core_profile_entry_form_short_online_petition',
+    'crm_core_profile_entry_form_short_petition_with_message',
+    'crm_core_profile_entry_form_signature_drive',
+    'crm_core_profile_entry_form_ao_volunteer_commitment_form',
+  );
+  
+  if(in_array($form_id, $forms)){
+    // dpm($form);
+    $form['field_ao_email_address'][LANGUAGE_NONE][0]['email']['#description'] = FALSE;
+    $form['field_ao_email_address'][LANGUAGE_NONE][0]['#description'] = FALSE;
+    $form['field_ao_email_address'][LANGUAGE_NONE]['#description'] = FALSE;
+  }
+}
+
+/**
  * Implements hook_uuid_node_features_export_render_alter().
  */
 function ao_uuid_node_features_export_render_alter(&$export, $node, $module) {
