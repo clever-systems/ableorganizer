@@ -311,7 +311,7 @@ function ableorganizer_install() {
   variable_set('admin_theme', 'seven');
   variable_set('node_admin_theme', '1');
 
-  // enable the template theme for ableorganizer
+  // Enable the template theme for ableorganizer.
   db_update('system')
     ->fields(array('status' => 1))
     ->condition('type', 'theme')
@@ -413,19 +413,18 @@ function ableorganizer_install() {
   variable_set('mimemail_sitestyle', 0);
 
   // Setting default theme for CRM Core.
-  theme_enable(array('ablestarter'));
-  db_delete('block')
-    ->condition('module', 'search')
-    ->condition('delta', 'form')
-    ->condition('theme', 'ablestarter')
+  db_update('system')
+    ->fields(array('status' => 1))
+    ->condition('type', 'theme')
+    ->condition('name', 'ablestarter')
     ->execute();
   variable_set('crm_core_theme_enabled', 1);
   variable_set('crm_core_theme', 'ablestarter');
-  
-  // now set CRM Core to use the CRM Core menu
+
+  // Now set CRM Core to use the CRM Core menu.
   variable_set('crm_core_theme_replace_links', 1);
-  
-  // now turn on the dashboard
+
+  // Now turn on the dashboard.
   variable_set('crm_core_dashboard_enabled', 1);
   variable_set('crm_core_dashboard_path', 'crm-core/ableorganizer_dashboard');
   $item = array(
@@ -435,18 +434,18 @@ function ableorganizer_install() {
     'weight' => 0,
   );
   menu_link_save($item);
-    
-  // now set the default logo
-  $theme_name = 'ablestarter';  
+
+  // Now set the default logo.
+  $theme_name = 'ablestarter';
   $var_name = 'theme_' . $theme_name . '_settings';
   $new_path = 'profiles/ableorganizer/ao-logo.png';
-  
+
   $settings = variable_get($var_name, array());
   $settings['logo_path'] = $new_path;
   variable_set($var_name, $settings);
-  
-  // Enable blocks
-  // This must be done after the theme has been installed
+
+  // Enable blocks.
+  // This must be done after the theme has been installed.
   $default_theme = variable_get('theme_default', 'abletemplate');
   $admin_theme = 'seven';
   $blocks = array(
@@ -500,6 +499,16 @@ function ableorganizer_install() {
       'pages' => '',
       'cache' => -1,
     ),
+    array(
+      'module' => 'system',
+      'delta' => 'help',
+      'theme' => 'ablestarter',
+      'status' => 1,
+      'weight' => 0,
+      'region' => 'content',
+      'pages' => '',
+      'cache' => -1,
+    ),
   );
   $query = db_insert('block')->fields(array(
     'module',
@@ -511,12 +520,14 @@ function ableorganizer_install() {
     'pages',
     'cache',
   ));
-  
+
   foreach ($blocks as $block) {
     $query->values($block);
   }
-  $query->execute();  
-  
+  $query->execute();
+  // We need this to clear node_load cache after importing sample content in
+  // order to prevent 'Notice: Undefined property: stdClass::$changed' msg.
+  variable_set('search_active_modules', array('ableorganizer', 'node', 'user'));
 }
 
 /**
@@ -536,7 +547,7 @@ function ableorganizer_install_tasks_alter(&$tasks, $install_state) {
   );
   $tasks = $new_task + $tasks;
 
-  // configure features
+  // Configure features.
   $new_task['ableorganizer_features'] = array(
     'display' => TRUE,
     'display_name' => $t('Select features'),
@@ -546,7 +557,7 @@ function ableorganizer_install_tasks_alter(&$tasks, $install_state) {
   $old_tasks = $tasks;
   $tasks = array_slice($old_tasks, 0, 11) + $new_task + array_slice($old_tasks, 11);
 
-  // configure profile settings
+  // Configure profile settings.
   $new_task['ableorganizer_profile_settings'] = array(
     'display' => TRUE,
     'display_name' => $t('Messaging and currency settings'),
@@ -556,7 +567,7 @@ function ableorganizer_install_tasks_alter(&$tasks, $install_state) {
   $old_tasks = $tasks;
   $tasks = array_slice($old_tasks, 0, 11) + $new_task + array_slice($old_tasks, 11);
 
-  // install sample content
+  // Install sample content.
   $new_task['ableorganizer_sample_content'] = array(
     'display' => TRUE,
     'display_name' => $t('Sample content and data'),
@@ -566,7 +577,7 @@ function ableorganizer_install_tasks_alter(&$tasks, $install_state) {
   $old_tasks = $tasks;
   $tasks = array_slice($old_tasks, 0, 11) + $new_task + array_slice($old_tasks, 11);
 
-  // change the name of the other install profile step
+  // Change the name of the other install profile step.
   $tasks['install_profile_modules']['display_name'] = 'Install modules';
 }
 
@@ -621,7 +632,7 @@ function ableorganizer_welcome_submit($form, &$form_state) {
 function ableorganizer_features($form, &$form_state, &$install_state) {
   $t = get_t();
 
-  // this is the page where we select the features to be installed
+  // This is the page where we select the features to be installed.
   drupal_set_title($t('Select features'));
 
   $form = array();
@@ -639,7 +650,7 @@ function ableorganizer_features($form, &$form_state, &$install_state) {
     '#markup' => $t('Select the tools you would like to install.'),
   );
 
-  // Donations
+  // Donations.
   $form['settings_wrapper']['install_donations'] = array(
     '#type' => 'checkbox',
     '#default_value' => TRUE,
@@ -647,7 +658,7 @@ function ableorganizer_features($form, &$form_state, &$install_state) {
     '#description' => $t('Includes donation pages, source tracking, and reports.'),
   );
 
-  // Events
+  // Events.
   $form['settings_wrapper']['install_events'] = array(
     '#type' => 'checkbox',
     '#default_value' => TRUE,
@@ -655,7 +666,7 @@ function ableorganizer_features($form, &$form_state, &$install_state) {
     '#description' => $t('Includes event registration, attendance and reports.'),
   );
 
-  // Petitions
+  // Petitions.
   $form['settings_wrapper']['install_petitions'] = array(
     '#type' => 'checkbox',
     '#default_value' => TRUE,
@@ -663,7 +674,7 @@ function ableorganizer_features($form, &$form_state, &$install_state) {
     '#description' => $t('Includes signature gathering, targeted emails and reports.'),
   );
 
-  // Volunteer
+  // Volunteer.
   $form['settings_wrapper']['install_volunteer'] = array(
     '#type' => 'checkbox',
     '#default_value' => TRUE,
@@ -690,18 +701,18 @@ function ableorganizer_features_submit($form, &$form_state) {
 
   $modules = array();
 
-  // default settings
+  // Default settings.
   variable_set('donations_enabled', 0);
   variable_set('events_enabled', 0);
   variable_set('petitions_enabled', 0);
   variable_set('volunteer_enabled', 0);
 
-  // this is where we turn on various features
+  // This is where we turn on various features.
   if (!empty($form_state['values']['install_donations'])) {
     $modules[] = 'crm_core_donation';
     variable_set('donations_enabled', 1);
-    
-    // set default colors for reports
+
+    // Set default colors for reports.
     variable_set('crm_core_donation_background_color', 'rgba(148, 186, 101, 0.4)
 rgba(148, 186, 101, 0)');
     variable_set('crm_core_donation_chart_color', 'rgba(255,255,255,1)');
@@ -716,14 +727,13 @@ rgba(207, 68, 68, 1)
 rgba(155, 89, 168, 1)
 rgba(49, 81, 189, 1)');
     variable_set('crm_core_donation_xaxis_tickmarks', '7');
-    
   }
 
   if (!empty($form_state['values']['install_events'])) {
     $modules[] = 'crm_core_event';
     variable_set('events_enabled', 1);
-    
-    // set defaults for reports
+
+    // Set defaults for reports.
     variable_set('crm_core_event_background_color', 'rgba(49, 165, 189, 0.4)
 rgba(49, 165, 189, 0)');
     variable_set('crm_core_event_chart_color', 'rgba(255,255,255,1)');
@@ -743,8 +753,8 @@ rgba(49, 81, 189, 1)');
   if (!empty($form_state['values']['install_petitions'])) {
     $modules[] = 'crm_core_petition';
     variable_set('petitions_enabled', 1);
-    
-    // report defaults
+
+    // Report defaults.
     variable_set('crm_core_petition_background_color', 'rgba(49, 81, 189, 0.4)
 rgba(49, 81, 189, 0)');
     variable_set('crm_core_petition_chart_color', 'rgba(255,255,255,1)');
@@ -758,16 +768,15 @@ rgba(49, 165, 189, 1)
 rgba(207, 68, 68, 1)
 rgba(148, 186, 101, 1)
 rgba(155, 89, 168, 1)');
-  variable_set('crm_core_petition_show_counter', '1');
-  variable_set('crm_core_petition_xaxis_tickmarks', '7');
-    
+    variable_set('crm_core_petition_show_counter', '1');
+    variable_set('crm_core_petition_xaxis_tickmarks', '7');
   }
 
   if (!empty($form_state['values']['install_volunteer'])) {
     $modules[] = 'crm_core_volunteer';
     variable_set('volunteer_enabled', 1);
-    
-    // report defaults
+
+    // Report defaults.
     variable_set('crm_core_volunteer_background_color', 'rgba(207, 68, 68, 0.4)
 rgba(207, 68, 68, 0)');
     variable_set('crm_core_volunteer_chart_color', 'rgba(255,255,255,1)');
@@ -782,7 +791,6 @@ rgba(148, 186, 101, 1)
 rgba(155, 89, 168, 1)
 rgba(49, 81, 189, 1)');
     variable_set('crm_core_volunteer_xaxis_tickmarks', '7');
-    
   }
 
   module_enable($modules);
@@ -802,7 +810,7 @@ function ableorganizer_profile_settings($form, &$form_state, &$install_state) {
   $t = get_t();
 
   drupal_set_title($t('Configure profile settings'));
-  // check to make sure we have at least one feature enabled
+  // Check to make sure we have at least one feature enabled.
   if (variable_get('donations_enabled', 0) == 1 || variable_get('events_enabled', 0) == 1 || variable_get('petitions_enabled', 0) == 1 || variable_get('volunteer_enabled', 0) == 1) {
 
     $form['basic_desc'] = array(
@@ -818,8 +826,8 @@ function ableorganizer_profile_settings($form, &$form_state, &$install_state) {
     );
   }
 
-  // this should house the email settings for each feature
-  // starting with donations
+  // This should house the email settings for each feature.
+  // Starting with donations.
   if (variable_get('donations_enabled', 0) == 1) {
     $form['settings_wrapper']['donation_emails'] = array(
       '#type' => 'checkbox',
@@ -829,7 +837,7 @@ function ableorganizer_profile_settings($form, &$form_state, &$install_state) {
     );
   }
 
-  // next do events
+  // Next do events.
   if (variable_get('events_enabled', 0) == 1) {
     $form['settings_wrapper']['event_emails'] = array(
       '#type' => 'checkbox',
@@ -903,7 +911,7 @@ function ableorganizer_profile_settings_submit($form, &$form_state) {
 
   global $install_state;
 
-  // This is where we enable the default emails for each feature
+  // This is where we enable the default emails for each feature.
   if (!empty($form_state['values']['donation_emails'])) {
     variable_set('configure_donation_email', 1);
   }
@@ -935,8 +943,8 @@ function ableorganizer_sample_content($form, &$form_state, &$install_state) {
 
   $form = array();
 
-  // this is where we install the sample content.
-  // there should be sample content for each feature.
+  // This is where we install the sample content.
+  // There should be sample content for each feature.
   if (variable_get('donations_enabled', 0) == 1 || variable_get('events_enabled', 0) == 1 || variable_get('petitions_enabled', 0) == 1 || variable_get('volunteer_enabled', 0) == 1) {
 
     $form['basic_desc_sample'] = array(
@@ -962,7 +970,7 @@ function ableorganizer_sample_content($form, &$form_state, &$install_state) {
     );
   }
 
-  // next do events
+  // Next do events.
   if (variable_get('events_enabled', 0) == 1) {
     $form['sample_content_wrapper']['event_sample_content'] = array(
       '#type' => 'checkbox',
@@ -1009,7 +1017,7 @@ function ableorganizer_sample_content($form, &$form_state, &$install_state) {
     );
   }
 
-  // next do events
+  // Next do events.
   if (variable_get('events_enabled', 0) == 1) {
     $form['sample_data_wrapper']['event_sample_data'] = array(
       '#type' => 'checkbox',
@@ -1072,7 +1080,7 @@ function ableorganizer_sample_content_submit($form, &$form_state) {
 
   $sample_data = ableorganizer_sample_data();
 
-  // this is where we create the sample contacts
+  // This is where we create the sample contacts.
   foreach ($sample_data['crm_core_contact'] as $contact) {
     $new_contact = entity_import('crm_core_contact', $contact);
     entity_save('crm_core_contact', $new_contact);
