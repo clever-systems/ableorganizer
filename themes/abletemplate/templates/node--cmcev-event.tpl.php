@@ -12,14 +12,20 @@
   <?php endif; ?>  
   
   <div<?php print $content_attributes; ?>>
-    <div class="">
-      <label>When</label>
-      <?php print render($content['field_cmcev_date']); ?>
-    </div>
-    <div class="">
-      <label>Where</label>
-      <?php print render($content['field_cmcev_location']); ?>
-    </div>
+    
+	  <?php if ($content['field_cmcev_date']): ?>
+	    <div class="event-date">
+	      <label>When</label>
+	      <span class="info"><?php print render($content['field_cmcev_date']); ?></span>
+	    </div>
+	  <?php endif; ?>  
+	  
+	  <?php if ($content['field_cmcev_location']): ?>
+	    <div class="event-location">
+	      <label>Where</label>
+	      <span class="info"><?php print render($content['field_cmcev_location']); ?></span>
+	    </div>
+	  <?php endif; ?>  
   
     <?php
       // We hide the comments and links now so that we can render them later.

@@ -8,6 +8,9 @@
 #zone-branding-wrapper #main-menu {
   padding-top: 0.5em;
 }
+#zone-branding-wrapper .navigation-menu {
+  margin-top: .3em;
+}
 #zone-branding-wrapper #main-menu LI {
   margin-top: 0.3em;
   padding-top: 0.5em;
@@ -89,10 +92,8 @@ h6 {
 .field-type-addressfield {
 }
 .field-type-addressfield DIV.field-items {
-  margin-bottom: 1em;
 }
 .field-type-addressfield DIV.field-items DIV {
-  margin-bottom: 1em;
 }
 .field-type-addressfield .fieldset-wrapper {
 }
@@ -124,7 +125,27 @@ div.addressfield-container-inline > div.form-item {
 }
 .field-type-addressfield .fieldset-wrapper .locality-block .form-item {
 }
-
+.event-date {
+  width: 300px;  
+}
+.event-date, .event-location {
+  display: inline-block;
+  margin-right: .5em;
+  vertical-align: top;
+}
+.event-date LABEL, .event-location LABEL {
+  font-weight: 700;
+  display: inline-block;
+  vertical-align: top;
+}
+.event-date span.info, .event-location span.info {
+  display: inline-block;
+  margin-left: .5em;
+  vertical-align: top;
+}
+.date-display-start {
+  display: block;
+}
 
 
 /* lists */
@@ -177,20 +198,30 @@ input[type="search"]::-webkit-search-decoration {
 input, button, select, textarea {
 }
 
-.form-actions button, .form-actions input[type="reset"], .form-actions input[type="submit"], .form-actions input[type="button"] {
+.button, .form-actions button, .form-actions input[type="reset"], .form-actions input[type="submit"], .form-actions input[type="button"] {
   border-radius: 4px;
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
   padding: .5em 1em;
-  width: 100%;
   color: White;
-  background: #f4412e;
-  background: linear-gradient(to bottom,  #f4412e 31%,#cf3a29 100%);
+  background: #99999F;
+  background: linear-gradient(to bottom,  #99999F 31%,#66666D 100%);
   text-shadow: 1px 1px 3px #444;
   font-weight: normal;
   font: inherit;
   font-size: 1.1em;
 }
+.region-sidebar-second .button, .region-sidebar-second .form-actions button, .region-sidebar-second .form-actions input[type="reset"], 
+.region-sidebar-second .form-actions input[type="submit"], .region-sidebar-second .form-actions input[type="button"] {
+  background: #f4412e;
+  background: linear-gradient(to bottom,  #f4412e 31%,#cf3a29 100%);
+}
+
+.block-inner .button, .block-inner .form-actions button, .block-inner .form-actions input[type="reset"], .block-inner .form-actions input[type="submit"], 
+.block-inner .form-actions input[type="button"] {
+  width: 100%;
+}
+
 .amounts button, .amounts input[type="reset"], .amounts input[type="submit"], .amounts input[type="button"] {
   border-radius: 4px;
   -moz-border-radius: 4px;
@@ -251,7 +282,11 @@ FORM TABLE thead th {
   display: none;
 }
 
-button {
+.button, button {
+}
+.button A {
+  color: inherit;
+  text-decoration: none;
 }
 
 textarea, select, input[type="date"], input[type="datetime"], input[type="datetime-local"],
@@ -298,3 +333,58 @@ LABEL.compact-form-label {
   margin-top: .2em;
   color: #AAA;
 }
+
+
+/* drop down menus */
+.branding-data .navigation-menu {
+  font-size: 1em;
+}
+.navigation {
+  display: inline-block;
+  cursor: pointer;
+}
+.navigation-menu {
+  display: inline-block;
+  float: right;
+  cursor: pointer;
+  position: relative;
+  background: #66666D;
+}
+.navigation-menu UL {
+  display: none;
+  margin-top: -1px;
+  border-radius: inherit;
+  -moz-border-radius: inherit;
+  -webkit-border-radius: inherit;
+  color: inherit;
+  text-shadow: inherit;
+  font-weight: inherit;
+  font: inherit;
+  font-size: inherit;
+  margin-bottom: inherit;  
+  padding: .5em;
+  background: #66666D;
+}
+.navigation-menu:hover UL {
+  display: inherit;
+  position: absolute;
+  z-index: 9999;
+  right: 0px;
+  width: 100%;
+}
+.navigation-menu:hover UL LI {
+  padding: .5em;
+  margin: 0em;
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+}
+.navigation-menu:hover UL LI:hover {
+  background: #33333D;
+}
+
+
+
+
+
+

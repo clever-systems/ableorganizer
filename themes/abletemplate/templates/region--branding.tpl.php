@@ -11,6 +11,9 @@
         <?php print theme('links__system_main_menu', array('links' => $main_menu, 'attributes' => array('id' => 'main-menu', 'class' => array('links', 'inline', 'clearfix')), 'heading' => array('text' => t('Main menu'),'level' => 'h2','class' => array('element-invisible')))); ?>
       </div>
 
+      <div class="navigation-menu button">
+        <?php print $nav_menu; ?>
+      </div>
       
       <?php if ($site_name || $site_slogan): ?>
       <?php $class = $site_name_hidden && $site_slogan_hidden ? ' element-invisible' : ''; ?>
