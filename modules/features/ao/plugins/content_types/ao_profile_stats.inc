@@ -9,9 +9,9 @@ $description = 'Displays contact statistics like the amount of money raised,'
   . ' the number of events signed up, etc.';
 $plugin = array(
   'single' => TRUE,
-  'title' => t('Profile stats'),
+  'title' => t('User profile: activity statistics'),
   'description' => t($description),
-  'category' => t('AbleOrganizer: Contacts'),
+  'category' => t('AbleOrganizer'),
   'edit form' => 'ao_profile_stats_form',
   'render callback' => 'ao_profile_stats_render',
   'admin info' => 'ao_profile_stats_admin_info',
@@ -27,7 +27,7 @@ $plugin = array(
  */
 function ao_profile_stats_admin_info($subtype, $conf, $contexts) {
   $block = new stdClass();
-  $block->title = t('Profile stats');
+  $block->title = t('User profile: activity statistics');
   $description = 'Displays contact statistics like the amount of money raised,'
     . ' the number of events signed up, etc.';
   $block->content = t($description);
@@ -95,70 +95,96 @@ function ao_profile_stats_render($subtype, $conf, $panel_args, $context = NULL) 
       $ids = array($panel_args[0]);
       break;
   }
-  $donations_amount = db_query("
-		SELECT SUM(fda.field_cmcd_amount_value) AS amount
-		FROM {field_data_field_cmcd_amount} fda
-		JOIN {field_data_field_activity_participants} fdap
-		ON fda.entity_id = fdap.entity_id
-		WHERE fdap.field_activity_participants_target_id IN (:contact_id)",
-    array(':contact_id' => $ids))->fetchField();
+  
+  if(module_exists('crm_core_donation')){
+  	$donations_amount = db_query("
+  			SELECT IFNULL(SUM(fda.field_cmcd_amount_value), 0) AS amount
+  			FROM {field_data_field_cmcd_amount} fda
+  			JOIN {field_data_field_activity_participants} fdap
+  			ON fda.entity_id = fdap.entity_id
+  			WHERE fdap.field_activity_participants_target_id IN (:contact_id)",
+  			array(':contact_id' => $ids)
+  			)->fetchField();
+  }
+  if(module_exists('crm_core_event')){
+  	$event_regs = db_query("
+  			SELECT COUNT(DISTINCT a.activity_id) AS item_count
+  			FROM {crm_core_activity} a
+  			JOIN {field_data_field_activity_participants} fdap
+  			ON a.activity_id = fdap.entity_id
+  			WHERE fdap.field_activity_participants_target_id IN (:contact_id)
+  			AND a.type = :type",
+  			array(
+  					':contact_id' => $ids,
+  					':type' => 'cmcev_event_registration'
+  			)
+  	)->fetchField();
+  }
+  if(module_exists('crm_core_petition')){
+  	$petition_signatures = db_query("
+  			SELECT COUNT(DISTINCT a.activity_id) AS item_count
+  			FROM {crm_core_activity} a
+  			JOIN {field_data_field_activity_participants} fdap
+  			ON a.activity_id = fdap.entity_id
+  			WHERE fdap.field_activity_participants_target_id IN (:contact_id)
+  			AND a.type = :type",
+  			array(':contact_id' => $ids, ':type' => 'cmcp_petition_signature')
+  	)->fetchField();
+  }
+  if(module_exists('crm_core_volunteer')){
+  	$volunteer_reg = db_query("
+  			SELECT COUNT(DISTINCT a.activity_id) AS item_count
+  			FROM {crm_core_activity} a
+  			JOIN {field_data_field_activity_participants} fdap
+  			ON a.activity_id = fdap.entity_id
+  			WHERE fdap.field_activity_participants_target_id IN (:contact_id)
+  			AND a.type = :type",
+  			array(
+  					':contact_id' => $ids,
+  					':type' => 'cmcv_volunteer_commitment'
+  			)
+  	)->fetchField();
+  }
 
-  $petition_signatures = db_query("
-		SELECT COUNT(DISTINCT a.activity_id) AS item_count
-  	FROM {crm_core_activity} a
-  	JOIN {field_data_field_activity_participants} fdap
-  	ON a.activity_id = fdap.entity_id
-  	WHERE fdap.field_activity_participants_target_id IN (:contact_id)
-  		AND a.type = :type",
-    array(':contact_id' => $ids, ':type' => 'cmcp_petition_signature')
-  )->fetchField();
-
-  $event_regs = db_query("
-		SELECT COUNT(DISTINCT a.activity_id) AS item_count
-  	FROM {crm_core_activity} a
-  	JOIN {field_data_field_activity_participants} fdap
-  	ON a.activity_id = fdap.entity_id
-  	WHERE fdap.field_activity_participants_target_id IN (:contact_id)
-  		AND a.type = :type",
-    array(
-      ':contact_id' => $ids,
-      ':type' => 'cmcev_event_registration'
-    )
-  )->fetchField();
-
-  $volunteer_reg = db_query("
-		SELECT COUNT(DISTINCT a.activity_id) AS item_count
-  	FROM {crm_core_activity} a
-  	JOIN {field_data_field_activity_participants} fdap
-  	ON a.activity_id = fdap.entity_id
-  	WHERE fdap.field_activity_participants_target_id IN (:contact_id)
-  		AND a.type = :type",
-    array(
-      ':contact_id' => $ids,
-      ':type' => 'cmcv_volunteer_commitment'
-    )
-  )->fetchField();
-
-  $content = '<div class="user-profile-summary-data">
-  		<div class="user-profile-summary-data-row">
-  			<div class="user-profile-summary-data-item updi-donation">
-  				<div class="udpi-data-item">' . $donations_amount . '</div>
-  				<div class="udpi-label">' . t('In Donations') . '</div>
-  			</div>
-  			<div class="user-profile-summary-data-item updi-petition">
-  				<div class="udpi-data-item">' . $petition_signatures . '</div>
-  				<div class="udpi-label">' . t('Petitions Signed') . '</div>
-  			</div>
-  			<div class="user-profile-summary-data-item updi-events">
-  				<div class="udpi-data-item">' . $event_regs . '</div>
-  				<div class="udpi-label">' . t('Events Registered') . '</div>
-  			</div>
-  			<div class="user-profile-summary-data-item updi-volunteer">
-  				<div class="udpi-data-item">' . $volunteer_reg . '</div>
-  				<div class="udpi-label">' . t('Volunteer Jobs') . '</div>
-  			</div>
-  		</div>
-  	</div>';
+  $content = '<div class="user-profile-summary-data"><div class="user-profile-summary-data-row">';
+  
+  if(isset($donations_amount)){
+  	$title = t('Donations Made');
+  	$content .= <<<DON
+  	<div class="user-profile-summary-data-item updi-donation">
+	  	<div class="udpi-label">$title</div>
+  		<div class="udpi-data-item">$donations_amount</div>
+  	</div>
+DON;
+  }
+  if(isset($event_regs)){
+  	$title = t('Events Registered');
+  	$content .= <<<EV
+			<div class="user-profile-summary-data-item updi-events">
+				<div class="udpi-label">$title</div>
+				<div class="udpi-data-item">$event_regs</div>
+			</div>
+EV;
+  }
+  if(isset($petition_signatures)){
+  	$title = t('Petitions Signed');
+  	$content .= <<<PET
+  <div class="user-profile-summary-data-item updi-petition">
+	  <div class="udpi-label">$title</div>
+  	<div class="udpi-data-item">$petition_signatures</div>
+  </div>
+PET;
+  }
+  if(isset($volunteer_reg)){
+  	$title = t('Volunteer Jobs');
+  	$content .= <<<VOL
+			<div class="user-profile-summary-data-item updi-volunteer">
+				<div class="udpi-label">$title</div>
+				<div class="udpi-data-item">$volunteer_reg</div>
+			</div>
+VOL;
+  }
+	$content .= "</div></div>";
 
   $block = new stdClass();
   $block->title = empty($conf['display_title']) ? '' : $conf['title'];

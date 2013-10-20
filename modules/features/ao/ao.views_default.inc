@@ -638,7 +638,7 @@ function ao_views_default_views() {
 
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
-  $handler->display->display_options['title'] = 'AbleOrganizer User Profile - Latest Activities';
+  $handler->display->display_options['title'] = 'Recent Activities';
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'perm';
   $handler->display->display_options['access']['perm'] = 'access user profiles';
@@ -799,10 +799,20 @@ function ao_views_default_views() {
 
   /* Display: Content pane */
   $handler = $view->new_display('panel_pane', 'Content pane', 'panel_pane_1');
-  $handler->display->display_options['pane_title'] = 'User Profile: Latest Activities';
+  $handler->display->display_options['pane_title'] = 'User profile: latest activities';
   $handler->display->display_options['pane_description'] = 'A list of recent activities for the selected user.';
   $handler->display->display_options['pane_category']['name'] = 'AbleOrganizer';
   $handler->display->display_options['pane_category']['weight'] = '0';
+  $handler->display->display_options['argument_input'] = array(
+    'contact_id' => array(
+      'type' => 'panel',
+      'context' => 'entity:crm_core_activity.activity-id',
+      'context_optional' => 0,
+      'panel' => '0',
+      'fixed' => '',
+      'label' => 'CRM Contact: Contact ID',
+    ),
+  );
   $export['ao_user_profile_latest_activities'] = $view;
 
   return $export;

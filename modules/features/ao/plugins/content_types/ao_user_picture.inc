@@ -7,9 +7,9 @@
 
 $plugin = array(
   'single' => TRUE,
-  'title' => t('User panel'),
+  'title' => t('User profile: user picture'),
   'description' => t('Picture of a user and link to user page associated with current contact, if any.'),
-  'category' => t('AbleOrganizer: Contacts'),
+  'category' => t('AbleOrganizer'),
   'edit form' => 'ao_user_picture_settings_form',
   'render callback' => 'ao_user_picture_render',
   'admin info' => 'ao_user_picture_admin_info',
@@ -24,7 +24,7 @@ $plugin = array(
  */
 function ao_user_picture_admin_info($subtype, $conf, $contexts) {
   $block = new stdClass();
-  $block->title = t('User panel');
+  $block->title = t('User profile: user picture');
   $block->content = t('Picture of a user and link to user page associated with current contact, if any.');
 
   return $block;
