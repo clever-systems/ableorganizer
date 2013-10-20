@@ -797,9 +797,12 @@ function ao_views_default_views() {
   $handler->display->display_options['arguments']['contact_id']['summary']['format'] = 'default_summary';
   $handler->display->display_options['arguments']['contact_id']['summary_options']['items_per_page'] = '25';
 
-  /* Display: Page */
-  $handler = $view->new_display('page', 'Page', 'page');
-  $handler->display->display_options['path'] = 'ableorganizer-user-profile---latest-activities';
+  /* Display: Content pane */
+  $handler = $view->new_display('panel_pane', 'Content pane', 'panel_pane_1');
+  $handler->display->display_options['pane_title'] = 'User Profile: Latest Activities';
+  $handler->display->display_options['pane_description'] = 'A list of recent activities for the selected user.';
+  $handler->display->display_options['pane_category']['name'] = 'AbleOrganizer';
+  $handler->display->display_options['pane_category']['weight'] = '0';
   $export['ao_user_profile_latest_activities'] = $view;
 
   return $export;
