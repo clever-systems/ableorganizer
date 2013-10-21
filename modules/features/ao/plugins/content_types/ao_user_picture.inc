@@ -69,7 +69,7 @@ function ao_user_picture_render($subtype, $conf, $panel_args, $context = NULL) {
   $user = crm_core_user_sync_get_user_from_contact_id($panel_args[0]);
   if (!empty($user)) {
     $content = theme('user_picture', array('account' => $user));
-    $content .= theme('username', array('account' => $user));
+    // 	$content .= theme('username', array('account' => $user));
   }
 
   $block = new stdClass();

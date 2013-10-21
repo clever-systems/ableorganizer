@@ -6,8 +6,8 @@
 
 $plugin = array(
   'single' => TRUE,
-  'title' => t('Profile 5 recent activities'),
-  'description' => t('Displays contact 5 recent activities.'),
+  'title' => t('Contact: 5 recent activities'),
+  'description' => t('Displays 5 recent activities for the current contact.'),
   'category' => t('AbleOrganizer'),
   'edit form' => 'ao_5_recent_activities_form',
   'render callback' => 'ao_5_recent_activities_render',
@@ -23,8 +23,8 @@ $plugin = array(
  */
 function ao_5_recent_activities_admin_info($subtype, $conf, $contexts) {
   $block = new stdClass();
-  $block->title = t('Profile 5 recent activities');
-  $block->content = t('Displays contact 5 recent activities.');
+  $block->title = t('Contact: 5 recent activities');
+  $block->content = t('Displays 5 recent activities for the current contact.');
 
   return $block;
 }
