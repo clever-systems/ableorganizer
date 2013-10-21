@@ -383,8 +383,86 @@ LABEL.compact-form-label {
   background: #33333D;
 }
 
+/* user pages */
+#user-register-form, #user-pass, #user-login {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2em;
+  border: 1px solid #CCC;
+  margin-top: 1em;
+  border-radius: .5em;
+  -moz-border-radius: .5em;
+  -webkit-border-radius: .5em;
+}
 
 
+/* custom */
+/* custom - user profiles - contact data */
+.up_info_section {
+  display: table;
+}
+.up_info_section .up_info_item {
+  display: table-row;
+}
+.up_info_section .up_info_item .up_info_label {
+  display: table-cell;
+  padding-bottom: 0.5em;
+  padding-right: 0.5em;
+}
+.up_info_section .up_info_item .up_info_data {
+  display: table-cell;
+  padding-bottom: 0.5em;
+}
 
+/* custom - user profiles - summary data */
+.user-profile-summary-data {
+  display: table;
+  width: 100%;
+}
+.user-profile-summary-data .user-profile-summary-data-row {
+  display: table-row;
+}
+.user-profile-summary-data .user-profile-summary-data-row .user-profile-summary-data-item {
+  display: table-cell;
+  text-align: center;
+  background-color: #CCC;
+  padding: 1em 0.5em;
+}
+.user-profile-summary-data .user-profile-summary-data-row .user-profile-summary-data-item .udpi-label {
+  font-size: 0.9em;
+  font-weight: 700;
+  margin-bottom: 0.2em;
+  background-color: White;
+  padding: 0.2em;
+}
+.user-profile-summary-data .user-profile-summary-data-row .user-profile-summary-data-item .udpi-data-item {
+  font-size: 1.5em;
+  background-color: White;
+  padding: 0.2em;
+}
 
+/* custom - user profiles - recent activities */
+.view-ao-user-profile-latest-activities .view-content .views-row {
+  border-bottom: 1px solid #CCC;
+  min-height: 72px;
+  margin-bottom: 0.5em;
+}
+.view-ao-user-profile-latest-activities .view-content .views-row:last-child {
+  border-bottom: none;
+}
+.ao_activity_feed_item {
+  margin-bottom: .5em;
+  padding-bottom: .5em;
+}
+.ao_activity_feed_item .ao_activity_feed_icon {
+  float: left;
+  width: 64px;
+  height: 64px;
+  margin-right: .5em;
+  background-color: #CCC;
+}
+.ao_activity_feed_item .ao_activity_feed_string {
+  margin-bottom: .5em;
+}
 
