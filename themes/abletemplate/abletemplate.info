@@ -46,7 +46,7 @@ settings[toggle_favicon] = '1'
 settings[toggle_main_menu] = '1'
 settings[toggle_secondary_menu] = '1'
 settings[default_logo] = '0'
-settings[logo_path] = 'profiles/ableorganizer/ao-logo-front.png'
+settings[logo_path] = 'profiles/ableorganizer/images/ao-logo-front.png'
 settings[logo_upload] = ''
 settings[default_favicon] = '1'
 settings[favicon_path] = ''
@@ -406,4 +406,12 @@ version = "7.x-1.0-beta6+55-dev"
 core = "7.x"
 project = "ableorganizer"
 datestamp = "1381054653"
+
+
+
+; Information added by drush on 2013-10-15
+version = "7.x-1.0-beta6+79-dev"
+core = "7.x"
+project = "ableorganizer"
+datestamp = "1381844536"
 
