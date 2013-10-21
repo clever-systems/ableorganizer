@@ -443,6 +443,28 @@ function ableorganizer_install() {
   $settings = variable_get($var_name, array());
   $settings['logo_path'] = $new_path;
   variable_set($var_name, $settings);
+  
+  // compact forms settings
+  variable_set('compact_forms_ids', "user-login-form
+crm-core-profile-entry-form-ao-annual-appeal-form
+crm-core-profile-entry-form-ao-fundraiser-form
+crm-core-profile-entry-form-ao-donation-form
+crm-core-profile-entry-form-ao-cmcev-simple-single-form
+crm-core-profile-entry-form-ao-cmcev-simple-quantity-form
+crm-core-profile-entry-form-ao-cmcev-simple-many-form
+crm-core-profile-entry-form-ao-cmcev-simple-reg-form
+crm-core-profile-entry-form-short-petition-with-message
+crm-core-profile-entry-form-canvass-signatures
+crm-core-profile-entry-form-short-online-petition
+crm-core-profile-entry-form-signature-drive
+crm-core-profile-entry-form-ao-volunteer-commitment-form-2
+crm-core-profile-entry-form-ao-volunteer-commitment-form");
+
+  variable_set("compact_forms_field_size","");
+  variable_set("compact_forms_descriptions", 1);
+  variable_set("compact_forms_stars ", "2");
+    
+  
 
   // Enable blocks.
   // This must be done after the theme has been installed.
