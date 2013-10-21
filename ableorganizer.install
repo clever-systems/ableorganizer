@@ -681,7 +681,7 @@ function ableorganizer_features($form, &$form_state, &$install_state) {
   $form['settings_wrapper']['install_donations'] = array(
     '#type' => 'checkbox',
     '#default_value' => TRUE,
-    '#title' => $t('Donations'),
+    '#title' => $t('Donate'),
     '#description' => $t('Includes donation pages, source tracking, and reports.'),
   );
 
