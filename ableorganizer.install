@@ -438,11 +438,18 @@ function ableorganizer_install() {
   // Now set the default logo.
   $theme_name = 'ablestarter';
   $var_name = 'theme_' . $theme_name . '_settings';
-  $new_path = 'profiles/ableorganizer/ao-logo.png';
+  $new_path = 'profiles/ableorganizer/images/ao-logo.png';
 
   $settings = variable_get($var_name, array());
   $settings['logo_path'] = $new_path;
   variable_set($var_name, $settings);
+  
+  // Now set the default user picture
+  variable_set("user_pictures", 1);
+  variable_set("user_picture_default", "profiles/ableorganizer/images/user-pic-default.png");
+  
+  
+  
   
   // compact forms settings
   variable_set('compact_forms_ids', "user-login-form
