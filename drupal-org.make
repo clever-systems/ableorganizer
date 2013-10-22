@@ -24,9 +24,9 @@ projects[rules][version] = 2.5
 projects[rules][subdir] = "contrib"
 projects[libraries][version] = 2.1
 projects[libraries][subdir] = "contrib"
-projects[features][version] = 2.0-rc5
+projects[features][version] = 2.0
 projects[features][subdir] = "contrib"
-projects[context][version] = 3.0-rc1
+projects[context][version] = 3.1
 projects[context][subdir] = "contrib"
 projects[strongarm][version] = 2.0
 projects[strongarm][subdir] = "contrib"
@@ -158,11 +158,11 @@ projects[omega_tools][version] = "3.0-rc4"
 ; crm core modules
 projects[crm_core][version] = 0.961
 projects[crm_core][subdir] = "contrib"
-projects[crm_core_profile][version] = 1.0-beta7
+projects[crm_core_profile][version] = 1.0-beta8
 projects[crm_core_profile][subdir] = "contrib"
 projects[crm_core_profile_commerce_items][version] = 0.3
 projects[crm_core_profile_commerce_items][subdir] = "contrib"
-projects[crm_core_demo_standard_fields][version] = 1.2
+projects[crm_core_demo_standard_fields][version] = 1.3
 projects[crm_core_demo_standard_fields][subdir] = "contrib"
 ; donations
 projects[crm_core_donation][version] = 1.10
