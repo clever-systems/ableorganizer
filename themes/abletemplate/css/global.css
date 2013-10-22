@@ -84,7 +84,7 @@ h6 {
 }
 
 /* fields */
-.field-name-field-cmcp-cta {
+.node .field-name-field-cmcp-cta {
   padding: .5em;
   border: 1px solid #CCC;
   background-color: #e9e9e9;
@@ -179,11 +179,14 @@ form TABLE {
   display: inline-block;
   width: 48%;
 }
-.form-item .description {
+
+.fieldset-description, .text-format-wrapper .description, .form-item .description {
   padding: 0.5em;
   font-size: 0.8em;
   font-style: italic;
   color: #777;
+  margin-top: 0em;  
+  margin-left: 1.5em;  
 }
 /* UI Consistency */
 ::-moz-focus-inner {
@@ -210,17 +213,15 @@ input, button, select, textarea {
   font-weight: normal;
   font: inherit;
   font-size: 1.1em;
+  margin: 0em .5em 0em 0em;
 }
 .region-sidebar-second .button, .region-sidebar-second .form-actions button, .region-sidebar-second .form-actions input[type="reset"], 
 .region-sidebar-second .form-actions input[type="submit"], .region-sidebar-second .form-actions input[type="button"] {
   background: #f4412e;
   background: linear-gradient(to bottom,  #f4412e 31%,#cf3a29 100%);
-}
-
-.block-inner .button, .block-inner .form-actions button, .block-inner .form-actions input[type="reset"], .block-inner .form-actions input[type="submit"], 
-.block-inner .form-actions input[type="button"] {
   width: 100%;
 }
+
 
 .amounts button, .amounts input[type="reset"], .amounts input[type="submit"], .amounts input[type="button"] {
   border-radius: 4px;
@@ -327,13 +328,63 @@ textarea, select[size], select[multiple] {
   padding: .2em;
   width: auto;
 }
-
-
 LABEL.compact-form-label {
   margin-top: .2em;
   color: #AAA;
 }
 
+/* node edit forms */
+.node-form {
+  padding: 1em;
+  border: 1px solid #CCC;
+  margin-bottom: 2em;
+  border-radius: 1em;
+  -moz-border-radius: 1em;
+  -webkit-border-radius: 1em;
+}
+.node-form LABEL, .node-form fieldset legend  {
+  font-weight: 700;
+}
+.node-form .form-type-checkbox LABEL  {
+  font-weight: normal;
+}
+.node-form .start-date-wrapper, .node-form .end-date-wrapper  {
+  display: inline-block;
+  width: auto;
+  vertical-align: top;
+}
+.node-form .end-date-wrapper > .form-item > LABEL {
+  display: inline-block;
+  width: auto;
+  float: left;
+  padding-top: 2em;
+}
+.node-form .end-date-wrapper .date-padding {
+  display: inline-block;
+  width: auto;
+  vertical-align: top;
+}
+.node-form .date-float  {
+  display: block;
+  width: 100%;
+  vertical-align: top;
+}
+.node-form fieldset LEGEND {
+  margin-bottom: .5em;
+}
+.node-form fieldset:not(.filter-wrapper) .fieldset-wrapper {
+  margin-top: .5em;
+  border: 1px solid #CCC;
+  padding: .5em .5em 1em;
+}
+.node-form .vertical-tabs .form-item {
+  margin: 1em 0em;
+}
+.node-form .vertical-tabs FIELDSET .fieldset-wrapper {
+  margin-top: 1em;
+  border: none;
+  padding: 0em;
+}
 
 /* drop down menus */
 .branding-data .navigation-menu {
@@ -396,11 +447,32 @@ LABEL.compact-form-label {
   -webkit-border-radius: .5em;
 }
 
+/* text formats */
+.filter-wrapper {
+  margin: 0px;
+  padding: .5em 0em;
+}
+.filter-wrapper .form-type-select SELECT {
+  display: none;
+}
+.filter-wrapper .form-type-select .button {
+  font-size: 0.8em;
+  width: auto;
+  display: inline-block;
+}
+.filter-wrapper .form-type-select .active-val {
+  background: linear-gradient(to bottom, #CCCCCF 31%,#99999C   100%);  
+}
+.filter-wrapper .filter-guidelines {
+  display: none;
+}
+
 
 /* custom */
 /* custom - user profiles - contact data */
 .up_info_section {
   display: table;
+  margin-top: .5em;
 }
 .up_info_section .up_info_item {
   display: table-row;
@@ -422,24 +494,57 @@ LABEL.compact-form-label {
 }
 .user-profile-summary-data .user-profile-summary-data-row {
   display: table-row;
+  min-height: 32px;
 }
 .user-profile-summary-data .user-profile-summary-data-row .user-profile-summary-data-item {
   display: table-cell;
   text-align: center;
   background-color: #CCC;
-  padding: 1em 0.5em;
+  padding: .5em 0em;
+  border-right: 1px solid #CCC;
+}
+.user-profile-summary-data .user-profile-summary-data-row .user-profile-summary-data-item:first-child {
+  padding-left: .5em;
+  border-top-left-radius: .5em;
+  -moz-border-top-left-radius: .5em;
+  -webkit-border-top-left-radius: .5em;
+  border-bottom-left-radius: .5em;
+  -moz-border-bottom-left-radius: .5em;
+  -webkit-border-bottom-left-radius: .5em;
+}
+.user-profile-summary-data .user-profile-summary-data-row .user-profile-summary-data-item:last-child {
+  padding-right: .5em;
+  border-top-right-radius: .5em;
+  -moz-border-top-right-radius: .5em;
+  -webkit-border-top-right-radius: .5em;
+  border-bottom-right-radius: .5em;
+  -moz-border-bottom-right-radius: .5em;
+  -webkit-border-bottom-right-radius: .5em;
 }
 .user-profile-summary-data .user-profile-summary-data-row .user-profile-summary-data-item .udpi-label {
-  font-size: 0.9em;
+  font-size: 0.8em;
   font-weight: 700;
-  margin-bottom: 0.2em;
+  border-bottom: 1px solid #CCC;
   background-color: White;
   padding: 0.2em;
+  text-transform: uppercase;
+}
+.updi-donation .udpi-data-item {
+  color: #399B19;
+}
+.updi-events .udpi-data-item {
+  color: #1A6099;
+}
+.updi-petition .udpi-data-item {
+  color: #BC28E0;
+}
+.updi-volunteer .udpi-data-item {
+  color: #D12424;
 }
 .user-profile-summary-data .user-profile-summary-data-row .user-profile-summary-data-item .udpi-data-item {
   font-size: 1.5em;
   background-color: White;
-  padding: 0.2em;
+  padding: 0.5em 0em;
 }
 
 /* custom - user profiles - recent activities */
@@ -455,14 +560,86 @@ LABEL.compact-form-label {
   margin-bottom: .5em;
   padding-bottom: .5em;
 }
-.ao_activity_feed_item .ao_activity_feed_icon {
-  float: left;
-  width: 64px;
-  height: 64px;
-  margin-right: .5em;
-  background-color: #CCC;
-}
 .ao_activity_feed_item .ao_activity_feed_string {
   margin-bottom: .5em;
 }
+
+/* custom - user icons */
+.user-icon {
+  float: left;
+  width: 32px;
+  height: 32px;
+  margin-right: .5em;
+  margin-top: -5px;
+}
+.user-icon SPAN {
+  display: block;
+  width: 32px;
+  height: 32px;
+  background-image: url('../images/ao-frontend-icons.png');
+  background-position: 0px -60px;
+  background-repeat: none;
+  border-radius: .5em;
+  -moz-border-radius: .5em;
+  -webkit-border-radius: .5em;
+}
+.user-name SPAN {
+  background-image: none;
+}
+.user-address SPAN {
+  background-position: -30px -60px;
+}
+.user-bday SPAN {
+  background-position: 0px -90px;
+}
+.user-email SPAN {
+  background-position: -60px -60px;
+}
+.user-facebook SPAN {
+  background-position: -90px -60px;
+}
+.user-twitter SPAN {
+  background-position: -120px -60px;
+}
+
+/* custom - activity icons */
+.ao_activity_feed_icon {
+  float: left;
+  width: 32px;
+  height: 32px;
+  margin-right: .5em;
+}
+.ao_activity_feed_icon SPAN {
+  display: block;
+  width: 32px;
+  height: 32px;
+  background-color: #CCC;
+  background-image: url('../images/ao-frontend-icons.png');
+  background-position: -120px -30px;
+  background-repeat: none;
+  border-radius: .5em;
+  -moz-border-radius: .5em;
+  -webkit-border-radius: .5em;
+}
+.ao_activity_donation SPAN {
+  background-color: #399B19;
+  background-position: -30px 0px;
+}
+.ao_activity_event SPAN {
+  background-color: #1A6099;
+  background-position: -60px 0px;
+}
+.ao_activity_petition SPAN {
+  background-color: #BC28E0;
+  background-position: -60px -30px;
+}
+.ao_activity_volunteer SPAN {
+  background-color: #D12424;
+  background-position: 0px 0px;
+}
+
+
+
+
+
 
