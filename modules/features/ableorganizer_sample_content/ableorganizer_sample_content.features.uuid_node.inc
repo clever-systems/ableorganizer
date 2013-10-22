@@ -78,7 +78,7 @@ function ableorganizer_sample_content_uuid_features_default_content() {
 </div>
 </div>
 
-
+<div class="content-holder">
 <h4>Getting Started</h4>
 <ul>
 <li>How forms and content work together
@@ -90,7 +90,9 @@ function ableorganizer_sample_content_uuid_features_default_content() {
 <li>Creating online petitions
 <li>Registering volunteer opportunities
 </lu>
+</div>
 
+<div class="content-holder">
 <h4>Pro Tools for Power Users</h4>
 <ul>
 <li>Configure payment processors
@@ -100,7 +102,7 @@ function ableorganizer_sample_content_uuid_features_default_content() {
 <li>Create custom forms for tracking offline information
 <li>Integrate with MailChimp Salesforce, Constant Contact
 </lu>
-
+</div>
 
 ',
         'summary' => '',
@@ -152,6 +154,7 @@ function ableorganizer_sample_content_uuid_features_default_content() {
 </li></ul></div>
 </div>
 </div>
+<div class="content-holder">
 <h4>Getting Started</h4>
 <ul><li>How forms and content work together
 </li><li>How source tracking works in AbleOrganizer
@@ -160,13 +163,16 @@ function ableorganizer_sample_content_uuid_features_default_content() {
 </li><li>Building online donation forms
 </li><li>Configuring event registration forms
 </li><li>Creating online petitions
-</li><li>Registering volunteer opportunities<br /><h4>Pro Tools for Power Users</h4>
+</li><li>Registering volunteer opportunities<br /></li></ul></div>
+<div class="content-holder">
+<h4>Pro Tools for Power Users</h4>
 <ul><li>Configure payment processors
 </li><li>Add custom fields for capturing contact information
 </li><li>Customize the look and feel of the site
 </li><li>Create custom HTML emails
 </li><li>Create custom forms for tracking offline information
-</li><li>Integrate with MailChimp Salesforce, Constant Contact<br /></li></ul></li></ul>',
+</li><li>Integrate with MailChimp Salesforce, Constant Contact<br /></li></ul></div>
+',
         'safe_summary' => '',
       ),
     ),

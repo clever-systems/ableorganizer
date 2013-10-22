@@ -107,7 +107,6 @@ projects[file_entity][download][url] = "http://git.drupal.org/project/file_entit
 projects[file_entity][download][branch] = "7.x-2.x"
 projects[file_entity][download][revision] = "af6c71433011a0525bb9d3d3c87a93a2e09cf75d"
 
-
 ; commerce modules
 projects[commerce][version] = 1.8
 projects[commerce][subdir] = "contrib"
