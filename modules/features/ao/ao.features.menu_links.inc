@@ -10,17 +10,17 @@
 function ao_menu_default_menu_links() {
   $menu_links = array();
 
-  // Exported menu link: menu-ao-navigation-items_contacts:crm-core/contacts
-  $menu_links['menu-ao-navigation-items_contacts:crm-core/contacts'] = array(
+  // Exported menu link: menu-ao-navigation-items_contacts:crm-core/contact
+  $menu_links['menu-ao-navigation-items_contacts:crm-core/contact'] = array(
     'menu_name' => 'menu-ao-navigation-items',
-    'link_path' => 'crm-core/contacts',
-    'router_path' => 'crm-core',
+    'link_path' => 'crm-core/contact',
+    'router_path' => 'crm-core/contact',
     'link_title' => 'Contacts',
     'options' => array(
       'attributes' => array(
         'title' => '',
       ),
-      'identifier' => 'menu-ao-navigation-items_contacts:crm-core/contacts',
+      'identifier' => 'menu-ao-navigation-items_contacts:crm-core/contact',
     ),
     'module' => 'menu',
     'hidden' => 0,
