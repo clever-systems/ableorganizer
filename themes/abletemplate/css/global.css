@@ -579,6 +579,107 @@ LABEL.compact-form-label {
   background-position: 0px 0px;
 }
 
+/* custom - marquees */
+.ao-marq-title {
+  text-align: center;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.ao-marq {
+  text-align: center;
+  background-color: #e1e1e1;
+  margin-bottom: 1em;
+  border-radius: .5em;
+  -moz-border-radius: .5em;
+  -webkit-border-radius: .5em;
+}
+.ao-marq .ao-marq-item {
+  display: inline-block;
+  vertical-align: top;
+  width: 98%;
+  margin: .5em .2em;
+  border-radius: .5em;
+  -moz-border-radius: .5em;
+  -webkit-border-radius: .5em;
+  overflow: hidden;
+  position: relative;
+}
+.ao-marq .ao-marq-item .ao-marq-item-label {
+  font-weight: 700;
+  padding: .2em 0em 1em 0em;
+}
+.ao-marq .ao-marq-item .ao-marq-item-description {
+  background-color: White;
+  padding: 1em .5em .5em;
+  text-align: left;
+}
+.ao-marq .ao-marq-item .ao-marq-item-title {
+  position: absolute;
+  top: 70px;
+  left:0;
+  right:0;
+  margin-left:auto;
+  margin-right:auto;
+}
+.ao-marq .ao-marq-item .ao-marq-item-title H3 {
+  text-align: center;
+  border-radius: .5em;
+  -moz-border-radius: .5em;
+  -webkit-border-radius: .5em;
+  background-color: #555;
+  padding: .2em .5em;
+  font-size: 1em;
+  color: White;
+  text-transform: uppercase;
+  display: inline-block;
+}
+.ao-marq .ao-marq-donations .ao-marq-item-label {
+  background-color: #399B19;
+}
+.ao-marq .ao-marq-donations SPAN {
+  background-image: url('../images/ao-frontend-icons.png');
+  background-position: -60px -120px;
+  background-repeat: none;
+  height: 60px;
+  width: 60px;
+  display: inline-block;
+}
+.ao-marq .ao-marq-events .ao-marq-item-label {
+  background-color: #1A6099;
+}
+.ao-marq .ao-marq-events SPAN {
+  background-image: url('../images/ao-frontend-icons.png');
+  background-position: -120px -120px;
+  background-repeat: none;
+  height: 60px;
+  width: 60px;
+  display: inline-block;
+}
+.ao-marq .ao-marq-petitions .ao-marq-item-label {
+  background-color: #E26527;
+}
+.ao-marq .ao-marq-petitions SPAN {
+  background-image: url('../images/ao-frontend-icons.png');
+  background-position: -180px -120px;
+  background-repeat: none;
+  height: 60px;
+  width: 60px;
+  display: inline-block;
+}
+.ao-marq .ao-marq-volunteer .ao-marq-item-label {
+  background-color: #D12424;
+}
+.ao-marq .ao-marq-volunteer SPAN {
+  background-image: url('../images/ao-frontend-icons.png');
+  background-position: 0px -120px;
+  background-repeat: none;
+  height: 60px;
+  width: 60px;
+  display: inline-block;
+}
+
+
 
 
 
