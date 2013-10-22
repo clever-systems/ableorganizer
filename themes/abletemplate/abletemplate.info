@@ -4,7 +4,7 @@ core = '7.x'
 engine = 'phptemplate'
 screenshot = 'screenshot.png'
 base theme = 'omega'
-scripts[] = 'js/abletemplate.js'
+scripts[0] = 'js/abletemplate.js'
 regions[page_top] = 'Page Top'
 regions[page_bottom] = 'Page Bottom'
 regions[content] = 'Content'
@@ -36,18 +36,20 @@ zones[postscript] = 'Postscript'
 css[global.css][name] = 'Your custom global styles'
 css[global.css][description] = 'This file holds all the globally active custom CSS of your theme.'
 css[global.css][options][weight] = '10'
-version = '1.x'
+version = '7.x-1.0-beta6+79-dev'
+project = 'ableorganizer'
+datestamp = '1381844536'
 settings[toggle_logo] = '1'
 settings[toggle_name] = '0'
 settings[toggle_slogan] = '1'
-settings[toggle_node_user_picture] = '1'
-settings[toggle_comment_user_picture] = '1'
-settings[toggle_comment_user_verification] = '1'
+settings[toggle_node_user_picture] = '0'
+settings[toggle_comment_user_picture] = '0'
+settings[toggle_comment_user_verification] = '0'
 settings[toggle_favicon] = '1'
 settings[toggle_main_menu] = '1'
 settings[toggle_secondary_menu] = '1'
 settings[default_logo] = '0'
-settings[logo_path] = 'profiles/ableorganizer/images/ao-logo-front.png'
+settings[logo_path] = 'profiles/ableorganizer/ao-logo-front.png'
 settings[logo_upload] = ''
 settings[default_favicon] = '1'
 settings[favicon_path] = ''
@@ -299,7 +301,7 @@ settings[alpha_region_sidebar_first_weight] = '1'
 settings[alpha_region_sidebar_first_position] = '0'
 settings[alpha_region_sidebar_first_css] = ''
 settings[alpha_region_sidebar_first_equal_height_element] = '1'
-settings[alpha_region_sidebar_first_equal_height_container] = '1'
+settings[alpha_region_sidebar_first_equal_height_container] = '0'
 settings[alpha_region_content_force] = '0'
 settings[alpha_region_content_zone] = 'content'
 settings[alpha_region_content_prefix] = '0'
@@ -309,7 +311,7 @@ settings[alpha_region_content_weight] = '2'
 settings[alpha_region_content_position] = '0'
 settings[alpha_region_content_css] = ''
 settings[alpha_region_content_equal_height_element] = '1'
-settings[alpha_region_content_equal_height_container] = '1'
+settings[alpha_region_content_equal_height_container] = '0'
 settings[alpha_region_sidebar_second_force] = '0'
 settings[alpha_region_sidebar_second_zone] = 'content'
 settings[alpha_region_sidebar_second_prefix] = '0'
@@ -319,7 +321,7 @@ settings[alpha_region_sidebar_second_weight] = '3'
 settings[alpha_region_sidebar_second_position] = '0'
 settings[alpha_region_sidebar_second_css] = ''
 settings[alpha_region_sidebar_second_equal_height_element] = '1'
-settings[alpha_region_sidebar_second_equal_height_container] = '1'
+settings[alpha_region_sidebar_second_equal_height_container] = '0'
 settings[alpha_zone_postscript_wrapper] = '1'
 settings[alpha_zone_postscript_force] = '0'
 settings[alpha_zone_postscript_order] = '0'
@@ -400,19 +402,3 @@ settings[alpha_region_footer_second_position] = '0'
 settings[alpha_region_footer_second_css] = ''
 settings[alpha_region_footer_second_equal_height_element] = '0'
 settings[alpha_region_footer_second_equal_height_container] = '0'
-
-
-; Information added by drush on 2013-10-06
-version = "7.x-1.0-beta6+55-dev"
-core = "7.x"
-project = "ableorganizer"
-datestamp = "1381054653"
-
-
-
-; Information added by drush on 2013-10-15
-version = "7.x-1.0-beta6+79-dev"
-core = "7.x"
-project = "ableorganizer"
-datestamp = "1381844536"
-
