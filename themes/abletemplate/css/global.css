@@ -89,25 +89,11 @@ h6 {
   border: 1px solid #CCC;
   background-color: #e9e9e9;
 }
-.field-type-addressfield {
-}
-.field-type-addressfield DIV.field-items {
-}
-.field-type-addressfield DIV.field-items DIV {
-}
-.field-type-addressfield .fieldset-wrapper {
-}
 fieldset LEGEND {
   margin-bottom: 1em;
 }
 fieldset {
   margin-top: 1em;
-}
-.field-type-addressfield .fieldset-wrapper .locality-block {
-}
-.field-type-addressfield .fieldset-wrapper .locality-block .form-item {
-}
-.field-type-addressfield .fieldset-wrapper .locality-block .form-type-textfield {
 }
 .field-type-addressfield .fieldset-wrapper .locality-block .form-type-select {
   width: 36%;
@@ -122,8 +108,6 @@ div.addressfield-container-inline > div.form-item {
   float: none;
   margin-right: 0em;
   margin-bottom: inherit;
-}
-.field-type-addressfield .fieldset-wrapper .locality-block .form-item {
 }
 .event-date {
   width: 300px;  
@@ -146,7 +130,12 @@ div.addressfield-container-inline > div.form-item {
 .date-display-start {
   display: block;
 }
-
+.form-phone-number .form-item:first-child INPUT {
+  width: 68%;
+}
+.form-phone-number .form-item:last-child INPUT {
+  width: 28%;
+}
 
 /* lists */
 ul, ol {
@@ -155,7 +144,6 @@ ul, ol {
 ul LI, ol LI {
   margin-bottom: 1em;
 }
-
 
 /* forms */
 .form-required { 
@@ -170,8 +158,6 @@ ul LI, ol LI {
 form TABLE {
   width: 100%;
 }
-.form-item-commerce-amount-single {
-}
 .form-item-commerce-amount-single .field-prefix {
   display: inline-block;
 }
@@ -179,7 +165,6 @@ form TABLE {
   display: inline-block;
   width: 48%;
 }
-
 .fieldset-description, .text-format-wrapper .description, .form-item .description {
   padding: 0.5em;
   font-size: 0.8em;
@@ -188,19 +173,9 @@ form TABLE {
   margin-top: 0em;  
   margin-left: 1.5em;  
 }
-/* UI Consistency */
-::-moz-focus-inner {
-  border: 0;
-  padding: 0;
-}
-
 input[type="search"]::-webkit-search-decoration {
   display: none;
 }
-
-input, button, select, textarea {
-}
-
 .button, .form-actions button, .form-actions input[type="reset"], .form-actions input[type="submit"], .form-actions input[type="button"] {
   border-radius: 4px;
   -moz-border-radius: 4px;
@@ -221,8 +196,6 @@ input, button, select, textarea {
   background: linear-gradient(to bottom,  #f4412e 31%,#cf3a29 100%);
   width: 100%;
 }
-
-
 .amounts button, .amounts input[type="reset"], .amounts input[type="submit"], .amounts input[type="button"] {
   border-radius: 4px;
   -moz-border-radius: 4px;
@@ -262,8 +235,6 @@ FORM TABLE thead TR {
 FORM TABLE thead th {
   padding: .2em .2em;
 }
-#crm-core-profile-commerce-cart-ajax { 
-}
 #crm-core-profile-commerce-cart-ajax .cart-summary { 
   margin-top: .5em;
   text-align: right;
@@ -277,19 +248,13 @@ FORM TABLE thead th {
 .crm-core-profile-commerce-cart-ajax .cart-summary-total #edit-actions { 
   text-align: right;
 }
-#edit-cart-wrapper {
-}
 #edit-cart-wrapper .caption {
   display: none;
-}
-
-.button, button {
 }
 .button A {
   color: inherit;
   text-decoration: none;
 }
-
 textarea, select, input[type="date"], input[type="datetime"], input[type="datetime-local"],
 input[type="email"], input[type="month"], input[type="number"], input[type="password"], 
 input[type="search"], input[type="tel"], input[type="text"], input[type="time"], input[type="url"], input[type="week"] {
@@ -297,33 +262,9 @@ input[type="search"], input[type="tel"], input[type="text"], input[type="time"],
   background-color: #f7f7f7;
   border: 1px solid #BBB;
 }
-
-/* Separate rule for Firefox. Cannot stack with WebKit's. */
-input.placeholder_text, textarea.placeholder_text, input:-moz-placeholder, textarea:-moz-placeholder {
-  color: #888;
-}
-
-::-webkit-input-placeholder {
-  color: #888;
-}
-
 button:focus, button:active, input:focus, input:active, select:focus, select:active, textarea:focus, textarea:active {
   background-color: White;
 }
-
-input[type="file"]:focus, input[type="file"]:active, input[type="radio"]:focus, input[type="radio"]:active, 
-input[type="checkbox"]:focus, input[type="checkbox"]:active {
-}
-
-select[disabled], textarea[disabled], input[type="date"][disabled], input[type="datetime"][disabled], input[type="datetime-local"][disabled], 
-input[type="email"][disabled], input[type="month"][disabled], input[type="number"][disabled], input[type="password"][disabled],
-input[type="search"][disabled], input[type="tel"][disabled], input[type="text"][disabled], input[type="time"][disabled],
-input[type="url"][disabled], input[type="week"][disabled] {
-}
-
-button[disabled], input[disabled], select[disabled], select[disabled] option, select[disabled] optgroup, textarea[disabled] {
-}
-
 textarea, select[size], select[multiple] {
   padding: .2em;
   width: auto;
