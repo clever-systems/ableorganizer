@@ -8,6 +8,9 @@
  * Implements hook_ctools_plugin_api().
  */
 function ao_ctools_plugin_api($module = NULL, $api = NULL) {
+  if ($module == "file_entity" && $api == "file_default_displays") {
+    return array("version" => "1");
+  }
   if ($module == "openlayers" && $api == "openlayers_maps") {
     return array("version" => "1");
   }
@@ -65,4 +68,39 @@ function ao_fontyourface_features_default_font() {
       'metadata' => 'a:2:{s:4:"path";s:13:"Cabin:regular";s:6:"subset";s:5:"latin";}',
     ),
   );
+}
+
+/**
+ * Implements hook_image_default_styles().
+ */
+function ao_image_default_styles() {
+  $styles = array();
+
+  // Exported image style: adaptive.
+  $styles['adaptive'] = array(
+    'name' => 'adaptive',
+    'label' => 'adaptive',
+    'effects' => array(
+      1 => array(
+        'label' => 'Adaptive',
+        'help' => 'Adaptive image scale according to client resolution.',
+        'effect callback' => 'image_scale_effect',
+        'dimensions callback' => 'image_scale_dimensions',
+        'form callback' => 'adaptive_image_scale_form',
+        'summary theme' => 'adaptive_image_scale_summary',
+        'module' => 'adaptive_image',
+        'name' => 'adaptive_image',
+        'data' => array(
+          'resolutions' => '1382, 992, 768, 480',
+          'mobile_first' => 1,
+          'height' => '',
+          'width' => 1382,
+          'upscale' => '',
+        ),
+        'weight' => 1,
+      ),
+    ),
+  );
+
+  return $styles;
 }
