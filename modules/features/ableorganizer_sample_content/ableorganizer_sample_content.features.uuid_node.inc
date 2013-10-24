@@ -12,6 +12,240 @@ function ableorganizer_sample_content_uuid_features_default_content() {
 
   $nodes[] = array(
   'uid' => 1,
+  'title' => 'Using contacts, reports and dashboards in CRM Core',
+  'log' => '',
+  'status' => 1,
+  'comment' => 1,
+  'promote' => 0,
+  'sticky' => 0,
+  'vuuid' => '7a815e3f-27da-47db-aea2-3c26460704f8',
+  'type' => 'article',
+  'language' => 'und',
+  'created' => 1382652803,
+  'tnid' => 0,
+  'translate' => 0,
+  'uuid' => '0288a5d9-e20c-43a5-b52f-fbd2b7767fb7',
+  'revision_uid' => 1,
+  'body' => array(
+    'und' => array(
+      0 => array(
+        'value' => 'Using contacts, reports and dashboards in CRM Core',
+        'summary' => '',
+        'format' => 'full_html',
+        'safe_value' => '<p>Using contacts, reports and dashboards in CRM Core</p>
+',
+        'safe_summary' => '',
+      ),
+    ),
+  ),
+  'field_tags' => array(
+    'und' => array(
+      0 => array(
+        'tid' => 1,
+      ),
+      1 => array(
+        'tid' => 5,
+      ),
+    ),
+  ),
+  'field_image' => array(),
+  'rdf_mapping' => array(
+    'field_image' => array(
+      'predicates' => array(
+        0 => 'og:image',
+        1 => 'rdfs:seeAlso',
+      ),
+      'type' => 'rel',
+    ),
+    'field_tags' => array(
+      'predicates' => array(
+        0 => 'dc:subject',
+      ),
+      'type' => 'rel',
+    ),
+    'rdftype' => array(
+      0 => 'sioc:Item',
+      1 => 'foaf:Document',
+    ),
+    'title' => array(
+      'predicates' => array(
+        0 => 'dc:title',
+      ),
+    ),
+    'created' => array(
+      'predicates' => array(
+        0 => 'dc:date',
+        1 => 'dc:created',
+      ),
+      'datatype' => 'xsd:dateTime',
+      'callback' => 'date_iso8601',
+    ),
+    'changed' => array(
+      'predicates' => array(
+        0 => 'dc:modified',
+      ),
+      'datatype' => 'xsd:dateTime',
+      'callback' => 'date_iso8601',
+    ),
+    'body' => array(
+      'predicates' => array(
+        0 => 'content:encoded',
+      ),
+    ),
+    'uid' => array(
+      'predicates' => array(
+        0 => 'sioc:has_creator',
+      ),
+      'type' => 'rel',
+    ),
+    'name' => array(
+      'predicates' => array(
+        0 => 'foaf:name',
+      ),
+    ),
+    'comment_count' => array(
+      'predicates' => array(
+        0 => 'sioc:num_replies',
+      ),
+      'datatype' => 'xsd:integer',
+    ),
+    'last_activity' => array(
+      'predicates' => array(
+        0 => 'sioc:last_activity_date',
+      ),
+      'datatype' => 'xsd:dateTime',
+      'callback' => 'date_iso8601',
+    ),
+  ),
+  'cid' => 0,
+  'last_comment_name' => NULL,
+  'last_comment_uid' => 1,
+  'comment_count' => 0,
+  'name' => 'admin',
+  'picture' => 0,
+  'data' => 'a:1:{s:17:"mimemail_textonly";i:0;}',
+  'date' => '2013-10-24 15:13:23 -0700',
+  'url_alias' => 'about/contacts_reports_dashboards',
+);
+  $nodes[] = array(
+  'uid' => 1,
+  'title' => 'Accepting online payments through CRM Core',
+  'log' => '',
+  'status' => 1,
+  'comment' => 1,
+  'promote' => 0,
+  'sticky' => 0,
+  'vuuid' => 'd3ac2d4f-d44f-44c7-9f14-9691486af9c1',
+  'type' => 'article',
+  'language' => 'und',
+  'created' => 1382653020,
+  'tnid' => 0,
+  'translate' => 0,
+  'uuid' => '0e6a3702-77b3-4011-9ddf-4af3b3e408bc',
+  'revision_uid' => 1,
+  'body' => array(
+    'und' => array(
+      0 => array(
+        'value' => 'Accepting online payments through CRM Core',
+        'summary' => '',
+        'format' => 'filtered_html',
+        'safe_value' => '<p>Accepting online payments through CRM Core</p>
+',
+        'safe_summary' => '',
+      ),
+    ),
+  ),
+  'field_tags' => array(
+    'und' => array(
+      0 => array(
+        'tid' => 1,
+      ),
+      1 => array(
+        'tid' => 5,
+      ),
+    ),
+  ),
+  'field_image' => array(),
+  'rdf_mapping' => array(
+    'field_image' => array(
+      'predicates' => array(
+        0 => 'og:image',
+        1 => 'rdfs:seeAlso',
+      ),
+      'type' => 'rel',
+    ),
+    'field_tags' => array(
+      'predicates' => array(
+        0 => 'dc:subject',
+      ),
+      'type' => 'rel',
+    ),
+    'rdftype' => array(
+      0 => 'sioc:Item',
+      1 => 'foaf:Document',
+    ),
+    'title' => array(
+      'predicates' => array(
+        0 => 'dc:title',
+      ),
+    ),
+    'created' => array(
+      'predicates' => array(
+        0 => 'dc:date',
+        1 => 'dc:created',
+      ),
+      'datatype' => 'xsd:dateTime',
+      'callback' => 'date_iso8601',
+    ),
+    'changed' => array(
+      'predicates' => array(
+        0 => 'dc:modified',
+      ),
+      'datatype' => 'xsd:dateTime',
+      'callback' => 'date_iso8601',
+    ),
+    'body' => array(
+      'predicates' => array(
+        0 => 'content:encoded',
+      ),
+    ),
+    'uid' => array(
+      'predicates' => array(
+        0 => 'sioc:has_creator',
+      ),
+      'type' => 'rel',
+    ),
+    'name' => array(
+      'predicates' => array(
+        0 => 'foaf:name',
+      ),
+    ),
+    'comment_count' => array(
+      'predicates' => array(
+        0 => 'sioc:num_replies',
+      ),
+      'datatype' => 'xsd:integer',
+    ),
+    'last_activity' => array(
+      'predicates' => array(
+        0 => 'sioc:last_activity_date',
+      ),
+      'datatype' => 'xsd:dateTime',
+      'callback' => 'date_iso8601',
+    ),
+  ),
+  'cid' => 0,
+  'last_comment_name' => NULL,
+  'last_comment_uid' => 1,
+  'comment_count' => 0,
+  'name' => 'admin',
+  'picture' => 0,
+  'data' => 'a:1:{s:17:"mimemail_textonly";i:0;}',
+  'date' => '2013-10-24 15:17:00 -0700',
+  'url_alias' => 'about/accepting_online_payments',
+);
+  $nodes[] = array(
+  'uid' => 1,
   'title' => 'How forms and content work together in CRM Core',
   'log' => '',
   'status' => 1,
@@ -131,6 +365,357 @@ function ableorganizer_sample_content_uuid_features_default_content() {
   'data' => 'a:1:{s:17:"mimemail_textonly";i:0;}',
   'date' => '2013-10-24 12:34:05 -0700',
   'url_alias' => 'about/forms-and-content',
+);
+  $nodes[] = array(
+  'uid' => 1,
+  'title' => 'CRM Core features used in AbleOrganizer',
+  'log' => '',
+  'status' => 1,
+  'comment' => 1,
+  'promote' => 0,
+  'sticky' => 0,
+  'vuuid' => '3021b5ac-44e7-408c-bd4b-1f624f24e89e',
+  'type' => 'article',
+  'language' => 'und',
+  'created' => 1382653223,
+  'tnid' => 0,
+  'translate' => 0,
+  'uuid' => '3752f8c4-bd5c-405c-a913-e17a50db5577',
+  'revision_uid' => 1,
+  'body' => array(
+    'und' => array(
+      0 => array(
+        'value' => 'CRM Core features used in AbleOrganizer',
+        'summary' => '',
+        'format' => 'full_html',
+        'safe_value' => '<p>CRM Core features used in AbleOrganizer</p>
+',
+        'safe_summary' => '',
+      ),
+    ),
+  ),
+  'field_tags' => array(
+    'und' => array(
+      0 => array(
+        'tid' => 1,
+      ),
+      1 => array(
+        'tid' => 5,
+      ),
+    ),
+  ),
+  'field_image' => array(),
+  'rdf_mapping' => array(
+    'field_image' => array(
+      'predicates' => array(
+        0 => 'og:image',
+        1 => 'rdfs:seeAlso',
+      ),
+      'type' => 'rel',
+    ),
+    'field_tags' => array(
+      'predicates' => array(
+        0 => 'dc:subject',
+      ),
+      'type' => 'rel',
+    ),
+    'rdftype' => array(
+      0 => 'sioc:Item',
+      1 => 'foaf:Document',
+    ),
+    'title' => array(
+      'predicates' => array(
+        0 => 'dc:title',
+      ),
+    ),
+    'created' => array(
+      'predicates' => array(
+        0 => 'dc:date',
+        1 => 'dc:created',
+      ),
+      'datatype' => 'xsd:dateTime',
+      'callback' => 'date_iso8601',
+    ),
+    'changed' => array(
+      'predicates' => array(
+        0 => 'dc:modified',
+      ),
+      'datatype' => 'xsd:dateTime',
+      'callback' => 'date_iso8601',
+    ),
+    'body' => array(
+      'predicates' => array(
+        0 => 'content:encoded',
+      ),
+    ),
+    'uid' => array(
+      'predicates' => array(
+        0 => 'sioc:has_creator',
+      ),
+      'type' => 'rel',
+    ),
+    'name' => array(
+      'predicates' => array(
+        0 => 'foaf:name',
+      ),
+    ),
+    'comment_count' => array(
+      'predicates' => array(
+        0 => 'sioc:num_replies',
+      ),
+      'datatype' => 'xsd:integer',
+    ),
+    'last_activity' => array(
+      'predicates' => array(
+        0 => 'sioc:last_activity_date',
+      ),
+      'datatype' => 'xsd:dateTime',
+      'callback' => 'date_iso8601',
+    ),
+  ),
+  'cid' => 0,
+  'last_comment_name' => NULL,
+  'last_comment_uid' => 1,
+  'comment_count' => 0,
+  'name' => 'admin',
+  'picture' => 0,
+  'data' => 'a:1:{s:17:"mimemail_textonly";i:0;}',
+  'date' => '2013-10-24 15:20:23 -0700',
+  'url_alias' => 'about/crm_core_features',
+);
+  $nodes[] = array(
+  'uid' => 1,
+  'title' => 'Using CRM Core\'s form builder',
+  'log' => '',
+  'status' => 1,
+  'comment' => 1,
+  'promote' => 0,
+  'sticky' => 0,
+  'vuuid' => 'ca5a3e85-f303-49bb-8aaf-49497420a212',
+  'type' => 'article',
+  'language' => 'und',
+  'created' => 1382652940,
+  'tnid' => 0,
+  'translate' => 0,
+  'uuid' => '71df67cd-f3f8-47c6-9887-963fb20a69d1',
+  'revision_uid' => 1,
+  'body' => array(
+    'und' => array(
+      0 => array(
+        'value' => 'Using CRM Core\'s form builder',
+        'summary' => '',
+        'format' => 'full_html',
+        'safe_value' => '<p>Using CRM Core\'s form builder</p>
+',
+        'safe_summary' => '',
+      ),
+    ),
+  ),
+  'field_tags' => array(
+    'und' => array(
+      0 => array(
+        'tid' => 1,
+      ),
+      1 => array(
+        'tid' => 5,
+      ),
+    ),
+  ),
+  'field_image' => array(),
+  'rdf_mapping' => array(
+    'field_image' => array(
+      'predicates' => array(
+        0 => 'og:image',
+        1 => 'rdfs:seeAlso',
+      ),
+      'type' => 'rel',
+    ),
+    'field_tags' => array(
+      'predicates' => array(
+        0 => 'dc:subject',
+      ),
+      'type' => 'rel',
+    ),
+    'rdftype' => array(
+      0 => 'sioc:Item',
+      1 => 'foaf:Document',
+    ),
+    'title' => array(
+      'predicates' => array(
+        0 => 'dc:title',
+      ),
+    ),
+    'created' => array(
+      'predicates' => array(
+        0 => 'dc:date',
+        1 => 'dc:created',
+      ),
+      'datatype' => 'xsd:dateTime',
+      'callback' => 'date_iso8601',
+    ),
+    'changed' => array(
+      'predicates' => array(
+        0 => 'dc:modified',
+      ),
+      'datatype' => 'xsd:dateTime',
+      'callback' => 'date_iso8601',
+    ),
+    'body' => array(
+      'predicates' => array(
+        0 => 'content:encoded',
+      ),
+    ),
+    'uid' => array(
+      'predicates' => array(
+        0 => 'sioc:has_creator',
+      ),
+      'type' => 'rel',
+    ),
+    'name' => array(
+      'predicates' => array(
+        0 => 'foaf:name',
+      ),
+    ),
+    'comment_count' => array(
+      'predicates' => array(
+        0 => 'sioc:num_replies',
+      ),
+      'datatype' => 'xsd:integer',
+    ),
+    'last_activity' => array(
+      'predicates' => array(
+        0 => 'sioc:last_activity_date',
+      ),
+      'datatype' => 'xsd:dateTime',
+      'callback' => 'date_iso8601',
+    ),
+  ),
+  'cid' => 0,
+  'last_comment_name' => NULL,
+  'last_comment_uid' => 1,
+  'comment_count' => 0,
+  'name' => 'admin',
+  'picture' => 0,
+  'data' => 'a:1:{s:17:"mimemail_textonly";i:0;}',
+  'date' => '2013-10-24 15:15:40 -0700',
+  'url_alias' => 'about/crm-core-form-builder',
+);
+  $nodes[] = array(
+  'uid' => 1,
+  'title' => 'Contact tracking with CRM Core',
+  'log' => '',
+  'status' => 1,
+  'comment' => 1,
+  'promote' => 0,
+  'sticky' => 0,
+  'vuuid' => '58d88529-3517-47c1-a552-663210ff1530',
+  'type' => 'article',
+  'language' => 'und',
+  'created' => 1382653163,
+  'tnid' => 0,
+  'translate' => 0,
+  'uuid' => '806f88f9-b8ba-4e4a-a893-3f48371915e2',
+  'revision_uid' => 1,
+  'body' => array(
+    'und' => array(
+      0 => array(
+        'value' => 'Contact tracking with CRM Core',
+        'summary' => '',
+        'format' => 'filtered_html',
+        'safe_value' => '<p>Contact tracking with CRM Core</p>
+',
+        'safe_summary' => '',
+      ),
+    ),
+  ),
+  'field_tags' => array(
+    'und' => array(
+      0 => array(
+        'tid' => 1,
+      ),
+      1 => array(
+        'tid' => 5,
+      ),
+    ),
+  ),
+  'field_image' => array(),
+  'rdf_mapping' => array(
+    'field_image' => array(
+      'predicates' => array(
+        0 => 'og:image',
+        1 => 'rdfs:seeAlso',
+      ),
+      'type' => 'rel',
+    ),
+    'field_tags' => array(
+      'predicates' => array(
+        0 => 'dc:subject',
+      ),
+      'type' => 'rel',
+    ),
+    'rdftype' => array(
+      0 => 'sioc:Item',
+      1 => 'foaf:Document',
+    ),
+    'title' => array(
+      'predicates' => array(
+        0 => 'dc:title',
+      ),
+    ),
+    'created' => array(
+      'predicates' => array(
+        0 => 'dc:date',
+        1 => 'dc:created',
+      ),
+      'datatype' => 'xsd:dateTime',
+      'callback' => 'date_iso8601',
+    ),
+    'changed' => array(
+      'predicates' => array(
+        0 => 'dc:modified',
+      ),
+      'datatype' => 'xsd:dateTime',
+      'callback' => 'date_iso8601',
+    ),
+    'body' => array(
+      'predicates' => array(
+        0 => 'content:encoded',
+      ),
+    ),
+    'uid' => array(
+      'predicates' => array(
+        0 => 'sioc:has_creator',
+      ),
+      'type' => 'rel',
+    ),
+    'name' => array(
+      'predicates' => array(
+        0 => 'foaf:name',
+      ),
+    ),
+    'comment_count' => array(
+      'predicates' => array(
+        0 => 'sioc:num_replies',
+      ),
+      'datatype' => 'xsd:integer',
+    ),
+    'last_activity' => array(
+      'predicates' => array(
+        0 => 'sioc:last_activity_date',
+      ),
+      'datatype' => 'xsd:dateTime',
+      'callback' => 'date_iso8601',
+    ),
+  ),
+  'cid' => 0,
+  'last_comment_name' => NULL,
+  'last_comment_uid' => 1,
+  'comment_count' => 0,
+  'name' => 'admin',
+  'picture' => 0,
+  'data' => 'a:1:{s:17:"mimemail_textonly";i:0;}',
+  'date' => '2013-10-24 15:19:23 -0700',
+  'url_alias' => 'about/contact_tracking',
 );
   $nodes[] = array(
   'uid' => 1,
@@ -320,13 +905,13 @@ function ableorganizer_sample_content_uuid_features_default_content() {
 <div class="content-holder">
 <h4>Getting Started</h4>
 <ul>
+<li><a href="about/contact_tracking">Contact tracking with CRM Core</a>
+<li><a href="about/crm_core_features">CRM Core features used in AbleOrganizer</a>
 <li><a href="about/forms-and-content">How forms and content work together</a>
 <li><a href="about/source-tracking">How source tracking works in AbleOrganizer</a>
-<li>Using contacts, reports and dashboards in CRM Core
-<li>Building online donation forms
-<li>Configuring event registration forms
-<li>Creating online petitions
-<li>Registering volunteer opportunities
+<li><a href="about/contacts_reports_dashboards">Using contacts, reports and dashboards in CRM Core</a>
+<li><a href="about/crm-core-form-builder">Using CRM Core\'s form builder</a>
+<li><a href="about/accepting_online_payments">Accepting online payments through CRM Core</a>
 </lu>
 </div>
 
@@ -393,13 +978,13 @@ function ableorganizer_sample_content_uuid_features_default_content() {
 </div>
 <div class="content-holder">
 <h4>Getting Started</h4>
-<ul><li><a href="about/forms-and-content">How forms and content work together</a>
+<ul><li><a href="about/contact_tracking">Contact tracking with CRM Core</a>
+</li><li><a href="about/crm_core_features">CRM Core features used in AbleOrganizer</a>
+</li><li><a href="about/forms-and-content">How forms and content work together</a>
 </li><li><a href="about/source-tracking">How source tracking works in AbleOrganizer</a>
-</li><li>Using contacts, reports and dashboards in CRM Core
-</li><li>Building online donation forms
-</li><li>Configuring event registration forms
-</li><li>Creating online petitions
-</li><li>Registering volunteer opportunities<br /></li></ul></div>
+</li><li><a href="about/contacts_reports_dashboards">Using contacts, reports and dashboards in CRM Core</a>
+</li><li><a href="about/crm-core-form-builder">Using CRM Core\'s form builder</a>
+</li><li><a href="about/accepting_online_payments">Accepting online payments through CRM Core</a><br /></li></ul></div>
 <div class="content-holder">
 <h4>Pro Tools for Power Users</h4>
 <ul><li>Configure payment processors
