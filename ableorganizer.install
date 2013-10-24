@@ -1114,7 +1114,7 @@ function ableorganizer_sample_content_submit($form, &$form_state) {
     $modules[] = 'ableorganizer_sample_content';
     // set the site frontpage to 'front'
     // this is the path from the other module
-    // we may need to get this as a node instead...
+    // we may need to get this as a node id instead...
     variable_set('site_frontpage', 'front');
   }
   if (!empty($form_state['values']['donation_sample_content'])) {
