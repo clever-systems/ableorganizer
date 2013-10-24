@@ -317,7 +317,7 @@ function ableorganizer_install() {
     ->condition('name', 'seven')
     ->execute();
   variable_set('admin_theme', 'seven');
-  variable_set('node_admin_theme', '1');
+  variable_set('node_admin_theme', '0');
 
   // Enable the template theme for ableorganizer.
   db_update('system')
@@ -457,8 +457,6 @@ function ableorganizer_install() {
   variable_set("user_picture_default", "profiles/ableorganizer/images/user-pic-default.png");
   
   
-  
-  
   // compact forms settings
   variable_set('compact_forms_ids', "user-login-form
 crm-core-profile-entry-form-ao-annual-appeal-form
@@ -567,9 +565,11 @@ crm-core-profile-entry-form-ao-volunteer-commitment-form");
     $query->values($block);
   }
   $query->execute();
+  
   // We need this to clear node_load cache after importing sample content in
   // order to prevent 'Notice: Undefined property: stdClass::$changed' msg.
   variable_set('search_active_modules', array('ableorganizer', 'node', 'user'));
+  
 }
 
 /**
