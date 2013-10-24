@@ -1112,10 +1112,6 @@ function ableorganizer_sample_content_submit($form, &$form_state) {
   
   if (!empty($form_state['values']['ao_sample_content'])) {
     $modules[] = 'ableorganizer_sample_content';
-    // set the site frontpage to 'front'
-    // this is the path from the other module
-    // we may need to get this as a node id instead...
-    variable_set('site_frontpage', 'front');
   }
   if (!empty($form_state['values']['donation_sample_content'])) {
     $modules[] = 'ableorganizer_sample_donation_pages';
@@ -1130,6 +1126,19 @@ function ableorganizer_sample_content_submit($form, &$form_state) {
     $modules[] = 'ableorganizer_sample_volunteer_pages';
   }
   module_enable($modules);
+  
+  if (!empty($form_state['values']['ao_sample_content'])) {
+    // set the site frontpage to 'front'
+    // get the nid of the content item and set it as part of this step
+    $query = new EntityFieldQuery();
+    $entities = $query->entityCondition('entity_type', 'node')
+      ->propertyCondition('title', 'Welcome to AbleOrganizer')
+      ->propertyCondition('status', 1)
+      ->range(0,1)
+      ->execute();
+    $nid = array_keys($entities['node'])[0];
+    variable_set('site_frontpage', 'node/' . $nid);
+  }  
 
   // Configure sample data.
   // Import sample contacts and activities.
