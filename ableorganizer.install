@@ -1003,6 +1003,13 @@ function ableorganizer_sample_content($form, &$form_state, &$install_state) {
     );
   }
 
+  $form['sample_content_wrapper']['ao_sample_content'] = array(
+    '#type' => 'checkbox',
+    '#default_value' => TRUE,
+    '#title' => $t('AbleOrganizer Sample Content'),
+    '#description' => $t('Tutorials, documentation and explanations of how to work with the system.'),
+  );
+
   if (variable_get('donations_enabled', 0) == 1) {
     $form['sample_content_wrapper']['donation_sample_content'] = array(
       '#type' => 'checkbox',
@@ -1102,6 +1109,14 @@ function ableorganizer_sample_content_submit($form, &$form_state) {
   global $install_state;
 
   $modules = array();
+  
+  if (!empty($form_state['values']['ao_sample_content'])) {
+    $modules[] = 'ableorganizer_sample_content';
+    // set the site frontpage to 'front'
+    // this is the path from the other module
+    // we may need to get this as a node instead...
+    variable_set('site_frontpage', 'front');
+  }
   if (!empty($form_state['values']['donation_sample_content'])) {
     $modules[] = 'ableorganizer_sample_donation_pages';
   }
