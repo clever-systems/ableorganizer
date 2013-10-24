@@ -5,21 +5,3 @@
  */
 
 include_once 'ableorganizer_sample_content.features.inc';
-
-/**
- * Implements hook_modules_enabled().
- *
- * Rebuild uuid_node component after profile is enabled.
- */
-function ableorganizer_sample_content_modules_enabled($modules) {
-  if (in_array('ableorganizer', $modules)) {
-
-    $module = 'ableorganizer_sample_content';
-    // Including sample nodes definitions.
-    module_load_include('inc', $module, $module . '.features.uuid_node');
-    // Including helper.
-    module_load_include('inc', 'uuid_features', 'includes/uuid_node.features');
-    // Creating sample content in DB.
-    uuid_node_features_rebuild($module);
-  }
-}
