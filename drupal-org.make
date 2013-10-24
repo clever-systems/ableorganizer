@@ -67,10 +67,15 @@ projects[mimemail][version] = 1.0-beta1
 projects[mimemail][subdir] = "contrib"
 
 ; content
-projects[pathologic] = 2.11
+projects[pathologic][version] = 2.11
 projects[pathologic][subdir] = "contrib"
+projects[wysiwyg][type] = "module"
 projects[wysiwyg][subdir] = "contrib"
-projects[wysiwyg][version] = "2.2"
+projects[wysiwyg][download][type] = "git"
+projects[wysiwyg][download][url] = "http://git.drupal.org/project/wysiwyg.git"
+projects[wysiwyg][download][branch] = "7.x-2.x"
+projects[wysiwyg][download][revision] = "ee64524b3edb2aa21098a2309b0736e292010247"
+projects[wysiwyg][patch][] = "https://drupal.org/files/wysiwyg-ckeditor-acf-1956778-37.patch"
 
 ; media
 projects[media][subdir] = "contrib"
@@ -78,7 +83,7 @@ projects[media][type] = "module"
 projects[media][download][type] = "git"
 projects[media][download][url] = "http://git.drupal.org/project/media.git"
 projects[media][download][branch] = "7.x-2.x"
-projects[media][download][revision] = "e2625edf88f98782396cb879e036810583893335"
+projects[media][download][revision] = "e7be30f196b3ad23743646db62f4a392e96eedb0"
 projects[colorbox][subdir] = "contrib"
 projects[colorbox][type] = "module"
 projects[colorbox][download][type] = "git"
@@ -91,13 +96,9 @@ projects[media_colorbox][download][type] = "git"
 projects[media_colorbox][download][url] = "http://git.drupal.org/project/media_colorbox.git"
 projects[media_colorbox][download][branch] = "7.x-1.x"
 projects[media_colorbox][download][revision] = "d018199fc4fd94d21d3f92233955747f7260c7fe"
+projects[media_colorbox][patch][] = "https://drupal.org/files/media_colorbox_wysiwyg-1888198-14.patch"
 projects[adaptive_image][subdir] = "contrib"
 projects[adaptive_image][version] = "1.4"
-projects[media_wysiwyg_view_mode][type] = "module"
-projects[media_wysiwyg_view_mode][download][type] = "git"
-projects[media_wysiwyg_view_mode][download][url] = "http://git.drupal.org/sandbox/DevinCarlson/1823634.git"
-projects[media_wysiwyg_view_mode][download][branch] = "7.x-1.x"
-projects[media_wysiwyg_view_mode][download][revision] = "0c38b2b6ef1d5bbe647e300d14468b7c6d65c50d"
 projects[imce][subdir] = "contrib"
 projects[imce][version] = "1.7"
 projects[file_entity][subdir] = "contrib"
@@ -105,7 +106,7 @@ projects[file_entity][type] = "module"
 projects[file_entity][download][type] = "git"
 projects[file_entity][download][url] = "http://git.drupal.org/project/file_entity.git"
 projects[file_entity][download][branch] = "7.x-2.x"
-projects[file_entity][download][revision] = "af6c71433011a0525bb9d3d3c87a93a2e09cf75d"
+projects[file_entity][download][revision] = "fee20d5ba209c988cd7fd6ac54c68e988facf7d1"
 
 ; commerce modules
 projects[commerce][version] = 1.8
@@ -176,10 +177,17 @@ projects[crm_core_petition][subdir] = "contrib"
 projects[crm_core_volunteer][version] = 0.8
 projects[crm_core_volunteer][subdir] = "contrib"
 
-; libraries
+; Libraries
+; Flot
 libraries[flot][download][type] = get
 libraries[flot][download][url] = https://flot.googlecode.com/files/flot-0.7.tar.gz
 libraries[flot][destination] = modules/contrib/flot
+; CKEditor
+libraries[ckeditor][download][type] = get
+libraries[ckeditor][download][url] = "http://download.cksource.com/CKEditor/CKEditor/CKEditor 4.2.2/ckeditor_4.2.2_full.zip"
+; Colorbox
+libraries[colorbox][download][type] = get
+libraries[colorbox][download][url] = "https://github.com/jackmoore/colorbox/archive/1.4.32.tar.gz"
 
 ; sample content
 projects[uuid][version] = 1.0-alpha5

@@ -40,8 +40,12 @@ function ableorganizer_install() {
         'weight' => 3,
         'status' => 1,
       ),
-      'pathologic' => array(
+      'media_filter' => array(
         'weight' => 4,
+        'status' => 1,
+      ),
+      'pathologic' => array(
+        'weight' => 5,
         'status' => 1,
       ),
     ),
@@ -69,8 +73,12 @@ function ableorganizer_install() {
         'weight' => 2,
         'status' => 1,
       ),
-      'pathologic' => array(
+      'media_filter' => array(
         'weight' => 3,
+        'status' => 1,
+      ),
+      'pathologic' => array(
+        'weight' => 4,
         'status' => 1,
       ),
     ),

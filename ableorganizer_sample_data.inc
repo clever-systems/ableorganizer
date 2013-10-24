@@ -4766,7 +4766,7 @@ function ableorganizer_petition_sample_data() {
   "type" : "cmcp_petition_signature",
 
   "default_revision" : "1",
-  "field_activity_participants" : { "und" : [ { "target_id" : "1" } ] },
+  "field_activity_participants" : { "und" : [ { "target_id" : "7" } ] },
   "field_activity_date" : { "und" : [
       {
         "value" : "2013-09-06 15:30:00",
@@ -5840,7 +5840,7 @@ function ableorganizer_petition_sample_data() {
   "type" : "cmcp_petition_signature",
 
   "default_revision" : "1",
-  "field_activity_participants" : { "und" : [ { "target_id" : "1" } ] },
+  "field_activity_participants" : { "und" : [ { "target_id" : "7" } ] },
   "field_activity_date" : { "und" : [
       {
         "value" : "2013-09-06 15:30:00",
