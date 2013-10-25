@@ -110,7 +110,6 @@ dependencies[] = crm_core_demo_standard_fields
 ; AbleOrganizer customizations
 dependencies[] = ao
 dependencies[] = ableorganizer_dashboard
-dependencies[] = ableorganizer_sample_content
 
 ; System Requirements.
 php_memory_limit = 128M
