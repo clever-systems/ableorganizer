@@ -15,20 +15,3 @@ function ableorganizer_sample_content_ctools_plugin_api($module = NULL, $api = N
     return array("version" => "1");
   }
 }
-
-/**
- * Implements hook_node_info().
- */
-function ableorganizer_sample_content_node_info() {
-  $items = array(
-    'test' => array(
-      'name' => t('test'),
-      'base' => 'node_content',
-      'description' => t('this is a test'),
-      'has_title' => '1',
-      'title_label' => t('Title'),
-      'help' => '',
-    ),
-  );
-  return $items;
-}
