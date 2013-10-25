@@ -10,40 +10,38 @@
 function ableorganizer_sample_content_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'node-page-body'
-  $field_instances['node-page-body'] = array(
-    'bundle' => 'page',
+  // Exported field_instance: 'node-test-field_test_body'
+  $field_instances['node-test-field_test_body'] = array(
+    'bundle' => 'test',
     'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'hidden',
+        'label' => 'above',
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
         'weight' => 0,
       ),
       'teaser' => array(
-        'label' => 'hidden',
-        'module' => 'text',
-        'settings' => array(
-          'trim_length' => 600,
-        ),
-        'type' => 'text_summary_or_trimmed',
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 0,
       ),
     ),
     'entity_type' => 'node',
-    'field_name' => 'body',
-    'label' => 'Body',
-    'required' => FALSE,
+    'field_name' => 'field_test_body',
+    'label' => 'test_body',
+    'required' => 0,
     'settings' => array(
-      'display_summary' => TRUE,
+      'display_summary' => 0,
       'text_processing' => 1,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
+      'active' => 1,
       'module' => 'text',
       'settings' => array(
         'rows' => 20,
@@ -56,7 +54,7 @@ function ableorganizer_sample_content_field_default_field_instances() {
 
   // Translatables
   // Included for use with string extractors like potx.
-  t('Body');
+  t('test_body');
 
   return $field_instances;
 }

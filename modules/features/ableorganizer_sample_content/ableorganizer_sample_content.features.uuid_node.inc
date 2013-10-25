@@ -11,7 +11,7 @@ function ableorganizer_sample_content_uuid_features_default_content() {
   $nodes = array();
 
   $nodes[] = array(
-  'uid' => 1,
+  'uid' => 0,
   'title' => 'Using contacts, reports and dashboards in CRM Core',
   'log' => '',
   'status' => 1,
@@ -25,7 +25,7 @@ function ableorganizer_sample_content_uuid_features_default_content() {
   'tnid' => 0,
   'translate' => 0,
   'uuid' => '0288a5d9-e20c-43a5-b52f-fbd2b7767fb7',
-  'revision_uid' => 1,
+  'revision_uid' => 0,
   'body' => array(
     'und' => array(
       0 => array(
@@ -119,7 +119,7 @@ function ableorganizer_sample_content_uuid_features_default_content() {
   ),
   'cid' => 0,
   'last_comment_name' => NULL,
-  'last_comment_uid' => 1,
+  'last_comment_uid' => 0,
   'comment_count' => 0,
   'name' => 'admin',
   'picture' => 0,
@@ -128,7 +128,7 @@ function ableorganizer_sample_content_uuid_features_default_content() {
   'url_alias' => 'about/contacts_reports_dashboards',
 );
   $nodes[] = array(
-  'uid' => 1,
+  'uid' => 0,
   'title' => 'Accepting online payments through CRM Core',
   'log' => '',
   'status' => 1,
@@ -142,7 +142,7 @@ function ableorganizer_sample_content_uuid_features_default_content() {
   'tnid' => 0,
   'translate' => 0,
   'uuid' => '0e6a3702-77b3-4011-9ddf-4af3b3e408bc',
-  'revision_uid' => 1,
+  'revision_uid' => 0,
   'body' => array(
     'und' => array(
       0 => array(
@@ -236,7 +236,7 @@ function ableorganizer_sample_content_uuid_features_default_content() {
   ),
   'cid' => 0,
   'last_comment_name' => NULL,
-  'last_comment_uid' => 1,
+  'last_comment_uid' => 0,
   'comment_count' => 0,
   'name' => 'admin',
   'picture' => 0,
@@ -245,7 +245,7 @@ function ableorganizer_sample_content_uuid_features_default_content() {
   'url_alias' => 'about/accepting_online_payments',
 );
   $nodes[] = array(
-  'uid' => 1,
+  'uid' => 0,
   'title' => 'How forms and content work together in CRM Core',
   'log' => '',
   'status' => 1,
@@ -259,7 +259,7 @@ function ableorganizer_sample_content_uuid_features_default_content() {
   'tnid' => 0,
   'translate' => 0,
   'uuid' => '36f0da4b-d510-4d0c-8ffb-959e43c481e5',
-  'revision_uid' => 1,
+  'revision_uid' => 0,
   'body' => array(
     'und' => array(
       0 => array(
@@ -358,7 +358,7 @@ function ableorganizer_sample_content_uuid_features_default_content() {
   ),
   'cid' => 0,
   'last_comment_name' => NULL,
-  'last_comment_uid' => 1,
+  'last_comment_uid' => 0,
   'comment_count' => 0,
   'name' => 'admin',
   'picture' => 0,
@@ -367,7 +367,7 @@ function ableorganizer_sample_content_uuid_features_default_content() {
   'url_alias' => 'about/forms-and-content',
 );
   $nodes[] = array(
-  'uid' => 1,
+  'uid' => 0,
   'title' => 'CRM Core features used in AbleOrganizer',
   'log' => '',
   'status' => 1,
@@ -381,7 +381,7 @@ function ableorganizer_sample_content_uuid_features_default_content() {
   'tnid' => 0,
   'translate' => 0,
   'uuid' => '3752f8c4-bd5c-405c-a913-e17a50db5577',
-  'revision_uid' => 1,
+  'revision_uid' => 0,
   'body' => array(
     'und' => array(
       0 => array(
@@ -475,7 +475,7 @@ function ableorganizer_sample_content_uuid_features_default_content() {
   ),
   'cid' => 0,
   'last_comment_name' => NULL,
-  'last_comment_uid' => 1,
+  'last_comment_uid' => 0,
   'comment_count' => 0,
   'name' => 'admin',
   'picture' => 0,
@@ -484,7 +484,100 @@ function ableorganizer_sample_content_uuid_features_default_content() {
   'url_alias' => 'about/crm_core_features',
 );
   $nodes[] = array(
-  'uid' => 1,
+  'uid' => 0,
+  'title' => 'this is a test',
+  'log' => '',
+  'status' => 1,
+  'comment' => 1,
+  'promote' => 0,
+  'sticky' => 0,
+  'vuuid' => '1f056109-55b6-4d12-9c8f-9d00a447b598',
+  'type' => 'test',
+  'language' => 'und',
+  'created' => 1382658394,
+  'tnid' => 0,
+  'translate' => 0,
+  'uuid' => '3a670ead-8f30-4207-8a46-d416a9ed8a0c',
+  'revision_uid' => 0,
+  'field_test_body' => array(
+    'und' => array(
+      0 => array(
+        'value' => 'this is test sample content',
+        'summary' => '',
+        'format' => 'full_html',
+        'safe_value' => '<p>this is test sample content</p>
+',
+        'safe_summary' => '',
+      ),
+    ),
+  ),
+  'rdf_mapping' => array(
+    'rdftype' => array(
+      0 => 'sioc:Item',
+      1 => 'foaf:Document',
+    ),
+    'title' => array(
+      'predicates' => array(
+        0 => 'dc:title',
+      ),
+    ),
+    'created' => array(
+      'predicates' => array(
+        0 => 'dc:date',
+        1 => 'dc:created',
+      ),
+      'datatype' => 'xsd:dateTime',
+      'callback' => 'date_iso8601',
+    ),
+    'changed' => array(
+      'predicates' => array(
+        0 => 'dc:modified',
+      ),
+      'datatype' => 'xsd:dateTime',
+      'callback' => 'date_iso8601',
+    ),
+    'body' => array(
+      'predicates' => array(
+        0 => 'content:encoded',
+      ),
+    ),
+    'uid' => array(
+      'predicates' => array(
+        0 => 'sioc:has_creator',
+      ),
+      'type' => 'rel',
+    ),
+    'name' => array(
+      'predicates' => array(
+        0 => 'foaf:name',
+      ),
+    ),
+    'comment_count' => array(
+      'predicates' => array(
+        0 => 'sioc:num_replies',
+      ),
+      'datatype' => 'xsd:integer',
+    ),
+    'last_activity' => array(
+      'predicates' => array(
+        0 => 'sioc:last_activity_date',
+      ),
+      'datatype' => 'xsd:dateTime',
+      'callback' => 'date_iso8601',
+    ),
+  ),
+  'cid' => 0,
+  'last_comment_name' => NULL,
+  'last_comment_uid' => 0,
+  'comment_count' => 0,
+  'name' => 'admin',
+  'picture' => 0,
+  'data' => 'a:1:{s:17:"mimemail_textonly";i:0;}',
+  'date' => '2013-10-24 16:46:34 -0700',
+  'url_alias' => 'test',
+);
+  $nodes[] = array(
+  'uid' => 0,
   'title' => 'Using CRM Core\'s form builder',
   'log' => '',
   'status' => 1,
@@ -498,7 +591,7 @@ function ableorganizer_sample_content_uuid_features_default_content() {
   'tnid' => 0,
   'translate' => 0,
   'uuid' => '71df67cd-f3f8-47c6-9887-963fb20a69d1',
-  'revision_uid' => 1,
+  'revision_uid' => 0,
   'body' => array(
     'und' => array(
       0 => array(
@@ -592,7 +685,7 @@ function ableorganizer_sample_content_uuid_features_default_content() {
   ),
   'cid' => 0,
   'last_comment_name' => NULL,
-  'last_comment_uid' => 1,
+  'last_comment_uid' => 0,
   'comment_count' => 0,
   'name' => 'admin',
   'picture' => 0,
@@ -601,7 +694,7 @@ function ableorganizer_sample_content_uuid_features_default_content() {
   'url_alias' => 'about/crm-core-form-builder',
 );
   $nodes[] = array(
-  'uid' => 1,
+  'uid' => 0,
   'title' => 'Contact tracking with CRM Core',
   'log' => '',
   'status' => 1,
@@ -615,7 +708,7 @@ function ableorganizer_sample_content_uuid_features_default_content() {
   'tnid' => 0,
   'translate' => 0,
   'uuid' => '806f88f9-b8ba-4e4a-a893-3f48371915e2',
-  'revision_uid' => 1,
+  'revision_uid' => 0,
   'body' => array(
     'und' => array(
       0 => array(
@@ -709,7 +802,7 @@ function ableorganizer_sample_content_uuid_features_default_content() {
   ),
   'cid' => 0,
   'last_comment_name' => NULL,
-  'last_comment_uid' => 1,
+  'last_comment_uid' => 0,
   'comment_count' => 0,
   'name' => 'admin',
   'picture' => 0,
@@ -718,7 +811,7 @@ function ableorganizer_sample_content_uuid_features_default_content() {
   'url_alias' => 'about/contact_tracking',
 );
   $nodes[] = array(
-  'uid' => 1,
+  'uid' => 0,
   'title' => 'How source tracking works in AbleOrganizer',
   'log' => '',
   'status' => 1,
@@ -732,7 +825,7 @@ function ableorganizer_sample_content_uuid_features_default_content() {
   'tnid' => 0,
   'translate' => 0,
   'uuid' => 'b76847d6-c928-488a-b9fa-9f98786ec637',
-  'revision_uid' => 1,
+  'revision_uid' => 0,
   'body' => array(
     'und' => array(
       0 => array(
@@ -826,7 +919,7 @@ function ableorganizer_sample_content_uuid_features_default_content() {
   ),
   'cid' => 0,
   'last_comment_name' => NULL,
-  'last_comment_uid' => 1,
+  'last_comment_uid' => 0,
   'comment_count' => 0,
   'name' => 'admin',
   'picture' => 0,
@@ -835,7 +928,7 @@ function ableorganizer_sample_content_uuid_features_default_content() {
   'url_alias' => 'about/source-tracking',
 );
   $nodes[] = array(
-  'uid' => 1,
+  'uid' => 0,
   'title' => 'Welcome to AbleOrganizer',
   'log' => '',
   'status' => 1,
@@ -849,7 +942,7 @@ function ableorganizer_sample_content_uuid_features_default_content() {
   'tnid' => 0,
   'translate' => 0,
   'uuid' => 'eaa3f19b-410b-4d75-ae42-05d5ad3565e6',
-  'revision_uid' => 1,
+  'revision_uid' => 0,
   'body' => array(
     'und' => array(
       0 => array(
@@ -1055,7 +1148,7 @@ function ableorganizer_sample_content_uuid_features_default_content() {
   ),
   'cid' => 0,
   'last_comment_name' => NULL,
-  'last_comment_uid' => 1,
+  'last_comment_uid' => 0,
   'comment_count' => 0,
   'name' => 'admin',
   'picture' => 0,
