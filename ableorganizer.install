@@ -451,13 +451,12 @@ function ableorganizer_install() {
   $settings = variable_get($var_name, array());
   $settings['logo_path'] = $new_path;
   variable_set($var_name, $settings);
-  
-  // Now set the default user picture
+
+  // Now set the default user picture.
   variable_set("user_pictures", 1);
   variable_set("user_picture_default", "profiles/ableorganizer/images/user-pic-default.png");
-  
-  
-  // compact forms settings
+
+  // Compact forms settings.
   variable_set('compact_forms_ids', "user-login-form
 crm-core-profile-entry-form-ao-annual-appeal-form
 crm-core-profile-entry-form-ao-fundraiser-form
@@ -473,16 +472,16 @@ crm-core-profile-entry-form-signature-drive
 crm-core-profile-entry-form-ao-volunteer-commitment-form-2
 crm-core-profile-entry-form-ao-volunteer-commitment-form");
 
-  variable_set("compact_forms_field_size","");
+  variable_set("compact_forms_field_size", "");
   variable_set("compact_forms_descriptions", 1);
   variable_set("compact_forms_stars ", "2");
-    
-  // ensure submitted information is off for the major content types 
+
+  // Ensure submitted information is off for the major content types.
   variable_set("node_submitted_cmcd_page", 0);
   variable_set("node_submitted_cmcev_event", 0);
   variable_set("node_submitted_cmcp_petition", 0);
   variable_set("node_submitted_cmcv_volunteer", 0);
-  variable_set("node_submitted_page", 0);  
+  variable_set("node_submitted_page", 0);
 
   // Enable blocks.
   // This must be done after the theme has been installed.
@@ -565,11 +564,10 @@ crm-core-profile-entry-form-ao-volunteer-commitment-form");
     $query->values($block);
   }
   $query->execute();
-  
+
   // We need this to clear node_load cache after importing sample content in
   // order to prevent 'Notice: Undefined property: stdClass::$changed' msg.
   variable_set('search_active_modules', array('ableorganizer', 'node', 'user'));
-  
 }
 
 /**
@@ -1109,7 +1107,7 @@ function ableorganizer_sample_content_submit($form, &$form_state) {
   global $install_state;
 
   $modules = array();
-  
+
   if (!empty($form_state['values']['ao_sample_content'])) {
     $modules[] = 'ableorganizer_sample_content';
   }
@@ -1126,19 +1124,20 @@ function ableorganizer_sample_content_submit($form, &$form_state) {
     $modules[] = 'ableorganizer_sample_volunteer_pages';
   }
   module_enable($modules);
-  
+
   if (!empty($form_state['values']['ao_sample_content'])) {
-    // set the site frontpage to 'front'
-    // get the nid of the content item and set it as part of this step
-    $query = new EntityFieldQuery();
-    $entities = $query->entityCondition('entity_type', 'node')
-      ->propertyCondition('title', 'Welcome to AbleOrganizer')
-      ->propertyCondition('status', 1)
-      ->range(0,1)
-      ->execute();
-    $nid = array_keys($entities['node'])[0];
-    variable_set('site_frontpage', 'node/' . $nid);
-  }  
+    // Get the nid of the content item and set it as part of this step.
+    $nid = db_select('node', 'n')
+      ->fields('n', array('nid'))
+      ->condition('title', 'Welcome to AbleOrganizer')
+      ->condition('status', 1)
+      ->range(0, 1)
+      ->execute()
+      ->fetchField();
+    if (!empty($nid)) {
+      variable_set('site_frontpage', 'node/' . $nid);
+    }
+  }
 
   // Configure sample data.
   // Import sample contacts and activities.
