@@ -114,7 +114,6 @@ dependencies[] = deploy_ui
 dependencies[] = uuid_path
 dependencies[] = entity_menu_links
 dependencies[] = media_youtube
-dependencies[] = rdt
 
 ; System Requirements.
 php_memory_limit = 128M

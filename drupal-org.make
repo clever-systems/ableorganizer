@@ -97,6 +97,11 @@ projects[media_colorbox][download][url] = "http://git.drupal.org/project/media_c
 projects[media_colorbox][download][branch] = "7.x-1.x"
 projects[media_colorbox][download][revision] = "d018199fc4fd94d21d3f92233955747f7260c7fe"
 projects[media_colorbox][patch][] = "https://drupal.org/files/media_colorbox_wysiwyg-1888198-14.patch"
+projects[media_youtube][type] = module
+projects[media_youtube][subdir] = "contrib"
+projects[media_youtube][download][type] = git
+projects[media_youtube][download][branch] = 7.x-2.x
+projects[media_youtube][download][revision] = "ca46aba0150faf0b64290e6ac386c4ad5ccef363"
 projects[adaptive_image][subdir] = "contrib"
 projects[adaptive_image][version] = "1.4"
 projects[imce][subdir] = "contrib"
@@ -197,20 +202,16 @@ projects[deploy][subdir] = "contrib"
 projects[deploy][download][type] = git
 projects[deploy][download][branch] = 7.x-2.x
 projects[deploy][download][revision] = "ecb95681894e05a0d6b68f339835b842ae69b18f"
-
 projects[entity_dependency][type] = module
 projects[entity_dependency][subdir] = "contrib"
 projects[entity_dependency][download][type] = git
 projects[entity_dependency][download][branch] = 7.x-1.x
 projects[entity_dependency][download][revision] = "7ca711a5149083ca2aa3b6ada9d35cd5abc6c99a"
-
-projects[media_youtube][type] = module
-projects[media_youtube][subdir] = "contrib"
-projects[media_youtube][download][type] = git
-projects[media_youtube][download][branch] = 7.x-2.x
-projects[media_youtube][download][revision] = "ca46aba0150faf0b64290e6ac386c4ad5ccef363"
-
-
+projects[entity_menu_links][type] = module
+projects[entity_menu_links][subdir] = "contrib"
+projects[entity_menu_links][download][type] = git
+projects[entity_menu_links][download][branch] = 7.x-1.x
+projects[entity_menu_links][download][revision] = "9dd1dd700714051aefc8e932607abedee977e258"
 
 ;themes
 projects[omega] = 3.1
