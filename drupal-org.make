@@ -198,6 +198,7 @@ libraries[colorbox][download][url] = "https://github.com/jackmoore/colorbox/arch
 ; sample content
 projects[uuid][version] = 1.0-alpha5
 projects[uuid][subdir] = "contrib"
+projects[uuid][patch][] = "https://drupal.org/files/uuid.uuid_core_inc.patch"
 projects[deploy][type] = module
 projects[deploy][subdir] = "contrib"
 projects[deploy][download][type] = git
