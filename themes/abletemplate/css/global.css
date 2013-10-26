@@ -41,7 +41,8 @@ BODY {
   font-size: 100%;
 }
 P {
-  line-height:160%
+  line-height:160%;
+  margin-bottom: 0.5em;
 }
 A {
   text-decoration: none;
@@ -139,9 +140,18 @@ div.addressfield-container-inline > div.form-item {
 
 /* lists */
 ul, ol {
-  margin: 1em 0em;
+  margin: 1em 0em 1em 1em;
+  list-style-type: disc;
 }
 ul LI, ol LI {
+}
+
+/* nodes */
+.node-article {
+  font-size: 1.2em;
+  line-height: 2em;
+}
+.node-article P {
   margin-bottom: 1em;
 }
 
