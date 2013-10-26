@@ -2532,7 +2532,6 @@ function ableorganizer_donation_sample_data() {
  * Sample data for CRM Core Event.
  */
 function ableorganizer_event_sample_data() {
-  _ableorganizer_sample_event_pages_rebuild_nodes();
   $uuids = array(
     'simple_reg_form' => 'c4e0254b-e193-4f95-b843-fde40151fd81',
     'simple_single_form' => '52a80050-d98f-4bbf-90e8-9526dd3c77a1',

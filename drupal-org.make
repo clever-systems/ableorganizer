@@ -192,11 +192,25 @@ libraries[colorbox][download][url] = "https://github.com/jackmoore/colorbox/arch
 ; sample content
 projects[uuid][version] = 1.0-alpha5
 projects[uuid][subdir] = "contrib"
-projects[uuid_features][type] = module
-projects[uuid_features][subdir] = "contrib"
-projects[uuid_features][download][type] = git
-projects[uuid_features][download][branch] = 7.x-1.x
-projects[uuid_features][download][revision] = d34d00fac27dde4247fec411f1a196411bd6e913
+projects[deploy][type] = module
+projects[deploy][subdir] = "contrib"
+projects[deploy][download][type] = git
+projects[deploy][download][branch] = 7.x-2.x
+projects[deploy][download][revision] = "ecb95681894e05a0d6b68f339835b842ae69b18f"
+
+projects[entity_dependency][type] = module
+projects[entity_dependency][subdir] = "contrib"
+projects[entity_dependency][download][type] = git
+projects[entity_dependency][download][branch] = 7.x-1.x
+projects[entity_dependency][download][revision] = "7ca711a5149083ca2aa3b6ada9d35cd5abc6c99a"
+
+projects[media_youtube][type] = module
+projects[media_youtube][subdir] = "contrib"
+projects[media_youtube][download][type] = git
+projects[media_youtube][download][branch] = 7.x-2.x
+projects[media_youtube][download][revision] = "ca46aba0150faf0b64290e6ac386c4ad5ccef363"
+
+
 
 ;themes
 projects[omega] = 3.1
