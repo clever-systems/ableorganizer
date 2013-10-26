@@ -32,3 +32,11 @@ features_exclude[field_instance][node-article-field_tags] = node-article-field_t
 features_exclude[field_instance][node-page-body] = node-page-body
 features_exclude[taxonomy][tags] = tags
 project path = profiles/ableorganizer/modules/features
+
+
+; Information added by drush on 2013-10-26
+version = "7.x-1.0-beta6+126-dev"
+core = "7.x"
+project = "ableorganizer"
+datestamp = "1382779683"
+
