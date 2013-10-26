@@ -1,5 +1,5 @@
-name = 'abletemplate'
-description = ''
+name = 'AbleTemplate'
+description = 'A basic starter theme for AbleOrganizer. Can be easily configured for specific websites.'
 core = '7.x'
 engine = 'phptemplate'
 screenshot = 'screenshot.png'
@@ -402,3 +402,11 @@ settings[alpha_region_footer_second_position] = '0'
 settings[alpha_region_footer_second_css] = ''
 settings[alpha_region_footer_second_equal_height_element] = '0'
 settings[alpha_region_footer_second_equal_height_container] = '0'
+
+
+; Information added by drush on 2013-10-26
+version = "7.x-1.0-beta6+126-dev"
+core = "7.x"
+project = "ableorganizer"
+datestamp = "1382779683"
+
