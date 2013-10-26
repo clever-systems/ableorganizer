@@ -5881,7 +5881,6 @@ function ableorganizer_petition_sample_data() {
  * Sample data for CRM Core Volunteer.
  */
 function ableorganizer_volunteer_sample_data() {
-  _ableorganizer_sample_volunteer_pages_rebuild_nodes();
   $content_uuids = array(
     'after_school_tutors_needed' => '2a0e3955-18a5-4be1-a2c4-8dff6e05be73',
     'get_out_the_vote' => '85b8792e-c6f0-41e1-bb04-7cbf6b522abf',
