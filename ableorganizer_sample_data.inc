@@ -833,7 +833,6 @@ function ableorganizer_sample_data() {
  * Sample data for CRM Core Donation.
  */
 function ableorganizer_donation_sample_data() {
-  _ableorganizer_sample_donation_pages_rebuild_nodes();
   $uuids = array(
     'ao_fundraiser_form' => '2b66066f-0a98-43b7-bc0e-a74c6e4130e6',
     'ao_annual_appeal_form' => '3e876d31-271a-47da-8564-2bb667953ade',

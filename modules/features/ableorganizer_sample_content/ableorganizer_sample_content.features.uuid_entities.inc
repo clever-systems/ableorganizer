@@ -620,7 +620,7 @@ function ableorganizer_sample_content_uuid_default_entities() {
     'body' => array(
       'und' => array(
         0 => array(
-          'format' => 'filtered_html',
+          'format' => 'full_html',
           'summary' => '',
           'value' => '<p>Contact tracking with CRM Core</p><p>[[{"fid":"0d7682ef-d1a9-4c9d-903f-2effde89476c","view_mode":"colorbox","fields":{"format":"colorbox","field_file_image_alt_text[und][0][value]":"Trellon, LLC logo","field_file_image_title_text[und][0][value]":"Trellon, LLC logo"},"type":"media","attributes":{"title":"Trellon, LLC logo","class":"colorbox media-element file-colorbox"}}]]</p>',
         ),
