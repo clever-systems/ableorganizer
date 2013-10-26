@@ -4305,7 +4305,6 @@ function ableorganizer_event_sample_data() {
  * Sample data for CRM Core Petition.
  */
 function ableorganizer_petition_sample_data() {
-  _ableorganizer_sample_petition_pages_rebuild_nodes();
   $uuids = array(
     2 => '71378697-11e3-4d26-bfbd-b9c669b4b14a',
     3 => '7f7cf4e3-560a-49a5-b753-59ddb08141d7',

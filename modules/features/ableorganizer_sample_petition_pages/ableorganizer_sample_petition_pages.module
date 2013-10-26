@@ -7,21 +7,6 @@
 include_once 'ableorganizer_sample_petition_pages.features.inc';
 
 /**
- * Helper to rebuild uuid_node feature component..
- */
-function _ableorganizer_sample_petition_pages_rebuild_nodes() {
-  // Saving profile nodes configuration.
-  $module = 'ableorganizer_sample_petition_pages';
-  // Including sample nodes definitions.
-  module_load_include('inc', $module, $module . '.features.uuid_node');
-  // Including helper.
-  module_load_include('inc', 'uuid_features', 'includes/uuid_node.features');
-  // Creating sample content in DB.
-  uuid_node_features_rebuild($module);
-  ableorganizer_sample_petition_pages_post_features_rebuild('uuid_node');
-}
-
-/**
  * Implements hook_post_features_rebuild().
  */
 function ableorganizer_sample_petition_pages_post_features_rebuild($component) {

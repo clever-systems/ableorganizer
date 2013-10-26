@@ -11,6 +11,9 @@ function ableorganizer_sample_petition_pages_ctools_plugin_api($module = NULL, $
   if ($module == "crm_core_profile" && $api == "crm_core_profile") {
     return array("version" => "1");
   }
+  if ($module == "deploy" && $api == "deploy_plans") {
+    return array("version" => "1");
+  }
   if ($module == "strongarm" && $api == "strongarm") {
     return array("version" => "1");
   }
