@@ -36,7 +36,7 @@
   padding: .5em;
 }
 
-/* fonts */
+/* basic typography */
 BODY {
   font-size: 100%;
 }
@@ -83,7 +83,14 @@ h6 {
 .field-label, LABEL {
   margin-bottom: .5em;
 }
-
+A {
+  color: #9900AA;
+  text-decoration: underline;
+}
+A:visited {
+  color: #660077;
+}
+  
 /* fields */
 .node .field-name-field-cmcp-cta {
   padding: .5em;
@@ -145,6 +152,9 @@ ul, ol {
 }
 ul LI, ol LI {
 }
+ul ul, ol ol, ul ol, ol ul {
+  margin: 0em 0em 1em 1em;
+}
 
 /* nodes */
 .node-article {
@@ -153,6 +163,13 @@ ul LI, ol LI {
 }
 .node-article P {
   margin-bottom: 1em;
+}
+.submitted {
+  border-bottom: 1px solid #CCC;
+  font-size: 0.9em;
+  margin-bottom: 0.5em;
+  padding-bottom: 0.5em;
+  
 }
 
 /* forms */
@@ -619,14 +636,51 @@ LABEL.compact-form-label {
   font-weight: 700;
   padding: .2em 0em 1em 0em;
 }
+.ao-marq .ao-marq-item .ao-marq-item-label SPAN {
+  text-indent: -9999px;
+  overflow: hidden;
+}
 .ao-marq .ao-marq-item .ao-marq-item-description {
   background-color: White;
   padding: 1em .5em .5em;
   text-align: left;
+  height: 100%;
 }
+.content-holder UL, .ao-marq .ao-marq-item .ao-marq-item-description UL {
+  list-style-type: none;
+}
+.content-holder UL {
+  background-color: White;
+  margin: .5em;
+  padding: .5em;
+  border-radius: 0em 0em 10px 10px;
+  -moz-border-radius: 0em 0em 10px 10px;
+  -webkit-border-radius: 0em 0em 10px 10px;
+}
+.content-holder UL LI, .ao-marq .ao-marq-item .ao-marq-item-description UL LI {
+  margin-bottom: .5em;
+}
+.content-holder UL LI {
+  border-bottom: 1px solid #CCC;
+  padding-top: .2em;
+  padding-bottom: .5em;
+}
+.content-holder UL LI:last-child {
+  border-bottom: none;
+  padding-bottom: 0em;
+}
+.content-holder H4 {
+  background-color: #824391;
+  padding: .5em;
+  margin: 0em;
+  color: White;
+  text-align: center;
+  border-bottom: 1px solid #442255;
+}
+
 .ao-marq .ao-marq-item .ao-marq-item-title {
   position: absolute;
-  top: 70px;
+  top: 65px;
   left:0;
   right:0;
   margin-left:auto;
@@ -634,15 +688,16 @@ LABEL.compact-form-label {
 }
 .ao-marq .ao-marq-item .ao-marq-item-title H3 {
   text-align: center;
-  border-radius: .5em;
-  -moz-border-radius: .5em;
-  -webkit-border-radius: .5em;
+  border-radius: 30px;
+  -moz-border-radius: 30px;
+  -webkit-border-radius: 30px;
   background-color: #555;
-  padding: .2em .5em;
+  padding: .2em .8em;
   font-size: 1em;
   color: White;
   text-transform: uppercase;
   display: inline-block;
+  border: 3px solid White;
 }
 .ao-marq .ao-marq-donations .ao-marq-item-label {
   background-color: #399B19;
@@ -688,9 +743,6 @@ LABEL.compact-form-label {
   width: 60px;
   display: inline-block;
 }
-
-
-
 
 
 
