@@ -641,7 +641,7 @@ function ableorganizer_sample_content_uuid_default_entities() {
         0 => array(
           'format' => 'full_html',
           'summary' => '',
-          'value' => '<h1 class="ao-marq-title">AbleOrganizer allows you to build effective, robust relationships with the communities you care about.</h1><div class="ao-marq equal-height-container"><div class="ao-marq-item ao-marq-donations equal-height-element"><div class="ao-marq-item-label"><span>Donations</span></div><div class="ao-marq-item-title"><h3>Donations</h3></div><div class="ao-marq-item-description"><ul><li>Online and offline donation pages</li><li>Source tracking</li><li>LYBUNT, SYBUNT, other detail reports</li></ul></div></div><div class="ao-marq-item ao-marq-events equal-height-element"><div class="ao-marq-item-label"><span>Events</span></div><div class="ao-marq-item-title"><h3>Events</h3></div><div class="ao-marq-item-description"><ul><li>Register for paid and unpaid events</li><li>Supports multiple registrations</li><li>Track attendance and participation</li></ul></div></div><div class="ao-marq-item ao-marq-petitions equal-height-element"><div class="ao-marq-item-label"><span>Petitions</span></div><div class="ao-marq-item-title"><h3>Petitions</h3></div><div class="ao-marq-item-description"><ul><li>Collect online and offline signatures</li><li>Targeted email campaigns</li><li>Track progress towards goals</li></ul></div></div><div class="ao-marq-item ao-marq-volunteer equal-height-element"><div class="ao-marq-item-label"><span>Volunteer</span></div><div class="ao-marq-item-title"><h3>Volunteers</h3></div><div class="ao-marq-item-description"><ul><li>Register online and offline volunteers</li><li>Wait lists for popular functions</li><li>Manage roles and participation</li></ul></div></div></div><div class="content-holder-layout"><div class="content-holder-row"><div class="content-holder"><h4>The Basics</h4><ul><li><a href="about/contact_tracking">Contact tracking with CRM Core</a></li><li><a href="about/crm_core_features">CRM Core features used in AbleOrganizer</a></li><li><a href="about/forms-and-content">How forms and content work together</a></li><li><a href="about/source-tracking">How source tracking works in AbleOrganizer</a></li><li><a href="about/contacts_reports_dashboards">Using reports and dashboards in CRM Core</a></li><li><a href="about/crm-core-form-builder">Attaching forms to content in AbleOrganizer</a></li><li><a href="about/managing-forms">Managing forms in AbleOrganizer</a></li></ul></div><div class="content-holder"><h4>Working with AbleOrganizer</h4><ul><li>Working with online donation pages</li><li>Working with event registration pages&nbsp;</li><li>Working with petitions</li><li>Working with&nbsp;volunteer opportunities</li><li>Customizing the interface</li><li>Tracking contacts</li><li>Tracking activities</li></ul></div><div class="content-holder"><h4>Pro Tools for Power Users</h4><ul><li>Add custom fields to contact records</li><li><a href="about/activity-types">Create custom activity types</a></li><li>Creating forms for capturing offline activity</li><li><a href="about/payment-processors">Configure payment processors</a></li><li><a href="about/html-email">Sending&nbsp;HTML emails</a></li><li><a href="about/customize-look-and-feel">Customize the look and feel of the site</a></li><li><a href="about/mailchimp">MailChimp Integration</a></li></ul></div></div></div>',
+          'value' => '<h1 class="ao-marq-title">AbleOrganizer allows you to build effective, robust relationships with the communities you care about.</h1><div class="ao-marq equal-height-container"><div class="ao-marq-item ao-marq-donations equal-height-element"><div class="ao-marq-item-label"><span>Donations</span></div><div class="ao-marq-item-title"><h3>Donations</h3></div><div class="ao-marq-item-description"><ul><li>Online and offline donation pages</li><li>Source tracking</li><li>LYBUNT, SYBUNT, other detail reports</li></ul></div></div><div class="ao-marq-item ao-marq-events equal-height-element"><div class="ao-marq-item-label"><span>Events</span></div><div class="ao-marq-item-title"><h3>Events</h3></div><div class="ao-marq-item-description"><ul><li>Register for paid and unpaid events</li><li>Supports multiple registrations</li><li>Track attendance and participation</li></ul></div></div><div class="ao-marq-item ao-marq-petitions equal-height-element"><div class="ao-marq-item-label"><span>Petitions</span></div><div class="ao-marq-item-title"><h3>Petitions</h3></div><div class="ao-marq-item-description"><ul><li>Collect online and offline signatures</li><li>Targeted email campaigns</li><li>Track progress towards goals</li></ul></div></div><div class="ao-marq-item ao-marq-volunteer equal-height-element"><div class="ao-marq-item-label"><span>Volunteer</span></div><div class="ao-marq-item-title"><h3>Volunteers</h3></div><div class="ao-marq-item-description"><ul><li>Register online and offline volunteers</li><li>Wait lists for popular functions</li><li>Manage roles and participation</li></ul></div></div></div><div class="content-holder-layout"><div class="content-holder-row"><div class="content-holder"><h4>The Basics</h4><ul><li><a href="about/contact_tracking">Contact tracking with CRM Core</a></li><li><a href="about/crm_core_features">CRM Core features used in AbleOrganizer</a></li><li><a href="about/forms-and-content">How forms and content work together</a></li><li><a href="about/source-tracking">How source tracking works in AbleOrganizer</a></li><li><a href="about/contacts_reports_dashboards">Using reports and dashboards in CRM Core</a></li><li><a href="about/crm-core-form-builder">Attaching forms to content in AbleOrganizer</a></li><li><a href="about/managing-forms">Managing forms in AbleOrganizer</a></li></ul></div><div class="content-holder"><h4>Working with AbleOrganizer</h4><ul><li><a href="about/customizing-interfaces">Customizing the interfaces in AbleOrganizer</a></li><li><a href="about/working-with-contacts">Working with contacts in AbleOrganizer</a></li><li><a href="about/working-with-activities">Working with activities in AbleOrganizer</a></li><li><a href="about/working-with-donations">Working with donations</a></li><li><a href="about/working-with-events">Working with event registration</a>&nbsp;</li><li><a href="about/working-with-petitions">Working with petitions</a></li><li><a href="about/working-with-volunteers">Working with&nbsp;volunteer opportunities</a></li></ul></div><div class="content-holder"><h4>Pro Tools for Power Users</h4><ul><li><a href="about/custom-fields">Adding custom fields</a></li><li><a href="about/activity-types">Tracking other activity with custom activity types</a></li><li><a href="about/offline-activity">Creating forms for capturing offline activity</a></li><li><a href="about/payment-processors">Configure payment processors</a></li><li><a href="about/html-email">Sending&nbsp;HTML emails</a></li><li><a href="about/customize-look-and-feel">Customize the look and feel of the site</a></li><li><a href="about/mailchimp">MailChimp Integration</a></li></ul></div></div></div>',
         ),
       ),
     ),
@@ -1905,6 +1905,978 @@ function ableorganizer_sample_content_uuid_default_entities() {
       ),
     ),
     'uuid' => '8a2327a9-4cd5-4a37-a457-3168ea41e8af',
+  );
+  $entities['ao_sample_content_dp'][] = (object) array(
+    '__metadata' => array(
+      'type' => 'node',
+      'uri' => 'node/aa7993e8-a3e6-48dd-9f3d-de1ca5af80e2',
+      'cause' => FALSE,
+    ),
+    'body' => array(
+      'und' => array(
+        0 => array(
+          'format' => 'full_html',
+          'summary' => '',
+          'value' => '<p>Customizing the interfaces in AbleOrganizer</p>',
+        ),
+      ),
+    ),
+    'cid' => 0,
+    'comment' => 1,
+    'comment_count' => 0,
+    'field_image' => array(),
+    'field_tags' => array(),
+    'language' => 'und',
+    'last_comment_name' => NULL,
+    'last_comment_uid' => 1,
+    'log' => '',
+    'promote' => 0,
+    'rdf_mapping' => array(
+      'field_image' => array(
+        'predicates' => array(
+          0 => 'og:image',
+          1 => 'rdfs:seeAlso',
+        ),
+        'type' => 'rel',
+      ),
+      'field_tags' => array(
+        'predicates' => array(
+          0 => 'dc:subject',
+        ),
+        'type' => 'rel',
+      ),
+      'rdftype' => array(
+        0 => 'sioc:Item',
+        1 => 'foaf:Document',
+      ),
+      'title' => array(
+        'predicates' => array(
+          0 => 'dc:title',
+        ),
+      ),
+      'created' => array(
+        'predicates' => array(
+          0 => 'dc:date',
+          1 => 'dc:created',
+        ),
+        'datatype' => 'xsd:dateTime',
+        'callback' => 'date_iso8601',
+      ),
+      'changed' => array(
+        'predicates' => array(
+          0 => 'dc:modified',
+        ),
+        'datatype' => 'xsd:dateTime',
+        'callback' => 'date_iso8601',
+      ),
+      'body' => array(
+        'predicates' => array(
+          0 => 'content:encoded',
+        ),
+      ),
+      'uid' => array(
+        'predicates' => array(
+          0 => 'sioc:has_creator',
+        ),
+        'type' => 'rel',
+      ),
+      'name' => array(
+        'predicates' => array(
+          0 => 'foaf:name',
+        ),
+      ),
+      'comment_count' => array(
+        'predicates' => array(
+          0 => 'sioc:num_replies',
+        ),
+        'datatype' => 'xsd:integer',
+      ),
+      'last_activity' => array(
+        'predicates' => array(
+          0 => 'sioc:last_activity_date',
+        ),
+        'datatype' => 'xsd:dateTime',
+        'callback' => 'date_iso8601',
+      ),
+    ),
+    'status' => 1,
+    'sticky' => 0,
+    'title' => 'Customizing the interfaces in AbleOrganizer',
+    'tnid' => 0,
+    'translate' => 0,
+    'type' => 'article',
+    'uid' => 1,
+    'url_alias' => array(
+      0 => array(
+        'alias' => 'about/customizing-interfaces',
+        'language' => 'und',
+      ),
+    ),
+    'uuid' => 'aa7993e8-a3e6-48dd-9f3d-de1ca5af80e2',
+  );
+  $entities['ao_sample_content_dp'][] = (object) array(
+    '__metadata' => array(
+      'type' => 'node',
+      'uri' => 'node/8d2cef66-f4e6-4bab-b242-a4aecacce4be',
+      'cause' => FALSE,
+    ),
+    'body' => array(
+      'und' => array(
+        0 => array(
+          'format' => 'filtered_html',
+          'summary' => '',
+          'value' => '<p>Working with contacts in AbleOrganizer</p>',
+        ),
+      ),
+    ),
+    'cid' => 0,
+    'comment' => 1,
+    'comment_count' => 0,
+    'field_image' => array(),
+    'field_tags' => array(),
+    'language' => 'und',
+    'last_comment_name' => NULL,
+    'last_comment_uid' => 1,
+    'log' => '',
+    'promote' => 0,
+    'rdf_mapping' => array(
+      'field_image' => array(
+        'predicates' => array(
+          0 => 'og:image',
+          1 => 'rdfs:seeAlso',
+        ),
+        'type' => 'rel',
+      ),
+      'field_tags' => array(
+        'predicates' => array(
+          0 => 'dc:subject',
+        ),
+        'type' => 'rel',
+      ),
+      'rdftype' => array(
+        0 => 'sioc:Item',
+        1 => 'foaf:Document',
+      ),
+      'title' => array(
+        'predicates' => array(
+          0 => 'dc:title',
+        ),
+      ),
+      'created' => array(
+        'predicates' => array(
+          0 => 'dc:date',
+          1 => 'dc:created',
+        ),
+        'datatype' => 'xsd:dateTime',
+        'callback' => 'date_iso8601',
+      ),
+      'changed' => array(
+        'predicates' => array(
+          0 => 'dc:modified',
+        ),
+        'datatype' => 'xsd:dateTime',
+        'callback' => 'date_iso8601',
+      ),
+      'body' => array(
+        'predicates' => array(
+          0 => 'content:encoded',
+        ),
+      ),
+      'uid' => array(
+        'predicates' => array(
+          0 => 'sioc:has_creator',
+        ),
+        'type' => 'rel',
+      ),
+      'name' => array(
+        'predicates' => array(
+          0 => 'foaf:name',
+        ),
+      ),
+      'comment_count' => array(
+        'predicates' => array(
+          0 => 'sioc:num_replies',
+        ),
+        'datatype' => 'xsd:integer',
+      ),
+      'last_activity' => array(
+        'predicates' => array(
+          0 => 'sioc:last_activity_date',
+        ),
+        'datatype' => 'xsd:dateTime',
+        'callback' => 'date_iso8601',
+      ),
+    ),
+    'status' => 1,
+    'sticky' => 0,
+    'title' => 'Working with contacts in AbleOrganizer',
+    'tnid' => 0,
+    'translate' => 0,
+    'type' => 'article',
+    'uid' => 1,
+    'url_alias' => array(
+      0 => array(
+        'alias' => 'about/working-with-contacts',
+        'language' => 'und',
+      ),
+    ),
+    'uuid' => '8d2cef66-f4e6-4bab-b242-a4aecacce4be',
+  );
+  $entities['ao_sample_content_dp'][] = (object) array(
+    '__metadata' => array(
+      'type' => 'node',
+      'uri' => 'node/1651b411-73ff-451f-a3c9-d11c2ad57577',
+      'cause' => FALSE,
+    ),
+    'body' => array(
+      'und' => array(
+        0 => array(
+          'format' => 'full_html',
+          'summary' => '',
+          'value' => '<p>Working with activities in AbleOrganizer</p>',
+        ),
+      ),
+    ),
+    'cid' => 0,
+    'comment' => 1,
+    'comment_count' => 0,
+    'field_image' => array(),
+    'field_tags' => array(),
+    'language' => 'und',
+    'last_comment_name' => NULL,
+    'last_comment_uid' => 1,
+    'log' => '',
+    'promote' => 0,
+    'rdf_mapping' => array(
+      'field_image' => array(
+        'predicates' => array(
+          0 => 'og:image',
+          1 => 'rdfs:seeAlso',
+        ),
+        'type' => 'rel',
+      ),
+      'field_tags' => array(
+        'predicates' => array(
+          0 => 'dc:subject',
+        ),
+        'type' => 'rel',
+      ),
+      'rdftype' => array(
+        0 => 'sioc:Item',
+        1 => 'foaf:Document',
+      ),
+      'title' => array(
+        'predicates' => array(
+          0 => 'dc:title',
+        ),
+      ),
+      'created' => array(
+        'predicates' => array(
+          0 => 'dc:date',
+          1 => 'dc:created',
+        ),
+        'datatype' => 'xsd:dateTime',
+        'callback' => 'date_iso8601',
+      ),
+      'changed' => array(
+        'predicates' => array(
+          0 => 'dc:modified',
+        ),
+        'datatype' => 'xsd:dateTime',
+        'callback' => 'date_iso8601',
+      ),
+      'body' => array(
+        'predicates' => array(
+          0 => 'content:encoded',
+        ),
+      ),
+      'uid' => array(
+        'predicates' => array(
+          0 => 'sioc:has_creator',
+        ),
+        'type' => 'rel',
+      ),
+      'name' => array(
+        'predicates' => array(
+          0 => 'foaf:name',
+        ),
+      ),
+      'comment_count' => array(
+        'predicates' => array(
+          0 => 'sioc:num_replies',
+        ),
+        'datatype' => 'xsd:integer',
+      ),
+      'last_activity' => array(
+        'predicates' => array(
+          0 => 'sioc:last_activity_date',
+        ),
+        'datatype' => 'xsd:dateTime',
+        'callback' => 'date_iso8601',
+      ),
+    ),
+    'status' => 1,
+    'sticky' => 0,
+    'title' => 'Working with activities in AbleOrganizer',
+    'tnid' => 0,
+    'translate' => 0,
+    'type' => 'article',
+    'uid' => 1,
+    'url_alias' => array(
+      0 => array(
+        'alias' => 'about/working-with-activities',
+        'language' => 'und',
+      ),
+    ),
+    'uuid' => '1651b411-73ff-451f-a3c9-d11c2ad57577',
+  );
+  $entities['ao_sample_content_dp'][] = (object) array(
+    '__metadata' => array(
+      'type' => 'node',
+      'uri' => 'node/9aa602bd-2815-47d3-b30c-e898caa832ce',
+      'cause' => FALSE,
+    ),
+    'body' => array(
+      'und' => array(
+        0 => array(
+          'format' => 'full_html',
+          'summary' => '',
+          'value' => '<p>Working with donations</p>',
+        ),
+      ),
+    ),
+    'cid' => 0,
+    'comment' => 1,
+    'comment_count' => 0,
+    'field_image' => array(),
+    'field_tags' => array(),
+    'language' => 'und',
+    'last_comment_name' => NULL,
+    'last_comment_uid' => 1,
+    'log' => '',
+    'promote' => 0,
+    'rdf_mapping' => array(
+      'field_image' => array(
+        'predicates' => array(
+          0 => 'og:image',
+          1 => 'rdfs:seeAlso',
+        ),
+        'type' => 'rel',
+      ),
+      'field_tags' => array(
+        'predicates' => array(
+          0 => 'dc:subject',
+        ),
+        'type' => 'rel',
+      ),
+      'rdftype' => array(
+        0 => 'sioc:Item',
+        1 => 'foaf:Document',
+      ),
+      'title' => array(
+        'predicates' => array(
+          0 => 'dc:title',
+        ),
+      ),
+      'created' => array(
+        'predicates' => array(
+          0 => 'dc:date',
+          1 => 'dc:created',
+        ),
+        'datatype' => 'xsd:dateTime',
+        'callback' => 'date_iso8601',
+      ),
+      'changed' => array(
+        'predicates' => array(
+          0 => 'dc:modified',
+        ),
+        'datatype' => 'xsd:dateTime',
+        'callback' => 'date_iso8601',
+      ),
+      'body' => array(
+        'predicates' => array(
+          0 => 'content:encoded',
+        ),
+      ),
+      'uid' => array(
+        'predicates' => array(
+          0 => 'sioc:has_creator',
+        ),
+        'type' => 'rel',
+      ),
+      'name' => array(
+        'predicates' => array(
+          0 => 'foaf:name',
+        ),
+      ),
+      'comment_count' => array(
+        'predicates' => array(
+          0 => 'sioc:num_replies',
+        ),
+        'datatype' => 'xsd:integer',
+      ),
+      'last_activity' => array(
+        'predicates' => array(
+          0 => 'sioc:last_activity_date',
+        ),
+        'datatype' => 'xsd:dateTime',
+        'callback' => 'date_iso8601',
+      ),
+    ),
+    'status' => 1,
+    'sticky' => 0,
+    'title' => 'Working with donations',
+    'tnid' => 0,
+    'translate' => 0,
+    'type' => 'article',
+    'uid' => 1,
+    'url_alias' => array(
+      0 => array(
+        'alias' => 'about/working-with-donations',
+        'language' => 'und',
+      ),
+    ),
+    'uuid' => '9aa602bd-2815-47d3-b30c-e898caa832ce',
+  );
+  $entities['ao_sample_content_dp'][] = (object) array(
+    '__metadata' => array(
+      'type' => 'node',
+      'uri' => 'node/0b7e9504-3158-476e-aaca-d28c5685d73e',
+      'cause' => FALSE,
+    ),
+    'body' => array(
+      'und' => array(
+        0 => array(
+          'format' => 'full_html',
+          'summary' => '',
+          'value' => '<p>Working with event registration</p>',
+        ),
+      ),
+    ),
+    'cid' => 0,
+    'comment' => 1,
+    'comment_count' => 0,
+    'field_image' => array(),
+    'field_tags' => array(),
+    'language' => 'und',
+    'last_comment_name' => NULL,
+    'last_comment_uid' => 1,
+    'log' => '',
+    'promote' => 0,
+    'rdf_mapping' => array(
+      'field_image' => array(
+        'predicates' => array(
+          0 => 'og:image',
+          1 => 'rdfs:seeAlso',
+        ),
+        'type' => 'rel',
+      ),
+      'field_tags' => array(
+        'predicates' => array(
+          0 => 'dc:subject',
+        ),
+        'type' => 'rel',
+      ),
+      'rdftype' => array(
+        0 => 'sioc:Item',
+        1 => 'foaf:Document',
+      ),
+      'title' => array(
+        'predicates' => array(
+          0 => 'dc:title',
+        ),
+      ),
+      'created' => array(
+        'predicates' => array(
+          0 => 'dc:date',
+          1 => 'dc:created',
+        ),
+        'datatype' => 'xsd:dateTime',
+        'callback' => 'date_iso8601',
+      ),
+      'changed' => array(
+        'predicates' => array(
+          0 => 'dc:modified',
+        ),
+        'datatype' => 'xsd:dateTime',
+        'callback' => 'date_iso8601',
+      ),
+      'body' => array(
+        'predicates' => array(
+          0 => 'content:encoded',
+        ),
+      ),
+      'uid' => array(
+        'predicates' => array(
+          0 => 'sioc:has_creator',
+        ),
+        'type' => 'rel',
+      ),
+      'name' => array(
+        'predicates' => array(
+          0 => 'foaf:name',
+        ),
+      ),
+      'comment_count' => array(
+        'predicates' => array(
+          0 => 'sioc:num_replies',
+        ),
+        'datatype' => 'xsd:integer',
+      ),
+      'last_activity' => array(
+        'predicates' => array(
+          0 => 'sioc:last_activity_date',
+        ),
+        'datatype' => 'xsd:dateTime',
+        'callback' => 'date_iso8601',
+      ),
+    ),
+    'status' => 1,
+    'sticky' => 0,
+    'title' => 'Working with event registration',
+    'tnid' => 0,
+    'translate' => 0,
+    'type' => 'article',
+    'uid' => 1,
+    'url_alias' => array(
+      0 => array(
+        'alias' => 'about/working-with-events',
+        'language' => 'und',
+      ),
+    ),
+    'uuid' => '0b7e9504-3158-476e-aaca-d28c5685d73e',
+  );
+  $entities['ao_sample_content_dp'][] = (object) array(
+    '__metadata' => array(
+      'type' => 'node',
+      'uri' => 'node/6090addf-d500-480b-9036-07ff34d964c9',
+      'cause' => FALSE,
+    ),
+    'body' => array(
+      'und' => array(
+        0 => array(
+          'format' => 'full_html',
+          'summary' => '',
+          'value' => '<p>Working with petitions</p>',
+        ),
+      ),
+    ),
+    'cid' => 0,
+    'comment' => 1,
+    'comment_count' => 0,
+    'field_image' => array(),
+    'field_tags' => array(),
+    'language' => 'und',
+    'last_comment_name' => NULL,
+    'last_comment_uid' => 1,
+    'log' => '',
+    'promote' => 0,
+    'rdf_mapping' => array(
+      'field_image' => array(
+        'predicates' => array(
+          0 => 'og:image',
+          1 => 'rdfs:seeAlso',
+        ),
+        'type' => 'rel',
+      ),
+      'field_tags' => array(
+        'predicates' => array(
+          0 => 'dc:subject',
+        ),
+        'type' => 'rel',
+      ),
+      'rdftype' => array(
+        0 => 'sioc:Item',
+        1 => 'foaf:Document',
+      ),
+      'title' => array(
+        'predicates' => array(
+          0 => 'dc:title',
+        ),
+      ),
+      'created' => array(
+        'predicates' => array(
+          0 => 'dc:date',
+          1 => 'dc:created',
+        ),
+        'datatype' => 'xsd:dateTime',
+        'callback' => 'date_iso8601',
+      ),
+      'changed' => array(
+        'predicates' => array(
+          0 => 'dc:modified',
+        ),
+        'datatype' => 'xsd:dateTime',
+        'callback' => 'date_iso8601',
+      ),
+      'body' => array(
+        'predicates' => array(
+          0 => 'content:encoded',
+        ),
+      ),
+      'uid' => array(
+        'predicates' => array(
+          0 => 'sioc:has_creator',
+        ),
+        'type' => 'rel',
+      ),
+      'name' => array(
+        'predicates' => array(
+          0 => 'foaf:name',
+        ),
+      ),
+      'comment_count' => array(
+        'predicates' => array(
+          0 => 'sioc:num_replies',
+        ),
+        'datatype' => 'xsd:integer',
+      ),
+      'last_activity' => array(
+        'predicates' => array(
+          0 => 'sioc:last_activity_date',
+        ),
+        'datatype' => 'xsd:dateTime',
+        'callback' => 'date_iso8601',
+      ),
+    ),
+    'status' => 1,
+    'sticky' => 0,
+    'title' => 'Working with petitions',
+    'tnid' => 0,
+    'translate' => 0,
+    'type' => 'article',
+    'uid' => 1,
+    'url_alias' => array(
+      0 => array(
+        'alias' => 'about/working-with-petitions',
+        'language' => 'und',
+      ),
+    ),
+    'uuid' => '6090addf-d500-480b-9036-07ff34d964c9',
+  );
+  $entities['ao_sample_content_dp'][] = (object) array(
+    '__metadata' => array(
+      'type' => 'node',
+      'uri' => 'node/640efcf7-5fb5-41e7-a45f-70f2193bcaf4',
+      'cause' => FALSE,
+    ),
+    'body' => array(
+      'und' => array(
+        0 => array(
+          'format' => 'full_html',
+          'summary' => '',
+          'value' => '<p>Working with volunteer opportunities</p>',
+        ),
+      ),
+    ),
+    'cid' => 0,
+    'comment' => 1,
+    'comment_count' => 0,
+    'field_image' => array(),
+    'field_tags' => array(),
+    'language' => 'und',
+    'last_comment_name' => NULL,
+    'last_comment_uid' => 1,
+    'log' => '',
+    'promote' => 0,
+    'rdf_mapping' => array(
+      'field_image' => array(
+        'predicates' => array(
+          0 => 'og:image',
+          1 => 'rdfs:seeAlso',
+        ),
+        'type' => 'rel',
+      ),
+      'field_tags' => array(
+        'predicates' => array(
+          0 => 'dc:subject',
+        ),
+        'type' => 'rel',
+      ),
+      'rdftype' => array(
+        0 => 'sioc:Item',
+        1 => 'foaf:Document',
+      ),
+      'title' => array(
+        'predicates' => array(
+          0 => 'dc:title',
+        ),
+      ),
+      'created' => array(
+        'predicates' => array(
+          0 => 'dc:date',
+          1 => 'dc:created',
+        ),
+        'datatype' => 'xsd:dateTime',
+        'callback' => 'date_iso8601',
+      ),
+      'changed' => array(
+        'predicates' => array(
+          0 => 'dc:modified',
+        ),
+        'datatype' => 'xsd:dateTime',
+        'callback' => 'date_iso8601',
+      ),
+      'body' => array(
+        'predicates' => array(
+          0 => 'content:encoded',
+        ),
+      ),
+      'uid' => array(
+        'predicates' => array(
+          0 => 'sioc:has_creator',
+        ),
+        'type' => 'rel',
+      ),
+      'name' => array(
+        'predicates' => array(
+          0 => 'foaf:name',
+        ),
+      ),
+      'comment_count' => array(
+        'predicates' => array(
+          0 => 'sioc:num_replies',
+        ),
+        'datatype' => 'xsd:integer',
+      ),
+      'last_activity' => array(
+        'predicates' => array(
+          0 => 'sioc:last_activity_date',
+        ),
+        'datatype' => 'xsd:dateTime',
+        'callback' => 'date_iso8601',
+      ),
+    ),
+    'status' => 1,
+    'sticky' => 0,
+    'title' => 'Working with volunteer opportunities',
+    'tnid' => 0,
+    'translate' => 0,
+    'type' => 'article',
+    'uid' => 1,
+    'url_alias' => array(
+      0 => array(
+        'alias' => 'about/working-with-volunteers',
+        'language' => 'und',
+      ),
+    ),
+    'uuid' => '640efcf7-5fb5-41e7-a45f-70f2193bcaf4',
+  );
+  $entities['ao_sample_content_dp'][] = (object) array(
+    '__metadata' => array(
+      'type' => 'node',
+      'uri' => 'node/1bc61693-8aa3-4927-8c8c-f3e499bbac58',
+      'cause' => FALSE,
+    ),
+    'body' => array(
+      'und' => array(
+        0 => array(
+          'format' => 'full_html',
+          'summary' => '',
+          'value' => '<p>Adding custom fields</p>',
+        ),
+      ),
+    ),
+    'cid' => 0,
+    'comment' => 1,
+    'comment_count' => 0,
+    'field_image' => array(),
+    'field_tags' => array(),
+    'language' => 'und',
+    'last_comment_name' => NULL,
+    'last_comment_uid' => 1,
+    'log' => '',
+    'promote' => 0,
+    'rdf_mapping' => array(
+      'field_image' => array(
+        'predicates' => array(
+          0 => 'og:image',
+          1 => 'rdfs:seeAlso',
+        ),
+        'type' => 'rel',
+      ),
+      'field_tags' => array(
+        'predicates' => array(
+          0 => 'dc:subject',
+        ),
+        'type' => 'rel',
+      ),
+      'rdftype' => array(
+        0 => 'sioc:Item',
+        1 => 'foaf:Document',
+      ),
+      'title' => array(
+        'predicates' => array(
+          0 => 'dc:title',
+        ),
+      ),
+      'created' => array(
+        'predicates' => array(
+          0 => 'dc:date',
+          1 => 'dc:created',
+        ),
+        'datatype' => 'xsd:dateTime',
+        'callback' => 'date_iso8601',
+      ),
+      'changed' => array(
+        'predicates' => array(
+          0 => 'dc:modified',
+        ),
+        'datatype' => 'xsd:dateTime',
+        'callback' => 'date_iso8601',
+      ),
+      'body' => array(
+        'predicates' => array(
+          0 => 'content:encoded',
+        ),
+      ),
+      'uid' => array(
+        'predicates' => array(
+          0 => 'sioc:has_creator',
+        ),
+        'type' => 'rel',
+      ),
+      'name' => array(
+        'predicates' => array(
+          0 => 'foaf:name',
+        ),
+      ),
+      'comment_count' => array(
+        'predicates' => array(
+          0 => 'sioc:num_replies',
+        ),
+        'datatype' => 'xsd:integer',
+      ),
+      'last_activity' => array(
+        'predicates' => array(
+          0 => 'sioc:last_activity_date',
+        ),
+        'datatype' => 'xsd:dateTime',
+        'callback' => 'date_iso8601',
+      ),
+    ),
+    'status' => 1,
+    'sticky' => 0,
+    'title' => 'Adding custom fields',
+    'tnid' => 0,
+    'translate' => 0,
+    'type' => 'article',
+    'uid' => 1,
+    'url_alias' => array(
+      0 => array(
+        'alias' => 'about/custom-fields',
+        'language' => 'und',
+      ),
+    ),
+    'uuid' => '1bc61693-8aa3-4927-8c8c-f3e499bbac58',
+  );
+  $entities['ao_sample_content_dp'][] = (object) array(
+    '__metadata' => array(
+      'type' => 'node',
+      'uri' => 'node/1dc9a07a-fbdb-4a05-b920-95c2265b7bfe',
+      'cause' => FALSE,
+    ),
+    'body' => array(
+      'und' => array(
+        0 => array(
+          'format' => 'full_html',
+          'summary' => '',
+          'value' => '<p>Creating forms for capturing offline activity</p>',
+        ),
+      ),
+    ),
+    'cid' => 0,
+    'comment' => 1,
+    'comment_count' => 0,
+    'field_image' => array(),
+    'field_tags' => array(),
+    'language' => 'und',
+    'last_comment_name' => NULL,
+    'last_comment_uid' => 1,
+    'log' => '',
+    'promote' => 0,
+    'rdf_mapping' => array(
+      'field_image' => array(
+        'predicates' => array(
+          0 => 'og:image',
+          1 => 'rdfs:seeAlso',
+        ),
+        'type' => 'rel',
+      ),
+      'field_tags' => array(
+        'predicates' => array(
+          0 => 'dc:subject',
+        ),
+        'type' => 'rel',
+      ),
+      'rdftype' => array(
+        0 => 'sioc:Item',
+        1 => 'foaf:Document',
+      ),
+      'title' => array(
+        'predicates' => array(
+          0 => 'dc:title',
+        ),
+      ),
+      'created' => array(
+        'predicates' => array(
+          0 => 'dc:date',
+          1 => 'dc:created',
+        ),
+        'datatype' => 'xsd:dateTime',
+        'callback' => 'date_iso8601',
+      ),
+      'changed' => array(
+        'predicates' => array(
+          0 => 'dc:modified',
+        ),
+        'datatype' => 'xsd:dateTime',
+        'callback' => 'date_iso8601',
+      ),
+      'body' => array(
+        'predicates' => array(
+          0 => 'content:encoded',
+        ),
+      ),
+      'uid' => array(
+        'predicates' => array(
+          0 => 'sioc:has_creator',
+        ),
+        'type' => 'rel',
+      ),
+      'name' => array(
+        'predicates' => array(
+          0 => 'foaf:name',
+        ),
+      ),
+      'comment_count' => array(
+        'predicates' => array(
+          0 => 'sioc:num_replies',
+        ),
+        'datatype' => 'xsd:integer',
+      ),
+      'last_activity' => array(
+        'predicates' => array(
+          0 => 'sioc:last_activity_date',
+        ),
+        'datatype' => 'xsd:dateTime',
+        'callback' => 'date_iso8601',
+      ),
+    ),
+    'status' => 1,
+    'sticky' => 0,
+    'title' => 'Creating forms for capturing offline activity',
+    'tnid' => 0,
+    'translate' => 0,
+    'type' => 'article',
+    'uid' => 1,
+    'url_alias' => array(
+      0 => array(
+        'alias' => 'about/offline-activity',
+        'language' => 'und',
+      ),
+    ),
+    'uuid' => '1dc9a07a-fbdb-4a05-b920-95c2265b7bfe',
   );
 
   return $entities;
