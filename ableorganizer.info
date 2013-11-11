@@ -110,10 +110,6 @@ dependencies[] = crm_core_demo_standard_fields
 ; AbleOrganizer customizations
 dependencies[] = ao
 dependencies[] = ableorganizer_dashboard
-dependencies[] = deploy_ui
-dependencies[] = uuid_path
-dependencies[] = entity_menu_links
-dependencies[] = media_youtube
 
 ; System Requirements.
 php_memory_limit = 128M
