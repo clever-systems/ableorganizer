@@ -579,6 +579,7 @@ function ableorganizer_install_tasks_alter(&$tasks, $install_state) {
 
   // The "Welcome" screen needs to come after the first two steps
   // (profile and language selection), despite the fact that they are disabled.
+  $new_task = array();
   $new_task['ableorganizer_welcome'] = array(
     'display' => TRUE,
     'display_name' => $t('Welcome'),
@@ -587,38 +588,44 @@ function ableorganizer_install_tasks_alter(&$tasks, $install_state) {
   );
   $tasks = $new_task + $tasks;
 
+  $new_tasks = array();
+
   // Configure features.
-  $new_task['ableorganizer_features'] = array(
+  $new_tasks['ableorganizer_features'] = array(
     'display' => TRUE,
     'display_name' => $t('Select features'),
     'type' => 'form',
     'run' => isset($install_state['parameters']['features']) ? INSTALL_TASK_SKIP : INSTALL_TASK_RUN_IF_REACHED,
   );
-  $old_tasks = $tasks;
-  $tasks = array_slice($old_tasks, 0, 11) + $new_task + array_slice($old_tasks, 11);
 
   // Configure profile settings.
-  $new_task['ableorganizer_profile_settings'] = array(
+  $new_tasks['ableorganizer_profile_settings'] = array(
     'display' => TRUE,
     'display_name' => $t('Messaging and currency settings'),
     'type' => 'form',
     'run' => isset($install_state['parameters']['profile_settings']) ? INSTALL_TASK_SKIP : INSTALL_TASK_RUN_IF_REACHED,
   );
-  $old_tasks = $tasks;
-  $tasks = array_slice($old_tasks, 0, 11) + $new_task + array_slice($old_tasks, 11);
 
-  // Install sample content.
-  $new_task['ableorganizer_sample_content'] = array(
+  // Select sample content.
+  $new_tasks['ableorganizer_sample_content'] = array(
     'display' => TRUE,
     'display_name' => $t('Sample content and data'),
     'type' => 'form',
     'run' => isset($install_state['parameters']['sample_content']) ? INSTALL_TASK_SKIP : INSTALL_TASK_RUN_IF_REACHED,
   );
-  $old_tasks = $tasks;
-  $tasks = array_slice($old_tasks, 0, 11) + $new_task + array_slice($old_tasks, 11);
+
+  // Select sample content.
+  $new_tasks['ableorganizer_install_sample_content'] = array(
+    'display' => TRUE,
+    'display_name' => $t('Install sample content and data'),
+    'type' => 'batch',
+    'run' => isset($install_state['parameters']['install_sample_content']) ? INSTALL_TASK_SKIP : INSTALL_TASK_RUN_IF_REACHED,
+  );
+
+  $tasks = array_slice($tasks, 0, 11) + $new_tasks + array_slice($tasks, 11);
 
   // Change the name of the other install profile step.
-  $tasks['install_profile_modules']['display_name'] = 'Install modules';
+  $tasks['install_profile_modules']['display_name'] = $t('Install modules');
 }
 
 /**
@@ -1103,96 +1110,165 @@ function ableorganizer_sample_content($form, &$form_state, &$install_state) {
  * Profile settings submission handler.
  */
 function ableorganizer_sample_content_submit($form, &$form_state) {
-
   global $install_state;
 
-  $modules = array();
-
+  // Remember modules to be enabled.
+  $install_state['parameters']['ao_modules'] = array();
   if (!empty($form_state['values']['ao_sample_content'])) {
-    $modules[] = 'ableorganizer_sample_content';
+    $install_state['parameters']['ao_modules'][] = 'ableorganizer_sample_content';
   }
   if (!empty($form_state['values']['donation_sample_content'])) {
-    $modules[] = 'ableorganizer_sample_donation_pages';
+    $install_state['parameters']['ao_modules'][] = 'ableorganizer_sample_donation_pages';
   }
   if (!empty($form_state['values']['event_sample_content'])) {
-    $modules[] = 'ableorganizer_sample_event_pages';
+    $install_state['parameters']['ao_modules'][] = 'ableorganizer_sample_event_pages';
   }
   if (!empty($form_state['values']['petition_sample_content'])) {
-    $modules[] = 'ableorganizer_sample_petition_pages';
+    $install_state['parameters']['ao_modules'][] = 'ableorganizer_sample_petition_pages';
   }
   if (!empty($form_state['values']['volunteer_sample_content'])) {
-    $modules[] = 'ableorganizer_sample_volunteer_pages';
-  }
-  module_enable($modules);
-
-  if (!empty($form_state['values']['ao_sample_content'])) {
-    // Get the nid of the content item and set it as part of this step.
-    $nid = db_select('node', 'n')
-      ->fields('n', array('nid'))
-      ->condition('title', 'Welcome to AbleOrganizer')
-      ->condition('status', 1)
-      ->range(0, 1)
-      ->execute()
-      ->fetchField();
-    if (!empty($nid)) {
-      variable_set('site_frontpage', 'node/' . $nid);
-    }
+    $install_state['parameters']['ao_modules'][] = 'ableorganizer_sample_volunteer_pages';
   }
 
-  // Configure sample data.
+  // Remember types of data to be imported.
+  $install_state['parameters']['ao_data'] = array();
+  if (!empty($form_state['values']['donation_sample_data'])) {
+    $install_state['parameters']['ao_data'][] = 'donation';
+  }
+  if (!empty($form_state['values']['event_sample_data'])) {
+    $install_state['parameters']['ao_data'][] = 'event';
+  }
+  if (!empty($form_state['values']['petition_sample_data'])) {
+    $install_state['parameters']['ao_data'][] = 'petition';
+  }
+  if (!empty($form_state['values']['volunteer_sample_data'])) {
+    $install_state['parameters']['ao_data'][] = 'volunteer';
+  }
+
+  $install_state['parameters']['sample_content'] = 'done';
+}
+
+/**
+ * Installs sample content via a batch process.
+ *
+ * @param $install_state
+ *   An array of information about the current installation state.
+ *
+ * @return
+ *   The batch definition.
+ */
+function ableorganizer_install_sample_content(&$install_state) {
+  $files = system_rebuild_module_data();
+  $operations = array();
+
+  // Add selected sample content modules to install to the batch.
+  foreach ($install_state['parameters']['ao_modules'] as $module) {
+    $operations[] = array('_install_ableorganizer_module', array($module, $files[$module]->info['name']));
+  }
+
+  // Flush caches if any modules will be installed.
+  if (count($install_state['parameters']['ao_modules'])) {
+    $operations[] = array('_install_profile_modules_finished', array());
+  }
+
+  // Add sample contacts to the batch if any data will be imported.
+  if (count($install_state['parameters']['ao_data'])) {
+    $operations[] = array('_install_ableorganizer_sample_contacts', array());
+  }
+
+  // Add sample activities to the batch for each type selected.
+  foreach ($install_state['parameters']['ao_data'] as $type) {
+    $operations[] = array('_install_ableorganizer_sample_data', array($type));
+  }
+
+  $batch = array(
+    'operations' => $operations,
+    'title' => st('Installing @drupal', array('@drupal' => drupal_install_profile_distribution_name())),
+    'error_message' => st('The installation has encountered an error.'),
+    'finished' => '_install_ableorganizer_sample_content_finished',
+  );
+  return $batch;
+}
+
+/**
+ * Batch callback for batch installation of modules.
+ */
+function _install_ableorganizer_module($module, $module_name, &$context) {
+  // Enable module and allow module dependencies to be satisfied.
+  module_enable(array($module));
+  $context['results'][] = $module;
+  $context['message'] = st('Installed %module module.', array('%module' => $module_name));
+}
+
+/**
+ * Create sample CRM Core contacts to support sample data.
+ */
+function _install_ableorganizer_sample_contacts(&$context) {
   // Import sample contacts and activities.
   module_load_include('inc', 'ableorganizer', 'ableorganizer_sample_data');
 
   $sample_data = ableorganizer_sample_data();
 
-  // This is where we create the sample contacts.
+  // Create the sample contacts.
   foreach ($sample_data['crm_core_contact'] as $contact) {
     $new_contact = entity_import('crm_core_contact', $contact);
     entity_save('crm_core_contact', $new_contact);
   }
+}
 
-  if (!empty($form_state['values']['donation_sample_data'])) {
-    $sample_data = ableorganizer_donation_sample_data();
-    foreach ($sample_data['crm_core_activity'] as $activity) {
-      $new_activity = entity_import('crm_core_activity', $activity);
-      $date = _ableorganizer_set_activity_date();
-      $new_activity->field_activity_date = $date;
-      $new_activity->field_cmcd_receive_date = $date;
-      entity_save('crm_core_activity', $new_activity);
-    }
-  }
-  if (!empty($form_state['values']['event_sample_data'])) {
-    $sample_data = ableorganizer_event_sample_data();
-    foreach ($sample_data['crm_core_activity'] as $activity) {
-      $new_activity = entity_import('crm_core_activity', $activity);
-      $date = _ableorganizer_set_activity_date();
-      $new_activity->field_activity_date = $date;
-      $new_activity->field_cmcev_reg_date = $date;
-      entity_save('crm_core_activity', $new_activity);
-    }
-  }
-  if (!empty($form_state['values']['petition_sample_data'])) {
-    $sample_data = ableorganizer_petition_sample_data();
-    foreach ($sample_data['crm_core_activity'] as $activity) {
-      $new_activity = entity_import('crm_core_activity', $activity);
-      $date = _ableorganizer_set_activity_date();
-      $new_activity->field_activity_date = $date;
-      $new_activity->field_cmcp_received_date = $date;
-      entity_save('crm_core_activity', $new_activity);
-    }
-  }
-  if (!empty($form_state['values']['volunteer_sample_data'])) {
-    $sample_data = ableorganizer_volunteer_sample_data();
-    foreach ($sample_data['crm_core_activity'] as $activity) {
-      $new_activity = entity_import('crm_core_activity', $activity);
-      $date = _ableorganizer_set_activity_date();
-      $new_activity->field_activity_date = $date;
-      $new_activity->field_cmcv_reg_date = $date;
-      entity_save('crm_core_activity', $new_activity);
-    }
-  }
+/**
+ * Create sample data callback for batch API.
+ */
+function _install_ableorganizer_sample_data($type, &$context) {
+  module_load_include('inc', 'ableorganizer', 'ableorganizer_sample_data');
 
-  $install_state['parameters']['sample_content'] = 'done';
+  // Create the callback function based on the type of data to be installed.
+  $callback = 'ableorganizer_' . $type . '_sample_data';
+  $sample_data = $callback();
+
+  foreach ($sample_data['crm_core_activity'] as $activity) {
+    $new_activity = entity_import('crm_core_activity', $activity);
+    $date = _ableorganizer_set_activity_date();
+    $new_activity->field_activity_date = $date;
+
+    // Set type specific date field values.
+    switch ($type) {
+      case 'donation':
+        $new_activity->field_cmcd_receive_date = $date;
+        break;
+
+      case 'event':
+        $new_activity->field_cmcev_reg_date = $date;
+        break;
+
+      case 'petition':
+        $new_activity->field_cmcp_received_date = $date;
+        break;
+
+      case 'volunteer':
+        $new_activity->field_cmcv_reg_date = $date;
+        break;
+    }
+
+    entity_save('crm_core_activity', $new_activity);
+  }
+}
+
+/**
+ * 'Finished' callback for module installation batch.
+ */
+function _install_ableorganizer_sample_content_finished($success, $results, $operations) {
+  // Set the frontpage if the sample content was installed.
+  $nid = db_select('node', 'n')
+    ->fields('n', array('nid'))
+    ->condition('title', 'Welcome to AbleOrganizer')
+    ->condition('status', 1)
+    ->range(0, 1)
+    ->execute()
+    ->fetchField();
+  if (!empty($nid)) {
+    variable_set('site_frontpage', 'node/' . $nid);
+  }
 }
 
 /**
