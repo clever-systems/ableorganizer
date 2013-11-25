@@ -1,5 +1,5 @@
-name = 'AbleTemplate'
-description = 'A basic starter theme for AbleOrganizer. Can be easily configured for specific websites.'
+name = 'abletemplate'
+description = ''
 core = '7.x'
 engine = 'phptemplate'
 screenshot = 'screenshot.png'
@@ -7,7 +7,13 @@ base theme = 'omega'
 scripts[0] = 'js/abletemplate.js'
 regions[page_top] = 'Page Top'
 regions[page_bottom] = 'Page Bottom'
+
+regions[above_content_1] = 'Above Content'
+regions[above_content_2] = 'Above Content Lower'
 regions[content] = 'Content'
+regions[below_content_1] = 'Below Content'
+regions[below_content_2] = 'Below Content Lower'
+
 regions[user_first] = 'User Bar First'
 regions[user_second] = 'User Bar Second'
 regions[branding] = 'Branding'
@@ -26,7 +32,15 @@ regions[postscript_fourth] = 'Postscript Fourth'
 regions[footer_first] = 'Footer First'
 regions[footer_second] = 'Footer Second'
 zones[header] = 'Header'
-zones[content] = 'Content'
+
+
+zones[above_content]        = 'Above Content'
+zones[above_content_lower]  = 'Above Content Lower'
+zones[content]              = 'Content'
+zones[below_content]        = 'Below Content'
+zones[below_content_lower]  = 'Below Content Lower'
+
+
 zones[footer] = 'Footer'
 zones[user] = 'User'
 zones[branding] = 'Branding'
@@ -402,19 +416,3 @@ settings[alpha_region_footer_second_position] = '0'
 settings[alpha_region_footer_second_css] = ''
 settings[alpha_region_footer_second_equal_height_element] = '0'
 settings[alpha_region_footer_second_equal_height_container] = '0'
-
-
-; Information added by drush on 2013-10-26
-version = "7.x-1.0-beta6+126-dev"
-core = "7.x"
-project = "ableorganizer"
-datestamp = "1382779683"
-
-
-
-; Information added by drush on 2013-10-29
-version = "7.x-1.0-beta6+132-dev"
-core = "7.x"
-project = "ableorganizer"
-datestamp = "1383028360"
-
