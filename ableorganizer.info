@@ -55,6 +55,7 @@ dependencies[] = addressfield
 dependencies[] = date
 
 ; helper modules
+dependencies[] = boxes
 dependencies[] = calendar
 dependencies[] = flot
 dependencies[] = mimemail
@@ -113,3 +114,11 @@ dependencies[] = ableorganizer_dashboard
 
 ; System Requirements.
 php_memory_limit = 128M
+
+
+; Information added by drush on 2013-10-15
+version = "7.x-1.0-beta6+79-dev"
+core = "7.x"
+project = "ableorganizer"
+datestamp = "1381844536"
+
