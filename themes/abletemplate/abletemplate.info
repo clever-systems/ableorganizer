@@ -1,5 +1,5 @@
-name = 'abletemplate'
-description = ''
+name = 'AbleTemplate'
+description = 'A basic starter theme for AbleOrganizer. Can be easily configured for specific websites.'
 core = '7.x'
 engine = 'phptemplate'
 screenshot = 'screenshot.png'
@@ -8,11 +8,11 @@ scripts[0] = 'js/abletemplate.js'
 regions[page_top] = 'Page Top'
 regions[page_bottom] = 'Page Bottom'
 
-regions[above_content_1] = 'Above Content'
-regions[above_content_2] = 'Above Content Lower'
 regions[content] = 'Content'
+regions[above_content_1] = 'Above Content'
+regions[above_content_2] = 'Above Content - Lower'
 regions[below_content_1] = 'Below Content'
-regions[below_content_2] = 'Below Content Lower'
+regions[below_content_2] = 'Below Content - Lower'
 
 regions[user_first] = 'User Bar First'
 regions[user_second] = 'User Bar Second'
@@ -31,22 +31,23 @@ regions[postscript_third] = 'Postscript Third'
 regions[postscript_fourth] = 'Postscript Fourth'
 regions[footer_first] = 'Footer First'
 regions[footer_second] = 'Footer Second'
+
 zones[header] = 'Header'
-
-
-zones[above_content]        = 'Above Content'
-zones[above_content_lower]  = 'Above Content Lower'
-zones[content]              = 'Content'
-zones[below_content]        = 'Below Content'
-zones[below_content_lower]  = 'Below Content Lower'
-
-
+zones[above_content_1] = 'Above Content'
+zones[above_content_2] = 'Above Content - Lower'
+zones[content] = 'Content'
+zones[below_content_1] = 'Below Content'
+zones[below_content_2] = 'Below Content - Lower'
 zones[footer] = 'Footer'
 zones[user] = 'User'
 zones[branding] = 'Branding'
 zones[menu] = 'Menu'
 zones[preface] = 'Preface'
 zones[postscript] = 'Postscript'
+
+
+
+
 css[global.css][name] = 'Your custom global styles'
 css[global.css][description] = 'This file holds all the globally active custom CSS of your theme.'
 css[global.css][options][weight] = '10'
@@ -416,3 +417,27 @@ settings[alpha_region_footer_second_position] = '0'
 settings[alpha_region_footer_second_css] = ''
 settings[alpha_region_footer_second_equal_height_element] = '0'
 settings[alpha_region_footer_second_equal_height_container] = '0'
+
+
+; Information added by drush on 2013-10-26
+version = "7.x-1.0-beta6+126-dev"
+core = "7.x"
+project = "ableorganizer"
+datestamp = "1382779683"
+
+
+
+; Information added by drush on 2013-10-29
+version = "7.x-1.0-beta6+132-dev"
+core = "7.x"
+project = "ableorganizer"
+datestamp = "1383028360"
+
+
+
+; Information added by drush on 2013-11-25
+version = "7.x-1.0-beta6+139-dev"
+core = "7.x"
+project = "ableorganizer"
+datestamp = "1385358960"
+
