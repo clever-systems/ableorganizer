@@ -45,8 +45,7 @@
         }
 
       });
-
-      // alter text formats
+      
     }
   };
 })(jQuery);
