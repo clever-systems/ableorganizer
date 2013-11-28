@@ -6,10 +6,4 @@ function abletemplate_alpha_preprocess_page(&$vars) {
     $vars['title'] = '';    
   }
   
-  // this needs to be moved into the sample content module
-  drupal_add_library('system', 'ui');
-  drupal_add_library('system', 'effects');  
-  drupal_add_library('system', 'effects.explode');  
-  drupal_add_library('system', 'effects.fade');  
-  
 }
