@@ -29,6 +29,21 @@ function ableorganizer_sample_content_default_box() {
   $box = new stdClass();
   $box->disabled = FALSE; /* Edit this to true to make a default box disabled initially */
   $box->api_version = 1;
+  $box->delta = 'documentation_header';
+  $box->plugin_key = 'simple';
+  $box->title = '';
+  $box->description = 'AO Documentation Header';
+  $box->options = array(
+    'body' => array(
+      'value' => '<h2>Documentation</h2>',
+      'format' => 'full_html',
+    ),
+  );
+  $export['documentation_header'] = $box;
+
+  $box = new stdClass();
+  $box->disabled = FALSE; /* Edit this to true to make a default box disabled initially */
+  $box->api_version = 1;
   $box->delta = 'hero_content';
   $box->plugin_key = 'simple';
   $box->title = '';
@@ -67,7 +82,7 @@ function ableorganizer_sample_content_default_box() {
   $box->description = 'AO Promo - Get Able';
   $box->options = array(
     'body' => array(
-      'value' => '<h2><span>Get Able</span></h2><h3>AbleOrganizer is a Community Engagement Platform</h3><div class="ao-info-masthead">Open source and built to be customized. Here\'s how to get started fast and make the most out of it.</div><div class="ao-info-holder"><!-- infoitem //--><div class="ao-info-item"><h4>Getting started</h4>How to install AbleOrganizer, configure donation processing, configure outbound email and other topics.<div class="button ao-info-btn">Learn More</div></div><!-- infoitem //--><div class="ao-info-item"><h4>The system</h4>How to work with donation forms, event registration, contact records, activities, linking users and contacts, and more.<div class="button ao-info-btn">Learn More</div></div><!-- infoitem //--><div class="ao-info-item"><h4>Power Users</h4>How to get the most out of AbleOrganizer, extend the system, and otherwise make Drupal more powerful than ever.<div class="button ao-info-btn">Learn More</div></div></div><div class="ao-down-arrow">&nbsp;</div>',
+      'value' => '<h2><span>Get Able</span></h2><h3>AbleOrganizer is a Community Engagement Platform</h3><div class="ao-info-masthead">Open source and built to be customized. Here\'s how to get started fast and make the most out of it.</div><div class="ao-info-holder"><!-- infoitem //--><div class="ao-info-item"><h4>Getting started</h4>How to install AbleOrganizer, configure donation processing, configure outbound email and other topics.<div class="button ao-info-btn"><a href="about">Learn More</a></div></div><!-- infoitem //--><div class="ao-info-item"><h4>The system</h4>How to work with donation forms, event registration, contact records, activities, linking users and contacts, and more.<div class="button ao-info-btn">Learn More</div></div><!-- infoitem //--><div class="ao-info-item"><h4>Power Users</h4>How to get the most out of AbleOrganizer, extend the system, and otherwise make Drupal more powerful than ever.<div class="button ao-info-btn">Learn More</div></div></div><div class="ao-down-arrow">&nbsp;</div>',
       'format' => 'full_html',
     ),
     'additional_classes' => '',

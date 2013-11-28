@@ -61,5 +61,45 @@ function ableorganizer_sample_content_context_default_contexts() {
   t('front page');
   $export['ao_frontpage_context'] = $context;
 
+  $context = new stdClass();
+  $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
+  $context->api_version = 3;
+  $context->name = 'documentation';
+  $context->description = 'Displays blocks and regions related to documentation';
+  $context->tag = 'documentation';
+  $context->conditions = array(
+    'path' => array(
+      'values' => array(
+        'about' => 'about',
+        'about/*' => 'about/*',
+      ),
+    ),
+  );
+  $context->reactions = array(
+    'block' => array(
+      'blocks' => array(
+        'boxes-documentation_header' => array(
+          'module' => 'boxes',
+          'delta' => 'documentation_header',
+          'region' => 'above_content_1',
+          'weight' => '-10',
+        ),
+        'menu-menu-getting-started' => array(
+          'module' => 'menu',
+          'delta' => 'menu-getting-started',
+          'region' => 'sidebar_first',
+          'weight' => '-10',
+        ),
+      ),
+    ),
+  );
+  $context->condition_mode = 0;
+
+  // Translatables
+  // Included for use with string extractors like potx.
+  t('Displays blocks and regions related to documentation');
+  t('documentation');
+  $export['documentation'] = $context;
+
   return $export;
 }
