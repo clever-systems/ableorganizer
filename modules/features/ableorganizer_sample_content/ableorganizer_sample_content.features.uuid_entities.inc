@@ -197,7 +197,7 @@ function ableorganizer_sample_content_uuid_default_entities() {
     ),
     'status' => 1,
     'sticky' => 0,
-    'title' => 'Welcome to AbleOrganizer',
+    'title' => 'Getting Started with AbleOrganizer',
     'tnid' => 0,
     'translate' => 0,
     'type' => 'article',
