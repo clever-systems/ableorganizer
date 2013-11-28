@@ -5,3 +5,17 @@
  */
 
 include_once 'ableorganizer_sample_content.features.inc';
+
+/**
+ * Implementation of hook_preprocess_html
+ * @param unknown_type $vars
+ */
+function ableorganizer_sample_content_preprocess_html(&$vars) {
+	
+	// this needs to be moved into the sample content module
+	drupal_add_library('system', 'ui', true);
+	drupal_add_library('system', 'effects', true);
+	drupal_add_library('system', 'effects.fade', true);
+	drupal_add_library('system', 'ui.dialog', true);
+
+}
