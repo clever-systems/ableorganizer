@@ -117,9 +117,7 @@ function ableorganizer_sample_content_menu_default_menu_links() {
     'router_path' => 'node/%',
     'link_title' => 'Installing AbleOrganizer',
     'options' => array(
-      'attributes' => array(
-        'title' => '',
-      ),
+      'attributes' => array(),
       'identifier' => 'menu-getting-started_installing-ableorganizer:node/48',
     ),
     'module' => 'menu',
