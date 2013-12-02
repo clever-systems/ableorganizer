@@ -43,3 +43,63 @@ function ao_form_alter(&$form, &$form_state, $form_id) {
     $form['field_ao_email_address'][LANGUAGE_NONE]['#description'] = FALSE;
   }
 }
+
+/**
+ * Implements hook_entity_uuid_load().
+ */
+function ao_entity_uuid_load(&$entities, $entity_type) {
+  if ($entity_type === 'node') {
+    foreach ($entities as $id => $entity) {
+      if (isset($entity->nid)) {
+        $mlid = _ao_mlid_load($entity);
+        if ($mlid) {
+          $entities[$id]->menu_link = menu_link_load($mlid);
+        }
+      }
+    }
+  }
+}
+
+/**
+ * Implements hook_entity_uuid_save().
+ */
+function ao_entity_uuid_save(&$entity, $entity_type) {
+  if ($entity_type == 'node') {
+    if (isset($entity->nid)) {
+      $mlid = _ao_mlid_load($entity);
+      if ($mlid) {
+        menu_link_delete($mlid);
+      }
+    }
+
+    if (isset($entity->menu_link)) {
+      $link = $entity->menu_link;
+      $link['link_path'] = 'node/' . $entity->nid;
+      menu_link_save($link);
+    }
+  }
+}
+
+/**
+ * Loads menu link ID associated with an entity.
+ */
+function _ao_mlid_load($entity) {
+  $mlid = FALSE;
+  $menu_name = strtok(variable_get('menu_parent_' . $entity->type, 'main-menu:0'), ':');
+  // Give priority to the default menu.
+  $type_menus = variable_get('menu_options_' . $entity->type, array('main-menu' => 'main-menu'));
+  if (in_array($menu_name, $type_menus)) {
+    $mlid = db_query_range("SELECT mlid FROM {menu_links} WHERE link_path = :path AND menu_name = :menu_name AND module = 'menu' ORDER BY mlid ASC", 0, 1, array(
+      ':path' => 'node/' . $entity->nid,
+      ':menu_name' => $menu_name,
+    ))->fetchField();
+  }
+  // Check all allowed menus if a link does not exist in the default menu.
+  if (!$mlid && !empty($type_menus)) {
+    $mlid = db_query_range("SELECT mlid FROM {menu_links} WHERE link_path = :path AND module = 'menu' AND menu_name IN (:type_menus) ORDER BY mlid ASC", 0, 1, array(
+      ':path' => 'node/' . $entity->nid,
+      ':type_menus' => array_values($type_menus),
+    ))->fetchField();
+  }
+  return $mlid;
+}
