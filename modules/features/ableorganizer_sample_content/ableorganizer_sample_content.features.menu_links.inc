@@ -17,9 +17,7 @@ function ableorganizer_sample_content_menu_default_menu_links() {
     'router_path' => 'node/%',
     'link_title' => 'Configuring activity records',
     'options' => array(
-      'attributes' => array(
-        'title' => '',
-      ),
+      'attributes' => array(),
       'identifier' => 'menu-getting-started_configuring-activity-records:node/52',
     ),
     'module' => 'menu',
@@ -37,9 +35,7 @@ function ableorganizer_sample_content_menu_default_menu_links() {
     'router_path' => 'node/%',
     'link_title' => 'Configuring bulk email',
     'options' => array(
-      'attributes' => array(
-        'title' => '',
-      ),
+      'attributes' => array(),
       'identifier' => 'menu-getting-started_configuring-bulk-email:node/49',
     ),
     'module' => 'menu',
@@ -55,11 +51,8 @@ function ableorganizer_sample_content_menu_default_menu_links() {
     'menu_name' => 'menu-getting-started',
     'link_path' => 'node/50',
     'router_path' => 'node/%',
-    'link_title' => 'Configuring payment processors',
+    'link_title' => 'Configuring Payment Processors',
     'options' => array(
-      'attributes' => array(
-        'title' => '',
-      ),
       'identifier' => 'menu-getting-started_configuring-payment-processors:node/50',
     ),
     'module' => 'menu',
@@ -67,8 +60,8 @@ function ableorganizer_sample_content_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => -44,
-    'customized' => 1,
+    'weight' => -39,
+    'customized' => 0,
   );
   // Exported menu link: menu-getting-started_configuring-relationships:node/53
   $menu_links['menu-getting-started_configuring-relationships:node/53'] = array(
@@ -77,9 +70,7 @@ function ableorganizer_sample_content_menu_default_menu_links() {
     'router_path' => 'node/%',
     'link_title' => 'Configuring relationships',
     'options' => array(
-      'attributes' => array(
-        'title' => '',
-      ),
+      'attributes' => array(),
       'identifier' => 'menu-getting-started_configuring-relationships:node/53',
     ),
     'module' => 'menu',
@@ -135,9 +126,7 @@ function ableorganizer_sample_content_menu_default_menu_links() {
     'router_path' => 'node/%',
     'link_title' => 'Working with contact records',
     'options' => array(
-      'attributes' => array(
-        'title' => '',
-      ),
+      'attributes' => array(),
       'identifier' => 'menu-getting-started_working-with-contact-records:node/51',
     ),
     'module' => 'menu',
@@ -150,9 +139,9 @@ function ableorganizer_sample_content_menu_default_menu_links() {
   );
   // Translatables
   // Included for use with string extractors like potx.
+  t('Configuring Payment Processors');
   t('Configuring activity records');
   t('Configuring bulk email');
-  t('Configuring payment processors');
   t('Configuring relationships');
   t('Getting Started with AbleOrganizer');
   t('Installing AbleOrganizer');
