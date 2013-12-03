@@ -40,10 +40,9 @@
 
 /* basic typography */
 BODY {
-  font-size: 100%;
 }
 P {
-  line-height: 120%;
+  line-height: 170%;
   margin-bottom: 0.5em;
 }
 A {
@@ -56,7 +55,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.2em;
 }
 h1 {
-  font-size: 2em;
+  font-size: 2.98em;
   margin-bottom: 1em;
 }
 h2 {
@@ -64,7 +63,7 @@ h2 {
   margin-bottom: .8em;
 }
 h3 {
-  font-size: 1.3em;
+  font-size: 1.55em;
   margin-bottom: .6em;
 }
 h4 {
@@ -91,6 +90,16 @@ A {
 }
 A:visited {
   color: #660077;
+}
+code, tt, pre {
+  background-color:#555;
+  border: 1px solid #CCC;
+  font-family: Monaco,"Lucida Console",monospace;
+  font-size: 0.8em;
+  padding: 0.5em;
+  white-space: pre-wrap;
+  color: White;
+  display: block;
 }
   
 /* fields */
