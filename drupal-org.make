@@ -226,8 +226,6 @@ projects[entity_menu_links][subdir] = "contrib"
 projects[entity_menu_links][download][type] = git
 projects[entity_menu_links][download][branch] = 7.x-1.x
 projects[entity_menu_links][download][revision] = "9dd1dd700714051aefc8e932607abedee977e258"
-projects[uuid_features][version] = 1.0-alpha3
-projects[uuid_features][subdir] = "contrib"
 
 ;themes
 projects[omega] = 3.1
