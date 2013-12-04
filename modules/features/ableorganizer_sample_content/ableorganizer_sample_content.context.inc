@@ -90,6 +90,18 @@ function ableorganizer_sample_content_context_default_contexts() {
           'region' => 'sidebar_first',
           'weight' => '-10',
         ),
+        'menu-menu-the-system' => array(
+          'module' => 'menu',
+          'delta' => 'menu-the-system',
+          'region' => 'sidebar_first',
+          'weight' => '-9',
+        ),
+        'menu-menu-power-users' => array(
+          'module' => 'menu',
+          'delta' => 'menu-power-users',
+          'region' => 'sidebar_first',
+          'weight' => '-8',
+        ),
       ),
     ),
   );

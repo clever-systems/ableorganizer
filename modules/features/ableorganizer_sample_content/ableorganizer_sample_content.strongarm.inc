@@ -17,6 +17,8 @@ function ableorganizer_sample_content_strongarm() {
   $strongarm->value = array(
     0 => 'menu-getting-started',
     1 => 'main-menu',
+    2 => 'menu-power-users',
+    3 => 'menu-the-system',
   );
   $export['menu_options_article'] = $strongarm;
 

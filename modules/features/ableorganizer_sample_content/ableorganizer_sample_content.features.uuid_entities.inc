@@ -13,98 +13,6 @@ function ableorganizer_sample_content_uuid_default_entities() {
   $entities['ao_sample_content_dp'][] = (object) array(
     '__metadata' => array(
       'type' => 'node',
-      'uri' => 'node/eaa3f19b-410b-4d75-ae42-05d5ad3565e6',
-      'cause' => FALSE,
-    ),
-    'body' => array(
-      'und' => array(
-        0 => array(
-          'format' => 'full_html',
-          'summary' => '',
-          'value' => '<h2><span>How it Does It</span></h2><div class="ao-how-it-does-it">&nbsp;</div><div class="ao-down-arrow"></div>',
-        ),
-      ),
-    ),
-    'cid' => 0,
-    'comment' => 1,
-    'comment_count' => 0,
-    'language' => 'und',
-    'last_comment_name' => NULL,
-    'last_comment_uid' => 1,
-    'log' => '',
-    'promote' => 0,
-    'rdf_mapping' => array(
-      'rdftype' => array(
-        0 => 'foaf:Document',
-      ),
-      'title' => array(
-        'predicates' => array(
-          0 => 'dc:title',
-        ),
-      ),
-      'created' => array(
-        'predicates' => array(
-          0 => 'dc:date',
-          1 => 'dc:created',
-        ),
-        'datatype' => 'xsd:dateTime',
-        'callback' => 'date_iso8601',
-      ),
-      'changed' => array(
-        'predicates' => array(
-          0 => 'dc:modified',
-        ),
-        'datatype' => 'xsd:dateTime',
-        'callback' => 'date_iso8601',
-      ),
-      'body' => array(
-        'predicates' => array(
-          0 => 'content:encoded',
-        ),
-      ),
-      'uid' => array(
-        'predicates' => array(
-          0 => 'sioc:has_creator',
-        ),
-        'type' => 'rel',
-      ),
-      'name' => array(
-        'predicates' => array(
-          0 => 'foaf:name',
-        ),
-      ),
-      'comment_count' => array(
-        'predicates' => array(
-          0 => 'sioc:num_replies',
-        ),
-        'datatype' => 'xsd:integer',
-      ),
-      'last_activity' => array(
-        'predicates' => array(
-          0 => 'sioc:last_activity_date',
-        ),
-        'datatype' => 'xsd:dateTime',
-        'callback' => 'date_iso8601',
-      ),
-    ),
-    'status' => 1,
-    'sticky' => 0,
-    'title' => 'Welcome to AbleOrganizer',
-    'tnid' => 0,
-    'translate' => 0,
-    'type' => 'page',
-    'uid' => 1,
-    'url_alias' => array(
-      0 => array(
-        'alias' => 'front',
-        'language' => 'und',
-      ),
-    ),
-    'uuid' => 'eaa3f19b-410b-4d75-ae42-05d5ad3565e6',
-  );
-  $entities['ao_sample_content_dp'][] = (object) array(
-    '__metadata' => array(
-      'type' => 'node',
       'uri' => 'node/df0145b3-e0fa-43cd-9626-7cd9bd49060d',
       'cause' => FALSE,
     ),
@@ -113,7 +21,7 @@ function ableorganizer_sample_content_uuid_default_entities() {
         0 => array(
           'format' => 'full_html',
           'summary' => '',
-          'value' => '<p>Welcome to AbleOrganizer, a community engagement platform for&nbsp;civic groups, non-profits, political campaigns and other organizations. This software provides a powerful, effective platform for engaging&nbsp;constituents you can use to manage&nbsp;your web presence, collect&nbsp;information about people who care about your mission, or simply to make your group more efficient by using&nbsp;better tools for collaboration.</p><h3>Getting started</h3><p>This guide will take you through the basic steps of getting started with AbleOrganizer. It will explain how to configure the content management system,&nbsp;engagement tools, third party tools and services and other features.</p><h3>What comes with the platform</h3><p>Before diving too deep, it&nbsp;helps to start by understanding a little more about&nbsp;what comes with AbleOrganizer, and how everything&nbsp;works together.</p><p>The platform&nbsp;includes a number of components, which&nbsp;include:</p><ul><li><u>A content management system</u>, making it easy to share and update content.</li><li><u>A constituent relationship management (CRM) system</u>, allowing you to track information about contacts and get a 360 degree view of their involvement.</li><li><u>Engagement tools</u>&nbsp;for fundraising, event management, petitions and volunteer management.</li><li><u>Integration</u> with various third-party tools and services that help you get the most out of the platform.</li></ul><p>These components are designed to work together seamlessly and be managed through a simple, web-based administrative interface. For instance, if you need&nbsp;to create a fundraising page, you&nbsp;use the same tools you use to create a blog post. If you need to create a form for evert registration, you can easily deploy it alongside any other form of content.&nbsp;</p><p>Part of getting started with AbleOrganizer is setting up and configuring each of these components. One thing you might want to remember is that AbleOrganizer is open source software, which is free to download, customize and adapt to your specific needs. The&nbsp;platform includes a number of tools that allow you to&nbsp;automate common configuration tasks, which can be very useful if you need to set up the platform more that once or according to specific needs.</p><h3>Start with a clear idea</h3><p>It\'s also important to realize AbleOrganizer can be used in a variety of situations. Before you set up the system, it\'s important to have a clear sense of what you want to do with it.</p><p>Unlike some&nbsp;fundraising and organization platforms, AbleOrganizer can fill a lot of roles for organizations. Depending on what you are looking to get out of it, it can act in any or all of the following ways:</p><ul><li>Organizational websites: this platform can act as the public facing website for your organization.&nbsp;</li><li>Campaign websites and microsites: you can use this platform for campaigns and targeted microsites that compliment other sites in your network.</li><li>Constituent Relationship Management (CRM) system: you can use AbleOrganizer for managing information about contact relationships internally,&nbsp;without needing to take it public.&nbsp;</li><li>Turnkey chapter sites: you can use multiple instances of AbleOrganizer to operate websites for individual chapters in your organization.</li><li>Branded engagement platform: you can build your own version of AbleOrganizer that can be turned on and off in minutes.</li></ul><p>... and that\'s just to start.&nbsp;While AbleOrganizer can be used effectively in&nbsp;these&nbsp;traditional areas, the software&nbsp;is capable of doing a lot more. Because of the tight integration between content and contact information, you can use the platform to delivering some unique insights about people and their behaviors that go beyond these simple use cases.</p><p>It\'s easy to get caught up in the possibilities of the&nbsp;platform. Before you get started configuring the system, it\'s a good idea to write down how you plan to use it. If you are someone who is enthusiastic about software, you might want to&nbsp;refer back to this "mission statement" often throughout the configuration process.</p>',
+          'value' => '<p>Welcome to AbleOrganizer, a community engagement platform for&nbsp;civic groups, non-profits, political campaigns and other organizations. This software provides a powerful, effective platform for engaging&nbsp;constituents you can use to manage&nbsp;your web presence, collect&nbsp;information about people who care about your mission, or simply to make your group more efficient by using&nbsp;better tools for collaboration.</p><h3>Getting started</h3><p>This guide will take you through the basic steps of getting started with AbleOrganizer. It will explain how to configure the content management system,&nbsp;engagement tools, third party tools and services and other features.</p><h3>What comes with the platform</h3><p>Before diving too deep, it&nbsp;helps to start by understanding a little more about&nbsp;what comes with AbleOrganizer, and how everything&nbsp;works together.</p><p>The platform&nbsp;includes a number of components, which&nbsp;include:</p><ul><li><strong>A content management system</strong>, making it easy to share and update content.</li><li><strong>A constituent relationship management (CRM) system</strong>, allowing you to track information about contacts and get a 360 degree view of their involvement.</li><li><strong>Engagement tools</strong>&nbsp;for fundraising, event management, petitions and volunteer management.</li><li><strong>Integration</strong> with various third-party tools and services that help you get the most out of the platform.</li></ul><p>These components are designed to work together seamlessly and be managed through a simple, web-based administrative interface. For instance, if you need&nbsp;to create a fundraising page, you&nbsp;use the same tools you use to create a blog post. If you need to create a form for evert registration, you can easily deploy it alongside any other form of content.&nbsp;</p><p>Part of getting started with AbleOrganizer is setting up and configuring each of these components. One thing you might want to remember is that AbleOrganizer is open source software, which is free to download, customize and adapt to your specific needs. The&nbsp;platform includes a number of tools that allow you to&nbsp;automate common configuration tasks, which can be very useful if you need to set up the platform more that once or according to specific needs.</p><h3>Start with a clear idea</h3><p>It\'s also important to realize AbleOrganizer can be used in a variety of situations. Before you set up the system, it\'s important to have a clear sense of what you want to do with it.</p><p>Unlike some&nbsp;fundraising and organization platforms, AbleOrganizer can fill a lot of roles for organizations. Depending on what you are looking to get out of it, it can act in any or all of the following ways:</p><ul><li>Organizational websites: this platform can act as the public facing website for your organization.&nbsp;</li><li>Campaign websites and microsites: you can use this platform for campaigns and targeted microsites that compliment other sites in your network.</li><li>Constituent Relationship Management (CRM) system: you can use AbleOrganizer for managing information about contact relationships internally,&nbsp;without needing to take it public.&nbsp;</li><li>Turnkey chapter sites: you can use multiple instances of AbleOrganizer to operate websites for individual chapters in your organization.</li><li>Branded engagement platform: you can build your own version of AbleOrganizer that can be turned on and off in minutes.</li></ul><p>... and that\'s just to start.&nbsp;While AbleOrganizer can be used effectively in&nbsp;these&nbsp;traditional areas, the software&nbsp;is capable of doing a lot more. Because of the tight integration between content and contact information, you can use the platform to delivering some unique insights about people and their behaviors that go beyond these simple use cases.</p><p>It\'s easy to get caught up in the possibilities of the&nbsp;platform. Before you get started configuring the system, it\'s a good idea to write down how you plan to use it. If you are someone who is enthusiastic about software, you might want to&nbsp;refer back to this "mission statement" often throughout the configuration process.</p>',
         ),
       ),
     ),
@@ -152,7 +60,7 @@ function ableorganizer_sample_content_uuid_default_entities() {
       'p8' => 0,
       'p9' => 0,
       'updated' => 0,
-      'vid' => 32,
+      'vid' => 107,
       'uuid' => '2077fb9e-d03a-4bd1-82f5-84dee4556847',
       'path' => 'node/%',
       'load_functions' => array(
@@ -608,7 +516,7 @@ function ableorganizer_sample_content_uuid_default_entities() {
         0 => array(
           'format' => 'full_html',
           'summary' => '',
-          'value' => '<p>Configuring Payment Processors</p>',
+          'value' => '<p>In order to process payments through AbleOrganizer, you will need to configure one or more payment processors. The software is designed to support multiple payment processors that can be configured on a per-form basis. This means, for instance, you could set up separate accounts for receiving donations and funds for event registration.</p><p>&nbsp;</p><p>&nbsp;</p>',
         ),
       ),
     ),
@@ -629,9 +537,7 @@ function ableorganizer_sample_content_uuid_default_entities() {
       'router_path' => 'node/%',
       'link_title' => 'Configuring payment processors',
       'options' => array(
-        'attributes' => array(
-          'title' => '',
-        ),
+        'attributes' => array(),
       ),
       'module' => 'menu',
       'hidden' => 0,
@@ -651,7 +557,7 @@ function ableorganizer_sample_content_uuid_default_entities() {
       'p8' => 0,
       'p9' => 0,
       'updated' => 0,
-      'vid' => 72,
+      'vid' => 106,
       'uuid' => '2b88efb4-f25a-423f-bc72-9c78daf50a9a',
       'path' => 'node/%',
       'load_functions' => array(
@@ -681,9 +587,7 @@ function ableorganizer_sample_content_uuid_default_entities() {
       'href' => 'node/5',
       'access' => TRUE,
       'localized_options' => array(
-        'attributes' => array(
-          'title' => '',
-        ),
+        'attributes' => array(),
       ),
     ),
     'promote' => 0,
@@ -1115,7 +1019,7 @@ function ableorganizer_sample_content_uuid_default_entities() {
         0 => array(
           'format' => 'full_html',
           'summary' => '',
-          'value' => '<p>Configuring relationships</p>',
+          'value' => '<p>Configuring relationships</p><p>&nbsp;</p><p><a href="/admin/structure/crm-core/relationship-types">main administration screen</a></p>',
         ),
       ),
     ),
@@ -1154,7 +1058,7 @@ function ableorganizer_sample_content_uuid_default_entities() {
       'p8' => 0,
       'p9' => 0,
       'updated' => 0,
-      'vid' => 70,
+      'vid' => 89,
       'uuid' => '7a0a54e9-82b1-478b-a666-e5a6a34e9ce4',
       'path' => 'node/%',
       'load_functions' => array(
@@ -1268,6 +1172,1821 @@ function ableorganizer_sample_content_uuid_default_entities() {
       ),
     ),
     'uuid' => 'f2023f44-1356-4d6b-aa31-c3f201350809',
+  );
+  $entities['ao_sample_content_dp'][] = (object) array(
+    '__metadata' => array(
+      'type' => 'node',
+      'uri' => 'node/e4c3a8b4-ffd5-41f1-9645-ae98815ef764',
+      'cause' => FALSE,
+    ),
+    'body' => array(
+      'und' => array(
+        0 => array(
+          'format' => 'filtered_html',
+          'summary' => '',
+          'value' => '<p>This is an article about configuring HTML email templates</p>',
+        ),
+      ),
+    ),
+    'cid' => 0,
+    'comment' => 1,
+    'comment_count' => 0,
+    'field_image' => array(),
+    'field_tags' => array(),
+    'language' => 'und',
+    'last_comment_name' => NULL,
+    'last_comment_uid' => 1,
+    'log' => '',
+    'menu_link' => array(
+      'menu_name' => 'menu-getting-started',
+      'mlid' => 1184,
+      'plid' => 0,
+      'link_path' => 'node/32',
+      'router_path' => 'node/%',
+      'link_title' => 'Configuring HTML email templates',
+      'options' => array(),
+      'module' => 'menu',
+      'hidden' => 0,
+      'external' => 0,
+      'has_children' => 0,
+      'expanded' => 0,
+      'weight' => -42,
+      'depth' => 1,
+      'customized' => 1,
+      'p1' => 1184,
+      'p2' => 0,
+      'p3' => 0,
+      'p4' => 0,
+      'p5' => 0,
+      'p6' => 0,
+      'p7' => 0,
+      'p8' => 0,
+      'p9' => 0,
+      'updated' => 0,
+      'vid' => 73,
+      'uuid' => 'a4288cac-e779-4ac4-9d23-76d2361ff4f7',
+      'path' => 'node/%',
+      'load_functions' => array(
+        1 => 'node_load',
+      ),
+      'to_arg_functions' => '',
+      'access_callback' => 'node_access',
+      'access_arguments' => 'a:2:{i:0;s:4:"view";i:1;i:1;}',
+      'page_callback' => 'node_page_view',
+      'page_arguments' => 'a:1:{i:0;i:1;}',
+      'delivery_callback' => '',
+      'fit' => 2,
+      'number_parts' => 2,
+      'context' => 0,
+      'tab_parent' => '',
+      'tab_root' => 'node/%',
+      'title' => 'Configuring HTML email templates',
+      'title_callback' => 'node_page_title',
+      'title_arguments' => 'a:1:{i:0;i:1;}',
+      'theme_callback' => '',
+      'theme_arguments' => 'a:0:{}',
+      'type' => 6,
+      'description' => '',
+      'position' => '',
+      'include_file' => '',
+      'link_weight' => -42,
+      'href' => 'node/32',
+      'access' => TRUE,
+      'localized_options' => array(),
+    ),
+    'promote' => 0,
+    'rdf_mapping' => array(
+      'field_image' => array(
+        'predicates' => array(
+          0 => 'og:image',
+          1 => 'rdfs:seeAlso',
+        ),
+        'type' => 'rel',
+      ),
+      'field_tags' => array(
+        'predicates' => array(
+          0 => 'dc:subject',
+        ),
+        'type' => 'rel',
+      ),
+      'rdftype' => array(
+        0 => 'sioc:Item',
+        1 => 'foaf:Document',
+      ),
+      'title' => array(
+        'predicates' => array(
+          0 => 'dc:title',
+        ),
+      ),
+      'created' => array(
+        'predicates' => array(
+          0 => 'dc:date',
+          1 => 'dc:created',
+        ),
+        'datatype' => 'xsd:dateTime',
+        'callback' => 'date_iso8601',
+      ),
+      'changed' => array(
+        'predicates' => array(
+          0 => 'dc:modified',
+        ),
+        'datatype' => 'xsd:dateTime',
+        'callback' => 'date_iso8601',
+      ),
+      'body' => array(
+        'predicates' => array(
+          0 => 'content:encoded',
+        ),
+      ),
+      'uid' => array(
+        'predicates' => array(
+          0 => 'sioc:has_creator',
+        ),
+        'type' => 'rel',
+      ),
+      'name' => array(
+        'predicates' => array(
+          0 => 'foaf:name',
+        ),
+      ),
+      'comment_count' => array(
+        'predicates' => array(
+          0 => 'sioc:num_replies',
+        ),
+        'datatype' => 'xsd:integer',
+      ),
+      'last_activity' => array(
+        'predicates' => array(
+          0 => 'sioc:last_activity_date',
+        ),
+        'datatype' => 'xsd:dateTime',
+        'callback' => 'date_iso8601',
+      ),
+    ),
+    'status' => 1,
+    'sticky' => 0,
+    'title' => 'Configuring HTML email templates',
+    'tnid' => 0,
+    'translate' => 0,
+    'type' => 'article',
+    'uid' => 1,
+    'url_alias' => array(
+      0 => array(
+        'alias' => 'about/html-email-templates',
+        'language' => 'und',
+      ),
+    ),
+    'uuid' => 'e4c3a8b4-ffd5-41f1-9645-ae98815ef764',
+  );
+  $entities['ao_sample_content_dp'][] = (object) array(
+    '__metadata' => array(
+      'type' => 'node',
+      'uri' => 'node/58e1dd2b-ac93-416d-b61c-a9537950515c',
+      'cause' => FALSE,
+    ),
+    'body' => array(
+      'und' => array(
+        0 => array(
+          'format' => 'full_html',
+          'summary' => '',
+          'value' => '<p>Once AbleOrganizer is installed, the next step is setting it up. Configuring the software is an easy process that is mostly carried out through the use of a&nbsp;web-based administrative interface.&nbsp;</p><p>It\'s not necessary to carry out all of these tasks in order to work with and evaluate the software. AbleOrganizer will work out of the box with sample content and data set up through the install profile. But if you want to get the most out of the software, it\'s a good idea to take the time to read through the following articles.</p><h3>How to configure contacts</h3><ul><li><strong><a href="/about/configuring-contact-records">Configuring contact records</a>: </strong>Contact records store information about people. This article explains how to&nbsp;manage contact types&nbsp;and control the information that is collected as part of each contact record.</li><li><strong><a href="/about/configuring-activity-records">Configuring activity records</a>:</strong>&nbsp;Activity records store information about interaction with people. This article explains how to&nbsp;manage activity types&nbsp;and control the information that is collected about different types of activity. It also explains some of the activity types that come with AbleOrganizer, and how to work with them.</li><li><a href="/about/configuring-relationships"><strong>Configuring relationships:</strong></a>&nbsp;Relationships are records about connections between people. They are used to group contacts into organziations, households and other types of groups. This article explains how relationships work and how to create your own relationship types.</li></ul><h3>How to configure individual features</h3><ul><li>Donations</li><li>Events</li><li>Petitions</li><li>Volunteer opportunities</li></ul><h3>How to configure advanced services</h3><ul></ul><ul><li><strong><a href="/about/configuring-payment-processors">Configuring payment processors</a>:</strong>&nbsp;AbleOrganizer is capable of handling online payments and can work with multiple payment processors for processing transactions. This article explains how to configure them.</li><li><strong><a href="/about/configuring-bulk-email">Configuring mass mailing and email</a>:</strong> AbleOrganizer is capable of sending mass emails, either through Drupal or one of many whitelisted providers. This article deals with some of the options for configuring the mass mail options within AbleOrganizer.</li><li><strong><a href="/about/html-email-templates">Configuring HTML email templates</a>:</strong>&nbsp;Beyond sending mass emails, AbleOrganizer can also generate personalized HTML email based on content stored in your Drupal website. This article explains how to configure the appearance of these messages.&nbsp;</li></ul><p><strong>Heads up:&nbsp;</strong>Throughout the documentation, you will find links to various administrative screens. Please be aware you need to be logged into the system with an account with administrative permissions in order to click through these links.&nbsp;They will not work otherwise.</p>',
+        ),
+      ),
+    ),
+    'cid' => 0,
+    'comment' => 1,
+    'comment_count' => 0,
+    'field_image' => array(),
+    'field_tags' => array(),
+    'language' => 'und',
+    'last_comment_name' => NULL,
+    'last_comment_uid' => 1,
+    'log' => '',
+    'menu_link' => array(
+      'menu_name' => 'menu-getting-started',
+      'mlid' => 1185,
+      'plid' => 0,
+      'link_path' => 'node/33',
+      'router_path' => 'node/%',
+      'link_title' => 'Configuration tasks',
+      'options' => array(),
+      'module' => 'menu',
+      'hidden' => 0,
+      'external' => 0,
+      'has_children' => 0,
+      'expanded' => 0,
+      'weight' => -48,
+      'depth' => 1,
+      'customized' => 1,
+      'p1' => 1185,
+      'p2' => 0,
+      'p3' => 0,
+      'p4' => 0,
+      'p5' => 0,
+      'p6' => 0,
+      'p7' => 0,
+      'p8' => 0,
+      'p9' => 0,
+      'updated' => 0,
+      'vid' => 108,
+      'uuid' => '6f645b15-f7ed-47cb-ad31-6ab7b73cc45a',
+      'path' => 'node/%',
+      'load_functions' => array(
+        1 => 'node_load',
+      ),
+      'to_arg_functions' => '',
+      'access_callback' => 'node_access',
+      'access_arguments' => 'a:2:{i:0;s:4:"view";i:1;i:1;}',
+      'page_callback' => 'node_page_view',
+      'page_arguments' => 'a:1:{i:0;i:1;}',
+      'delivery_callback' => '',
+      'fit' => 2,
+      'number_parts' => 2,
+      'context' => 0,
+      'tab_parent' => '',
+      'tab_root' => 'node/%',
+      'title' => 'Configuration tasks',
+      'title_callback' => 'node_page_title',
+      'title_arguments' => 'a:1:{i:0;i:1;}',
+      'theme_callback' => '',
+      'theme_arguments' => 'a:0:{}',
+      'type' => 6,
+      'description' => '',
+      'position' => '',
+      'include_file' => '',
+      'link_weight' => -48,
+      'href' => 'node/33',
+      'access' => TRUE,
+      'localized_options' => array(),
+    ),
+    'promote' => 0,
+    'rdf_mapping' => array(
+      'field_image' => array(
+        'predicates' => array(
+          0 => 'og:image',
+          1 => 'rdfs:seeAlso',
+        ),
+        'type' => 'rel',
+      ),
+      'field_tags' => array(
+        'predicates' => array(
+          0 => 'dc:subject',
+        ),
+        'type' => 'rel',
+      ),
+      'rdftype' => array(
+        0 => 'sioc:Item',
+        1 => 'foaf:Document',
+      ),
+      'title' => array(
+        'predicates' => array(
+          0 => 'dc:title',
+        ),
+      ),
+      'created' => array(
+        'predicates' => array(
+          0 => 'dc:date',
+          1 => 'dc:created',
+        ),
+        'datatype' => 'xsd:dateTime',
+        'callback' => 'date_iso8601',
+      ),
+      'changed' => array(
+        'predicates' => array(
+          0 => 'dc:modified',
+        ),
+        'datatype' => 'xsd:dateTime',
+        'callback' => 'date_iso8601',
+      ),
+      'body' => array(
+        'predicates' => array(
+          0 => 'content:encoded',
+        ),
+      ),
+      'uid' => array(
+        'predicates' => array(
+          0 => 'sioc:has_creator',
+        ),
+        'type' => 'rel',
+      ),
+      'name' => array(
+        'predicates' => array(
+          0 => 'foaf:name',
+        ),
+      ),
+      'comment_count' => array(
+        'predicates' => array(
+          0 => 'sioc:num_replies',
+        ),
+        'datatype' => 'xsd:integer',
+      ),
+      'last_activity' => array(
+        'predicates' => array(
+          0 => 'sioc:last_activity_date',
+        ),
+        'datatype' => 'xsd:dateTime',
+        'callback' => 'date_iso8601',
+      ),
+    ),
+    'status' => 1,
+    'sticky' => 0,
+    'title' => 'Configuration tasks',
+    'tnid' => 0,
+    'translate' => 0,
+    'type' => 'article',
+    'uid' => 1,
+    'url_alias' => array(
+      0 => array(
+        'alias' => 'about/configuration-tasks',
+        'language' => 'und',
+      ),
+    ),
+    'uuid' => '58e1dd2b-ac93-416d-b61c-a9537950515c',
+  );
+  $entities['ao_sample_content_dp'][] = (object) array(
+    '__metadata' => array(
+      'type' => 'node',
+      'uri' => 'node/2b736b28-68a3-49bf-acf2-7c6c55834d07',
+      'cause' => FALSE,
+    ),
+    'body' => array(
+      'und' => array(
+        0 => array(
+          'format' => 'full_html',
+          'summary' => '',
+          'value' => '<p>Creating profile forms</p>',
+        ),
+      ),
+    ),
+    'cid' => 0,
+    'comment' => 1,
+    'comment_count' => 0,
+    'field_image' => array(),
+    'field_tags' => array(),
+    'language' => 'und',
+    'last_comment_name' => NULL,
+    'last_comment_uid' => 1,
+    'log' => '',
+    'menu_link' => array(
+      'menu_name' => 'menu-the-system',
+      'mlid' => 1196,
+      'plid' => 0,
+      'link_path' => 'node/34',
+      'router_path' => 'node/%',
+      'link_title' => 'Creating profile forms',
+      'options' => array(),
+      'module' => 'menu',
+      'hidden' => 0,
+      'external' => 0,
+      'has_children' => 0,
+      'expanded' => 0,
+      'weight' => 0,
+      'depth' => 1,
+      'customized' => 0,
+      'p1' => 1196,
+      'p2' => 0,
+      'p3' => 0,
+      'p4' => 0,
+      'p5' => 0,
+      'p6' => 0,
+      'p7' => 0,
+      'p8' => 0,
+      'p9' => 0,
+      'updated' => 0,
+      'vid' => 94,
+      'uuid' => '7ee07f4e-971c-42a2-b22a-110196b9a30a',
+      'path' => 'node/%',
+      'load_functions' => array(
+        1 => 'node_load',
+      ),
+      'to_arg_functions' => '',
+      'access_callback' => 'node_access',
+      'access_arguments' => 'a:2:{i:0;s:4:"view";i:1;i:1;}',
+      'page_callback' => 'node_page_view',
+      'page_arguments' => 'a:1:{i:0;i:1;}',
+      'delivery_callback' => '',
+      'fit' => 2,
+      'number_parts' => 2,
+      'context' => 0,
+      'tab_parent' => '',
+      'tab_root' => 'node/%',
+      'title' => 'Creating profile forms',
+      'title_callback' => 'node_page_title',
+      'title_arguments' => 'a:1:{i:0;i:1;}',
+      'theme_callback' => '',
+      'theme_arguments' => 'a:0:{}',
+      'type' => 6,
+      'description' => '',
+      'position' => '',
+      'include_file' => '',
+      'link_weight' => 0,
+      'href' => 'node/34',
+      'access' => TRUE,
+      'localized_options' => array(),
+    ),
+    'promote' => 0,
+    'rdf_mapping' => array(
+      'field_image' => array(
+        'predicates' => array(
+          0 => 'og:image',
+          1 => 'rdfs:seeAlso',
+        ),
+        'type' => 'rel',
+      ),
+      'field_tags' => array(
+        'predicates' => array(
+          0 => 'dc:subject',
+        ),
+        'type' => 'rel',
+      ),
+      'rdftype' => array(
+        0 => 'sioc:Item',
+        1 => 'foaf:Document',
+      ),
+      'title' => array(
+        'predicates' => array(
+          0 => 'dc:title',
+        ),
+      ),
+      'created' => array(
+        'predicates' => array(
+          0 => 'dc:date',
+          1 => 'dc:created',
+        ),
+        'datatype' => 'xsd:dateTime',
+        'callback' => 'date_iso8601',
+      ),
+      'changed' => array(
+        'predicates' => array(
+          0 => 'dc:modified',
+        ),
+        'datatype' => 'xsd:dateTime',
+        'callback' => 'date_iso8601',
+      ),
+      'body' => array(
+        'predicates' => array(
+          0 => 'content:encoded',
+        ),
+      ),
+      'uid' => array(
+        'predicates' => array(
+          0 => 'sioc:has_creator',
+        ),
+        'type' => 'rel',
+      ),
+      'name' => array(
+        'predicates' => array(
+          0 => 'foaf:name',
+        ),
+      ),
+      'comment_count' => array(
+        'predicates' => array(
+          0 => 'sioc:num_replies',
+        ),
+        'datatype' => 'xsd:integer',
+      ),
+      'last_activity' => array(
+        'predicates' => array(
+          0 => 'sioc:last_activity_date',
+        ),
+        'datatype' => 'xsd:dateTime',
+        'callback' => 'date_iso8601',
+      ),
+    ),
+    'status' => 1,
+    'sticky' => 0,
+    'title' => 'Creating profile forms',
+    'tnid' => 0,
+    'translate' => 0,
+    'type' => 'article',
+    'uid' => 1,
+    'url_alias' => array(
+      0 => array(
+        'alias' => 'about/creating-profile-forms',
+        'language' => 'und',
+      ),
+    ),
+    'uuid' => '2b736b28-68a3-49bf-acf2-7c6c55834d07',
+  );
+  $entities['ao_sample_content_dp'][] = (object) array(
+    '__metadata' => array(
+      'type' => 'node',
+      'uri' => 'node/ca0a4c04-1018-46eb-bd42-d55ba83a7b4e',
+      'cause' => FALSE,
+    ),
+    'body' => array(
+      'und' => array(
+        0 => array(
+          'format' => 'full_html',
+          'summary' => '',
+          'value' => '<p>Creating donation pages</p>',
+        ),
+      ),
+    ),
+    'cid' => 0,
+    'comment' => 1,
+    'comment_count' => 0,
+    'field_image' => array(),
+    'field_tags' => array(),
+    'language' => 'und',
+    'last_comment_name' => NULL,
+    'last_comment_uid' => 1,
+    'log' => '',
+    'menu_link' => array(
+      'menu_name' => 'menu-the-system',
+      'mlid' => 1197,
+      'plid' => 0,
+      'link_path' => 'node/35',
+      'router_path' => 'node/%',
+      'link_title' => 'Creating donation pages',
+      'options' => array(),
+      'module' => 'menu',
+      'hidden' => 0,
+      'external' => 0,
+      'has_children' => 0,
+      'expanded' => 0,
+      'weight' => 0,
+      'depth' => 1,
+      'customized' => 0,
+      'p1' => 1197,
+      'p2' => 0,
+      'p3' => 0,
+      'p4' => 0,
+      'p5' => 0,
+      'p6' => 0,
+      'p7' => 0,
+      'p8' => 0,
+      'p9' => 0,
+      'updated' => 0,
+      'vid' => 95,
+      'uuid' => 'dd35add2-f08d-4391-8b01-b0f5b81582d0',
+      'path' => 'node/%',
+      'load_functions' => array(
+        1 => 'node_load',
+      ),
+      'to_arg_functions' => '',
+      'access_callback' => 'node_access',
+      'access_arguments' => 'a:2:{i:0;s:4:"view";i:1;i:1;}',
+      'page_callback' => 'node_page_view',
+      'page_arguments' => 'a:1:{i:0;i:1;}',
+      'delivery_callback' => '',
+      'fit' => 2,
+      'number_parts' => 2,
+      'context' => 0,
+      'tab_parent' => '',
+      'tab_root' => 'node/%',
+      'title' => 'Creating donation pages',
+      'title_callback' => 'node_page_title',
+      'title_arguments' => 'a:1:{i:0;i:1;}',
+      'theme_callback' => '',
+      'theme_arguments' => 'a:0:{}',
+      'type' => 6,
+      'description' => '',
+      'position' => '',
+      'include_file' => '',
+      'link_weight' => 0,
+      'href' => 'node/35',
+      'access' => TRUE,
+      'localized_options' => array(),
+    ),
+    'promote' => 0,
+    'rdf_mapping' => array(
+      'field_image' => array(
+        'predicates' => array(
+          0 => 'og:image',
+          1 => 'rdfs:seeAlso',
+        ),
+        'type' => 'rel',
+      ),
+      'field_tags' => array(
+        'predicates' => array(
+          0 => 'dc:subject',
+        ),
+        'type' => 'rel',
+      ),
+      'rdftype' => array(
+        0 => 'sioc:Item',
+        1 => 'foaf:Document',
+      ),
+      'title' => array(
+        'predicates' => array(
+          0 => 'dc:title',
+        ),
+      ),
+      'created' => array(
+        'predicates' => array(
+          0 => 'dc:date',
+          1 => 'dc:created',
+        ),
+        'datatype' => 'xsd:dateTime',
+        'callback' => 'date_iso8601',
+      ),
+      'changed' => array(
+        'predicates' => array(
+          0 => 'dc:modified',
+        ),
+        'datatype' => 'xsd:dateTime',
+        'callback' => 'date_iso8601',
+      ),
+      'body' => array(
+        'predicates' => array(
+          0 => 'content:encoded',
+        ),
+      ),
+      'uid' => array(
+        'predicates' => array(
+          0 => 'sioc:has_creator',
+        ),
+        'type' => 'rel',
+      ),
+      'name' => array(
+        'predicates' => array(
+          0 => 'foaf:name',
+        ),
+      ),
+      'comment_count' => array(
+        'predicates' => array(
+          0 => 'sioc:num_replies',
+        ),
+        'datatype' => 'xsd:integer',
+      ),
+      'last_activity' => array(
+        'predicates' => array(
+          0 => 'sioc:last_activity_date',
+        ),
+        'datatype' => 'xsd:dateTime',
+        'callback' => 'date_iso8601',
+      ),
+    ),
+    'status' => 1,
+    'sticky' => 0,
+    'title' => 'Creating donation pages',
+    'tnid' => 0,
+    'translate' => 0,
+    'type' => 'article',
+    'uid' => 1,
+    'url_alias' => array(
+      0 => array(
+        'alias' => 'about/creating-donation-pages',
+        'language' => 'und',
+      ),
+    ),
+    'uuid' => 'ca0a4c04-1018-46eb-bd42-d55ba83a7b4e',
+  );
+  $entities['ao_sample_content_dp'][] = (object) array(
+    '__metadata' => array(
+      'type' => 'node',
+      'uri' => 'node/f3e24945-ec43-4bb5-b914-33797f4f0422',
+      'cause' => FALSE,
+    ),
+    'body' => array(
+      'und' => array(
+        0 => array(
+          'format' => 'filtered_html',
+          'summary' => '',
+          'value' => '<p>Creating event registration</p>',
+        ),
+      ),
+    ),
+    'cid' => 0,
+    'comment' => 1,
+    'comment_count' => 0,
+    'field_image' => array(),
+    'field_tags' => array(),
+    'language' => 'und',
+    'last_comment_name' => NULL,
+    'last_comment_uid' => 1,
+    'log' => '',
+    'menu_link' => array(
+      'menu_name' => 'menu-the-system',
+      'mlid' => 1198,
+      'plid' => 0,
+      'link_path' => 'node/36',
+      'router_path' => 'node/%',
+      'link_title' => 'Creating event registration',
+      'options' => array(),
+      'module' => 'menu',
+      'hidden' => 0,
+      'external' => 0,
+      'has_children' => 0,
+      'expanded' => 0,
+      'weight' => 0,
+      'depth' => 1,
+      'customized' => 0,
+      'p1' => 1198,
+      'p2' => 0,
+      'p3' => 0,
+      'p4' => 0,
+      'p5' => 0,
+      'p6' => 0,
+      'p7' => 0,
+      'p8' => 0,
+      'p9' => 0,
+      'updated' => 0,
+      'vid' => 96,
+      'uuid' => 'c966714d-8a8c-4d51-8691-f90873a1ad8a',
+      'path' => 'node/%',
+      'load_functions' => array(
+        1 => 'node_load',
+      ),
+      'to_arg_functions' => '',
+      'access_callback' => 'node_access',
+      'access_arguments' => 'a:2:{i:0;s:4:"view";i:1;i:1;}',
+      'page_callback' => 'node_page_view',
+      'page_arguments' => 'a:1:{i:0;i:1;}',
+      'delivery_callback' => '',
+      'fit' => 2,
+      'number_parts' => 2,
+      'context' => 0,
+      'tab_parent' => '',
+      'tab_root' => 'node/%',
+      'title' => 'Creating event registration',
+      'title_callback' => 'node_page_title',
+      'title_arguments' => 'a:1:{i:0;i:1;}',
+      'theme_callback' => '',
+      'theme_arguments' => 'a:0:{}',
+      'type' => 6,
+      'description' => '',
+      'position' => '',
+      'include_file' => '',
+      'link_weight' => 0,
+      'href' => 'node/36',
+      'access' => TRUE,
+      'localized_options' => array(),
+    ),
+    'promote' => 0,
+    'rdf_mapping' => array(
+      'field_image' => array(
+        'predicates' => array(
+          0 => 'og:image',
+          1 => 'rdfs:seeAlso',
+        ),
+        'type' => 'rel',
+      ),
+      'field_tags' => array(
+        'predicates' => array(
+          0 => 'dc:subject',
+        ),
+        'type' => 'rel',
+      ),
+      'rdftype' => array(
+        0 => 'sioc:Item',
+        1 => 'foaf:Document',
+      ),
+      'title' => array(
+        'predicates' => array(
+          0 => 'dc:title',
+        ),
+      ),
+      'created' => array(
+        'predicates' => array(
+          0 => 'dc:date',
+          1 => 'dc:created',
+        ),
+        'datatype' => 'xsd:dateTime',
+        'callback' => 'date_iso8601',
+      ),
+      'changed' => array(
+        'predicates' => array(
+          0 => 'dc:modified',
+        ),
+        'datatype' => 'xsd:dateTime',
+        'callback' => 'date_iso8601',
+      ),
+      'body' => array(
+        'predicates' => array(
+          0 => 'content:encoded',
+        ),
+      ),
+      'uid' => array(
+        'predicates' => array(
+          0 => 'sioc:has_creator',
+        ),
+        'type' => 'rel',
+      ),
+      'name' => array(
+        'predicates' => array(
+          0 => 'foaf:name',
+        ),
+      ),
+      'comment_count' => array(
+        'predicates' => array(
+          0 => 'sioc:num_replies',
+        ),
+        'datatype' => 'xsd:integer',
+      ),
+      'last_activity' => array(
+        'predicates' => array(
+          0 => 'sioc:last_activity_date',
+        ),
+        'datatype' => 'xsd:dateTime',
+        'callback' => 'date_iso8601',
+      ),
+    ),
+    'status' => 1,
+    'sticky' => 0,
+    'title' => 'Creating event registration',
+    'tnid' => 0,
+    'translate' => 0,
+    'type' => 'article',
+    'uid' => 1,
+    'url_alias' => array(
+      0 => array(
+        'alias' => 'about/creating-event-registration',
+        'language' => 'und',
+      ),
+    ),
+    'uuid' => 'f3e24945-ec43-4bb5-b914-33797f4f0422',
+  );
+  $entities['ao_sample_content_dp'][] = (object) array(
+    '__metadata' => array(
+      'type' => 'node',
+      'uri' => 'node/3701fb77-0170-4d89-8cd0-2771808f76c0',
+      'cause' => FALSE,
+    ),
+    'body' => array(
+      'und' => array(
+        0 => array(
+          'format' => 'full_html',
+          'summary' => '',
+          'value' => '<p>Creating petitions</p>',
+        ),
+      ),
+    ),
+    'cid' => 0,
+    'comment' => 1,
+    'comment_count' => 0,
+    'field_image' => array(),
+    'field_tags' => array(),
+    'language' => 'und',
+    'last_comment_name' => NULL,
+    'last_comment_uid' => 1,
+    'log' => '',
+    'menu_link' => array(
+      'menu_name' => 'menu-the-system',
+      'mlid' => 1199,
+      'plid' => 0,
+      'link_path' => 'node/37',
+      'router_path' => 'node/%',
+      'link_title' => 'Creating petitions',
+      'options' => array(),
+      'module' => 'menu',
+      'hidden' => 0,
+      'external' => 0,
+      'has_children' => 0,
+      'expanded' => 0,
+      'weight' => 0,
+      'depth' => 1,
+      'customized' => 0,
+      'p1' => 1199,
+      'p2' => 0,
+      'p3' => 0,
+      'p4' => 0,
+      'p5' => 0,
+      'p6' => 0,
+      'p7' => 0,
+      'p8' => 0,
+      'p9' => 0,
+      'updated' => 0,
+      'vid' => 97,
+      'uuid' => '78d15d30-ecbe-4fdb-9a85-5b1cb5c8cd87',
+      'path' => 'node/%',
+      'load_functions' => array(
+        1 => 'node_load',
+      ),
+      'to_arg_functions' => '',
+      'access_callback' => 'node_access',
+      'access_arguments' => 'a:2:{i:0;s:4:"view";i:1;i:1;}',
+      'page_callback' => 'node_page_view',
+      'page_arguments' => 'a:1:{i:0;i:1;}',
+      'delivery_callback' => '',
+      'fit' => 2,
+      'number_parts' => 2,
+      'context' => 0,
+      'tab_parent' => '',
+      'tab_root' => 'node/%',
+      'title' => 'Creating petitions',
+      'title_callback' => 'node_page_title',
+      'title_arguments' => 'a:1:{i:0;i:1;}',
+      'theme_callback' => '',
+      'theme_arguments' => 'a:0:{}',
+      'type' => 6,
+      'description' => '',
+      'position' => '',
+      'include_file' => '',
+      'link_weight' => 0,
+      'href' => 'node/37',
+      'access' => TRUE,
+      'localized_options' => array(),
+    ),
+    'promote' => 0,
+    'rdf_mapping' => array(
+      'field_image' => array(
+        'predicates' => array(
+          0 => 'og:image',
+          1 => 'rdfs:seeAlso',
+        ),
+        'type' => 'rel',
+      ),
+      'field_tags' => array(
+        'predicates' => array(
+          0 => 'dc:subject',
+        ),
+        'type' => 'rel',
+      ),
+      'rdftype' => array(
+        0 => 'sioc:Item',
+        1 => 'foaf:Document',
+      ),
+      'title' => array(
+        'predicates' => array(
+          0 => 'dc:title',
+        ),
+      ),
+      'created' => array(
+        'predicates' => array(
+          0 => 'dc:date',
+          1 => 'dc:created',
+        ),
+        'datatype' => 'xsd:dateTime',
+        'callback' => 'date_iso8601',
+      ),
+      'changed' => array(
+        'predicates' => array(
+          0 => 'dc:modified',
+        ),
+        'datatype' => 'xsd:dateTime',
+        'callback' => 'date_iso8601',
+      ),
+      'body' => array(
+        'predicates' => array(
+          0 => 'content:encoded',
+        ),
+      ),
+      'uid' => array(
+        'predicates' => array(
+          0 => 'sioc:has_creator',
+        ),
+        'type' => 'rel',
+      ),
+      'name' => array(
+        'predicates' => array(
+          0 => 'foaf:name',
+        ),
+      ),
+      'comment_count' => array(
+        'predicates' => array(
+          0 => 'sioc:num_replies',
+        ),
+        'datatype' => 'xsd:integer',
+      ),
+      'last_activity' => array(
+        'predicates' => array(
+          0 => 'sioc:last_activity_date',
+        ),
+        'datatype' => 'xsd:dateTime',
+        'callback' => 'date_iso8601',
+      ),
+    ),
+    'status' => 1,
+    'sticky' => 0,
+    'title' => 'Creating petitions',
+    'tnid' => 0,
+    'translate' => 0,
+    'type' => 'article',
+    'uid' => 1,
+    'url_alias' => array(
+      0 => array(
+        'alias' => 'about/creating-petitions',
+        'language' => 'und',
+      ),
+    ),
+    'uuid' => '3701fb77-0170-4d89-8cd0-2771808f76c0',
+  );
+  $entities['ao_sample_content_dp'][] = (object) array(
+    '__metadata' => array(
+      'type' => 'node',
+      'uri' => 'node/ced9c110-648f-4f9c-9648-39bd07b6465e',
+      'cause' => FALSE,
+    ),
+    'body' => array(
+      'und' => array(
+        0 => array(
+          'format' => 'full_html',
+          'summary' => '',
+          'value' => '<p>Creating volunteer opportunities</p>',
+        ),
+      ),
+    ),
+    'cid' => 0,
+    'comment' => 1,
+    'comment_count' => 0,
+    'field_image' => array(),
+    'field_tags' => array(),
+    'language' => 'und',
+    'last_comment_name' => NULL,
+    'last_comment_uid' => 1,
+    'log' => '',
+    'menu_link' => array(
+      'menu_name' => 'menu-the-system',
+      'mlid' => 1200,
+      'plid' => 0,
+      'link_path' => 'node/38',
+      'router_path' => 'node/%',
+      'link_title' => 'Creating volunteer opportunities',
+      'options' => array(),
+      'module' => 'menu',
+      'hidden' => 0,
+      'external' => 0,
+      'has_children' => 0,
+      'expanded' => 0,
+      'weight' => 0,
+      'depth' => 1,
+      'customized' => 0,
+      'p1' => 1200,
+      'p2' => 0,
+      'p3' => 0,
+      'p4' => 0,
+      'p5' => 0,
+      'p6' => 0,
+      'p7' => 0,
+      'p8' => 0,
+      'p9' => 0,
+      'updated' => 0,
+      'vid' => 98,
+      'uuid' => '2d978342-318a-4222-965d-5de206a7ca4e',
+      'path' => 'node/%',
+      'load_functions' => array(
+        1 => 'node_load',
+      ),
+      'to_arg_functions' => '',
+      'access_callback' => 'node_access',
+      'access_arguments' => 'a:2:{i:0;s:4:"view";i:1;i:1;}',
+      'page_callback' => 'node_page_view',
+      'page_arguments' => 'a:1:{i:0;i:1;}',
+      'delivery_callback' => '',
+      'fit' => 2,
+      'number_parts' => 2,
+      'context' => 0,
+      'tab_parent' => '',
+      'tab_root' => 'node/%',
+      'title' => 'Creating volunteer opportunities',
+      'title_callback' => 'node_page_title',
+      'title_arguments' => 'a:1:{i:0;i:1;}',
+      'theme_callback' => '',
+      'theme_arguments' => 'a:0:{}',
+      'type' => 6,
+      'description' => '',
+      'position' => '',
+      'include_file' => '',
+      'link_weight' => 0,
+      'href' => 'node/38',
+      'access' => TRUE,
+      'localized_options' => array(),
+    ),
+    'promote' => 0,
+    'rdf_mapping' => array(
+      'field_image' => array(
+        'predicates' => array(
+          0 => 'og:image',
+          1 => 'rdfs:seeAlso',
+        ),
+        'type' => 'rel',
+      ),
+      'field_tags' => array(
+        'predicates' => array(
+          0 => 'dc:subject',
+        ),
+        'type' => 'rel',
+      ),
+      'rdftype' => array(
+        0 => 'sioc:Item',
+        1 => 'foaf:Document',
+      ),
+      'title' => array(
+        'predicates' => array(
+          0 => 'dc:title',
+        ),
+      ),
+      'created' => array(
+        'predicates' => array(
+          0 => 'dc:date',
+          1 => 'dc:created',
+        ),
+        'datatype' => 'xsd:dateTime',
+        'callback' => 'date_iso8601',
+      ),
+      'changed' => array(
+        'predicates' => array(
+          0 => 'dc:modified',
+        ),
+        'datatype' => 'xsd:dateTime',
+        'callback' => 'date_iso8601',
+      ),
+      'body' => array(
+        'predicates' => array(
+          0 => 'content:encoded',
+        ),
+      ),
+      'uid' => array(
+        'predicates' => array(
+          0 => 'sioc:has_creator',
+        ),
+        'type' => 'rel',
+      ),
+      'name' => array(
+        'predicates' => array(
+          0 => 'foaf:name',
+        ),
+      ),
+      'comment_count' => array(
+        'predicates' => array(
+          0 => 'sioc:num_replies',
+        ),
+        'datatype' => 'xsd:integer',
+      ),
+      'last_activity' => array(
+        'predicates' => array(
+          0 => 'sioc:last_activity_date',
+        ),
+        'datatype' => 'xsd:dateTime',
+        'callback' => 'date_iso8601',
+      ),
+    ),
+    'status' => 1,
+    'sticky' => 0,
+    'title' => 'Creating volunteer opportunities',
+    'tnid' => 0,
+    'translate' => 0,
+    'type' => 'article',
+    'uid' => 1,
+    'url_alias' => array(
+      0 => array(
+        'alias' => 'about/creating-volunteer-opportunities',
+        'language' => 'und',
+      ),
+    ),
+    'uuid' => 'ced9c110-648f-4f9c-9648-39bd07b6465e',
+  );
+  $entities['ao_sample_content_dp'][] = (object) array(
+    '__metadata' => array(
+      'type' => 'node',
+      'uri' => 'node/289d55ad-5ca4-4548-9863-b7903dc7d874',
+      'cause' => FALSE,
+    ),
+    'body' => array(
+      'und' => array(
+        0 => array(
+          'format' => 'filtered_html',
+          'summary' => '',
+          'value' => '<p>Customizing reports</p>',
+        ),
+      ),
+    ),
+    'cid' => 0,
+    'comment' => 1,
+    'comment_count' => 0,
+    'field_image' => array(),
+    'field_tags' => array(),
+    'language' => 'und',
+    'last_comment_name' => NULL,
+    'last_comment_uid' => 1,
+    'log' => '',
+    'menu_link' => array(
+      'menu_name' => 'menu-power-users',
+      'mlid' => 1201,
+      'plid' => 0,
+      'link_path' => 'node/39',
+      'router_path' => 'node/%',
+      'link_title' => 'Customizing reports',
+      'options' => array(),
+      'module' => 'menu',
+      'hidden' => 0,
+      'external' => 0,
+      'has_children' => 0,
+      'expanded' => 0,
+      'weight' => 0,
+      'depth' => 1,
+      'customized' => 0,
+      'p1' => 1201,
+      'p2' => 0,
+      'p3' => 0,
+      'p4' => 0,
+      'p5' => 0,
+      'p6' => 0,
+      'p7' => 0,
+      'p8' => 0,
+      'p9' => 0,
+      'updated' => 0,
+      'vid' => 99,
+      'uuid' => '8ce4ae60-4337-4651-9565-e15229829d30',
+      'path' => 'node/%',
+      'load_functions' => array(
+        1 => 'node_load',
+      ),
+      'to_arg_functions' => '',
+      'access_callback' => 'node_access',
+      'access_arguments' => 'a:2:{i:0;s:4:"view";i:1;i:1;}',
+      'page_callback' => 'node_page_view',
+      'page_arguments' => 'a:1:{i:0;i:1;}',
+      'delivery_callback' => '',
+      'fit' => 2,
+      'number_parts' => 2,
+      'context' => 0,
+      'tab_parent' => '',
+      'tab_root' => 'node/%',
+      'title' => 'Customizing reports',
+      'title_callback' => 'node_page_title',
+      'title_arguments' => 'a:1:{i:0;i:1;}',
+      'theme_callback' => '',
+      'theme_arguments' => 'a:0:{}',
+      'type' => 6,
+      'description' => '',
+      'position' => '',
+      'include_file' => '',
+      'link_weight' => 0,
+      'href' => 'node/39',
+      'access' => TRUE,
+      'localized_options' => array(),
+    ),
+    'promote' => 0,
+    'rdf_mapping' => array(
+      'field_image' => array(
+        'predicates' => array(
+          0 => 'og:image',
+          1 => 'rdfs:seeAlso',
+        ),
+        'type' => 'rel',
+      ),
+      'field_tags' => array(
+        'predicates' => array(
+          0 => 'dc:subject',
+        ),
+        'type' => 'rel',
+      ),
+      'rdftype' => array(
+        0 => 'sioc:Item',
+        1 => 'foaf:Document',
+      ),
+      'title' => array(
+        'predicates' => array(
+          0 => 'dc:title',
+        ),
+      ),
+      'created' => array(
+        'predicates' => array(
+          0 => 'dc:date',
+          1 => 'dc:created',
+        ),
+        'datatype' => 'xsd:dateTime',
+        'callback' => 'date_iso8601',
+      ),
+      'changed' => array(
+        'predicates' => array(
+          0 => 'dc:modified',
+        ),
+        'datatype' => 'xsd:dateTime',
+        'callback' => 'date_iso8601',
+      ),
+      'body' => array(
+        'predicates' => array(
+          0 => 'content:encoded',
+        ),
+      ),
+      'uid' => array(
+        'predicates' => array(
+          0 => 'sioc:has_creator',
+        ),
+        'type' => 'rel',
+      ),
+      'name' => array(
+        'predicates' => array(
+          0 => 'foaf:name',
+        ),
+      ),
+      'comment_count' => array(
+        'predicates' => array(
+          0 => 'sioc:num_replies',
+        ),
+        'datatype' => 'xsd:integer',
+      ),
+      'last_activity' => array(
+        'predicates' => array(
+          0 => 'sioc:last_activity_date',
+        ),
+        'datatype' => 'xsd:dateTime',
+        'callback' => 'date_iso8601',
+      ),
+    ),
+    'status' => 1,
+    'sticky' => 0,
+    'title' => 'Customizing reports',
+    'tnid' => 0,
+    'translate' => 0,
+    'type' => 'article',
+    'uid' => 1,
+    'url_alias' => array(
+      0 => array(
+        'alias' => 'about/customizing-reports',
+        'language' => 'und',
+      ),
+    ),
+    'uuid' => '289d55ad-5ca4-4548-9863-b7903dc7d874',
+  );
+  $entities['ao_sample_content_dp'][] = (object) array(
+    '__metadata' => array(
+      'type' => 'node',
+      'uri' => 'node/3c7dbe48-d016-44f7-a818-0e71babf045c',
+      'cause' => FALSE,
+    ),
+    'body' => array(
+      'und' => array(
+        0 => array(
+          'format' => 'full_html',
+          'summary' => '',
+          'value' => '<p>Creating report widgets</p>',
+        ),
+      ),
+    ),
+    'cid' => 0,
+    'comment' => 1,
+    'comment_count' => 0,
+    'field_image' => array(),
+    'field_tags' => array(),
+    'language' => 'und',
+    'last_comment_name' => NULL,
+    'last_comment_uid' => 1,
+    'log' => '',
+    'menu_link' => array(
+      'menu_name' => 'menu-power-users',
+      'mlid' => 1202,
+      'plid' => 0,
+      'link_path' => 'node/40',
+      'router_path' => 'node/%',
+      'link_title' => 'Creating report widgets',
+      'options' => array(),
+      'module' => 'menu',
+      'hidden' => 0,
+      'external' => 0,
+      'has_children' => 0,
+      'expanded' => 0,
+      'weight' => 0,
+      'depth' => 1,
+      'customized' => 0,
+      'p1' => 1202,
+      'p2' => 0,
+      'p3' => 0,
+      'p4' => 0,
+      'p5' => 0,
+      'p6' => 0,
+      'p7' => 0,
+      'p8' => 0,
+      'p9' => 0,
+      'updated' => 0,
+      'vid' => 100,
+      'uuid' => '96a3ef34-1d16-44c0-83df-b7f8a7ac083f',
+      'path' => 'node/%',
+      'load_functions' => array(
+        1 => 'node_load',
+      ),
+      'to_arg_functions' => '',
+      'access_callback' => 'node_access',
+      'access_arguments' => 'a:2:{i:0;s:4:"view";i:1;i:1;}',
+      'page_callback' => 'node_page_view',
+      'page_arguments' => 'a:1:{i:0;i:1;}',
+      'delivery_callback' => '',
+      'fit' => 2,
+      'number_parts' => 2,
+      'context' => 0,
+      'tab_parent' => '',
+      'tab_root' => 'node/%',
+      'title' => 'Creating report widgets',
+      'title_callback' => 'node_page_title',
+      'title_arguments' => 'a:1:{i:0;i:1;}',
+      'theme_callback' => '',
+      'theme_arguments' => 'a:0:{}',
+      'type' => 6,
+      'description' => '',
+      'position' => '',
+      'include_file' => '',
+      'link_weight' => 0,
+      'href' => 'node/40',
+      'access' => TRUE,
+      'localized_options' => array(),
+    ),
+    'promote' => 0,
+    'rdf_mapping' => array(
+      'field_image' => array(
+        'predicates' => array(
+          0 => 'og:image',
+          1 => 'rdfs:seeAlso',
+        ),
+        'type' => 'rel',
+      ),
+      'field_tags' => array(
+        'predicates' => array(
+          0 => 'dc:subject',
+        ),
+        'type' => 'rel',
+      ),
+      'rdftype' => array(
+        0 => 'sioc:Item',
+        1 => 'foaf:Document',
+      ),
+      'title' => array(
+        'predicates' => array(
+          0 => 'dc:title',
+        ),
+      ),
+      'created' => array(
+        'predicates' => array(
+          0 => 'dc:date',
+          1 => 'dc:created',
+        ),
+        'datatype' => 'xsd:dateTime',
+        'callback' => 'date_iso8601',
+      ),
+      'changed' => array(
+        'predicates' => array(
+          0 => 'dc:modified',
+        ),
+        'datatype' => 'xsd:dateTime',
+        'callback' => 'date_iso8601',
+      ),
+      'body' => array(
+        'predicates' => array(
+          0 => 'content:encoded',
+        ),
+      ),
+      'uid' => array(
+        'predicates' => array(
+          0 => 'sioc:has_creator',
+        ),
+        'type' => 'rel',
+      ),
+      'name' => array(
+        'predicates' => array(
+          0 => 'foaf:name',
+        ),
+      ),
+      'comment_count' => array(
+        'predicates' => array(
+          0 => 'sioc:num_replies',
+        ),
+        'datatype' => 'xsd:integer',
+      ),
+      'last_activity' => array(
+        'predicates' => array(
+          0 => 'sioc:last_activity_date',
+        ),
+        'datatype' => 'xsd:dateTime',
+        'callback' => 'date_iso8601',
+      ),
+    ),
+    'status' => 1,
+    'sticky' => 0,
+    'title' => 'Creating report widgets',
+    'tnid' => 0,
+    'translate' => 0,
+    'type' => 'article',
+    'uid' => 1,
+    'url_alias' => array(
+      0 => array(
+        'alias' => 'about/creating-report-widgets',
+        'language' => 'und',
+      ),
+    ),
+    'uuid' => '3c7dbe48-d016-44f7-a818-0e71babf045c',
+  );
+  $entities['ao_sample_content_dp'][] = (object) array(
+    '__metadata' => array(
+      'type' => 'node',
+      'uri' => 'node/a7c893d8-a885-4021-a5d2-4d28b4d485d0',
+      'cause' => FALSE,
+    ),
+    'body' => array(
+      'und' => array(
+        0 => array(
+          'format' => 'filtered_html',
+          'summary' => '',
+          'value' => '<p>Customizing email layout</p>',
+        ),
+      ),
+    ),
+    'cid' => 0,
+    'comment' => 1,
+    'comment_count' => 0,
+    'field_image' => array(),
+    'field_tags' => array(),
+    'language' => 'und',
+    'last_comment_name' => NULL,
+    'last_comment_uid' => 1,
+    'log' => '',
+    'menu_link' => array(
+      'menu_name' => 'menu-power-users',
+      'mlid' => 1203,
+      'plid' => 0,
+      'link_path' => 'node/41',
+      'router_path' => 'node/%',
+      'link_title' => 'Customizing email layout',
+      'options' => array(),
+      'module' => 'menu',
+      'hidden' => 0,
+      'external' => 0,
+      'has_children' => 0,
+      'expanded' => 0,
+      'weight' => 0,
+      'depth' => 1,
+      'customized' => 0,
+      'p1' => 1203,
+      'p2' => 0,
+      'p3' => 0,
+      'p4' => 0,
+      'p5' => 0,
+      'p6' => 0,
+      'p7' => 0,
+      'p8' => 0,
+      'p9' => 0,
+      'updated' => 0,
+      'vid' => 101,
+      'uuid' => 'c6e0bf2f-0106-4b02-b27b-2ac0980487af',
+      'path' => 'node/%',
+      'load_functions' => array(
+        1 => 'node_load',
+      ),
+      'to_arg_functions' => '',
+      'access_callback' => 'node_access',
+      'access_arguments' => 'a:2:{i:0;s:4:"view";i:1;i:1;}',
+      'page_callback' => 'node_page_view',
+      'page_arguments' => 'a:1:{i:0;i:1;}',
+      'delivery_callback' => '',
+      'fit' => 2,
+      'number_parts' => 2,
+      'context' => 0,
+      'tab_parent' => '',
+      'tab_root' => 'node/%',
+      'title' => 'Customizing email layout',
+      'title_callback' => 'node_page_title',
+      'title_arguments' => 'a:1:{i:0;i:1;}',
+      'theme_callback' => '',
+      'theme_arguments' => 'a:0:{}',
+      'type' => 6,
+      'description' => '',
+      'position' => '',
+      'include_file' => '',
+      'link_weight' => 0,
+      'href' => 'node/41',
+      'access' => TRUE,
+      'localized_options' => array(),
+    ),
+    'promote' => 0,
+    'rdf_mapping' => array(
+      'field_image' => array(
+        'predicates' => array(
+          0 => 'og:image',
+          1 => 'rdfs:seeAlso',
+        ),
+        'type' => 'rel',
+      ),
+      'field_tags' => array(
+        'predicates' => array(
+          0 => 'dc:subject',
+        ),
+        'type' => 'rel',
+      ),
+      'rdftype' => array(
+        0 => 'sioc:Item',
+        1 => 'foaf:Document',
+      ),
+      'title' => array(
+        'predicates' => array(
+          0 => 'dc:title',
+        ),
+      ),
+      'created' => array(
+        'predicates' => array(
+          0 => 'dc:date',
+          1 => 'dc:created',
+        ),
+        'datatype' => 'xsd:dateTime',
+        'callback' => 'date_iso8601',
+      ),
+      'changed' => array(
+        'predicates' => array(
+          0 => 'dc:modified',
+        ),
+        'datatype' => 'xsd:dateTime',
+        'callback' => 'date_iso8601',
+      ),
+      'body' => array(
+        'predicates' => array(
+          0 => 'content:encoded',
+        ),
+      ),
+      'uid' => array(
+        'predicates' => array(
+          0 => 'sioc:has_creator',
+        ),
+        'type' => 'rel',
+      ),
+      'name' => array(
+        'predicates' => array(
+          0 => 'foaf:name',
+        ),
+      ),
+      'comment_count' => array(
+        'predicates' => array(
+          0 => 'sioc:num_replies',
+        ),
+        'datatype' => 'xsd:integer',
+      ),
+      'last_activity' => array(
+        'predicates' => array(
+          0 => 'sioc:last_activity_date',
+        ),
+        'datatype' => 'xsd:dateTime',
+        'callback' => 'date_iso8601',
+      ),
+    ),
+    'status' => 1,
+    'sticky' => 0,
+    'title' => 'Customizing email layout',
+    'tnid' => 0,
+    'translate' => 0,
+    'type' => 'article',
+    'uid' => 1,
+    'url_alias' => array(
+      0 => array(
+        'alias' => 'about/customizing-email-layout',
+        'language' => 'und',
+      ),
+    ),
+    'uuid' => 'a7c893d8-a885-4021-a5d2-4d28b4d485d0',
+  );
+  $entities['ao_sample_content_dp'][] = (object) array(
+    '__metadata' => array(
+      'type' => 'node',
+      'uri' => 'node/06d25250-9d33-4b7a-8cc5-9e814c14ade3',
+      'cause' => FALSE,
+    ),
+    'body' => array(
+      'und' => array(
+        0 => array(
+          'format' => 'filtered_html',
+          'summary' => '',
+          'value' => '<p>Tracking offline activity</p>',
+        ),
+      ),
+    ),
+    'cid' => 0,
+    'comment' => 1,
+    'comment_count' => 0,
+    'field_image' => array(),
+    'field_tags' => array(),
+    'language' => 'und',
+    'last_comment_name' => NULL,
+    'last_comment_uid' => 1,
+    'log' => '',
+    'menu_link' => array(
+      'menu_name' => 'menu-power-users',
+      'mlid' => 1204,
+      'plid' => 0,
+      'link_path' => 'node/42',
+      'router_path' => 'node/%',
+      'link_title' => 'Tracking offline activity',
+      'options' => array(),
+      'module' => 'menu',
+      'hidden' => 0,
+      'external' => 0,
+      'has_children' => 0,
+      'expanded' => 0,
+      'weight' => 0,
+      'depth' => 1,
+      'customized' => 0,
+      'p1' => 1204,
+      'p2' => 0,
+      'p3' => 0,
+      'p4' => 0,
+      'p5' => 0,
+      'p6' => 0,
+      'p7' => 0,
+      'p8' => 0,
+      'p9' => 0,
+      'updated' => 0,
+      'vid' => 102,
+      'uuid' => 'e783d645-7535-4c4c-90f5-05515a5fad5b',
+      'path' => 'node/%',
+      'load_functions' => array(
+        1 => 'node_load',
+      ),
+      'to_arg_functions' => '',
+      'access_callback' => 'node_access',
+      'access_arguments' => 'a:2:{i:0;s:4:"view";i:1;i:1;}',
+      'page_callback' => 'node_page_view',
+      'page_arguments' => 'a:1:{i:0;i:1;}',
+      'delivery_callback' => '',
+      'fit' => 2,
+      'number_parts' => 2,
+      'context' => 0,
+      'tab_parent' => '',
+      'tab_root' => 'node/%',
+      'title' => 'Tracking offline activity',
+      'title_callback' => 'node_page_title',
+      'title_arguments' => 'a:1:{i:0;i:1;}',
+      'theme_callback' => '',
+      'theme_arguments' => 'a:0:{}',
+      'type' => 6,
+      'description' => '',
+      'position' => '',
+      'include_file' => '',
+      'link_weight' => 0,
+      'href' => 'node/42',
+      'access' => TRUE,
+      'localized_options' => array(),
+    ),
+    'promote' => 0,
+    'rdf_mapping' => array(
+      'field_image' => array(
+        'predicates' => array(
+          0 => 'og:image',
+          1 => 'rdfs:seeAlso',
+        ),
+        'type' => 'rel',
+      ),
+      'field_tags' => array(
+        'predicates' => array(
+          0 => 'dc:subject',
+        ),
+        'type' => 'rel',
+      ),
+      'rdftype' => array(
+        0 => 'sioc:Item',
+        1 => 'foaf:Document',
+      ),
+      'title' => array(
+        'predicates' => array(
+          0 => 'dc:title',
+        ),
+      ),
+      'created' => array(
+        'predicates' => array(
+          0 => 'dc:date',
+          1 => 'dc:created',
+        ),
+        'datatype' => 'xsd:dateTime',
+        'callback' => 'date_iso8601',
+      ),
+      'changed' => array(
+        'predicates' => array(
+          0 => 'dc:modified',
+        ),
+        'datatype' => 'xsd:dateTime',
+        'callback' => 'date_iso8601',
+      ),
+      'body' => array(
+        'predicates' => array(
+          0 => 'content:encoded',
+        ),
+      ),
+      'uid' => array(
+        'predicates' => array(
+          0 => 'sioc:has_creator',
+        ),
+        'type' => 'rel',
+      ),
+      'name' => array(
+        'predicates' => array(
+          0 => 'foaf:name',
+        ),
+      ),
+      'comment_count' => array(
+        'predicates' => array(
+          0 => 'sioc:num_replies',
+        ),
+        'datatype' => 'xsd:integer',
+      ),
+      'last_activity' => array(
+        'predicates' => array(
+          0 => 'sioc:last_activity_date',
+        ),
+        'datatype' => 'xsd:dateTime',
+        'callback' => 'date_iso8601',
+      ),
+    ),
+    'status' => 1,
+    'sticky' => 0,
+    'title' => 'Tracking offline activity',
+    'tnid' => 0,
+    'translate' => 0,
+    'type' => 'article',
+    'uid' => 1,
+    'url_alias' => array(
+      0 => array(
+        'alias' => 'about/tracking-offline-activity',
+        'language' => 'und',
+      ),
+    ),
+    'uuid' => '06d25250-9d33-4b7a-8cc5-9e814c14ade3',
   );
 
   return $entities;

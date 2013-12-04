@@ -50,7 +50,7 @@ function ableorganizer_sample_content_default_box() {
   $box->description = 'AO Promo - Hero Content';
   $box->options = array(
     'body' => array(
-      'value' => '<div class="hero_text"><h2>Build. Engage. Organize.</h2>AbleOrganizer allows you to build effective, robust relationships with the communities you care about.</div>',
+      'value' => '<div class="hero_text"><h2>Build. Engage. Organize.</h2>AbleOrganizer empowers organizations with effective tools for building ideas into movements.</div>',
       'format' => 'full_html',
     ),
     'additional_classes' => '',
