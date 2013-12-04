@@ -13,6 +13,98 @@ function ableorganizer_sample_content_uuid_default_entities() {
   $entities['ao_sample_content_dp'][] = (object) array(
     '__metadata' => array(
       'type' => 'node',
+      'uri' => 'node/eaa3f19b-410b-4d75-ae42-05d5ad3565e6',
+      'cause' => FALSE,
+    ),
+    'body' => array(
+      'und' => array(
+        0 => array(
+          'format' => 'full_html',
+          'summary' => '',
+          'value' => '<h2><span>How it Does It</span></h2><div class="ao-how-it-does-it">&nbsp;</div><div class="ao-down-arrow"></div>',
+        ),
+      ),
+    ),
+    'cid' => 0,
+    'comment' => 1,
+    'comment_count' => 0,
+    'language' => 'und',
+    'last_comment_name' => NULL,
+    'last_comment_uid' => 1,
+    'log' => '',
+    'promote' => 0,
+    'rdf_mapping' => array(
+      'rdftype' => array(
+        0 => 'foaf:Document',
+      ),
+      'title' => array(
+        'predicates' => array(
+          0 => 'dc:title',
+        ),
+      ),
+      'created' => array(
+        'predicates' => array(
+          0 => 'dc:date',
+          1 => 'dc:created',
+        ),
+        'datatype' => 'xsd:dateTime',
+        'callback' => 'date_iso8601',
+      ),
+      'changed' => array(
+        'predicates' => array(
+          0 => 'dc:modified',
+        ),
+        'datatype' => 'xsd:dateTime',
+        'callback' => 'date_iso8601',
+      ),
+      'body' => array(
+        'predicates' => array(
+          0 => 'content:encoded',
+        ),
+      ),
+      'uid' => array(
+        'predicates' => array(
+          0 => 'sioc:has_creator',
+        ),
+        'type' => 'rel',
+      ),
+      'name' => array(
+        'predicates' => array(
+          0 => 'foaf:name',
+        ),
+      ),
+      'comment_count' => array(
+        'predicates' => array(
+          0 => 'sioc:num_replies',
+        ),
+        'datatype' => 'xsd:integer',
+      ),
+      'last_activity' => array(
+        'predicates' => array(
+          0 => 'sioc:last_activity_date',
+        ),
+        'datatype' => 'xsd:dateTime',
+        'callback' => 'date_iso8601',
+      ),
+    ),
+    'status' => 1,
+    'sticky' => 0,
+    'title' => 'Welcome to AbleOrganizer',
+    'tnid' => 0,
+    'translate' => 0,
+    'type' => 'page',
+    'uid' => 1,
+    'url_alias' => array(
+      0 => array(
+        'alias' => 'front',
+        'language' => 'und',
+      ),
+    ),
+    'uuid' => 'eaa3f19b-410b-4d75-ae42-05d5ad3565e6',
+  );
+  $entities['ao_sample_content_dp'][] = (object) array(
+    '__metadata' => array(
+      'type' => 'node',
       'uri' => 'node/df0145b3-e0fa-43cd-9626-7cd9bd49060d',
       'cause' => FALSE,
     ),
