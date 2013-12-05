@@ -36,6 +36,43 @@
   padding: .5em;
 }
 
+.img_maxheight {
+  border: 1px solid #CCC;
+  max-height: 250px;
+  padding: 0em;
+  overflow: hidden;
+  width: 95%;
+  margin: 0em auto 1em;
+}
+.click-to-expand {
+  font-size: 0.8em;
+  font-style: italic;
+  text-align: center;
+  color: Red;
+  margin: -1em auto 1em;
+}
+.info-box {
+  background-color: #fff0ca;
+  padding: 1em 2em;
+  margin-bottom: 1em;
+  font-size: .95em;
+  font-style: italic;
+  border-radius: 12px;
+  -moz-border-radius: 12px;
+  -webkit-border-radius: 12px;
+  color: #3c7489;
+  line-height: 1.5em;
+}
+.info-box P {
+  line-height: 1.5em;
+}
+.info-box UL {
+  margin-top: 0em;
+  margin-bottom: 0em;
+}
+.info-box UL LI {
+}
+
 /* basic typography */
 BODY {
 }
