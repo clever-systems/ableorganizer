@@ -25,7 +25,7 @@ function ableorganizer_sample_content_menu_default_menu_custom() {
   // Exported menu: menu-the-system.
   $menus['menu-the-system'] = array(
     'menu_name' => 'menu-the-system',
-    'title' => 'The System',
+    'title' => 'The Platform',
     'description' => '',
   );
   // Translatables
@@ -33,7 +33,7 @@ function ableorganizer_sample_content_menu_default_menu_custom() {
   t('Documentation for how to get started with AbleOrganizer.');
   t('Getting Started');
   t('Power Users');
-  t('The System');
+  t('The Platform');
 
 
   return $menus;
