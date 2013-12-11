@@ -40,6 +40,12 @@ tr.odd td.active {
 }
 tr.even td.active {
 }
+tr:hover td, tr.even:hover td.active, tr.odd:hover td.active {
+  background-color: #fff0ca;
+}
+tr.even td.active {
+  background-color: #d9f4fd;
+}
 
 /* fancy tables */
 .fancy-headers {

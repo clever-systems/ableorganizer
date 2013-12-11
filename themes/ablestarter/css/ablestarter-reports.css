@@ -29,7 +29,7 @@
   background: url('../images/ao-icons.png') -90px -60px no-repeat; 
 }
 .crm_core_reports H3 {
-	background-color: #85a3b3;
+	background-color: #ffb600;
 	color: White;
 	font-weight: normal;
 	border-radius: 24px;
@@ -65,7 +65,7 @@
 
 /* basic report metrics */
 .results-summary {
-  background-color: #c1b1cc;
+  background-color: #3c7489;
   padding: 4px 8px;
   display: inline-block;
   color: White;
@@ -87,10 +87,18 @@
 
 /* icons */
 .ao_contact_icon {
-	background: url(../images/ao-contact-icons.png) top left no-repeat;
+	background: url(../images/ao-backend-icons.png) 0px -150px no-repeat;
 	height: 27px;
 	width: 27px;
+	margin: 0px auto;
 }
+.ao_contact_household {
+  background: url(../images/ao-backend-icons.png) -30px -150px no-repeat;
+}
+.ao_contact_organization {
+  background: url(../images/ao-backend-icons.png) -60px -150px no-repeat;
+}
+
 
 /* typography */
 H2 {

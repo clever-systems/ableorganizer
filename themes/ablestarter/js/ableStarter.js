@@ -46,14 +46,9 @@
           });
         }        
         
-        // add icons to menu items
-        var frag = '<div class="nav_menu_icon"></div>';
-        $('#zone-branding-wrapper .navigation #main-menu LI A').prepend(frag);
-        
         // add buttons for views bulk operations
         // check to see if VBO is present on the form
         var vbo = $('.vbo-views-form');
-        
         
         // if so, create a menu that will display the options for the VBO
         if(vbo.length > 0){

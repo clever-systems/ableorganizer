@@ -13,7 +13,7 @@
 .contact .content {
 	display: table;
   border: 1px solid #CCC;
-  width: 48%;
+  width: 100%;
 }
 .activity .content .field,
 .contact .content .field {
@@ -21,7 +21,7 @@
 }
 .activity h2,
 .contact h2 {
-  color: #248bd1;
+  color: #00b0f3;
 }
 .activity .content .field .field-label,
 .activity .content .field .field-items,
@@ -47,5 +47,61 @@
 	border-right: 1px solid #CCC; 
   white-space: nowrap;
 }
+.pane-ao-user-picture {
+  text-align: center;
+  background-color: #f1f1f1;
+}
+.pane-ao-user-picture .user-picture {
+  padding: 2em 2em 1em 2em;
+}
+.contact-user-info {
+  padding: 0em 0em 1em;
+}
+.nouser {
+  font-style: italic;
+}
 
+/* user profile summary data */
+.user-profile-summary-data {
+  border: 1px solid #CCC;
+  display: table;
+  width: 100%;
+}
+.user-profile-summary-data .user-profile-summary-data-row {
+  display: table-row;
+}
+.user-profile-summary-data .user-profile-summary-data-item {
+  display: table-cell;
+}
+.user-profile-summary-data .user-profile-summary-data-item .udpi-label {
+  text-align: center;
+  padding: .5em 0em 0em;
+}
+.user-profile-summary-data .user-profile-summary-data-item .udpi-data-item {
+  text-align: center;
+  font-width: 700;
+  font-size: 2em;
+  padding: 0em 0em .5em;
+}
 
+/* latest activities */
+.view-ao-5-latest-contact-activities {
+  position: relative;
+}
+.view-ao-5-latest-contact-activities .view-header {
+  position: absolute;
+  top: -50px;
+  right: 0px;
+}
+.view-ao-5-latest-contact-activities .view-header A {
+  padding: .2em .5em;
+  background-color: #00b0f3;
+  color: White;
+  text-decoration: none;
+  border-radius: 5px;
+  -moz-border-radius: 5px; 
+  -webkit-border-radius: 5px; 
+}
+.view-ao-5-latest-contact-activities .view-header A:hover {
+  background-color: #6fd6fe;
+}

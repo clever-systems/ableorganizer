@@ -43,6 +43,7 @@
   overflow: hidden;
   width: 95%;
   margin: 0em auto 1em;
+  text-align: center;
 }
 .click-to-expand {
   font-size: 0.8em;
@@ -84,11 +85,15 @@ A {
   text-decoration: underline;
   color: #1e9fd0;
 }
-A:hover {
-  color: #6fd6fe;
-}
 A:visited {
   color: #3c7489;
+}
+LI A:hover, A:hover {
+  color: #4ccafa;
+}
+LI A.active, A.active, LI A:active, A:active {
+  color: #ff2c00;
+  color: #90783f;
 }
 .node {
   margin-bottom: 1em;
@@ -135,6 +140,14 @@ code, tt, pre {
   white-space: pre-wrap;
   color: White;
   display: block;
+}
+div.messages {
+  margin-bottom: 1em;
+}
+.profile .user-picture {
+  display: block;
+  float: none;
+  text-align: center;
 }
   
 /* fields */
@@ -415,7 +428,9 @@ LABEL.compact-form-label {
   position: relative;
   background: #66666D;
 }
-.navigation-menu UL {
+.navigation-menu UL,
+.navigation-menu UL.links {
+  list-style-type: none;
   display: none;
   margin-top: -1px;
   border-radius: inherit;

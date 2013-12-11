@@ -62,15 +62,34 @@
 	padding-top: 24px;
 	background-color: #f5f5f5;
 }
+#zone-content-wrapper .region-content-inner .content H2 {
+  margin-top: 0em;
+}
+
+/* typography */
+A {
+  color: #1e9fd0;
+}
+A:visited {
+  zcolor: #3c7489;
+}
+A:hover {
+  color: #4ccafa;
+}
+A.active {
+  color: #90783f;
+}
+div.messages {
+  margin-bottom: 2em;
+}
 
 /* branding */
 #zone-branding-wrapper {
-  background: #85a3b3 url('../images/dark_blue_grad_noise.png') bottom left repeat-x;
   height: 90px;
   border-top: 1px solid #c3d2da;
 }
 #zone-branding-wrapper .logo-img {
-	margin-left: -55px;
+	margin-top: 15px;
 }
 #zone-branding-wrapper #zone-branding,
 #zone-branding-wrapper #zone-branding #region-branding,
@@ -89,22 +108,20 @@
   color: White;
 }
 #zone-branding-wrapper .navigation #main-menu LI:hover {
-  background-color: #708c9b;
+  background-color: #6fd6fe;
 }
 #zone-branding-wrapper .navigation #main-menu LI:hover A {
-  color: #c3d2da;
+  color: White;
 }
 #zone-branding-wrapper .navigation #main-menu LI:active {
   background-color: #dfe4e6;
 }
-#zone-branding-wrapper .navigation #main-menu LI:active A {
-  color: #2d4552;
-}
 #zone-branding-wrapper .navigation #main-menu LI.active {
-  background-color: White;
+  color: White;
+  background-color: #3697ee;
 }
 #zone-branding-wrapper .navigation #main-menu LI.active A {
-  color: #2d4552;
+  color: White;
 }
 @media only screen and (max-width : 740px) {
   #region-identity-left {
@@ -161,74 +178,25 @@
     margin-top: 8px;
   }
 }
+
+/* navigation icons */
 .nav_menu_icon {
   height: 30px;
   width: 30px;
   display: inline-block;
   margin-right: 8px;
-  background: url('../images/ao_starter_icons.png') 0px -102px no-repeat; 
+  background: url('../images/ao-backend-icons.png') 0px -60px no-repeat; 
   float: left;
   margin-top: -2px;
 }
-
-/* dashboard */
-#zone-branding-wrapper .navigation #main-menu LI.menu-696 A .nav_menu_icon,
-#zone-branding-wrapper .navigation #main-menu LI.menu-904 A .nav_menu_icon {
-  background: url('../images/ao_starter_icons.png') -0px -102px no-repeat; 
+#zone-branding-wrapper .navigation #main-menu LI.ao_dashboard .nav_menu_icon {
+  background: url('../images/ao-backend-icons.png') 0px -60px no-repeat; 
 }
-#zone-branding-wrapper .navigation #main-menu LI.menu-696:hover A .nav_menu_icon,
-#zone-branding-wrapper .navigation #main-menu LI.menu-904:hover A .nav_menu_icon {
-  background: url('../images/ao_starter_icons.png') -0px -173px no-repeat;
+.ao_contacts .nav_menu_icon {
+  background: url('../images/ao-backend-icons.png') -30px -60px no-repeat; 
 }
-#zone-branding-wrapper .navigation #main-menu LI.menu-696:active A .nav_menu_icon,
-#zone-branding-wrapper .navigation #main-menu LI.menu-904:active A .nav_menu_icon {
-  background: url('../images/ao_starter_icons.png') -0px -208px no-repeat; 
-}
-#zone-branding-wrapper .navigation #main-menu LI.menu-904.active A .nav_menu_icon,
-#zone-branding-wrapper .navigation #main-menu LI.menu-696.active A .nav_menu_icon,
-#zone-branding-wrapper .navigation #main-menu LI.menu-696.active:hover A .nav_menu_icon,
-#zone-branding-wrapper .navigation #main-menu LI.menu-904.active:hover A .nav_menu_icon {
-  background: url('../images/ao_starter_icons.png') -0px -208px no-repeat; 
-}
-
-/* contacts */
-#zone-branding-wrapper .navigation #main-menu LI.menu-386 A .nav_menu_icon,
-#zone-branding-wrapper .navigation #main-menu LI.menu-428 A .nav_menu_icon {
-  background: url('../images/ao_starter_icons.png') -30px -102px no-repeat; 
-}
-#zone-branding-wrapper .navigation #main-menu LI.menu-386:hover A .nav_menu_icon,
-#zone-branding-wrapper .navigation #main-menu LI.menu-428:hover A .nav_menu_icon {
-  background: url('../images/ao_starter_icons.png') -30px -173px no-repeat; 
-}
-#zone-branding-wrapper .navigation #main-menu LI.menu-386:active A .nav_menu_icon,
-#zone-branding-wrapper .navigation #main-menu LI.menu-428:active A .nav_menu_icon {
-  background: url('../images/ao_starter_icons.png') -30px -208px no-repeat; 
-}
-#zone-branding-wrapper .navigation #main-menu LI.menu-428.active A .nav_menu_icon,
-#zone-branding-wrapper .navigation #main-menu LI.menu-386.active A .nav_menu_icon,
-#zone-branding-wrapper .navigation #main-menu LI.menu-386.active:hover A .nav_menu_icon,
-#zone-branding-wrapper .navigation #main-menu LI.menu-428.active:hover A .nav_menu_icon {
-  background: url('../images/ao_starter_icons.png') -30px -208px no-repeat; 
-}
-
-/* reports */
-#zone-branding-wrapper .navigation #main-menu LI.menu-482 A .nav_menu_icon,
-#zone-branding-wrapper .navigation #main-menu LI.menu-524 A .nav_menu_icon {
-  background: url('../images/ao_starter_icons.png') -60px -102px no-repeat; 
-}
-#zone-branding-wrapper .navigation #main-menu LI.menu-482:hover A .nav_menu_icon,
-#zone-branding-wrapper .navigation #main-menu LI.menu-524:hover A .nav_menu_icon {
-  background: url('../images/ao_starter_icons.png') -60px -173px no-repeat; 
-}
-#zone-branding-wrapper .navigation #main-menu LI.menu-482:active A .nav_menu_icon,
-#zone-branding-wrapper .navigation #main-menu LI.menu-524:active A .nav_menu_icon {
-  background: url('../images/ao_starter_icons.png') -60px -208px no-repeat; 
-}
-#zone-branding-wrapper .navigation #main-menu LI.menu-524.active A .nav_menu_icon,
-#zone-branding-wrapper .navigation #main-menu LI.menu-482.active A .nav_menu_icon,
-#zone-branding-wrapper .navigation #main-menu LI.menu-482.active:hover A .nav_menu_icon,
-#zone-branding-wrapper .navigation #main-menu LI.menu-524.active:hover A .nav_menu_icon {
-  background: url('../images/ao_starter_icons.png') -60px -208px no-repeat; 
+.ao_reports .nav_menu_icon {
+  background: url('../images/ao-backend-icons.png') -60px -60px no-repeat; 
 }
 
 /* adjustments for panels */
@@ -249,9 +217,11 @@
 }
 #zone-menu-wrapper {
   border-bottom: 1px solid #c3d2da;
+  background-color: #3697ee;
+  color: White;
 }
 #zone-menu-wrapper #zone-menu #region-menu .region-menu-inner #page-title {
-  color: #248bd1;
+  color: White;
   margin-bottom: 0px;
   position: absolute;
   top: 42px;
@@ -266,8 +236,9 @@
   margin-left: 0px;
   float: left;
   margin-top: 16px;
-  background-color: #c1b1cc;
+  background-color: rgba(60, 116, 137, .3);
   height: 19px;
+  border: 1px solid rgba(255, 255, 255, .3);
   border-radius: 5px; 
   -moz-border-radius: 5px; 
   -webkit-border-radius: 5px; 
@@ -288,7 +259,10 @@
   text-indent: -9999px;
   overflow: hidden;
   margin-left: 0em;
-  background: url('../images/home.png') center center no-repeat;
+  background: url('../images/ao-backend-icons.png') 3px -127px no-repeat;
+}
+#breadcrumb UL.breadcrumbs LI.cmc_home A:hover {
+  background: url('../images/ao-backend-icons.png') -27px -127px no-repeat;
 }
 #breadcrumb UL.breadcrumbs LI A {
   height: 19px;
@@ -298,19 +272,82 @@
   margin: 0;
   padding: 0px 4px 0px 20px;
   text-decoration: none;
+  color: rgba(255,255,255,.5);
+  background: url('../images/ao-backend-icons.png') -452px -6px no-repeat;
+}
+#breadcrumb UL.breadcrumbs LI A:hover {
   color: White;
-  background: url('../images/white-arrow.png') center left no-repeat;
 }
 #breadcrumb UL.breadcrumbs LI:nth-child(2) A {
   padding: 0px 4px 0px 8px;
   background: none;
-  border-left: 1px solid White;
+  border-left: 1px solid rgba(255,255,255,.3);
 }
 #breadcrumb UL.breadcrumbs LI div.bc_arrow {
   display: none;
 }
 
 /* activity items */
+.activity-listing .view-content {
+  padding: 2em;
+  background-color: White;
+  border: 1px solid #CCC;
+}
+.crm-core-activity {
+  border-bottom: 1px solid #CCC;
+  position: relative;
+  margin-bottom: 1em;
+  padding-bottom: 1em;
+}
+.activity-listing .view-content .views-row:last-child .crm-core-activity {
+  border-bottom: none;
+}
+.crm-core-activity .crm-core-activity-icon {
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+.crm-core-activity .crm-core-activity-info {
+  margin-left: 3em;
+}
+.crm-core-activity .crm-core-activity-actions {
+  float: right;
+}
+.crm-core-activity .crm-core-activity-actions A {
+  padding: .2em .5em;
+  background-color: #00b0f3;
+  color: White;
+  text-decoration: none;
+  border-radius: 5px;
+  -moz-border-radius: 5px; 
+  -webkit-border-radius: 5px; 
+}
+.crm-core-activity .crm-core-activity-actions A:hover {
+  background-color: #6fd6fe;
+}
+.crm-core-activity .crm-core-activity-icon SPAN {
+  display: block;
+  height: 30px;
+  width: 30px;
+  background: #ffb533 url('../images/ao-backend-icons.png') -120px -30px no-repeat;
+  border-radius: 5px;
+  -moz-border-radius: 5px; 
+  -webkit-border-radius: 5px; 
+}
+.cmcd_donation .crm-core-activity-icon SPAN {
+  background: #389a19 url('../images/ao-backend-icons.png') 0px -30px no-repeat;
+}
+.cmcev_event_registration .crm-core-activity-icon SPAN {
+  background: #1a6099 url('../images/ao-backend-icons.png') -90px -30px no-repeat;
+}
+.cmcp_petition_signature .crm-core-activity-icon SPAN {
+  background: #e26427 url('../images/ao-backend-icons.png') -60px -30px no-repeat;
+}
+.cmcv_volunteer_commitment .crm-core-activity-icon SPAN {
+  background: #d02424 url('../images/ao-backend-icons.png') -30px -30px no-repeat;
+}
 
 .ao_activity_feed_item {
   border-bottom: 1px solid #CCC;
@@ -346,7 +383,6 @@
 }
 .ao_activity_feed_item .ao_activity_feed_string A {
 	font-weight: 700;
-  color: #824aa0;
   text-decoration: none;
 }
 .ao_activity_feed_item .ao_activity_feed_date {
@@ -355,10 +391,6 @@
   text-transform: uppercase;
   font-size: 0.8em;
 }
-
-
-
-
 
 /* tabs */
 div.tabs-wrapper > span {

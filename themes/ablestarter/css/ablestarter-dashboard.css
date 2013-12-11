@@ -41,23 +41,15 @@
   margin: 8px 0px 8px;
   padding: 0px;
   color: #2d4552;
-  display: inline-block;
+  display: block;
   text-transform: uppercase;
   font-size: 0.9em;
 }
 .quick-links A.quick-link {
-  color: #248bd1;
   display: inline-block;
-  background-color: #777;
-  color: White;
   padding: 4px 8px;
   margin-bottom: 4px;
-  border-radius: 40px; 
-  -moz-border-radius: 40px; 
-  -webkit-border-radius: 40px; 
   text-decoration: none;
-  font-size: 0.8em;
-  background-color: #9b59a8;
 }
 .quick-links A.quick-link:hover {
   color: #5ccbf6;

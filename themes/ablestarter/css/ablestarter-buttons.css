@@ -156,7 +156,7 @@ input[type="button"].btn-mini,
   box-shadow: inset 0px 4px 4px .5px rgba(180, 140, 80, .6);
 }
 .btn-blue, input[type="reset"].btn-blue, input[type="submit"].btn-blue, input[type="button"].btn-blue {
-  background: #248bd1;
+  background: #00b0f3;
   background: linear-gradient(to bottom,  #5ccbf6 31%,#248bd1 100%);
   box-shadow: inset 0px 6px 4px .5px rgba(132, 213, 245, .6);
   text-shadow: 1px 1px 3px #444;
@@ -223,7 +223,7 @@ input[type="button"].btn-mini,
   right: 0px;
 }
 .btn-green.btn-expander:hover .btn-expandable {
-  background: #84b449;
+  background: #00a03c;
   border: none;
   color: White;
   text-shadow: 1px 1px 3px #444;
@@ -236,7 +236,7 @@ input[type="button"].btn-mini,
   border-bottom: 1px solid #444;
 }
 .btn-green.btn-expander:hover .btn-expandable A:hover {
-  background-color: #a0d75b;
+  background-color: #34d06e;
   border-bottom: 1px solid transparent;
   -webkit-border-radius: 4px 4px 4px 4px;
   border-radius: 4px 4px 4px 4px;
@@ -409,10 +409,10 @@ input[type="button"].btn-mini,
 	text-decoration: none;
 }
 .btn-green.btn-simple, input[type="reset"].btn-green.btn-simple, input[type="submit"].btn-green.btn-simple, input[type="button"].btn-green.btn-simple {
-  background: #a0d75b;
+  background: #00a03c;
 }
 .btn-green.btn-simple:hover, input[type="reset"].btn-green.btn-simple:hover, input[type="submit"].btn-green.btn-simple:hover, input[type="button"].btn-green.btn-simple:hover {
-  background: #84b449;
+  background: #00a03c;
 }
 .btn-red.btn-simple, input[type="reset"].btn-red.btn-simple, input[type="submit"].btn-red.btn-simple, input[type="button"].btn-red.btn-simple {
   background: #f4412e;
@@ -421,13 +421,13 @@ input[type="button"].btn-mini,
   background: #cf3a29;
 }
 .btn-orange.btn-simple, input[type="reset"].btn-orange.btn-simple, input[type="submit"].btn-orange.btn-simple, input[type="button"].btn-orange.btn-simple {
-  background: #fbb450;
+  background: #ffb600;
 }
 .btn-yellow.btn-simple, input[type="reset"].btn-yellow.btn-simple, input[type="submit"].btn-yellow.btn-simple, input[type="button"].btn-yellow.btn-simple {
   background: #eed484;
 }
 .btn-blue.btn-simple, input[type="reset"].btn-blue.btn-simple, input[type="submit"].btn-blue.btn-simple, input[type="button"].btn-blue.btn-simple {
-  background: #5ccbf6;
+  background: #00b0f3;
 }
 .btn-purple.btn-simple, input[type="reset"].btn-purple.btn-simple, input[type="submit"].btn-purple.btn-simple, input[type="button"].btn-purple.btn-simple {
   background: #7A4583;
