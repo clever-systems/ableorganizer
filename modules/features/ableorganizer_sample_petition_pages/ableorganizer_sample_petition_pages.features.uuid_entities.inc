@@ -111,7 +111,7 @@ function ableorganizer_sample_petition_pages_uuid_default_entities() {
     'body' => array(
       'und' => array(
         0 => array(
-          'format' => 'filtered_html',
+          'format' => 'full_html',
           'summary' => '',
           'value' => '<p>Last week, the State Assembly passed House Bill 34 under the auspices of "regulatory reform". The reality is that this is a harmful piece of legislation, which only serves to roll back environmental regulations that are essential to public health and the environmental future of our beautiful state.</p>',
         ),
@@ -132,12 +132,12 @@ function ableorganizer_sample_petition_pages_uuid_default_entities() {
       'use_profile' => 1,
       'profile_name' => 'signature_drive',
       'display_profile' => 0,
-      'inline_title' => 'Petition form',
+      'inline_title' => 'Help veto this legislation',
     ),
     'field_cmcp_cta' => array(
       'und' => array(
         0 => array(
-          'format' => 'filtered_html',
+          'format' => 'full_html',
           'value' => '<p>Now the bill is on the Governor\'s desk and he is considering vetoing the measure. We must act now to tell the Governor to veto this dangerous bill. Add your voice today. <em><b> Governor Jones I strongly oppose HB 34. Please veto this harmful legislation.</b></em></p>',
         ),
       ),
@@ -264,7 +264,7 @@ function ableorganizer_sample_petition_pages_uuid_default_entities() {
       'use_profile' => 1,
       'profile_name' => 'short_petition_with_message',
       'display_profile' => 0,
-      'inline_title' => 'Petition form',
+      'inline_title' => 'Add your name',
     ),
     'field_cmcp_cta' => array(
       'und' => array(
@@ -396,7 +396,7 @@ function ableorganizer_sample_petition_pages_uuid_default_entities() {
       'use_profile' => 1,
       'profile_name' => 'canvass_signatures',
       'display_profile' => 0,
-      'inline_title' => 'Petition form',
+      'inline_title' => 'Make the pledge',
     ),
     'field_cmcp_cta' => array(
       'und' => array(
@@ -528,7 +528,7 @@ function ableorganizer_sample_petition_pages_uuid_default_entities() {
       'use_profile' => 1,
       'profile_name' => 'short_online_petition',
       'display_profile' => 0,
-      'inline_title' => 'Petition form',
+      'inline_title' => 'Stand up for the park',
     ),
     'field_cmcp_cta' => array(
       'und' => array(
@@ -641,7 +641,7 @@ function ableorganizer_sample_petition_pages_uuid_default_entities() {
         0 => array(
           'format' => 'filtered_html',
           'summary' => '',
-          'value' => '<p>Most of us cannot begin to imagine the stress that children in need live with every day. Made vulnerable by poverty, where is a child to turn when things get even worse?</p><p>No child deserves to grow up in stress and poverty. It is up to use to support children from birth to young adulthood, and create the environement they need to thrive.</p><p>Join us and pledge your support for a child in need. Together, we can provide the resources children need to grow and thrive.&nbsp;</p><p><br></p>',
+          'value' => '<p>Most of us cannot begin to imagine the stress that children in need live with every day. Made vulnerable by poverty, where is a child to turn when things get even worse?</p><p>No child deserves to grow up in stress and poverty. It is up to use to support children from birth to young adulthood, and create the environement they need to thrive.</p><p>Join us and pledge your support for a child in need. Together, we can provide the resources children need to grow and thrive.&nbsp;</p><p>&nbsp;</p>',
         ),
       ),
     ),
@@ -660,7 +660,7 @@ function ableorganizer_sample_petition_pages_uuid_default_entities() {
       'use_profile' => 1,
       'profile_name' => 'short_petition_with_message',
       'display_profile' => 0,
-      'inline_title' => 'Petition form',
+      'inline_title' => 'Stand up for kids',
     ),
     'field_cmcp_cta' => array(
       'und' => array(
