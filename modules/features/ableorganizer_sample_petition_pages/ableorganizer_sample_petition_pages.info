@@ -13,6 +13,7 @@ dependencies[] = uuid_path
 dependencies[] = views
 dependencies[] = entity_menu_links
 dependencies[] = media_youtube
+stylesheets[all][] = css/ableorganizer_sample_petition_pages.css
 __drupal_alter_by_ref[][node][page] = page
 __drupal_alter_by_ref[][node][cmcp_petition] = cmcp_petition
 features[crm_core_profile][] = canvass_signatures
@@ -34,3 +35,11 @@ features_exclude[variable][comment_page] = comment_page
 features_exclude[variable][node_options_page] = node_options_page
 features_exclude[variable][node_submitted_page] = node_submitted_page
 project path = profiles/ableorganizer/modules/features
+
+
+; Information added by drush on 2013-12-03
+version = "7.x-1.0-beta6+156-dev"
+core = "7.x"
+project = "ableorganizer"
+datestamp = "1386065615"
+

@@ -265,9 +265,8 @@ BODY.front #section-content #zone-content-wrapper H2 {
   background-image: linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 48%, white 49%, white 53%, rgba(255,255,255,0) 54%, rgba(255,255,255,0) 100%);
   margin-top: 66px;
 }
-BODY.logged-in #section-content #zone-content-wrapper .region-content-inner H2 {
+BODY.front #section-content #zone-content-wrapper .region-content-inner H2 {
   margin-top: 32px;
-  
 }
 BODY.front #section-content #zone-content-wrapper H2 SPAN {
   background-color: #00b0f3;
