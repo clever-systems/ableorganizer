@@ -113,7 +113,7 @@ function ableorganizer_sample_petition_pages_uuid_default_entities() {
         0 => array(
           'format' => 'filtered_html',
           'summary' => '',
-          'value' => 'Last week, the State Assembly passed House Bill 34 under the auspices of "regulatory reform". The reality is that this is a harmful piece of legislation, which only serves to roll back environmental regulations that are essential to public health and the environmental future of our beautiful state.',
+          'value' => '<p>Last week, the State Assembly passed House Bill 34 under the auspices of "regulatory reform". The reality is that this is a harmful piece of legislation, which only serves to roll back environmental regulations that are essential to public health and the environmental future of our beautiful state.</p>',
         ),
       ),
     ),
@@ -138,9 +138,7 @@ function ableorganizer_sample_petition_pages_uuid_default_entities() {
       'und' => array(
         0 => array(
           'format' => 'filtered_html',
-          'value' => 'Now the bill is on the Governor\'s desk and he is considering vetoing the measure. We must act now to tell the Governor to veto this dangerous bill. Add your voice today.
-
-<em><b> Governor Jones I strongly oppose HB 34. Please veto this harmful legislation.</em></b>',
+          'value' => '<p>Now the bill is on the Governor\'s desk and he is considering vetoing the measure. We must act now to tell the Governor to veto this dangerous bill. Add your voice today. <em><b> Governor Jones I strongly oppose HB 34. Please veto this harmful legislation.</b></em></p>',
         ),
       ),
     ),
@@ -228,7 +226,12 @@ function ableorganizer_sample_petition_pages_uuid_default_entities() {
     'translate' => 0,
     'type' => 'cmcp_petition',
     'uid' => 0,
-    'url_alias' => array(),
+    'url_alias' => array(
+      0 => array(
+        'alias' => 'petitions/veto-hb-23',
+        'language' => 'und',
+      ),
+    ),
     'uuid' => '71378697-11e3-4d26-bfbd-b9c669b4b14a',
   );
   $entities['cmcp_sample_content_dp'][] = (object) array(
@@ -242,7 +245,7 @@ function ableorganizer_sample_petition_pages_uuid_default_entities() {
         0 => array(
           'format' => 'filtered_html',
           'summary' => '',
-          'value' => 'Our first responders such as police officers and firefighters put their lives on the line for us every day. Lets recognize their bravery and hard work with a national day of appreciation.',
+          'value' => '<p>Our first responders such as police officers and firefighters put their lives on the line for us every day. Lets recognize their bravery and hard work with a national day of appreciation.</p>',
         ),
       ),
     ),
@@ -267,9 +270,7 @@ function ableorganizer_sample_petition_pages_uuid_default_entities() {
       'und' => array(
         0 => array(
           'format' => 'filtered_html',
-          'value' => '<em> Dear Congress,
-
-The importance of our first responders is something we can all recognize. Don\'t let partisanship stand in the way: designate a national holiday to honor their service.</em>',
+          'value' => '<p><em>Dear Congress, The importance of our first responders is something we can all recognize. Don\'t let partisanship stand in the way: designate a national holiday to honor their service.</em></p>',
         ),
       ),
     ),
@@ -352,12 +353,17 @@ The importance of our first responders is something we can all recognize. Don\'t
     ),
     'status' => 1,
     'sticky' => 0,
-    'title' => 'US Congress: Designate a National Holiday for First Responders',
+    'title' => 'Designate a National Holiday for First Responders',
     'tnid' => 0,
     'translate' => 0,
     'type' => 'cmcp_petition',
     'uid' => 0,
-    'url_alias' => array(),
+    'url_alias' => array(
+      0 => array(
+        'alias' => 'petitions/first-responders',
+        'language' => 'und',
+      ),
+    ),
     'uuid' => '7f7cf4e3-560a-49a5-b753-59ddb08141d7',
   );
   $entities['cmcp_sample_content_dp'][] = (object) array(
@@ -369,9 +375,9 @@ The importance of our first responders is something we can all recognize. Don\'t
     'body' => array(
       'und' => array(
         0 => array(
-          'format' => 'filtered_html',
+          'format' => 'full_html',
           'summary' => '',
-          'value' => 'Enter Canvassing Data below into your CRM Core database.',
+          'value' => '<p>Now is the perfect time to consciously make changes in our lives to reduce carbon dioxide emissions, which cause climate change. Now is the perfect opportunity to reduce our carbon footprint by taking small steps that make a big difference.&nbsp;</p><p>I will measure my carbon footprint and will take one or more of the following actions to reduce it:</p><ul><li>I will go meatless twice a week</li><li>I will adjust my thermostat</li><li>I will wash my laundry in cold water</li><li>I will go zero waste for one month&nbsp;</li><li>I will enable my power managemenet on my computer</li><li>I will use double-side- printing to save paper</li><li>I will carpool or use the transit to work</li><li>I will only use lights when needed</li><li>I will bring lunch to work or walk to local eatery instead of driving&nbsp;</li></ul>',
         ),
       ),
     ),
@@ -392,7 +398,14 @@ The importance of our first responders is something we can all recognize. Don\'t
       'display_profile' => 0,
       'inline_title' => 'Petition form',
     ),
-    'field_cmcp_cta' => array(),
+    'field_cmcp_cta' => array(
+      'und' => array(
+        0 => array(
+          'format' => 'full_html',
+          'value' => '<p>I pledge to reduce my carbon footprint this year!</p>',
+        ),
+      ),
+    ),
     'field_cmcp_personal_message' => array(),
     'field_cmcp_pm_customize' => array(
       'und' => array(
@@ -472,12 +485,17 @@ The importance of our first responders is something we can all recognize. Don\'t
     ),
     'status' => 1,
     'sticky' => 0,
-    'title' => 'Canvassing Data Entry',
+    'title' => 'Reduce Carbon Footprint ',
     'tnid' => 0,
     'translate' => 0,
     'type' => 'cmcp_petition',
     'uid' => 0,
-    'url_alias' => array(),
+    'url_alias' => array(
+      0 => array(
+        'alias' => 'petitions/reduce-carbon-footprint',
+        'language' => 'und',
+      ),
+    ),
     'uuid' => '9e015f78-02b6-465d-9a22-7ef48de06969',
   );
   $entities['cmcp_sample_content_dp'][] = (object) array(
@@ -489,11 +507,9 @@ The importance of our first responders is something we can all recognize. Don\'t
     'body' => array(
       'und' => array(
         0 => array(
-          'format' => 'filtered_html',
+          'format' => 'full_html',
           'summary' => '',
-          'value' => 'Turner Park is a living piece of history in our community. Its sunny lawn has been a gathering place for citizens young and old for the past 150 years. We thought our beloved Park would be there always, but today budget cuts are threatening to shut the Park down indefinitely. This closure is unacceptable and will take away a valuable resource for our city.
-
-Tell City Council to vote to keep Turner Park open for our children and families.',
+          'value' => '<p>Turner Park is a living piece of history in our community. Its sunny lawn has been a gathering place for citizens young and old for the past 150 years. We thought our beloved Park would be there always, but today budget cuts are threatening to shut the Park down indefinitely. This closure is unacceptable and will take away a valuable resource for our city. Tell City Council to vote to keep Turner Park open for our children and families.</p>',
         ),
       ),
     ),
@@ -517,8 +533,8 @@ Tell City Council to vote to keep Turner Park open for our children and families
     'field_cmcp_cta' => array(
       'und' => array(
         0 => array(
-          'format' => 'filtered_html',
-          'value' => '<em>Turner Park is an important part of our community. I oppose closing this important civic resource.</em>',
+          'format' => 'full_html',
+          'value' => '<p>Turner Park is an important part of our community. I oppose closing this important civic resource.</p>',
         ),
       ),
     ),
@@ -606,7 +622,12 @@ Tell City Council to vote to keep Turner Park open for our children and families
     'translate' => 0,
     'type' => 'cmcp_petition',
     'uid' => 0,
-    'url_alias' => array(),
+    'url_alias' => array(
+      0 => array(
+        'alias' => 'petitions/save-our-park',
+        'language' => 'und',
+      ),
+    ),
     'uuid' => 'a1a630ad-2b43-4a79-b876-b38db525fa0e',
   );
   $entities['cmcp_sample_content_dp'][] = (object) array(
@@ -620,7 +641,7 @@ Tell City Council to vote to keep Turner Park open for our children and families
         0 => array(
           'format' => 'filtered_html',
           'summary' => '',
-          'value' => 'With its release of CRM Core, <a href="http://www.trellon.com/" target="_blank">Trellon </a> is changing what is possible with people data in Drupal websites. While new features like Donation, Events, Volunteer Management, and Petitions are great - we want more!',
+          'value' => '<p>Most of us cannot begin to imagine the stress that children in need live with every day. Made vulnerable by poverty, where is a child to turn when things get even worse?</p><p>No child deserves to grow up in stress and poverty. It is up to use to support children from birth to young adulthood, and create the environement they need to thrive.</p><p>Join us and pledge your support for a child in need. Together, we can provide the resources children need to grow and thrive.&nbsp;</p><p><br></p>',
         ),
       ),
     ),
@@ -645,7 +666,7 @@ Tell City Council to vote to keep Turner Park open for our children and families
       'und' => array(
         0 => array(
           'format' => 'filtered_html',
-          'value' => '<b>Don\'t wait to make your voice heard. Tell the Trellon team what features YOU\'d like to see in development for CRM Core. Your messages will be emailed straight to the team.</b>',
+          'value' => '<p>Pledge to sponsor a child today! Help protect and improve the lives of children across the world.&nbsp;</p>',
         ),
       ),
     ),
@@ -728,12 +749,17 @@ Tell City Council to vote to keep Turner Park open for our children and families
     ),
     'status' => 1,
     'sticky' => 0,
-    'title' => 'We Want More CRM Core!',
+    'title' => 'Save a Child From Poverty',
     'tnid' => 0,
     'translate' => 0,
     'type' => 'cmcp_petition',
     'uid' => 0,
-    'url_alias' => array(),
+    'url_alias' => array(
+      0 => array(
+        'alias' => 'petitions/save-a-child',
+        'language' => 'und',
+      ),
+    ),
     'uuid' => 'c6c7bd28-a9a5-4c29-b4b7-a11cbe7e5450',
   );
 
