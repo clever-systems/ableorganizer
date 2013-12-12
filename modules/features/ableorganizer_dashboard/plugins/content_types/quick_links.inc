@@ -58,7 +58,6 @@ function quick_links_settings_form_submit($form, &$form_state) {
  */
 function quick_links_render($subtype, $conf, $panel_args, $context = NULL) {
   $options = array('attributes' => array('class' => array('quick-link')));
-
   $content = '<div class="container-12-fluid">
 <div class="grid-6">
 <div class="btn btn-blue btn-simple">'
@@ -70,7 +69,7 @@ function quick_links_render($subtype, $conf, $panel_args, $context = NULL) {
     $content .= '<br />';
   }
   if (module_exists('crm_core_event')) {
-    $content .= l(t('Event'), 'node/add/cmcev-evnt', $options);
+    $content .= l(t('Event'), 'node/add/cmcev-event', $options);
     $content .= '<br />';
   }
   if (module_exists('crm_core_volunteer')) {

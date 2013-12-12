@@ -15,3 +15,11 @@ features[features_api][] = api:2
 features[page_manager_pages][] = ao_dashboard
 features[views_view][] = ao_dashboard_act_stream
 features_exclude[dependencies][ctools] = ctools
+
+
+; Information added by drush on 2013-12-03
+version = "7.x-1.0-beta6+156-dev"
+core = "7.x"
+project = "ableorganizer"
+datestamp = "1386065615"
+
