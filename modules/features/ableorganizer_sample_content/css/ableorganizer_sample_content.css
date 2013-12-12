@@ -45,6 +45,18 @@ BODY.front #section-content h2 {
   background-image: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 48%, rgba(144,120,63,100) 49%, rgba(144,120,63,100) 53%, rgba(255,255,255,0) 54%, rgba(255,255,255,0) 100%);  
   background-image: -o-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 48%, rgba(144,120,63,100) 49%, rgba(144,120,63,100) 53%, rgba(255,255,255,0) 54%, rgba(255,255,255,0) 100%);  
   background-image: linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 48%, rgba(144,120,63,100) 49%, rgba(144,120,63,100) 53%, rgba(255,255,255,0) 54%, rgba(255,255,255,0) 100%);
+  
+  
+  background-image: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 48%, rgba(67, 106, 179,100) 49%, rgba(67, 106, 179,100) 53%, rgba(255,255,255,0) 54%, rgba(255,255,255,0) 100%);  
+  background-image: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 48%, rgba(67, 106, 179,100) 49%, rgba(67, 106, 179,100) 53%, rgba(255,255,255,0) 54%, rgba(255,255,255,0) 100%);  
+  background-image: -o-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 48%, rgba(67, 106, 179,100) 49%, rgba(67, 106, 179,100) 53%, rgba(255,255,255,0) 54%, rgba(255,255,255,0) 100%);  
+  background-image: linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 48%, rgba(67, 106, 179,100) 49%, rgba(67, 106, 179,100) 53%, rgba(255,255,255,0) 54%, rgba(255,255,255,0) 100%);
+  
+  
+  
+  color: rgb(67, 106, 179);
+  
+  
 }
 BODY.front #section-content h2 SPAN {
   background-color: White;
@@ -85,6 +97,7 @@ BODY.front #section-content .hero_text h2 {
   margin: 0em 0em .5em 0em;
   background: none;
   font-weight: 700;
+  color: White;
 }
 BODY.front #section-content .hero_text P {
   font-size: 1.85em;
@@ -334,6 +347,7 @@ BODY.front #section-content #zone-below-content-2-wrapper H2 {
 }
 BODY.front #section-content #zone-below-content-2-wrapper H2 SPAN {
   background-color: #fff0ca;
+  background-color: #eaf8fd;
 }
 BODY.front #section-content #zone-below-content-2-wrapper H3 {
   text-align: center;
