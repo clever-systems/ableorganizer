@@ -13,6 +13,21 @@ function ableorganizer_sample_volunteer_pages_default_box() {
   $box = new stdClass();
   $box->disabled = FALSE; /* Edit this to true to make a default box disabled initially */
   $box->api_version = 1;
+  $box->delta = 'ao_volunteer_header';
+  $box->plugin_key = 'simple';
+  $box->title = '';
+  $box->description = 'AO Volunteer Header';
+  $box->options = array(
+    'body' => array(
+      'value' => '<h2>Volunteer</h2>',
+      'format' => 'full_html',
+    ),
+  );
+  $export['ao_volunteer_header'] = $box;
+
+  $box = new stdClass();
+  $box->disabled = FALSE; /* Edit this to true to make a default box disabled initially */
+  $box->api_version = 1;
   $box->delta = 'ao_volunteer_info';
   $box->plugin_key = 'simple';
   $box->title = 'Heads Up!';
