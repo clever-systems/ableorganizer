@@ -12,22 +12,26 @@
   <?php endif; ?>  
   
   <div<?php print $content_attributes; ?>>
-
+ 
     <div class="ao_meta">
       <div class="ao_date">
         <div class="ao-icon"></div>
-        <?php print render($content['field_cmcev_date']); ?>
+        <?php print render($content['field_cmcv_date']); ?>
       </div>
       <div class="ao_location">
         <div class="ao-icon"></div>
-        <?php print render($content['field_cmcev_location']); ?>
+        <?php print render($content['field_cmcv_location']); ?>
       </div>
     </div>
-
+    
     <?php
+    
+      // dpm(get_defined_vars());
+    
       // We hide the comments and links now so that we can render them later.
       hide($content['comments']);
       hide($content['links']);
+      
       print render($content);
     ?>
   </div>

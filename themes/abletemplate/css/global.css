@@ -3,9 +3,11 @@
 
 #zone-branding-wrapper {
   padding: 0.5em 0em;
+  font-size: 1.1em;
 }
 #zone-branding-wrapper #main-menu {
-  padding-top: 0.5em;
+  margin: 0px;
+  padding: 0px;
 }
 #zone-branding-wrapper .navigation-menu {
   margin-top: .3em;
@@ -15,12 +17,33 @@
   margin-bottom: 0em;
   padding-top: 0.5em;
   display: inline-block;
+  margin-top: 23px;
+  margin: 0em;
+  padding: 18px 12px 0em 0em;
 }
 #zone-branding-wrapper #main-menu LI A {
   text-decoration: none;
-  font-size: 1.4em;
   color: Black;
+  font-size: 1.18em;
 }
+#zone-branding-wrapper .navigation-menu {
+  font-size: .85em;
+  margin-top: 8px;
+}
+
+/* throw aways */
+#zone-branding-wrapper #main-menu {
+}
+#zone-branding-wrapper #main-menu H2 {
+  display: none;
+}
+#zone-branding-wrapper #main-menu UL {
+}
+
+
+
+
+
 #region-page-bottom {
   background-color: Black;
   height: 500px;
@@ -28,13 +51,18 @@
 #region-sidebar-first {
   padding-bottom: 1em;
 }
+#region-sidebar-first .block .content {
+  font-size: 0.78em;
+}
 #region-sidebar-second {
   padding-bottom: 1em;
 }
 #region-sidebar-second .block {
   background-color: #e9e9e9;
   padding: .5em;
+  font-size: 0.9em;
 }
+
 
 .img_maxheight {
   border: 1px solid #CCC;
@@ -76,10 +104,11 @@
 
 /* basic typography */
 BODY {
+  font-size: 1.2em;
 }
 P {
   line-height: 170%;
-  margin-bottom: 0.5em;
+  margin-bottom: 1em;
 }
 A {
   text-decoration: underline;
@@ -102,7 +131,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.2em;
 }
 h1 {
-  font-size: 2.98em;
+  font-size: 2em;
   margin-bottom: 1em;
 }
 h2 {
@@ -148,6 +177,12 @@ div.messages {
   display: block;
   float: none;
   text-align: center;
+}
+UL {
+  margin-bottom: 1em;
+}
+LI {
+  margin-bottom: 1em;
 }
   
 /* fields */
@@ -203,6 +238,61 @@ div.addressfield-container-inline > div.form-item {
 .form-phone-number .form-item:last-child INPUT {
   width: 28%;
 }
+div.addressfield-container-inline:after {
+  display: none;
+}
+
+.ao_meta {
+  background-color: rgba(255, 240, 202, .7);
+  font-size: 0.8em;
+  border-radius: .5em;
+  -moz-border-radius: .5em;
+  -webkit-border-radius: .5em;
+  margin-bottom: 1em;
+}
+.ao_meta .ao-icon {
+  height: 30px;
+  width: 30px;
+  display: none;
+  background-image: url('../images/ao-frontend-icons.png');
+  vertical-align: top;
+  margin-right: .3em;
+}
+.ao_meta .ao_date {
+  display: inline-block;
+  padding: .5em;
+  vertical-align: top;
+}
+.ao_meta .ao_location {
+  display: inline-block;
+  padding: .5em;
+  vertical-align: top;
+}
+.ao_meta .ao_date .field, .ao_meta .ao_location .field {
+  display: inline-block;
+}
+.ao_meta .ao_date .field-items, .ao_meta .ao_location .field-items  {
+}
+.ao_meta .ao_date .ao-icon {
+  display: inline-block;
+  background-position: -210px -60px;
+}
+.ao_meta .ao_location .ao-icon {
+  display: inline-block;
+  background-position: -180px -60px;
+}
+.ao_meta .field {
+  margin: 0em;
+}
+
+/* petitions */
+.petition-signatures {
+  padding: 0em .5em .5em;
+  line-height: 1.2em;
+  font-size: .85em;
+  color: #777;
+}
+
 
 /* lists */
 ul, ol {
@@ -217,11 +307,8 @@ ul ul, ol ol, ul ol, ol ul {
 
 /* nodes */
 .node-article {
-  font-size: 1.2em;
+  zfont-size: 1.2em;
   line-height: 2em;
-}
-.node-article P {
-  margin-bottom: 1em;
 }
 .submitted {
   border-bottom: 1px solid #CCC;
