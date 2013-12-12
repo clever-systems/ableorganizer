@@ -23,6 +23,7 @@ stylesheets[all][] = css/ableorganizer_sample_event_pages.css
 __drupal_alter_by_ref[][node][cmcev_event] = cmcev_event
 __drupal_alter_by_ref[][node][page] = page
 datestamp = 1386065615
+features[box][] = ao_event_desc
 features[box][] = ao_event_header
 features[commerce_product_type][] = event_registration
 features[context][] = event_header
