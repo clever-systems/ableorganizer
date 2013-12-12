@@ -5,8 +5,10 @@
   Drupal.behaviors.ableorganizer_sample_content = {
     attach: function (context) {
       // front page stuff
-      var wwidth  = $('#region-content').width();
-      var wheight = $('#region-content').height();
+      var wwidth  = $('#region-above-content-2').width();
+      var wheight = $('#zone-above-content-2-wrapper').height();
+      
+      console.log(wheight);
       
       $(".ao_profeat_dialog").dialog({ 
           autoOpen: false,
@@ -26,9 +28,6 @@
             effect: 'fade',
             duration: 350,
             easing: 'easeOutQuart',
-          },
-          complete: function(){
-            console.log('yo yo yo');
           },
           open: function() {
             jQuery('.ui-widget-overlay').bind('click', function() {
