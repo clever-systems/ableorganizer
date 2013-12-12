@@ -30,19 +30,31 @@
   font-size: .85em;
   margin-top: 8px;
 }
-
-/* throw aways */
-#zone-branding-wrapper #main-menu {
+#zone-footer-wrapper {
+  background-color: Black;
 }
-#zone-branding-wrapper #main-menu H2 {
+#zone-footer-wrapper H2.block-title {
   display: none;
 }
-#zone-branding-wrapper #main-menu UL {
+#zone-footer-wrapper .ao-footer-branding {
+  background: #00455f;
+  margin: 1em 0em;
+  position: relative;
+  padding: 1em;
+  color: #fff0ca;
+  color: #ffd670;
+  border-radius: 12px;
+  -moz-border-radius: 12px;
+  -webkit-border-radius: 12px;
+  font-size: 17px;
+  text-align: center;
 }
-
-
-
-
+#zone-footer-wrapper .ao-footer-branding A {
+  color: #ffd670;
+}
+#zone-footer-wrapper .ao-footer-branding A:hover {
+  color: #fff0ca;
+}
 
 #region-page-bottom {
   background-color: Black;
