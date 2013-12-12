@@ -2,25 +2,30 @@ name = AbleOrganizer Sample Volunteer Pages
 description = Sample content for the CRM Core Volunteer
 core = 7.x
 package = AbleOrganizer
+version = 7.x-1.0
+project = ableorganizer_sample_volunteer_pages
+dependencies[] = boxes
 dependencies[] = crm_core_profile
 dependencies[] = crm_core_volunteer
 dependencies[] = ctools
 dependencies[] = deploy
+dependencies[] = entity_menu_links
 dependencies[] = features
 dependencies[] = media
 dependencies[] = media_colorbox
+dependencies[] = media_youtube
 dependencies[] = menu
 dependencies[] = strongarm
 dependencies[] = uuid_path
 dependencies[] = views
-dependencies[] = entity_menu_links
-dependencies[] = media_youtube
 stylesheets[all][] = css/ableorganizer_sample_volunteer_pages.css
 __drupal_alter_by_ref[][node][cmcv_volunteer] = cmcv_volunteer
 __drupal_alter_by_ref[][node][page] = page
-datestamp = 1381054653
+datestamp = 1386065615
+features[box][] = ao_volunteer_info
 features[crm_core_profile][] = ao_volunteer_commitment_form
 features[crm_core_profile][] = ao_volunteer_commitment_form_2
+features[ctools][] = boxes:box:1
 features[ctools][] = crm_core_profile:crm_core_profile:1
 features[ctools][] = deploy:deploy_plans:1
 features[ctools][] = strongarm:strongarm:1
@@ -41,11 +46,3 @@ features_exclude[variable][node_options_page] = node_options_page
 features_exclude[variable][node_submitted_page] = node_submitted_page
 features_exclude[dependencies][crm_core_petition] = crm_core_petition
 project path = profiles/ableorganizer/modules/features
-
-
-; Information added by drush on 2013-12-03
-version = "7.x-1.0-beta6+156-dev"
-core = "7.x"
-project = "ableorganizer"
-datestamp = "1386065615"
-

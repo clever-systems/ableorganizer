@@ -19,18 +19,9 @@ function ableorganizer_sample_volunteer_pages_uuid_default_entities() {
     'body' => array(
       'und' => array(
         0 => array(
-          'format' => 'filtered_html',
+          'format' => 'full_html',
           'summary' => '',
-          'value' => 'The animal shelter needs your help.
-
-We are looking for volunteers in a variety of roles:
-<ul>
-<li> Animal Socializer: Work with the animals to make them more adoptable
-<li> Adoption Counselor: Help people find the perfect animal to join their family
-<li> Animal Care: Make sure our animals are fed and kept clean
-</ul>
-
-Come to our Volunteer Open House to learn more and sign up.',
+          'value' => '<p>The animal shelter needs your help. We are experiencing high seasonal demand and are looking for workers to cover some of the extra shifts.</p><p>Currently,&nbsp;volunteers are working with our staff to cover&nbsp;a variety of roles:</p><ul><li>Animal Socializer: Work with the animals to make them more adoptable</li><li>Adoption Counselor: Help people find the perfect animal to join their family</li><li>Animal Care: Make sure our animals are fed and kept clean</li></ul><p>Sign up for this opportunity and one of our volunteer coordinators will contact you.</p>',
         ),
       ),
     ),
@@ -43,7 +34,7 @@ Come to our Volunteer Open House to learn more and sign up.',
       'use_profile' => 1,
       'profile_name' => 'ao_volunteer_commitment_form',
       'display_profile' => 0,
-      'inline_title' => 'Volunteer form',
+      'inline_title' => 'Get Involved',
     ),
     'crm_core_volunteer_node_config' => array(
       'nid' => '0b621efb-62fa-4312-b0bd-479c6d8d8be4',
@@ -56,7 +47,7 @@ Come to our Volunteer Open House to learn more and sign up.',
       'und' => array(
         0 => array(
           'date_type' => 'datestamp',
-          'timezone' => 'UTC',
+          'timezone' => 'America/New_York',
           'timezone_db' => 'UTC',
           'value' => 1386099000,
           'value2' => 1386099000,
@@ -182,12 +173,9 @@ Come to our Volunteer Open House to learn more and sign up.',
     'body' => array(
       'und' => array(
         0 => array(
-          'format' => 'filtered_html',
+          'format' => 'full_html',
           'summary' => '',
-          'value' => 'Join other members of our community in cleaning up the creek. The creek is an important habitat for native animals, and it is home to a variety of rare amphibians that are important to the ecosystem.
-
-On Saturday, we\'ll be picking up trash and litter over a three mile stretch of creek. Come join us!
-',
+          'value' => '<p>Are you interested in improving the environment and creating a more inclusive clean energy economy? Would you like to make a tangible difference in the fight against poverty?</p><p><!--break-->Our organization is a non-profit working to create green jobs through our newly launched organizing campaign, Retrofit The City, and we are looking for volunteers! Retrofit the City\'s mission is to create green career opportunities for underserved city residents. The project does this by using innovative community organizing tactics to grow the demand for home energy improvements.</p><p>Volunteers are critical to the success of our program and will be encouraged to join us for as much time as they have, whether that be a few hours every week or every month. They will participate in neighborhood canvasses, phone banks and build relationships with community leaders.</p><p><strong>Opportunities:</strong></p><ul><li>Conduct direct homeowner engagement, including door-to-door canvassing and direct outreach at community events</li><li>Participate in community meetings</li><li>Contribute to a strategic outreach plan</li></ul><p><strong>Benefits:</strong></p><ul><li>Meet awesome, driven, like minded people</li><li>Make a tangible difference in the lives of Baltimore residents</li><li>Have fun!</li></ul>',
         ),
       ),
     ),
@@ -213,7 +201,7 @@ On Saturday, we\'ll be picking up trash and litter over a three mile stretch of 
       'und' => array(
         0 => array(
           'date_type' => 'datestamp',
-          'timezone' => 'UTC',
+          'timezone' => 'America/New_York',
           'timezone_db' => 'UTC',
           'value' => 1382796000,
           'value2' => 1382796000,
@@ -232,7 +220,7 @@ On Saturday, we\'ll be picking up trash and litter over a three mile stretch of 
           'locality' => 'Washington',
           'name_line' => NULL,
           'organisation_name' => NULL,
-          'postal_code' => '',
+          'postal_code' => 20009,
           'premise' => '',
           'sub_administrative_area' => NULL,
           'sub_premise' => NULL,
@@ -244,7 +232,7 @@ On Saturday, we\'ll be picking up trash and litter over a three mile stretch of 
     'field_cmcv_slots' => array(
       'und' => array(
         0 => array(
-          'value' => 0,
+          'value' => 20,
         ),
       ),
     ),
@@ -310,7 +298,7 @@ On Saturday, we\'ll be picking up trash and litter over a three mile stretch of 
     ),
     'status' => 1,
     'sticky' => 0,
-    'title' => 'Keep Our Creek Clean',
+    'title' => 'Improve the Environment and Fight Poverty through Community Outreach!',
     'tnid' => 0,
     'translate' => 0,
     'type' => 'cmcv_volunteer',
@@ -332,9 +320,9 @@ On Saturday, we\'ll be picking up trash and litter over a three mile stretch of 
     'body' => array(
       'und' => array(
         0 => array(
-          'format' => 'filtered_html',
+          'format' => 'full_html',
           'summary' => '',
-          'value' => 'Make a difference in a child\'s life by helping them to succeed in school. We\'re looking for people who can aid fourth and fifth grade students in all subjects. Volunteers must be 18 or over.',
+          'value' => '<p>We are looking for amazing adult who are want to make a difference in the lives of young people to work with children in the city.</p><p>Our programs engage youth in intentional programs that help them build life skills, have fund and demonstrate leadership. Programs are held in out of school time hours in various locations around the city. Work with school based or partner based programs includes helping kids with literacy projects, career exploration, enviornmental education, service learning projects, health education and fitness programs and more. Our volunteers make a difference -&nbsp;you can too.</p>',
         ),
       ),
     ),
@@ -347,7 +335,7 @@ On Saturday, we\'ll be picking up trash and litter over a three mile stretch of 
       'use_profile' => 1,
       'profile_name' => 'ao_volunteer_commitment_form_2',
       'display_profile' => 0,
-      'inline_title' => 'Volunteer form',
+      'inline_title' => 'I want to help!',
     ),
     'crm_core_volunteer_node_config' => array(
       'nid' => '2a0e3955-18a5-4be1-a2c4-8dff6e05be73',
@@ -355,19 +343,12 @@ On Saturday, we\'ll be picking up trash and litter over a three mile stretch of 
       'sign_email' => '',
       'wait_email' => '',
     ),
-    'field_cmcv_contact' => array(
-      'und' => array(
-        0 => array(
-          'format' => NULL,
-          'value' => 'heytrellon@trellon.com',
-        ),
-      ),
-    ),
+    'field_cmcv_contact' => array(),
     'field_cmcv_date' => array(
       'und' => array(
         0 => array(
           'date_type' => 'datestamp',
-          'timezone' => 'UTC',
+          'timezone' => 'America/New_York',
           'timezone_db' => 'UTC',
           'value' => 1378148400,
           'value2' => 1387396800,
@@ -390,7 +371,7 @@ On Saturday, we\'ll be picking up trash and litter over a three mile stretch of 
           'premise' => '',
           'sub_administrative_area' => NULL,
           'sub_premise' => NULL,
-          'thoroughfare' => 'Chestnut Hill Elementary School',
+          'thoroughfare' => '',
         ),
       ),
     ),
@@ -464,7 +445,7 @@ On Saturday, we\'ll be picking up trash and litter over a three mile stretch of 
     ),
     'status' => 1,
     'sticky' => 0,
-    'title' => 'After School Tutors Needed',
+    'title' => 'Help Youth Find Their Voice as a Volunteer',
     'tnid' => 0,
     'translate' => 0,
     'type' => 'cmcv_volunteer',
@@ -486,9 +467,9 @@ On Saturday, we\'ll be picking up trash and litter over a three mile stretch of 
     'body' => array(
       'und' => array(
         0 => array(
-          'format' => 'filtered_html',
+          'format' => 'full_html',
           'summary' => '',
-          'value' => 'Join our street team and help your neighbors register to vote in our 2013 voter registration drive.',
+          'value' => '<p>Our program offers transitional and permanent housing for homeless women and their children. We provide these families with a safe environment in which to live. We also provide counseling, career and life skills training, and employment assistance to help the women of our program achieve independence.&nbsp;</p><p>There are a wide range of volunteer opportunities for both individuals and groups in our program. Here are a few ways you can get involved:&nbsp;</p><ul><li>Help in the Children\'s Center (Monday\'s and Thursday 6:30-8:30pm) as women attend workshops (great opportunity for high school students)&nbsp;</li><li>Prepare a dinner (especially needed on Mondays and Thursdays when women attend evening workshops)&nbsp;</li><li>Tutor/Mentor women, lead instructional readings&nbsp;</li><li>Organize child related activity (nature walks, holiday parties, cookouts or other events, art/crafts, etc.)&nbsp;</li><li>Administrative program support - clerical and organizational&nbsp;</li></ul><p>Some of the benefits of getting involved include:</p><ul><li>Undergraduate and Graduate internship opportunities&nbsp;</li><li>Lead life-skills workshops (parenting, financial planning, healthy lifestyles, etc.)</li><li>Wish-list collection, holiday gift bags, winter holiday adopt-a-family&nbsp;</li><li>Landscaping and building projects&nbsp;</li><li>Eagle Scout and Gold Award Project opportunities&nbsp;</li></ul>',
         ),
       ),
     ),
@@ -501,7 +482,7 @@ On Saturday, we\'ll be picking up trash and litter over a three mile stretch of 
       'use_profile' => 1,
       'profile_name' => 'ao_volunteer_commitment_form',
       'display_profile' => 0,
-      'inline_title' => 'Volunteer form',
+      'inline_title' => 'Get Involved',
     ),
     'crm_core_volunteer_node_config' => array(
       'nid' => '85b8792e-c6f0-41e1-bb04-7cbf6b522abf',
@@ -509,19 +490,12 @@ On Saturday, we\'ll be picking up trash and litter over a three mile stretch of 
       'sign_email' => '',
       'wait_email' => '',
     ),
-    'field_cmcv_contact' => array(
-      'und' => array(
-        0 => array(
-          'format' => NULL,
-          'value' => 'heytrellon@trellon.com',
-        ),
-      ),
-    ),
+    'field_cmcv_contact' => array(),
     'field_cmcv_date' => array(
       'und' => array(
         0 => array(
           'date_type' => 'datestamp',
-          'timezone' => 'UTC',
+          'timezone' => 'America/New_York',
           'timezone_db' => 'UTC',
           'value' => 1379602800,
           'value2' => 1383584400,
@@ -531,20 +505,20 @@ On Saturday, we\'ll be picking up trash and litter over a three mile stretch of 
     'field_cmcv_location' => array(
       'und' => array(
         0 => array(
-          'administrative_area' => '',
+          'administrative_area' => 'DC',
           'country' => 'US',
           'data' => NULL,
           'dependent_locality' => NULL,
           'first_name' => NULL,
           'last_name' => NULL,
-          'locality' => '',
+          'locality' => 'Washington',
           'name_line' => NULL,
           'organisation_name' => NULL,
-          'postal_code' => '',
+          'postal_code' => 20013,
           'premise' => '',
           'sub_administrative_area' => NULL,
           'sub_premise' => NULL,
-          'thoroughfare' => '',
+          'thoroughfare' => '49th Street Northwest',
         ),
       ),
     ),
@@ -552,7 +526,7 @@ On Saturday, we\'ll be picking up trash and litter over a three mile stretch of 
     'field_cmcv_slots' => array(
       'und' => array(
         0 => array(
-          'value' => 100,
+          'value' => 10,
         ),
       ),
     ),
@@ -618,7 +592,7 @@ On Saturday, we\'ll be picking up trash and litter over a three mile stretch of 
     ),
     'status' => 1,
     'sticky' => 0,
-    'title' => 'Get Out The Vote!',
+    'title' => 'Assist Homeless Women and their Children',
     'tnid' => 0,
     'translate' => 0,
     'type' => 'cmcv_volunteer',
@@ -670,7 +644,7 @@ On Saturday, we\'ll be picking up trash and litter over a three mile stretch of 
       'und' => array(
         0 => array(
           'date_type' => 'datestamp',
-          'timezone' => 'UTC',
+          'timezone' => 'America/New_York',
           'timezone_db' => 'UTC',
           'value' => 1387404000,
           'value2' => 1387404000,
