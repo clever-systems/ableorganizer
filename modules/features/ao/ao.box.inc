@@ -15,7 +15,7 @@ function ao_default_box() {
   $box->api_version = 1;
   $box->delta = 'ao_branding';
   $box->plugin_key = 'simple';
-  $box->title = 'Simply tells people how this was built and who built this';
+  $box->title = '';
   $box->description = 'AO Branding';
   $box->options = array(
     'body' => array(
