@@ -21,6 +21,7 @@ stylesheets[all][] = css/ableorganizer_sample_petition_pages.css
 __drupal_alter_by_ref[][node][page] = page
 __drupal_alter_by_ref[][node][cmcp_petition] = cmcp_petition
 datestamp = 1386065615
+features[box][] = ao_petition_description
 features[box][] = ao_petition_header
 features[context][] = petition_header
 features[crm_core_profile][] = canvass_signatures

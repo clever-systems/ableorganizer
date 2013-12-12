@@ -650,7 +650,7 @@ function ableorganizer_sample_petition_pages_uuid_default_entities() {
     'comment_count' => 0,
     'crm_core_petition_node_config' => array(
       'nid' => 'c6c7bd28-a9a5-4c29-b4b7-a11cbe7e5450',
-      'signatories' => 0,
+      'signatories' => 1,
       'goal' => 0,
       'sign_email' => '',
       'thanks_email' => 'rules_cmcp_thank_you_message',
