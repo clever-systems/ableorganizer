@@ -34,10 +34,8 @@ function ableorganizer_sample_donation_pages_uuid_default_entities() {
     'field_cmcd_body' => array(
       'und' => array(
         0 => array(
-          'format' => 'filtered_html',
-          'value' => 'This page is for collecting online donations for an upcoming fundraiser. It uses a profile form that provides buttons for storing recommended amounts.
-
-The amounts displayed as buttons are set within the content type, using the Recommended donation amounts option. ',
+          'format' => 'full_html',
+          'value' => '<p>Our online fundraiser is for a popular program run by the organization that appeals to a wide audience. It gets more traction with a certain segment of our followers.&nbsp;</p><p>By getting involved, you can help us do something important. You can get involved at any of the recommended donation levels.&nbsp;</p>',
         ),
       ),
     ),
@@ -181,7 +179,7 @@ The amounts displayed as buttons are set within the content type, using the Reco
       'und' => array(
         0 => array(
           'format' => 'full_html',
-          'value' => '<p>&nbsp;</p><p>For 45 years, the organization&nbsp;has been conducting its annual appeal to provide funding to meet the health, social and welfare needs of the poor and vulnerable regardless of race, creed or origin. &nbsp;The people of this organization have been exceedingly generous, as the minimum goals for the appeal have grown each year to meet the increased demand for vital services and programs.</p><p>This year our minimum need is&nbsp;<strong>$10 million</strong>.</p><p>[[{"fid":"65d6df66-5ca1-4baf-96e3-914cf351cb17","view_mode":"colorbox","fields":{"format":"colorbox","field_file_image_alt_text[und][0][value]":"Family","field_file_image_title_text[und][0][value]":"Family"},"tagName":"A","src":"undefined","type":"media","attributes":{"alt":"Family","class":"colorbox media-element file-colorbox","title":"Family"}}]]The quality of life of many men, women and children and their hope for the future continue to depend on us reaching this minimum goal and on your continued generosity.</p><p>Please take a moment to consider how needs are as great as ever and how donors have helped in the past.</p><h3>Campaign Distribution</h3><p>Each year your gifts are distributed for those groups that reach beyond the basic boundaries of the organization to provide social, financial, psychological and&nbsp;moral assistance to tens of thousands in our operating area. The&nbsp;budgeted needs for the upcoming year are&nbsp;based on a $10 million goal. The distribution from last year was over $8 million.</p><p>&nbsp;</p>',
+          'value' => '<p>For 45 years, the organization&nbsp;has been conducting its annual appeal to provide funding to meet the health, social and welfare needs of the poor and vulnerable regardless of race, creed or origin. &nbsp;The people of this organization have been exceedingly generous, as the minimum goals for the appeal have grown each year to meet the increased demand for vital services and programs.</p><p>This year our minimum need is&nbsp;<strong>$10 million</strong>. The quality of life of many men, women and children and their hope for the future continue to depend on us reaching this minimum goal and on your continued generosity.</p><p>Please take a moment to consider how needs are as great as ever and how donors have helped in the past.</p><p>[[{"fid":"65d6df66-5ca1-4baf-96e3-914cf351cb17","view_mode":"colorbox","fields":{"format":"colorbox","field_file_image_alt_text[und][0][value]":"Family","field_file_image_title_text[und][0][value]":"Family"},"tagName":"A","src":"undefined","type":"media","attributes":{"alt":"Family","class":"colorbox media-element file-colorbox","title":"Family"}}]]</p><h3>Campaign Distribution</h3><p>Each year your gifts are distributed for those groups that reach beyond the basic boundaries of the organization to provide social, financial, psychological and&nbsp;moral assistance to tens of thousands in our operating area. The&nbsp;budgeted needs for the upcoming year are&nbsp;based on a $10 million goal. The distribution from last year was over $8 million.</p>',
         ),
       ),
     ),
@@ -451,6 +449,27 @@ The amounts displayed as buttons are set within the content type, using the Reco
   );
   $entities['cmcd_sample_content_dp'][] = (object) array(
     '__metadata' => array(
+      'type' => 'file',
+      'uri' => 'file/00d5fd22-e07a-4214-a5fb-80c3ba25bb41',
+      'cause' => 'node/e5742cc9-af29-4b1a-930b-24921ae633d4',
+    ),
+    'alt' => '',
+    'file_contents' => '',
+    'filemime' => 'video/youtube',
+    'filename' => 'Brick by Brick Campaign Thank-You',
+    'filesize' => 0,
+    'metadata' => array(),
+    'rdf_mapping' => array(),
+    'status' => 1,
+    'title' => '',
+    'type' => 'video',
+    'uid' => 1,
+    'uri' => 'youtube://v/KFBcQlJhOFg',
+    'url_alias' => array(),
+    'uuid' => '00d5fd22-e07a-4214-a5fb-80c3ba25bb41',
+  );
+  $entities['cmcd_sample_content_dp'][] = (object) array(
+    '__metadata' => array(
       'type' => 'node',
       'uri' => 'node/e5742cc9-af29-4b1a-930b-24921ae633d4',
       'cause' => FALSE,
@@ -468,13 +487,13 @@ The amounts displayed as buttons are set within the content type, using the Reco
       'use_profile' => 1,
       'profile_name' => 'ao_donation_form',
       'display_profile' => 0,
-      'inline_title' => 'Donation form',
+      'inline_title' => 'Make a donation now',
     ),
     'field_cmcd_body' => array(
       'und' => array(
         0 => array(
           'format' => 'full_html',
-          'value' => '<p>Your donation to our organization&nbsp;will feed hungry families, provide health care and clean water in remote villages, help farmers to grow better crops, protect orphans and vulnerable children, and allow for an immediate response to emergencies.&nbsp;</p><p>For 70 years, our organization has been providing expertise and compassion to the very poorest of our brothers and sisters in 91 countries. But we can\'t do this lifesaving work without your help.</p><p>Please make a generous gift today and fill out the secure form to make a one-time donation.</p>',
+          'value' => '<p>[[{"fid":"00d5fd22-e07a-4214-a5fb-80c3ba25bb41","view_mode":"colorbox","fields":{"format":"colorbox"},"tagName":"VIDEO","src":"","type":"media","attributes":{"class":"media-element file-colorbox"}}]]</p><p>Your donation to our organization&nbsp;will feed hungry families, provide health care and clean water in remote villages, help farmers to grow better crops, protect orphans and vulnerable children, and allow for an immediate response to emergencies.&nbsp;</p><p>For 70 years, our organization has been providing expertise and compassion to the very poorest of our brothers and sisters in 91 countries. But we can\'t do this lifesaving work without your help. Please make a generous gift today and fill out the secure form to make a one-time donation.</p>',
         ),
       ),
     ),
@@ -564,7 +583,7 @@ The amounts displayed as buttons are set within the content type, using the Reco
         0 => array(
           'format' => 'full_html',
           'summary' => '',
-          'value' => '<p>There are 4 easy ways to give.</p><p><a href="/donate/online-donation">Make an online donation</a></p><p><a href="/donate/annual-appeal">Join our Annual Appeal</a></p><p><a href="/donate/fundraiser">Participate in our fundraiser</a></p><p><a href="/donate/walkup">Walk up donations</a></p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>',
+          'value' => '<p>Thank you for considering supporting our work. Your contribution is absolutely vital. Without it, the valuable work of our organization\'s&nbsp;field staff would be impossible. Your support demonstrates solidarity with the people our programs and events go to&nbsp;help.&nbsp;It also helps up in other, vital ways:</p><ul><li>To ensure the freedom to provide humanitarian assistance whenever and wherever it is needed.</li><li>To remain independent from political, religious and economic interests.</li></ul><p>There are 4 easy ways to give.</p><h3><a href="/donate/online-donation">Make an online donation</a></h3><p>Online donations are the quickest and easiest ways to become involved. Make a donation in any amount today!</p><h3><a href="/donate/annual-appeal">Join our Annual Appeal</a></h3><p>Our organization\'s Annual Appeal campaign goes towards offsetting operating costs and ensuring our staff has the tools they need to carry out our programs.</p><h3><a href="/donate/fundraiser">Participate in our fundraiser</a></h3><p>Our online fundraiser is for a popular program run by the organization that appeals to a wide audience. It gets more traction with a certain segment of our followers. You can get involved at any of the recommended&nbsp;donation levels.&nbsp;</p><h3><a href="/donate/walkup">Walk up donations</a></h3><p>We use this form internally for recording donations to our organization. It is a direct entry form that allows us to track offline donations received through walk ups, phone calls, and the like. While everyone can see the link to this form, the only people who should be able to fill it out are people who are logged in.</p>',
         ),
       ),
     ),
@@ -601,7 +620,7 @@ The amounts displayed as buttons are set within the content type, using the Reco
       'p8' => 0,
       'p9' => 0,
       'updated' => 0,
-      'vid' => 714,
+      'vid' => 725,
       'uuid' => 'd919297b-453f-4f6c-9574-42a1df7d47c9',
       'path' => 'node/%',
       'load_functions' => array(
