@@ -482,6 +482,7 @@ crm-core-profile-entry-form-ao-volunteer-commitment-form");
   variable_set("node_submitted_cmcp_petition", 0);
   variable_set("node_submitted_cmcv_volunteer", 0);
   variable_set("node_submitted_page", 0);
+  variable_set("node_submitted_article", 0);
 
   // Enable blocks.
   // This must be done after the theme has been installed.
