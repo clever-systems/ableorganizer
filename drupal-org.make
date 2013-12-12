@@ -12,7 +12,7 @@ projects[ctools][subdir] = "contrib"
 projects[entity][version] = 1.2
 projects[entity][subdir] = "contrib"
 projects[entity][patch][] = "https://drupal.org/files/unformatted_replacements-2082407-1.patch"
-projects[entityreference][version] = 1.0
+projects[entityreference][version] = 1.1
 projects[entityreference][subdir] = "contrib"
 projects[relation][version] = 1.0-rc4
 projects[relation][subdir] = "contrib"
@@ -67,12 +67,8 @@ projects[mimemail][version] = 1.0-beta1
 projects[mimemail][subdir] = "contrib"
 
 ; content
-projects[pathologic][type] = "module"
+projects[pathologic] = 2.11
 projects[pathologic][subdir] = "contrib"
-projects[pathologic][download][type] = "git"
-projects[pathologic][download][url] = "http://git.drupal.org/project/pathologic.git"
-projects[pathologic][download][branch] = "7.x-2.x"
-projects[pathologic][download][revision] = "aae73b7969ad6d7ae7f883fed1255999fb2bad34"
 projects[wysiwyg][type] = "module"
 projects[wysiwyg][subdir] = "contrib"
 projects[wysiwyg][download][type] = "git"
@@ -226,6 +222,8 @@ projects[entity_menu_links][subdir] = "contrib"
 projects[entity_menu_links][download][type] = git
 projects[entity_menu_links][download][branch] = 7.x-1.x
 projects[entity_menu_links][download][revision] = "9dd1dd700714051aefc8e932607abedee977e258"
+projects[uuid_features][version] = 1.0-alpha3
+projects[uuid_features][subdir] = "contrib"
 
 ;themes
 projects[omega] = 3.1
