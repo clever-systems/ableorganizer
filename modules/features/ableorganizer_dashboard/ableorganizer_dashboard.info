@@ -2,24 +2,19 @@ name = AbleOrganizer Dashboard
 description = Provides a dashboard for use with AbleOrganizer
 core = 7.x
 package = AbleOrganizer
+version = 7.x-1.0-beta
+project = ableorganizer_dashboard
 dependencies[] = features
-dependencies[] = filter
 dependencies[] = media
 dependencies[] = page_manager
 dependencies[] = pathologic
 dependencies[] = views
 dependencies[] = views_content
+datestamp = 1386065615
 features[ctools][] = page_manager:pages_default:1
 features[ctools][] = views:views_default:3.0
 features[features_api][] = api:2
 features[page_manager_pages][] = ao_dashboard
 features[views_view][] = ao_dashboard_act_stream
 features_exclude[dependencies][ctools] = ctools
-
-
-; Information added by drush on 2013-12-03
-version = "7.x-1.0-beta6+156-dev"
-core = "7.x"
-project = "ableorganizer"
-datestamp = "1386065615"
-
+project path = profiles/ableorganizer/modules/features

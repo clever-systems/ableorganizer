@@ -122,7 +122,7 @@ function ableorganizer_dashboard_default_page_manager_pages() {
     ),
   );
   $display->cache = array();
-  $display->title = 'Able Organizer Dashboard';
+  $display->title = 'Dashboard';
   $display->content = array();
   $display->panels = array();
     $pane = new stdClass();
