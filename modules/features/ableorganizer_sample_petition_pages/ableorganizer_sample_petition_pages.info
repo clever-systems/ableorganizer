@@ -24,6 +24,7 @@ datestamp = 1386065615
 features[box][] = ao_petition_description
 features[box][] = ao_petition_header
 features[context][] = petition_header
+features[context][] = petitions_page_blocks
 features[crm_core_profile][] = canvass_signatures
 features[crm_core_profile][] = short_online_petition
 features[crm_core_profile][] = short_petition_with_message

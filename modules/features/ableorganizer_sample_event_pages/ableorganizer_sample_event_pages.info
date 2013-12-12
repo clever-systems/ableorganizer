@@ -27,6 +27,7 @@ features[box][] = ao_event_desc
 features[box][] = ao_event_header
 features[commerce_product_type][] = event_registration
 features[context][] = event_header
+features[context][] = events_page_blocks
 features[crm_core_profile][] = ao_cmcev_simple_many_form
 features[crm_core_profile][] = ao_cmcev_simple_quantity_form
 features[crm_core_profile][] = ao_cmcev_simple_reg_form

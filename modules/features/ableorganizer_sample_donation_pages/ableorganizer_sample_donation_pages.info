@@ -27,6 +27,7 @@ features[box][] = ao_donate_header
 features[box][] = ao_donate_info
 features[commerce_product_type][] = donation
 features[context][] = donate_header
+features[context][] = donate_page_blocks
 features[crm_core_profile][] = ao_annual_appeal_form
 features[crm_core_profile][] = ao_donation_form
 features[crm_core_profile][] = ao_fundraiser_form

@@ -26,6 +26,7 @@ datestamp = 1386065615
 features[box][] = ao_volunteer_header
 features[box][] = ao_volunteer_info
 features[context][] = ao_volunteer_header
+features[context][] = volunteers_page_blocks
 features[crm_core_profile][] = ao_volunteer_commitment_form
 features[crm_core_profile][] = ao_volunteer_commitment_form_2
 features[ctools][] = boxes:box:1
