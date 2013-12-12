@@ -67,8 +67,12 @@ projects[mimemail][version] = 1.0-beta1
 projects[mimemail][subdir] = "contrib"
 
 ; content
-projects[pathologic] = 2.11
+projects[pathologic][type] = "module"
 projects[pathologic][subdir] = "contrib"
+projects[pathologic][download][type] = "git"
+projects[pathologic][download][url] = "http://git.drupal.org/project/pathologic.git"
+projects[pathologic][download][branch] = "7.x-2.x"
+projects[pathologic][download][revision] = "aae73b7969ad6d7ae7f883fed1255999fb2bad34"
 projects[wysiwyg][type] = "module"
 projects[wysiwyg][subdir] = "contrib"
 projects[wysiwyg][download][type] = "git"
@@ -185,10 +189,10 @@ projects[crm_core_donation][subdir] = "contrib"
 projects[crm_core_event][version] = 0.10
 projects[crm_core_event][subdir] = "contrib"
 ; petitions
-projects[crm_core_petition][version] = 0.8
+projects[crm_core_petition][version] = 0.9
 projects[crm_core_petition][subdir] = "contrib"
 ; volunteers
-projects[crm_core_volunteer][version] = 0.10
+projects[crm_core_volunteer][version] = 0.11
 projects[crm_core_volunteer][subdir] = "contrib"
 
 ; libraries
@@ -222,8 +226,6 @@ projects[entity_menu_links][subdir] = "contrib"
 projects[entity_menu_links][download][type] = git
 projects[entity_menu_links][download][branch] = 7.x-1.x
 projects[entity_menu_links][download][revision] = "9dd1dd700714051aefc8e932607abedee977e258"
-projects[uuid_features][version] = 1.0-alpha3
-projects[uuid_features][subdir] = "contrib"
 
 ;themes
 projects[omega] = 3.1
