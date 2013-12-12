@@ -103,17 +103,3 @@ function _ao_mlid_load($entity) {
   }
   return $mlid;
 }
-
-/**
- * Implements hook_views_default_views_alter().
- *
- * Disable crm_core_contacts and crm_activities_by_contact by default.
- */
-function ao_views_default_views_alter(&$views) {
-  if ($views['crm_core_contacts']) {
-    $views['crm_core_contacts']->disabled = TRUE;
-  }
-  if ($views['crm_activities_by_contact']) {
-    $views['crm_activities_by_contact']->disabled = TRUE;
-  }
-}
