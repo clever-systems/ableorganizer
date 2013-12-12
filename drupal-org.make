@@ -12,6 +12,7 @@ projects[ctools][subdir] = "contrib"
 projects[entity][version] = 1.2
 projects[entity][subdir] = "contrib"
 projects[entity][patch][] = "https://drupal.org/files/unformatted_replacements-2082407-1.patch"
+projects[entity][patch][] = "https://drupal.org/files/php5.5_bitwise_operator_fix-2050775-7_0.patch"
 projects[entityreference][version] = 1.1
 projects[entityreference][subdir] = "contrib"
 projects[relation][version] = 1.0-rc4
