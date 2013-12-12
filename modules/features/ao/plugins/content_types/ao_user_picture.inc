@@ -67,9 +67,14 @@ function ao_user_picture_render($subtype, $conf, $panel_args, $context = NULL) {
 
   $content = '';
   $user = crm_core_user_sync_get_user_from_contact_id($panel_args[0]);
+  
+  $content = theme('user_picture', array('account' => $user, 'style_name' => 'user_picture'));
+  
   if (!empty($user)) {
-    $content = theme('user_picture', array('account' => $user));
     // 	$content .= theme('username', array('account' => $user));
+    $content .= '<div class="contact-user-info"><span>User account</span>: ' . l($user->name, 'user/' . $user->uid) . '</div>';    
+  } else {
+    $content .= '<div class="contact-user-info nouser">No user account associated with this contact.</div>';
   }
 
   $block = new stdClass();

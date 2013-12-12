@@ -25,58 +25,200 @@ function ao_views_default_views() {
   $handler->display->display_options['title'] = 'Recent Activities';
   $handler->display->display_options['css_class'] = 'fancy-headers';
   $handler->display->display_options['use_more_always'] = FALSE;
-  $handler->display->display_options['access']['type'] = 'none';
+  $handler->display->display_options['access']['type'] = 'perm';
+  $handler->display->display_options['access']['perm'] = 'view any crm_core_contact entity';
   $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['exposed_form']['type'] = 'basic';
   $handler->display->display_options['pager']['type'] = 'some';
   $handler->display->display_options['pager']['options']['items_per_page'] = '5';
   $handler->display->display_options['pager']['options']['offset'] = '0';
-  $handler->display->display_options['style_plugin'] = 'table';
-  $handler->display->display_options['style_options']['columns'] = array(
-    'activity_id' => 'activity_id',
-    'title' => 'title',
-  );
-  $handler->display->display_options['style_options']['default'] = '-1';
-  $handler->display->display_options['style_options']['info'] = array(
-    'activity_id' => array(
-      'sortable' => 0,
-      'default_sort_order' => 'asc',
-      'align' => '',
-      'separator' => '',
-      'empty_column' => 0,
-    ),
-    'title' => array(
-      'sortable' => 0,
-      'default_sort_order' => 'asc',
-      'align' => '',
-      'separator' => '',
-      'empty_column' => 0,
-    ),
-  );
+  $handler->display->display_options['style_plugin'] = 'default';
+  $handler->display->display_options['row_plugin'] = 'fields';
+  /* Header: Global: Text area */
+  $handler->display->display_options['header']['area']['id'] = 'area';
+  $handler->display->display_options['header']['area']['table'] = 'views';
+  $handler->display->display_options['header']['area']['field'] = 'area';
+  $handler->display->display_options['header']['area']['content'] = '<a href="/crm-core/contact/[contact_id]/activity">View all</a>';
+  $handler->display->display_options['header']['area']['format'] = 'filtered_html';
+  $handler->display->display_options['header']['area']['tokenize'] = TRUE;
   /* Relationship: Entity Reference: Referenced Entity */
   $handler->display->display_options['relationships']['field_activity_participants_target_id']['id'] = 'field_activity_participants_target_id';
   $handler->display->display_options['relationships']['field_activity_participants_target_id']['table'] = 'field_data_field_activity_participants';
   $handler->display->display_options['relationships']['field_activity_participants_target_id']['field'] = 'field_activity_participants_target_id';
   $handler->display->display_options['relationships']['field_activity_participants_target_id']['required'] = TRUE;
-  /* Field: CRM Activity: Activity ID */
+  /* Field: CRM Contact: Contact ID */
+  $handler->display->display_options['fields']['contact_id']['id'] = 'contact_id';
+  $handler->display->display_options['fields']['contact_id']['table'] = 'crm_core_contact';
+  $handler->display->display_options['fields']['contact_id']['field'] = 'contact_id';
+  $handler->display->display_options['fields']['contact_id']['relationship'] = 'field_activity_participants_target_id';
+  $handler->display->display_options['fields']['contact_id']['label'] = '';
+  $handler->display->display_options['fields']['contact_id']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['contact_id']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['contact_id']['link_to_contact'] = 0;
+  /* Field: CRM Core Activity: Activity ID */
   $handler->display->display_options['fields']['activity_id']['id'] = 'activity_id';
   $handler->display->display_options['fields']['activity_id']['table'] = 'crm_core_activity';
   $handler->display->display_options['fields']['activity_id']['field'] = 'activity_id';
   $handler->display->display_options['fields']['activity_id']['exclude'] = TRUE;
-  /* Field: CRM Activity: Title */
+  /* Field: CRM Core Contact: Household */
+  $handler->display->display_options['fields']['contact_name']['id'] = 'contact_name';
+  $handler->display->display_options['fields']['contact_name']['table'] = 'field_data_contact_name';
+  $handler->display->display_options['fields']['contact_name']['field'] = 'contact_name';
+  $handler->display->display_options['fields']['contact_name']['relationship'] = 'field_activity_participants_target_id';
+  $handler->display->display_options['fields']['contact_name']['label'] = '';
+  $handler->display->display_options['fields']['contact_name']['alter']['make_link'] = TRUE;
+  $handler->display->display_options['fields']['contact_name']['alter']['path'] = 'crm-core/contact/[contact_id]';
+  $handler->display->display_options['fields']['contact_name']['element_type'] = '0';
+  $handler->display->display_options['fields']['contact_name']['element_label_type'] = '0';
+  $handler->display->display_options['fields']['contact_name']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['contact_name']['element_wrapper_type'] = '0';
+  $handler->display->display_options['fields']['contact_name']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['contact_name']['click_sort_column'] = 'title';
+  $handler->display->display_options['fields']['contact_name']['settings'] = array(
+    'format' => 'short_full',
+    'markup' => 0,
+    'output' => 'default',
+    'multiple' => 'default',
+    'multiple_delimiter' => ', ',
+    'multiple_and' => 'text',
+    'multiple_delimiter_precedes_last' => 'never',
+    'multiple_el_al_min' => '3',
+    'multiple_el_al_first' => '1',
+  );
+  /* Field: CRM Core Activity: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'crm_core_activity';
   $handler->display->display_options['fields']['title']['field'] = 'title';
   $handler->display->display_options['fields']['title']['label'] = '';
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
-  /* Field: CRM Activity: Type */
+  /* Field: CRM Activity Type: Type */
   $handler->display->display_options['fields']['type']['id'] = 'type';
   $handler->display->display_options['fields']['type']['table'] = 'crm_core_activity_type';
   $handler->display->display_options['fields']['type']['field'] = 'type';
   $handler->display->display_options['fields']['type']['label'] = '';
   $handler->display->display_options['fields']['type']['alter']['activity_create_link'] = 0;
   $handler->display->display_options['fields']['type']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['type']['element_default_classes'] = FALSE;
+  /* Field: CRM Activity: Date of Signature */
+  $handler->display->display_options['fields']['field_cmcp_received_date']['id'] = 'field_cmcp_received_date';
+  $handler->display->display_options['fields']['field_cmcp_received_date']['table'] = 'field_data_field_cmcp_received_date';
+  $handler->display->display_options['fields']['field_cmcp_received_date']['field'] = 'field_cmcp_received_date';
+  $handler->display->display_options['fields']['field_cmcp_received_date']['label'] = '';
+  $handler->display->display_options['fields']['field_cmcp_received_date']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_cmcp_received_date']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_cmcp_received_date']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_cmcp_received_date']['hide_alter_empty'] = FALSE;
+  $handler->display->display_options['fields']['field_cmcp_received_date']['type'] = 'format_interval';
+  $handler->display->display_options['fields']['field_cmcp_received_date']['settings'] = array(
+    'interval' => '2',
+    'interval_display' => 'time ago',
+  );
+  /* Field: CRM Activity: Receive Date */
+  $handler->display->display_options['fields']['field_cmcd_receive_date']['id'] = 'field_cmcd_receive_date';
+  $handler->display->display_options['fields']['field_cmcd_receive_date']['table'] = 'field_data_field_cmcd_receive_date';
+  $handler->display->display_options['fields']['field_cmcd_receive_date']['field'] = 'field_cmcd_receive_date';
+  $handler->display->display_options['fields']['field_cmcd_receive_date']['label'] = '';
+  $handler->display->display_options['fields']['field_cmcd_receive_date']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_cmcd_receive_date']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_cmcd_receive_date']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_cmcd_receive_date']['type'] = 'format_interval';
+  $handler->display->display_options['fields']['field_cmcd_receive_date']['settings'] = array(
+    'interval' => '2',
+    'interval_display' => 'time ago',
+  );
+  /* Field: CRM Activity: Registration Date */
+  $handler->display->display_options['fields']['field_cmcv_reg_date']['id'] = 'field_cmcv_reg_date';
+  $handler->display->display_options['fields']['field_cmcv_reg_date']['table'] = 'field_data_field_cmcv_reg_date';
+  $handler->display->display_options['fields']['field_cmcv_reg_date']['field'] = 'field_cmcv_reg_date';
+  $handler->display->display_options['fields']['field_cmcv_reg_date']['label'] = '';
+  $handler->display->display_options['fields']['field_cmcv_reg_date']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_cmcv_reg_date']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_cmcv_reg_date']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_cmcv_reg_date']['type'] = 'format_interval';
+  $handler->display->display_options['fields']['field_cmcv_reg_date']['settings'] = array(
+    'interval' => '2',
+    'interval_display' => 'time ago',
+  );
+  /* Field: CRM Activity: Registration Date */
+  $handler->display->display_options['fields']['field_cmcev_reg_date']['id'] = 'field_cmcev_reg_date';
+  $handler->display->display_options['fields']['field_cmcev_reg_date']['table'] = 'field_data_field_cmcev_reg_date';
+  $handler->display->display_options['fields']['field_cmcev_reg_date']['field'] = 'field_cmcev_reg_date';
+  $handler->display->display_options['fields']['field_cmcev_reg_date']['label'] = '';
+  $handler->display->display_options['fields']['field_cmcev_reg_date']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_cmcev_reg_date']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_cmcev_reg_date']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_cmcev_reg_date']['type'] = 'format_interval';
+  $handler->display->display_options['fields']['field_cmcev_reg_date']['settings'] = array(
+    'interval' => '2',
+    'interval_display' => 'time ago',
+  );
+  /* Field: Global: Custom text */
+  $handler->display->display_options['fields']['nothing']['id'] = 'nothing';
+  $handler->display->display_options['fields']['nothing']['table'] = 'views';
+  $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
+  $handler->display->display_options['fields']['nothing']['alter']['text'] = '[field_cmcp_received_date]
+[field_cmcd_receive_date]
+[field_cmcv_reg_date]
+[field_cmcev_reg_date]';
+  /* Field: CRM Activity: Donation Page */
+  $handler->display->display_options['fields']['field_cmcd_page']['id'] = 'field_cmcd_page';
+  $handler->display->display_options['fields']['field_cmcd_page']['table'] = 'field_data_field_cmcd_page';
+  $handler->display->display_options['fields']['field_cmcd_page']['field'] = 'field_cmcd_page';
+  $handler->display->display_options['fields']['field_cmcd_page']['label'] = '';
+  $handler->display->display_options['fields']['field_cmcd_page']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_cmcd_page']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_cmcd_page']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_cmcd_page']['settings'] = array(
+    'link' => 1,
+  );
+  /* Field: CRM Activity: Event */
+  $handler->display->display_options['fields']['field_cmcev_event']['id'] = 'field_cmcev_event';
+  $handler->display->display_options['fields']['field_cmcev_event']['table'] = 'field_data_field_cmcev_event';
+  $handler->display->display_options['fields']['field_cmcev_event']['field'] = 'field_cmcev_event';
+  $handler->display->display_options['fields']['field_cmcev_event']['label'] = '';
+  $handler->display->display_options['fields']['field_cmcev_event']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_cmcev_event']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_cmcev_event']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_cmcev_event']['settings'] = array(
+    'link' => 1,
+  );
+  /* Field: CRM Activity: Petition */
+  $handler->display->display_options['fields']['field_cmcp_petition_page']['id'] = 'field_cmcp_petition_page';
+  $handler->display->display_options['fields']['field_cmcp_petition_page']['table'] = 'field_data_field_cmcp_petition_page';
+  $handler->display->display_options['fields']['field_cmcp_petition_page']['field'] = 'field_cmcp_petition_page';
+  $handler->display->display_options['fields']['field_cmcp_petition_page']['label'] = '';
+  $handler->display->display_options['fields']['field_cmcp_petition_page']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_cmcp_petition_page']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_cmcp_petition_page']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_cmcp_petition_page']['settings'] = array(
+    'link' => 1,
+  );
+  /* Field: CRM Activity: Volunteer Opportunity */
+  $handler->display->display_options['fields']['field_cmcv_vo_reference']['id'] = 'field_cmcv_vo_reference';
+  $handler->display->display_options['fields']['field_cmcv_vo_reference']['table'] = 'field_data_field_cmcv_vo_reference';
+  $handler->display->display_options['fields']['field_cmcv_vo_reference']['field'] = 'field_cmcv_vo_reference';
+  $handler->display->display_options['fields']['field_cmcv_vo_reference']['label'] = '';
+  $handler->display->display_options['fields']['field_cmcv_vo_reference']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_cmcv_vo_reference']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_cmcv_vo_reference']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_cmcv_vo_reference']['settings'] = array(
+    'link' => 1,
+  );
+  /* Field: Global: Custom text */
+  $handler->display->display_options['fields']['nothing_1']['id'] = 'nothing_1';
+  $handler->display->display_options['fields']['nothing_1']['table'] = 'views';
+  $handler->display->display_options['fields']['nothing_1']['field'] = 'nothing';
+  $handler->display->display_options['fields']['nothing_1']['label'] = 'Target';
+  $handler->display->display_options['fields']['nothing_1']['alter']['text'] = '[field_cmcd_page]
+[field_cmcev_event]
+[field_cmcp_petition_page]
+[field_cmcv_vo_reference]';
+  /* Field: CRM Activity Type: Activity string */
+  $handler->display->display_options['fields']['activity_string']['id'] = 'activity_string';
+  $handler->display->display_options['fields']['activity_string']['table'] = 'crm_core_activity_type';
+  $handler->display->display_options['fields']['activity_string']['field'] = 'activity_string';
+  $handler->display->display_options['fields']['activity_string']['element_default_classes'] = FALSE;
   /* Sort criterion: CRM Activity: Date (field_activity_date) */
   $handler->display->display_options['sorts']['field_activity_date_value']['id'] = 'field_activity_date_value';
   $handler->display->display_options['sorts']['field_activity_date_value']['table'] = 'field_data_field_activity_date';
@@ -285,6 +427,319 @@ function ao_views_default_views() {
   $export['ao_contact_map_individual'] = $view;
 
   $view = new view();
+  $view->name = 'ao_crm_activities_by_contact';
+  $view->description = 'List of activities of the contact';
+  $view->tag = 'default';
+  $view->base_table = 'crm_core_activity';
+  $view->human_name = 'AO CRM Activities by contact';
+  $view->core = 7;
+  $view->api_version = '3.0';
+  $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
+
+  /* Display: Master */
+  $handler = $view->new_display('default', 'Master', 'default');
+  $handler->display->display_options['title'] = 'Activities';
+  $handler->display->display_options['css_class'] = 'activity-listing';
+  $handler->display->display_options['use_more_always'] = FALSE;
+  $handler->display->display_options['access']['type'] = 'perm';
+  $handler->display->display_options['access']['perm'] = 'view any crm_core_activity entity';
+  $handler->display->display_options['cache']['type'] = 'none';
+  $handler->display->display_options['query']['type'] = 'views_query';
+  $handler->display->display_options['exposed_form']['type'] = 'basic';
+  $handler->display->display_options['exposed_form']['options']['reset_button'] = TRUE;
+  $handler->display->display_options['pager']['type'] = 'full';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '50';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['pager']['options']['id'] = '0';
+  $handler->display->display_options['pager']['options']['quantity'] = '9';
+  $handler->display->display_options['style_plugin'] = 'default';
+  $handler->display->display_options['row_plugin'] = 'fields';
+  /* Header: Global: Result summary */
+  $handler->display->display_options['header']['result']['id'] = 'result';
+  $handler->display->display_options['header']['result']['table'] = 'views';
+  $handler->display->display_options['header']['result']['field'] = 'result';
+  $handler->display->display_options['header']['result']['empty'] = TRUE;
+  $handler->display->display_options['header']['result']['content'] = '<div class="results-summary">Displaying @start - @end of @total activities for contact.</div>';
+  /* No results behavior: Global: Text area */
+  $handler->display->display_options['empty']['area']['id'] = 'area';
+  $handler->display->display_options['empty']['area']['table'] = 'views';
+  $handler->display->display_options['empty']['area']['field'] = 'area';
+  $handler->display->display_options['empty']['area']['empty'] = TRUE;
+  $handler->display->display_options['empty']['area']['content'] = 'There are no activities available. <a href="activity/add">Add one now</a>.';
+  $handler->display->display_options['empty']['area']['format'] = 'filtered_html';
+  /* Relationship: Entity Reference: Referenced Entity */
+  $handler->display->display_options['relationships']['field_activity_participants_target_id']['id'] = 'field_activity_participants_target_id';
+  $handler->display->display_options['relationships']['field_activity_participants_target_id']['table'] = 'field_data_field_activity_participants';
+  $handler->display->display_options['relationships']['field_activity_participants_target_id']['field'] = 'field_activity_participants_target_id';
+  /* Field: CRM Core Activity: Activity ID */
+  $handler->display->display_options['fields']['activity_id']['id'] = 'activity_id';
+  $handler->display->display_options['fields']['activity_id']['table'] = 'crm_core_activity';
+  $handler->display->display_options['fields']['activity_id']['field'] = 'activity_id';
+  $handler->display->display_options['fields']['activity_id']['label'] = '';
+  $handler->display->display_options['fields']['activity_id']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['activity_id']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['activity_id']['hide_alter_empty'] = FALSE;
+  /* Field: CRM Activity: Date */
+  $handler->display->display_options['fields']['field_activity_date']['id'] = 'field_activity_date';
+  $handler->display->display_options['fields']['field_activity_date']['table'] = 'field_data_field_activity_date';
+  $handler->display->display_options['fields']['field_activity_date']['field'] = 'field_activity_date';
+  $handler->display->display_options['fields']['field_activity_date']['label'] = '';
+  $handler->display->display_options['fields']['field_activity_date']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_activity_date']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_activity_date']['type'] = 'format_interval';
+  $handler->display->display_options['fields']['field_activity_date']['settings'] = array(
+    'interval' => '2',
+    'interval_display' => 'time ago',
+  );
+  /* Field: CRM Contact: Contact ID */
+  $handler->display->display_options['fields']['contact_id']['id'] = 'contact_id';
+  $handler->display->display_options['fields']['contact_id']['table'] = 'crm_core_contact';
+  $handler->display->display_options['fields']['contact_id']['field'] = 'contact_id';
+  $handler->display->display_options['fields']['contact_id']['relationship'] = 'field_activity_participants_target_id';
+  $handler->display->display_options['fields']['contact_id']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['contact_id']['link_to_contact'] = 0;
+  /* Field: CRM Core Contact: Household */
+  $handler->display->display_options['fields']['contact_name']['id'] = 'contact_name';
+  $handler->display->display_options['fields']['contact_name']['table'] = 'field_data_contact_name';
+  $handler->display->display_options['fields']['contact_name']['field'] = 'contact_name';
+  $handler->display->display_options['fields']['contact_name']['relationship'] = 'field_activity_participants_target_id';
+  $handler->display->display_options['fields']['contact_name']['label'] = '';
+  $handler->display->display_options['fields']['contact_name']['alter']['make_link'] = TRUE;
+  $handler->display->display_options['fields']['contact_name']['alter']['path'] = 'crm-core/contact/[contact_id]';
+  $handler->display->display_options['fields']['contact_name']['element_type'] = '0';
+  $handler->display->display_options['fields']['contact_name']['element_label_type'] = '0';
+  $handler->display->display_options['fields']['contact_name']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['contact_name']['element_wrapper_type'] = '0';
+  $handler->display->display_options['fields']['contact_name']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['contact_name']['click_sort_column'] = 'title';
+  $handler->display->display_options['fields']['contact_name']['settings'] = array(
+    'format' => 'short_full',
+    'markup' => 0,
+    'output' => 'default',
+    'multiple' => 'default',
+    'multiple_delimiter' => ', ',
+    'multiple_and' => 'text',
+    'multiple_delimiter_precedes_last' => 'never',
+    'multiple_el_al_min' => '3',
+    'multiple_el_al_first' => '1',
+  );
+  /* Field: CRM Activity: Date of Signature */
+  $handler->display->display_options['fields']['field_cmcp_received_date']['id'] = 'field_cmcp_received_date';
+  $handler->display->display_options['fields']['field_cmcp_received_date']['table'] = 'field_data_field_cmcp_received_date';
+  $handler->display->display_options['fields']['field_cmcp_received_date']['field'] = 'field_cmcp_received_date';
+  $handler->display->display_options['fields']['field_cmcp_received_date']['label'] = '';
+  $handler->display->display_options['fields']['field_cmcp_received_date']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_cmcp_received_date']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_cmcp_received_date']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_cmcp_received_date']['type'] = 'format_interval';
+  $handler->display->display_options['fields']['field_cmcp_received_date']['settings'] = array(
+    'interval' => '2',
+    'interval_display' => 'time ago',
+  );
+  /* Field: CRM Activity: Receive Date */
+  $handler->display->display_options['fields']['field_cmcd_receive_date']['id'] = 'field_cmcd_receive_date';
+  $handler->display->display_options['fields']['field_cmcd_receive_date']['table'] = 'field_data_field_cmcd_receive_date';
+  $handler->display->display_options['fields']['field_cmcd_receive_date']['field'] = 'field_cmcd_receive_date';
+  $handler->display->display_options['fields']['field_cmcd_receive_date']['label'] = '';
+  $handler->display->display_options['fields']['field_cmcd_receive_date']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_cmcd_receive_date']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_cmcd_receive_date']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_cmcd_receive_date']['type'] = 'format_interval';
+  $handler->display->display_options['fields']['field_cmcd_receive_date']['settings'] = array(
+    'interval' => '2',
+    'interval_display' => 'time ago',
+  );
+  /* Field: CRM Activity: Registration Date */
+  $handler->display->display_options['fields']['field_cmcv_reg_date']['id'] = 'field_cmcv_reg_date';
+  $handler->display->display_options['fields']['field_cmcv_reg_date']['table'] = 'field_data_field_cmcv_reg_date';
+  $handler->display->display_options['fields']['field_cmcv_reg_date']['field'] = 'field_cmcv_reg_date';
+  $handler->display->display_options['fields']['field_cmcv_reg_date']['label'] = '';
+  $handler->display->display_options['fields']['field_cmcv_reg_date']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_cmcv_reg_date']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_cmcv_reg_date']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_cmcv_reg_date']['type'] = 'format_interval';
+  $handler->display->display_options['fields']['field_cmcv_reg_date']['settings'] = array(
+    'interval' => '2',
+    'interval_display' => 'time ago',
+  );
+  /* Field: CRM Activity: Registration Date */
+  $handler->display->display_options['fields']['field_cmcev_reg_date']['id'] = 'field_cmcev_reg_date';
+  $handler->display->display_options['fields']['field_cmcev_reg_date']['table'] = 'field_data_field_cmcev_reg_date';
+  $handler->display->display_options['fields']['field_cmcev_reg_date']['field'] = 'field_cmcev_reg_date';
+  $handler->display->display_options['fields']['field_cmcev_reg_date']['label'] = '';
+  $handler->display->display_options['fields']['field_cmcev_reg_date']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_cmcev_reg_date']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_cmcev_reg_date']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_cmcev_reg_date']['type'] = 'format_interval';
+  $handler->display->display_options['fields']['field_cmcev_reg_date']['settings'] = array(
+    'interval' => '2',
+    'interval_display' => 'time ago',
+  );
+  /* Field: Global: Custom text */
+  $handler->display->display_options['fields']['nothing']['id'] = 'nothing';
+  $handler->display->display_options['fields']['nothing']['table'] = 'views';
+  $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
+  $handler->display->display_options['fields']['nothing']['label'] = 'Date Received';
+  $handler->display->display_options['fields']['nothing']['alter']['text'] = '[field_cmcp_received_date]
+[field_cmcd_receive_date]
+[field_cmcv_reg_date]
+[field_cmcev_reg_date]';
+  $handler->display->display_options['fields']['nothing']['empty'] = '[field_activity_date]';
+  /* Field: Global: Custom text */
+  $handler->display->display_options['fields']['nothing_1']['id'] = 'nothing_1';
+  $handler->display->display_options['fields']['nothing_1']['table'] = 'views';
+  $handler->display->display_options['fields']['nothing_1']['field'] = 'nothing';
+  $handler->display->display_options['fields']['nothing_1']['label'] = 'View Link';
+  $handler->display->display_options['fields']['nothing_1']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['nothing_1']['alter']['text'] = 'View';
+  $handler->display->display_options['fields']['nothing_1']['alter']['make_link'] = TRUE;
+  $handler->display->display_options['fields']['nothing_1']['alter']['path'] = 'crm-core/contact/[contact_id]/activity/[activity_id]';
+  $handler->display->display_options['fields']['nothing_1']['element_label_colon'] = FALSE;
+  /* Field: Global: Custom text */
+  $handler->display->display_options['fields']['nothing_2']['id'] = 'nothing_2';
+  $handler->display->display_options['fields']['nothing_2']['table'] = 'views';
+  $handler->display->display_options['fields']['nothing_2']['field'] = 'nothing';
+  $handler->display->display_options['fields']['nothing_2']['label'] = 'Edit Link';
+  $handler->display->display_options['fields']['nothing_2']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['nothing_2']['alter']['text'] = 'Edit';
+  $handler->display->display_options['fields']['nothing_2']['alter']['make_link'] = TRUE;
+  $handler->display->display_options['fields']['nothing_2']['alter']['path'] = 'crm-core/contact/[contact_id]/activity/[activity_id]/edit?destination=crm-core/contact/[contact_id]/activity';
+  /* Field: Global: Custom text */
+  $handler->display->display_options['fields']['nothing_3']['id'] = 'nothing_3';
+  $handler->display->display_options['fields']['nothing_3']['table'] = 'views';
+  $handler->display->display_options['fields']['nothing_3']['field'] = 'nothing';
+  $handler->display->display_options['fields']['nothing_3']['label'] = 'Delete Link';
+  $handler->display->display_options['fields']['nothing_3']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['nothing_3']['alter']['text'] = 'Delete';
+  $handler->display->display_options['fields']['nothing_3']['alter']['make_link'] = TRUE;
+  $handler->display->display_options['fields']['nothing_3']['alter']['path'] = 'crm-core/contact/[contact_id]/activity/[activity_id]/delete?destination=crm-core/contact/[contact_id]/activity';
+  /* Field: CRM Core Activity: Title */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'crm_core_activity';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['alter']['make_link'] = TRUE;
+  $handler->display->display_options['fields']['title']['alter']['path'] = 'crm-core/contact/[contact_id]/activity/[activity_id]';
+  $handler->display->display_options['fields']['title']['hide_alter_empty'] = FALSE;
+  /* Field: CRM Activity Type: Label */
+  $handler->display->display_options['fields']['label']['id'] = 'label';
+  $handler->display->display_options['fields']['label']['table'] = 'crm_core_activity_type';
+  $handler->display->display_options['fields']['label']['field'] = 'label';
+  $handler->display->display_options['fields']['label']['label'] = 'Activity Type';
+  /* Field: Global: Custom text */
+  $handler->display->display_options['fields']['nothing_4']['id'] = 'nothing_4';
+  $handler->display->display_options['fields']['nothing_4']['table'] = 'views';
+  $handler->display->display_options['fields']['nothing_4']['field'] = 'nothing';
+  $handler->display->display_options['fields']['nothing_4']['label'] = 'Operations';
+  $handler->display->display_options['fields']['nothing_4']['alter']['text'] = '[nothing_1] [nothing_2] [nothing_3]';
+  $handler->display->display_options['fields']['nothing_4']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['nothing_4']['element_default_classes'] = FALSE;
+  /* Field: CRM Activity: Donation Page */
+  $handler->display->display_options['fields']['field_cmcd_page']['id'] = 'field_cmcd_page';
+  $handler->display->display_options['fields']['field_cmcd_page']['table'] = 'field_data_field_cmcd_page';
+  $handler->display->display_options['fields']['field_cmcd_page']['field'] = 'field_cmcd_page';
+  $handler->display->display_options['fields']['field_cmcd_page']['label'] = '';
+  $handler->display->display_options['fields']['field_cmcd_page']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_cmcd_page']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_cmcd_page']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_cmcd_page']['settings'] = array(
+    'link' => 1,
+  );
+  /* Field: CRM Activity: Event */
+  $handler->display->display_options['fields']['field_cmcev_event']['id'] = 'field_cmcev_event';
+  $handler->display->display_options['fields']['field_cmcev_event']['table'] = 'field_data_field_cmcev_event';
+  $handler->display->display_options['fields']['field_cmcev_event']['field'] = 'field_cmcev_event';
+  $handler->display->display_options['fields']['field_cmcev_event']['label'] = '';
+  $handler->display->display_options['fields']['field_cmcev_event']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_cmcev_event']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_cmcev_event']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_cmcev_event']['settings'] = array(
+    'link' => 1,
+  );
+  /* Field: CRM Activity: Petition */
+  $handler->display->display_options['fields']['field_cmcp_petition_page']['id'] = 'field_cmcp_petition_page';
+  $handler->display->display_options['fields']['field_cmcp_petition_page']['table'] = 'field_data_field_cmcp_petition_page';
+  $handler->display->display_options['fields']['field_cmcp_petition_page']['field'] = 'field_cmcp_petition_page';
+  $handler->display->display_options['fields']['field_cmcp_petition_page']['label'] = '';
+  $handler->display->display_options['fields']['field_cmcp_petition_page']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_cmcp_petition_page']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_cmcp_petition_page']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_cmcp_petition_page']['settings'] = array(
+    'link' => 1,
+  );
+  /* Field: CRM Activity: Volunteer Opportunity */
+  $handler->display->display_options['fields']['field_cmcv_vo_reference']['id'] = 'field_cmcv_vo_reference';
+  $handler->display->display_options['fields']['field_cmcv_vo_reference']['table'] = 'field_data_field_cmcv_vo_reference';
+  $handler->display->display_options['fields']['field_cmcv_vo_reference']['field'] = 'field_cmcv_vo_reference';
+  $handler->display->display_options['fields']['field_cmcv_vo_reference']['label'] = '';
+  $handler->display->display_options['fields']['field_cmcv_vo_reference']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_cmcv_vo_reference']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_cmcv_vo_reference']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_cmcv_vo_reference']['settings'] = array(
+    'link' => 1,
+  );
+  /* Field: Global: Custom text */
+  $handler->display->display_options['fields']['nothing_5']['id'] = 'nothing_5';
+  $handler->display->display_options['fields']['nothing_5']['table'] = 'views';
+  $handler->display->display_options['fields']['nothing_5']['field'] = 'nothing';
+  $handler->display->display_options['fields']['nothing_5']['label'] = 'Target';
+  $handler->display->display_options['fields']['nothing_5']['alter']['text'] = '[field_cmcd_page]
+[field_cmcev_event]
+[field_cmcp_petition_page]
+[field_cmcv_vo_reference]';
+  $handler->display->display_options['fields']['nothing_5']['element_default_classes'] = FALSE;
+  /* Field: CRM Activity Type: Type */
+  $handler->display->display_options['fields']['type']['id'] = 'type';
+  $handler->display->display_options['fields']['type']['table'] = 'crm_core_activity_type';
+  $handler->display->display_options['fields']['type']['field'] = 'type';
+  $handler->display->display_options['fields']['type']['label'] = '';
+  $handler->display->display_options['fields']['type']['alter']['activity_create_link'] = 0;
+  $handler->display->display_options['fields']['type']['element_type'] = '0';
+  $handler->display->display_options['fields']['type']['element_label_type'] = '0';
+  $handler->display->display_options['fields']['type']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['type']['element_wrapper_type'] = '0';
+  $handler->display->display_options['fields']['type']['element_default_classes'] = FALSE;
+  /* Field: CRM Activity Type: Activity string */
+  $handler->display->display_options['fields']['activity_string']['id'] = 'activity_string';
+  $handler->display->display_options['fields']['activity_string']['table'] = 'crm_core_activity_type';
+  $handler->display->display_options['fields']['activity_string']['field'] = 'activity_string';
+  $handler->display->display_options['fields']['activity_string']['label'] = '';
+  $handler->display->display_options['fields']['activity_string']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['activity_string']['element_default_classes'] = FALSE;
+  /* Contextual filter: CRM Activity: Participants (field_activity_participants) */
+  $handler->display->display_options['arguments']['field_activity_participants_target_id']['id'] = 'field_activity_participants_target_id';
+  $handler->display->display_options['arguments']['field_activity_participants_target_id']['table'] = 'field_data_field_activity_participants';
+  $handler->display->display_options['arguments']['field_activity_participants_target_id']['field'] = 'field_activity_participants_target_id';
+  $handler->display->display_options['arguments']['field_activity_participants_target_id']['default_action'] = 'not found';
+  $handler->display->display_options['arguments']['field_activity_participants_target_id']['default_argument_type'] = 'fixed';
+  $handler->display->display_options['arguments']['field_activity_participants_target_id']['summary']['number_of_records'] = '0';
+  $handler->display->display_options['arguments']['field_activity_participants_target_id']['summary']['format'] = 'default_summary';
+  $handler->display->display_options['arguments']['field_activity_participants_target_id']['summary_options']['items_per_page'] = '25';
+  /* Filter criterion: CRM Core Activity: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'crm_core_activity';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['exposed'] = TRUE;
+  $handler->display->display_options['filters']['type']['expose']['operator_id'] = 'type_op';
+  $handler->display->display_options['filters']['type']['expose']['label'] = 'Filter by:';
+  $handler->display->display_options['filters']['type']['expose']['operator'] = 'type_op';
+  $handler->display->display_options['filters']['type']['expose']['identifier'] = 'type';
+  $handler->display->display_options['filters']['type']['expose']['remember_roles'] = array(
+    2 => '2',
+    1 => 0,
+    3 => 0,
+  );
+
+  /* Display: Page */
+  $handler = $view->new_display('page', 'Page', 'page');
+  $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
+  $handler->display->display_options['path'] = 'crm-core/contact/%/activity';
+  $handler->display->display_options['menu']['type'] = 'tab';
+  $handler->display->display_options['menu']['title'] = 'Activities';
+  $handler->display->display_options['menu']['weight'] = '0';
+  $handler->display->display_options['menu']['context'] = 0;
+  $export['ao_crm_activities_by_contact'] = $view;
+
+  $view = new view();
   $view->name = 'ao_crm_core_contacts';
   $view->description = 'Able Organizer list of all contacts in the system';
   $view->tag = 'Able Organizer';
@@ -485,18 +940,21 @@ function ao_views_default_views() {
     ),
   );
   /* Field: CRM Contact: Contact Type */
-  $handler->display->display_options['fields']['type']['id'] = 'type';
-  $handler->display->display_options['fields']['type']['table'] = 'crm_core_contact';
-  $handler->display->display_options['fields']['type']['field'] = 'type';
-  $handler->display->display_options['fields']['type']['exclude'] = TRUE;
-  $handler->display->display_options['fields']['type']['hide_alter_empty'] = FALSE;
+  $handler->display->display_options['fields']['type_1']['id'] = 'type_1';
+  $handler->display->display_options['fields']['type_1']['table'] = 'crm_core_contact';
+  $handler->display->display_options['fields']['type_1']['field'] = 'type';
+  $handler->display->display_options['fields']['type_1']['label'] = '';
+  $handler->display->display_options['fields']['type_1']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['type_1']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['type_1']['link_to_contact_type'] = 0;
+  $handler->display->display_options['fields']['type_1']['machine_name'] = 1;
   /* Field: Contact Icon */
   $handler->display->display_options['fields']['nothing_4']['id'] = 'nothing_4';
   $handler->display->display_options['fields']['nothing_4']['table'] = 'views';
   $handler->display->display_options['fields']['nothing_4']['field'] = 'nothing';
   $handler->display->display_options['fields']['nothing_4']['ui_name'] = 'Contact Icon';
   $handler->display->display_options['fields']['nothing_4']['label'] = '';
-  $handler->display->display_options['fields']['nothing_4']['alter']['text'] = '<div class="ao_contact_icon"><span></span></div>';
+  $handler->display->display_options['fields']['nothing_4']['alter']['text'] = '<div class="ao_contact_icon ao_contact_[type_1]"><span></span></div>';
   $handler->display->display_options['fields']['nothing_4']['element_label_colon'] = FALSE;
   /* Field: CRM Contact: Contact ID */
   $handler->display->display_options['fields']['contact_id']['id'] = 'contact_id';
@@ -663,7 +1121,7 @@ function ao_views_default_views() {
   $handler->display->display_options['relationships']['field_activity_participants_target_id']['field'] = 'field_activity_participants_target_id';
   $handler->display->display_options['relationships']['field_activity_participants_target_id']['ui_name'] = 'Contact Relationship';
   $handler->display->display_options['relationships']['field_activity_participants_target_id']['label'] = 'Contact Relationship';
-  /* Field: CRM Activity: Activity ID */
+  /* Field: CRM Core Activity: Activity ID */
   $handler->display->display_options['fields']['activity_id']['id'] = 'activity_id';
   $handler->display->display_options['fields']['activity_id']['table'] = 'crm_core_activity';
   $handler->display->display_options['fields']['activity_id']['field'] = 'activity_id';
@@ -704,7 +1162,7 @@ function ao_views_default_views() {
     'multiple_el_al_min' => '3',
     'multiple_el_al_first' => '1',
   );
-  /* Field: CRM Activity: Type */
+  /* Field: CRM Core Activity: Type */
   $handler->display->display_options['fields']['type']['id'] = 'type';
   $handler->display->display_options['fields']['type']['table'] = 'crm_core_activity';
   $handler->display->display_options['fields']['type']['field'] = 'type';

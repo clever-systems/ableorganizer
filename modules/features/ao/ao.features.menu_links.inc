@@ -34,7 +34,7 @@ function ao_menu_default_menu_links() {
   $menu_links['menu-ao-navigation-items_dashboard:crm-core/dashboard'] = array(
     'menu_name' => 'menu-ao-navigation-items',
     'link_path' => 'crm-core/dashboard',
-    'router_path' => 'crm-core/dashboard',
+    'router_path' => 'crm-core',
     'link_title' => 'Dashboard',
     'options' => array(
       'attributes' => array(
@@ -94,7 +94,7 @@ function ao_menu_default_menu_links() {
   $menu_links['menu-ao-navigation-items_reports:crm-core/reports'] = array(
     'menu_name' => 'menu-ao-navigation-items',
     'link_path' => 'crm-core/reports',
-    'router_path' => 'crm-core/reports',
+    'router_path' => 'crm-core',
     'link_title' => 'Reports',
     'options' => array(
       'attributes' => array(
