@@ -110,13 +110,6 @@ projects[media_youtube][download][branch] = 7.x-2.x
 projects[media_youtube][download][revision] = "ca46aba0150faf0b64290e6ac386c4ad5ccef363"
 projects[adaptive_image][subdir] = "contrib"
 projects[adaptive_image][version] = "1.4"
-; projects[media_wysiwyg_view_mode][type] = "module"
-; projects[media_wysiwyg_view_mode][download][type] = "git"
-; projects[media_wysiwyg_view_mode][download][url] = "http://git.drupal.org/sandbox/DevinCarlson/1823634.git"
-; projects[media_wysiwyg_view_mode][download][branch] = "7.x-1.x"
-; projects[media_wysiwyg_view_mode][download][revision] = "0c38b2b6ef1d5bbe647e300d14468b7c6d65c50d"
-projects[imce][subdir] = "contrib"
-projects[imce][version] = "1.7"
 projects[file_entity][subdir] = "contrib"
 projects[file_entity][type] = "module"
 projects[file_entity][download][type] = "git"
@@ -171,8 +164,6 @@ projects[fontyourface][subdir] = "contrib"
 projects[fontyourface][version] = "2.8"
 projects[google_fonts][subdir] = "contrib"
 projects[google_fonts][version] = "2.3"
-projects[omega_tools][subdir] = "contrib"
-projects[omega_tools][version] = "3.0-rc4"
 
 ; crm core modules
 projects[crm_core][version] = 0.963
