@@ -1160,7 +1160,7 @@ function ableorganizer_sample_content_submit($form, &$form_state) {
  */
 function ableorganizer_install_sample_content(&$install_state) {
   $files = system_rebuild_module_data();
-  $operations = array();
+  $success = $results = $operations = array();
 
   // Add selected sample content modules to install to the batch.
   foreach ($install_state['parameters']['ao_modules'] as $module) {
@@ -1169,7 +1169,7 @@ function ableorganizer_install_sample_content(&$install_state) {
 
   // Flush caches if any modules will be installed.
   if (count($install_state['parameters']['ao_modules'])) {
-    $operations[] = array('_install_profile_modules_finished', array());
+    $operations[] = array('_install_profile_modules_finished', array($success, $results, $operations));
   }
 
   // Add sample contacts to the batch if any data will be imported.
