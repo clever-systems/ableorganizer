@@ -175,7 +175,7 @@ projects[omega_tools][subdir] = "contrib"
 projects[omega_tools][version] = "3.0-rc4"
 
 ; crm core modules
-projects[crm_core][version] = 0.961
+projects[crm_core][version] = 0.963
 projects[crm_core][subdir] = "contrib"
 projects[crm_core_profile][version] = 1.0-beta8
 projects[crm_core_profile][subdir] = "contrib"
