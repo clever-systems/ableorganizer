@@ -13,7 +13,7 @@ BODY.front .ao-down-arrow {
   position: absolute;
   top: 0px;
   left: 50%;
-  margin-left: -18px;
+  margin-left: -35px;
 }
 BODY.front #section-content {
   padding-top: 0em;
@@ -31,9 +31,11 @@ BODY.front #section-content #zone-content-wrapper {
 }
 BODY.front #section-content #zone-below-content-1-wrapper {
   background-color: #ffcc4d;
+  overflow: hidden;
 }
 BODY.front #section-content #zone-below-content-2-wrapper {
   background-color: White;
+  overflow: hidden;
 }
 BODY.front #section-content h2 {
   text-align: center;
@@ -440,7 +442,34 @@ BODY.logged-in #section-content #zone-below-content-2-wrapper .ao-down-arrow {
   text-decoration: none;
 }
 
-
-
-
-
+@media screen and (max-width: 540px) {
+  .ao_profeat {
+    display: block;
+  }
+  .ao-info-item {
+    display: block;
+  }
+  .ao-info-holder {
+    width: auto;
+  }
+  BODY.front #section-content #zone-below-content-2-wrapper {
+    background-repeat: repeat;
+  }
+  BODY.front #section-content #zone-below-content-1-wrapper .ao-featlist {
+    display: block;
+  }
+  BODY.front #boxes-box-hero_content {
+    padding: 1em;
+  }
+  BODY.front #zone-branding-wrapper #main-menu LI A {
+    font-size: 1em;
+  }
+  BODY.front #section-content .hero_text {
+    margin-top: 1.5em;
+    width: auto;
+  }
+  BODY.front #section-content .hero_text P {
+    font-size: 1.45em;
+    font-weight: normal;
+  }
+}
