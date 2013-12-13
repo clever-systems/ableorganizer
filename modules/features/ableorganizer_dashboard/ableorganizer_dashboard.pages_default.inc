@@ -14,7 +14,7 @@ function ableorganizer_dashboard_default_page_manager_pages() {
   $page->name = 'ao_dashboard';
   $page->task = 'page';
   $page->admin_title = 'Dashboard';
-  $page->admin_description = 'The administrative dashboard for Able Organizer';
+  $page->admin_description = 'The administrative dashboard for AbleOrganizer';
   $page->path = 'crm-core/ableorganizer_dashboard';
   $page->access = array(
     'plugins' => array(

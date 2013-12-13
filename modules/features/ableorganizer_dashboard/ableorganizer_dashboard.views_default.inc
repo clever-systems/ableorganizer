@@ -289,7 +289,7 @@ function ableorganizer_dashboard_views_default_views() {
 
   /* Display: Content pane */
   $handler = $view->new_display('panel_pane', 'Content pane', 'panel_pane_1');
-  $handler->display->display_options['pane_category']['name'] = 'Able Organizer';
+  $handler->display->display_options['pane_category']['name'] = 'AbleOrganizer';
   $handler->display->display_options['pane_category']['weight'] = '0';
   $export['ao_dashboard_act_stream'] = $view;
 

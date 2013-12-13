@@ -205,7 +205,7 @@ function ao_default_page_manager_handlers() {
   $handler->handler = 'panel_context';
   $handler->weight = 0;
   $handler->conf = array(
-    'title' => 'Able Organizer Individual Contact Display Panel',
+    'title' => 'AbleOrganizer Individual Contact Display Panel',
     'no_blocks' => 0,
     'pipeline' => 'standard',
     'body_classes_to_remove' => '',

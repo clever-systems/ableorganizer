@@ -741,8 +741,8 @@ function ao_views_default_views() {
 
   $view = new view();
   $view->name = 'ao_crm_core_contacts';
-  $view->description = 'Able Organizer list of all contacts in the system';
-  $view->tag = 'Able Organizer';
+  $view->description = 'AbleOrganizer list of all contacts in the system';
+  $view->tag = 'AbleOrganizer';
   $view->base_table = 'crm_core_contact';
   $view->human_name = '';
   $view->core = 0;
