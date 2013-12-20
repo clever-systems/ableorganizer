@@ -10,4 +10,4 @@ projects[drupal][version] = 7.24
 projects[ableorganizer][type] = profile
 projects[ableorganizer][download][type] = git
 projects[ableorganizer][download][branch] = 7.x-1.x
-projects[ableorganizer][download][url] = "http://git.drupal.org/sandbox/RoSk0/2093907.git"
+projects[ableorganizer][download][url] = "http://git.drupal.org/project/ableorganizer.git"
