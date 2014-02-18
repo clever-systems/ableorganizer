@@ -8,9 +8,7 @@
       var wwidth  = $('#region-above-content-2').width();
       var wheight = $('#zone-above-content-2-wrapper').height();
       
-      console.log(wheight);
-      
-      $(".ao_profeat_dialog").dialog({ 
+      $(".ao_profeat_dialog").dialog({
           autoOpen: false,
           modal: true,
           closeOnEscape: true,
