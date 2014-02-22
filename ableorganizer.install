@@ -1119,6 +1119,7 @@ function ableorganizer_sample_content_submit($form, &$form_state) {
   // automatically install the front page blocks, for now
   // this will eventually be replaced with a configuration page and sample content for demos
   $install_state['parameters']['ao_modules'][] = 'ao_basic_setup';
+  ableorganizer_install_frontpage();
   
   if (!empty($form_state['values']['ao_sample_content'])) {
     // $install_state['parameters']['ao_modules'][] = 'ableorganizer_sample_content';
@@ -1152,6 +1153,39 @@ function ableorganizer_sample_content_submit($form, &$form_state) {
   }
 
   $install_state['parameters']['sample_content'] = 'done';
+}
+
+/**
+ * Creates a node for the frontpage
+ */
+function ableorganizer_install_frontpage (){
+  
+  
+
+  $content = '<h2><span>How it Does It</span></h2><p><a href="http://ao.trellon.com/sites/default/files/how-it-does-it.png" title="How it does it" class="colorbox init-colorbox-processed cboxElement" rel="gallery-file-1"><img class="adaptive-image" typeof="foaf:Image" src="http://ao.trellon.com/sites/default/files/styles/adaptive/adaptive-image/public/how-it-does-it.png?itok=kVG8B5Yf" alt="How it does it" title="How it does it"></a></p><div class="ao-down-arrow">&nbsp;</div>';
+  
+  $date               = new DateTime();
+  $node               = new stdClass();
+  $node->type         = 'page';
+  $node->status       = 1;
+  $node->uid          = 1;
+  $node->title        = 'Welcome to AbleOrganizer';
+  $node->promote      = 1;
+  $node->created      = $date->getTimestamp();
+  $node->timestamp    = $date->getTimestamp();
+  $node->sticky       = 0;
+  $node->format       = 3;
+  $node->language     = LANGUAGE_NONE;
+  $node->teaser       = '';
+  $node->revision     = 0;
+  node_object_prepare($node);
+  $node->body[$node->language][0] = array(
+      'value' => $content,
+      'summary' => '',
+      'format' => 'full_html',
+      'safe_value' => $content
+  );
+  node_save($node);
 }
 
 /**
