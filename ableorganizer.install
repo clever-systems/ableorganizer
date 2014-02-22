@@ -1115,6 +1115,11 @@ function ableorganizer_sample_content_submit($form, &$form_state) {
 
   // Remember modules to be enabled.
   $install_state['parameters']['ao_modules'] = array();
+  
+  // automatically install the front page blocks, for now
+  // this will eventually be replaced with a configuration page and sample content for demos
+  $install_state['parameters']['ao_modules'][] = 'ao_basic_setup';
+  
   if (!empty($form_state['values']['ao_sample_content'])) {
     // $install_state['parameters']['ao_modules'][] = 'ableorganizer_sample_content';
   }
