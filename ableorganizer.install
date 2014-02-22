@@ -1116,7 +1116,7 @@ function ableorganizer_sample_content_submit($form, &$form_state) {
   // Remember modules to be enabled.
   $install_state['parameters']['ao_modules'] = array();
   if (!empty($form_state['values']['ao_sample_content'])) {
-    $install_state['parameters']['ao_modules'][] = 'ableorganizer_sample_content';
+    // $install_state['parameters']['ao_modules'][] = 'ableorganizer_sample_content';
   }
   if (!empty($form_state['values']['donation_sample_content'])) {
     $install_state['parameters']['ao_modules'][] = 'ableorganizer_sample_donation_pages';

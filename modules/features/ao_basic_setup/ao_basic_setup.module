@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the AO Basic Setup feature.
+ */
+
+include_once 'ao_basic_setup.features.inc';
