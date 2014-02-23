@@ -120,6 +120,9 @@ function ableorganizer_dashboard_default_page_manager_pages() {
       'right' => NULL,
       'center' => NULL,
     ),
+    'center' => array(
+      'style' => 'naked',
+    ),
   );
   $display->cache = array();
   $display->title = 'Dashboard';
@@ -137,7 +140,10 @@ function ableorganizer_dashboard_default_page_manager_pages() {
     $pane->style = array(
       'settings' => NULL,
     );
-    $pane->css = array();
+    $pane->css = array(
+      'css_id' => '',
+      'css_class' => 'activity-feed',
+    );
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();

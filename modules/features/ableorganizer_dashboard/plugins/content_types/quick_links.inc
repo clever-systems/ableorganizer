@@ -58,54 +58,56 @@ function quick_links_settings_form_submit($form, &$form_state) {
  */
 function quick_links_render($subtype, $conf, $panel_args, $context = NULL) {
   $options = array('attributes' => array('class' => array('quick-link')));
-  $content = '<div class="container-12-fluid">
-<div class="grid-6">
-<div class="btn btn-blue btn-simple">'
-  . l(t('Add a Contact'), 'crm-core/contact/add') .
-  '</div>
-<strong>' . t('Create a new') . '</strong>';
+  
+  $add_contact = l(t('Add a Contact'), 'crm-core/contact/add', array('attributes' => array('class' => array('btn'))));
+  $add_activity =  l(t('Manage profiles'), 'admin/structure/crm-core/profile', array('attributes' => array('class' => array('btn'))));
+
+  $create_label = t('Create a New');
+  $manage_label = t('Record a New');
+  $donate_link = "";
+  $donation = "";
+  $event_link = "";
+  $event_reg = "";
+  $vol_link = "";
+  $vol_reg = "";
+  $petition_link = "";
+  $petition_sig = "";
+  
   if (module_exists('crm_core_donation')) {
-    $content .= l(t('Donation Page'), 'node/add/cmcd-page', $options);
-    $content .= '<br />';
+    $donate_link = l(t('Donation Page'), 'node/add/cmcd-page', $options);
+    $donation = l(t('Donation'), 'crm-core/contact/activity-add/cmcd_donation', $options);
   }
   if (module_exists('crm_core_event')) {
-    $content .= l(t('Event'), 'node/add/cmcev-event', $options);
-    $content .= '<br />';
+    $event_link = l(t('Event'), 'node/add/cmcev-event', $options);
+    $event_reg = l(t('Event Registration'), 'crm-core/contact/activity-add/cmcev_event_registration', $options);
   }
   if (module_exists('crm_core_volunteer')) {
-    $content .= l(t('Volunteer Opportunity'), 'node/add/cmcv-volunteer', $options);
-    $content .= '<br />';
+    $vol_link = l(t('Volunteer Opportunity'), 'node/add/cmcv-volunteer', $options);
+    $vol_reg = l(t('Volunteer Registration'), 'crm-core/contact/activity-add/cmcv_volunteer_commitment', $options);
   }
   if (module_exists('crm_core_petition')) {
-    $content .= l(t('Petition'), 'node/add/cmcp-petition', $options);
-    $content .= '<br />';
-  }
-  $content .= '</div>
-<div class="grid-6">
-<div class="btn btn-blue btn-simple">'
-    . l(t('Manage profiles'), 'crm-core/contact') .
-    '</div>
-  <strong>' . t('Record a New') . '</strong>';
-  if (module_exists('crm_core_donation')) {
-    $content .= l(t('Donation'), 'crm-core/contact/activity-add/cmcd_donation', $options);
-    $content .= '<br />';
-  }
-  if (module_exists('crm_core_event')) {
-    $content .= l(t('Event Registration'), 'crm-core/contact/activity-add/cmcev_event_registration', $options);
-    $content .= '<br />';
-  }
-  if (module_exists('crm_core_volunteer')) {
-    $content .= l(t('Volunteer Registration'), 'crm-core/contact/activity-add/cmcv_volunteer_commitment', $options);
-    $content .= '<br />';
-  }
-  if (module_exists('crm_core_petition')) {
-    $content .= l(t('Petition Signature'), 'crm-core/contact/activity-add/cmcp_petition_signature', $options);
-    $content .= '<br />';
-  }
-  $content .= '</div>
+    $petition_link = l(t('Petition'), 'node/add/cmcp-petition', $options);
+    $petition_sig .= l(t('Petition Signature'), 'crm-core/contact/activity-add/cmcp_petition_signature', $options);
+  }  
+  
+  $content = <<<CON
+  <div class="link-container">
+    $add_contact
+		<strong>$create_label</strong>
+    $donate_link
+    $event_link
+    $vol_link
+    $petition_link
   </div>
-  <div class="clearfix" />
-  ';
+  <div class="link-container">
+	  $add_activity
+		<strong>$manage_label</strong>
+	  $donation
+	  $event_reg
+	  $vol_reg
+	  $petition_sig
+  </div>
+CON;
 
   $block = new stdClass();
   $block->title = empty($conf['display_title']) ? '' : t('Quick links');

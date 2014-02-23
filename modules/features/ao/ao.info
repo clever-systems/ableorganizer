@@ -66,3 +66,11 @@ features[wysiwyg][] = full_html
 features_exclude[filter][filtered_html] = filtered_html
 features_exclude[filter][full_html] = full_html
 project path = profiles/ableorganizer/modules/features
+
+
+; Information added by drush on 2014-02-22
+version = "7.x-1.0-beta1+6-dev"
+core = "7.x"
+project = "ableorganizer"
+datestamp = "1393085963"
+

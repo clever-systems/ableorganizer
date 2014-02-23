@@ -221,3 +221,4 @@ projects[entity_menu_links][download][revision] = "9dd1dd700714051aefc8e932607ab
 
 ;themes
 projects[omega] = 3.1
+projects[zen] = 5.4
