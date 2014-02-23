@@ -1,0 +1,32 @@
+/**
+ * @file
+ * Defines the appearance of buttons throughout the theme
+ *
+ */
+
+
+.btn {
+  background-color: $base-orange;
+  color: White;
+  @include border-radius(4px);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  display: inline-block;
+  margin: 0.3em 0.3em 0.3em 0em;
+  padding: 0.2em 1.5em;
+  letter-spacing: 2px;
+  @include transition-property(all);
+  @include transition-duration(.1s);
+  @include transition-timing-function(ease-in-out);  
+  
+  &:hover {
+    background-color: $base-orange2;
+    color: White;
+  }
+  &:active {
+    background-color: $base-orange3;
+    color: $base-orange4;
+  }
+  
+}

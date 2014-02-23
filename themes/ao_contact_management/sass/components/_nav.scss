@@ -1,0 +1,68 @@
+/**
+ * @file
+ * Defines the appearance of the main navigation, and some other navigation elements
+ *
+ */
+ 
+ 
+.inline-fix {
+  &:after, &:before {
+    content: '';
+    font-size: 0px;
+    line-height: 0px;
+    margin: 0px;
+    padding: 0px;
+  }
+  
+}
+ 
+ 
+#main-menu {
+  
+  margin: 0em;
+  padding: 0em;
+  @include box-sizing(border-box);
+  margin: 0em 0em -4px;
+  font-family: $font-titles;
+  
+  UL.links {
+    margin: 0em;
+    padding: 0em;
+    @include box-sizing(border-box);
+    
+    LI {
+      margin: 0em;
+      padding: 0em;
+      background-color: $base-blue4;
+      color: White;
+      padding: .5em 1em .8em;
+      display: inline-block;
+      vertical-align: botttom;
+      @include transition-property(all);
+      @include transition-duration(.5s);
+      @include transition-timing-function(ease-in-out);  
+      
+      A {
+        margin: 0em;
+        padding: 0em;
+        color: White;
+        display: inline-block;
+        vertical-align: bottom;
+        text-decoration: none;
+        font-size: 1em;
+      }
+      
+      &.active {
+        background-color: $base-blue;
+        &:hover {
+          background-color: $base-blue;
+        }
+      }
+      &:hover {
+        background-color: $base-blue2;
+      }
+    
+    }
+  }
+  
+}

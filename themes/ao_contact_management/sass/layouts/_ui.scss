@@ -1,0 +1,98 @@
+/**
+ * @file
+ * Positioning for basic UI elements
+ *
+ * Defining classes around semantic elements such as sections, wrappers and the like.
+ * Will apply breakpoints to define layouts at different resolutions.
+ *
+ */
+
+
+
+
+BODY {
+  font-weight: normal;
+  @include transition-property(all);
+  @include transition-duration(.5s);
+  @include transition-timing-function(ease-in-out);  
+}
+
+/* section layout */
+section {
+  .section-wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+  }
+}
+section.banner {
+  background-color: $dark-blue;
+  padding: .5em 0em;
+}
+section.branding {
+  background-color: White;
+  
+  .header__logo {
+    display: inline-block;
+    vertical-align: bottom;
+  }
+  
+  #main-menu {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+  }
+  
+}
+section.header {
+  background-color: $base-blue;
+}
+section.content {
+  background-color: $f-gray;
+}
+
+.panels-flexible-region {
+  @include transition-property(all);
+  @include transition-duration(.5s);
+  @include transition-timing-function(ease-in-out);  
+}
+
+
+@media all and (min-width: 480px) {
+}
+@media all and (min-width: 480px) and (max-width: 959px) {
+  section {
+    .section-wrapper {
+      width: 480px;
+    }
+  }
+  
+  .panels-flexible-region {
+    display: block;
+    width: 100%;
+    float: none;
+    font-weight: normal;
+  }
+  
+}
+@media all and (min-width: 960px) {
+
+  section {
+    .section-wrapper {
+      width: 960px;
+    }
+  }
+  
+}
+@media all and (min-width: 1200px) {
+
+  section {
+    .section-wrapper {
+      width: 1200px;
+    }
+  }
+  
+}
+
+

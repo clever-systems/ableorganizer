@@ -1,0 +1,129 @@
+/**
+ * @file
+ * Global Styles used throughout the theme
+ *
+ */
+ 
+/* admin menu - fixes some incompatibilities */
+#admin-menu .dropdown .admin-menu-icon img {
+  height: 16px;
+  width: 16px;
+}
+
+/* typography */
+A {
+  color: $link-blue;
+  @include transition-property(all);
+  @include transition-duration(.2s);
+  @include transition-timing-function(ease-in-out);  
+  
+  &:hover {
+    color: $link-blue2;
+  }
+  &:active {
+    color: $link-blue3;
+  }
+  
+}
+.title-fonts {
+  font-family: $font-titles;
+  letter-spacing: -0.05em;
+  font-size: 1em;
+}
+.title-fonts-large {
+  font-size: 1.2em;
+}
+.summary-data {
+  font-size: 1.4em;
+  font-weight: 700;
+  background-color: White;
+}
+
+
+
+ 
+/* page titles */
+.page__title {
+  color: White;
+} 
+ 
+/* navigation links */
+
+
+
+
+
+/* container styles */
+/* colors and fonts applied to common container styles */
+
+ /* basic container */
+.basic-container {
+}
+/* basic container element */
+.basic-item-container {
+}
+
+/* activity feed */
+.activty-feed-container {
+  background-color: $f-gray3;
+  .pane-title {
+    @extend .widget-title;
+    @extend .title-fonts;
+    @extend .title-fonts-large;
+  }
+  .view {
+    .views-row {
+    }
+  }
+}
+
+/* summary widget */
+.summary-widget-container {
+  background-color: $f-gray2;
+  
+  .pane-title {
+    @extend .widget-title;
+    @extend .title-fonts;
+  }
+  
+  
+  TABLE {
+    THEAD {
+      TH {
+        @include background-image(linear-gradient(to bottom, #ffffff 31%,#dfe4e6 100%));
+        @extend .widget-table-titles;
+      }
+    }
+  
+    TR {
+      TD {
+        @extend .summary-data;
+      }
+    }
+    
+  }
+  
+}
+
+/* quicklinks */
+.quick-links {
+    
+  .pane-title {
+    @extend .widget-title-links;
+    @extend .title-fonts;
+  }
+  
+  .link-container {
+  
+    font-size: 0.9em;
+    
+    strong {
+      text-transform: uppercase;
+    }
+    strong, A {
+      margin-bottom: 0.4em;
+      text-decoration: none;
+    }
+  }
+  
+}
