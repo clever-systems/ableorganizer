@@ -77,10 +77,8 @@ Drupal.behaviors.ao_contact_management = {
             });
             
             // add the button for VBO to the form
-            var new_btn = '<div class="btn btn-simple btn-green btn-vbo btn-expand-right btn-disabled">With Selected<div class="btn-expandable"><ul class="links">' + menu_opts + '</ul></div></div>';
+            var new_btn = '<div class="btn-vbo btn-disabled">With Selected<div class="btn-expandable"><ul class="links">' + menu_opts + '</ul></div></div>';
             $('.view-header').prepend(new_btn);
-            console.log('yo yo yo');
-            console.log($('.view-header').length);
             
             // disable the button until something is clicked
             var menu = $('.btn-vbo > DIV');

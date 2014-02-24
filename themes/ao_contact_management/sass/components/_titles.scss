@@ -4,6 +4,11 @@
  *
  */
 
+/* typography */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}
+
 /* widget titles */
 /* small colored title used in summaries and other items */
 .widget-title {
@@ -23,8 +28,25 @@
 }
 .widget-table-titles {
   @extend .widget-title;
-  font-size: 0.6em;
+  font-size: 0.8em;
   padding: 0.5em 0em;;
   color: $base-purple;
   border-bottom: 1px solid #CCC;
+}
+.widget-table-titles-large {
+  @extend .widget-title;
+  font-size: 0.9em;
+  padding: 0.5em 0em;
+  border-top: 1px solid #CCC;
+  border-bottom: 1px solid #CCC;
+  
+  A {
+    text-decoration: none;
+    
+    IMG {
+      margin-left: 0.4em;
+    }
+    
+  }
+  
 }

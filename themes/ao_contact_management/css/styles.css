@@ -111,7 +111,7 @@ audio:not([controls]) {
  */
 /* line 106, ../sass/_normalize.scss */
 html {
-  font-family: Verdana, Tahoma, "DejaVu Sans", sans-serif;
+  font-family: Open Sans, Helvetica, sans-serif;
   /* 1 */
   font-size: 100%;
   /* 3 */
@@ -885,41 +885,60 @@ section .section-wrapper {
   margin-right: auto;
   position: relative;
   overflow: hidden;
+  width: 100%;
 }
 
-/* line 29, ../sass/layouts/_ui.scss */
+/* line 30, ../sass/layouts/_ui.scss */
 section.banner {
   background-color: #2d4552;
   padding: .5em 0em;
 }
 
-/* line 33, ../sass/layouts/_ui.scss */
+/* line 34, ../sass/layouts/_ui.scss */
 section.branding {
   background-color: White;
+  padding: 1em 0em 0em;
 }
-/* line 36, ../sass/layouts/_ui.scss */
+/* line 39, ../sass/layouts/_ui.scss */
 section.branding .header__logo {
   display: inline-block;
   vertical-align: bottom;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -moz-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
 }
-/* line 41, ../sass/layouts/_ui.scss */
+/* line 48, ../sass/layouts/_ui.scss */
 section.branding #main-menu {
   position: absolute;
   right: 0px;
   bottom: 0px;
 }
 
-/* line 48, ../sass/layouts/_ui.scss */
+/* line 55, ../sass/layouts/_ui.scss */
 section.header {
   background-color: #3697ee;
 }
-
-/* line 51, ../sass/layouts/_ui.scss */
-section.content {
-  background-color: whitesmoke;
+/* line 57, ../sass/layouts/_ui.scss */
+section.header .section-wrapper {
+  height: 93px;
 }
 
-/* line 55, ../sass/layouts/_ui.scss */
+/* line 62, ../sass/layouts/_ui.scss */
+section.content {
+  background-color: whitesmoke;
+  padding: 1em 0em 0em;
+}
+
+/* line 67, ../sass/layouts/_ui.scss */
 .panels-flexible-region {
   -moz-transition-property: all;
   -o-transition-property: all;
@@ -935,30 +954,51 @@ section.content {
   transition-timing-function: ease-in-out;
 }
 
-@media all and (min-width: 480px) and (max-width: 959px) {
-  /* line 66, ../sass/layouts/_ui.scss */
-  section .section-wrapper {
-    width: 480px;
+@media all and (min-width: 0px) and (max-width: 480px) {
+  /* line 75, ../sass/layouts/_ui.scss */
+  section.branding {
+    padding: 1em 0em 0em;
   }
 
-  /* line 71, ../sass/layouts/_ui.scss */
+  /* line 78, ../sass/layouts/_ui.scss */
   .panels-flexible-region {
-    display: block;
     width: 100%;
     float: none;
-    font-weight: normal;
+  }
+}
+@media all and (min-width: 480px) and (max-width: 683px) {
+  /* line 90, ../sass/layouts/_ui.scss */
+  .panels-flexible-region {
+    width: 100%;
+    float: none;
+  }
+}
+@media all and (min-width: 684px) and (max-width: 959px) {
+  /* line 98, ../sass/layouts/_ui.scss */
+  section .section-wrapper {
+    width: 100%;
   }
 }
 @media all and (min-width: 960px) {
-  /* line 82, ../sass/layouts/_ui.scss */
+  /* line 106, ../sass/layouts/_ui.scss */
   section .section-wrapper {
     width: 960px;
   }
+
+  /* line 111, ../sass/layouts/_ui.scss */
+  section.branding {
+    padding: 2em 0em 0em;
+  }
 }
 @media all and (min-width: 1200px) {
-  /* line 91, ../sass/layouts/_ui.scss */
+  /* line 117, ../sass/layouts/_ui.scss */
   section .section-wrapper {
     width: 1200px;
+  }
+
+  /* line 121, ../sass/layouts/_ui.scss */
+  section.branding {
+    padding: 2em 0em 0em;
   }
 }
 /* Component (SMACSS module) rules */
@@ -1102,7 +1142,8 @@ section.content {
 }
 /* line 150, ../sass/components/_misc.scss */
 #navigation .links,
-#navigation .menu {
+#navigation .menu,
+#navigation .btn-vbo {
   margin: 0;
   padding: 0;
   text-align: left;
@@ -1110,7 +1151,8 @@ section.content {
 }
 /* line 156, ../sass/components/_misc.scss */
 #navigation .links li,
-#navigation .menu li {
+#navigation .menu li,
+#navigation .btn-vbo li {
   /* A simple method to get navigation links to appear in one line. */
   float: left;
   /* LTR */
@@ -1477,7 +1519,7 @@ span.field-label {
 
 /* The active item in a Drupal menu. */
 /* line 502, ../sass/components/_misc.scss */
-.menu a.active {
+.menu a.active, .btn-vbo a.active {
   color: #000;
 }
 
@@ -1802,139 +1844,11 @@ tr.selected td {
 
 /**
  * @file
- * Layout of containers used throughout the theme
- *
- *
- *
- */
-/* basic container - extended by various widgets */
-/* line 10, ../sass/components/_containers.scss */
-.basic-container, .activty-feed-container .view, BODY.page-crm-core-dashboard .activity-feed .view, .summary-widget-container, BODY.page-crm-core-dashboard .summary-pane {
-  -moz-border-radius: 8px;
-  -webkit-border-radius: 8px;
-  border-radius: 8px;
-  border: 1px solid #e1e1e1;
-  padding: 1em 1.5em;
-}
-
-/* basic container element - applies to most records */
-/* line 16, ../sass/components/_containers.scss */
-.basic-item-container, .activty-feed-container .view .views-row, BODY.page-crm-core-dashboard .activity-feed .view .views-row {
-  border-bottom: 1px solid #e1e1e1;
-  margin: 0em 0em 1em;
-  padding: 0em 0em 1em;
-}
-
-/* activity feed - used on the dashboard */
-/* line 25, ../sass/components/_containers.scss */
-.activty-feed-container .pane-title, BODY.page-crm-core-dashboard .activity-feed .pane-title {
-  position: absolute;
-  top: 8px;
-  left: 24px;
-  z-index: 100;
-  border-bottom: none;
-  text-transform: uppercase;
-  margin: 0em;
-}
-/* line 35, ../sass/components/_containers.scss */
-.activty-feed-container .view, BODY.page-crm-core-dashboard .activity-feed .view {
-  padding: 3.6em 1.5em 1em;
-}
-
-/* summary widget - used on the dashboard */
-/* line 48, ../sass/components/_containers.scss */
-.summary-widget-container, BODY.page-crm-core-dashboard .summary-pane {
-  padding: 0em .2em .2em;
-  margin: 0em 0em .8em;
-  border: 1px solid #CCC;
-}
-/* line 55, ../sass/components/_containers.scss */
-.summary-widget-container TABLE, BODY.page-crm-core-dashboard .summary-pane TABLE {
-  margin: 0em auto;
-  padding: 0em;
-  width: 100%;
-  -moz-border-radius: 8px;
-  -webkit-border-radius: 8px;
-  border-radius: 8px;
-  border: 1px solid #CCC;
-  overflow: hidden;
-  border-collapse: initial;
-}
-/* line 64, ../sass/components/_containers.scss */
-.summary-widget-container TABLE TH, BODY.page-crm-core-dashboard .summary-pane TABLE TH {
-  border: 1px solid #CCC;
-}
-/* line 73, ../sass/components/_containers.scss */
-.summary-widget-container TABLE TR, BODY.page-crm-core-dashboard .summary-pane TABLE TR {
-  border: none;
-}
-/* line 75, ../sass/components/_containers.scss */
-.summary-widget-container TABLE TR TD, BODY.page-crm-core-dashboard .summary-pane TABLE TR TD {
-  border: none;
-  text-align: center;
-  padding: 0.5em 0em;
-}
-
-/* quicklinks - used on the dashboard */
-/* line 87, ../sass/components/_containers.scss */
-.quick-links {
-  margin: 0em 0em .8em;
-}
-/* line 94, ../sass/components/_containers.scss */
-.quick-links .link-container {
-  display: inline-block;
-  vertical-align: top;
-  width: 48%;
-}
-/* line 99, ../sass/components/_containers.scss */
-.quick-links .link-container strong, .quick-links .link-container A {
-  display: block;
-}
-/* line 101, ../sass/components/_containers.scss */
-.quick-links .link-container strong.btn, .quick-links .link-container A.btn {
-  display: inline-block;
-}
-
-/**
- * @file
- * Controls the layouts of titles used in different parts of the system
- *
- */
-/* widget titles */
-/* small colored title used in summaries and other items */
-/* line 9, ../sass/components/_titles.scss */
-.widget-title, .widget-title-links, .quick-links .pane-title, .widget-table-titles, .summary-widget-container TABLE THEAD TH, BODY.page-crm-core-dashboard .summary-pane TABLE THEAD TH, .activty-feed-container .pane-title, BODY.page-crm-core-dashboard .activity-feed .pane-title, .summary-widget-container .pane-title, BODY.page-crm-core-dashboard .summary-pane .pane-title {
-  border: none;
-  text-align: center;
-  font-size: 1.2em;
-  margin: 0px auto;
-  padding: 0px;
-  color: #0062a0;
-  text-transform: uppercase;
-}
-
-/* line 18, ../sass/components/_titles.scss */
-.widget-title-links, .quick-links .pane-title {
-  margin: 0em 0em .8em;
-  border-bottom: 1px solid #e1e1e1;
-  text-align: left;
-}
-
-/* line 24, ../sass/components/_titles.scss */
-.widget-table-titles, .summary-widget-container TABLE THEAD TH, BODY.page-crm-core-dashboard .summary-pane TABLE THEAD TH {
-  font-size: 0.6em;
-  padding: 0.5em 0em;
-  color: #9b59a8;
-  border-bottom: 1px solid #CCC;
-}
-
-/**
- * @file
  * Defines the appearance of buttons throughout the theme
  *
  */
 /* line 8, ../sass/components/_buttons.scss */
-.btn {
+.btn, .btn-small, .container-table TR TD .btn, .views-table TR TD .btn, .btn-blue, .action-links LI A, .menu, .btn-vbo {
   background-color: #ffb600;
   color: White;
   -moz-border-radius: 4px;
@@ -1959,16 +1873,442 @@ tr.selected td {
   -o-transition-timing-function: ease-in-out;
   -webkit-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
+  -moz-user-select: -moz-none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  cursor: pointer;
 }
-/* line 23, ../sass/components/_buttons.scss */
-.btn:hover {
+/* line 25, ../sass/components/_buttons.scss */
+.btn:hover, .btn-small:hover, .container-table TR TD .btn:hover, .views-table TR TD .btn:hover, .btn-blue:hover, .action-links LI A:hover, .menu:hover, .btn-vbo:hover {
   background-color: #ffd889;
   color: White;
 }
-/* line 27, ../sass/components/_buttons.scss */
-.btn:active {
+/* line 29, ../sass/components/_buttons.scss */
+.btn:active, .btn-small:active, .container-table TR TD .btn:active, .views-table TR TD .btn:active, .btn-blue:active, .action-links LI A:active, .menu:active, .btn-vbo:active {
   background-color: #f89406;
   color: #7d4a0e;
+}
+/* line 34, ../sass/components/_buttons.scss */
+.btn A, .btn-small A, .container-table TR TD .btn A, .views-table TR TD .btn A, .btn-blue A, .action-links LI A A, .menu A, .btn-vbo A {
+  color: White;
+  text-decoration: none;
+}
+/* line 37, ../sass/components/_buttons.scss */
+.btn A:hover, .btn-small A:hover, .container-table TR TD .btn A:hover, .views-table TR TD .btn A:hover, .btn-blue A:hover, .action-links LI A A:hover, .menu A:hover, .btn-vbo A:hover {
+  color: White;
+}
+
+/* line 43, ../sass/components/_buttons.scss */
+.btn-small, .container-table TR TD .btn, .views-table TR TD .btn, .container-table TR TD .btn-small, .views-table TR TD .btn-small, .container-table TR TD .btn-blue, .views-table TR TD .btn-blue, .container-table TR TD .action-links LI A, .action-links LI .container-table TR TD A, .views-table TR TD .action-links LI A, .action-links LI .views-table TR TD A, .container-table TR TD .menu, .views-table TR TD .menu, .container-table TR TD .btn-vbo, .views-table TR TD .btn-vbo {
+  font-size: 0.6em;
+  padding: 0.1em .8em;
+}
+
+/* line 49, ../sass/components/_buttons.scss */
+.btn-blue {
+  background-color: #65aff2;
+}
+/* line 53, ../sass/components/_buttons.scss */
+.btn-blue:hover {
+  background-color: #94c8f6;
+}
+/* line 56, ../sass/components/_buttons.scss */
+.btn-blue:active {
+  background-color: #6fd6fe;
+  color: #3c7489;
+}
+
+/**
+ * @file
+ * Layout of containers used throughout the theme
+ *
+ *
+ *
+ */
+/* basic container - extended by various widgets */
+/* line 10, ../sass/components/_containers.scss */
+.basic-container, .activty-feed-container .view, BODY.page-crm-core-dashboard .activity-feed .view, .summary-widget-container, BODY.page-crm-core-dashboard .summary-pane {
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+  border: 1px solid #e1e1e1;
+  padding: 1em 1.5em;
+}
+
+/* basic container element - applies to most records */
+/* line 16, ../sass/components/_containers.scss */
+.basic-item-container, .activty-feed-container .view .views-row, BODY.page-crm-core-dashboard .activity-feed .view .views-row {
+  border-bottom: 1px solid #e1e1e1;
+  margin: 0em;
+  padding: 0em;
+}
+
+/* activity feed - used on the dashboard */
+/* line 25, ../sass/components/_containers.scss */
+.activty-feed-container .pane-title, BODY.page-crm-core-dashboard .activity-feed .pane-title {
+  position: absolute;
+  top: 8px;
+  left: 24px;
+  z-index: 100;
+  border-bottom: none;
+  text-transform: uppercase;
+  margin: 0em;
+}
+/* line 35, ../sass/components/_containers.scss */
+.activty-feed-container .view, BODY.page-crm-core-dashboard .activity-feed .view {
+  padding: 3.6em 0em 1em;
+}
+/* line 42, ../sass/components/_containers.scss */
+.activty-feed-container .view .views-row:hover, BODY.page-crm-core-dashboard .activity-feed .view .views-row:hover {
+  background-color: White;
+}
+
+/* summary widget - used on the dashboard */
+/* line 53, ../sass/components/_containers.scss */
+.summary-widget-container, BODY.page-crm-core-dashboard .summary-pane {
+  padding: 0em .2em .2em;
+  margin: 0em 0em .8em;
+  border: 1px solid #CCC;
+}
+/* line 60, ../sass/components/_containers.scss */
+.summary-widget-container TABLE, BODY.page-crm-core-dashboard .summary-pane TABLE {
+  margin: 0em auto;
+  padding: 0em;
+  width: 100%;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+  border: 1px solid #CCC;
+  overflow: hidden;
+  border-collapse: initial;
+}
+/* line 69, ../sass/components/_containers.scss */
+.summary-widget-container TABLE TH, BODY.page-crm-core-dashboard .summary-pane TABLE TH {
+  border: 1px solid #CCC;
+}
+/* line 78, ../sass/components/_containers.scss */
+.summary-widget-container TABLE TR, BODY.page-crm-core-dashboard .summary-pane TABLE TR {
+  border: none;
+}
+/* line 80, ../sass/components/_containers.scss */
+.summary-widget-container TABLE TR TD, BODY.page-crm-core-dashboard .summary-pane TABLE TR TD {
+  border: none;
+  text-align: center;
+  padding: 0.5em 0em;
+}
+
+/* quicklinks - used on the dashboard */
+/* line 92, ../sass/components/_containers.scss */
+.quick-links {
+  margin: 0em 0em .8em;
+}
+/* line 99, ../sass/components/_containers.scss */
+.quick-links .link-container {
+  display: inline-block;
+  vertical-align: top;
+  width: 48%;
+}
+/* line 104, ../sass/components/_containers.scss */
+.quick-links .link-container strong {
+  color: #999;
+}
+/* line 107, ../sass/components/_containers.scss */
+.quick-links .link-container strong, .quick-links .link-container A {
+  display: block;
+}
+/* line 109, ../sass/components/_containers.scss */
+.quick-links .link-container strong.btn, .quick-links .link-container strong.btn-small, .quick-links .link-container strong.btn-blue, .quick-links .link-container strong.menu, .quick-links .link-container strong.btn-vbo, .quick-links .link-container A.btn, .quick-links .link-container A.btn-small, .quick-links .link-container A.btn-blue, .quick-links .link-container .action-links LI A, .action-links LI .quick-links .link-container A, .quick-links .link-container A.menu, .quick-links .link-container A.btn-vbo {
+  display: inline-block;
+}
+
+/* action links */
+/* line 118, ../sass/components/_containers.scss */
+.action-links {
+  margin: 0em 0em .8em;
+  padding: 0em;
+}
+/* line 121, ../sass/components/_containers.scss */
+.action-links LI {
+  display: inline-block;
+  margin: 0em;
+  padding: 0em;
+}
+
+/* summary rows */
+/* line 132, ../sass/components/_containers.scss */
+.results-summary {
+  background-color: #e1e1e1;
+  color: #3c7489;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 0.8em;
+  display: table;
+  margin: 0em auto 0.8em;
+  padding: 0.2em .75em;
+}
+
+/* views filters */
+/* line 144, ../sass/components/_containers.scss */
+.filter-wrapper, .views-exposed-form {
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+  border: 1px solid #e1e1e1;
+  padding: .5em 1em;
+  background-color: #f9f9f9;
+}
+/* line 151, ../sass/components/_containers.scss */
+.filter-wrapper .views-exposed-widget, .views-exposed-form .views-exposed-widget {
+  display: inline-block;
+  vertical-align: top;
+  float: none;
+}
+
+/* container tables */
+/* used to display contacts */
+/* line 162, ../sass/components/_containers.scss */
+.container-table, .views-table {
+  width: 100%;
+  border-collapse: separate;
+  border: none;
+  margin: .75em 0em 1em;
+  padding: 0em;
+  color: #555;
+  font-size: 13.28px;
+}
+/* line 172, ../sass/components/_containers.scss */
+.container-table TR, .views-table TR {
+  border-collapse: separate;
+}
+/* line 176, ../sass/components/_containers.scss */
+.container-table TR TH, .views-table TR TH {
+  background-image: -moz-linear-gradient(top, #ffffff 31%, #dfe4e6 100%);
+  background-image: -o-linear-gradient(top, #ffffff 31%, #dfe4e6 100%);
+  background-image: -webkit-linear-gradient(top, #ffffff 31%, #dfe4e6 100%);
+  background-image: linear-gradient(to bottom, #ffffff 31%, #dfe4e6 100%);
+  text-transform: uppercase;
+}
+/* line 182, ../sass/components/_containers.scss */
+.container-table TR TH .form-type-checkbox, .views-table TR TH .form-type-checkbox {
+  background-color: #CCC;
+  margin: 0em .5em 0em .5em;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+}
+/* line 188, ../sass/components/_containers.scss */
+.container-table TR TH:first-child, .views-table TR TH:first-child {
+  -moz-border-radius: 8px 0px 0px 0px;
+  -webkit-border-radius: 8px;
+  border-radius: 8px 0px 0px 0px;
+  border-left: 1px solid #CCC;
+}
+/* line 192, ../sass/components/_containers.scss */
+.container-table TR TH:last-child, .views-table TR TH:last-child {
+  -moz-border-radius: 0px 8px 0px 0px;
+  -webkit-border-radius: 0px;
+  border-radius: 0px 8px 0px 0px;
+  border-right: 1px solid #CCC;
+}
+/* line 202, ../sass/components/_containers.scss */
+.container-table TR:last-child TD, .views-table TR:last-child TD {
+  border-bottom: 1px solid #ccc;
+}
+/* line 208, ../sass/components/_containers.scss */
+.container-table TR:hover TD, .views-table TR:hover TD {
+  background-color: White;
+}
+/* line 215, ../sass/components/_containers.scss */
+.container-table TR.odd TD, .views-table TR.odd TD {
+  background-color: #f1f1f1;
+}
+/* line 219, ../sass/components/_containers.scss */
+.container-table TR.odd:hover TD, .views-table TR.odd:hover TD {
+  background-color: White;
+}
+/* line 227, ../sass/components/_containers.scss */
+.container-table TR TD, .views-table TR TD {
+  border-bottom: 1px solid #e1e1e1;
+  background-color: #fafafa;
+  padding: 0em .5em;
+  border-left: 1px solid #f9f9f9;
+  border-right: 1px solid #CCC;
+}
+/* line 235, ../sass/components/_containers.scss */
+.container-table TR TD.active, .views-table TR TD.active {
+  font-weight: 700;
+  border-left: 1px solid #CCC;
+  border-right: 1px solid #CCC;
+}
+/* line 242, ../sass/components/_containers.scss */
+.container-table TR TD:first-child, .views-table TR TD:first-child {
+  border-left: 1px solid #CCC;
+}
+/* line 245, ../sass/components/_containers.scss */
+.container-table TR TD:last-child, .views-table TR TD:last-child {
+  border-right: 1px solid #CCC;
+}
+/* line 249, ../sass/components/_containers.scss */
+.container-table TR TD .form-type-checkbox, .views-table TR TD .form-type-checkbox {
+  margin: 0em auto;
+}
+/* line 253, ../sass/components/_containers.scss */
+.container-table TR TD .btn-small, .views-table TR TD .btn-small, .container-table TR TD .btn, .views-table TR TD .btn, .container-table TR TD .btn-blue, .views-table TR TD .btn-blue, .container-table TR TD .action-links LI A, .action-links LI .container-table TR TD A, .views-table TR TD .action-links LI A, .action-links LI .views-table TR TD A, .container-table TR TD .menu, .views-table TR TD .menu, .container-table TR TD .btn-vbo, .views-table TR TD .btn-vbo {
+  font-size: initial;
+  font-size: .8em;
+}
+/* line 258, ../sass/components/_containers.scss */
+.container-table TR TD .form-type-checkbox, .views-table TR TD .form-type-checkbox {
+  background-color: #e5e5e5;
+  margin: 0em;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  text-align: center;
+}
+/* line 265, ../sass/components/_containers.scss */
+.container-table TR TD .ao_contact_icon, .views-table TR TD .ao_contact_icon {
+  background: url(../images/ao-backend-icons.png) 0px -150px no-repeat;
+  height: 27px;
+  width: 27px;
+  margin: 0px .05em;
+}
+
+/**
+ * @file
+ * Controls the layouts of titles used in different parts of the system
+ *
+ */
+/* typography */
+/* line 8, ../sass/components/_titles.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}
+
+/* widget titles */
+/* small colored title used in summaries and other items */
+/* line 14, ../sass/components/_titles.scss */
+.widget-title, .widget-title-links, .quick-links .pane-title, .widget-table-titles, .summary-widget-container TABLE THEAD TH, BODY.page-crm-core-dashboard .summary-pane TABLE THEAD TH, .widget-table-titles-large, .container-table TR TH, .views-table TR TH, .activty-feed-container .pane-title, BODY.page-crm-core-dashboard .activity-feed .pane-title, .summary-widget-container .pane-title, BODY.page-crm-core-dashboard .summary-pane .pane-title {
+  border: none;
+  text-align: center;
+  font-size: 1.2em;
+  margin: 0px auto;
+  padding: 0px;
+  color: #0062a0;
+  text-transform: uppercase;
+}
+
+/* line 23, ../sass/components/_titles.scss */
+.widget-title-links, .quick-links .pane-title {
+  margin: 0em 0em .8em;
+  border-bottom: 1px solid #e1e1e1;
+  text-align: left;
+}
+
+/* line 29, ../sass/components/_titles.scss */
+.widget-table-titles, .summary-widget-container TABLE THEAD TH, BODY.page-crm-core-dashboard .summary-pane TABLE THEAD TH {
+  font-size: 0.8em;
+  padding: 0.5em 0em;
+  color: #9b59a8;
+  border-bottom: 1px solid #CCC;
+}
+
+/* line 36, ../sass/components/_titles.scss */
+.widget-table-titles-large, .container-table TR TH, .views-table TR TH {
+  font-size: 0.9em;
+  padding: 0.5em 0em;
+  border-top: 1px solid #CCC;
+  border-bottom: 1px solid #CCC;
+}
+/* line 43, ../sass/components/_titles.scss */
+.widget-table-titles-large A, .container-table TR TH A, .views-table TR TH A {
+  text-decoration: none;
+}
+/* line 46, ../sass/components/_titles.scss */
+.widget-table-titles-large A IMG, .container-table TR TH A IMG, .views-table TR TH A IMG {
+  margin-left: 0.4em;
+}
+
+/**
+ * @file
+ * Handles drop down menus and whatnot
+ */
+/* line 6, ../sass/components/_menus.scss */
+.menu, .btn-vbo {
+  position: relative;
+  background-color: #00a03c;
+}
+/* line 12, ../sass/components/_menus.scss */
+.menu.btn-disabled, .btn-disabled.btn-vbo {
+  background-color: #93e387;
+}
+/* line 17, ../sass/components/_menus.scss */
+.menu.btn-expander:hover, .btn-expander.btn-vbo:hover {
+  background-color: #00a03c;
+}
+/* line 19, ../sass/components/_menus.scss */
+.menu.btn-expander:hover .btn-expandable, .btn-expander.btn-vbo:hover .btn-expandable {
+  display: block;
+}
+/* line 26, ../sass/components/_menus.scss */
+.menu .btn-expandable, .btn-vbo .btn-expandable {
+  display: none;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -moz-border-radius: 4px 0px 4px 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px 0px 4px 4px;
+  background-color: #00a03c;
+  border-top: none;
+  margin-top: -2px;
+  padding: .8em .4em .4em;
+  position: absolute;
+  left: auto;
+  right: 0px;
+  z-index: 1000;
+  min-width: 175px;
+}
+/* line 40, ../sass/components/_menus.scss */
+.menu .btn-expandable UL.links, .btn-vbo .btn-expandable UL.links {
+  padding: 0em;
+  margin: 0em;
+}
+/* line 43, ../sass/components/_menus.scss */
+.menu .btn-expandable UL.links LI, .btn-vbo .btn-expandable UL.links LI {
+  list-style-type: none;
+  padding: 0em .4em .2em;
+  margin: 0em;
+}
+/* line 47, ../sass/components/_menus.scss */
+.menu .btn-expandable UL.links LI:hover, .btn-vbo .btn-expandable UL.links LI:hover {
+  background-color: #34d06e;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+}
+/* line 51, ../sass/components/_menus.scss */
+.menu .btn-expandable UL.links LI A, .btn-vbo .btn-expandable UL.links LI A {
+  color: White;
+  white-space: nowrap;
+  text-decoration: none;
+}
+/* line 55, ../sass/components/_menus.scss */
+.menu .btn-expandable UL.links LI A:hover, .btn-vbo .btn-expandable UL.links LI A:hover {
+  color: White;
+}
+
+/* line 70, ../sass/components/_menus.scss */
+.vbo-views-form #edit-select {
+  display: none;
+}
+
+/* line 74, ../sass/components/_menus.scss */
+.btn-vbo {
+  float: right;
 }
 
 /**
@@ -1976,7 +2316,7 @@ tr.selected td {
  * Defines the appearance of the main navigation, and some other navigation elements
  *
  */
-/* line 9, ../sass/components/_nav.scss */
+/* line 8, ../sass/components/_nav.scss */
 .inline-fix:after, .inline-fix:before {
   content: '';
   font-size: 0px;
@@ -1985,7 +2325,7 @@ tr.selected td {
   padding: 0px;
 }
 
-/* line 20, ../sass/components/_nav.scss */
+/* line 17, ../sass/components/_nav.scss */
 #main-menu {
   margin: 0em;
   padding: 0em;
@@ -1995,21 +2335,25 @@ tr.selected td {
   margin: 0em 0em -4px;
   font-family: Montserrat, Helvetica, sans-serif;
 }
-/* line 28, ../sass/components/_nav.scss */
+/* line 25, ../sass/components/_nav.scss */
 #main-menu UL.links {
   margin: 0em;
   padding: 0em;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  -moz-user-select: -moz-none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
 }
-/* line 33, ../sass/components/_nav.scss */
+/* line 31, ../sass/components/_nav.scss */
 #main-menu UL.links LI {
   margin: 0em;
   padding: 0em;
   background-color: #3c7489;
   color: White;
-  padding: .5em 1em .8em;
+  padding: .8em 1em .8em;
   display: inline-block;
   vertical-align: botttom;
   -moz-transition-property: all;
@@ -2025,7 +2369,17 @@ tr.selected td {
   -webkit-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
 }
-/* line 46, ../sass/components/_nav.scss */
+/* line 43, ../sass/components/_nav.scss */
+#main-menu UL.links LI .nav_menu_icon {
+  height: 30px;
+  width: 30px;
+  display: inline-block;
+  margin-right: 8px;
+  background: url("../images/ao-backend-icons.png") 0px -60px no-repeat;
+  float: left;
+  margin-top: -2px;
+}
+/* line 53, ../sass/components/_nav.scss */
 #main-menu UL.links LI A {
   margin: 0em;
   padding: 0em;
@@ -2035,17 +2389,65 @@ tr.selected td {
   text-decoration: none;
   font-size: 1em;
 }
-/* line 56, ../sass/components/_nav.scss */
+/* line 63, ../sass/components/_nav.scss */
 #main-menu UL.links LI.active {
   background-color: #3697ee;
 }
-/* line 58, ../sass/components/_nav.scss */
+/* line 65, ../sass/components/_nav.scss */
 #main-menu UL.links LI.active:hover {
   background-color: #3697ee;
 }
-/* line 62, ../sass/components/_nav.scss */
+/* line 69, ../sass/components/_nav.scss */
 #main-menu UL.links LI:hover {
   background-color: #6fd6fe;
+}
+/* line 77, ../sass/components/_nav.scss */
+#main-menu UL.links LI.ao_contacts .nav_menu_icon {
+  background-position: -30px -60px;
+}
+/* line 83, ../sass/components/_nav.scss */
+#main-menu UL.links LI.ao_reports .nav_menu_icon {
+  background-position: -60px -60px;
+}
+
+/**
+ * @file
+ * Displays activities and icons in the system
+ *
+ */
+/* line 6, ../sass/components/_activities.scss */
+.crm-core-activity {
+  font-size: 13.28px;
+  position: relative;
+  padding: 1em 1em;
+}
+/* line 13, ../sass/components/_activities.scss */
+.crm-core-activity .crm-core-activity-info {
+  position: relative;
+  margin-left: 3em;
+}
+/* line 18, ../sass/components/_activities.scss */
+.crm-core-activity .crm-core-activity-info .crm-core-activity-actions {
+  float: right;
+}
+
+/* line 26, ../sass/components/_activities.scss */
+.crm-core-activity-icon {
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  left: 1em;
+  top: 1em;
+}
+/* line 33, ../sass/components/_activities.scss */
+.crm-core-activity-icon SPAN {
+  display: block;
+  height: 30px;
+  width: 30px;
+  background: #ffb533 url("../images/ao-backend-icons.png") -120px -30px no-repeat;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
 }
 
 /**
@@ -2195,9 +2597,14 @@ A:active {
 }
 
 /* page titles */
-/* line 46, ../sass/_global-styles.scss */
+/* line 43, ../sass/_global-styles.scss */
 .page__title {
   color: White;
+  position: absolute;
+  left: 0px;
+  bottom: 12px;
+  padding: 0em;
+  font-size: 32px;
 }
 
 /* navigation links */
@@ -2206,17 +2613,17 @@ A:active {
 /* basic container */
 /* basic container element */
 /* activity feed */
-/* line 67, ../sass/_global-styles.scss */
+/* line 69, ../sass/_global-styles.scss */
 .activty-feed-container, BODY.page-crm-core-dashboard .activity-feed {
   background-color: #f9f9f9;
 }
 
 /* summary widget */
-/* line 81, ../sass/_global-styles.scss */
+/* line 83, ../sass/_global-styles.scss */
 .summary-widget-container, BODY.page-crm-core-dashboard .summary-pane {
   background-color: #f1f1f1;
 }
-/* line 92, ../sass/_global-styles.scss */
+/* line 94, ../sass/_global-styles.scss */
 .summary-widget-container TABLE THEAD TH, BODY.page-crm-core-dashboard .summary-pane TABLE THEAD TH {
   background-image: -moz-linear-gradient(top, #ffffff 31%, #dfe4e6 100%);
   background-image: -o-linear-gradient(top, #ffffff 31%, #dfe4e6 100%);
@@ -2225,20 +2632,136 @@ A:active {
 }
 
 /* quicklinks */
-/* line 116, ../sass/_global-styles.scss */
+/* line 118, ../sass/_global-styles.scss */
 .quick-links .link-container {
   font-size: 0.9em;
 }
-/* line 120, ../sass/_global-styles.scss */
+/* line 122, ../sass/_global-styles.scss */
 .quick-links .link-container strong {
   text-transform: uppercase;
 }
-/* line 123, ../sass/_global-styles.scss */
+/* line 125, ../sass/_global-styles.scss */
 .quick-links .link-container strong, .quick-links .link-container A {
   margin-bottom: 0.4em;
   text-decoration: none;
 }
 
+/* views filters */
+/* line 137, ../sass/_global-styles.scss */
+.views-exposed-form .views-exposed-widget {
+  font-size: 13.28px;
+  padding: 0em;
+  margin: 0em .4em 0em 0em;
+}
+/* line 143, ../sass/_global-styles.scss */
+.views-exposed-form .views-exposed-widget LABEL {
+  text-transform: uppercase;
+}
+
+/* breadcrumbs */
+/* line 150, ../sass/_global-styles.scss */
+#breadcrumb {
+  clear: both;
+}
+/* line 154, ../sass/_global-styles.scss */
+#breadcrumb UL.breadcrumbs {
+  list-style-type: none;
+  margin-left: 0px;
+  float: left;
+  margin-top: 12px;
+  background-color: rgba(60, 116, 137, 0.3);
+  height: 19px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  padding: 0px;
+}
+/* line 167, ../sass/_global-styles.scss */
+#breadcrumb UL.breadcrumbs LI {
+  float: left;
+  margin-right: 2px;
+  height: 19px;
+  padding: 0px;
+}
+/* line 173, ../sass/_global-styles.scss */
+#breadcrumb UL.breadcrumbs LI A {
+  height: 19px;
+  display: block;
+  float: left;
+  font-size: 0.9em;
+  margin: 0;
+  padding: 0px 4px 0px 20px;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.5);
+  background: url("../images/ao-backend-icons.png") -452px -6px no-repeat;
+}
+/* line 184, ../sass/_global-styles.scss */
+#breadcrumb UL.breadcrumbs LI A:hover {
+  color: White;
+}
+/* line 191, ../sass/_global-styles.scss */
+#breadcrumb UL.breadcrumbs LI.cmc_home A {
+  display: block;
+  padding: 0;
+  padding-left: 6px;
+  height: 19px;
+  width: 23px;
+  text-indent: -9999px;
+  overflow: hidden;
+  margin-left: 0em;
+  background: url("../images/ao-backend-icons.png") 3px -127px no-repeat;
+}
+/* line 202, ../sass/_global-styles.scss */
+#breadcrumb UL.breadcrumbs LI.cmc_home A:hover {
+  background: url("../images/ao-backend-icons.png") -27px -127px no-repeat;
+}
+
+/* line 217, ../sass/_global-styles.scss */
+#breadcrumb UL.breadcrumbs LI:nth-child(2) A {
+  padding: 0px 4px 0px 8px;
+  background: none;
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* line 222, ../sass/_global-styles.scss */
+#breadcrumb UL.breadcrumbs LI div.bc_arrow {
+  display: none;
+}
+
+/* media queries */
+@media all and (min-width: 0px) and (max-width: 683px) {
+  /* logo size */
+  /* line 231, ../sass/_global-styles.scss */
+  .header__logo {
+    width: 220px;
+    margin-bottom: .5em;
+  }
+}
+@media all and (min-width: 684px) and (max-width: 959px) {
+  /* logo size */
+  /* line 238, ../sass/_global-styles.scss */
+  .header__logo {
+    width: 240px;
+    margin-bottom: .6em;
+  }
+}
+@media all and (min-width: 960px) {
+  /* logo size */
+  /* line 245, ../sass/_global-styles.scss */
+  .header__logo {
+    width: 260px;
+    margin-bottom: .8em;
+  }
+}
+@media all and (min-width: 1200px) {
+  /* logo size */
+  /* line 252, ../sass/_global-styles.scss */
+  .header__logo {
+    width: 280px;
+    margin-bottom: 1em;
+  }
+}
 /**
  * @file
  * Theme for dashboard

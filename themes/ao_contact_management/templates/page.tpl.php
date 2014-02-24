@@ -80,7 +80,11 @@
 <section class="header" id="header">
   <div class="section-wrapper">
   
-    <?php print $breadcrumb; ?>
+    <?php if($breadcrumb): ?>
+      <div id="breadcrumb"><?php print $breadcrumb; ?></div>
+    <?php endif; ?>
+
+
   
     <?php print render($title_prefix); ?>
     <?php if ($title): ?>
@@ -96,7 +100,11 @@
     <?php print render($page['highlighted']); ?>
     <a id="main-content"></a>
     <?php print $messages; ?>
-    <?php print render($tabs); ?>
+    
+    <?php if ($tabs && !empty($tabs['#primary']) && (arg(0) == 'crm-core' && arg(2) != '' )): ?>
+      <?php print render($tabs); ?>
+    <?php endif; ?>
+    
     <?php print render($page['help']); ?>
     <?php if ($action_links): ?>
       <ul class="action-links"><?php print render($action_links); ?></ul>

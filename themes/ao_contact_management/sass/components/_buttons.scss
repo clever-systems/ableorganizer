@@ -18,7 +18,9 @@
   letter-spacing: 2px;
   @include transition-property(all);
   @include transition-duration(.1s);
-  @include transition-timing-function(ease-in-out);  
+  @include transition-timing-function(ease-in-out);
+  @include user-select(none);
+  cursor: pointer;
   
   &:hover {
     background-color: $base-orange2;
@@ -29,4 +31,32 @@
     color: $base-orange4;
   }
   
+  A {
+    color: White;
+    text-decoration: none;
+    &:hover {
+      color: White;
+    }
+  }
 }
+
+.btn-small {
+  @extend .btn;
+  font-size: 0.6em;
+  padding: 0.1em .8em;
+}
+
+.btn-blue  {
+  @extend .btn;
+  background-color: $base-blue-alt;
+    
+  &:hover {
+    background-color: $base-blue3;
+  }
+  &:active {
+    background-color: $base-blue2;
+    color: $base-blue4;
+  }
+  
+}
+
