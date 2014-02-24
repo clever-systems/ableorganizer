@@ -69,24 +69,24 @@
       &:hover {
         background-color: $base-blue2;
       }
-      
-      &.ao_dashboard {
-      }
-      
       &.ao_contacts {
         .nav_menu_icon {
           background-position: -30px -60px;
         }
       }
-      
       &.ao_reports {
         .nav_menu_icon {
           background-position: -60px -60px;
         }
       }
-      
-    
     }
   }
-  
 }
+
+.left-links {
+}
+.right-links {
+  float: right;
+}
+
+

@@ -11,21 +11,34 @@
 <section class="banner" id="banner" role="banner">
   <div class="section-wrapper">
   
-    <?php if ($secondary_menu): ?>
-      <nav class="header__secondary-menu" id="secondary-menu" role="navigation">
-        <?php print theme('links__system_secondary_menu', array(
-          'links' => $secondary_menu,
-          'attributes' => array(
-            'class' => array('links', 'inline', 'clearfix'),
-          ),
-          'heading' => array(
-            'text' => $secondary_menu_heading,
-            'level' => 'h2',
-            'class' => array('element-invisible'),
-          ),
-        )); ?>
-      </nav>
-    <?php endif; ?>
+    
+    <div class="right-links">
+      <?php if ($secondary_menu): ?>
+        <nav class="header__secondary-menu" id="secondary-menu" role="navigation">
+          <?php print theme('links__system_secondary_menu', array(
+            'links' => $secondary_menu,
+            'attributes' => array(
+              'class' => array('links', 'inline', 'clearfix'),
+            ),
+            'heading' => array(
+              'text' => $secondary_menu_heading,
+              'level' => 'h2',
+              'class' => array('element-invisible'),
+            ),
+          )); ?>
+        </nav>
+      <?php endif; ?>
+    </div>
+  
+      <div class="left-links">
+      <?php 
+        $text = t("< Back to Your Site");
+        $path = '<front>';
+        print l($text, $path);
+      ?>
+    </div>
+  
+  
     
     <?php print render($page['header']); ?>    
   
@@ -35,7 +48,7 @@
   <div class="section-wrapper">
   
     <?php if ($logo): ?>
-      <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" class="header__logo" id="logo"><img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" class="header__logo-image" /></a>
+      <a href="<?php print $front_page; ?>crm-core" title="<?php print t('Home'); ?>" rel="home" class="header__logo" id="logo"><img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" class="header__logo-image" /></a>
     <?php endif; ?>
   
     <?php if ($site_name || $site_slogan): ?>

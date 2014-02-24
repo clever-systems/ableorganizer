@@ -128,6 +128,41 @@ function ao_contact_management_links__system_main_menu($variables) {
   return $output;
 }
 
+/**
+ * Preprocessing information for the reports page
+ */
+
+function ao_contact_management_preprocess_crm_core_report_index(&$variables) {
+	
+	$report_items = array();
+	$reports = $variables['reports'];
+	
+	$variables['column_a'] = array();
+	$variables['column_b'] = array();
+	
+	if (!empty($reports)) {
+		foreach ($reports as $key => $item) {
+			$items = array();
+			foreach ($item['reports'] as $report) {
+				$items[] = l($report['title'], $report['path']) . '<br />' . $report['description'];
+			}
+			if($key == 'cmcd' || $key == 'cmcd-donors' || $key == 'cmcev'){
+				$variables['column_a'][] = theme('item_list', array(
+					'items' => $items,
+					'title' => '<div class="crm_core_report_icon report-' . $key . '"></div>' . $item['title'],
+				));
+			} else {
+				$variables['column_b'][] = theme('item_list', array(
+						'items' => $items,
+						'title' => '<div class="crm_core_report_icon report-' . $key . '"></div>' . $item['title'],
+				));
+			}
+		}
+	}
+	
+	
+	
+}
 
 /**
  * Override or insert variables into the maintenance page template.
