@@ -41,21 +41,38 @@
 }
 
 .btn-small {
-  @extend .btn;
-  font-size: 0.6em;
+  font-size: 0.8em;
   padding: 0.1em .8em;
 }
 
 .btn-blue  {
+  
   @extend .btn;
   background-color: $base-blue-alt;
     
   &:hover {
     background-color: $base-blue3;
   }
+  
   &:active {
     background-color: $base-blue2;
     color: $base-blue4;
+  }
+  
+}
+
+.btn-red  {
+  
+  @extend .btn;
+  background-color: #FF5A51;
+    
+  &:hover {
+    background-color: #FFBBB7;
+  }
+  
+  &:active {
+    background-color: #C1443D;
+    color: rgba(207, 68, 68, 1);
   }
   
 }

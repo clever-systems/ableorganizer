@@ -1848,8 +1848,7 @@ tr.selected td {
  *
  */
 /* line 8, ../sass/components/_buttons.scss */
-.btn, .btn-small, .container-table TR TD .btn, .table-container TABLE TR TD .btn,
-.views-table TR TD .btn, .btn-blue, .action-links LI A, .menu, .btn-vbo {
+.btn, .btn-blue, .btn-red, .action-links LI A, .menu, .btn-vbo {
   background-color: #ffb600;
   color: White;
   -moz-border-radius: 4px;
@@ -1881,43 +1880,39 @@ tr.selected td {
   cursor: pointer;
 }
 /* line 25, ../sass/components/_buttons.scss */
-.btn:hover, .btn-small:hover, .container-table TR TD .btn:hover, .table-container TABLE TR TD .btn:hover,
-.views-table TR TD .btn:hover, .btn-blue:hover, .action-links LI A:hover, .menu:hover, .btn-vbo:hover {
+.btn:hover, .btn-blue:hover, .btn-red:hover, .action-links LI A:hover, .menu:hover, .btn-vbo:hover {
   background-color: #ffd889;
   color: White;
 }
 /* line 29, ../sass/components/_buttons.scss */
-.btn:active, .btn-small:active, .container-table TR TD .btn:active, .table-container TABLE TR TD .btn:active,
-.views-table TR TD .btn:active, .btn-blue:active, .action-links LI A:active, .menu:active, .btn-vbo:active {
+.btn:active, .btn-blue:active, .btn-red:active, .action-links LI A:active, .menu:active, .btn-vbo:active {
   background-color: #f89406;
   color: #7d4a0e;
 }
 /* line 34, ../sass/components/_buttons.scss */
-.btn A, .btn-small A, .container-table TR TD .btn A, .table-container TABLE TR TD .btn A,
-.views-table TR TD .btn A, .btn-blue A, .action-links LI A A, .menu A, .btn-vbo A {
+.btn A, .btn-blue A, .btn-red A, .action-links LI A A, .menu A, .btn-vbo A {
   color: White;
   text-decoration: none;
 }
 /* line 37, ../sass/components/_buttons.scss */
-.btn A:hover, .btn-small A:hover, .container-table TR TD .btn A:hover, .table-container TABLE TR TD .btn A:hover,
-.views-table TR TD .btn A:hover, .btn-blue A:hover, .action-links LI A A:hover, .menu A:hover, .btn-vbo A:hover {
+.btn A:hover, .btn-blue A:hover, .btn-red A:hover, .action-links LI A A:hover, .menu A:hover, .btn-vbo A:hover {
   color: White;
 }
 
 /* line 43, ../sass/components/_buttons.scss */
 .btn-small, .container-table TR TD .btn, .table-container TABLE TR TD .btn,
-.views-table TR TD .btn, .container-table TR TD .btn-small, .table-container TABLE TR TD .btn-small,
-.views-table TR TD .btn-small, .container-table TR TD .btn-blue, .table-container TABLE TR TD .btn-blue,
-.views-table TR TD .btn-blue, .container-table TR TD .action-links LI A, .action-links LI .container-table TR TD A, .table-container TABLE TR TD .action-links LI A, .action-links LI .table-container TABLE TR TD A,
+.views-table TR TD .btn, .container-table TR TD .btn-blue, .table-container TABLE TR TD .btn-blue,
+.views-table TR TD .btn-blue, .container-table TR TD .btn-red, .table-container TABLE TR TD .btn-red,
+.views-table TR TD .btn-red, .container-table TR TD .action-links LI A, .action-links LI .container-table TR TD A, .table-container TABLE TR TD .action-links LI A, .action-links LI .table-container TABLE TR TD A,
 .views-table TR TD .action-links LI A,
 .action-links LI .views-table TR TD A, .container-table TR TD .menu, .table-container TABLE TR TD .menu,
 .views-table TR TD .menu, .container-table TR TD .btn-vbo, .table-container TABLE TR TD .btn-vbo,
 .views-table TR TD .btn-vbo {
-  font-size: 0.6em;
+  font-size: 0.8em;
   padding: 0.1em .8em;
 }
 
-/* line 49, ../sass/components/_buttons.scss */
+/* line 48, ../sass/components/_buttons.scss */
 .btn-blue {
   background-color: #65aff2;
 }
@@ -1925,10 +1920,24 @@ tr.selected td {
 .btn-blue:hover {
   background-color: #94c8f6;
 }
-/* line 56, ../sass/components/_buttons.scss */
+/* line 57, ../sass/components/_buttons.scss */
 .btn-blue:active {
   background-color: #6fd6fe;
   color: #3c7489;
+}
+
+/* line 64, ../sass/components/_buttons.scss */
+.btn-red {
+  background-color: #FF5A51;
+}
+/* line 69, ../sass/components/_buttons.scss */
+.btn-red:hover {
+  background-color: #FFBBB7;
+}
+/* line 73, ../sass/components/_buttons.scss */
+.btn-red:active {
+  background-color: #C1443D;
+  color: #cf4444;
 }
 
 /**
@@ -2030,7 +2039,7 @@ tr.selected td {
   display: block;
 }
 /* line 109, ../sass/components/_containers.scss */
-.quick-links .link-container strong.btn, .quick-links .link-container strong.btn-small, .quick-links .link-container strong.btn-blue, .quick-links .link-container strong.menu, .quick-links .link-container strong.btn-vbo, .quick-links .link-container A.btn, .quick-links .link-container A.btn-small, .quick-links .link-container A.btn-blue, .quick-links .link-container .action-links LI A, .action-links LI .quick-links .link-container A, .quick-links .link-container A.menu, .quick-links .link-container A.btn-vbo {
+.quick-links .link-container strong.btn, .quick-links .link-container strong.btn-blue, .quick-links .link-container strong.btn-red, .quick-links .link-container strong.menu, .quick-links .link-container strong.btn-vbo, .quick-links .link-container A.btn, .quick-links .link-container A.btn-blue, .quick-links .link-container A.btn-red, .quick-links .link-container .action-links LI A, .action-links LI .quick-links .link-container A, .quick-links .link-container A.menu, .quick-links .link-container A.btn-vbo {
   display: inline-block;
 }
 
@@ -2186,19 +2195,7 @@ tr.selected td {
 .views-table TR TD .form-type-checkbox {
   margin: 0em auto;
 }
-/* line 99, ../sass/components/_tables.scss */
-.container-table TR TD .btn-small, .table-container TABLE TR TD .btn-small,
-.views-table TR TD .btn-small, .container-table TR TD .btn, .table-container TABLE TR TD .btn,
-.views-table TR TD .btn, .container-table TR TD .btn-blue, .table-container TABLE TR TD .btn-blue,
-.views-table TR TD .btn-blue, .container-table TR TD .action-links LI A, .action-links LI .container-table TR TD A, .table-container TABLE TR TD .action-links LI A, .action-links LI .table-container TABLE TR TD A,
-.views-table TR TD .action-links LI A,
-.action-links LI .views-table TR TD A, .container-table TR TD .menu, .table-container TABLE TR TD .menu,
-.views-table TR TD .menu, .container-table TR TD .btn-vbo, .table-container TABLE TR TD .btn-vbo,
-.views-table TR TD .btn-vbo {
-  font-size: initial;
-  font-size: .8em;
-}
-/* line 104, ../sass/components/_tables.scss */
+/* line 102, ../sass/components/_tables.scss */
 .container-table TR TD .form-type-checkbox, .table-container TABLE TR TD .form-type-checkbox,
 .views-table TR TD .form-type-checkbox {
   background-color: #e5e5e5;
@@ -2208,7 +2205,7 @@ tr.selected td {
   border-radius: 4px;
   text-align: center;
 }
-/* line 111, ../sass/components/_tables.scss */
+/* line 109, ../sass/components/_tables.scss */
 .container-table TR TD .ao_contact_icon, .table-container TABLE TR TD .ao_contact_icon,
 .views-table TR TD .ao_contact_icon {
   background: url(../images/ao-backend-icons.png) 0px -150px no-repeat;
@@ -2219,7 +2216,7 @@ tr.selected td {
 
 /* data tables */
 /* displays tables related to run downs of data within reports */
-/* line 127, ../sass/components/_tables.scss */
+/* line 125, ../sass/components/_tables.scss */
 .data-tables .table-container, BODY.page-crm-core-reports .pane-donation-page-day-table .table-container,
 BODY.page-crm-core-reports .pane-donation-source-frequency-graph .table-container,
 BODY.page-crm-core-reports .pane-donation-source-average-graph .table-container,
@@ -2240,7 +2237,7 @@ BODY.page-crm-core-reports .pane-cmcd-source-callouts-panel-pane-1 .view-content
   -webkit-border-radius: 8px;
   border-radius: 8px;
 }
-/* line 136, ../sass/components/_tables.scss */
+/* line 134, ../sass/components/_tables.scss */
 .data-tables .table-container TABLE, BODY.page-crm-core-reports .pane-donation-page-day-table .table-container TABLE,
 BODY.page-crm-core-reports .pane-donation-source-frequency-graph .table-container TABLE,
 BODY.page-crm-core-reports .pane-donation-source-average-graph .table-container TABLE,
@@ -2258,7 +2255,7 @@ BODY.page-crm-core-reports .pane-cmcd-source-callouts-panel-pane-1 .view-content
 }
 
 /* handles the display of summary items */
-/* line 152, ../sass/components/_tables.scss */
+/* line 150, ../sass/components/_tables.scss */
 .data-summary .views-table TR TD, BODY.page-crm-core-reports .view-cmcd-source-total-figures .views-table TR TD {
   background-color: White;
   text-align: center;
@@ -2636,6 +2633,21 @@ UL.tabs LI.is-active.tabs-primary__tab A {
   background-image: -webkit-linear-gradient(#ffffff, #f5f5f5);
   background-image: linear-gradient(#ffffff, #f5f5f5);
 }
+/* line 54, ../sass/components/_tabs.scss */
+UL.tabs.tabs-secondary {
+  background-color: #e9e9e9;
+  background-image: none;
+  border-bottom: none;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  margin: 0em 0em 0em .4em;
+  padding: 0em 0em 0em .4em;
+}
+/* line 62, ../sass/components/_tabs.scss */
+UL.tabs.tabs-secondary LI {
+  margin: .4em .4em .4em 0em;
+}
 
 /**
  * @file
@@ -2929,24 +2941,26 @@ section.banner A:hover {
   text-decoration: none;
 }
 
+/* views */
+/* views buttons */
 /* views filters */
-/* line 229, ../sass/themes/_global-styles.scss */
+/* line 240, ../sass/themes/_global-styles.scss */
 .views-exposed-form .views-exposed-widget {
   font-size: 13.28px;
   padding: 0em;
   margin: 0em .4em 0em 0em;
 }
-/* line 235, ../sass/themes/_global-styles.scss */
+/* line 246, ../sass/themes/_global-styles.scss */
 .views-exposed-form .views-exposed-widget LABEL {
   text-transform: uppercase;
 }
 
 /* breadcrumbs */
-/* line 242, ../sass/themes/_global-styles.scss */
+/* line 253, ../sass/themes/_global-styles.scss */
 #breadcrumb {
   clear: both;
 }
-/* line 246, ../sass/themes/_global-styles.scss */
+/* line 257, ../sass/themes/_global-styles.scss */
 #breadcrumb UL.breadcrumbs {
   list-style-type: none;
   margin-left: 0px;
@@ -2960,14 +2974,14 @@ section.banner A:hover {
   border-radius: 5px;
   padding: 0px;
 }
-/* line 257, ../sass/themes/_global-styles.scss */
+/* line 268, ../sass/themes/_global-styles.scss */
 #breadcrumb UL.breadcrumbs LI {
   float: left;
   margin-right: 2px;
   height: 19px;
   padding: 0px;
 }
-/* line 263, ../sass/themes/_global-styles.scss */
+/* line 274, ../sass/themes/_global-styles.scss */
 #breadcrumb UL.breadcrumbs LI A {
   height: 19px;
   display: block;
@@ -2980,11 +2994,11 @@ section.banner A:hover {
   background: url("../images/ao-backend-icons.png") -452px -6px no-repeat;
   line-height: 1.5em;
 }
-/* line 275, ../sass/themes/_global-styles.scss */
+/* line 286, ../sass/themes/_global-styles.scss */
 #breadcrumb UL.breadcrumbs LI A:hover {
   color: White;
 }
-/* line 282, ../sass/themes/_global-styles.scss */
+/* line 293, ../sass/themes/_global-styles.scss */
 #breadcrumb UL.breadcrumbs LI.cmc_home A {
   display: block;
   padding: 0;
@@ -3004,40 +3018,70 @@ section.banner A:hover {
   -webkit-transition-duration: 0s;
   transition-duration: 0s;
 }
-/* line 295, ../sass/themes/_global-styles.scss */
+/* line 306, ../sass/themes/_global-styles.scss */
 #breadcrumb UL.breadcrumbs LI.cmc_home A:hover {
   background: url("../images/ao-backend-icons.png") -27px -127px no-repeat;
 }
 
-/* line 310, ../sass/themes/_global-styles.scss */
+/* line 321, ../sass/themes/_global-styles.scss */
 #breadcrumb UL.breadcrumbs LI:nth-child(2) A {
   padding: 0px 4px 0px 8px;
   background: none;
   border-left: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-/* line 315, ../sass/themes/_global-styles.scss */
+/* line 326, ../sass/themes/_global-styles.scss */
 #breadcrumb UL.breadcrumbs LI div.bc_arrow {
   display: none;
+}
+
+/* tooltips */
+/* line 331, ../sass/themes/_global-styles.scss */
+#flot-tooltip {
+  position: absolute;
+  border: 1px solid #d5d5d5;
+  padding: .2em .4em;
+  background-color: #d5d5d5;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  text-align: center;
+  min-width: 20px;
+  color: #555;
+  font-size: 0.8em;
+}
+/* line 342, ../sass/themes/_global-styles.scss */
+#flot-tooltip:after {
+  position: absolute;
+  display: block;
+  content: "";
+  border-color: #d5d5d5 transparent transparent transparent;
+  border-style: solid;
+  border-width: 10px;
+  height: 0px;
+  width: 0px;
+  bottom: -20px;
+  left: 50%;
+  margin-left: -12px;
 }
 
 /* media queries */
 @media all and (min-width: 0px) and (max-width: 683px) {
   /* logo size */
-  /* line 324, ../sass/themes/_global-styles.scss */
+  /* line 363, ../sass/themes/_global-styles.scss */
   .header__logo {
     width: 220px;
     margin-bottom: .5em;
   }
 
   /* report columns */
-  /* line 331, ../sass/themes/_global-styles.scss */
+  /* line 370, ../sass/themes/_global-styles.scss */
   .crm_core_reports .column-left {
     display: block;
     width: 100%;
     margin: 0em;
   }
-  /* line 336, ../sass/themes/_global-styles.scss */
+  /* line 375, ../sass/themes/_global-styles.scss */
   .crm_core_reports .column-right {
     display: block;
     width: 100%;
@@ -3046,7 +3090,7 @@ section.banner A:hover {
 }
 @media all and (min-width: 684px) and (max-width: 959px) {
   /* logo size */
-  /* line 345, ../sass/themes/_global-styles.scss */
+  /* line 384, ../sass/themes/_global-styles.scss */
   .header__logo {
     width: 240px;
     margin-bottom: .6em;
@@ -3054,7 +3098,7 @@ section.banner A:hover {
 }
 @media all and (min-width: 960px) {
   /* logo size */
-  /* line 352, ../sass/themes/_global-styles.scss */
+  /* line 391, ../sass/themes/_global-styles.scss */
   .header__logo {
     width: 260px;
     margin-bottom: .8em;
@@ -3062,7 +3106,7 @@ section.banner A:hover {
 }
 @media all and (min-width: 1200px) {
   /* logo size */
-  /* line 359, ../sass/themes/_global-styles.scss */
+  /* line 398, ../sass/themes/_global-styles.scss */
   .header__logo {
     width: 280px;
     margin-bottom: 1em;
