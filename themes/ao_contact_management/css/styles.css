@@ -861,7 +861,7 @@ table {
  * Will apply breakpoints to define layouts at different resolutions.
  *
  */
-/* line 13, ../sass/layouts/_ui.scss */
+/* line 10, ../sass/layouts/_ui.scss */
 BODY {
   font-weight: normal;
   -moz-transition-property: all;
@@ -879,7 +879,7 @@ BODY {
 }
 
 /* section layout */
-/* line 22, ../sass/layouts/_ui.scss */
+/* line 19, ../sass/layouts/_ui.scss */
 section .section-wrapper {
   margin-left: auto;
   margin-right: auto;
@@ -888,18 +888,18 @@ section .section-wrapper {
   width: 100%;
 }
 
-/* line 30, ../sass/layouts/_ui.scss */
+/* line 27, ../sass/layouts/_ui.scss */
 section.banner {
   background-color: #2d4552;
   padding: .5em 0em;
 }
 
-/* line 34, ../sass/layouts/_ui.scss */
+/* line 31, ../sass/layouts/_ui.scss */
 section.branding {
   background-color: White;
   padding: 1em 0em 0em;
 }
-/* line 39, ../sass/layouts/_ui.scss */
+/* line 36, ../sass/layouts/_ui.scss */
 section.branding .header__logo {
   display: inline-block;
   vertical-align: bottom;
@@ -916,29 +916,29 @@ section.branding .header__logo {
   -webkit-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
 }
-/* line 48, ../sass/layouts/_ui.scss */
+/* line 45, ../sass/layouts/_ui.scss */
 section.branding #main-menu {
   position: absolute;
   right: 0px;
   bottom: 0px;
 }
 
-/* line 55, ../sass/layouts/_ui.scss */
+/* line 52, ../sass/layouts/_ui.scss */
 section.header {
   background-color: #3697ee;
 }
-/* line 57, ../sass/layouts/_ui.scss */
+/* line 54, ../sass/layouts/_ui.scss */
 section.header .section-wrapper {
   height: 93px;
 }
 
-/* line 62, ../sass/layouts/_ui.scss */
+/* line 59, ../sass/layouts/_ui.scss */
 section.content {
   background-color: whitesmoke;
   padding: 1em 0em 0em;
 }
 
-/* line 67, ../sass/layouts/_ui.scss */
+/* line 64, ../sass/layouts/_ui.scss */
 .panels-flexible-region {
   -moz-transition-property: all;
   -o-transition-property: all;
@@ -955,48 +955,48 @@ section.content {
 }
 
 @media all and (min-width: 0px) and (max-width: 480px) {
-  /* line 75, ../sass/layouts/_ui.scss */
+  /* line 72, ../sass/layouts/_ui.scss */
   section.branding {
     padding: 1em 0em 0em;
   }
 
-  /* line 78, ../sass/layouts/_ui.scss */
+  /* line 75, ../sass/layouts/_ui.scss */
   .panels-flexible-region {
     width: 100%;
     float: none;
   }
 }
 @media all and (min-width: 480px) and (max-width: 683px) {
-  /* line 90, ../sass/layouts/_ui.scss */
+  /* line 87, ../sass/layouts/_ui.scss */
   .panels-flexible-region {
     width: 100%;
     float: none;
   }
 }
 @media all and (min-width: 684px) and (max-width: 959px) {
-  /* line 98, ../sass/layouts/_ui.scss */
+  /* line 95, ../sass/layouts/_ui.scss */
   section .section-wrapper {
     width: 100%;
   }
 }
 @media all and (min-width: 960px) {
-  /* line 106, ../sass/layouts/_ui.scss */
+  /* line 103, ../sass/layouts/_ui.scss */
   section .section-wrapper {
     width: 960px;
   }
 
-  /* line 111, ../sass/layouts/_ui.scss */
+  /* line 108, ../sass/layouts/_ui.scss */
   section.branding {
     padding: 2em 0em 0em;
   }
 }
 @media all and (min-width: 1200px) {
-  /* line 117, ../sass/layouts/_ui.scss */
+  /* line 114, ../sass/layouts/_ui.scss */
   section .section-wrapper {
     width: 1200px;
   }
 
-  /* line 121, ../sass/layouts/_ui.scss */
+  /* line 118, ../sass/layouts/_ui.scss */
   section.branding {
     padding: 2em 0em 0em;
   }
@@ -1848,7 +1848,8 @@ tr.selected td {
  *
  */
 /* line 8, ../sass/components/_buttons.scss */
-.btn, .btn-small, .container-table TR TD .btn, .views-table TR TD .btn, .btn-blue, .action-links LI A, .menu, .btn-vbo {
+.btn, .btn-small, .container-table TR TD .btn, .table-container TABLE TR TD .btn,
+.views-table TR TD .btn, .btn-blue, .action-links LI A, .menu, .btn-vbo {
   background-color: #ffb600;
   color: White;
   -moz-border-radius: 4px;
@@ -1880,27 +1881,38 @@ tr.selected td {
   cursor: pointer;
 }
 /* line 25, ../sass/components/_buttons.scss */
-.btn:hover, .btn-small:hover, .container-table TR TD .btn:hover, .views-table TR TD .btn:hover, .btn-blue:hover, .action-links LI A:hover, .menu:hover, .btn-vbo:hover {
+.btn:hover, .btn-small:hover, .container-table TR TD .btn:hover, .table-container TABLE TR TD .btn:hover,
+.views-table TR TD .btn:hover, .btn-blue:hover, .action-links LI A:hover, .menu:hover, .btn-vbo:hover {
   background-color: #ffd889;
   color: White;
 }
 /* line 29, ../sass/components/_buttons.scss */
-.btn:active, .btn-small:active, .container-table TR TD .btn:active, .views-table TR TD .btn:active, .btn-blue:active, .action-links LI A:active, .menu:active, .btn-vbo:active {
+.btn:active, .btn-small:active, .container-table TR TD .btn:active, .table-container TABLE TR TD .btn:active,
+.views-table TR TD .btn:active, .btn-blue:active, .action-links LI A:active, .menu:active, .btn-vbo:active {
   background-color: #f89406;
   color: #7d4a0e;
 }
 /* line 34, ../sass/components/_buttons.scss */
-.btn A, .btn-small A, .container-table TR TD .btn A, .views-table TR TD .btn A, .btn-blue A, .action-links LI A A, .menu A, .btn-vbo A {
+.btn A, .btn-small A, .container-table TR TD .btn A, .table-container TABLE TR TD .btn A,
+.views-table TR TD .btn A, .btn-blue A, .action-links LI A A, .menu A, .btn-vbo A {
   color: White;
   text-decoration: none;
 }
 /* line 37, ../sass/components/_buttons.scss */
-.btn A:hover, .btn-small A:hover, .container-table TR TD .btn A:hover, .views-table TR TD .btn A:hover, .btn-blue A:hover, .action-links LI A A:hover, .menu A:hover, .btn-vbo A:hover {
+.btn A:hover, .btn-small A:hover, .container-table TR TD .btn A:hover, .table-container TABLE TR TD .btn A:hover,
+.views-table TR TD .btn A:hover, .btn-blue A:hover, .action-links LI A A:hover, .menu A:hover, .btn-vbo A:hover {
   color: White;
 }
 
 /* line 43, ../sass/components/_buttons.scss */
-.btn-small, .container-table TR TD .btn, .views-table TR TD .btn, .container-table TR TD .btn-small, .views-table TR TD .btn-small, .container-table TR TD .btn-blue, .views-table TR TD .btn-blue, .container-table TR TD .action-links LI A, .action-links LI .container-table TR TD A, .views-table TR TD .action-links LI A, .action-links LI .views-table TR TD A, .container-table TR TD .menu, .views-table TR TD .menu, .container-table TR TD .btn-vbo, .views-table TR TD .btn-vbo {
+.btn-small, .container-table TR TD .btn, .table-container TABLE TR TD .btn,
+.views-table TR TD .btn, .container-table TR TD .btn-small, .table-container TABLE TR TD .btn-small,
+.views-table TR TD .btn-small, .container-table TR TD .btn-blue, .table-container TABLE TR TD .btn-blue,
+.views-table TR TD .btn-blue, .container-table TR TD .action-links LI A, .action-links LI .container-table TR TD A, .table-container TABLE TR TD .action-links LI A, .action-links LI .table-container TABLE TR TD A,
+.views-table TR TD .action-links LI A,
+.action-links LI .views-table TR TD A, .container-table TR TD .menu, .table-container TABLE TR TD .menu,
+.views-table TR TD .menu, .container-table TR TD .btn-vbo, .table-container TABLE TR TD .btn-vbo,
+.views-table TR TD .btn-vbo {
   font-size: 0.6em;
   padding: 0.1em .8em;
 }
@@ -2037,7 +2049,7 @@ tr.selected td {
 
 /* summary rows */
 /* line 132, ../sass/components/_containers.scss */
-.results-summary {
+.results-summary, BODY.page-crm-core-reports .widget-summary-info {
   background-color: #e1e1e1;
   color: #3c7489;
   -moz-border-radius: 4px;
@@ -2073,8 +2085,9 @@ tr.selected td {
  */
 /* container tables */
 /* used to display contacts */
-/* line 9, ../sass/components/_tables.scss */
-.container-table, .views-table {
+/* line 8, ../sass/components/_tables.scss */
+.container-table, .table-container TABLE,
+.views-table {
   width: 100%;
   border-collapse: separate;
   border: none;
@@ -2083,89 +2096,111 @@ tr.selected td {
   color: #555;
   font-size: 13.28px;
 }
-/* line 19, ../sass/components/_tables.scss */
-.container-table TR, .views-table TR {
+/* line 18, ../sass/components/_tables.scss */
+.container-table TR, .table-container TABLE TR,
+.views-table TR {
   border-collapse: separate;
 }
-/* line 23, ../sass/components/_tables.scss */
-.container-table TR TH, .views-table TR TH {
+/* line 22, ../sass/components/_tables.scss */
+.container-table TR TH, .table-container TABLE TR TH,
+.views-table TR TH {
   background-image: -moz-linear-gradient(top, #ffffff 31%, #dfe4e6 100%);
   background-image: -o-linear-gradient(top, #ffffff 31%, #dfe4e6 100%);
   background-image: -webkit-linear-gradient(top, #ffffff 31%, #dfe4e6 100%);
   background-image: linear-gradient(to bottom, #ffffff 31%, #dfe4e6 100%);
   text-transform: uppercase;
 }
-/* line 29, ../sass/components/_tables.scss */
-.container-table TR TH .form-type-checkbox, .views-table TR TH .form-type-checkbox {
+/* line 28, ../sass/components/_tables.scss */
+.container-table TR TH .form-type-checkbox, .table-container TABLE TR TH .form-type-checkbox,
+.views-table TR TH .form-type-checkbox {
   background-color: #CCC;
   margin: 0em .5em 0em .5em;
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
   border-radius: 4px;
 }
-/* line 35, ../sass/components/_tables.scss */
-.container-table TR TH:first-child, .views-table TR TH:first-child {
+/* line 34, ../sass/components/_tables.scss */
+.container-table TR TH:first-child, .table-container TABLE TR TH:first-child,
+.views-table TR TH:first-child {
   -moz-border-radius: 8px 0px 0px 0px;
   -webkit-border-radius: 8px;
   border-radius: 8px 0px 0px 0px;
   border-left: 1px solid #CCC;
 }
-/* line 39, ../sass/components/_tables.scss */
-.container-table TR TH:last-child, .views-table TR TH:last-child {
+/* line 38, ../sass/components/_tables.scss */
+.container-table TR TH:last-child, .table-container TABLE TR TH:last-child,
+.views-table TR TH:last-child {
   -moz-border-radius: 0px 8px 0px 0px;
   -webkit-border-radius: 0px;
   border-radius: 0px 8px 0px 0px;
   border-right: 1px solid #CCC;
 }
-/* line 49, ../sass/components/_tables.scss */
-.container-table TR:last-child TD, .views-table TR:last-child TD {
+/* line 48, ../sass/components/_tables.scss */
+.container-table TR:last-child TD, .table-container TABLE TR:last-child TD,
+.views-table TR:last-child TD {
   border-bottom: 1px solid #ccc;
 }
-/* line 55, ../sass/components/_tables.scss */
-.container-table TR:hover TD, .views-table TR:hover TD {
+/* line 54, ../sass/components/_tables.scss */
+.container-table TR:hover TD, .table-container TABLE TR:hover TD,
+.views-table TR:hover TD {
   background-color: White;
 }
-/* line 62, ../sass/components/_tables.scss */
-.container-table TR.odd TD, .views-table TR.odd TD {
+/* line 61, ../sass/components/_tables.scss */
+.container-table TR.even TD, .table-container TABLE TR.even TD,
+.views-table TR.even TD {
   background-color: #f1f1f1;
 }
-/* line 66, ../sass/components/_tables.scss */
-.container-table TR.odd:hover TD, .views-table TR.odd:hover TD {
+/* line 65, ../sass/components/_tables.scss */
+.container-table TR.even:hover TD, .table-container TABLE TR.even:hover TD,
+.views-table TR.even:hover TD {
   background-color: White;
 }
-/* line 74, ../sass/components/_tables.scss */
-.container-table TR TD, .views-table TR TD {
+/* line 73, ../sass/components/_tables.scss */
+.container-table TR TD, .table-container TABLE TR TD,
+.views-table TR TD {
   border-bottom: 1px solid #e1e1e1;
   background-color: #fafafa;
   padding: 0em .5em;
   border-left: 1px solid #f9f9f9;
   border-right: 1px solid #CCC;
 }
-/* line 82, ../sass/components/_tables.scss */
-.container-table TR TD.active, .views-table TR TD.active {
+/* line 81, ../sass/components/_tables.scss */
+.container-table TR TD.active, .table-container TABLE TR TD.active,
+.views-table TR TD.active {
   font-weight: 700;
   border-left: 1px solid #CCC;
   border-right: 1px solid #CCC;
 }
-/* line 89, ../sass/components/_tables.scss */
-.container-table TR TD:first-child, .views-table TR TD:first-child {
+/* line 88, ../sass/components/_tables.scss */
+.container-table TR TD:first-child, .table-container TABLE TR TD:first-child,
+.views-table TR TD:first-child {
   border-left: 1px solid #CCC;
 }
-/* line 92, ../sass/components/_tables.scss */
-.container-table TR TD:last-child, .views-table TR TD:last-child {
+/* line 91, ../sass/components/_tables.scss */
+.container-table TR TD:last-child, .table-container TABLE TR TD:last-child,
+.views-table TR TD:last-child {
   border-right: 1px solid #CCC;
 }
-/* line 96, ../sass/components/_tables.scss */
-.container-table TR TD .form-type-checkbox, .views-table TR TD .form-type-checkbox {
+/* line 95, ../sass/components/_tables.scss */
+.container-table TR TD .form-type-checkbox, .table-container TABLE TR TD .form-type-checkbox,
+.views-table TR TD .form-type-checkbox {
   margin: 0em auto;
 }
-/* line 100, ../sass/components/_tables.scss */
-.container-table TR TD .btn-small, .views-table TR TD .btn-small, .container-table TR TD .btn, .views-table TR TD .btn, .container-table TR TD .btn-blue, .views-table TR TD .btn-blue, .container-table TR TD .action-links LI A, .action-links LI .container-table TR TD A, .views-table TR TD .action-links LI A, .action-links LI .views-table TR TD A, .container-table TR TD .menu, .views-table TR TD .menu, .container-table TR TD .btn-vbo, .views-table TR TD .btn-vbo {
+/* line 99, ../sass/components/_tables.scss */
+.container-table TR TD .btn-small, .table-container TABLE TR TD .btn-small,
+.views-table TR TD .btn-small, .container-table TR TD .btn, .table-container TABLE TR TD .btn,
+.views-table TR TD .btn, .container-table TR TD .btn-blue, .table-container TABLE TR TD .btn-blue,
+.views-table TR TD .btn-blue, .container-table TR TD .action-links LI A, .action-links LI .container-table TR TD A, .table-container TABLE TR TD .action-links LI A, .action-links LI .table-container TABLE TR TD A,
+.views-table TR TD .action-links LI A,
+.action-links LI .views-table TR TD A, .container-table TR TD .menu, .table-container TABLE TR TD .menu,
+.views-table TR TD .menu, .container-table TR TD .btn-vbo, .table-container TABLE TR TD .btn-vbo,
+.views-table TR TD .btn-vbo {
   font-size: initial;
   font-size: .8em;
 }
-/* line 105, ../sass/components/_tables.scss */
-.container-table TR TD .form-type-checkbox, .views-table TR TD .form-type-checkbox {
+/* line 104, ../sass/components/_tables.scss */
+.container-table TR TD .form-type-checkbox, .table-container TABLE TR TD .form-type-checkbox,
+.views-table TR TD .form-type-checkbox {
   background-color: #e5e5e5;
   margin: 0em;
   -moz-border-radius: 4px;
@@ -2173,12 +2208,63 @@ tr.selected td {
   border-radius: 4px;
   text-align: center;
 }
-/* line 112, ../sass/components/_tables.scss */
-.container-table TR TD .ao_contact_icon, .views-table TR TD .ao_contact_icon {
+/* line 111, ../sass/components/_tables.scss */
+.container-table TR TD .ao_contact_icon, .table-container TABLE TR TD .ao_contact_icon,
+.views-table TR TD .ao_contact_icon {
   background: url(../images/ao-backend-icons.png) 0px -150px no-repeat;
   height: 27px;
   width: 27px;
   margin: 0px .05em;
+}
+
+/* data tables */
+/* displays tables related to run downs of data within reports */
+/* line 127, ../sass/components/_tables.scss */
+.data-tables .table-container, BODY.page-crm-core-reports .pane-donation-page-day-table .table-container,
+BODY.page-crm-core-reports .pane-donation-source-frequency-graph .table-container,
+BODY.page-crm-core-reports .pane-donation-source-average-graph .table-container,
+BODY.page-crm-core-reports .pane-donation-source-os-graph .table-container,
+BODY.page-crm-core-reports .pane-cmcd-details-callouts-panel-pane-1 .table-container,
+BODY.page-crm-core-reports .pane-cmcd-source-callouts-panel-pane-1 .table-container,
+.data-tables .view-content,
+BODY.page-crm-core-reports .pane-donation-page-day-table .view-content,
+BODY.page-crm-core-reports .pane-donation-source-frequency-graph .view-content,
+BODY.page-crm-core-reports .pane-donation-source-average-graph .view-content,
+BODY.page-crm-core-reports .pane-donation-source-os-graph .view-content,
+BODY.page-crm-core-reports .pane-cmcd-details-callouts-panel-pane-1 .view-content,
+BODY.page-crm-core-reports .pane-cmcd-source-callouts-panel-pane-1 .view-content {
+  background-color: #f1f1f1;
+  padding: 0em .2em .2em;
+  margin: 0em 0em .8em;
+  border: 1px solid #CCC;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+}
+/* line 136, ../sass/components/_tables.scss */
+.data-tables .table-container TABLE, BODY.page-crm-core-reports .pane-donation-page-day-table .table-container TABLE,
+BODY.page-crm-core-reports .pane-donation-source-frequency-graph .table-container TABLE,
+BODY.page-crm-core-reports .pane-donation-source-average-graph .table-container TABLE,
+BODY.page-crm-core-reports .pane-donation-source-os-graph .table-container TABLE,
+BODY.page-crm-core-reports .pane-cmcd-details-callouts-panel-pane-1 .table-container TABLE,
+BODY.page-crm-core-reports .pane-cmcd-source-callouts-panel-pane-1 .table-container TABLE,
+.data-tables .view-content TABLE,
+BODY.page-crm-core-reports .pane-donation-page-day-table .view-content TABLE,
+BODY.page-crm-core-reports .pane-donation-source-frequency-graph .view-content TABLE,
+BODY.page-crm-core-reports .pane-donation-source-average-graph .view-content TABLE,
+BODY.page-crm-core-reports .pane-donation-source-os-graph .view-content TABLE,
+BODY.page-crm-core-reports .pane-cmcd-details-callouts-panel-pane-1 .view-content TABLE,
+BODY.page-crm-core-reports .pane-cmcd-source-callouts-panel-pane-1 .view-content TABLE {
+  margin-bottom: 0em;
+}
+
+/* handles the display of summary items */
+/* line 152, ../sass/components/_tables.scss */
+.data-summary .views-table TR TD, BODY.page-crm-core-reports .view-cmcd-source-total-figures .views-table TR TD {
+  background-color: White;
+  text-align: center;
+  font-weight: 600;
+  font-size: 24px;
+  padding: .5em 0em;
 }
 
 /**
@@ -2195,7 +2281,8 @@ h1, h2, h3, h4, h5, h6 {
 /* widget titles */
 /* small colored title used in summaries and other items */
 /* line 14, ../sass/components/_titles.scss */
-.widget-title, .widget-title-links, .quick-links .pane-title, .widget-table-titles, .summary-widget-container TABLE THEAD TH, BODY.page-crm-core-dashboard .summary-pane TABLE THEAD TH, .widget-table-titles-large, .container-table TR TH, .views-table TR TH, .activty-feed-container .pane-title, BODY.page-crm-core-dashboard .activity-feed .pane-title, .summary-widget-container .pane-title, BODY.page-crm-core-dashboard .summary-pane .pane-title {
+.widget-title, .widget-title-links, .quick-links .pane-title, BODY.page-crm-core-reports .pane-title, .widget-table-titles, .summary-widget-container TABLE THEAD TH, BODY.page-crm-core-dashboard .summary-pane TABLE THEAD TH, .widget-table-titles-large, .container-table TR TH, .table-container TABLE TR TH,
+.views-table TR TH, .activty-feed-container .pane-title, BODY.page-crm-core-dashboard .activity-feed .pane-title, .summary-widget-container .pane-title, BODY.page-crm-core-dashboard .summary-pane .pane-title {
   border: none;
   text-align: center;
   font-size: 1.2em;
@@ -2205,14 +2292,17 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
 }
 
-/* line 23, ../sass/components/_titles.scss */
-.widget-title-links, .quick-links .pane-title {
+/* applied to tables */
+/* used in dashboard, reports */
+/* line 26, ../sass/components/_titles.scss */
+.widget-title-links, .quick-links .pane-title, BODY.page-crm-core-reports .pane-title {
   margin: 0em 0em .8em;
   border-bottom: 1px solid #e1e1e1;
   text-align: left;
 }
 
-/* line 29, ../sass/components/_titles.scss */
+/* titles for widget tables */
+/* line 34, ../sass/components/_titles.scss */
 .widget-table-titles, .summary-widget-container TABLE THEAD TH, BODY.page-crm-core-dashboard .summary-pane TABLE THEAD TH {
   font-size: 0.8em;
   padding: 0.5em 0em;
@@ -2220,19 +2310,23 @@ h1, h2, h3, h4, h5, h6 {
   border-bottom: 1px solid #CCC;
 }
 
-/* line 36, ../sass/components/_titles.scss */
-.widget-table-titles-large, .container-table TR TH, .views-table TR TH {
+/* larger version of widget tables */
+/* line 42, ../sass/components/_titles.scss */
+.widget-table-titles-large, .container-table TR TH, .table-container TABLE TR TH,
+.views-table TR TH {
   font-size: 0.9em;
   padding: 0.5em 0em;
   border-top: 1px solid #CCC;
   border-bottom: 1px solid #CCC;
 }
-/* line 43, ../sass/components/_titles.scss */
-.widget-table-titles-large A, .container-table TR TH A, .views-table TR TH A {
+/* line 49, ../sass/components/_titles.scss */
+.widget-table-titles-large A, .container-table TR TH A, .table-container TABLE TR TH A,
+.views-table TR TH A {
   text-decoration: none;
 }
-/* line 46, ../sass/components/_titles.scss */
-.widget-table-titles-large A IMG, .container-table TR TH A IMG, .views-table TR TH A IMG {
+/* line 52, ../sass/components/_titles.scss */
+.widget-table-titles-large A IMG, .container-table TR TH A IMG, .table-container TABLE TR TH A IMG,
+.views-table TR TH A IMG {
   margin-left: 0.4em;
 }
 
@@ -2473,6 +2567,78 @@ h1, h2, h3, h4, h5, h6 {
 
 /**
  * @file
+ * Defines the appearance of tabs within the UI
+ *
+ */
+/* line 8, ../sass/components/_tabs.scss */
+UL.tabs.tabs-primary {
+  padding: 0em;
+  position: relative;
+}
+/* line 11, ../sass/components/_tabs.scss */
+UL.tabs.tabs-primary:after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  border-bottom: 1px solid #708c9b;
+  z-index: 1;
+}
+/* line 22, ../sass/components/_tabs.scss */
+UL.tabs LI.tabs-primary__tab {
+  border: 1px solid #708c9b;
+  border-bottom: none;
+  margin: 0em 10px 0em 0em;
+  position: relative;
+  z-index: 0;
+  box-sizing: border-box;
+  font-size: 13.28px;
+}
+/* line 31, ../sass/components/_tabs.scss */
+UL.tabs LI.tabs-primary__tab A {
+  padding: .3em .6em;
+  position: relative;
+  background-image: -moz-linear-gradient(#e1e1e1, #d5d5d5);
+  background-image: -o-linear-gradient(#e1e1e1, #d5d5d5);
+  background-image: -webkit-linear-gradient(#e1e1e1, #d5d5d5);
+  background-image: linear-gradient(#e1e1e1, #d5d5d5);
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -moz-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+}
+/* line 39, ../sass/components/_tabs.scss */
+UL.tabs LI.tabs-primary__tab A:hover {
+  color: #708c9b;
+  background-image: -moz-linear-gradient(#f5f5f5, #e1e1e1);
+  background-image: -o-linear-gradient(#f5f5f5, #e1e1e1);
+  background-image: -webkit-linear-gradient(#f5f5f5, #e1e1e1);
+  background-image: linear-gradient(#f5f5f5, #e1e1e1);
+}
+/* line 45, ../sass/components/_tabs.scss */
+UL.tabs LI.is-active.tabs-primary__tab {
+  z-index: 3;
+  border-bottom: 1px solid whitesmoke;
+}
+/* line 48, ../sass/components/_tabs.scss */
+UL.tabs LI.is-active.tabs-primary__tab A {
+  background-image: -moz-linear-gradient(#ffffff, #f5f5f5);
+  background-image: -o-linear-gradient(#ffffff, #f5f5f5);
+  background-image: -webkit-linear-gradient(#ffffff, #f5f5f5);
+  background-image: linear-gradient(#ffffff, #f5f5f5);
+}
+
+/**
+ * @file
  * Print styling
  *
  * We provide some sane print styling for Drupal using Zen's layout method.
@@ -2566,14 +2732,14 @@ h1, h2, h3, h4, h5, h6 {
  *
  */
 /* admin menu - fixes some incompatibilities */
-/* line 8, ../sass/_global-styles.scss */
+/* line 8, ../sass/themes/_global-styles.scss */
 #admin-menu .dropdown .admin-menu-icon img {
   height: 16px;
   width: 16px;
 }
 
 /* typography */
-/* line 14, ../sass/_global-styles.scss */
+/* line 14, ../sass/themes/_global-styles.scss */
 A {
   color: #0062a0;
   -moz-transition-property: all;
@@ -2589,28 +2755,28 @@ A {
   -webkit-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
 }
-/* line 20, ../sass/_global-styles.scss */
+/* line 20, ../sass/themes/_global-styles.scss */
 A:hover {
   color: #5ccbf6;
 }
-/* line 23, ../sass/_global-styles.scss */
+/* line 23, ../sass/themes/_global-styles.scss */
 A:active {
   color: #0062a0;
 }
 
-/* line 28, ../sass/_global-styles.scss */
-.title-fonts, .activty-feed-container .pane-title, BODY.page-crm-core-dashboard .activity-feed .pane-title, .summary-widget-container .pane-title, BODY.page-crm-core-dashboard .summary-pane .pane-title, .quick-links .pane-title {
+/* line 28, ../sass/themes/_global-styles.scss */
+.title-fonts, .activty-feed-container .pane-title, BODY.page-crm-core-dashboard .activity-feed .pane-title, .summary-widget-container .pane-title, BODY.page-crm-core-dashboard .summary-pane .pane-title, .quick-links .pane-title, BODY.page-crm-core-reports .pane-title {
   font-family: Montserrat, Helvetica, sans-serif;
   letter-spacing: -0.05em;
   font-size: 1em;
 }
 
-/* line 33, ../sass/_global-styles.scss */
+/* line 33, ../sass/themes/_global-styles.scss */
 .title-fonts-large, .activty-feed-container .pane-title, BODY.page-crm-core-dashboard .activity-feed .pane-title {
   font-size: 1.2em;
 }
 
-/* line 36, ../sass/_global-styles.scss */
+/* line 36, ../sass/themes/_global-styles.scss */
 .summary-data, .summary-widget-container TABLE TR TD, BODY.page-crm-core-dashboard .summary-pane TABLE TR TD {
   font-size: 1.4em;
   font-weight: 700;
@@ -2618,7 +2784,7 @@ A:active {
 }
 
 /* page titles */
-/* line 43, ../sass/_global-styles.scss */
+/* line 43, ../sass/themes/_global-styles.scss */
 .page__title {
   color: White;
   position: absolute;
@@ -2627,25 +2793,29 @@ A:active {
   padding: 0em;
   font-size: 32px;
 }
+/* line 51, ../sass/themes/_global-styles.scss */
+.page__title em {
+  color: #d6f7ff;
+}
 
 /* navigation links */
 /* navigation links */
-/* line 54, ../sass/_global-styles.scss */
+/* line 60, ../sass/themes/_global-styles.scss */
 section.banner {
   font-size: 10.72px;
 }
-/* line 57, ../sass/_global-styles.scss */
+/* line 63, ../sass/themes/_global-styles.scss */
 section.banner A {
   color: #dfe4e6;
   text-decoration: none;
 }
-/* line 61, ../sass/_global-styles.scss */
+/* line 67, ../sass/themes/_global-styles.scss */
 section.banner A:hover {
   color: White;
 }
 
 /* reports */
-/* line 75, ../sass/_global-styles.scss */
+/* line 81, ../sass/themes/_global-styles.scss */
 .crm_core_reports H3 {
   -moz-border-radius: 32px;
   -webkit-border-radius: 32px;
@@ -2659,7 +2829,7 @@ section.banner A:hover {
   text-shadow: rgba(0, 0, 0, 0.5) 1px 1px 0;
   font-size: 1.3em;
 }
-/* line 86, ../sass/_global-styles.scss */
+/* line 92, ../sass/themes/_global-styles.scss */
 .crm_core_reports H3 .crm_core_report_icon {
   height: 30px;
   width: 30px;
@@ -2671,17 +2841,17 @@ section.banner A:hover {
   border-radius: 24px;
   padding: 0;
 }
-/* line 100, ../sass/_global-styles.scss */
+/* line 106, ../sass/themes/_global-styles.scss */
 .crm_core_reports .item-list {
   font-size: 0.9em;
 }
-/* line 105, ../sass/_global-styles.scss */
+/* line 111, ../sass/themes/_global-styles.scss */
 .crm_core_reports .item-list UL {
   list-style: none;
   margin: 1em 0em 1em 1em;
   padding: 0em;
 }
-/* line 110, ../sass/_global-styles.scss */
+/* line 116, ../sass/themes/_global-styles.scss */
 .crm_core_reports .item-list UL LI {
   list-style: none;
   margin: 0em;
@@ -2689,7 +2859,7 @@ section.banner A:hover {
   font-style: italic;
   margin-left: 12px;
 }
-/* line 117, ../sass/_global-styles.scss */
+/* line 123, ../sass/themes/_global-styles.scss */
 .crm_core_reports .item-list UL LI A {
   margin-left: -12px;
   font-style: normal;
@@ -2705,7 +2875,7 @@ section.banner A:hover {
 .crm_core_reports:after {
   clear: both;
 }
-/* line 131, ../sass/_global-styles.scss */
+/* line 137, ../sass/themes/_global-styles.scss */
 .crm_core_reports .column-left {
   float: left;
   width: 50%;
@@ -2713,7 +2883,7 @@ section.banner A:hover {
   margin-right: -50%;
   padding: 0em 2em 0em 0em;
 }
-/* line 135, ../sass/_global-styles.scss */
+/* line 141, ../sass/themes/_global-styles.scss */
 .crm_core_reports .column-right {
   float: left;
   width: 50%;
@@ -2726,17 +2896,17 @@ section.banner A:hover {
 /* basic container */
 /* basic container element */
 /* activity feed */
-/* line 155, ../sass/_global-styles.scss */
+/* line 161, ../sass/themes/_global-styles.scss */
 .activty-feed-container, BODY.page-crm-core-dashboard .activity-feed {
   background-color: #f9f9f9;
 }
 
 /* summary widget */
-/* line 169, ../sass/_global-styles.scss */
+/* line 175, ../sass/themes/_global-styles.scss */
 .summary-widget-container, BODY.page-crm-core-dashboard .summary-pane {
   background-color: #f1f1f1;
 }
-/* line 180, ../sass/_global-styles.scss */
+/* line 186, ../sass/themes/_global-styles.scss */
 .summary-widget-container TABLE THEAD TH, BODY.page-crm-core-dashboard .summary-pane TABLE THEAD TH {
   background-image: -moz-linear-gradient(top, #ffffff 31%, #dfe4e6 100%);
   background-image: -o-linear-gradient(top, #ffffff 31%, #dfe4e6 100%);
@@ -2745,38 +2915,38 @@ section.banner A:hover {
 }
 
 /* quicklinks */
-/* line 204, ../sass/_global-styles.scss */
+/* line 210, ../sass/themes/_global-styles.scss */
 .quick-links .link-container {
   font-size: 0.9em;
 }
-/* line 208, ../sass/_global-styles.scss */
+/* line 214, ../sass/themes/_global-styles.scss */
 .quick-links .link-container strong {
   text-transform: uppercase;
 }
-/* line 211, ../sass/_global-styles.scss */
+/* line 217, ../sass/themes/_global-styles.scss */
 .quick-links .link-container strong, .quick-links .link-container A {
   margin-bottom: 0.4em;
   text-decoration: none;
 }
 
 /* views filters */
-/* line 223, ../sass/_global-styles.scss */
+/* line 229, ../sass/themes/_global-styles.scss */
 .views-exposed-form .views-exposed-widget {
   font-size: 13.28px;
   padding: 0em;
   margin: 0em .4em 0em 0em;
 }
-/* line 229, ../sass/_global-styles.scss */
+/* line 235, ../sass/themes/_global-styles.scss */
 .views-exposed-form .views-exposed-widget LABEL {
   text-transform: uppercase;
 }
 
 /* breadcrumbs */
-/* line 236, ../sass/_global-styles.scss */
+/* line 242, ../sass/themes/_global-styles.scss */
 #breadcrumb {
   clear: both;
 }
-/* line 240, ../sass/_global-styles.scss */
+/* line 246, ../sass/themes/_global-styles.scss */
 #breadcrumb UL.breadcrumbs {
   list-style-type: none;
   margin-left: 0px;
@@ -2790,14 +2960,14 @@ section.banner A:hover {
   border-radius: 5px;
   padding: 0px;
 }
-/* line 251, ../sass/_global-styles.scss */
+/* line 257, ../sass/themes/_global-styles.scss */
 #breadcrumb UL.breadcrumbs LI {
   float: left;
   margin-right: 2px;
   height: 19px;
   padding: 0px;
 }
-/* line 257, ../sass/_global-styles.scss */
+/* line 263, ../sass/themes/_global-styles.scss */
 #breadcrumb UL.breadcrumbs LI A {
   height: 19px;
   display: block;
@@ -2810,11 +2980,11 @@ section.banner A:hover {
   background: url("../images/ao-backend-icons.png") -452px -6px no-repeat;
   line-height: 1.5em;
 }
-/* line 269, ../sass/_global-styles.scss */
+/* line 275, ../sass/themes/_global-styles.scss */
 #breadcrumb UL.breadcrumbs LI A:hover {
   color: White;
 }
-/* line 276, ../sass/_global-styles.scss */
+/* line 282, ../sass/themes/_global-styles.scss */
 #breadcrumb UL.breadcrumbs LI.cmc_home A {
   display: block;
   padding: 0;
@@ -2834,19 +3004,19 @@ section.banner A:hover {
   -webkit-transition-duration: 0s;
   transition-duration: 0s;
 }
-/* line 289, ../sass/_global-styles.scss */
+/* line 295, ../sass/themes/_global-styles.scss */
 #breadcrumb UL.breadcrumbs LI.cmc_home A:hover {
   background: url("../images/ao-backend-icons.png") -27px -127px no-repeat;
 }
 
-/* line 304, ../sass/_global-styles.scss */
+/* line 310, ../sass/themes/_global-styles.scss */
 #breadcrumb UL.breadcrumbs LI:nth-child(2) A {
   padding: 0px 4px 0px 8px;
   background: none;
   border-left: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-/* line 309, ../sass/_global-styles.scss */
+/* line 315, ../sass/themes/_global-styles.scss */
 #breadcrumb UL.breadcrumbs LI div.bc_arrow {
   display: none;
 }
@@ -2854,20 +3024,20 @@ section.banner A:hover {
 /* media queries */
 @media all and (min-width: 0px) and (max-width: 683px) {
   /* logo size */
-  /* line 318, ../sass/_global-styles.scss */
+  /* line 324, ../sass/themes/_global-styles.scss */
   .header__logo {
     width: 220px;
     margin-bottom: .5em;
   }
 
   /* report columns */
-  /* line 325, ../sass/_global-styles.scss */
+  /* line 331, ../sass/themes/_global-styles.scss */
   .crm_core_reports .column-left {
     display: block;
     width: 100%;
     margin: 0em;
   }
-  /* line 330, ../sass/_global-styles.scss */
+  /* line 336, ../sass/themes/_global-styles.scss */
   .crm_core_reports .column-right {
     display: block;
     width: 100%;
@@ -2876,7 +3046,7 @@ section.banner A:hover {
 }
 @media all and (min-width: 684px) and (max-width: 959px) {
   /* logo size */
-  /* line 339, ../sass/_global-styles.scss */
+  /* line 345, ../sass/themes/_global-styles.scss */
   .header__logo {
     width: 240px;
     margin-bottom: .6em;
@@ -2884,7 +3054,7 @@ section.banner A:hover {
 }
 @media all and (min-width: 960px) {
   /* logo size */
-  /* line 346, ../sass/_global-styles.scss */
+  /* line 352, ../sass/themes/_global-styles.scss */
   .header__logo {
     width: 260px;
     margin-bottom: .8em;
@@ -2892,7 +3062,7 @@ section.banner A:hover {
 }
 @media all and (min-width: 1200px) {
   /* logo size */
-  /* line 353, ../sass/_global-styles.scss */
+  /* line 359, ../sass/themes/_global-styles.scss */
   .header__logo {
     width: 280px;
     margin-bottom: 1em;
@@ -2903,6 +3073,68 @@ section.banner A:hover {
  * Theme for dashboard
  *
  */
+/**
+ * @file
+ * Defines the general look of reports
+ *
+ */
+/* line 6, ../sass/themes/_reports.scss */
+BODY.page-crm-core-reports {
+  /* view headers */
+  /* specific data summary tables */
+  /* specific data tables */
+  /* specific field highlights */
+  /* table centering */
+}
+/* line 14, ../sass/themes/_reports.scss */
+BODY.page-crm-core-reports .view-header {
+  position: relative;
+}
+/* line 18, ../sass/themes/_reports.scss */
+BODY.page-crm-core-reports .view-header .detail-buttons {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+}
+/* line 29, ../sass/themes/_reports.scss */
+BODY.page-crm-core-reports .widget-summary-info .widget-summary-info-detail {
+  font-weight: 700;
+}
+/* line 49, ../sass/themes/_reports.scss */
+BODY.page-crm-core-reports .pane-donation-page-day-table .table-container,
+BODY.page-crm-core-reports .pane-donation-source-frequency-graph .table-container,
+BODY.page-crm-core-reports .pane-donation-source-average-graph .table-container,
+BODY.page-crm-core-reports .pane-donation-source-os-graph .table-container,
+BODY.page-crm-core-reports .pane-cmcd-details-callouts-panel-pane-1 .table-container,
+BODY.page-crm-core-reports .pane-cmcd-source-callouts-panel-pane-1 .table-container {
+  margin-top: 20px;
+}
+/* line 56, ../sass/themes/_reports.scss */
+BODY.page-crm-core-reports .table-field-total-amount-by-time,
+BODY.page-crm-core-reports .table-field-day-of-week,
+BODY.page-crm-core-reports .views-field-field-cmcd-amount,
+BODY.page-crm-core-reports .table-field-donor-frequency,
+BODY.page-crm-core-reports .table-field-average-amount,
+BODY.page-crm-core-reports .table-field-source {
+  font-weight: 700;
+}
+/* line 66, ../sass/themes/_reports.scss */
+BODY.page-crm-core-reports .table-field-time-of-day,
+BODY.page-crm-core-reports .table-field-total-donations,
+BODY.page-crm-core-reports .table-field-total-amount-by-time,
+BODY.page-crm-core-reports .table-field-total-amount,
+BODY.page-crm-core-reports .table-field-total-donors,
+BODY.page-crm-core-reports .views-field-field-cmcd-amount-1,
+BODY.page-crm-core-reports .views-field-field-cmcd-amount,
+BODY.page-crm-core-reports .views-field-activity-id,
+BODY.page-crm-core-reports .table-field-number-of-donors,
+BODY.page-crm-core-reports .table-field-total-receipts,
+BODY.page-crm-core-reports .table-field-total-amount,
+BODY.page-crm-core-reports .table-field-donors,
+BODY.page-crm-core-reports .table-field-percent {
+  text-align: center;
+}
+
 /**
  * @file
  * Defines the appearance of various icons used throughout the system

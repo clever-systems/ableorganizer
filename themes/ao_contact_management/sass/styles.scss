@@ -25,6 +25,7 @@
 @import "components/menus";
 @import "components/nav";
 @import "components/activities";
+@import "components/tabs";
 
 
 // Optionally, add your own components here.
@@ -33,6 +34,7 @@
 /* SMACSS theme rules */
 /* @import "theme-A"; */
 /* @import "theme-B"; */
-@import "global-styles";
-@import "dashboard";
+@import "themes/global-styles";
+@import "themes/dashboard";
+@import "themes/reports";
 @import "themes/icons";
