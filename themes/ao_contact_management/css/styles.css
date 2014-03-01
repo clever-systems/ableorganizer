@@ -2067,9 +2067,13 @@ tr.selected td {
   float: none;
 }
 
+/**
+ * @file
+ * Layout for tables used in the theme
+ */
 /* container tables */
 /* used to display contacts */
-/* line 162, ../sass/components/_containers.scss */
+/* line 9, ../sass/components/_tables.scss */
 .container-table, .views-table {
   width: 100%;
   border-collapse: separate;
@@ -2079,11 +2083,11 @@ tr.selected td {
   color: #555;
   font-size: 13.28px;
 }
-/* line 172, ../sass/components/_containers.scss */
+/* line 19, ../sass/components/_tables.scss */
 .container-table TR, .views-table TR {
   border-collapse: separate;
 }
-/* line 176, ../sass/components/_containers.scss */
+/* line 23, ../sass/components/_tables.scss */
 .container-table TR TH, .views-table TR TH {
   background-image: -moz-linear-gradient(top, #ffffff 31%, #dfe4e6 100%);
   background-image: -o-linear-gradient(top, #ffffff 31%, #dfe4e6 100%);
@@ -2091,7 +2095,7 @@ tr.selected td {
   background-image: linear-gradient(to bottom, #ffffff 31%, #dfe4e6 100%);
   text-transform: uppercase;
 }
-/* line 182, ../sass/components/_containers.scss */
+/* line 29, ../sass/components/_tables.scss */
 .container-table TR TH .form-type-checkbox, .views-table TR TH .form-type-checkbox {
   background-color: #CCC;
   margin: 0em .5em 0em .5em;
@@ -2099,37 +2103,37 @@ tr.selected td {
   -webkit-border-radius: 4px;
   border-radius: 4px;
 }
-/* line 188, ../sass/components/_containers.scss */
+/* line 35, ../sass/components/_tables.scss */
 .container-table TR TH:first-child, .views-table TR TH:first-child {
   -moz-border-radius: 8px 0px 0px 0px;
   -webkit-border-radius: 8px;
   border-radius: 8px 0px 0px 0px;
   border-left: 1px solid #CCC;
 }
-/* line 192, ../sass/components/_containers.scss */
+/* line 39, ../sass/components/_tables.scss */
 .container-table TR TH:last-child, .views-table TR TH:last-child {
   -moz-border-radius: 0px 8px 0px 0px;
   -webkit-border-radius: 0px;
   border-radius: 0px 8px 0px 0px;
   border-right: 1px solid #CCC;
 }
-/* line 202, ../sass/components/_containers.scss */
+/* line 49, ../sass/components/_tables.scss */
 .container-table TR:last-child TD, .views-table TR:last-child TD {
   border-bottom: 1px solid #ccc;
 }
-/* line 208, ../sass/components/_containers.scss */
+/* line 55, ../sass/components/_tables.scss */
 .container-table TR:hover TD, .views-table TR:hover TD {
   background-color: White;
 }
-/* line 215, ../sass/components/_containers.scss */
+/* line 62, ../sass/components/_tables.scss */
 .container-table TR.odd TD, .views-table TR.odd TD {
   background-color: #f1f1f1;
 }
-/* line 219, ../sass/components/_containers.scss */
+/* line 66, ../sass/components/_tables.scss */
 .container-table TR.odd:hover TD, .views-table TR.odd:hover TD {
   background-color: White;
 }
-/* line 227, ../sass/components/_containers.scss */
+/* line 74, ../sass/components/_tables.scss */
 .container-table TR TD, .views-table TR TD {
   border-bottom: 1px solid #e1e1e1;
   background-color: #fafafa;
@@ -2137,30 +2141,30 @@ tr.selected td {
   border-left: 1px solid #f9f9f9;
   border-right: 1px solid #CCC;
 }
-/* line 235, ../sass/components/_containers.scss */
+/* line 82, ../sass/components/_tables.scss */
 .container-table TR TD.active, .views-table TR TD.active {
   font-weight: 700;
   border-left: 1px solid #CCC;
   border-right: 1px solid #CCC;
 }
-/* line 242, ../sass/components/_containers.scss */
+/* line 89, ../sass/components/_tables.scss */
 .container-table TR TD:first-child, .views-table TR TD:first-child {
   border-left: 1px solid #CCC;
 }
-/* line 245, ../sass/components/_containers.scss */
+/* line 92, ../sass/components/_tables.scss */
 .container-table TR TD:last-child, .views-table TR TD:last-child {
   border-right: 1px solid #CCC;
 }
-/* line 249, ../sass/components/_containers.scss */
+/* line 96, ../sass/components/_tables.scss */
 .container-table TR TD .form-type-checkbox, .views-table TR TD .form-type-checkbox {
   margin: 0em auto;
 }
-/* line 253, ../sass/components/_containers.scss */
+/* line 100, ../sass/components/_tables.scss */
 .container-table TR TD .btn-small, .views-table TR TD .btn-small, .container-table TR TD .btn, .views-table TR TD .btn, .container-table TR TD .btn-blue, .views-table TR TD .btn-blue, .container-table TR TD .action-links LI A, .action-links LI .container-table TR TD A, .views-table TR TD .action-links LI A, .action-links LI .views-table TR TD A, .container-table TR TD .menu, .views-table TR TD .menu, .container-table TR TD .btn-vbo, .views-table TR TD .btn-vbo {
   font-size: initial;
   font-size: .8em;
 }
-/* line 258, ../sass/components/_containers.scss */
+/* line 105, ../sass/components/_tables.scss */
 .container-table TR TD .form-type-checkbox, .views-table TR TD .form-type-checkbox {
   background-color: #e5e5e5;
   margin: 0em;
@@ -2169,7 +2173,7 @@ tr.selected td {
   border-radius: 4px;
   text-align: center;
 }
-/* line 265, ../sass/components/_containers.scss */
+/* line 112, ../sass/components/_tables.scss */
 .container-table TR TD .ao_contact_icon, .views-table TR TD .ao_contact_icon {
   background: url(../images/ao-backend-icons.png) 0px -150px no-repeat;
   height: 27px;
@@ -2646,7 +2650,7 @@ section.banner A:hover {
   -moz-border-radius: 32px;
   -webkit-border-radius: 32px;
   border-radius: 32px;
-  background-color: #ffb600;
+  background-color: #3c7489;
   display: inline-block;
   padding: .5em 1em;
   margin: 0em;
@@ -2899,3 +2903,35 @@ section.banner A:hover {
  * Theme for dashboard
  *
  */
+/**
+ * @file
+ * Defines the appearance of various icons used throughout the system
+ *
+ */
+/* reports page */
+/* line 8, ../sass/themes/_icons.scss */
+.crm_core_report_icon {
+  background-image: url("../images/ao-icons.png");
+  background-position: -0px -60px;
+  background-repeat: no-repeat;
+}
+/* line 14, ../sass/themes/_icons.scss */
+.crm_core_report_icon.report-cmcd {
+  background-position: -1px -61px;
+}
+/* line 17, ../sass/themes/_icons.scss */
+.crm_core_report_icon.report-cmcd-donors {
+  background-position: -60px -60px;
+}
+/* line 20, ../sass/themes/_icons.scss */
+.crm_core_report_icon.report-cmcev {
+  background-position: -30px -60px;
+}
+/* line 23, ../sass/themes/_icons.scss */
+.crm_core_report_icon.report-cmcp {
+  background-position: -90px -60px;
+}
+/* line 26, ../sass/themes/_icons.scss */
+.crm_core_report_icon.report-cmcv {
+  background-position: -120px -60px;
+}

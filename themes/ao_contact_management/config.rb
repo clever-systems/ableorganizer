@@ -22,6 +22,7 @@ sass_dir        = "sass"
 extensions_dir  = "sass-extensions"
 images_dir      = "images"
 javascripts_dir = "js"
+disable_warnings = "true"
 
 
 # Require any additional compass plugins installed on your system.
