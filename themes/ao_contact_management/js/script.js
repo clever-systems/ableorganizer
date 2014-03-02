@@ -122,27 +122,34 @@ Drupal.behaviors.ao_contact_management = {
           
           var previousPoint = null, pageX, pageY, followMouse, flotTooltipWidth, flotTooltipHeight, tooltip;
           
+          // track the mouse so we always know where to put the tooltip
           $(document).bind('mousemove',function(e){ 
-            
             pageX = event.pageX;
             pageY = event.pageY;
-            
             if(tooltip && followMouse == true){
               tooltip.css('left',pageX-flotTooltipWidth/2);
               tooltip.css('top',pageY-flotTooltipHeight-30);
             }
-            
           }); 
           
           
+          // plothover for the tooltip
           $(".flot").bind("plothover", function(event, pos, item){
             
             // make sure we are over a point
             if (item) {
               
+              // make sure tooltips are turned on for the chart
+              // if not, this returns nothing
+              if(!item.series.show_tooltip){
+                return true;
+              }
+
+              // give us a cursor when hovering over a point
               document.body.style.cursor = 'pointer';
               
-              if(item.dataIndex !== previousPoint){
+              // remove any existing tooltips
+              if(item.dataIndex > 0 && item.dataIndex !== previousPoint){
                 // remove any existing tooltips
                 $("#flot-tooltip").remove();
               }
@@ -162,7 +169,9 @@ Drupal.behaviors.ao_contact_management = {
                 }
                 
                 // set the current item to the tooltip
-                previousPoint = item.dataIndex;
+                if(item.dataIndex > 0 && item.dataIndex !== previousPoint){
+                  previousPoint = item.dataIndex;
+                }                
                 
                 // remove any existing tooltips
                 $("#flot-tooltip").remove();
@@ -203,7 +212,6 @@ Drupal.behaviors.ao_contact_management = {
               top: y,
               left: x,
           }).appendTo("body").fadeIn(5000);
-          
           tooltip = $('#flot-tooltip');
           flotTooltipHeight = tooltip.height();
           flotTooltipWidth = tooltip.width();
@@ -213,6 +221,7 @@ Drupal.behaviors.ao_contact_management = {
         
 
         // detect page reloads
+        // TODO: replace this with jqmenu or something equivalent
         $(window).resize(function() {
           var height = $('#admin-menu').height();
           var window_width = $(window).width();
