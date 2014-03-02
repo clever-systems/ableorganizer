@@ -2217,13 +2217,15 @@ tr.selected td {
 /* data tables */
 /* displays tables related to run downs of data within reports */
 /* line 125, ../sass/components/_tables.scss */
-.data-tables .table-container, BODY.page-crm-core-reports .pane-donation-page-day-table .table-container,
+.data-tables .table-container, BODY.page-crm-core-reports .pane-donation-page-time-table .table-container,
+BODY.page-crm-core-reports .pane-donation-page-day-table .table-container,
 BODY.page-crm-core-reports .pane-donation-source-frequency-graph .table-container,
 BODY.page-crm-core-reports .pane-donation-source-average-graph .table-container,
 BODY.page-crm-core-reports .pane-donation-source-os-graph .table-container,
 BODY.page-crm-core-reports .pane-cmcd-details-callouts-panel-pane-1 .table-container,
 BODY.page-crm-core-reports .pane-cmcd-source-callouts-panel-pane-1 .table-container,
 .data-tables .view-content,
+BODY.page-crm-core-reports .pane-donation-page-time-table .view-content,
 BODY.page-crm-core-reports .pane-donation-page-day-table .view-content,
 BODY.page-crm-core-reports .pane-donation-source-frequency-graph .view-content,
 BODY.page-crm-core-reports .pane-donation-source-average-graph .view-content,
@@ -2238,13 +2240,15 @@ BODY.page-crm-core-reports .pane-cmcd-source-callouts-panel-pane-1 .view-content
   border-radius: 8px;
 }
 /* line 134, ../sass/components/_tables.scss */
-.data-tables .table-container TABLE, BODY.page-crm-core-reports .pane-donation-page-day-table .table-container TABLE,
+.data-tables .table-container TABLE, BODY.page-crm-core-reports .pane-donation-page-time-table .table-container TABLE,
+BODY.page-crm-core-reports .pane-donation-page-day-table .table-container TABLE,
 BODY.page-crm-core-reports .pane-donation-source-frequency-graph .table-container TABLE,
 BODY.page-crm-core-reports .pane-donation-source-average-graph .table-container TABLE,
 BODY.page-crm-core-reports .pane-donation-source-os-graph .table-container TABLE,
 BODY.page-crm-core-reports .pane-cmcd-details-callouts-panel-pane-1 .table-container TABLE,
 BODY.page-crm-core-reports .pane-cmcd-source-callouts-panel-pane-1 .table-container TABLE,
 .data-tables .view-content TABLE,
+BODY.page-crm-core-reports .pane-donation-page-time-table .view-content TABLE,
 BODY.page-crm-core-reports .pane-donation-page-day-table .view-content TABLE,
 BODY.page-crm-core-reports .pane-donation-source-frequency-graph .view-content TABLE,
 BODY.page-crm-core-reports .pane-donation-source-average-graph .view-content TABLE,
@@ -2641,7 +2645,7 @@ UL.tabs.tabs-secondary {
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   border-radius: 5px;
-  margin: 0em 0em 0em .4em;
+  margin: 0em 0em 1.6em .4em;
   padding: 0em 0em 0em .4em;
 }
 /* line 62, ../sass/components/_tabs.scss */
@@ -3144,7 +3148,8 @@ BODY.page-crm-core-reports .view-header .detail-buttons {
 BODY.page-crm-core-reports .widget-summary-info .widget-summary-info-detail {
   font-weight: 700;
 }
-/* line 49, ../sass/themes/_reports.scss */
+/* line 50, ../sass/themes/_reports.scss */
+BODY.page-crm-core-reports .pane-donation-page-time-table .table-container,
 BODY.page-crm-core-reports .pane-donation-page-day-table .table-container,
 BODY.page-crm-core-reports .pane-donation-source-frequency-graph .table-container,
 BODY.page-crm-core-reports .pane-donation-source-average-graph .table-container,
@@ -3153,7 +3158,7 @@ BODY.page-crm-core-reports .pane-cmcd-details-callouts-panel-pane-1 .table-conta
 BODY.page-crm-core-reports .pane-cmcd-source-callouts-panel-pane-1 .table-container {
   margin-top: 20px;
 }
-/* line 56, ../sass/themes/_reports.scss */
+/* line 57, ../sass/themes/_reports.scss */
 BODY.page-crm-core-reports .table-field-total-amount-by-time,
 BODY.page-crm-core-reports .table-field-day-of-week,
 BODY.page-crm-core-reports .views-field-field-cmcd-amount,
@@ -3162,7 +3167,7 @@ BODY.page-crm-core-reports .table-field-average-amount,
 BODY.page-crm-core-reports .table-field-source {
   font-weight: 700;
 }
-/* line 66, ../sass/themes/_reports.scss */
+/* line 67, ../sass/themes/_reports.scss */
 BODY.page-crm-core-reports .table-field-time-of-day,
 BODY.page-crm-core-reports .table-field-total-donations,
 BODY.page-crm-core-reports .table-field-total-amount-by-time,
