@@ -34,15 +34,19 @@ h1, h2, h3, h4, h5, h6 {
 .widget-table-titles {
   @extend .widget-title;
   font-size: 0.8em;
-  padding: 0.5em 0em;;
+  padding: 0.5em 0.5em;
   color: $base-purple;
   border-bottom: 1px solid #CCC;
+  white-space: nowrap;
+  overflow: hidden;
 }
 /* larger version of widget tables */
 .widget-table-titles-large {
   @extend .widget-title;
   font-size: 0.9em;
-  padding: 0.5em 0em;
+  padding: 0.5em 0.5em;
+  white-space: nowrap;
+  overflow: hidden;
   border-top: 1px solid #CCC;
   border-bottom: 1px solid #CCC;
   

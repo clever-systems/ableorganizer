@@ -2217,7 +2217,17 @@ tr.selected td {
 /* data tables */
 /* displays tables related to run downs of data within reports */
 /* line 125, ../sass/components/_tables.scss */
-.data-tables .table-container, BODY.page-crm-core-reports .pane-donor-recent-donors-table .table-container,
+.data-tables .table-container, BODY.page-crm-core-reports .view-cmcp-source-summary-top-petitions .table-container,
+BODY.page-crm-core-reports .view-cmcp-source-summary-top-signatories .table-container,
+BODY.page-crm-core-reports .pane-cmcp-other-petitions .table-container,
+BODY.page-crm-core-reports .pane-cmcp-page-source-summary .table-container,
+BODY.page-crm-core-reports .pane-petition-top-sources-panel-pane-1 .table-container,
+BODY.page-crm-core-reports .pane-cmcp-recent-signatures-panel-pane-1 .table-container,
+BODY.page-crm-core-reports .pane-source-summary-attendance .table-container,
+BODY.page-crm-core-reports .pane-source-summary-frequency .table-container,
+BODY.page-crm-core-reports .pane-event-attendance .table-container,
+BODY.page-crm-core-reports .pane-cmcev-overview-signups-panel-pane-1 .table-container,
+BODY.page-crm-core-reports .pane-donor-recent-donors-table .table-container,
 BODY.page-crm-core-reports .pane-donors-top-donors-panel-pane-1 .table-container,
 BODY.page-crm-core-reports .pane-donation-page-time-table .table-container,
 BODY.page-crm-core-reports .pane-donation-page-day-table .table-container,
@@ -2227,6 +2237,16 @@ BODY.page-crm-core-reports .pane-donation-source-os-graph .table-container,
 BODY.page-crm-core-reports .pane-cmcd-details-callouts-panel-pane-1 .table-container,
 BODY.page-crm-core-reports .pane-cmcd-source-callouts-panel-pane-1 .table-container,
 .data-tables .view-content,
+BODY.page-crm-core-reports .view-cmcp-source-summary-top-petitions .view-content,
+BODY.page-crm-core-reports .view-cmcp-source-summary-top-signatories .view-content,
+BODY.page-crm-core-reports .pane-cmcp-other-petitions .view-content,
+BODY.page-crm-core-reports .pane-cmcp-page-source-summary .view-content,
+BODY.page-crm-core-reports .pane-petition-top-sources-panel-pane-1 .view-content,
+BODY.page-crm-core-reports .pane-cmcp-recent-signatures-panel-pane-1 .view-content,
+BODY.page-crm-core-reports .pane-source-summary-attendance .view-content,
+BODY.page-crm-core-reports .pane-source-summary-frequency .view-content,
+BODY.page-crm-core-reports .pane-event-attendance .view-content,
+BODY.page-crm-core-reports .pane-cmcev-overview-signups-panel-pane-1 .view-content,
 BODY.page-crm-core-reports .pane-donor-recent-donors-table .view-content,
 BODY.page-crm-core-reports .pane-donors-top-donors-panel-pane-1 .view-content,
 BODY.page-crm-core-reports .pane-donation-page-time-table .view-content,
@@ -2244,7 +2264,17 @@ BODY.page-crm-core-reports .pane-cmcd-source-callouts-panel-pane-1 .view-content
   border-radius: 8px;
 }
 /* line 134, ../sass/components/_tables.scss */
-.data-tables .table-container TABLE, BODY.page-crm-core-reports .pane-donor-recent-donors-table .table-container TABLE,
+.data-tables .table-container TABLE, BODY.page-crm-core-reports .view-cmcp-source-summary-top-petitions .table-container TABLE,
+BODY.page-crm-core-reports .view-cmcp-source-summary-top-signatories .table-container TABLE,
+BODY.page-crm-core-reports .pane-cmcp-other-petitions .table-container TABLE,
+BODY.page-crm-core-reports .pane-cmcp-page-source-summary .table-container TABLE,
+BODY.page-crm-core-reports .pane-petition-top-sources-panel-pane-1 .table-container TABLE,
+BODY.page-crm-core-reports .pane-cmcp-recent-signatures-panel-pane-1 .table-container TABLE,
+BODY.page-crm-core-reports .pane-source-summary-attendance .table-container TABLE,
+BODY.page-crm-core-reports .pane-source-summary-frequency .table-container TABLE,
+BODY.page-crm-core-reports .pane-event-attendance .table-container TABLE,
+BODY.page-crm-core-reports .pane-cmcev-overview-signups-panel-pane-1 .table-container TABLE,
+BODY.page-crm-core-reports .pane-donor-recent-donors-table .table-container TABLE,
 BODY.page-crm-core-reports .pane-donors-top-donors-panel-pane-1 .table-container TABLE,
 BODY.page-crm-core-reports .pane-donation-page-time-table .table-container TABLE,
 BODY.page-crm-core-reports .pane-donation-page-day-table .table-container TABLE,
@@ -2254,6 +2284,16 @@ BODY.page-crm-core-reports .pane-donation-source-os-graph .table-container TABLE
 BODY.page-crm-core-reports .pane-cmcd-details-callouts-panel-pane-1 .table-container TABLE,
 BODY.page-crm-core-reports .pane-cmcd-source-callouts-panel-pane-1 .table-container TABLE,
 .data-tables .view-content TABLE,
+BODY.page-crm-core-reports .view-cmcp-source-summary-top-petitions .view-content TABLE,
+BODY.page-crm-core-reports .view-cmcp-source-summary-top-signatories .view-content TABLE,
+BODY.page-crm-core-reports .pane-cmcp-other-petitions .view-content TABLE,
+BODY.page-crm-core-reports .pane-cmcp-page-source-summary .view-content TABLE,
+BODY.page-crm-core-reports .pane-petition-top-sources-panel-pane-1 .view-content TABLE,
+BODY.page-crm-core-reports .pane-cmcp-recent-signatures-panel-pane-1 .view-content TABLE,
+BODY.page-crm-core-reports .pane-source-summary-attendance .view-content TABLE,
+BODY.page-crm-core-reports .pane-source-summary-frequency .view-content TABLE,
+BODY.page-crm-core-reports .pane-event-attendance .view-content TABLE,
+BODY.page-crm-core-reports .pane-cmcev-overview-signups-panel-pane-1 .view-content TABLE,
 BODY.page-crm-core-reports .pane-donor-recent-donors-table .view-content TABLE,
 BODY.page-crm-core-reports .pane-donors-top-donors-panel-pane-1 .view-content TABLE,
 BODY.page-crm-core-reports .pane-donation-page-time-table .view-content TABLE,
@@ -2267,8 +2307,24 @@ BODY.page-crm-core-reports .pane-cmcd-source-callouts-panel-pane-1 .view-content
 }
 
 /* handles the display of summary items */
-/* line 150, ../sass/components/_tables.scss */
-.data-summary .views-table TR TD, BODY.page-crm-core-reports .view-cmcd-source-total-figures .views-table TR TD {
+/* line 151, ../sass/components/_tables.scss */
+.data-summary .table-container TR TD, BODY.page-crm-core-reports .pane-cmcv-overview-metrics .table-container TR TD,
+BODY.page-crm-core-reports .view-cmcp-source-summary-header .table-container TR TD,
+BODY.page-crm-core-reports .view-petition-page-performance-summary .table-container TR TD,
+BODY.page-crm-core-reports .pane-cmcp-overview-metrics .table-container TR TD,
+BODY.page-crm-core-reports .view-cmcev-sources-summary-report .table-container TR TD,
+BODY.page-crm-core-reports .view-cmcev-event-summary-metrics .table-container TR TD,
+BODY.page-crm-core-reports .pane-event-metrics .table-container TR TD,
+BODY.page-crm-core-reports .view-cmcd-source-total-figures .table-container TR TD,
+.data-summary .views-table TR TD,
+BODY.page-crm-core-reports .pane-cmcv-overview-metrics .views-table TR TD,
+BODY.page-crm-core-reports .view-cmcp-source-summary-header .views-table TR TD,
+BODY.page-crm-core-reports .view-petition-page-performance-summary .views-table TR TD,
+BODY.page-crm-core-reports .pane-cmcp-overview-metrics .views-table TR TD,
+BODY.page-crm-core-reports .view-cmcev-sources-summary-report .views-table TR TD,
+BODY.page-crm-core-reports .view-cmcev-event-summary-metrics .views-table TR TD,
+BODY.page-crm-core-reports .pane-event-metrics .views-table TR TD,
+BODY.page-crm-core-reports .view-cmcd-source-total-figures .views-table TR TD {
   background-color: White;
   text-align: center;
   font-weight: 600;
@@ -2314,26 +2370,30 @@ h1, h2, h3, h4, h5, h6 {
 /* line 34, ../sass/components/_titles.scss */
 .widget-table-titles, .summary-widget-container TABLE THEAD TH, BODY.page-crm-core-dashboard .summary-pane TABLE THEAD TH {
   font-size: 0.8em;
-  padding: 0.5em 0em;
+  padding: 0.5em 0.5em;
   color: #9b59a8;
   border-bottom: 1px solid #CCC;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 /* larger version of widget tables */
-/* line 42, ../sass/components/_titles.scss */
+/* line 44, ../sass/components/_titles.scss */
 .widget-table-titles-large, .container-table TR TH, .table-container TABLE TR TH,
 .views-table TR TH {
   font-size: 0.9em;
-  padding: 0.5em 0em;
+  padding: 0.5em 0.5em;
+  white-space: nowrap;
+  overflow: hidden;
   border-top: 1px solid #CCC;
   border-bottom: 1px solid #CCC;
 }
-/* line 49, ../sass/components/_titles.scss */
+/* line 53, ../sass/components/_titles.scss */
 .widget-table-titles-large A, .container-table TR TH A, .table-container TABLE TR TH A,
 .views-table TR TH A {
   text-decoration: none;
 }
-/* line 52, ../sass/components/_titles.scss */
+/* line 56, ../sass/components/_titles.scss */
 .widget-table-titles-large A IMG, .container-table TR TH A IMG, .table-container TABLE TR TH A IMG,
 .views-table TR TH A IMG {
   margin-left: 0.4em;
@@ -2817,29 +2877,36 @@ A:active {
   padding: 0em;
   font-size: 32px;
 }
-/* line 51, ../sass/themes/_global-styles.scss */
+/* line 50, ../sass/themes/_global-styles.scss */
 .page__title em {
   color: #d6f7ff;
 }
 
 /* navigation links */
 /* navigation links */
-/* line 60, ../sass/themes/_global-styles.scss */
+/* line 57, ../sass/themes/_global-styles.scss */
 section.banner {
   font-size: 10.72px;
 }
-/* line 63, ../sass/themes/_global-styles.scss */
+/* line 60, ../sass/themes/_global-styles.scss */
 section.banner A {
   color: #dfe4e6;
   text-decoration: none;
 }
-/* line 67, ../sass/themes/_global-styles.scss */
+/* line 64, ../sass/themes/_global-styles.scss */
 section.banner A:hover {
   color: White;
 }
 
+/* footer */
+/* line 73, ../sass/themes/_global-styles.scss */
+FOOTER {
+  background-color: #555;
+  padding: 1em -0em 2em;
+}
+
 /* reports */
-/* line 81, ../sass/themes/_global-styles.scss */
+/* line 86, ../sass/themes/_global-styles.scss */
 .crm_core_reports H3 {
   -moz-border-radius: 32px;
   -webkit-border-radius: 32px;
@@ -2853,7 +2920,7 @@ section.banner A:hover {
   text-shadow: rgba(0, 0, 0, 0.5) 1px 1px 0;
   font-size: 1.3em;
 }
-/* line 92, ../sass/themes/_global-styles.scss */
+/* line 97, ../sass/themes/_global-styles.scss */
 .crm_core_reports H3 .crm_core_report_icon {
   height: 30px;
   width: 30px;
@@ -2865,17 +2932,17 @@ section.banner A:hover {
   border-radius: 24px;
   padding: 0;
 }
-/* line 106, ../sass/themes/_global-styles.scss */
+/* line 111, ../sass/themes/_global-styles.scss */
 .crm_core_reports .item-list {
   font-size: 0.9em;
 }
-/* line 111, ../sass/themes/_global-styles.scss */
+/* line 116, ../sass/themes/_global-styles.scss */
 .crm_core_reports .item-list UL {
   list-style: none;
   margin: 1em 0em 1em 1em;
   padding: 0em;
 }
-/* line 116, ../sass/themes/_global-styles.scss */
+/* line 121, ../sass/themes/_global-styles.scss */
 .crm_core_reports .item-list UL LI {
   list-style: none;
   margin: 0em;
@@ -2883,7 +2950,7 @@ section.banner A:hover {
   font-style: italic;
   margin-left: 12px;
 }
-/* line 123, ../sass/themes/_global-styles.scss */
+/* line 128, ../sass/themes/_global-styles.scss */
 .crm_core_reports .item-list UL LI A {
   margin-left: -12px;
   font-style: normal;
@@ -2899,7 +2966,7 @@ section.banner A:hover {
 .crm_core_reports:after {
   clear: both;
 }
-/* line 137, ../sass/themes/_global-styles.scss */
+/* line 142, ../sass/themes/_global-styles.scss */
 .crm_core_reports .column-left {
   float: left;
   width: 50%;
@@ -2907,7 +2974,7 @@ section.banner A:hover {
   margin-right: -50%;
   padding: 0em 2em 0em 0em;
 }
-/* line 141, ../sass/themes/_global-styles.scss */
+/* line 146, ../sass/themes/_global-styles.scss */
 .crm_core_reports .column-right {
   float: left;
   width: 50%;
@@ -2920,17 +2987,17 @@ section.banner A:hover {
 /* basic container */
 /* basic container element */
 /* activity feed */
-/* line 161, ../sass/themes/_global-styles.scss */
+/* line 166, ../sass/themes/_global-styles.scss */
 .activty-feed-container, BODY.page-crm-core-dashboard .activity-feed {
   background-color: #f9f9f9;
 }
 
 /* summary widget */
-/* line 175, ../sass/themes/_global-styles.scss */
+/* line 180, ../sass/themes/_global-styles.scss */
 .summary-widget-container, BODY.page-crm-core-dashboard .summary-pane {
   background-color: #f1f1f1;
 }
-/* line 186, ../sass/themes/_global-styles.scss */
+/* line 191, ../sass/themes/_global-styles.scss */
 .summary-widget-container TABLE THEAD TH, BODY.page-crm-core-dashboard .summary-pane TABLE THEAD TH {
   background-image: -moz-linear-gradient(top, #ffffff 31%, #dfe4e6 100%);
   background-image: -o-linear-gradient(top, #ffffff 31%, #dfe4e6 100%);
@@ -2939,15 +3006,15 @@ section.banner A:hover {
 }
 
 /* quicklinks */
-/* line 210, ../sass/themes/_global-styles.scss */
+/* line 215, ../sass/themes/_global-styles.scss */
 .quick-links .link-container {
   font-size: 0.9em;
 }
-/* line 214, ../sass/themes/_global-styles.scss */
+/* line 219, ../sass/themes/_global-styles.scss */
 .quick-links .link-container strong {
   text-transform: uppercase;
 }
-/* line 217, ../sass/themes/_global-styles.scss */
+/* line 222, ../sass/themes/_global-styles.scss */
 .quick-links .link-container strong, .quick-links .link-container A {
   margin-bottom: 0.4em;
   text-decoration: none;
@@ -2956,23 +3023,23 @@ section.banner A:hover {
 /* views */
 /* views buttons */
 /* views filters */
-/* line 240, ../sass/themes/_global-styles.scss */
+/* line 245, ../sass/themes/_global-styles.scss */
 .views-exposed-form .views-exposed-widget {
   font-size: 13.28px;
   padding: 0em;
   margin: 0em .4em 0em 0em;
 }
-/* line 246, ../sass/themes/_global-styles.scss */
+/* line 251, ../sass/themes/_global-styles.scss */
 .views-exposed-form .views-exposed-widget LABEL {
   text-transform: uppercase;
 }
 
 /* breadcrumbs */
-/* line 253, ../sass/themes/_global-styles.scss */
+/* line 258, ../sass/themes/_global-styles.scss */
 #breadcrumb {
   clear: both;
 }
-/* line 257, ../sass/themes/_global-styles.scss */
+/* line 262, ../sass/themes/_global-styles.scss */
 #breadcrumb UL.breadcrumbs {
   list-style-type: none;
   margin-left: 0px;
@@ -2986,14 +3053,14 @@ section.banner A:hover {
   border-radius: 5px;
   padding: 0px;
 }
-/* line 268, ../sass/themes/_global-styles.scss */
+/* line 273, ../sass/themes/_global-styles.scss */
 #breadcrumb UL.breadcrumbs LI {
   float: left;
   margin-right: 2px;
   height: 19px;
   padding: 0px;
 }
-/* line 274, ../sass/themes/_global-styles.scss */
+/* line 279, ../sass/themes/_global-styles.scss */
 #breadcrumb UL.breadcrumbs LI A {
   height: 19px;
   display: block;
@@ -3006,11 +3073,11 @@ section.banner A:hover {
   background: url("../images/ao-backend-icons.png") -452px -6px no-repeat;
   line-height: 1.5em;
 }
-/* line 286, ../sass/themes/_global-styles.scss */
+/* line 291, ../sass/themes/_global-styles.scss */
 #breadcrumb UL.breadcrumbs LI A:hover {
   color: White;
 }
-/* line 293, ../sass/themes/_global-styles.scss */
+/* line 298, ../sass/themes/_global-styles.scss */
 #breadcrumb UL.breadcrumbs LI.cmc_home A {
   display: block;
   padding: 0;
@@ -3030,44 +3097,44 @@ section.banner A:hover {
   -webkit-transition-duration: 0s;
   transition-duration: 0s;
 }
-/* line 306, ../sass/themes/_global-styles.scss */
+/* line 311, ../sass/themes/_global-styles.scss */
 #breadcrumb UL.breadcrumbs LI.cmc_home A:hover {
   background: url("../images/ao-backend-icons.png") -27px -127px no-repeat;
 }
 
-/* line 321, ../sass/themes/_global-styles.scss */
+/* line 326, ../sass/themes/_global-styles.scss */
 #breadcrumb UL.breadcrumbs LI:nth-child(2) A {
   padding: 0px 4px 0px 8px;
   background: none;
   border-left: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-/* line 326, ../sass/themes/_global-styles.scss */
+/* line 331, ../sass/themes/_global-styles.scss */
 #breadcrumb UL.breadcrumbs LI div.bc_arrow {
   display: none;
 }
 
 /* tooltips */
-/* line 331, ../sass/themes/_global-styles.scss */
+/* line 336, ../sass/themes/_global-styles.scss */
 #flot-tooltip {
   position: absolute;
-  border: 1px solid #d5d5d5;
+  border: 1px solid #3697ee;
   padding: .2em .4em;
-  background-color: #d5d5d5;
+  background-color: #3697ee;
   -moz-border-radius: 6px;
   -webkit-border-radius: 6px;
   border-radius: 6px;
   text-align: center;
   min-width: 20px;
-  color: #555;
+  color: White;
   font-size: 0.8em;
 }
-/* line 342, ../sass/themes/_global-styles.scss */
+/* line 347, ../sass/themes/_global-styles.scss */
 #flot-tooltip:after {
   position: absolute;
   display: block;
   content: "";
-  border-color: #d5d5d5 transparent transparent transparent;
+  border-color: #3697ee transparent transparent transparent;
   border-style: solid;
   border-width: 10px;
   height: 0px;
@@ -3080,20 +3147,20 @@ section.banner A:hover {
 /* media queries */
 @media all and (min-width: 0px) and (max-width: 683px) {
   /* logo size */
-  /* line 363, ../sass/themes/_global-styles.scss */
+  /* line 366, ../sass/themes/_global-styles.scss */
   .header__logo {
     width: 220px;
     margin-bottom: .5em;
   }
 
   /* report columns */
-  /* line 370, ../sass/themes/_global-styles.scss */
+  /* line 373, ../sass/themes/_global-styles.scss */
   .crm_core_reports .column-left {
     display: block;
     width: 100%;
     margin: 0em;
   }
-  /* line 375, ../sass/themes/_global-styles.scss */
+  /* line 378, ../sass/themes/_global-styles.scss */
   .crm_core_reports .column-right {
     display: block;
     width: 100%;
@@ -3102,7 +3169,7 @@ section.banner A:hover {
 }
 @media all and (min-width: 684px) and (max-width: 959px) {
   /* logo size */
-  /* line 384, ../sass/themes/_global-styles.scss */
+  /* line 387, ../sass/themes/_global-styles.scss */
   .header__logo {
     width: 240px;
     margin-bottom: .6em;
@@ -3110,7 +3177,7 @@ section.banner A:hover {
 }
 @media all and (min-width: 960px) {
   /* logo size */
-  /* line 391, ../sass/themes/_global-styles.scss */
+  /* line 394, ../sass/themes/_global-styles.scss */
   .header__logo {
     width: 260px;
     margin-bottom: .8em;
@@ -3118,7 +3185,7 @@ section.banner A:hover {
 }
 @media all and (min-width: 1200px) {
   /* logo size */
-  /* line 398, ../sass/themes/_global-styles.scss */
+  /* line 401, ../sass/themes/_global-styles.scss */
   .header__logo {
     width: 280px;
     margin-bottom: 1em;
@@ -3137,10 +3204,12 @@ section.banner A:hover {
 /* line 6, ../sass/themes/_reports.scss */
 BODY.page-crm-core-reports {
   /* view headers */
+  /* annual reports */
   /* specific data summary tables */
   /* specific data tables */
   /* specific field highlights */
   /* table centering */
+  /* keep report buttons on the same line */
 }
 /* line 14, ../sass/themes/_reports.scss */
 BODY.page-crm-core-reports .view-header {
@@ -3156,7 +3225,25 @@ BODY.page-crm-core-reports .view-header .detail-buttons {
 BODY.page-crm-core-reports .widget-summary-info .widget-summary-info-detail {
   font-weight: 700;
 }
-/* line 51, ../sass/themes/_reports.scss */
+/* line 38, ../sass/themes/_reports.scss */
+BODY.page-crm-core-reports .annual-report caption, BODY.page-crm-core-reports .view-cmcev-revenues-report caption {
+  margin-bottom: 10px;
+  position: relative;
+  text-align: left;
+  font-weight: bold;
+  font-size: 18.72px;
+}
+/* line 83, ../sass/themes/_reports.scss */
+BODY.page-crm-core-reports .view-cmcp-source-summary-top-petitions .table-container,
+BODY.page-crm-core-reports .view-cmcp-source-summary-top-signatories .table-container,
+BODY.page-crm-core-reports .pane-cmcp-other-petitions .table-container,
+BODY.page-crm-core-reports .pane-cmcp-page-source-summary .table-container,
+BODY.page-crm-core-reports .pane-petition-top-sources-panel-pane-1 .table-container,
+BODY.page-crm-core-reports .pane-cmcp-recent-signatures-panel-pane-1 .table-container,
+BODY.page-crm-core-reports .pane-source-summary-attendance .table-container,
+BODY.page-crm-core-reports .pane-source-summary-frequency .table-container,
+BODY.page-crm-core-reports .pane-event-attendance .table-container,
+BODY.page-crm-core-reports .pane-cmcev-overview-signups-panel-pane-1 .table-container,
 BODY.page-crm-core-reports .pane-donor-recent-donors-table .table-container,
 BODY.page-crm-core-reports .pane-donors-top-donors-panel-pane-1 .table-container,
 BODY.page-crm-core-reports .pane-donation-page-time-table .table-container,
@@ -3168,7 +3255,10 @@ BODY.page-crm-core-reports .pane-cmcd-details-callouts-panel-pane-1 .table-conta
 BODY.page-crm-core-reports .pane-cmcd-source-callouts-panel-pane-1 .table-container {
   margin-top: 20px;
 }
-/* line 57, ../sass/themes/_reports.scss */
+/* line 89, ../sass/themes/_reports.scss */
+BODY.page-crm-core-reports .table-field-petition-signatories,
+BODY.page-crm-core-reports .views-field-activity-id,
+BODY.page-crm-core-reports .views-field-field-cmcev-amount,
 BODY.page-crm-core-reports .table-field-total-amount-by-time,
 BODY.page-crm-core-reports .table-field-day-of-week,
 BODY.page-crm-core-reports .views-field-field-cmcd-amount,
@@ -3177,7 +3267,14 @@ BODY.page-crm-core-reports .table-field-average-amount,
 BODY.page-crm-core-reports .table-field-source {
   font-weight: 700;
 }
-/* line 67, ../sass/themes/_reports.scss */
+/* line 102, ../sass/themes/_reports.scss */
+BODY.page-crm-core-reports .table-field-petition-signatories,
+BODY.page-crm-core-reports .views-field-nid,
+BODY.page-crm-core-reports .views-field-expression,
+BODY.page-crm-core-reports .views-field-activity-id,
+BODY.page-crm-core-reports .views-field-field-cmcev-amount,
+BODY.page-crm-core-reports .table-field-event-attended,
+BODY.page-crm-core-reports .table-field-event-registered,
 BODY.page-crm-core-reports .views-field-activity-id-1,
 BODY.page-crm-core-reports .table-field-time-of-day,
 BODY.page-crm-core-reports .table-field-total-donations,
@@ -3193,6 +3290,14 @@ BODY.page-crm-core-reports .table-field-total-amount,
 BODY.page-crm-core-reports .table-field-donors,
 BODY.page-crm-core-reports .table-field-percent {
   text-align: center;
+}
+/* line 127, ../sass/themes/_reports.scss */
+BODY.page-crm-core-reports .pane-cmcp-recent-signatures-panel-pane-1 TD.views-field-nothing,
+BODY.page-crm-core-reports .pane-petition-top-sources-panel-pane-1 TD.views-field-nothing,
+BODY.page-crm-core-reports .view-cmcev-events-report TD.views-field-nothing {
+  white-space: nowrap;
+  padding-left: .5em;
+  padding-right: .5em;
 }
 
 /**
