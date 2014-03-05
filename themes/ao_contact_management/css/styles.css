@@ -2217,7 +2217,14 @@ tr.selected td {
 /* data tables */
 /* displays tables related to run downs of data within reports */
 /* line 125, ../sass/components/_tables.scss */
-.data-tables .table-container, BODY.page-crm-core-reports .view-cmcp-source-summary-top-petitions .table-container,
+.data-tables .table-container, BODY.page-crm-core-reports .pane-cmcv-source-summary-frequency .table-container,
+BODY.page-crm-core-reports .pane-cmcv-source-summary-attendance .table-container,
+BODY.page-crm-core-reports .pane-opportunity-summary-sources .table-container,
+BODY.page-crm-core-reports .pane-opportunity-summary-attendance .table-container,
+BODY.page-crm-core-reports .pane-opportunity-summary-frequency .table-container,
+BODY.page-crm-core-reports .pane-cmcv-opportunity-attendance .table-container,
+BODY.page-crm-core-reports .view-cmcv-recent-signups .table-container,
+BODY.page-crm-core-reports .view-cmcp-source-summary-top-petitions .table-container,
 BODY.page-crm-core-reports .view-cmcp-source-summary-top-signatories .table-container,
 BODY.page-crm-core-reports .pane-cmcp-other-petitions .table-container,
 BODY.page-crm-core-reports .pane-cmcp-page-source-summary .table-container,
@@ -2237,6 +2244,13 @@ BODY.page-crm-core-reports .pane-donation-source-os-graph .table-container,
 BODY.page-crm-core-reports .pane-cmcd-details-callouts-panel-pane-1 .table-container,
 BODY.page-crm-core-reports .pane-cmcd-source-callouts-panel-pane-1 .table-container,
 .data-tables .view-content,
+BODY.page-crm-core-reports .pane-cmcv-source-summary-frequency .view-content,
+BODY.page-crm-core-reports .pane-cmcv-source-summary-attendance .view-content,
+BODY.page-crm-core-reports .pane-opportunity-summary-sources .view-content,
+BODY.page-crm-core-reports .pane-opportunity-summary-attendance .view-content,
+BODY.page-crm-core-reports .pane-opportunity-summary-frequency .view-content,
+BODY.page-crm-core-reports .pane-cmcv-opportunity-attendance .view-content,
+BODY.page-crm-core-reports .view-cmcv-recent-signups .view-content,
 BODY.page-crm-core-reports .view-cmcp-source-summary-top-petitions .view-content,
 BODY.page-crm-core-reports .view-cmcp-source-summary-top-signatories .view-content,
 BODY.page-crm-core-reports .pane-cmcp-other-petitions .view-content,
@@ -2264,7 +2278,14 @@ BODY.page-crm-core-reports .pane-cmcd-source-callouts-panel-pane-1 .view-content
   border-radius: 8px;
 }
 /* line 134, ../sass/components/_tables.scss */
-.data-tables .table-container TABLE, BODY.page-crm-core-reports .view-cmcp-source-summary-top-petitions .table-container TABLE,
+.data-tables .table-container TABLE, BODY.page-crm-core-reports .pane-cmcv-source-summary-frequency .table-container TABLE,
+BODY.page-crm-core-reports .pane-cmcv-source-summary-attendance .table-container TABLE,
+BODY.page-crm-core-reports .pane-opportunity-summary-sources .table-container TABLE,
+BODY.page-crm-core-reports .pane-opportunity-summary-attendance .table-container TABLE,
+BODY.page-crm-core-reports .pane-opportunity-summary-frequency .table-container TABLE,
+BODY.page-crm-core-reports .pane-cmcv-opportunity-attendance .table-container TABLE,
+BODY.page-crm-core-reports .view-cmcv-recent-signups .table-container TABLE,
+BODY.page-crm-core-reports .view-cmcp-source-summary-top-petitions .table-container TABLE,
 BODY.page-crm-core-reports .view-cmcp-source-summary-top-signatories .table-container TABLE,
 BODY.page-crm-core-reports .pane-cmcp-other-petitions .table-container TABLE,
 BODY.page-crm-core-reports .pane-cmcp-page-source-summary .table-container TABLE,
@@ -2284,6 +2305,13 @@ BODY.page-crm-core-reports .pane-donation-source-os-graph .table-container TABLE
 BODY.page-crm-core-reports .pane-cmcd-details-callouts-panel-pane-1 .table-container TABLE,
 BODY.page-crm-core-reports .pane-cmcd-source-callouts-panel-pane-1 .table-container TABLE,
 .data-tables .view-content TABLE,
+BODY.page-crm-core-reports .pane-cmcv-source-summary-frequency .view-content TABLE,
+BODY.page-crm-core-reports .pane-cmcv-source-summary-attendance .view-content TABLE,
+BODY.page-crm-core-reports .pane-opportunity-summary-sources .view-content TABLE,
+BODY.page-crm-core-reports .pane-opportunity-summary-attendance .view-content TABLE,
+BODY.page-crm-core-reports .pane-opportunity-summary-frequency .view-content TABLE,
+BODY.page-crm-core-reports .pane-cmcv-opportunity-attendance .view-content TABLE,
+BODY.page-crm-core-reports .view-cmcv-recent-signups .view-content TABLE,
 BODY.page-crm-core-reports .view-cmcp-source-summary-top-petitions .view-content TABLE,
 BODY.page-crm-core-reports .view-cmcp-source-summary-top-signatories .view-content TABLE,
 BODY.page-crm-core-reports .pane-cmcp-other-petitions .view-content TABLE,
@@ -2308,7 +2336,9 @@ BODY.page-crm-core-reports .pane-cmcd-source-callouts-panel-pane-1 .view-content
 
 /* handles the display of summary items */
 /* line 151, ../sass/components/_tables.scss */
-.data-summary .table-container TR TD, BODY.page-crm-core-reports .pane-cmcv-overview-metrics .table-container TR TD,
+.data-summary .table-container TR TD, BODY.page-crm-core-reports .pane-cmcv-source-summary-totals .table-container TR TD,
+BODY.page-crm-core-reports .pane-cmcv-opportunity-metrics .table-container TR TD,
+BODY.page-crm-core-reports .pane-cmcv-overview-metrics .table-container TR TD,
 BODY.page-crm-core-reports .view-cmcp-source-summary-header .table-container TR TD,
 BODY.page-crm-core-reports .view-petition-page-performance-summary .table-container TR TD,
 BODY.page-crm-core-reports .pane-cmcp-overview-metrics .table-container TR TD,
@@ -2317,6 +2347,8 @@ BODY.page-crm-core-reports .view-cmcev-event-summary-metrics .table-container TR
 BODY.page-crm-core-reports .pane-event-metrics .table-container TR TD,
 BODY.page-crm-core-reports .view-cmcd-source-total-figures .table-container TR TD,
 .data-summary .views-table TR TD,
+BODY.page-crm-core-reports .pane-cmcv-source-summary-totals .views-table TR TD,
+BODY.page-crm-core-reports .pane-cmcv-opportunity-metrics .views-table TR TD,
 BODY.page-crm-core-reports .pane-cmcv-overview-metrics .views-table TR TD,
 BODY.page-crm-core-reports .view-cmcp-source-summary-header .views-table TR TD,
 BODY.page-crm-core-reports .view-petition-page-performance-summary .views-table TR TD,
@@ -3114,53 +3146,23 @@ FOOTER {
   display: none;
 }
 
-/* tooltips */
-/* line 336, ../sass/themes/_global-styles.scss */
-#flot-tooltip {
-  position: absolute;
-  border: 1px solid #3697ee;
-  padding: .2em .4em;
-  background-color: #3697ee;
-  -moz-border-radius: 6px;
-  -webkit-border-radius: 6px;
-  border-radius: 6px;
-  text-align: center;
-  min-width: 20px;
-  color: White;
-  font-size: 0.8em;
-}
-/* line 347, ../sass/themes/_global-styles.scss */
-#flot-tooltip:after {
-  position: absolute;
-  display: block;
-  content: "";
-  border-color: #3697ee transparent transparent transparent;
-  border-style: solid;
-  border-width: 10px;
-  height: 0px;
-  width: 0px;
-  bottom: -20px;
-  left: 50%;
-  margin-left: -12px;
-}
-
 /* media queries */
 @media all and (min-width: 0px) and (max-width: 683px) {
   /* logo size */
-  /* line 366, ../sass/themes/_global-styles.scss */
+  /* line 339, ../sass/themes/_global-styles.scss */
   .header__logo {
     width: 220px;
     margin-bottom: .5em;
   }
 
   /* report columns */
-  /* line 373, ../sass/themes/_global-styles.scss */
+  /* line 346, ../sass/themes/_global-styles.scss */
   .crm_core_reports .column-left {
     display: block;
     width: 100%;
     margin: 0em;
   }
-  /* line 378, ../sass/themes/_global-styles.scss */
+  /* line 351, ../sass/themes/_global-styles.scss */
   .crm_core_reports .column-right {
     display: block;
     width: 100%;
@@ -3169,7 +3171,7 @@ FOOTER {
 }
 @media all and (min-width: 684px) and (max-width: 959px) {
   /* logo size */
-  /* line 387, ../sass/themes/_global-styles.scss */
+  /* line 360, ../sass/themes/_global-styles.scss */
   .header__logo {
     width: 240px;
     margin-bottom: .6em;
@@ -3177,7 +3179,7 @@ FOOTER {
 }
 @media all and (min-width: 960px) {
   /* logo size */
-  /* line 394, ../sass/themes/_global-styles.scss */
+  /* line 367, ../sass/themes/_global-styles.scss */
   .header__logo {
     width: 260px;
     margin-bottom: .8em;
@@ -3185,7 +3187,7 @@ FOOTER {
 }
 @media all and (min-width: 1200px) {
   /* logo size */
-  /* line 401, ../sass/themes/_global-styles.scss */
+  /* line 374, ../sass/themes/_global-styles.scss */
   .header__logo {
     width: 280px;
     margin-bottom: 1em;
@@ -3233,7 +3235,14 @@ BODY.page-crm-core-reports .annual-report caption, BODY.page-crm-core-reports .v
   font-weight: bold;
   font-size: 18.72px;
 }
-/* line 83, ../sass/themes/_reports.scss */
+/* line 92, ../sass/themes/_reports.scss */
+BODY.page-crm-core-reports .pane-cmcv-source-summary-frequency .table-container,
+BODY.page-crm-core-reports .pane-cmcv-source-summary-attendance .table-container,
+BODY.page-crm-core-reports .pane-opportunity-summary-sources .table-container,
+BODY.page-crm-core-reports .pane-opportunity-summary-attendance .table-container,
+BODY.page-crm-core-reports .pane-opportunity-summary-frequency .table-container,
+BODY.page-crm-core-reports .pane-cmcv-opportunity-attendance .table-container,
+BODY.page-crm-core-reports .view-cmcv-recent-signups .table-container,
 BODY.page-crm-core-reports .view-cmcp-source-summary-top-petitions .table-container,
 BODY.page-crm-core-reports .view-cmcp-source-summary-top-signatories .table-container,
 BODY.page-crm-core-reports .pane-cmcp-other-petitions .table-container,
@@ -3255,7 +3264,13 @@ BODY.page-crm-core-reports .pane-cmcd-details-callouts-panel-pane-1 .table-conta
 BODY.page-crm-core-reports .pane-cmcd-source-callouts-panel-pane-1 .table-container {
   margin-top: 20px;
 }
-/* line 89, ../sass/themes/_reports.scss */
+/* line 98, ../sass/themes/_reports.scss */
+BODY.page-crm-core-reports .table-field-source-percentage,
+BODY.page-crm-core-reports .table-field-frequency-percentage,
+BODY.page-crm-core-reports .table-field-attendance-percentage,
+BODY.page-crm-core-reports .table-field-attendance-registrations,
+BODY.page-crm-core-reports .table-field-volunteer-frequency-percent,
+BODY.page-crm-core-reports .table-field-attendance-percent,
 BODY.page-crm-core-reports .table-field-petition-signatories,
 BODY.page-crm-core-reports .views-field-activity-id,
 BODY.page-crm-core-reports .views-field-field-cmcev-amount,
@@ -3267,7 +3282,13 @@ BODY.page-crm-core-reports .table-field-average-amount,
 BODY.page-crm-core-reports .table-field-source {
   font-weight: 700;
 }
-/* line 102, ../sass/themes/_reports.scss */
+/* line 117, ../sass/themes/_reports.scss */
+BODY.page-crm-core-reports .table-field-source-percentage,
+BODY.page-crm-core-reports .table-field-frequency-percentage,
+BODY.page-crm-core-reports .table-field-attendance-percentage,
+BODY.page-crm-core-reports .table-field-attendance-registrations,
+BODY.page-crm-core-reports .table-field-volunteer-frequency-percent,
+BODY.page-crm-core-reports .table-field-attendance-percent,
 BODY.page-crm-core-reports .table-field-petition-signatories,
 BODY.page-crm-core-reports .views-field-nid,
 BODY.page-crm-core-reports .views-field-expression,
@@ -3291,7 +3312,8 @@ BODY.page-crm-core-reports .table-field-donors,
 BODY.page-crm-core-reports .table-field-percent {
   text-align: center;
 }
-/* line 127, ../sass/themes/_reports.scss */
+/* line 148, ../sass/themes/_reports.scss */
+BODY.page-crm-core-reports .view-cmcv-opportunities-report .views-field-nothing,
 BODY.page-crm-core-reports .pane-cmcp-recent-signatures-panel-pane-1 TD.views-field-nothing,
 BODY.page-crm-core-reports .pane-petition-top-sources-panel-pane-1 TD.views-field-nothing,
 BODY.page-crm-core-reports .view-cmcev-events-report TD.views-field-nothing {
