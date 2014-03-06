@@ -2666,6 +2666,30 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-border-radius: 5px;
 }
 
+/* activty icons for donations */
+/* line 54, ../sass/components/_activities.scss */
+.cmcd_donation .crm-core-activity-icon SPAN {
+  background: #389a19 url("../images/ao-backend-icons.png") 0px -30px no-repeat;
+}
+
+/* activty icons for events */
+/* line 62, ../sass/components/_activities.scss */
+.cmcev_event_registration .crm-core-activity-icon SPAN {
+  background: #1a6099 url("../images/ao-backend-icons.png") -90px -30px no-repeat;
+}
+
+/* activty icons for petitions */
+/* line 70, ../sass/components/_activities.scss */
+.cmcp_petition_signature .crm-core-activity-icon SPAN {
+  background: #e26427 url("../images/ao-backend-icons.png") -60px -30px no-repeat;
+}
+
+/* activty icons for petitions */
+/* line 79, ../sass/components/_activities.scss */
+.cmcv_volunteer_commitment .crm-core-activity-icon SPAN {
+  background: #d02424 url("../images/ao-backend-icons.png") -30px -30px no-repeat;
+}
+
 /**
  * @file
  * Defines the appearance of tabs within the UI
@@ -3265,6 +3289,8 @@ BODY.page-crm-core-reports .pane-cmcd-source-callouts-panel-pane-1 .table-contai
   margin-top: 20px;
 }
 /* line 98, ../sass/themes/_reports.scss */
+BODY.page-crm-core-reports .table-field-attendance-percentage,
+BODY.page-crm-core-reports .table-field-registration-frequency-percent,
 BODY.page-crm-core-reports .table-field-source-percentage,
 BODY.page-crm-core-reports .table-field-frequency-percentage,
 BODY.page-crm-core-reports .table-field-attendance-percentage,
@@ -3282,7 +3308,9 @@ BODY.page-crm-core-reports .table-field-average-amount,
 BODY.page-crm-core-reports .table-field-source {
   font-weight: 700;
 }
-/* line 117, ../sass/themes/_reports.scss */
+/* line 119, ../sass/themes/_reports.scss */
+BODY.page-crm-core-reports .table-field-attendance-percentage,
+BODY.page-crm-core-reports .table-field-registration-frequency-percent,
 BODY.page-crm-core-reports .table-field-source-percentage,
 BODY.page-crm-core-reports .table-field-frequency-percentage,
 BODY.page-crm-core-reports .table-field-attendance-percentage,
@@ -3312,7 +3340,7 @@ BODY.page-crm-core-reports .table-field-donors,
 BODY.page-crm-core-reports .table-field-percent {
   text-align: center;
 }
-/* line 148, ../sass/themes/_reports.scss */
+/* line 152, ../sass/themes/_reports.scss */
 BODY.page-crm-core-reports .view-cmcv-opportunities-report .views-field-nothing,
 BODY.page-crm-core-reports .pane-cmcp-recent-signatures-panel-pane-1 TD.views-field-nothing,
 BODY.page-crm-core-reports .pane-petition-top-sources-panel-pane-1 TD.views-field-nothing,

@@ -42,5 +42,45 @@
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;  
   }
+
+
+  
   
 }
+
+/* activty icons for donations */
+.cmcd_donation {
+  .crm-core-activity-icon {
+    SPAN {
+      background: #389a19 url('../images/ao-backend-icons.png') 0px -30px no-repeat;
+    }
+  }
+}
+/* activty icons for events */
+.cmcev_event_registration {
+  .crm-core-activity-icon {
+    SPAN {
+      background: #1a6099 url('../images/ao-backend-icons.png') -90px -30px no-repeat;
+    }
+  }
+}
+/* activty icons for petitions */
+.cmcp_petition_signature {
+  .crm-core-activity-icon {
+    SPAN {
+      background: #e26427 url('../images/ao-backend-icons.png') -60px -30px no-repeat;
+    }
+  }
+}
+
+/* activty icons for petitions */
+.cmcv_volunteer_commitment {
+  .crm-core-activity-icon {
+    SPAN {
+      background: #d02424 url('../images/ao-backend-icons.png') -30px -30px no-repeat;
+    }
+  }
+}
+
+
+
