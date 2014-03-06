@@ -152,6 +152,7 @@ projects[geophp][subdir] = "contrib"
 projects[geophp][version] = "1.7"
 projects[openlayers][subdir] = "contrib"
 projects[openlayers][version] = "2.0-beta7"
+projects[openlayers][patch][] = "https://drupal.org/files/2061611_1_incorrect_boxes_plugin_path_7.x-2.x.patch"
 projects[proj4js][subdir] = "contrib"
 projects[proj4js][version] = "1.2"
 
