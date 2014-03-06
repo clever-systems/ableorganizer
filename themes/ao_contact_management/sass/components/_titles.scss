@@ -49,14 +49,21 @@ h1, h2, h3, h4, h5, h6 {
   overflow: hidden;
   border-top: 1px solid #CCC;
   border-bottom: 1px solid #CCC;
-  
   A {
     text-decoration: none;
-    
     IMG {
       margin-left: 0.4em;
     }
-    
   }
-  
+}
+
+/* average pane title */
+.pane-title-header {
+  font-family: $font-titles;
+  letter-spacing: -0.05em;
+  text-transform: uppercase;
+  font-size: $h3-font-size;
+  color: $blue-almost-black;
+  margin: 0em;
+  padding: 0em 0em 1em;
 }

@@ -1,0 +1,48 @@
+/**
+ * @file
+ * Handles the display of contact records
+ */
+
+
+/* the basic layout for contact records */
+.contact-record {
+  border-bottom: 1px solid $d-gray;
+  background-color: White;
+  padding: 1em;
+  /* pane titles */
+  h2.pane-title {
+    @extend .pane-title-header;
+  }
+}
+
+/* handles the display of user info in a contact record */
+.contact-user-info-box {
+  background-color: $f-gray;
+  padding: 1em;
+  text-align: center;
+  
+  .contact-user-info {
+    font-size: $h5-font-size;
+    &.nouser {
+      font-style: italic;
+    }
+  }
+  
+}
+
+
+
+
+BODY.page-crm-core-contact {
+  .panels-flexible-row {
+    &.contact {
+      @extend .contact-record;
+    }
+  }
+}
+
+
+
+.pane-ao-user-picture {
+  @extend .contact-user-info-box;
+}

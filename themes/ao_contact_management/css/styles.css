@@ -2420,15 +2420,27 @@ h1, h2, h3, h4, h5, h6 {
   border-top: 1px solid #CCC;
   border-bottom: 1px solid #CCC;
 }
-/* line 53, ../sass/components/_titles.scss */
+/* line 52, ../sass/components/_titles.scss */
 .widget-table-titles-large A, .container-table TR TH A, .table-container TABLE TR TH A,
 .views-table TR TH A {
   text-decoration: none;
 }
-/* line 56, ../sass/components/_titles.scss */
+/* line 54, ../sass/components/_titles.scss */
 .widget-table-titles-large A IMG, .container-table TR TH A IMG, .table-container TABLE TR TH A IMG,
 .views-table TR TH A IMG {
   margin-left: 0.4em;
+}
+
+/* average pane title */
+/* line 61, ../sass/components/_titles.scss */
+.pane-title-header, .contact-record h2.pane-title, BODY.page-crm-core-contact .panels-flexible-row.contact h2.pane-title {
+  font-family: Montserrat, Helvetica, sans-serif;
+  letter-spacing: -0.05em;
+  text-transform: uppercase;
+  font-size: 18.72px;
+  color: #0062a0;
+  margin: 0em;
+  padding: 0em 0em 1em;
 }
 
 /**
@@ -2623,7 +2635,7 @@ h1, h2, h3, h4, h5, h6 {
 .crm-core-activity {
   font-size: 13.28px;
   position: relative;
-  padding: 1em 1em;
+  padding: 1em 1em 1em 36px;
   -moz-transition-property: all;
   -o-transition-property: all;
   -webkit-transition-property: all;
@@ -2652,7 +2664,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 30px;
   width: 30px;
   position: absolute;
-  left: 1em;
+  left: 24px;
   top: 1em;
 }
 /* line 36, ../sass/components/_activities.scss */
@@ -2667,25 +2679,25 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* activty icons for donations */
-/* line 54, ../sass/components/_activities.scss */
+/* line 51, ../sass/components/_activities.scss */
 .cmcd_donation .crm-core-activity-icon SPAN {
   background: #389a19 url("../images/ao-backend-icons.png") 0px -30px no-repeat;
 }
 
 /* activty icons for events */
-/* line 62, ../sass/components/_activities.scss */
+/* line 59, ../sass/components/_activities.scss */
 .cmcev_event_registration .crm-core-activity-icon SPAN {
   background: #1a6099 url("../images/ao-backend-icons.png") -90px -30px no-repeat;
 }
 
 /* activty icons for petitions */
-/* line 70, ../sass/components/_activities.scss */
+/* line 67, ../sass/components/_activities.scss */
 .cmcp_petition_signature .crm-core-activity-icon SPAN {
   background: #e26427 url("../images/ao-backend-icons.png") -60px -30px no-repeat;
 }
 
 /* activty icons for petitions */
-/* line 79, ../sass/components/_activities.scss */
+/* line 76, ../sass/components/_activities.scss */
 .cmcv_volunteer_commitment .crm-core-activity-icon SPAN {
   background: #d02424 url("../images/ao-backend-icons.png") -30px -30px no-repeat;
 }
@@ -2775,6 +2787,35 @@ UL.tabs.tabs-secondary {
 /* line 62, ../sass/components/_tabs.scss */
 UL.tabs.tabs-secondary LI {
   margin: .4em .4em .4em 0em;
+}
+
+/**
+ * @file
+ * Handles the display of contact records
+ */
+/* the basic layout for contact records */
+/* line 8, ../sass/components/_contact.scss */
+.contact-record, BODY.page-crm-core-contact .panels-flexible-row.contact {
+  border-bottom: 1px solid #d5d5d5;
+  background-color: White;
+  padding: 1em;
+  /* pane titles */
+}
+
+/* handles the display of user info in a contact record */
+/* line 19, ../sass/components/_contact.scss */
+.contact-user-info-box, .pane-ao-user-picture {
+  background-color: whitesmoke;
+  padding: 1em;
+  text-align: center;
+}
+/* line 24, ../sass/components/_contact.scss */
+.contact-user-info-box .contact-user-info, .pane-ao-user-picture .contact-user-info {
+  font-size: 13.28px;
+}
+/* line 26, ../sass/components/_contact.scss */
+.contact-user-info-box .contact-user-info.nouser, .pane-ao-user-picture .contact-user-info.nouser {
+  font-style: italic;
 }
 
 /**
