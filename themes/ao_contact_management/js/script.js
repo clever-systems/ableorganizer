@@ -78,7 +78,12 @@ Drupal.behaviors.ao_contact_management = {
             
             // add the button for VBO to the form
             var new_btn = '<div class="btn-vbo btn-disabled">With Selected<div class="btn-expandable"><ul class="links">' + menu_opts + '</ul></div></div>';
+            var other_btns = $('.view-header').find('.detail-buttons');
             $('.view-header').prepend(new_btn);
+            
+            if(other_btns.length > 0){
+              other_btns.css('right', $('.btn-vbo').outerWidth() + 10);
+            }
             
             // disable the button until something is clicked
             var menu = $('.btn-vbo > DIV');
