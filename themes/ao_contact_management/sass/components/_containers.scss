@@ -156,3 +156,29 @@
   
 }
 
+/* quicklinks */
+.quick-links {
+    
+  .pane-title {
+    @extend .widget-title-links;
+    @extend .title-fonts;
+  }
+  
+  .link-container {
+  
+    font-size: 0.9em;
+    
+    strong {
+      text-transform: uppercase;
+    }
+    strong, A {
+      margin-bottom: 0.4em;
+      text-decoration: none;
+    }
+  }
+  
+}
+
+
+
+

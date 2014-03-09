@@ -423,6 +423,13 @@ textarea {
   }
   max-width: 100%; /* 5 */
   @include box-sizing(border-box); /* 5 */
+  @include border-radius(4px);
+  background-color: $f-gray;
+
+  &:focus {
+    background-color: White;
+  }
+
 }
 
 /**

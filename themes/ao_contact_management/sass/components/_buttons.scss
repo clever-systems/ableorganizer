@@ -21,6 +21,7 @@
   @include transition-timing-function(ease-in-out);
   @include user-select(none);
   cursor: pointer;
+  border: none;
   
   &:hover {
     background-color: $base-orange2;

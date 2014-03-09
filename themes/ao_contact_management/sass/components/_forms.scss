@@ -1,0 +1,85 @@
+/**
+ * @file
+ * Handles the display of forms
+ */
+
+
+/* the basic layout for an edit form */
+.edit-form-wrapper {
+  border: 1px solid $e-gray;
+  background-color: White;
+  padding: 1em;
+  margin: 1em 0em;
+  
+  .form-item-title,
+  .form-wrapper {
+    border: 1px solid $e-gray;
+    padding: 0.7em;
+    margin: .3em 0em;
+    @include border-radius(8px);
+    background-color: $f-gray3;
+    
+    &:hover {
+      background-color: White;
+    }
+    
+    .form-item {
+      margin: 0em;
+      font-size: 0.9em;
+      
+      .fieldset-legend,
+      LABEL {
+        @extend .field-label-title;
+      }
+      
+    }
+    
+    .fieldset-legend {
+      font-family: $font-titles;
+      letter-spacing: -0.05em;
+      font-size: 0.9em;
+    }
+  }
+  
+  FIELDSET.form-wrapper {
+    margin: 0em;
+  }
+  
+  FIELDSET {
+    LEGEND {
+      line-height: 0px;
+      padding: 0.5em 0em;
+      span.fieldset-legend {
+        border: 1px solid $d-gray;
+        padding: .2em .5em;
+        background-color: White;
+      }
+    }
+  }
+  
+  .field-type-geofield {
+    display: none;
+  }
+
+  .field-type-addressfield {
+    INPUT, select {
+      margin-right: 10px;
+    }
+  }
+
+  .form-actions {
+    #edit-submit {
+      @extend .btn;
+    }
+    #edit-delete {
+      @extend .btn-red;
+    }
+  }
+}
+
+
+/* TODO: move to theme */
+#crm-core-activity-edit-cmcd-donation-form,
+#crm-core-contact-ui-form {
+  @extend .edit-form-wrapper;
+}

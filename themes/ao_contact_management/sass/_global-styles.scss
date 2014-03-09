@@ -28,8 +28,8 @@ A {
 .title-fonts {
   font-family: $font-titles;
   letter-spacing: -0.05em;
-  font-size: 1em;
 }
+
 .title-fonts-large {
   font-size: 1.2em;
 }
@@ -193,28 +193,6 @@ section.banner {
   
 }
 
-/* quicklinks */
-.quick-links {
-    
-  .pane-title {
-    @extend .widget-title-links;
-    @extend .title-fonts;
-  }
-  
-  .link-container {
-  
-    font-size: 0.9em;
-    
-    strong {
-      text-transform: uppercase;
-    }
-    strong, A {
-      margin-bottom: 0.4em;
-      text-decoration: none;
-    }
-  }
-  
-}
 
 /* views filters */
 .views-exposed-form {
