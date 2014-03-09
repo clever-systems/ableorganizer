@@ -2926,7 +2926,7 @@ UL.tabs.tabs-secondary LI {
  */
 /* the basic layout for contact records */
 /* line 8, ../sass/components/_contact.scss */
-.contact-record-pane, BODY.page-crm-core-contact .panels-flexible-row.contact {
+.contact-record-pane, .entity-crm-core-contact, BODY.page-crm-core-contact .panels-flexible-row.contact {
   border: 1px solid #e1e1e1;
   background-color: White;
   padding: 1em;
@@ -3031,12 +3031,12 @@ UL.tabs.tabs-secondary LI {
 }
 
 /* TODO: move to theme file */
-/* line 135, ../sass/components/_contact.scss */
+/* line 140, ../sass/components/_contact.scss */
 .pane-crm-core-contact .entity-crm-core-contact {
   font-size: 13.28px;
 }
 
-/* line 140, ../sass/components/_contact.scss */
+/* line 145, ../sass/components/_contact.scss */
 .pane-ao-5-recent-activities .view-content {
   font-size: 13.28px;
 }

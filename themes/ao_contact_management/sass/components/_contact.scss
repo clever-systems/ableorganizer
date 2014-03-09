@@ -114,6 +114,11 @@
 
 
 /* TODO: move to theme file */
+
+.entity-crm-core-contact {
+  @extend .contact-record-pane;
+}
+
 BODY.page-crm-core-contact {
   .panels-flexible-row {
     &.contact {
