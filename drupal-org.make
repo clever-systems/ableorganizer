@@ -66,6 +66,12 @@ projects[mailsystem][version] = 2.34
 projects[mailsystem][subdir] = "contrib"
 projects[mimemail][version] = 1.0-beta1
 projects[mimemail][subdir] = "contrib"
+projects[mailchimp][version] = 2.12
+projects[mailchimp][subdir] = "contrib"
+projects[smtp][version] = 1.0
+projects[smtp][subdir] = "contrib"
+projects[mandrill][version] = 1.5
+projects[mandrill][subdir] = "contrib"
 
 ; content
 projects[pathologic][type] = "module"
