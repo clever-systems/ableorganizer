@@ -109,6 +109,15 @@ Drupal.behaviors.ao_contact_management = {
           }
         }
 
+        // make sure the height of the sidebars matches that of the content
+        var sidebarRegion = $('section.region-sidebar-first'), contentRegion = $('div#content'), maxHeight = 0;
+        if(sidebarRegion.height() > contentRegion.height()){
+          contentRegion.height(sidebarRegion.height());
+        } else {
+          sidebarRegion.height(contentRegion.height());
+        }
+        
+        
         // detect page reloads
         // TODO: replace this with jqmenu or something equivalent
         $(window).resize(function() {

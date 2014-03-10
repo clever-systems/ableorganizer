@@ -1859,9 +1859,9 @@ tr.selected td {
  *
  */
 /* line 8, ../sass/components/_buttons.scss */
-.btn, .btn-blue, .contact-pane-header-buttons .view-header A, .pane-ao-5-recent-activities .view-header A, .btn-red, .edit-form-wrapper .form-actions #edit-delete, #crm-core-activity-edit-cmcd-donation-form .form-actions #edit-delete,
-#crm-core-contact-ui-form .form-actions #edit-delete, .action-links LI A, .menu, .btn-vbo, .edit-form-wrapper .form-actions #edit-submit, #crm-core-activity-edit-cmcd-donation-form .form-actions #edit-submit,
-#crm-core-contact-ui-form .form-actions #edit-submit {
+.btn, .btn-blue, .pane-ao-dashboard-act-stream-panel-pane-1 .view-content .crm-core-activity-actions A:first-child, .contact-pane-header-buttons .view-header A, .pane-ao-5-recent-activities .view-header A, .btn-red, .edit-form-wrapper .form-actions #edit-delete, #crm-core-activity-edit-cmcd-donation-form .form-actions #edit-delete,
+#crm-core-contact-ui-form .form-actions #edit-delete, .action-links LI A, .menu, .btn-vbo, .pane-ao-dashboard-act-stream-panel-pane-1 .view-content .crm-core-activity-actions A, .edit-form-wrapper .form-actions #edit-submit, #crm-core-activity-edit-cmcd-donation-form .form-actions #edit-submit,
+#crm-core-contact-ui-form .form-actions #edit-submit, BODY.maintenance-page section.content div#content input[type=submit] {
   background-color: #ffb600;
   color: White;
   -moz-border-radius: 4px;
@@ -1895,29 +1895,29 @@ tr.selected td {
 }
 /* line 26, ../sass/components/_buttons.scss */
 .btn:hover, .btn-blue:hover, .contact-pane-header-buttons .view-header A:hover, .pane-ao-5-recent-activities .view-header A:hover, .btn-red:hover, .edit-form-wrapper .form-actions #edit-delete:hover, #crm-core-activity-edit-cmcd-donation-form .form-actions #edit-delete:hover,
-#crm-core-contact-ui-form .form-actions #edit-delete:hover, .action-links LI A:hover, .menu:hover, .btn-vbo:hover, .edit-form-wrapper .form-actions #edit-submit:hover, #crm-core-activity-edit-cmcd-donation-form .form-actions #edit-submit:hover,
-#crm-core-contact-ui-form .form-actions #edit-submit:hover {
+#crm-core-contact-ui-form .form-actions #edit-delete:hover, .action-links LI A:hover, .menu:hover, .btn-vbo:hover, .pane-ao-dashboard-act-stream-panel-pane-1 .view-content .crm-core-activity-actions A:hover, .edit-form-wrapper .form-actions #edit-submit:hover, #crm-core-activity-edit-cmcd-donation-form .form-actions #edit-submit:hover,
+#crm-core-contact-ui-form .form-actions #edit-submit:hover, BODY.maintenance-page section.content div#content input[type=submit]:hover {
   background-color: #ffd889;
   color: White;
 }
 /* line 30, ../sass/components/_buttons.scss */
 .btn:active, .btn-blue:active, .contact-pane-header-buttons .view-header A:active, .pane-ao-5-recent-activities .view-header A:active, .btn-red:active, .edit-form-wrapper .form-actions #edit-delete:active, #crm-core-activity-edit-cmcd-donation-form .form-actions #edit-delete:active,
-#crm-core-contact-ui-form .form-actions #edit-delete:active, .action-links LI A:active, .menu:active, .btn-vbo:active, .edit-form-wrapper .form-actions #edit-submit:active, #crm-core-activity-edit-cmcd-donation-form .form-actions #edit-submit:active,
-#crm-core-contact-ui-form .form-actions #edit-submit:active {
+#crm-core-contact-ui-form .form-actions #edit-delete:active, .action-links LI A:active, .menu:active, .btn-vbo:active, .pane-ao-dashboard-act-stream-panel-pane-1 .view-content .crm-core-activity-actions A:active, .edit-form-wrapper .form-actions #edit-submit:active, #crm-core-activity-edit-cmcd-donation-form .form-actions #edit-submit:active,
+#crm-core-contact-ui-form .form-actions #edit-submit:active, BODY.maintenance-page section.content div#content input[type=submit]:active {
   background-color: #f89406;
   color: #7d4a0e;
 }
 /* line 35, ../sass/components/_buttons.scss */
-.btn A, .btn-blue A, .contact-pane-header-buttons .view-header A A, .pane-ao-5-recent-activities .view-header A A, .btn-red A, .edit-form-wrapper .form-actions #edit-delete A, #crm-core-activity-edit-cmcd-donation-form .form-actions #edit-delete A,
-#crm-core-contact-ui-form .form-actions #edit-delete A, .action-links LI A A, .menu A, .btn-vbo A, .edit-form-wrapper .form-actions #edit-submit A, #crm-core-activity-edit-cmcd-donation-form .form-actions #edit-submit A,
-#crm-core-contact-ui-form .form-actions #edit-submit A {
+.btn A, .btn-blue A, .pane-ao-dashboard-act-stream-panel-pane-1 .view-content .crm-core-activity-actions A:first-child A, .contact-pane-header-buttons .view-header A A, .pane-ao-5-recent-activities .view-header A A, .btn-red A, .edit-form-wrapper .form-actions #edit-delete A, #crm-core-activity-edit-cmcd-donation-form .form-actions #edit-delete A,
+#crm-core-contact-ui-form .form-actions #edit-delete A, .action-links LI A A, .menu A, .btn-vbo A, .pane-ao-dashboard-act-stream-panel-pane-1 .view-content .crm-core-activity-actions A A, .edit-form-wrapper .form-actions #edit-submit A, #crm-core-activity-edit-cmcd-donation-form .form-actions #edit-submit A,
+#crm-core-contact-ui-form .form-actions #edit-submit A, BODY.maintenance-page section.content div#content input[type=submit] A {
   color: White;
   text-decoration: none;
 }
 /* line 38, ../sass/components/_buttons.scss */
 .btn A:hover, .btn-blue A:hover, .contact-pane-header-buttons .view-header A A:hover, .pane-ao-5-recent-activities .view-header A A:hover, .btn-red A:hover, .edit-form-wrapper .form-actions #edit-delete A:hover, #crm-core-activity-edit-cmcd-donation-form .form-actions #edit-delete A:hover,
-#crm-core-contact-ui-form .form-actions #edit-delete A:hover, .action-links LI A A:hover, .menu A:hover, .btn-vbo A:hover, .edit-form-wrapper .form-actions #edit-submit A:hover, #crm-core-activity-edit-cmcd-donation-form .form-actions #edit-submit A:hover,
-#crm-core-contact-ui-form .form-actions #edit-submit A:hover {
+#crm-core-contact-ui-form .form-actions #edit-delete A:hover, .action-links LI A A:hover, .menu A:hover, .btn-vbo A:hover, .pane-ao-dashboard-act-stream-panel-pane-1 .view-content .crm-core-activity-actions A A:hover, .edit-form-wrapper .form-actions #edit-submit A:hover, #crm-core-activity-edit-cmcd-donation-form .form-actions #edit-submit A:hover,
+#crm-core-contact-ui-form .form-actions #edit-submit A:hover, BODY.maintenance-page section.content div#content input[type=submit] A:hover {
   color: White;
 }
 
@@ -1953,21 +1953,23 @@ tr.selected td {
 .table-container TABLE TR TD #crm-core-contact-ui-form .form-actions #edit-submit,
 #crm-core-contact-ui-form .form-actions .table-container TABLE TR TD #edit-submit,
 .views-table TR TD #crm-core-contact-ui-form .form-actions #edit-submit,
-#crm-core-contact-ui-form .form-actions .views-table TR TD #edit-submit, .contact-pane-header-buttons .view-header A, .pane-ao-5-recent-activities .view-header A {
+#crm-core-contact-ui-form .form-actions .views-table TR TD #edit-submit, .container-table TR TD BODY.maintenance-page section.content div#content input[type=submit], BODY.maintenance-page section.content div#content .container-table TR TD input[type=submit], .table-container TABLE TR TD BODY.maintenance-page section.content div#content input[type=submit], BODY.maintenance-page section.content div#content .table-container TABLE TR TD input[type=submit],
+.views-table TR TD BODY.maintenance-page section.content div#content input[type=submit],
+BODY.maintenance-page section.content div#content .views-table TR TD input[type=submit], .pane-ao-dashboard-act-stream-panel-pane-1 .view-content .crm-core-activity-actions A, .pane-ao-dashboard-act-stream-panel-pane-1 .view-content .crm-core-activity-actions A:first-child, .contact-pane-header-buttons .view-header A, .pane-ao-5-recent-activities .view-header A {
   font-size: 0.8em;
   padding: 0.1em .8em;
 }
 
 /* line 49, ../sass/components/_buttons.scss */
-.btn-blue, .contact-pane-header-buttons .view-header A, .pane-ao-5-recent-activities .view-header A {
+.btn-blue, .pane-ao-dashboard-act-stream-panel-pane-1 .view-content .crm-core-activity-actions A:first-child, .contact-pane-header-buttons .view-header A, .pane-ao-5-recent-activities .view-header A {
   background-color: #65aff2;
 }
 /* line 54, ../sass/components/_buttons.scss */
-.btn-blue:hover, .contact-pane-header-buttons .view-header A:hover, .pane-ao-5-recent-activities .view-header A:hover {
+.btn-blue:hover, .pane-ao-dashboard-act-stream-panel-pane-1 .view-content .crm-core-activity-actions A:hover:first-child, .contact-pane-header-buttons .view-header A:hover, .pane-ao-5-recent-activities .view-header A:hover {
   background-color: #94c8f6;
 }
 /* line 58, ../sass/components/_buttons.scss */
-.btn-blue:active, .contact-pane-header-buttons .view-header A:active, .pane-ao-5-recent-activities .view-header A:active {
+.btn-blue:active, .pane-ao-dashboard-act-stream-panel-pane-1 .view-content .crm-core-activity-actions A:active:first-child, .contact-pane-header-buttons .view-header A:active, .pane-ao-5-recent-activities .view-header A:active {
   background-color: #6fd6fe;
   color: #3c7489;
 }
@@ -1998,7 +2000,7 @@ tr.selected td {
  */
 /* basic container - extended by various widgets */
 /* line 10, ../sass/components/_containers.scss */
-.basic-container, .activty-feed-container .view, BODY.page-crm-core-dashboard .activity-feed .view, .summary-widget-container, BODY.page-crm-core-dashboard .summary-pane {
+.basic-container, .activty-feed-container .view, .summary-widget-container, .summary-pane {
   -moz-border-radius: 8px;
   -webkit-border-radius: 8px;
   border-radius: 8px;
@@ -2008,7 +2010,7 @@ tr.selected td {
 
 /* basic container element - applies to most records */
 /* line 16, ../sass/components/_containers.scss */
-.basic-item-container, .activty-feed-container .view .views-row, BODY.page-crm-core-dashboard .activity-feed .view .views-row {
+.basic-item-container, .activty-feed-container .view .views-row {
   border-bottom: 1px solid #e1e1e1;
   margin: 0em;
   padding: 0em;
@@ -2016,7 +2018,7 @@ tr.selected td {
 
 /* activity feed - used on the dashboard */
 /* line 25, ../sass/components/_containers.scss */
-.activty-feed-container .pane-title, BODY.page-crm-core-dashboard .activity-feed .pane-title {
+.activty-feed-container .pane-title {
   position: absolute;
   top: 8px;
   left: 24px;
@@ -2026,23 +2028,23 @@ tr.selected td {
   margin: 0em;
 }
 /* line 35, ../sass/components/_containers.scss */
-.activty-feed-container .view, BODY.page-crm-core-dashboard .activity-feed .view {
+.activty-feed-container .view {
   padding: 3.6em 0em 1em;
 }
 /* line 42, ../sass/components/_containers.scss */
-.activty-feed-container .view .views-row:hover, BODY.page-crm-core-dashboard .activity-feed .view .views-row:hover {
+.activty-feed-container .view .views-row:hover {
   background-color: White;
 }
 
 /* summary widget - used on the dashboard */
 /* line 53, ../sass/components/_containers.scss */
-.summary-widget-container, BODY.page-crm-core-dashboard .summary-pane {
+.summary-widget-container, .summary-pane {
   padding: 0em .2em .2em;
   margin: 0em 0em .8em;
   border: 1px solid #CCC;
 }
 /* line 60, ../sass/components/_containers.scss */
-.summary-widget-container TABLE, BODY.page-crm-core-dashboard .summary-pane TABLE {
+.summary-widget-container TABLE, .summary-pane TABLE {
   margin: 0em auto;
   padding: 0em;
   width: 100%;
@@ -2054,15 +2056,15 @@ tr.selected td {
   border-collapse: initial;
 }
 /* line 69, ../sass/components/_containers.scss */
-.summary-widget-container TABLE TH, BODY.page-crm-core-dashboard .summary-pane TABLE TH {
+.summary-widget-container TABLE TH, .summary-pane TABLE TH {
   border: 1px solid #CCC;
 }
 /* line 78, ../sass/components/_containers.scss */
-.summary-widget-container TABLE TR, BODY.page-crm-core-dashboard .summary-pane TABLE TR {
+.summary-widget-container TABLE TR, .summary-pane TABLE TR {
   border: none;
 }
 /* line 80, ../sass/components/_containers.scss */
-.summary-widget-container TABLE TR TD, BODY.page-crm-core-dashboard .summary-pane TABLE TR TD {
+.summary-widget-container TABLE TR TD, .summary-pane TABLE TR TD {
   border: none;
   text-align: center;
   padding: 0.5em 0em;
@@ -2094,7 +2096,7 @@ tr.selected td {
 .quick-links .link-container #crm-core-contact-ui-form .form-actions strong#edit-submit,
 #crm-core-contact-ui-form .form-actions .quick-links .link-container strong#edit-submit, .quick-links .link-container A.btn, .quick-links .link-container A.btn-blue, .quick-links .link-container .contact-pane-header-buttons .view-header A, .contact-pane-header-buttons .view-header .quick-links .link-container A, .quick-links .link-container .pane-ao-5-recent-activities .view-header A, .pane-ao-5-recent-activities .view-header .quick-links .link-container A, .quick-links .link-container A.btn-red, .quick-links .link-container .edit-form-wrapper .form-actions A#edit-delete, .edit-form-wrapper .form-actions .quick-links .link-container A#edit-delete, .quick-links .link-container #crm-core-activity-edit-cmcd-donation-form .form-actions A#edit-delete, #crm-core-activity-edit-cmcd-donation-form .form-actions .quick-links .link-container A#edit-delete,
 .quick-links .link-container #crm-core-contact-ui-form .form-actions A#edit-delete,
-#crm-core-contact-ui-form .form-actions .quick-links .link-container A#edit-delete, .quick-links .link-container .action-links LI A, .action-links LI .quick-links .link-container A, .quick-links .link-container A.menu, .quick-links .link-container A.btn-vbo, .quick-links .link-container .edit-form-wrapper .form-actions A#edit-submit, .edit-form-wrapper .form-actions .quick-links .link-container A#edit-submit, .quick-links .link-container #crm-core-activity-edit-cmcd-donation-form .form-actions A#edit-submit, #crm-core-activity-edit-cmcd-donation-form .form-actions .quick-links .link-container A#edit-submit,
+#crm-core-contact-ui-form .form-actions .quick-links .link-container A#edit-delete, .quick-links .link-container .action-links LI A, .action-links LI .quick-links .link-container A, .quick-links .link-container A.menu, .quick-links .link-container A.btn-vbo, .quick-links .link-container .pane-ao-dashboard-act-stream-panel-pane-1 .view-content .crm-core-activity-actions A, .pane-ao-dashboard-act-stream-panel-pane-1 .view-content .crm-core-activity-actions .quick-links .link-container A, .quick-links .link-container .edit-form-wrapper .form-actions A#edit-submit, .edit-form-wrapper .form-actions .quick-links .link-container A#edit-submit, .quick-links .link-container #crm-core-activity-edit-cmcd-donation-form .form-actions A#edit-submit, #crm-core-activity-edit-cmcd-donation-form .form-actions .quick-links .link-container A#edit-submit,
 .quick-links .link-container #crm-core-contact-ui-form .form-actions A#edit-submit,
 #crm-core-contact-ui-form .form-actions .quick-links .link-container A#edit-submit {
   display: inline-block;
@@ -2450,7 +2452,7 @@ h1, h2, h3, h4, h5, h6 {
 /* standard panel title */
 /* this is just a basic title that can be used for any panel  */
 /* line 14, ../sass/components/_titles.scss */
-.standard-panel-title, .contact-pane h2.pane-title, BODY.page-crm-core-contact .panel-pane h2.pane-title {
+.standard-panel-title, .pane-ao-dashboard-act-stream-panel-pane-1 h2.pane-title, .contact-pane h2.pane-title, BODY.page-crm-core-contact .panel-pane h2.pane-title {
   margin: 0em 0em .8em;
   border-bottom: 1px solid #e1e1e1;
   text-align: left;
@@ -2483,8 +2485,8 @@ h1, h2, h3, h4, h5, h6 {
 /* widget titles */
 /* small colored title used in summaries and other items */
 /* line 39, ../sass/components/_titles.scss */
-.widget-title, .widget-title-links, .quick-links .pane-title, BODY.page-crm-core-reports .pane-title, .widget-table-titles, .summary-widget-container TABLE THEAD TH, BODY.page-crm-core-dashboard .summary-pane TABLE THEAD TH, .widget-table-titles-large, .container-table TR TH, .table-container TABLE TR TH,
-.views-table TR TH, .activty-feed-container .pane-title, BODY.page-crm-core-dashboard .activity-feed .pane-title, .summary-widget-container .pane-title, BODY.page-crm-core-dashboard .summary-pane .pane-title {
+.widget-title, .widget-title-links, .quick-links .pane-title, BODY.page-crm-core-reports .pane-title, .widget-table-titles, .summary-widget-container TABLE THEAD TH, .summary-pane TABLE THEAD TH, .widget-table-titles-large, .container-table TR TH, .table-container TABLE TR TH,
+.views-table TR TH, .activty-feed-container .pane-title, .summary-widget-container .pane-title, .summary-pane .pane-title {
   border: none;
   text-align: center;
   font-size: 1.2em;
@@ -2505,7 +2507,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* titles for widget tables */
 /* line 59, ../sass/components/_titles.scss */
-.widget-table-titles, .summary-widget-container TABLE THEAD TH, BODY.page-crm-core-dashboard .summary-pane TABLE THEAD TH {
+.widget-table-titles, .summary-widget-container TABLE THEAD TH, .summary-pane TABLE THEAD TH {
   font-size: 0.8em;
   padding: 0.5em 0.5em;
   color: #9b59a8;
@@ -2738,14 +2740,14 @@ h1, h2, h3, h4, h5, h6 {
  */
 /* activity feed */
 /* line 8, ../sass/components/_activities.scss */
-.activity-record-pane, .view-ao-crm-activities-by-contact .view-content {
+.activity-record-pane, .view-ao-crm-activities-by-contact .view-content, .pane-ao-dashboard-act-stream-panel-pane-1 .view-content {
   border: 1px solid #e1e1e1;
   background-color: White;
   padding: 1em;
   margin: 1em 0em;
 }
 /* line 14, ../sass/components/_activities.scss */
-.activity-record-pane .views-row:last-child .crm-core-activity, .view-ao-crm-activities-by-contact .view-content .views-row:last-child .crm-core-activity {
+.activity-record-pane .views-row:last-child .crm-core-activity, .view-ao-crm-activities-by-contact .view-content .views-row:last-child .crm-core-activity, .pane-ao-dashboard-act-stream-panel-pane-1 .view-content .views-row:last-child .crm-core-activity {
   border-bottom: none;
 }
 
@@ -2833,6 +2835,28 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* move to theme */
+/* activity page */
+/* dashboard */
+/* line 116, ../sass/components/_activities.scss */
+.pane-ao-dashboard-act-stream-panel-pane-1 h2.pane-title {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  z-index: 100;
+  border-bottom: none;
+  text-transform: uppercase;
+  margin: 0em;
+}
+/* line 127, ../sass/components/_activities.scss */
+.pane-ao-dashboard-act-stream-panel-pane-1 .view-content {
+  margin: 0em 0em;
+  padding-top: 64px;
+}
+/* line 131, ../sass/components/_activities.scss */
+.pane-ao-dashboard-act-stream-panel-pane-1 .view-content .crm-core-activity-actions {
+  margin-left: 12px;
+}
+
 /**
  * @file
  * Defines the appearance of tabs within the UI
@@ -3254,7 +3278,7 @@ A:active {
 }
 
 /* line 28, ../sass/themes/_global-styles.scss */
-.title-fonts, .quick-links .pane-title, .standard-panel-title, .contact-pane h2.pane-title, BODY.page-crm-core-contact .panel-pane h2.pane-title, .field-label-title, .edit-form-wrapper .form-item-title .form-item .fieldset-legend, #crm-core-activity-edit-cmcd-donation-form .form-item-title .form-item .fieldset-legend,
+.title-fonts, .quick-links .pane-title, .standard-panel-title, .pane-ao-dashboard-act-stream-panel-pane-1 h2.pane-title, .contact-pane h2.pane-title, BODY.page-crm-core-contact .panel-pane h2.pane-title, .field-label-title, .edit-form-wrapper .form-item-title .form-item .fieldset-legend, #crm-core-activity-edit-cmcd-donation-form .form-item-title .form-item .fieldset-legend,
 #crm-core-contact-ui-form .form-item-title .form-item .fieldset-legend,
 .edit-form-wrapper .form-item-title .form-item LABEL,
 #crm-core-activity-edit-cmcd-donation-form .form-item-title .form-item LABEL,
@@ -3264,18 +3288,18 @@ A:active {
 #crm-core-contact-ui-form .form-wrapper .form-item .fieldset-legend,
 .edit-form-wrapper .form-wrapper .form-item LABEL,
 #crm-core-activity-edit-cmcd-donation-form .form-wrapper .form-item LABEL,
-#crm-core-contact-ui-form .form-wrapper .form-item LABEL, .activty-feed-container .pane-title, BODY.page-crm-core-dashboard .activity-feed .pane-title, .summary-widget-container .pane-title, BODY.page-crm-core-dashboard .summary-pane .pane-title, BODY.page-crm-core-reports .pane-title {
+#crm-core-contact-ui-form .form-wrapper .form-item LABEL, .activty-feed-container .pane-title, .summary-widget-container .pane-title, .summary-pane .pane-title, BODY.page-crm-core-reports .pane-title {
   font-family: Montserrat, Helvetica, sans-serif;
   letter-spacing: -0.05em;
 }
 
 /* line 32, ../sass/themes/_global-styles.scss */
-.title-fonts-large, .activty-feed-container .pane-title, BODY.page-crm-core-dashboard .activity-feed .pane-title {
+.title-fonts-large, .activty-feed-container .pane-title {
   font-size: 1.2em;
 }
 
 /* line 35, ../sass/themes/_global-styles.scss */
-.summary-data, .summary-widget-container TABLE TR TD, BODY.page-crm-core-dashboard .summary-pane TABLE TR TD {
+.summary-data, .summary-widget-container TABLE TR TD, .summary-pane TABLE TR TD {
   font-size: 1.4em;
   font-weight: 700;
   background-color: White;
@@ -3402,17 +3426,17 @@ FOOTER {
 /* basic container element */
 /* activity feed */
 /* line 165, ../sass/themes/_global-styles.scss */
-.activty-feed-container, BODY.page-crm-core-dashboard .activity-feed {
+.activty-feed-container {
   background-color: #f9f9f9;
 }
 
 /* summary widget */
 /* line 179, ../sass/themes/_global-styles.scss */
-.summary-widget-container, BODY.page-crm-core-dashboard .summary-pane {
+.summary-widget-container, .summary-pane {
   background-color: #f1f1f1;
 }
 /* line 190, ../sass/themes/_global-styles.scss */
-.summary-widget-container TABLE THEAD TH, BODY.page-crm-core-dashboard .summary-pane TABLE THEAD TH {
+.summary-widget-container TABLE THEAD TH, .summary-pane TABLE THEAD TH {
   background-image: -moz-linear-gradient(top, #ffffff 31%, #dfe4e6 100%);
   background-image: -o-linear-gradient(top, #ffffff 31%, #dfe4e6 100%);
   background-image: -webkit-linear-gradient(top, #ffffff 31%, #dfe4e6 100%);
@@ -3740,3 +3764,79 @@ BODY.page-crm-core-reports .view-cmcev-events-report TD.views-field-nothing {
 .crm_core_report_icon.report-cmcv {
   background-position: -120px -60px;
 }
+
+/**
+ * @file
+ * Styles specific to the maintenance page
+ */
+/* line 6, ../sass/themes/_maintenance.scss */
+BODY.maintenance-page section.content {
+  padding-top: 0em;
+}
+/* line 9, ../sass/themes/_maintenance.scss */
+BODY.maintenance-page section.content div#content {
+  padding-top: 1em;
+  background-color: White;
+  border-right: 1px solid #e1e1e1;
+  float: left;
+  width: 66.66667%;
+  margin-left: 33.33333%;
+  margin-right: -100%;
+}
+/* line 19, ../sass/themes/_maintenance.scss */
+BODY.maintenance-page section.content div#content p:first-child {
+  margin-top: 0em;
+}
+/* line 25, ../sass/themes/_maintenance.scss */
+BODY.maintenance-page section.content section.region-sidebar-first {
+  background-color: White;
+  border-left: 1px solid #e1e1e1;
+  border-right: 1px solid #e1e1e1;
+  float: left;
+  width: 33.33333%;
+  margin-left: 0%;
+  margin-right: -33.33333%;
+}
+/* line 31, ../sass/themes/_maintenance.scss */
+BODY.maintenance-page section.content section.region-sidebar-first OL.task-list {
+  list-style-type: none;
+  margin: 1em 0em 1em;
+  padding: 0em;
+  text-indent: 1em;
+  white-space: nowrap;
+  width: 100%;
+}
+/* line 40, ../sass/themes/_maintenance.scss */
+BODY.maintenance-page section.content section.region-sidebar-first OL.task-list LI {
+  padding: .5em 0em .5em 2em;
+  white-space: nowrap;
+  background-image: url(../images/install.png);
+  background-repeat: no-repeat;
+  background-position: -5px -8px;
+  margin-bottom: .3em;
+}
+/* line 48, ../sass/themes/_maintenance.scss */
+BODY.maintenance-page section.content section.region-sidebar-first OL.task-list LI.active {
+  background-position: -5px -110px;
+}
+/* line 52, ../sass/themes/_maintenance.scss */
+BODY.maintenance-page section.content section.region-sidebar-first OL.task-list LI.done {
+  background-position: -5px -60px;
+}
+/* line 56, ../sass/themes/_maintenance.scss */
+BODY.maintenance-page section.content section.region-sidebar-first OL.task-list LI:last-child {
+  border-bottom: none;
+}
+
+/*
+
+.content {
+ @include zen-grid-item(4, 3); // Make this grid item span 4 columns. // Position this grid item in the 3rd column.
+}
+
+.aside2 {
+ 
+}
+
+
+ */

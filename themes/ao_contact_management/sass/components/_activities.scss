@@ -103,12 +103,49 @@
 
 /* move to theme */
 
+/* activity page */
 .view-ao-crm-activities-by-contact {
   .view-content {
     @extend .activity-record-pane;
   }
 }
 
+/* dashboard */
+.pane-ao-dashboard-act-stream-panel-pane-1 {
+  
+  h2.pane-title {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+    z-index: 100;
+    border-bottom: none;
+    text-transform: uppercase;
+    margin: 0em;
+    @extend .standard-panel-title;
+  }
+  
+  .view-content {
+    @extend .activity-record-pane;
+    margin: 0em 0em;
+    padding-top: 64px;
+    .crm-core-activity-actions {
+      margin-left: 12px;
+      A {
+        @extend .btn;
+        @extend .btn-small;
+        &:first-child{
+          @extend .btn-blue;
+          @extend .btn-small;
+        }
+      }
+    }
+    
+  }
+}
+
+.summary-pane {
+  @extend .summary-widget-container;
+}
 
 
 
