@@ -567,22 +567,55 @@ crm-core-profile-entry-form-ao-volunteer-commitment-form");
 }
 
 /**
+ * Force-set a theme at any point during the execution of the request.
+ *
+ * Drupal doesn't give us the option to set the theme during the installation
+ * process and forces enable the maintenance theme too early in the request
+ * for us to modify it in a clean way.
+ */
+function _ableorganizer_set_theme($target_theme) {
+  if ($GLOBALS['theme'] != $target_theme) {
+    unset($GLOBALS['theme']);
+
+    drupal_static_reset();
+    $GLOBALS['conf']['maintenance_theme'] = $target_theme;
+    _drupal_maintenance_theme();
+  }
+}
+
+
+/**
  * Implements hook_install_tasks_alter().
  */
 function ableorganizer_install_tasks_alter(&$tasks, $install_state) {
 
   $t = get_t();
 
-  // The "Welcome" screen needs to come after the first two steps
-  // (profile and language selection), despite the fact that they are disabled.
-  $new_task = array();
-  $new_task['ableorganizer_welcome'] = array(
-    'display' => TRUE,
-    'display_name' => $t('Welcome'),
-    'type' => 'form',
-    'run' => isset($install_state['parameters']['welcome']) ? INSTALL_TASK_SKIP : INSTALL_TASK_RUN_IF_REACHED,
-  );
-  $tasks = $new_task + $tasks;
+  // Set the installation theme.
+  _ableorganizer_set_theme('ao_contact_management');
+  
+  // Remove some profile steps
+  $tasks['install_select_profile']['display'] = FALSE;
+  
+  if(!empty($install_state['parameters']['locale'])){
+    $tasks['install_select_locale']['display'] = FALSE;
+  }
+  
+  
+  if ($install_state['interactive']) {
+    // Display a welcome message
+    $new_task = array();
+    $new_task['ableorganizer_welcome'] = array(
+      'display' => TRUE,
+      'display_name' => $t('Welcome'),
+      'type' => 'form',
+      'run' => isset($install_state['parameters']['welcome']) ? INSTALL_TASK_SKIP : INSTALL_TASK_RUN_IF_REACHED,
+    );
+    $tasks = $new_task + $tasks;
+  }
+  
+  
+
 
   $new_tasks = array();
 
@@ -632,7 +665,7 @@ function ableorganizer_welcome($form, &$form_state, &$install_state) {
   $t = get_t();
   drupal_set_title($t('Welcome to AbleOrganizer'));
 
-  $message = $t('Thank you for using AbleOrganizer!') . '<br />';
+  $message = '';
   $message .= '<p>' . $t('This Drupal distribution includes powerful features for tracking information about people, activities and relationships built with CRM Core.') . '</p>';
   $message .= '<p>' . $t('The following features are included as part of this distro:') . '</p>';
   $message .= '<ul>';
