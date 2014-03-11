@@ -1,7 +1,7 @@
 <?php
 /**
  * @file
- * ableorganizer_sample_content.context.inc
+ * ao_basic_setup.context.inc
  */
 
 /**
@@ -60,6 +60,6 @@ function ao_basic_setup_context_default_contexts() {
   t('Displays various blocks on the front page used to describe AbleOrganizer');
   t('front page');
   $export['ao_frontpage_context'] = $context;
-  
+
   return $export;
 }

@@ -1,0 +1,395 @@
+/**
+ * @file
+ * 
+ * Controls the layout of the default content for AbleOrganizer
+ */
+
+/* init */
+/* font sizes */
+$base-font-size:   16px; // The font size set on the root html element.
+$base-line-height: 24px; // This line-height determines the basic unit of vertical rhythm.
+
+$h1-font-size: 2    * $base-font-size;
+$h2-font-size: 1.5  * $base-font-size;
+$h3-font-size: 1.17 * $base-font-size;
+$h4-font-size: 1    * $base-font-size;
+$h5-font-size: 0.83 * $base-font-size;
+$h6-font-size: 0.67 * $base-font-size;
+
+/* colors */
+$ao_orange:  #ffb836;
+$ao_orange2: #ffcc4d;
+$ao_blue:    #00b0f3;
+$ao_blue2:   #436ab3;
+$ao_aqua:    #c8effe;
+
+
+$header_line: rgba(67,106,179,1);
+$transparent: rgba(255,255,255,0);
+
+/* fonts */
+$open-sans:       'Open Sans', Helvetica, "Nimbus Sans L", sans-serif;
+$montserrat:      'Montserrat', Helvetica, "Nimbus Sans L", sans-serif;
+
+// Now create some variables for the font stacks we want to use on this site.
+$base-font-family: $open-sans; // The font family set on the html element.
+$font-body:        $open-sans;
+$font-titles:      $montserrat;
+
+
+/* partials */
+// Add Compass' IE and vendor prefix support variables.
+@import "compass/support";
+// Better than Drupal's clearfix.
+@import "compass/utilities/general/clearfix";
+// See http://compass-style.org/help/tutorials/spriting/
+@import "compass/utilities/sprites";
+// Use one CSS3 mixin instead of multiple vendor prefixes.
+@import "compass/css3";
+// Helps set up a vertical rhythm.
+@import "compass/typography/vertical_rhythm";
+// add sassy buttons
+@import "sassy-buttons";
+
+/* layouts */
+  
+  
+  
+/* modules */
+
+/* displays a feature listing as a bubble */
+.features-bubble {
+  display: inline-block;
+  vertical-align: top;
+  padding: 0em .5em;
+  text-align: center;
+  
+  H3 {
+    color: $ao_blue2;
+    text-align: center;
+    font-weight: normal;
+    text-transform: uppercase;
+    margin-top: 0.25em;
+    margin-bottom: 0px;
+    font-family: $font-titles;
+    font-size: $h4-font-size;
+  }
+  P {
+    margin: .5em 0em;
+    font-size: $h5-font-size;
+  }
+
+  .ao_profeat_icon_outer {
+    height: 140px;
+    width: 140px;
+    @include border-radius(50%);
+    background-color: transparent;
+    margin: 0em auto .25em;
+    cursor: pointer;
+    border: 1px solid White;
+    position: relative;
+    vertical-align: middle;
+    @include transition-property(all);
+    @include transition-duration(.2s);
+    @include transition-timing-function(ease-in-out);  
+    
+    &:hover {
+      border: 1px solid #CCC;
+    }
+  }
+  
+  .ao_profeat_icon {
+    height: 110px;
+    width: 110px;
+    @include border-radius(50%);
+    background-color: #c1c1d1;
+    margin: 0em auto;
+    cursor: pointer;
+    position:absolute;
+    left: 15px;
+    top: 15px;
+    @include transition-property(all);
+    @include transition-duration(.2s);
+    @include transition-timing-function(ease-in-out);  
+    
+    SPAN {
+      background-image: url('../images/ao-frontend-icons.png');
+      height: 60px;
+      width: 60px;
+      display: inline-block;
+      margin: 24px auto 0px;
+    }
+  }
+
+  .ao_profeat_button {
+  
+    @include sassy-button;
+    margin-top: .5em;
+    margin-left: auto;
+    margin-right: auto;
+  }  
+
+}
+
+/*displays the marquee for showing features */
+.features-marquee {
+  width: 100%;
+  margin: 0em;
+  
+  /* make the features listings into bubbles */
+  .ao_profeat {
+    @extend .features-bubble;
+    width: 23%;
+    
+    
+    &.ao_profeat_donation .ao_profeat_icon {
+      &:hover {
+        background-color: #399B19;
+      }
+      SPAN {
+        background-position: -60px -120px;
+      }
+    }
+    
+    &.ao_profeat_event .ao_profeat_icon {
+      &:hover {
+        background-color: #1A6099;
+      }
+      SPAN {
+        background-position: -120px -120px;
+      }
+    }
+
+    &.ao_profeat_petition .ao_profeat_icon {
+      &:hover {
+        background-color: #e26427;
+      }
+      SPAN {
+        background-position: -180px -120px;
+      }
+    }
+
+    &.ao_profeat_volunteer .ao_profeat_icon {
+      &:hover {
+        background-color: #D12424;
+      }
+      SPAN {
+        background-position: 0px -120px;
+      }
+    }
+    
+  }
+  
+  .ao_profeat_dialog_content {
+    display: none;
+  }
+  
+}
+
+
+.ao_profeat_dialog {
+  color: #777;
+  font-size: 0.9em;
+}
+.ao_profeat_dialog .ao_profeat_dialog_title {
+  text-align: center;
+  margin: 0em;
+  background-image: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 48%, rgba(67,106,179,1) 49%, rgba(67,106,179,1) 50%, rgba(255,255,255,0) 51%, rgba(255,255,255,0) 100%);
+  background-image: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 48%, rgba(67,106,179,1) 49%, rgba(67,106,179,1) 50%, rgba(255,255,255,0) 51%, rgba(255,255,255,0) 100%);
+  background-image: -o-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 48%, rgba(67,106,179,1) 49%, rgba(67,106,179,1) 50%, rgba(255,255,255,0) 51%, rgba(255,255,255,0) 100%);
+  background-image: linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 48%, rgba(67,106,179,1) 49%, rgba(67,106,179,1) 50%, rgba(255,255,255,0) 51%, rgba(255,255,255,0) 100%);
+  
+  
+  padding: .5em 0em;
+  text-transform: uppercase;
+  font-size: 1.3em;
+}
+.ao_profeat_dialog .ao_profeat_dialog_title .title_inner {
+  display: inline-block;
+}
+.ao_profeat_dialog .ao_profeat_dialog_title .title_bg {
+  background-color: White;
+  display: inline-block;
+  padding: 0em .5em;
+}
+.ao_profeat_dialog .ao_profeat_dialog_title .ao_profeat_dialog_icon {
+  display: inline-block;
+  margin: 0em 0em .5em 0em ;
+  background-color: #CCC;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  vertical-align: middle;
+}
+.ao_profeat_dialog .ao_profeat_dialog_title .ao_profeat_dialog_icon SPAN {
+  background-image: url('../images/ao-frontend-icons.png');
+  height: 30px;
+  width: 30px;
+  margin: 10px auto;
+  display: block;
+}
+.ao_profeat_dialog .ao_profeat_dialog_fundraising .ao_profeat_dialog_icon {
+  background-color: #399B19;
+}
+.ao_profeat_dialog .ao_profeat_dialog_events .ao_profeat_dialog_icon {
+  background-color: #1A6099;
+}
+.ao_profeat_dialog .ao_profeat_dialog_petition .ao_profeat_dialog_icon {
+  background-color: #e26427;
+}
+.ao_profeat_dialog .ao_profeat_dialog_volunteer .ao_profeat_dialog_icon {
+  background-color: #D12424;
+}
+.ao_profeat_dialog .ao_profeat_dialog_fundraising .ao_profeat_dialog_icon SPAN {
+  background-position: -31px 0px;
+}
+.ao_profeat_dialog .ao_profeat_dialog_events .ao_profeat_dialog_icon SPAN {
+  background-position: -61px 0px;
+}
+.ao_profeat_dialog .ao_profeat_dialog_petition .ao_profeat_dialog_icon SPAN {
+  background-position: -61px -30px;
+}
+.ao_profeat_dialog .ao_profeat_dialog_volunteer .ao_profeat_dialog_icon SPAN {
+  background-position: 0px 0px;
+}
+.ao_profeat_dialog LI {
+  margin: 0em 0em 1em;
+}
+
+
+
+
+
+/* theme */
+section#above-content-one {
+  height: 380px;
+}
+
+.ao-featlist {
+  display: inline-block;
+  width: 48%;
+  margin-right: 1%;
+  vertical-align: top;
+  &:last-child {
+    margin-right: 0%;
+  }
+}
+
+
+.ao_profeat_holder {
+  @extend .features-marquee;
+}
+
+/* panel titles for the home page */
+
+BODY.front .page__title {
+  display: none;  
+}
+
+BODY.front section#above-content-two h2,
+BODY.front section#main h2,
+BODY.front section#below-content-one h2,
+BODY.front section#below-content-two h2 {  
+  text-align: center;
+  font-size: 2.25em;
+  margin: 0em 0em 1em;
+  font-weight: normal;
+  @include background-image(linear-gradient(top, $transparent 0%, $transparent 48%, $header_line 49%, $header_line 50%, $transparent 51%, $transparent 100%));
+  font-size: $h1-font-size;
+  font-weight: 700;
+  
+  SPAN {
+    padding: 0em .5em;
+  }
+  
+}
+
+
+
+
+/* apply colors to regions on the front page */
+BODY.front {
+  
+  .tabs-primary {
+    display: none;
+  }
+  
+  .ao-down-arrow {
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-left: 36px solid transparent;
+    border-right: 36px solid transparent;
+    top: -3px;
+    left: 50%;
+    margin-left: -36px;
+  }
+  .boxes-box-content,
+  .block {
+    border: 1px solid transparent;
+  }
+  
+  section#above-content-one {
+    background: $ao_orange url(../images/people.png) top center no-repeat;
+  }
+  section#above-content-two {
+    background-color: #f9f9f9;
+    h2 {
+      margin-top: 1em;
+      SPAN {  
+        background-color: #f9f9f9;
+      }
+    }
+    .ao-down-arrow {
+      border-top: 36px solid #f9f9f9;
+    }
+  }
+  section#main {
+    background-color: $ao_blue;
+    
+    IMG {
+      max-width: 100%;
+      margin: 0em auto;
+      width: 90%;
+      display: block;
+    }
+    
+    h2 {
+      margin-top: 0em;
+      color: white;
+      @include background-image(linear-gradient(top, $transparent 0%, $transparent 48%, White 49%, White 50%, $transparent 51%, $transparent 100%));
+      SPAN {  
+        background-color: $ao_blue;
+      }
+    }
+    .ao-down-arrow {
+      border-top: 36px solid #f9f9f9;
+    }
+  }
+  section#below-content-one {
+    background-color: $ao_orange2;
+    h2 {
+      margin-top: 1em;
+      SPAN {  
+        background-color: $ao_orange2;
+      }
+    }
+    .ao-down-arrow {
+      border-top: 36px solid $ao_blue;
+    }
+  }
+  section#below-content-two {
+    background-color: $ao_aqua;
+    h2 {
+      margin-top: 1em;
+      SPAN {  
+        background-color: $ao_aqua;
+      }
+    }
+    .ao-down-arrow {
+      border-top: 36px solid $ao_orange2;
+    }
+  }
+}

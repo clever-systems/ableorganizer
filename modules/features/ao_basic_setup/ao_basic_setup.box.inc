@@ -9,7 +9,7 @@
  */
 function ao_basic_setup_default_box() {
   $export = array();
-  
+
   $box = new stdClass();
   $box->disabled = FALSE; /* Edit this to true to make a default box disabled initially */
   $box->api_version = 1;
@@ -25,21 +25,6 @@ function ao_basic_setup_default_box() {
     'additional_classes' => '',
   );
   $export['above_content_lower'] = $box;
-
-  $box = new stdClass();
-  $box->disabled = FALSE; /* Edit this to true to make a default box disabled initially */
-  $box->api_version = 1;
-  $box->delta = 'documentation_header';
-  $box->plugin_key = 'simple';
-  $box->title = '';
-  $box->description = 'AO Documentation Header';
-  $box->options = array(
-    'body' => array(
-      'value' => '<h2>Documentation</h2>',
-      'format' => 'full_html',
-    ),
-  );
-  $export['documentation_header'] = $box;
 
   $box = new stdClass();
   $box->disabled = FALSE; /* Edit this to true to make a default box disabled initially */
@@ -87,9 +72,7 @@ function ao_basic_setup_default_box() {
     ),
     'additional_classes' => '',
   );
-  $export['lower_zone_2'] = $box;  
-  
-  
+  $export['lower_zone_2'] = $box;
 
   return $export;
 }
