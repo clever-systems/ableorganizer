@@ -6,17 +6,17 @@
  */
 .hero-element {
   width: 60%;
-  margin-top: 1em;
-  margin-bottom: 1em;
-  margin-left: 1em;
-  color: white;
+  margin: 1em;
   padding: 1em;
+  color: white;
   background-color: rgba(135,105,40,.3);
   @include text-shadow(1px 1px 3px rgba(0,0,0,.5));
   @include border-radius(1em);
 } 
  
+ 
+ 
+/* move to theme */
 .hero_text {
   @extend .hero-element;
 } 
-

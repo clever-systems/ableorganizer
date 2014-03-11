@@ -49,33 +49,13 @@ section#below-content-two,
 section#below-content-three {
   @extend .page-region;
   border: 1px solid transparent;
+  
+  .section-wrapper {
+    border: 1px solid transparent;  
+  }
+  
 }
 
-/* apply only for the front page */
-BODY.front {
-  section#above-content-one {
-    background-color: $ao_orange;
-  }
-  section#main {
-    background-color: $ao_blue;
-  }
-  section#below-content-one {
-    background-color: $ao_orange2;
-  }
-  section#below-content-two {
-    background-color: $ao_aqua;
-  }
-}
-
-.ao-featlist {
-  display: inline-block;
-  width: 48%;
-  margin-right: 1%;
-  vertical-align: top;
-  &:last-child {
-    margin-right: 0%;
-  }
-}
 
 
 

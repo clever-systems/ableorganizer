@@ -1793,35 +1793,15 @@ section#below-content-two,
 section#below-content-three {
   border: 1px solid transparent;
 }
-
-/* apply only for the front page */
-/* line 56, ../sass/components/_regions.scss */
-BODY.front section#above-content-one {
-  background-color: #ffb836;
-}
-/* line 59, ../sass/components/_regions.scss */
-BODY.front section#main {
-  background-color: #00b0f3;
-}
-/* line 62, ../sass/components/_regions.scss */
-BODY.front section#below-content-one {
-  background-color: #ffcc4d;
-}
-/* line 65, ../sass/components/_regions.scss */
-BODY.front section#below-content-two {
-  background-color: #c8effe;
-}
-
-/* line 70, ../sass/components/_regions.scss */
-.ao-featlist {
-  display: inline-block;
-  width: 48%;
-  margin-right: 1%;
-  vertical-align: top;
-}
-/* line 75, ../sass/components/_regions.scss */
-.ao-featlist:last-child {
-  margin-right: 0%;
+/* line 53, ../sass/components/_regions.scss */
+section#main .section-wrapper,
+section#above-content-one .section-wrapper,
+section#above-content-two .section-wrapper,
+section#above-content-three .section-wrapper,
+section#below-content-one .section-wrapper,
+section#below-content-two .section-wrapper,
+section#below-content-three .section-wrapper {
+  border: 1px solid transparent;
 }
 
 /**
@@ -1833,11 +1813,9 @@ BODY.front section#below-content-two {
 /* line 7, ../sass/components/_hero.scss */
 .hero-element, .hero_text {
   width: 60%;
-  margin-top: 1em;
-  margin-bottom: 1em;
-  margin-left: 1em;
-  color: white;
+  margin: 1em;
   padding: 1em;
+  color: white;
   background-color: rgba(135, 105, 40, 0.3);
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
   -moz-border-radius: 1em;
@@ -1845,6 +1823,7 @@ BODY.front section#below-content-two {
   border-radius: 1em;
 }
 
+/* move to theme */
 /**
  * @file
  * Print styling
