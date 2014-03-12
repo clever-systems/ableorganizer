@@ -1,0 +1,120 @@
+/**
+ * @file
+ * Forms
+ *
+ * Defines the appearance of forms in the front end
+ */
+ 
+/* forms appearing in the right hand region */
+.form-sidebar-2-display {
+  .form-item {
+    margin: 0em 0em .5em;
+  }
+  LABEL,
+  LABEL.compact-form-label {
+    color: #777;
+  }
+  fieldset {
+    padding: 0em;
+    margin: 0em;
+  }
+  INPUT[type=text] {
+    width: 90%;
+    display: inline-block;
+  }
+  .form-required {
+    display: inline-block;
+  }
+  SELECT {
+    width: 100%;
+  }
+  
+  /* phone numbers */
+  .form-phone-number > DIV {
+    input[type=text]{
+      width: auto;
+    }
+    &:first-child {
+      width: 65%;
+    }
+    &:last-child {
+      width: 25%;
+    }
+  }
+ 
+ /* address fields */
+ .field-type-addressfield {
+  .fieldset-wrapper {
+    .addressfield-container-inline {
+      DIV[class*="locality"] {
+        width: 40%;
+        display: inline-block;
+        vertical-align: top;
+        margin-right: 0em;
+      }
+      DIV[class*="administrative-area"] {
+        width: 20%;
+        display: inline-block;
+        vertical-align: top;
+        margin-right: 0.5em;
+        
+        LABEL {
+          display: none;
+        }
+      }
+      DIV[class*="postal-code"] {
+        width: 30%;
+        display: inline-block;
+        vertical-align: top;
+        margin-right: 0.25em;
+      }
+    }
+  }
+ }
+ 
+  /* shopping carts */
+  /* item display */
+  caption, div.caption {
+    display: none;
+  }
+  #edit-cart-wrapper {
+    margin-bottom: 0.5em;
+  }
+  TABLE {
+    margin-bottom: 0em;
+    width: 100%;
+    TH {
+      white-space: nowrap;
+    }
+    DIV[class*="form-item-cart"] {
+      width: 2em;
+      margin: 0em auto;
+      padding: 0em;
+    }
+    DIV[id*="-total"] {
+      text-align: center;
+    }
+  }
+
+  /* cart summary */
+  .cart-summary {
+    .cart-summary-total {
+      text-align: center;
+      .cart-summary-total-value {
+        font-weight: 700;
+      }
+    }
+  }
+  /* amounts */
+  .amounts {
+    margin-bottom: 0.5em;
+  }
+
+}
+ 
+ /* @TODO: move this to the theme */
+.region-sidebar-second {
+  FORM {
+    @extend .form-sidebar-2-display;
+  }
+}

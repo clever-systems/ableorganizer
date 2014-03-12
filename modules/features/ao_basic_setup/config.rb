@@ -1,5 +1,6 @@
 require 'compass/import-once/activate'
 require 'sassy-buttons'
+require 'zen-grids'
 
 # Require any additional compass plugins here.
 
