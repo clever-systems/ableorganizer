@@ -6,6 +6,7 @@
  * of these @include files will be combined into a single file.
  */
 /* Import Sass mixins, variables, Compass modules, etc. */
+/* grays */
 /* HTML element (SMACSS base) rules */
 /**
  * @file
@@ -1932,6 +1933,192 @@ section#below-content-three .section-wrapper {
 
 /**
  * @file
+ * Components for displaying features of AO
+ */
+/* basic display of a pane in a user profile */
+/* line 7, ../sass/components/_user_profiles.scss */
+.user-profile-pane, BODY.page-user .panel-pane {
+  border: 1px solid #CCC;
+}
+/* line 9, ../sass/components/_user_profiles.scss */
+.user-profile-pane H2, BODY.page-user .panel-pane H2, .user-profile-pane H3, BODY.page-user .panel-pane H3 {
+  margin: 0em;
+  font-size: 18.72px;
+  position: relative;
+}
+
+/* for displaying contact information */
+/* line 19, ../sass/components/_user_profiles.scss */
+.user-profile-display-contact-info H2:not(.pane-title), BODY.page-user .pane-ao-user-profile-contact-info H2:not(.pane-title) {
+  display: none;
+}
+/* line 22, ../sass/components/_user_profiles.scss */
+.user-profile-display-contact-info .content, BODY.page-user .pane-ao-user-profile-contact-info .content {
+  display: table;
+}
+/* line 24, ../sass/components/_user_profiles.scss */
+.user-profile-display-contact-info .content .field, BODY.page-user .pane-ao-user-profile-contact-info .content .field {
+  display: table-row;
+}
+/* line 27, ../sass/components/_user_profiles.scss */
+.user-profile-display-contact-info .content .field-label, BODY.page-user .pane-ao-user-profile-contact-info .content .field-label,
+.user-profile-display-contact-info .content .field-items,
+BODY.page-user .pane-ao-user-profile-contact-info .content .field-items {
+  display: table-cell;
+}
+/* line 31, ../sass/components/_user_profiles.scss */
+.user-profile-display-contact-info .content .field-label, BODY.page-user .pane-ao-user-profile-contact-info .content .field-label {
+  padding-right: .2em;
+  font-weight: normal;
+}
+
+/* for panels that do not include titles */
+/* line 40, ../sass/components/_user_profiles.scss */
+.user-profile-pane-no-title H2, BODY.page-user .pane-user-picture H2, .user-profile-pane-no-title H3, BODY.page-user .pane-user-picture H3 {
+  display: none;
+}
+
+/* for DL lists in the profile */
+/* line 46, ../sass/components/_user_profiles.scss */
+.user-dl, BODY.page-user DL {
+  margin: .5em 0em;
+  display: table;
+}
+/* line 49, ../sass/components/_user_profiles.scss */
+.user-dl DT, BODY.page-user DL DT {
+  display: table-cell;
+  padding-right: .3em;
+}
+/* line 53, ../sass/components/_user_profiles.scss */
+.user-dl DD, BODY.page-user DL DD {
+  display: table-cell;
+}
+
+/* makes a link into a button to appear as part of a view */
+/* line 60, ../sass/components/_user_profiles.scss */
+.header-button .inline LI {
+  margin: 0em;
+  padding: 0em;
+}
+/* line 63, ../sass/components/_user_profiles.scss */
+.header-button .inline LI A {
+  font-size: 13.28px;
+  padding: 0.5em 1.5em;
+  display: inline-block;
+  cursor: pointer;
+  -moz-border-radius: 0.5em;
+  -webkit-border-radius: 0.5em;
+  border-radius: 0.5em;
+  *zoom: 1;
+  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FFF1F1F1', endColorstr='#FFBEBEBE');
+  background-color: #f1f1f1;
+  border: 0;
+  color: #2f353e;
+  font-size: 13.28px;
+  padding: 0.25em 1em;
+  display: inline-block;
+  cursor: pointer;
+  -moz-border-radius: 0.5em;
+  -webkit-border-radius: 0.5em;
+  border-radius: 0.5em;
+  text-decoration: none;
+}
+/* line 15, ../../../../../../../../Users/mhaggerty/.rvm/gems/ruby-2.1.0/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
+.header-button .inline LI A:hover {
+  text-decoration: none;
+}
+/* line 42, ../../../../../../../../Users/mhaggerty/.rvm/gems/ruby-2.1.0/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
+.header-button .inline LI A:hover {
+  background-color: #e4e4e4;
+}
+/* line 44, ../../../../../../../../Users/mhaggerty/.rvm/gems/ruby-2.1.0/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
+.header-button .inline LI A:active {
+  background-color: #dddddd;
+}
+/* line 6, ../../../../../../../../Users/mhaggerty/.rvm/gems/ruby-2.1.0/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
+.header-button .inline LI A.disabled, .header-button .inline LI A[disabled] {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
+  opacity: 0.6;
+  background: false;
+  cursor: default;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+/* line 74, ../../../../../../../../Users/mhaggerty/.rvm/gems/ruby-2.1.0/gems/sassy-buttons-0.2.6/stylesheets/_sassy-buttons.sass */
+.header-button .inline LI A::-moz-focus-inner {
+  padding: 0 !important;
+  margin: -1px !important;
+}
+
+/* applies a header button specifically when there is a link within a P tag in the header for a view */
+/* line 72, ../sass/components/_user_profiles.scss */
+.views-link-header-button .view-header P, BODY.page-user .panel-pane .view-header P {
+  margin: 0em;
+  padding: 0em;
+}
+/* line 75, ../sass/components/_user_profiles.scss */
+.views-link-header-button .view-header P A, BODY.page-user .panel-pane .view-header P A {
+  font-size: 13.28px;
+  padding: 0.5em 1.5em;
+  display: inline-block;
+  cursor: pointer;
+  -moz-border-radius: 0.5em;
+  -webkit-border-radius: 0.5em;
+  border-radius: 0.5em;
+  *zoom: 1;
+  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FFF1F1F1', endColorstr='#FFBEBEBE');
+  background-color: #f1f1f1;
+  border: 0;
+  color: #2f353e;
+  font-size: 13.28px;
+  padding: 0.25em 1em;
+  display: inline-block;
+  cursor: pointer;
+  -moz-border-radius: 0.5em;
+  -webkit-border-radius: 0.5em;
+  border-radius: 0.5em;
+  text-decoration: none;
+  position: absolute;
+  right: 0px;
+  top: -30px;
+}
+/* line 15, ../../../../../../../../Users/mhaggerty/.rvm/gems/ruby-2.1.0/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
+.views-link-header-button .view-header P A:hover, BODY.page-user .panel-pane .view-header P A:hover {
+  text-decoration: none;
+}
+/* line 42, ../../../../../../../../Users/mhaggerty/.rvm/gems/ruby-2.1.0/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
+.views-link-header-button .view-header P A:hover, BODY.page-user .panel-pane .view-header P A:hover {
+  background-color: #e4e4e4;
+}
+/* line 44, ../../../../../../../../Users/mhaggerty/.rvm/gems/ruby-2.1.0/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
+.views-link-header-button .view-header P A:active, BODY.page-user .panel-pane .view-header P A:active {
+  background-color: #dddddd;
+}
+/* line 6, ../../../../../../../../Users/mhaggerty/.rvm/gems/ruby-2.1.0/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
+.views-link-header-button .view-header P A.disabled, BODY.page-user .panel-pane .view-header P A.disabled, .views-link-header-button .view-header P A[disabled], BODY.page-user .panel-pane .view-header P A[disabled] {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
+  opacity: 0.6;
+  background: false;
+  cursor: default;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+/* line 74, ../../../../../../../../Users/mhaggerty/.rvm/gems/ruby-2.1.0/gems/sassy-buttons-0.2.6/stylesheets/_sassy-buttons.sass */
+.views-link-header-button .view-header P A::-moz-focus-inner, BODY.page-user .panel-pane .view-header P A::-moz-focus-inner {
+  padding: 0 !important;
+  margin: -1px !important;
+}
+
+/* TODO: move to theme */
+/* line 98, ../sass/components/_user_profiles.scss */
+BODY.page-user .pane-user-picture {
+  text-align: center;
+}
+
+/**
+ * @file
  * Print styling
  *
  * We provide some sane print styling for Drupal using Zen's layout method.
@@ -2059,3 +2246,162 @@ section#main-navigation {
 /* move to theme */
 /* FORMS */
 /* applies styles to forms in the second sidebar */
+/* controls the display of the CRM Core menu in the header */
+/* line 52, ../sass/themes/_basic_display.scss */
+#block-menu-crm-core-menu {
+  margin: 0em;
+  position: absolute;
+  bottom: -20px;
+  right: 0em;
+}
+/* line 58, ../sass/themes/_basic_display.scss */
+#block-menu-crm-core-menu H2.block-title {
+  font-size: 16px;
+  padding: 0.5em 1.5em;
+  display: inline-block;
+  cursor: pointer;
+  -moz-border-radius: 0.5em;
+  -webkit-border-radius: 0.5em;
+  border-radius: 0.5em;
+  *zoom: 1;
+  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF00B0F3', endColorstr='#FF00668D');
+  background-color: #00b0f3;
+  border: 0;
+  color: white;
+  font-size: 16px;
+  padding: 0.25em 1em;
+  display: inline-block;
+  cursor: pointer;
+  -moz-border-radius: 0.5em;
+  -webkit-border-radius: 0.5em;
+  border-radius: 0.5em;
+  font-weight: normal;
+}
+/* line 15, ../../../../../../../../Users/mhaggerty/.rvm/gems/ruby-2.1.0/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
+#block-menu-crm-core-menu H2.block-title:hover {
+  text-decoration: none;
+}
+/* line 42, ../../../../../../../../Users/mhaggerty/.rvm/gems/ruby-2.1.0/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
+#block-menu-crm-core-menu H2.block-title:hover {
+  background-color: #009ed9;
+}
+/* line 44, ../../../../../../../../Users/mhaggerty/.rvm/gems/ruby-2.1.0/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
+#block-menu-crm-core-menu H2.block-title:active {
+  background-color: #0092ca;
+}
+/* line 6, ../../../../../../../../Users/mhaggerty/.rvm/gems/ruby-2.1.0/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
+#block-menu-crm-core-menu H2.block-title.disabled, #block-menu-crm-core-menu H2.block-title[disabled] {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
+  opacity: 0.6;
+  background: false;
+  cursor: default;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+/* line 74, ../../../../../../../../Users/mhaggerty/.rvm/gems/ruby-2.1.0/gems/sassy-buttons-0.2.6/stylesheets/_sassy-buttons.sass */
+#block-menu-crm-core-menu H2.block-title::-moz-focus-inner {
+  padding: 0 !important;
+  margin: -1px !important;
+}
+/* line 64, ../sass/themes/_basic_display.scss */
+#block-menu-crm-core-menu UL.menu {
+  display: none;
+}
+/* line 70, ../sass/themes/_basic_display.scss */
+#block-menu-crm-core-menu:hover H2.block-title {
+  -moz-border-radius: 0.5em 0.5em 0em 0em;
+  -webkit-border-radius: 0.5em;
+  border-radius: 0.5em 0.5em 0em 0em;
+}
+/* line 74, ../sass/themes/_basic_display.scss */
+#block-menu-crm-core-menu:hover UL.menu {
+  display: block;
+  position: absolute;
+  top: 38px;
+  right: 0px;
+  background-color: #00b0f3;
+  white-space: nowrap;
+  margin: 0em;
+  padding: 0em;
+  min-width: 100%;
+  z-index: 1000;
+  -moz-border-radius: 0em 0em 0.5em 0.5em;
+  -webkit-border-radius: 0em;
+  border-radius: 0em 0em 0.5em 0.5em;
+  overflow: hidden;
+}
+/* line 88, ../sass/themes/_basic_display.scss */
+#block-menu-crm-core-menu:hover UL.menu LI {
+  list-style-type: none;
+  list-style-image: none;
+  margin: 0em;
+  padding: .5em 1em;
+}
+/* line 94, ../sass/themes/_basic_display.scss */
+#block-menu-crm-core-menu:hover UL.menu LI:hover {
+  background-color: #009ed9;
+}
+/* line 98, ../sass/themes/_basic_display.scss */
+#block-menu-crm-core-menu:hover UL.menu LI A {
+  margin: 0em;
+  padding: 0em;
+  text-decoration: none;
+  color: White;
+}
+
+/* line 110, ../sass/themes/_basic_display.scss */
+.header__secondary-menu .inline LI {
+  margin: 0em;
+  padding: 0em;
+}
+/* line 113, ../sass/themes/_basic_display.scss */
+.header__secondary-menu .inline LI A {
+  font-size: 13.28px;
+  padding: 0.5em 1.5em;
+  display: inline-block;
+  cursor: pointer;
+  -moz-border-radius: 0.5em;
+  -webkit-border-radius: 0.5em;
+  border-radius: 0.5em;
+  *zoom: 1;
+  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FFF1F1F1', endColorstr='#FFBEBEBE');
+  background-color: #f1f1f1;
+  border: 0;
+  color: #2f353e;
+  font-size: 13.28px;
+  padding: 0.25em 1em;
+  display: inline-block;
+  cursor: pointer;
+  -moz-border-radius: 0.5em;
+  -webkit-border-radius: 0.5em;
+  border-radius: 0.5em;
+  text-decoration: none;
+}
+/* line 15, ../../../../../../../../Users/mhaggerty/.rvm/gems/ruby-2.1.0/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
+.header__secondary-menu .inline LI A:hover {
+  text-decoration: none;
+}
+/* line 42, ../../../../../../../../Users/mhaggerty/.rvm/gems/ruby-2.1.0/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
+.header__secondary-menu .inline LI A:hover {
+  background-color: #e4e4e4;
+}
+/* line 44, ../../../../../../../../Users/mhaggerty/.rvm/gems/ruby-2.1.0/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
+.header__secondary-menu .inline LI A:active {
+  background-color: #dddddd;
+}
+/* line 6, ../../../../../../../../Users/mhaggerty/.rvm/gems/ruby-2.1.0/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
+.header__secondary-menu .inline LI A.disabled, .header__secondary-menu .inline LI A[disabled] {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
+  opacity: 0.6;
+  background: false;
+  cursor: default;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+/* line 74, ../../../../../../../../Users/mhaggerty/.rvm/gems/ruby-2.1.0/gems/sassy-buttons-0.2.6/stylesheets/_sassy-buttons.sass */
+.header__secondary-menu .inline LI A::-moz-focus-inner {
+  padding: 0 !important;
+  margin: -1px !important;
+}

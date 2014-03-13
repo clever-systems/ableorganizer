@@ -48,3 +48,73 @@ section#main-navigation {
 }
 
 
+/* controls the display of the CRM Core menu in the header */
+#block-menu-crm-core-menu {
+  margin: 0em;
+  position: absolute;
+  bottom: -20px;
+  right: 0em;
+  
+  H2.block-title {
+    @include sassy-button("flat", .5em, $h4-font-size, $ao_blue, $ao_blue2, White, "Raised");
+    @include sassy-button-structure(.5em, $h4-font-size, 0.25em 1em);
+    font-weight: normal;
+  }
+  
+  UL.menu {
+    display: none;
+  }
+  
+  &:hover {
+  
+    H2.block-title {
+      @include border-radius(0.5em 0.5em 0em 0em);
+    }
+  
+    UL.menu {
+      display: block;
+      position: absolute;
+      top: 38px;
+      right: 0px;
+      background-color: $ao_blue;
+      white-space: nowrap;
+      margin: 0em;
+      padding: 0em;
+      min-width: 100%;
+      z-index: 1000;
+      @include border-radius(0em 0em 0.5em 0.5em);
+      overflow: hidden;
+      
+      LI {
+        list-style-type: none;
+        list-style-image: none;
+        margin: 0em;
+        padding: .5em 1em;
+        
+        &:hover {
+          background-color: #009ed9;
+        }
+        
+        A {
+          margin: 0em;
+          padding: 0em;
+          text-decoration: none;
+          color: White;
+        }
+      }
+    }
+  }
+}
+.header__secondary-menu {
+  
+  .inline LI {
+    margin: 0em;
+    padding: 0em;
+    A {
+      @include sassy-button("flat", .5em, $h5-font-size, #f1f1f1, $ao_blue2, $gray-1, "Raised");
+      @include sassy-button-structure(.5em, $h5-font-size, 0.25em 1em);
+      text-decoration: none;
+    }
+  }
+}
+

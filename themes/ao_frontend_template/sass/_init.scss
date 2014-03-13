@@ -110,9 +110,11 @@ $tabs-border: #bbb;
 $ao_orange:  #ffb836;
 $ao_orange2: #ffcc4d;
 $ao_blue:    #00b0f3;
+$ao_blue2:    #436ab3;
 $ao_aqua:    #c8effe;
-    
   
+/* grays */  
+$gray-1:      #2f353e;
   
   
 
@@ -132,6 +134,8 @@ $ao_aqua:    #c8effe;
 @import "compass/typography/vertical_rhythm";
 // Add the Zen Grids responsive layout mixins.
 @import "zen";
+// Nice looking buttons
+@import "sassy-buttons";
 
 // Now we add our custom helper mixins.
 @import "mixins";
