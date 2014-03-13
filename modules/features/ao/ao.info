@@ -2,6 +2,8 @@ name = AbleOrganizer
 description = Basic settings for AbleOrganizer
 core = 7.x
 package = AbleOrganizer
+version = 7.x-1.0-beta1
+project = ao
 dependencies[] = adaptive_image
 dependencies[] = addressfield
 dependencies[] = boxes
@@ -28,7 +30,7 @@ dependencies[] = pathologic
 dependencies[] = views
 dependencies[] = views_content
 dependencies[] = wysiwyg
-datestamp = 1386065615
+datestamp = 1393085963
 features[box][] = ao_branding
 features[context][] = branding_and_whatnot
 features[ctools][] = boxes:box:1
@@ -44,8 +46,6 @@ features[field_instance][] = commerce_customer_profile-billing-commerce_customer
 features[field_instance][] = crm_core_contact-individual-field_ao_geofield
 features[file_display][] = image__colorbox__file_field_colorbox
 features[file_display][] = image__colorbox__file_field_media_colorbox
-features[fontyourface][] = Cabin 500 (latin)
-features[fontyourface][] = Cabin regular (latin)
 features[image][] = adaptive
 features[menu_custom][] = menu-ao-navigation-items
 features[menu_links][] = menu-ao-navigation-items_contacts:crm-core/contact
@@ -66,11 +66,3 @@ features[wysiwyg][] = full_html
 features_exclude[filter][filtered_html] = filtered_html
 features_exclude[filter][full_html] = full_html
 project path = profiles/ableorganizer/modules/features
-
-
-; Information added by drush on 2014-02-22
-version = "7.x-1.0-beta1+6-dev"
-core = "7.x"
-project = "ableorganizer"
-datestamp = "1393085963"
-

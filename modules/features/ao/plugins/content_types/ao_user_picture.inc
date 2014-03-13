@@ -65,7 +65,7 @@ function ao_user_picture_settings_form_submit($form, &$form_state) {
  */
 function ao_user_picture_render($subtype, $conf, $panel_args, $context = NULL) {
 
-  $content = '';
+  
   $user = crm_core_user_sync_get_user_from_contact_id($panel_args[0]);
   
   $content = theme('user_picture', array('account' => $user, 'style_name' => 'user_picture'));

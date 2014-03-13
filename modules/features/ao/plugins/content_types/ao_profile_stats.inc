@@ -11,7 +11,7 @@ $plugin = array(
   'single' => TRUE,
   'title' => t('User profile: activity statistics'),
   'description' => t($description),
-  'category' => t('AbleOrganizer'),
+  'category' => t('AbleOrganizer: User Profile'),
   'edit form' => 'ao_profile_stats_form',
   'render callback' => 'ao_profile_stats_render',
   'admin info' => 'ao_profile_stats_admin_info',
@@ -76,8 +76,23 @@ function ao_profile_stats_form_submit($form, &$form_state) {
  * Render callback.
  */
 function ao_profile_stats_render($subtype, $conf, $panel_args, $context = NULL) {
-  $contact_id = $panel_args[0];
-  $contact = crm_core_contact_load($contact_id);
+  
+  global $user;
+	
+  // you have to be an admin or have permission to view contacts to see this port
+	// or you have the be the user associated with the contact
+	if(!user_access('View any contact of any type') && $panel_args[0] !== $user->uid){
+		return;
+	}
+	
+	// get the contact from the uid
+	$contact = crm_core_user_sync_get_contact_from_uid($panel_args[0]);
+	
+	// if there is no contact associated with the user, hide this pane
+	if(empty($contact)){
+	  return;
+	}
+  
   switch ($contact->type) {
     case 'organization':
       $relation_name = 'crm_employee';

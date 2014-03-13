@@ -14,6 +14,7 @@ $plugin = array(
   'admin info' => 'ao_up_contact_info_admin_info',
   'defaults' => array(
     'display_title' => 1,
+    'view_mode' => 'ao_basic_display',
   ),
   'all contexts' => TRUE,
 );
@@ -42,7 +43,25 @@ function ao_up_contact_info_form($form, &$form_state) {
     '#default_value' => !empty($conf['display_title']) ? 1 : 0,
     '#return_value' => 1,
   );
-
+  
+  
+  $entity_info = entity_get_info('crm_core_contact');
+  $modes = $entity_info['view modes'];  
+  $options = array();
+  
+  foreach ($modes as $item => $val){
+    $options[$item] = $val['label'];
+  }
+  
+  // allow user to select view modes
+  $form['view_mode'] = array(
+    '#type' => 'radios',
+    '#title' => t('View Mode'),
+    '#default_value' => !empty($conf['view_mode']) ? $conf['view_mode'] : 'full',
+    '#options' => $options,
+    '#description' => t('Please select a display mode for displaying contact information. This will control what fields display on the page.'),
+  );  
+  
   return $form;
 }
 
@@ -57,6 +76,7 @@ function ao_up_contact_info_form_validate($form, &$form_state) {
  */
 function ao_up_contact_info_form_submit($form, &$form_state) {
   $form_state['conf']['display_title'] = $form_state['values']['display_title'];
+  $form_state['conf']['view_mode'] = $form_state['values']['view_mode'];
 }
 
 /**
@@ -66,63 +86,31 @@ function ao_up_contact_info_render($subtype, $conf, $panel_args, $context = NULL
 	
 	global $user;
 	
-	// you have to be an admin or have permission to view contacts to see this port
+  // you have to be an admin or have permission to view contacts to see this port
 	// or you have the be the user associated with the contact
-	if(!user_access('View any contact of any type') || $panel_args[0] !== $user->uid){
+	if(!user_access('View any contact of any type') && $panel_args[0] !== $user->uid){
 		return;
 	}
 	
-  $contact_id = $panel_args[0];
-  $contact = crm_core_contact_load($contact_id);
-  
-  // for rendering addressfields
-  $handlers = array('address' => 'address'); //There are other formats, but this one will output the mailing address.
-  $context = array('mode' => 'render');
-  
-  // display some fields for the currently selected contact
-  $wrapper = entity_metadata_wrapper('crm_core_contact', $contact);
-  
-  //Now generate the render array, where $addressfield_object is your addressfield, of course
-  $home_address = addressfield_generate($wrapper->field_ao_home_address->value(), $handlers, $context);
-  $biz_address = addressfield_generate($wrapper->field_ao_business_address->value(), $handlers, $context);
-  
-  // set some values
-  $name 		= $wrapper->contact_name->given->value() . ' ' . $wrapper->contact_name->family->value();
-	$bday = format_date($wrapper->field_ao_birthday->value(), 'short');
-  $email	= $wrapper->field_ao_email_address->value();
-  $facebook	= $wrapper->field_ao_facebook->value();
-  $twitter 	= $wrapper->field_ao_twitter->value();
-  
-  $haddr = drupal_render($home_address);
-  $baddr = drupal_render($biz_address);
-  
-  $content = '<div class="up_info_section">';
-  if($name !== '' && $name !== NULL){
-  	$content .= '<div class="up_info_item"><div class="up_info_label">Name:</div><div class="up_info_data">' . $name . '</div></div>';
-  }
-  if($haddr !== '' && $baddr !== NULL){
-  	$content .= '<div class="up_info_item"><div class="up_info_label">Home address:</div><div class="up_info_data">' . $haddr . '</div></div>';
-  }
-  if($baddr !== '' && $baddr !== NULL){
-  	$content .= '<div class="up_info_item"><div class="up_info_label">Home address:</div><div class="up_info_data">' . $baddr . '</div></div>';
-  }
-	if($wrapper->field_ao_birthday->value() !== NULL  && $bday !== ''){
-		$content .= '<div class="up_info_item"><div class="up_info_label">Birthday:</div><div class="up_info_data">' . $bday . '</div></div>';
-	}
-	if($email !== '' && $email !== NULL){
-		$content .= '<div class="up_info_item"><div class="up_info_label">Email address:</div><div class="up_info_data">' . $wrapper->field_ao_email_address->value() . '</div></div>';
-	}
-	if($facebook !== '' && $facebook !== NULL){
-		$content .= '<div class="up_info_item"><div class="up_info_label">Facebook:</div><div class="up_info_data">' . $wrapper->field_ao_facebook->value() . '</div></div>';
-	}
-	if($twitter !== '' && $twitter !== NULL){
-		$content .= '<div class="up_info_item"><div class="up_info_label">Twitter:</div><div class="up_info_data">' . $wrapper->field_ao_twitter->value() . '</div></div>';
+	// get the contact from the uid
+	$contact = crm_core_user_sync_get_contact_from_uid($panel_args[0]);
+	
+	// if there is no contact associated with the user, hide this pane
+	if(empty($contact)){
+	  return;
 	}
 	
-	$content .= '</div>';
+	
+	// use the view mode selected for the contact pane
+  $contact_record = entity_view('crm_core_contact', array($contact), $conf['view_mode']);
+  
+  $view_mode = 'ao_basic_display';
+  
+  $content = '';
+  $content .= drupal_render($contact_record);
 
   $block = new stdClass();
-  $block->title = empty($conf['display_title']) ? '' : t('Personal Information');
+  $block->title = !empty($conf['display_title']) ? $conf['display_title'] : t('Personal Information');
   $block->content = $content;
 
   return $block;

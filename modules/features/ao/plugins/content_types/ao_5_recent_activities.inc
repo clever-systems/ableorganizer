@@ -63,6 +63,7 @@ function ao_5_recent_activities_form_submit($form, &$form_state) {
  * Render callback.
  */
 function ao_5_recent_activities_render($subtype, $conf, $panel_args, $context = NULL) {
+  
   $contact_id = $panel_args[0];
   $contact = crm_core_contact_load($contact_id);
   switch ($contact->type) {

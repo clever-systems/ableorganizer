@@ -96,6 +96,12 @@ function ao_field_default_field_instances() {
     'deleted' => 0,
     'description' => '',
     'display' => array(
+      'ao_basic_display' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 8,
+      ),
       'default' => array(
         'label' => 'above',
         'settings' => array(),
