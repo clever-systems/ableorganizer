@@ -70,7 +70,8 @@
 
   .ao_profeat_button {
   
-    @include sassy-button;
+    @include sassy-button("flat", .5em, $h4-font-size, $ao_blue, $ao_blue2, White, "Raised");
+    @include sassy-button-structure(.5em, $h4-font-size, 0.25em 1em);
     margin-top: .5em;
     margin-left: auto;
     margin-right: auto;

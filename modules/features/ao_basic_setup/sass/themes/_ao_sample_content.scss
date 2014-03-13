@@ -10,7 +10,7 @@
 #block-boxes-ao-petition-description,
 #block-boxes-ao-event-desc,
 #block-boxes-ao-donate-info {
-  @extend .info-box;
+  @extend .ao-info-box;
 }
 
 /* style the hero */
@@ -147,6 +147,7 @@ BODY.front {
     }
     .ao-down-arrow {
       border-top: 36px solid #f9f9f9;
+      top: -46px;
     }
   }
   section#below-content-one {
