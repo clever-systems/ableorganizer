@@ -100,7 +100,6 @@ function ao_up_contact_info_render($subtype, $conf, $panel_args, $context = NULL
 	  return;
 	}
 	
-	
 	// use the view mode selected for the contact pane
   $contact_record = entity_view('crm_core_contact', array($contact), $conf['view_mode']);
   

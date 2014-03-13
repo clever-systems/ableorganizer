@@ -96,18 +96,18 @@ function ao_profile_stats_render($subtype, $conf, $panel_args, $context = NULL) 
   switch ($contact->type) {
     case 'organization':
       $relation_name = 'crm_employee';
-      $ids = _ableorganizer_contact_get_group_member_ids($contact_id, $relation_name);
+      $ids = _ableorganizer_contact_get_group_member_ids($contact->contact_id, $relation_name);
       $ids[] = $contact_id;
       break;
 
     case 'household':
       $relation_name = 'crm_member';
-      $ids = _ableorganizer_contact_get_group_member_ids($contact_id, $relation_name);
+      $ids = _ableorganizer_contact_get_group_member_ids($contact->contact_id, $relation_name);
       $ids[] = $contact_id;
       break;
 
     default:
-      $ids = array($panel_args[0]);
+      $ids = array($contact->contact_id);
       break;
   }
   
