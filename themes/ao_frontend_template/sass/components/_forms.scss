@@ -17,6 +17,7 @@
   fieldset {
     padding: 0em;
     margin: 0em;
+    border: 0px;
   }
   INPUT[type=text] {
     width: 90%;
@@ -112,9 +113,3 @@
 
 }
  
- /* @TODO: move this to the theme */
-.region-sidebar-second {
-  FORM {
-    @extend .form-sidebar-2-display;
-  }
-}

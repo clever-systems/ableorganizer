@@ -13,49 +13,13 @@
     margin-right: auto;
   }
 }
-
-/* controls the appearance of navigation elements in the page */
+/* controls the appearance of header elements in the page */
 .header-region {
   padding: 2em 0em;
   border-bottom: 1px solid #CCC;
 }
-
 /* controls the appearance of navigation elements in the page */
 .navigation-region {
   padding: 1em 0em;
   border-bottom: 1px solid #CCC;
 }
-
-.navigation-region {
-
-}
-
-
-/* TODO: move to theme */
-header#header {
-  @extend .header-region;
-}
-
-section#main-navigation {
-  @extend .navigation-region;
-}
-
-section#main,
-section#above-content-one, 
-section#above-content-two, 
-section#above-content-three, 
-section#below-content-one, 
-section#below-content-two, 
-section#below-content-three {
-  @extend .page-region;
-  border: 1px solid transparent;
-  
-  .section-wrapper {
-    border: 1px solid transparent;  
-  }
-  
-}
-
-
-
-

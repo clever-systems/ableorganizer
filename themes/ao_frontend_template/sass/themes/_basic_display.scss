@@ -5,17 +5,46 @@
  * Defines the basic appearance of elements in the theme.
  */
 
+/* LAYOUT MODIFICATIONS */
+section#main,
+section#above-content-one, 
+section#above-content-two, 
+section#above-content-three, 
+section#below-content-one, 
+section#below-content-two, 
+section#below-content-three {
+  @extend .page-region;
+  border: 1px solid transparent;
+  .section-wrapper {
+    border: 1px solid transparent;  
+  }
+}
 
-
-
-
-/* typography */
-
-
-
-/* navigation styles */
+/* HEADER / NAVIGATION */
+/* controls the layout of the navigation */
 section#main-navigation {
   font-size: $h3-font-size;
   font-weight: 400;
 }
+header#header {
+  @extend .header-region;
+}
+section#main-navigation {
+  @extend .navigation-region;
+}
+
+/* FRONTPAGE */
+/* move to theme */
+.hero_text {
+  @extend .hero-element;
+} 
+
+/* FORMS */
+/* applies styles to forms in the second sidebar */
+.region-sidebar-second {
+  FORM {
+    @extend .form-sidebar-2-display;
+  }
+}
+
 
