@@ -1746,6 +1746,124 @@ tr.selected td {
  *
  * Defines the appearance of buttons used throughout the system
  */
+/* makes a link into a button to appear as part of a view */
+/* line 30, ../sass/components/_buttons.scss */
+.header-button .inline LI {
+  margin: 0em;
+  padding: 0em;
+}
+/* line 33, ../sass/components/_buttons.scss */
+.header-button .inline LI A {
+  font-size: 13.28px;
+  padding: 0.5em 1.5em;
+  display: inline-block;
+  cursor: pointer;
+  -moz-border-radius: 0.5em;
+  -webkit-border-radius: 0.5em;
+  border-radius: 0.5em;
+  *zoom: 1;
+  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF00B0F3', endColorstr='#FF00668D');
+  background-color: #00b0f3;
+  border: 0;
+  color: #2f353e;
+  font-size: 13.28px;
+  padding: 0.25em 1em;
+  display: inline-block;
+  cursor: pointer;
+  -moz-border-radius: 0.5em;
+  -webkit-border-radius: 0.5em;
+  border-radius: 0.5em;
+  text-decoration: none;
+}
+/* line 15, ../../../../../../../../Users/mhaggerty/.rvm/gems/ruby-2.1.0/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
+.header-button .inline LI A:hover {
+  text-decoration: none;
+}
+/* line 42, ../../../../../../../../Users/mhaggerty/.rvm/gems/ruby-2.1.0/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
+.header-button .inline LI A:hover {
+  background-color: #009ed9;
+}
+/* line 44, ../../../../../../../../Users/mhaggerty/.rvm/gems/ruby-2.1.0/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
+.header-button .inline LI A:active {
+  background-color: #0092ca;
+}
+/* line 6, ../../../../../../../../Users/mhaggerty/.rvm/gems/ruby-2.1.0/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
+.header-button .inline LI A.disabled, .header-button .inline LI A[disabled] {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
+  opacity: 0.6;
+  background: false;
+  cursor: default;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+/* line 74, ../../../../../../../../Users/mhaggerty/.rvm/gems/ruby-2.1.0/gems/sassy-buttons-0.2.6/stylesheets/_sassy-buttons.sass */
+.header-button .inline LI A::-moz-focus-inner {
+  padding: 0 !important;
+  margin: -1px !important;
+}
+
+/* applies a header button specifically when there is a link within a P tag in the header for a view */
+/* line 42, ../sass/components/_buttons.scss */
+.views-link-header-button .view-header P, BODY.page-user .panel-pane .view-header P {
+  margin: 0em;
+  padding: 0em;
+}
+/* line 45, ../sass/components/_buttons.scss */
+.views-link-header-button .view-header P A, BODY.page-user .panel-pane .view-header P A {
+  font-size: 13.28px;
+  padding: 0.5em 1.5em;
+  display: inline-block;
+  cursor: pointer;
+  -moz-border-radius: 0.5em;
+  -webkit-border-radius: 0.5em;
+  border-radius: 0.5em;
+  *zoom: 1;
+  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF00B0F3', endColorstr='#FF00668D');
+  background-color: #00b0f3;
+  border: 0;
+  color: #2f353e;
+  font-size: 13.28px;
+  padding: 0.25em 1em;
+  display: inline-block;
+  cursor: pointer;
+  -moz-border-radius: 0.5em;
+  -webkit-border-radius: 0.5em;
+  border-radius: 0.5em;
+  color: White;
+  text-decoration: none;
+  position: absolute;
+  right: 0px;
+  top: -36px;
+}
+/* line 15, ../../../../../../../../Users/mhaggerty/.rvm/gems/ruby-2.1.0/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
+.views-link-header-button .view-header P A:hover, BODY.page-user .panel-pane .view-header P A:hover {
+  text-decoration: none;
+}
+/* line 42, ../../../../../../../../Users/mhaggerty/.rvm/gems/ruby-2.1.0/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
+.views-link-header-button .view-header P A:hover, BODY.page-user .panel-pane .view-header P A:hover {
+  background-color: #009ed9;
+}
+/* line 44, ../../../../../../../../Users/mhaggerty/.rvm/gems/ruby-2.1.0/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
+.views-link-header-button .view-header P A:active, BODY.page-user .panel-pane .view-header P A:active {
+  background-color: #0092ca;
+}
+/* line 6, ../../../../../../../../Users/mhaggerty/.rvm/gems/ruby-2.1.0/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
+.views-link-header-button .view-header P A.disabled, BODY.page-user .panel-pane .view-header P A.disabled, .views-link-header-button .view-header P A[disabled], BODY.page-user .panel-pane .view-header P A[disabled] {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
+  opacity: 0.6;
+  background: false;
+  cursor: default;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+/* line 74, ../../../../../../../../Users/mhaggerty/.rvm/gems/ruby-2.1.0/gems/sassy-buttons-0.2.6/stylesheets/_sassy-buttons.sass */
+.views-link-header-button .view-header P A::-moz-focus-inner, BODY.page-user .panel-pane .view-header P A::-moz-focus-inner {
+  padding: 0 !important;
+  margin: -1px !important;
+}
+
 /* TODO: move to theme */
 /**
  * @file
@@ -1994,125 +2112,8 @@ BODY.page-user .pane-ao-user-profile-contact-info .content .field-items {
   display: table-cell;
 }
 
-/* makes a link into a button to appear as part of a view */
-/* line 60, ../sass/components/_user_profiles.scss */
-.header-button .inline LI {
-  margin: 0em;
-  padding: 0em;
-}
-/* line 63, ../sass/components/_user_profiles.scss */
-.header-button .inline LI A {
-  font-size: 13.28px;
-  padding: 0.5em 1.5em;
-  display: inline-block;
-  cursor: pointer;
-  -moz-border-radius: 0.5em;
-  -webkit-border-radius: 0.5em;
-  border-radius: 0.5em;
-  *zoom: 1;
-  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FFF1F1F1', endColorstr='#FFBEBEBE');
-  background-color: #f1f1f1;
-  border: 0;
-  color: #2f353e;
-  font-size: 13.28px;
-  padding: 0.25em 1em;
-  display: inline-block;
-  cursor: pointer;
-  -moz-border-radius: 0.5em;
-  -webkit-border-radius: 0.5em;
-  border-radius: 0.5em;
-  text-decoration: none;
-}
-/* line 15, ../../../../../../../../Users/mhaggerty/.rvm/gems/ruby-2.1.0/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
-.header-button .inline LI A:hover {
-  text-decoration: none;
-}
-/* line 42, ../../../../../../../../Users/mhaggerty/.rvm/gems/ruby-2.1.0/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
-.header-button .inline LI A:hover {
-  background-color: #e4e4e4;
-}
-/* line 44, ../../../../../../../../Users/mhaggerty/.rvm/gems/ruby-2.1.0/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
-.header-button .inline LI A:active {
-  background-color: #dddddd;
-}
-/* line 6, ../../../../../../../../Users/mhaggerty/.rvm/gems/ruby-2.1.0/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
-.header-button .inline LI A.disabled, .header-button .inline LI A[disabled] {
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
-  opacity: 0.6;
-  background: false;
-  cursor: default;
-  -moz-box-shadow: none;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-}
-/* line 74, ../../../../../../../../Users/mhaggerty/.rvm/gems/ruby-2.1.0/gems/sassy-buttons-0.2.6/stylesheets/_sassy-buttons.sass */
-.header-button .inline LI A::-moz-focus-inner {
-  padding: 0 !important;
-  margin: -1px !important;
-}
-
-/* applies a header button specifically when there is a link within a P tag in the header for a view */
-/* line 72, ../sass/components/_user_profiles.scss */
-.views-link-header-button .view-header P, BODY.page-user .panel-pane .view-header P {
-  margin: 0em;
-  padding: 0em;
-}
-/* line 75, ../sass/components/_user_profiles.scss */
-.views-link-header-button .view-header P A, BODY.page-user .panel-pane .view-header P A {
-  font-size: 13.28px;
-  padding: 0.5em 1.5em;
-  display: inline-block;
-  cursor: pointer;
-  -moz-border-radius: 0.5em;
-  -webkit-border-radius: 0.5em;
-  border-radius: 0.5em;
-  *zoom: 1;
-  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FFF1F1F1', endColorstr='#FFBEBEBE');
-  background-color: #f1f1f1;
-  border: 0;
-  color: #2f353e;
-  font-size: 13.28px;
-  padding: 0.25em 1em;
-  display: inline-block;
-  cursor: pointer;
-  -moz-border-radius: 0.5em;
-  -webkit-border-radius: 0.5em;
-  border-radius: 0.5em;
-  text-decoration: none;
-  position: absolute;
-  right: 0px;
-  top: -30px;
-}
-/* line 15, ../../../../../../../../Users/mhaggerty/.rvm/gems/ruby-2.1.0/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
-.views-link-header-button .view-header P A:hover, BODY.page-user .panel-pane .view-header P A:hover {
-  text-decoration: none;
-}
-/* line 42, ../../../../../../../../Users/mhaggerty/.rvm/gems/ruby-2.1.0/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
-.views-link-header-button .view-header P A:hover, BODY.page-user .panel-pane .view-header P A:hover {
-  background-color: #e4e4e4;
-}
-/* line 44, ../../../../../../../../Users/mhaggerty/.rvm/gems/ruby-2.1.0/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
-.views-link-header-button .view-header P A:active, BODY.page-user .panel-pane .view-header P A:active {
-  background-color: #dddddd;
-}
-/* line 6, ../../../../../../../../Users/mhaggerty/.rvm/gems/ruby-2.1.0/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
-.views-link-header-button .view-header P A.disabled, BODY.page-user .panel-pane .view-header P A.disabled, .views-link-header-button .view-header P A[disabled], BODY.page-user .panel-pane .view-header P A[disabled] {
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
-  opacity: 0.6;
-  background: false;
-  cursor: default;
-  -moz-box-shadow: none;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-}
-/* line 74, ../../../../../../../../Users/mhaggerty/.rvm/gems/ruby-2.1.0/gems/sassy-buttons-0.2.6/stylesheets/_sassy-buttons.sass */
-.views-link-header-button .view-header P A::-moz-focus-inner, BODY.page-user .panel-pane .view-header P A::-moz-focus-inner {
-  padding: 0 !important;
-  margin: -1px !important;
-}
-
 /* TODO: move to theme */
-/* line 98, ../sass/components/_user_profiles.scss */
+/* line 65, ../sass/components/_user_profiles.scss */
 BODY.page-user .pane-user-picture {
   text-align: center;
 }

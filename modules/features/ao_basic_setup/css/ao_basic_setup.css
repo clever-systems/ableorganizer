@@ -210,7 +210,12 @@
 /**
  * Use 7 grid columns for larger screens.
  */
-/* line 3, ../sass/components/_info-box.scss */
+/**
+ * @file
+ * Components for displaying info boxes
+ * This is just used for callouts around sample content
+ */
+/* line 8, ../sass/components/_info-box.scss */
 .ao-info-box, #block-boxes-ao-volunteer-info,
 #block-boxes-ao-petition-description,
 #block-boxes-ao-event-desc,
@@ -229,14 +234,14 @@
   overflow: hidden;
   color: #2f353e;
 }
-/* line 14, ../sass/components/_info-box.scss */
+/* line 19, ../sass/components/_info-box.scss */
 .ao-info-box H2.block__title, #block-boxes-ao-volunteer-info H2.block__title,
 #block-boxes-ao-petition-description H2.block__title,
 #block-boxes-ao-event-desc H2.block__title,
 #block-boxes-ao-donate-info H2.block__title {
   text-align: center;
 }
-/* line 18, ../sass/components/_info-box.scss */
+/* line 23, ../sass/components/_info-box.scss */
 .ao-info-box .boxes-box-content, #block-boxes-ao-volunteer-info .boxes-box-content,
 #block-boxes-ao-petition-description .boxes-box-content,
 #block-boxes-ao-event-desc .boxes-box-content,
@@ -244,7 +249,7 @@
   text-align: center;
   margin-top: -1em;
 }
-/* line 22, ../sass/components/_info-box.scss */
+/* line 27, ../sass/components/_info-box.scss */
 .ao-info-box .boxes-box-content UL, #block-boxes-ao-volunteer-info .boxes-box-content UL,
 #block-boxes-ao-petition-description .boxes-box-content UL,
 #block-boxes-ao-event-desc .boxes-box-content UL,
@@ -253,7 +258,7 @@
   padding: 0em;
   font-style: italic;
 }
-/* line 27, ../sass/components/_info-box.scss */
+/* line 32, ../sass/components/_info-box.scss */
 .ao-info-box .boxes-box-content UL LI, #block-boxes-ao-volunteer-info .boxes-box-content UL LI,
 #block-boxes-ao-petition-description .boxes-box-content UL LI,
 #block-boxes-ao-event-desc .boxes-box-content UL LI,
@@ -261,166 +266,6 @@
   text-align: left;
   list-style-type: none;
   margin-bottom: 1em;
-}
-
-/* move to theme */
-/* line 37, ../sass/components/_info-box.scss */
-#block-menu-crm-core-menu {
-  margin: 0em;
-  position: absolute;
-  bottom: -20px;
-  right: 0em;
-}
-/* line 43, ../sass/components/_info-box.scss */
-#block-menu-crm-core-menu H2.block-title {
-  font-size: 16px;
-  padding: 0.5em 1.5em;
-  display: inline-block;
-  cursor: pointer;
-  -moz-border-radius: 0.5em;
-  -webkit-border-radius: 0.5em;
-  border-radius: 0.5em;
-  *zoom: 1;
-  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF00B0F3', endColorstr='#FF00668D');
-  background-color: #00b0f3;
-  border: 0;
-  color: white;
-  font-size: 16px;
-  padding: 0.25em 1em;
-  display: inline-block;
-  cursor: pointer;
-  -moz-border-radius: 0.5em;
-  -webkit-border-radius: 0.5em;
-  border-radius: 0.5em;
-  font-weight: normal;
-}
-/* line 15, ../../../../../../../../../Users/mhaggerty/.rvm/gems/ruby-2.1.0/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
-#block-menu-crm-core-menu H2.block-title:hover {
-  text-decoration: none;
-}
-/* line 42, ../../../../../../../../../Users/mhaggerty/.rvm/gems/ruby-2.1.0/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
-#block-menu-crm-core-menu H2.block-title:hover {
-  background-color: #009ed9;
-}
-/* line 44, ../../../../../../../../../Users/mhaggerty/.rvm/gems/ruby-2.1.0/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
-#block-menu-crm-core-menu H2.block-title:active {
-  background-color: #0092ca;
-}
-/* line 6, ../../../../../../../../../Users/mhaggerty/.rvm/gems/ruby-2.1.0/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
-#block-menu-crm-core-menu H2.block-title.disabled, #block-menu-crm-core-menu H2.block-title[disabled] {
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
-  opacity: 0.6;
-  background: false;
-  cursor: default;
-  -moz-box-shadow: none;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-}
-/* line 74, ../../../../../../../../../Users/mhaggerty/.rvm/gems/ruby-2.1.0/gems/sassy-buttons-0.2.6/stylesheets/_sassy-buttons.sass */
-#block-menu-crm-core-menu H2.block-title::-moz-focus-inner {
-  padding: 0 !important;
-  margin: -1px !important;
-}
-/* line 49, ../sass/components/_info-box.scss */
-#block-menu-crm-core-menu UL.menu {
-  display: none;
-}
-/* line 55, ../sass/components/_info-box.scss */
-#block-menu-crm-core-menu:hover H2.block-title {
-  -moz-border-radius: 0.5em 0.5em 0em 0em;
-  -webkit-border-radius: 0.5em;
-  border-radius: 0.5em 0.5em 0em 0em;
-}
-/* line 59, ../sass/components/_info-box.scss */
-#block-menu-crm-core-menu:hover UL.menu {
-  display: block;
-  position: absolute;
-  top: 38px;
-  right: 0px;
-  background-color: #00b0f3;
-  white-space: nowrap;
-  margin: 0em;
-  padding: 0em;
-  min-width: 100%;
-  z-index: 1000;
-  -moz-border-radius: 0em 0em 0.5em 0.5em;
-  -webkit-border-radius: 0em;
-  border-radius: 0em 0em 0.5em 0.5em;
-  overflow: hidden;
-}
-/* line 73, ../sass/components/_info-box.scss */
-#block-menu-crm-core-menu:hover UL.menu LI {
-  list-style-type: none;
-  list-style-image: none;
-  margin: 0em;
-  padding: .5em 1em;
-}
-/* line 79, ../sass/components/_info-box.scss */
-#block-menu-crm-core-menu:hover UL.menu LI:hover {
-  background-color: #009ed9;
-}
-/* line 83, ../sass/components/_info-box.scss */
-#block-menu-crm-core-menu:hover UL.menu LI A {
-  margin: 0em;
-  padding: 0em;
-  text-decoration: none;
-  color: White;
-}
-
-/* line 96, ../sass/components/_info-box.scss */
-header.header .header__secondary-menu .inline LI {
-  margin: 0em;
-  padding: 0em;
-}
-/* line 99, ../sass/components/_info-box.scss */
-header.header .header__secondary-menu .inline LI A {
-  font-size: 13.28px;
-  padding: 0.5em 1.5em;
-  display: inline-block;
-  cursor: pointer;
-  -moz-border-radius: 0.5em;
-  -webkit-border-radius: 0.5em;
-  border-radius: 0.5em;
-  *zoom: 1;
-  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FFF1F1F1', endColorstr='#FFBEBEBE');
-  background-color: #f1f1f1;
-  border: 0;
-  color: #2f353e;
-  font-size: 13.28px;
-  padding: 0.25em 1em;
-  display: inline-block;
-  cursor: pointer;
-  -moz-border-radius: 0.5em;
-  -webkit-border-radius: 0.5em;
-  border-radius: 0.5em;
-  text-decoration: none;
-}
-/* line 15, ../../../../../../../../../Users/mhaggerty/.rvm/gems/ruby-2.1.0/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
-header.header .header__secondary-menu .inline LI A:hover {
-  text-decoration: none;
-}
-/* line 42, ../../../../../../../../../Users/mhaggerty/.rvm/gems/ruby-2.1.0/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
-header.header .header__secondary-menu .inline LI A:hover {
-  background-color: #e4e4e4;
-}
-/* line 44, ../../../../../../../../../Users/mhaggerty/.rvm/gems/ruby-2.1.0/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
-header.header .header__secondary-menu .inline LI A:active {
-  background-color: #dddddd;
-}
-/* line 6, ../../../../../../../../../Users/mhaggerty/.rvm/gems/ruby-2.1.0/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
-header.header .header__secondary-menu .inline LI A.disabled, header.header .header__secondary-menu .inline LI A[disabled] {
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
-  opacity: 0.6;
-  background: false;
-  cursor: default;
-  -moz-box-shadow: none;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-}
-/* line 74, ../../../../../../../../../Users/mhaggerty/.rvm/gems/ruby-2.1.0/gems/sassy-buttons-0.2.6/stylesheets/_sassy-buttons.sass */
-header.header .header__secondary-menu .inline LI A::-moz-focus-inner {
-  padding: 0 !important;
-  margin: -1px !important;
 }
 
 /* displays an info item */
@@ -533,19 +378,23 @@ header.header .header__secondary-menu .inline LI A::-moz-focus-inner {
 
 /* @TODO: move to theme */
 /* Component (SMACSS module) rules */
+/**
+ * @file
+ * Basic theme for sample content in AO
+ */
 /* style the info boxes */
 /* style the hero */
-/* line 17, ../sass/themes/_ao_sample_content.scss */
+/* line 19, ../sass/themes/_ao_sample_content.scss */
 section#above-content-one {
   height: 300px;
 }
 
-/* line 22, ../sass/themes/_ao_sample_content.scss */
+/* line 24, ../sass/themes/_ao_sample_content.scss */
 BODY.front .hero_text H2 {
   font-size: 3em;
   margin: 0em;
 }
-/* line 26, ../sass/themes/_ao_sample_content.scss */
+/* line 28, ../sass/themes/_ao_sample_content.scss */
 BODY.front .hero_text P {
   font-size: 24px;
   line-height: 32px;
@@ -553,33 +402,33 @@ BODY.front .hero_text P {
 }
 
 /* style the features marquee */
-/* line 36, ../sass/themes/_ao_sample_content.scss */
+/* line 38, ../sass/themes/_ao_sample_content.scss */
 .ao-featlist {
   display: inline-block;
   width: 48%;
   margin-right: 1%;
   vertical-align: top;
 }
-/* line 42, ../sass/themes/_ao_sample_content.scss */
+/* line 44, ../sass/themes/_ao_sample_content.scss */
 .ao-featlist:last-child {
   margin-right: 0%;
 }
-/* line 46, ../sass/themes/_ao_sample_content.scss */
+/* line 48, ../sass/themes/_ao_sample_content.scss */
 .ao-featlist UL {
   margin: 0em;
 }
-/* line 48, ../sass/themes/_ao_sample_content.scss */
+/* line 50, ../sass/themes/_ao_sample_content.scss */
 .ao-featlist UL LI {
   margin: 0em 0em .5em;
 }
 
 /* panel titles for the home page */
-/* line 63, ../sass/themes/_ao_sample_content.scss */
+/* line 65, ../sass/themes/_ao_sample_content.scss */
 BODY.front .page__title {
   display: none;
 }
 
-/* line 66, ../sass/themes/_ao_sample_content.scss */
+/* line 68, ../sass/themes/_ao_sample_content.scss */
 BODY.front section#above-content-two h2,
 BODY.front section#main h2,
 BODY.front section#below-content-one h2,
@@ -595,7 +444,7 @@ BODY.front section#below-content-two h2 {
   font-weight: 700;
   color: #2f353e;
 }
-/* line 81, ../sass/themes/_ao_sample_content.scss */
+/* line 83, ../sass/themes/_ao_sample_content.scss */
 BODY.front section#above-content-two h2 SPAN,
 BODY.front section#main h2 SPAN,
 BODY.front section#below-content-one h2 SPAN,
@@ -608,11 +457,11 @@ BODY.front section#below-content-two h2 SPAN {
 /* hide tabs on the front page */
 /* control the display of images on the front page */
 /* style H2 elements in specific sections */
-/* line 93, ../sass/themes/_ao_sample_content.scss */
+/* line 95, ../sass/themes/_ao_sample_content.scss */
 BODY.front .tabs-primary {
   display: none;
 }
-/* line 97, ../sass/themes/_ao_sample_content.scss */
+/* line 99, ../sass/themes/_ao_sample_content.scss */
 BODY.front .ao-down-arrow {
   width: 0;
   height: 0;
@@ -623,45 +472,45 @@ BODY.front .ao-down-arrow {
   left: 50%;
   margin-left: -36px;
 }
-/* line 107, ../sass/themes/_ao_sample_content.scss */
+/* line 109, ../sass/themes/_ao_sample_content.scss */
 BODY.front .boxes-box-content,
 BODY.front .block {
   border: 1px solid transparent;
 }
-/* line 112, ../sass/themes/_ao_sample_content.scss */
+/* line 114, ../sass/themes/_ao_sample_content.scss */
 BODY.front section#above-content-one {
   background: #ffb836 url(../images/people.png) top center no-repeat;
 }
-/* line 115, ../sass/themes/_ao_sample_content.scss */
+/* line 117, ../sass/themes/_ao_sample_content.scss */
 BODY.front section#above-content-two {
   background-color: #f9f9f9;
 }
-/* line 117, ../sass/themes/_ao_sample_content.scss */
+/* line 119, ../sass/themes/_ao_sample_content.scss */
 BODY.front section#above-content-two h2 {
   margin-top: 1em;
   margin-bottom: 0em;
 }
-/* line 120, ../sass/themes/_ao_sample_content.scss */
+/* line 122, ../sass/themes/_ao_sample_content.scss */
 BODY.front section#above-content-two h2 SPAN {
   background-color: #f9f9f9;
 }
-/* line 124, ../sass/themes/_ao_sample_content.scss */
+/* line 126, ../sass/themes/_ao_sample_content.scss */
 BODY.front section#above-content-two .ao-down-arrow {
   border-top: 36px solid #f9f9f9;
 }
-/* line 128, ../sass/themes/_ao_sample_content.scss */
+/* line 130, ../sass/themes/_ao_sample_content.scss */
 BODY.front section#main {
   background-color: #00b0f3;
   padding-top: 2em;
 }
-/* line 132, ../sass/themes/_ao_sample_content.scss */
+/* line 134, ../sass/themes/_ao_sample_content.scss */
 BODY.front section#main IMG {
   max-width: 100%;
   margin: 0em auto;
   width: 85%;
   display: block;
 }
-/* line 139, ../sass/themes/_ao_sample_content.scss */
+/* line 141, ../sass/themes/_ao_sample_content.scss */
 BODY.front section#main h2 {
   margin-top: 0em;
   color: white;
@@ -670,20 +519,20 @@ BODY.front section#main h2 {
   background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 48%, rgba(255, 255, 255, 0.4) 49%, rgba(255, 255, 255, 0.4) 50%, rgba(255, 255, 255, 0) 51%, rgba(255, 255, 255, 0) 100%);
   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 48%, rgba(255, 255, 255, 0.4) 49%, rgba(255, 255, 255, 0.4) 50%, rgba(255, 255, 255, 0) 51%, rgba(255, 255, 255, 0) 100%);
 }
-/* line 144, ../sass/themes/_ao_sample_content.scss */
+/* line 146, ../sass/themes/_ao_sample_content.scss */
 BODY.front section#main h2 SPAN {
   background-color: #00b0f3;
 }
-/* line 148, ../sass/themes/_ao_sample_content.scss */
+/* line 150, ../sass/themes/_ao_sample_content.scss */
 BODY.front section#main .ao-down-arrow {
   border-top: 36px solid #f9f9f9;
   top: -46px;
 }
-/* line 153, ../sass/themes/_ao_sample_content.scss */
+/* line 155, ../sass/themes/_ao_sample_content.scss */
 BODY.front section#below-content-one {
   background-color: #ffcc4d;
 }
-/* line 155, ../sass/themes/_ao_sample_content.scss */
+/* line 157, ../sass/themes/_ao_sample_content.scss */
 BODY.front section#below-content-one h2 {
   margin-top: 1em;
   background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 48%, #9fa5ae 49%, #9fa5ae 50%, rgba(255, 255, 255, 0) 51%, rgba(255, 255, 255, 0) 100%);
@@ -691,28 +540,28 @@ BODY.front section#below-content-one h2 {
   background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 48%, #9fa5ae 49%, #9fa5ae 50%, rgba(255, 255, 255, 0) 51%, rgba(255, 255, 255, 0) 100%);
   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 48%, #9fa5ae 49%, #9fa5ae 50%, rgba(255, 255, 255, 0) 51%, rgba(255, 255, 255, 0) 100%);
 }
-/* line 159, ../sass/themes/_ao_sample_content.scss */
+/* line 161, ../sass/themes/_ao_sample_content.scss */
 BODY.front section#below-content-one h2 SPAN {
   background-color: #ffcc4d;
 }
-/* line 163, ../sass/themes/_ao_sample_content.scss */
+/* line 165, ../sass/themes/_ao_sample_content.scss */
 BODY.front section#below-content-one .ao-down-arrow {
   border-top: 36px solid #00b0f3;
 }
-/* line 167, ../sass/themes/_ao_sample_content.scss */
+/* line 169, ../sass/themes/_ao_sample_content.scss */
 BODY.front section#below-content-two {
   background-color: #c8effe;
   text-align: center;
 }
-/* line 170, ../sass/themes/_ao_sample_content.scss */
+/* line 172, ../sass/themes/_ao_sample_content.scss */
 BODY.front section#below-content-two h2 {
   margin-top: 1em;
 }
-/* line 172, ../sass/themes/_ao_sample_content.scss */
+/* line 174, ../sass/themes/_ao_sample_content.scss */
 BODY.front section#below-content-two h2 SPAN {
   background-color: #c8effe;
 }
-/* line 179, ../sass/themes/_ao_sample_content.scss */
+/* line 181, ../sass/themes/_ao_sample_content.scss */
 BODY.front section#below-content-two .ao-down-arrow {
   border-top: 36px solid #ffcc4d;
 }

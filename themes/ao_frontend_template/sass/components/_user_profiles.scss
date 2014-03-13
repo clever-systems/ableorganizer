@@ -55,39 +55,6 @@
   }
 }
 
-/* makes a link into a button to appear as part of a view */
-.header-button {
-  .inline LI {
-    margin: 0em;
-    padding: 0em;
-    A {
-      @include sassy-button("flat", .5em, $h5-font-size, #f1f1f1, $ao_blue2, $gray-1, "Raised");
-      @include sassy-button-structure(.5em, $h5-font-size, 0.25em 1em);
-      text-decoration: none;
-    }
-  }
-}
-/* applies a header button specifically when there is a link within a P tag in the header for a view */
-.views-link-header-button {
-  .view-header P {
-    margin: 0em;
-    padding: 0em;
-    A {
-      @include sassy-button("flat", .5em, $h5-font-size, #f1f1f1, $ao_blue2, $gray-1, "Raised");
-      @include sassy-button-structure(.5em, $h5-font-size, 0.25em 1em);
-      text-decoration: none;
-      position: absolute;
-      right: 0px;
-      top: -30px;
-    }
-  }
-}
-
-
-
-
-
-
 
 /* TODO: move to theme */
 BODY.page-user {
