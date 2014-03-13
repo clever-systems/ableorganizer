@@ -593,15 +593,15 @@ function ableorganizer_install_tasks_alter(&$tasks, $install_state) {
 
   // Set the installation theme.
   _ableorganizer_set_theme('ao_contact_management');
-  
+
   // Remove some profile steps
   $tasks['install_select_profile']['display'] = FALSE;
-  
+
   if(!empty($install_state['parameters']['locale'])){
     $tasks['install_select_locale']['display'] = FALSE;
   }
-  
-  
+
+
   if ($install_state['interactive']) {
     // Display a welcome message
     $new_task = array();
@@ -613,8 +613,8 @@ function ableorganizer_install_tasks_alter(&$tasks, $install_state) {
     );
     $tasks = $new_task + $tasks;
   }
-  
-  
+
+
 
 
   $new_tasks = array();
@@ -698,6 +698,15 @@ function ableorganizer_welcome_submit($form, &$form_state) {
   global $install_state;
 
   $install_state['parameters']['welcome'] = 'done';
+}
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ *
+ * Clears any unneeded status messages after modules are installed.
+ */
+function ableorganizer_form_install_configure_form_alter(&$form, &$form_state, $form_id) {
+  drupal_get_messages('status');
 }
 
 /**
@@ -1143,12 +1152,12 @@ function ableorganizer_sample_content_submit($form, &$form_state) {
 
   // Remember modules to be enabled.
   $install_state['parameters']['ao_modules'] = array();
-  
+
   // automatically install the front page blocks, for now
   // this will eventually be replaced with a configuration page and sample content for demos
   $install_state['parameters']['ao_modules'][] = 'ao_basic_setup';
   ableorganizer_install_frontpage();
-  
+
   if (!empty($form_state['values']['ao_sample_content'])) {
     // $install_state['parameters']['ao_modules'][] = 'ableorganizer_sample_content';
   }
@@ -1187,11 +1196,11 @@ function ableorganizer_sample_content_submit($form, &$form_state) {
  * Creates a node for the frontpage
  */
 function ableorganizer_install_frontpage (){
-  
-  
+
+
 
   $content = '<h2><span>How it Does It</span></h2><p><a href="http://ao.trellon.com/sites/default/files/how-it-does-it.png" title="How it does it" class="colorbox init-colorbox-processed cboxElement" rel="gallery-file-1"><img class="adaptive-image" typeof="foaf:Image" src="http://ao.trellon.com/sites/default/files/styles/adaptive/adaptive-image/public/how-it-does-it.png?itok=kVG8B5Yf" alt="How it does it" title="How it does it"></a></p><div class="ao-down-arrow">&nbsp;</div>';
-  
+
   $date               = new DateTime();
   $node               = new stdClass();
   $node->type         = 'page';
