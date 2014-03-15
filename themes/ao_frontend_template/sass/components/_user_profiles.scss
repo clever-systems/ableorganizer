@@ -5,7 +5,7 @@
 
 /* basic display of a pane in a user profile */
 .user-profile-pane {
-  border: 1px solid #CCC;
+  margin: 0em 0em 1em;
   H2, H3 {
     margin: 0em;
     font-size: $h3-font-size;
@@ -15,7 +15,6 @@
 
 /* for displaying contact information */
 .user-profile-display-contact-info {
-  
   H2:not(.pane-title) {
     display: none;
   }
@@ -55,21 +54,44 @@
   }
 }
 
+/* controls the display of user profile data */
+.ao-up-summary-data {
+  border: 1px solid #CCC;
+  display: table;
+  width: 100%;
+  margin-bottom: 1em;
+  
+  .user-profile-summary-data-row {
+    display: table-row;
+    width: 100%;
+  }
+  
+  .user-profile-summary-data-item {
+    display: table-cell;
+    .udpi-label, .udpi-data-item {
+      text-align: center;
+    }
+    .udpi-label {
+      font-size: 0.8em;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+    .udpi-data-item {
+      font-size: 1.2em;
+      font-weight: 700;
+      padding: .4em 0em;
+    }
 
-/* TODO: move to theme */
-BODY.page-user {
-  .panel-pane {
-    @extend .user-profile-pane;
-    @extend .views-link-header-button;
-  }
-  .pane-user-picture {
-    @extend .user-profile-pane-no-title;
-    text-align: center;
-  }
-  DL {
-    @extend .user-dl;
-  }
-  .pane-ao-user-profile-contact-info {
-    @extend .user-profile-display-contact-info;
   }
 }
+
+/* for profile entry forms */
+.ao-profile-entry-form {
+  border: 1px solid #CCC;
+  padding: 1em;
+}
+
+
+
+
+/* move to theme */

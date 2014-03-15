@@ -7,6 +7,17 @@
  */
 /* Import Sass mixins, variables, Compass modules, etc. */
 /* grays */
+/**
+ * turns a block or a panel page containing a menu into a drop down
+ *
+ * $border-radius - Valid border radius value. Should be a single value.
+ * $font-size - the size of the font for the button.
+ * $base-color - valid color for the button and the background of the menu.
+ * $secondary-color - valid color for the button and the background of the menu when hovered.
+ * $option-color - The color of links in the button.
+ * $option-font-size - The font size of links in the menu.
+ * $option-width - 'full' to make the menu expand to the width of the container. Use an empty string for auto width.
+ **/
 /* HTML element (SMACSS base) rules */
 /**
  * @file
@@ -823,16 +834,16 @@ section#below-content-three .section-wrapper {
   /* line 202, ../sass/layouts/_responsive.scss */
   .sidebar-first #content {
     float: left;
-    width: 71.42857%;
-    margin-left: 28.57143%;
+    width: 85.71429%;
+    margin-left: 14.28571%;
     margin-right: -100%;
   }
   /* line 207, ../sass/layouts/_responsive.scss */
   .sidebar-first .region-sidebar-first {
     float: left;
-    width: 28.57143%;
+    width: 14.28571%;
     margin-left: 0%;
-    margin-right: -28.57143%;
+    margin-right: -14.28571%;
   }
 
   /**
@@ -870,16 +881,16 @@ section#below-content-three .section-wrapper {
   /* line 232, ../sass/layouts/_responsive.scss */
   .two-sidebars #content {
     float: left;
-    width: 71.42857%;
-    margin-left: 28.57143%;
-    margin-right: -100%;
+    width: 57.14286%;
+    margin-left: 14.28571%;
+    margin-right: -71.42857%;
   }
   /* line 237, ../sass/layouts/_responsive.scss */
   .two-sidebars .region-sidebar-first {
     float: left;
-    width: 28.57143%;
+    width: 14.28571%;
     margin-left: 0%;
-    margin-right: -28.57143%;
+    margin-right: -14.28571%;
   }
   /* line 242, ../sass/layouts/_responsive.scss */
   .two-sidebars .region-sidebar-second {
@@ -1746,13 +1757,226 @@ tr.selected td {
  *
  * Defines the appearance of buttons used throughout the system
  */
+/* line 7, ../sass/components/_buttons.scss */
+.btn {
+  font-size: 13.28px;
+  padding: 0.5em 1.5em;
+  display: inline-block;
+  cursor: pointer;
+  -moz-border-radius: 0.5em;
+  -webkit-border-radius: 0.5em;
+  border-radius: 0.5em;
+  *zoom: 1;
+  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF00B0F3', endColorstr='#FF00668D');
+  background-color: #00b0f3;
+  border: 0;
+  color: #2f353e;
+}
+/* line 15, ../../../../../../../../Users/mhaggerty/.rvm/gems/ruby-2.1.0/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
+.btn:hover {
+  text-decoration: none;
+}
+/* line 42, ../../../../../../../../Users/mhaggerty/.rvm/gems/ruby-2.1.0/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
+.btn:hover {
+  background-color: #009ed9;
+}
+/* line 44, ../../../../../../../../Users/mhaggerty/.rvm/gems/ruby-2.1.0/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
+.btn:active {
+  background-color: #0092ca;
+}
+/* line 6, ../../../../../../../../Users/mhaggerty/.rvm/gems/ruby-2.1.0/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
+.btn.disabled, .btn[disabled] {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
+  opacity: 0.6;
+  background: false;
+  cursor: default;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+/* line 74, ../../../../../../../../Users/mhaggerty/.rvm/gems/ruby-2.1.0/gems/sassy-buttons-0.2.6/stylesheets/_sassy-buttons.sass */
+.btn::-moz-focus-inner {
+  padding: 0 !important;
+  margin: -1px !important;
+}
+
+/* line 28, ../sass/components/_buttons.scss */
+.btn-form-actions input[type=submit], section#main div#content div.form-actions input[type=submit] {
+  margin-right: .3em;
+  font-size: 16px;
+  padding: 0.5em 1.5em;
+  display: inline-block;
+  cursor: pointer;
+  -moz-border-radius: 0.5em;
+  -webkit-border-radius: 0.5em;
+  border-radius: 0.5em;
+  *zoom: 1;
+  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FFE1E1E1', endColorstr='#FFAEAEAE');
+  background-color: #e1e1e1;
+  border: 0;
+  color: black;
+}
+/* line 15, ../../../../../../../../Users/mhaggerty/.rvm/gems/ruby-2.1.0/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
+.btn-form-actions input[type=submit]:hover, section#main div#content div.form-actions input[type=submit]:hover {
+  text-decoration: none;
+}
+/* line 42, ../../../../../../../../Users/mhaggerty/.rvm/gems/ruby-2.1.0/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
+.btn-form-actions input[type=submit]:hover, section#main div#content div.form-actions input[type=submit]:hover {
+  background-color: #d4d4d4;
+}
+/* line 44, ../../../../../../../../Users/mhaggerty/.rvm/gems/ruby-2.1.0/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
+.btn-form-actions input[type=submit]:active, section#main div#content div.form-actions input[type=submit]:active {
+  background-color: #cdcdcd;
+}
+/* line 6, ../../../../../../../../Users/mhaggerty/.rvm/gems/ruby-2.1.0/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
+.btn-form-actions input[type=submit].disabled, section#main div#content div.form-actions input[type=submit].disabled, .btn-form-actions input[type=submit][disabled], section#main div#content div.form-actions input[type=submit][disabled] {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
+  opacity: 0.6;
+  background: false;
+  cursor: default;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+/* line 74, ../../../../../../../../Users/mhaggerty/.rvm/gems/ruby-2.1.0/gems/sassy-buttons-0.2.6/stylesheets/_sassy-buttons.sass */
+.btn-form-actions input[type=submit]::-moz-focus-inner, section#main div#content div.form-actions input[type=submit]::-moz-focus-inner {
+  padding: 0 !important;
+  margin: -1px !important;
+}
+/* line 33, ../sass/components/_buttons.scss */
+.btn-form-actions input[type=submit]#edit-delete, section#main div#content div.form-actions input[type=submit]#edit-delete {
+  font-size: 16px;
+  padding: 0.5em 1.5em;
+  display: inline-block;
+  cursor: pointer;
+  -moz-border-radius: 0.5em;
+  -webkit-border-radius: 0.5em;
+  border-radius: 0.5em;
+  *zoom: 1;
+  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FFFF5A51', endColorstr='#FFEA0C00');
+  background-color: #ff5a51;
+  border: 0;
+  color: white;
+}
+/* line 15, ../../../../../../../../Users/mhaggerty/.rvm/gems/ruby-2.1.0/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
+.btn-form-actions input[type=submit]#edit-delete:hover, section#main div#content div.form-actions input[type=submit]#edit-delete:hover {
+  text-decoration: none;
+}
+/* line 42, ../../../../../../../../Users/mhaggerty/.rvm/gems/ruby-2.1.0/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
+.btn-form-actions input[type=submit]#edit-delete:hover, section#main div#content div.form-actions input[type=submit]#edit-delete:hover {
+  background-color: #ff4237;
+}
+/* line 44, ../../../../../../../../Users/mhaggerty/.rvm/gems/ruby-2.1.0/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
+.btn-form-actions input[type=submit]#edit-delete:active, section#main div#content div.form-actions input[type=submit]#edit-delete:active {
+  background-color: #ff3328;
+}
+/* line 6, ../../../../../../../../Users/mhaggerty/.rvm/gems/ruby-2.1.0/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
+.btn-form-actions input[type=submit]#edit-delete.disabled, section#main div#content div.form-actions input[type=submit]#edit-delete.disabled, .btn-form-actions input[type=submit]#edit-delete[disabled], section#main div#content div.form-actions input[type=submit]#edit-delete[disabled] {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
+  opacity: 0.6;
+  background: false;
+  cursor: default;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+/* line 74, ../../../../../../../../Users/mhaggerty/.rvm/gems/ruby-2.1.0/gems/sassy-buttons-0.2.6/stylesheets/_sassy-buttons.sass */
+.btn-form-actions input[type=submit]#edit-delete::-moz-focus-inner, section#main div#content div.form-actions input[type=submit]#edit-delete::-moz-focus-inner {
+  padding: 0 !important;
+  margin: -1px !important;
+}
+/* line 37, ../sass/components/_buttons.scss */
+.btn-form-actions input[type=submit]#edit-preview, section#main div#content div.form-actions input[type=submit]#edit-preview {
+  font-size: 16px;
+  padding: 0.5em 1.5em;
+  display: inline-block;
+  cursor: pointer;
+  -moz-border-radius: 0.5em;
+  -webkit-border-radius: 0.5em;
+  border-radius: 0.5em;
+  *zoom: 1;
+  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF00B0F3', endColorstr='#FF00668D');
+  background-color: #00b0f3;
+  border: 0;
+  color: white;
+}
+/* line 15, ../../../../../../../../Users/mhaggerty/.rvm/gems/ruby-2.1.0/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
+.btn-form-actions input[type=submit]#edit-preview:hover, section#main div#content div.form-actions input[type=submit]#edit-preview:hover {
+  text-decoration: none;
+}
+/* line 42, ../../../../../../../../Users/mhaggerty/.rvm/gems/ruby-2.1.0/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
+.btn-form-actions input[type=submit]#edit-preview:hover, section#main div#content div.form-actions input[type=submit]#edit-preview:hover {
+  background-color: #009ed9;
+}
+/* line 44, ../../../../../../../../Users/mhaggerty/.rvm/gems/ruby-2.1.0/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
+.btn-form-actions input[type=submit]#edit-preview:active, section#main div#content div.form-actions input[type=submit]#edit-preview:active {
+  background-color: #0092ca;
+}
+/* line 6, ../../../../../../../../Users/mhaggerty/.rvm/gems/ruby-2.1.0/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
+.btn-form-actions input[type=submit]#edit-preview.disabled, section#main div#content div.form-actions input[type=submit]#edit-preview.disabled, .btn-form-actions input[type=submit]#edit-preview[disabled], section#main div#content div.form-actions input[type=submit]#edit-preview[disabled] {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
+  opacity: 0.6;
+  background: false;
+  cursor: default;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+/* line 74, ../../../../../../../../Users/mhaggerty/.rvm/gems/ruby-2.1.0/gems/sassy-buttons-0.2.6/stylesheets/_sassy-buttons.sass */
+.btn-form-actions input[type=submit]#edit-preview::-moz-focus-inner, section#main div#content div.form-actions input[type=submit]#edit-preview::-moz-focus-inner {
+  padding: 0 !important;
+  margin: -1px !important;
+}
+/* line 41, ../sass/components/_buttons.scss */
+.btn-form-actions input[type=submit]#edit-submit, section#main div#content div.form-actions input[type=submit]#edit-submit {
+  font-size: 16px;
+  padding: 0.5em 1.5em;
+  display: inline-block;
+  cursor: pointer;
+  -moz-border-radius: 0.5em;
+  -webkit-border-radius: 0.5em;
+  border-radius: 0.5em;
+  *zoom: 1;
+  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF34D06E', endColorstr='#FF1E8042');
+  background-color: #34d06e;
+  border: 0;
+  color: white;
+}
+/* line 15, ../../../../../../../../Users/mhaggerty/.rvm/gems/ruby-2.1.0/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
+.btn-form-actions input[type=submit]#edit-submit:hover, section#main div#content div.form-actions input[type=submit]#edit-submit:hover {
+  text-decoration: none;
+}
+/* line 42, ../../../../../../../../Users/mhaggerty/.rvm/gems/ruby-2.1.0/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
+.btn-form-actions input[type=submit]#edit-submit:hover, section#main div#content div.form-actions input[type=submit]#edit-submit:hover {
+  background-color: #2cbe62;
+}
+/* line 44, ../../../../../../../../Users/mhaggerty/.rvm/gems/ruby-2.1.0/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
+.btn-form-actions input[type=submit]#edit-submit:active, section#main div#content div.form-actions input[type=submit]#edit-submit:active {
+  background-color: #29b25c;
+}
+/* line 6, ../../../../../../../../Users/mhaggerty/.rvm/gems/ruby-2.1.0/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
+.btn-form-actions input[type=submit]#edit-submit.disabled, section#main div#content div.form-actions input[type=submit]#edit-submit.disabled, .btn-form-actions input[type=submit]#edit-submit[disabled], section#main div#content div.form-actions input[type=submit]#edit-submit[disabled] {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
+  opacity: 0.6;
+  background: false;
+  cursor: default;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+/* line 74, ../../../../../../../../Users/mhaggerty/.rvm/gems/ruby-2.1.0/gems/sassy-buttons-0.2.6/stylesheets/_sassy-buttons.sass */
+.btn-form-actions input[type=submit]#edit-submit::-moz-focus-inner, section#main div#content div.form-actions input[type=submit]#edit-submit::-moz-focus-inner {
+  padding: 0 !important;
+  margin: -1px !important;
+}
+
 /* makes a link into a button to appear as part of a view */
-/* line 30, ../sass/components/_buttons.scss */
+/* line 51, ../sass/components/_buttons.scss */
 .header-button .inline LI {
   margin: 0em;
   padding: 0em;
 }
-/* line 33, ../sass/components/_buttons.scss */
+/* line 54, ../sass/components/_buttons.scss */
 .header-button .inline LI A {
   font-size: 13.28px;
   padding: 0.5em 1.5em;
@@ -1804,12 +2028,12 @@ tr.selected td {
 }
 
 /* applies a header button specifically when there is a link within a P tag in the header for a view */
-/* line 42, ../sass/components/_buttons.scss */
+/* line 63, ../sass/components/_buttons.scss */
 .views-link-header-button .view-header P, BODY.page-user .panel-pane .view-header P {
   margin: 0em;
   padding: 0em;
 }
-/* line 45, ../sass/components/_buttons.scss */
+/* line 66, ../sass/components/_buttons.scss */
 .views-link-header-button .view-header P A, BODY.page-user .panel-pane .view-header P A {
   font-size: 13.28px;
   padding: 0.5em 1.5em;
@@ -1910,6 +2134,30 @@ section#below-content-three .section-wrapper {
 
 /**
  * @file
+ * Menus
+ *
+ * Defines the appearance of menus used in the theme
+ */
+/* line 10, ../sass/components/_menus.scss */
+.ao-menu-links H2, .region-sidebar-first .block-menu H2 {
+  font-size: 1.2em;
+}
+/* line 13, ../sass/components/_menus.scss */
+.ao-menu-links UL.menu, .region-sidebar-first .block-menu UL.menu {
+  margin: 0em;
+  padding: 0em;
+  font-size: 0.9em;
+}
+/* line 17, ../sass/components/_menus.scss */
+.ao-menu-links UL.menu LI, .region-sidebar-first .block-menu UL.menu LI {
+  list-style-type: none;
+  list-style-image: none;
+  margin: 0em;
+  padding: 0em;
+}
+
+/**
+ * @file
  * Buttons
  *
  * Defines the appearance of hero elements used within the theme
@@ -1933,9 +2181,9 @@ section#below-content-three .section-wrapper {
  *
  * Defines the appearance of forms in the front end
  */
-/* forms appearing in the right hand region */
+/* forms appearing in the main content region */
 /* line 9, ../sass/components/_forms.scss */
-.form-sidebar-2-display, .region-sidebar-second FORM {
+.ao-main-content-form, section#main FORM {
   /* phone numbers */
   /* address fields */
   /* shopping carts */
@@ -1944,111 +2192,382 @@ section#below-content-three .section-wrapper {
   /* amounts */
 }
 /* line 10, ../sass/components/_forms.scss */
-.form-sidebar-2-display .form-item, .region-sidebar-second FORM .form-item {
+.ao-main-content-form .form-item, section#main FORM .form-item {
   margin: 0em 0em .5em;
 }
-/* line 13, ../sass/components/_forms.scss */
-.form-sidebar-2-display LABEL, .region-sidebar-second FORM LABEL,
-.form-sidebar-2-display LABEL.compact-form-label,
-.region-sidebar-second FORM LABEL.compact-form-label {
-  color: #777;
+/* line 14, ../sass/components/_forms.scss */
+.ao-main-content-form .form-item.form-type-name-element .name-credentials-wrapper, section#main FORM .form-item.form-type-name-element .name-credentials-wrapper {
+  width: 10%;
 }
 /* line 17, ../sass/components/_forms.scss */
-.form-sidebar-2-display fieldset, .region-sidebar-second FORM fieldset {
+.ao-main-content-form .form-item.form-type-name-element div[class*='name-'], section#main FORM .form-item.form-type-name-element div[class*='name-'] {
+  margin-right: .3em;
+  display: inline-block;
+  vertical-align: top;
+}
+/* line 22, ../sass/components/_forms.scss */
+.ao-main-content-form .form-item.form-type-name-element div[class*='name-'] INPUT[type=text], section#main FORM .form-item.form-type-name-element div[class*='name-'] INPUT[type=text] {
+  width: 100%;
+}
+/* line 25, ../sass/components/_forms.scss */
+.ao-main-content-form .form-item.form-type-name-element div[class*='name-']:last-child, section#main FORM .form-item.form-type-name-element div[class*='name-']:last-child {
+  margin-right: 0em;
+}
+/* line 32, ../sass/components/_forms.scss */
+.ao-main-content-form .container-inline-date .date-padding, section#main FORM .container-inline-date .date-padding {
+  padding: 0em;
+}
+/* line 37, ../sass/components/_forms.scss */
+.ao-main-content-form .fieldset-legend, section#main FORM .fieldset-legend,
+.ao-main-content-form LABEL,
+section#main FORM LABEL,
+.ao-main-content-form LABEL.compact-form-label,
+section#main FORM LABEL.compact-form-label {
+  color: #5f656e;
+  font-weight: normal;
+}
+/* line 43, ../sass/components/_forms.scss */
+.ao-main-content-form fieldset, section#main FORM fieldset {
   padding: 0em;
   margin: 0em;
   border: 0px;
 }
-/* line 22, ../sass/components/_forms.scss */
-.form-sidebar-2-display INPUT[type=text], .region-sidebar-second FORM INPUT[type=text] {
-  width: 90%;
+/* line 48, ../sass/components/_forms.scss */
+.ao-main-content-form INPUT[type=text], section#main FORM INPUT[type=text] {
+  width: 95%;
   display: inline-block;
 }
-/* line 26, ../sass/components/_forms.scss */
-.form-sidebar-2-display .form-required, .region-sidebar-second FORM .form-required {
+/* line 53, ../sass/components/_forms.scss */
+.ao-main-content-form .form-required, section#main FORM .form-required {
   display: inline-block;
 }
-/* line 29, ../sass/components/_forms.scss */
-.form-sidebar-2-display SELECT, .region-sidebar-second FORM SELECT {
+/* line 56, ../sass/components/_forms.scss */
+.ao-main-content-form SELECT, section#main FORM SELECT {
   width: 100%;
 }
-/* line 35, ../sass/components/_forms.scss */
-.form-sidebar-2-display .form-phone-number > DIV input[type=text], .region-sidebar-second FORM .form-phone-number > DIV input[type=text] {
+/* line 62, ../sass/components/_forms.scss */
+.ao-main-content-form .form-phone-number > DIV input[type=text], section#main FORM .form-phone-number > DIV input[type=text] {
   width: auto;
 }
-/* line 38, ../sass/components/_forms.scss */
-.form-sidebar-2-display .form-phone-number > DIV:first-child, .region-sidebar-second FORM .form-phone-number > DIV:first-child {
+/* line 65, ../sass/components/_forms.scss */
+.ao-main-content-form .form-phone-number > DIV:first-child, section#main FORM .form-phone-number > DIV:first-child {
   width: 65%;
 }
-/* line 41, ../sass/components/_forms.scss */
-.form-sidebar-2-display .form-phone-number > DIV:last-child, .region-sidebar-second FORM .form-phone-number > DIV:last-child {
+/* line 68, ../sass/components/_forms.scss */
+.ao-main-content-form .form-phone-number > DIV:last-child, section#main FORM .form-phone-number > DIV:last-child {
   width: 25%;
 }
-/* line 50, ../sass/components/_forms.scss */
-.form-sidebar-2-display .field-type-addressfield .fieldset-wrapper .addressfield-container-inline DIV[class*="locality"], .region-sidebar-second FORM .field-type-addressfield .fieldset-wrapper .addressfield-container-inline DIV[class*="locality"] {
+/* line 77, ../sass/components/_forms.scss */
+.ao-main-content-form .field-type-addressfield .fieldset-wrapper .addressfield-container-inline DIV[class*="locality"], section#main FORM .field-type-addressfield .fieldset-wrapper .addressfield-container-inline DIV[class*="locality"] {
   width: 40%;
   display: inline-block;
   vertical-align: top;
   margin-right: 0em;
 }
-/* line 56, ../sass/components/_forms.scss */
-.form-sidebar-2-display .field-type-addressfield .fieldset-wrapper .addressfield-container-inline DIV[class*="administrative-area"], .region-sidebar-second FORM .field-type-addressfield .fieldset-wrapper .addressfield-container-inline DIV[class*="administrative-area"] {
+/* line 83, ../sass/components/_forms.scss */
+.ao-main-content-form .field-type-addressfield .fieldset-wrapper .addressfield-container-inline DIV[class*="administrative-area"], section#main FORM .field-type-addressfield .fieldset-wrapper .addressfield-container-inline DIV[class*="administrative-area"] {
   width: 20%;
   display: inline-block;
   vertical-align: top;
   margin-right: 0.5em;
 }
-/* line 62, ../sass/components/_forms.scss */
-.form-sidebar-2-display .field-type-addressfield .fieldset-wrapper .addressfield-container-inline DIV[class*="administrative-area"] LABEL, .region-sidebar-second FORM .field-type-addressfield .fieldset-wrapper .addressfield-container-inline DIV[class*="administrative-area"] LABEL {
-  display: none;
-}
-/* line 66, ../sass/components/_forms.scss */
-.form-sidebar-2-display .field-type-addressfield .fieldset-wrapper .addressfield-container-inline DIV[class*="postal-code"], .region-sidebar-second FORM .field-type-addressfield .fieldset-wrapper .addressfield-container-inline DIV[class*="postal-code"] {
+/* line 89, ../sass/components/_forms.scss */
+.ao-main-content-form .field-type-addressfield .fieldset-wrapper .addressfield-container-inline DIV[class*="postal-code"], section#main FORM .field-type-addressfield .fieldset-wrapper .addressfield-container-inline DIV[class*="postal-code"] {
   width: 30%;
   display: inline-block;
   vertical-align: top;
   margin-right: 0.25em;
 }
-/* line 78, ../sass/components/_forms.scss */
-.form-sidebar-2-display caption, .region-sidebar-second FORM caption, .form-sidebar-2-display div.caption, .region-sidebar-second FORM div.caption {
+/* line 101, ../sass/components/_forms.scss */
+.ao-main-content-form caption, section#main FORM caption, .ao-main-content-form div.caption, section#main FORM div.caption {
   display: none;
 }
-/* line 81, ../sass/components/_forms.scss */
-.form-sidebar-2-display #edit-cart-wrapper, .region-sidebar-second FORM #edit-cart-wrapper {
+/* line 104, ../sass/components/_forms.scss */
+.ao-main-content-form #edit-cart-wrapper, section#main FORM #edit-cart-wrapper {
   margin-bottom: 0.5em;
 }
-/* line 84, ../sass/components/_forms.scss */
-.form-sidebar-2-display TABLE, .region-sidebar-second FORM TABLE {
+/* line 107, ../sass/components/_forms.scss */
+.ao-main-content-form TABLE, section#main FORM TABLE {
   margin-bottom: 0em;
   width: 100%;
 }
-/* line 87, ../sass/components/_forms.scss */
-.form-sidebar-2-display TABLE TH, .region-sidebar-second FORM TABLE TH {
+/* line 110, ../sass/components/_forms.scss */
+.ao-main-content-form TABLE TH, section#main FORM TABLE TH {
   white-space: nowrap;
 }
-/* line 90, ../sass/components/_forms.scss */
-.form-sidebar-2-display TABLE DIV[class*="form-item-cart"], .region-sidebar-second FORM TABLE DIV[class*="form-item-cart"] {
+/* line 113, ../sass/components/_forms.scss */
+.ao-main-content-form TABLE DIV[class*="form-item-cart"], section#main FORM TABLE DIV[class*="form-item-cart"] {
   width: 2em;
   margin: 0em auto;
   padding: 0em;
 }
-/* line 95, ../sass/components/_forms.scss */
-.form-sidebar-2-display TABLE DIV[id*="-total"], .region-sidebar-second FORM TABLE DIV[id*="-total"] {
+/* line 118, ../sass/components/_forms.scss */
+.ao-main-content-form TABLE DIV[id*="-total"], section#main FORM TABLE DIV[id*="-total"] {
   text-align: center;
 }
-/* line 102, ../sass/components/_forms.scss */
-.form-sidebar-2-display .cart-summary .cart-summary-total, .region-sidebar-second FORM .cart-summary .cart-summary-total {
+/* line 125, ../sass/components/_forms.scss */
+.ao-main-content-form .cart-summary .cart-summary-total, section#main FORM .cart-summary .cart-summary-total {
   text-align: center;
 }
-/* line 104, ../sass/components/_forms.scss */
-.form-sidebar-2-display .cart-summary .cart-summary-total .cart-summary-total-value, .region-sidebar-second FORM .cart-summary .cart-summary-total .cart-summary-total-value {
+/* line 127, ../sass/components/_forms.scss */
+.ao-main-content-form .cart-summary .cart-summary-total .cart-summary-total-value, section#main FORM .cart-summary .cart-summary-total .cart-summary-total-value {
   font-weight: 700;
 }
-/* line 110, ../sass/components/_forms.scss */
-.form-sidebar-2-display .amounts, .region-sidebar-second FORM .amounts {
+/* line 133, ../sass/components/_forms.scss */
+.ao-main-content-form .amounts, section#main FORM .amounts {
   margin-bottom: 0.5em;
 }
 
+/* node forms */
+/* line 140, ../sass/components/_forms.scss */
+.ao-node-form, FORM.node-form {
+  border: 1px solid #CCC;
+  padding: 1em;
+  margin-bottom: 1em;
+}
+/* line 147, ../sass/components/_forms.scss */
+.ao-node-form .cke .cke_inner .cke_wysiwyg_frame, FORM.node-form .cke .cke_inner .cke_wysiwyg_frame {
+  padding: 0em .5em;
+  box-sizing: border-box;
+}
+/* line 154, ../sass/components/_forms.scss */
+.ao-node-form .wysiwyg-toggle-wrapper, FORM.node-form .wysiwyg-toggle-wrapper {
+  padding: 0em;
+}
+/* line 160, ../sass/components/_forms.scss */
+.ao-node-form .vertical-tabs .vertical-tabs-panes FIELDSET.vertical-tabs-pane, FORM.node-form .vertical-tabs .vertical-tabs-panes FIELDSET.vertical-tabs-pane {
+  padding: 1em !important;
+}
+
+/* forms appearing in the right hand region */
+/* line 168, ../sass/components/_forms.scss */
+.ao-sidebar-2-form, .region-sidebar-second FORM {
+  /* phone numbers */
+  /* address fields */
+  /* shopping carts */
+  /* item display */
+  /* cart summary */
+  /* amounts */
+}
+/* line 169, ../sass/components/_forms.scss */
+.ao-sidebar-2-form .form-item, .region-sidebar-second FORM .form-item {
+  margin: 0em 0em .5em;
+}
+/* line 172, ../sass/components/_forms.scss */
+.ao-sidebar-2-form LABEL, .region-sidebar-second FORM LABEL,
+.ao-sidebar-2-form LABEL.compact-form-label,
+.region-sidebar-second FORM LABEL.compact-form-label {
+  color: #777;
+}
+/* line 176, ../sass/components/_forms.scss */
+.ao-sidebar-2-form fieldset, .region-sidebar-second FORM fieldset {
+  padding: 0em;
+  margin: 0em;
+  border: 0px;
+}
+/* line 181, ../sass/components/_forms.scss */
+.ao-sidebar-2-form INPUT[type=text], .region-sidebar-second FORM INPUT[type=text] {
+  width: 90%;
+  display: inline-block;
+}
+/* line 185, ../sass/components/_forms.scss */
+.ao-sidebar-2-form .form-required, .region-sidebar-second FORM .form-required {
+  display: inline-block;
+}
+/* line 188, ../sass/components/_forms.scss */
+.ao-sidebar-2-form SELECT, .region-sidebar-second FORM SELECT {
+  width: 100%;
+}
+/* line 194, ../sass/components/_forms.scss */
+.ao-sidebar-2-form .form-phone-number > DIV input[type=text], .region-sidebar-second FORM .form-phone-number > DIV input[type=text] {
+  width: auto;
+}
+/* line 197, ../sass/components/_forms.scss */
+.ao-sidebar-2-form .form-phone-number > DIV:first-child, .region-sidebar-second FORM .form-phone-number > DIV:first-child {
+  width: 65%;
+}
+/* line 200, ../sass/components/_forms.scss */
+.ao-sidebar-2-form .form-phone-number > DIV:last-child, .region-sidebar-second FORM .form-phone-number > DIV:last-child {
+  width: 25%;
+}
+/* line 209, ../sass/components/_forms.scss */
+.ao-sidebar-2-form .field-type-addressfield .fieldset-wrapper .addressfield-container-inline DIV[class*="locality"], .region-sidebar-second FORM .field-type-addressfield .fieldset-wrapper .addressfield-container-inline DIV[class*="locality"] {
+  width: 40%;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 0em;
+}
+/* line 215, ../sass/components/_forms.scss */
+.ao-sidebar-2-form .field-type-addressfield .fieldset-wrapper .addressfield-container-inline DIV[class*="administrative-area"], .region-sidebar-second FORM .field-type-addressfield .fieldset-wrapper .addressfield-container-inline DIV[class*="administrative-area"] {
+  width: 20%;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 0.5em;
+}
+/* line 221, ../sass/components/_forms.scss */
+.ao-sidebar-2-form .field-type-addressfield .fieldset-wrapper .addressfield-container-inline DIV[class*="administrative-area"] LABEL, .region-sidebar-second FORM .field-type-addressfield .fieldset-wrapper .addressfield-container-inline DIV[class*="administrative-area"] LABEL {
+  display: none;
+}
+/* line 225, ../sass/components/_forms.scss */
+.ao-sidebar-2-form .field-type-addressfield .fieldset-wrapper .addressfield-container-inline DIV[class*="postal-code"], .region-sidebar-second FORM .field-type-addressfield .fieldset-wrapper .addressfield-container-inline DIV[class*="postal-code"] {
+  width: 30%;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 0.25em;
+}
+/* line 237, ../sass/components/_forms.scss */
+.ao-sidebar-2-form caption, .region-sidebar-second FORM caption, .ao-sidebar-2-form div.caption, .region-sidebar-second FORM div.caption {
+  display: none;
+}
+/* line 240, ../sass/components/_forms.scss */
+.ao-sidebar-2-form #edit-cart-wrapper, .region-sidebar-second FORM #edit-cart-wrapper {
+  margin-bottom: 0.5em;
+}
+/* line 243, ../sass/components/_forms.scss */
+.ao-sidebar-2-form TABLE, .region-sidebar-second FORM TABLE {
+  margin-bottom: 0em;
+  width: 100%;
+}
+/* line 246, ../sass/components/_forms.scss */
+.ao-sidebar-2-form TABLE TH, .region-sidebar-second FORM TABLE TH {
+  white-space: nowrap;
+}
+/* line 249, ../sass/components/_forms.scss */
+.ao-sidebar-2-form TABLE DIV[class*="form-item-cart"], .region-sidebar-second FORM TABLE DIV[class*="form-item-cart"] {
+  width: 2em;
+  margin: 0em auto;
+  padding: 0em;
+}
+/* line 254, ../sass/components/_forms.scss */
+.ao-sidebar-2-form TABLE DIV[id*="-total"], .region-sidebar-second FORM TABLE DIV[id*="-total"] {
+  text-align: center;
+}
+/* line 261, ../sass/components/_forms.scss */
+.ao-sidebar-2-form .cart-summary .cart-summary-total, .region-sidebar-second FORM .cart-summary .cart-summary-total {
+  text-align: center;
+}
+/* line 263, ../sass/components/_forms.scss */
+.ao-sidebar-2-form .cart-summary .cart-summary-total .cart-summary-total-value, .region-sidebar-second FORM .cart-summary .cart-summary-total .cart-summary-total-value {
+  font-weight: 700;
+}
+/* line 269, ../sass/components/_forms.scss */
+.ao-sidebar-2-form .amounts, .region-sidebar-second FORM .amounts {
+  margin-bottom: 0.5em;
+}
+
+/* line 275, ../sass/components/_forms.scss */
+.ao-filter-wrapper, FIELDSET.filter-wrapper {
+  background-color: #f1f1f1;
+  -moz-border-radius: 1em;
+  -webkit-border-radius: 1em;
+  border-radius: 1em;
+}
+/* line 278, ../sass/components/_forms.scss */
+.ao-filter-wrapper .form-item LABEL, FIELDSET.filter-wrapper .form-item LABEL {
+  display: block;
+  font-size: 13.28px;
+}
+/* line 282, ../sass/components/_forms.scss */
+.ao-filter-wrapper .filter-help, FIELDSET.filter-wrapper .filter-help {
+  padding-top: 0.5em;
+  font-size: 13.28px;
+}
+/* line 286, ../sass/components/_forms.scss */
+.ao-filter-wrapper .ao-input-format-select, FIELDSET.filter-wrapper .ao-input-format-select {
+  margin-right: .3em;
+  font-size: 13.28px;
+  padding: 0.5em 1.5em;
+  display: inline-block;
+  cursor: pointer;
+  -moz-border-radius: 0.5em;
+  -webkit-border-radius: 0.5em;
+  border-radius: 0.5em;
+  *zoom: 1;
+  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FFCCCCCC', endColorstr='#FF999999');
+  background-color: #cccccc;
+  border: 0;
+  color: white;
+}
+/* line 15, ../../../../../../../../Users/mhaggerty/.rvm/gems/ruby-2.1.0/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
+.ao-filter-wrapper .ao-input-format-select:hover, FIELDSET.filter-wrapper .ao-input-format-select:hover {
+  text-decoration: none;
+}
+/* line 42, ../../../../../../../../Users/mhaggerty/.rvm/gems/ruby-2.1.0/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
+.ao-filter-wrapper .ao-input-format-select:hover, FIELDSET.filter-wrapper .ao-input-format-select:hover {
+  background-color: #bfbfbf;
+}
+/* line 44, ../../../../../../../../Users/mhaggerty/.rvm/gems/ruby-2.1.0/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
+.ao-filter-wrapper .ao-input-format-select:active, FIELDSET.filter-wrapper .ao-input-format-select:active {
+  background-color: #b8b8b8;
+}
+/* line 6, ../../../../../../../../Users/mhaggerty/.rvm/gems/ruby-2.1.0/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
+.ao-filter-wrapper .ao-input-format-select.disabled, FIELDSET.filter-wrapper .ao-input-format-select.disabled, .ao-filter-wrapper .ao-input-format-select[disabled], FIELDSET.filter-wrapper .ao-input-format-select[disabled] {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
+  opacity: 0.6;
+  background: false;
+  cursor: default;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+/* line 74, ../../../../../../../../Users/mhaggerty/.rvm/gems/ruby-2.1.0/gems/sassy-buttons-0.2.6/stylesheets/_sassy-buttons.sass */
+.ao-filter-wrapper .ao-input-format-select::-moz-focus-inner, FIELDSET.filter-wrapper .ao-input-format-select::-moz-focus-inner {
+  padding: 0 !important;
+  margin: -1px !important;
+}
+/* line 290, ../sass/components/_forms.scss */
+.ao-filter-wrapper .form-type-select SELECT, FIELDSET.filter-wrapper .form-type-select SELECT {
+  display: none;
+}
+/* line 293, ../sass/components/_forms.scss */
+.ao-filter-wrapper .filter-guidelines, FIELDSET.filter-wrapper .filter-guidelines {
+  display: none;
+}
+
+/* line 298, ../sass/components/_forms.scss */
+.aoFormatBubble {
+  width: 240px;
+  font-size: 10.72px;
+  line-height: 16.08px;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+  color: White;
+  background-color: #00b0f3;
+  padding: 0.5em 0.8em;
+}
+/* line 307, ../sass/components/_forms.scss */
+.aoFormatBubble H3 {
+  display: block;
+  text-align: center;
+  margin: 0em;
+}
+/* line 313, ../sass/components/_forms.scss */
+.aoFormatBubble UL {
+  margin: 0em;
+  padding: 0em;
+}
+/* line 316, ../sass/components/_forms.scss */
+.aoFormatBubble UL LI {
+  list-style-type: none;
+}
+/* line 321, ../sass/components/_forms.scss */
+.aoFormatBubble:after {
+  position: absolute;
+  display: block;
+  top: 100%;
+  left: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  pointer-events: none;
+  border-top-color: #00b0f3;
+  border-width: 15px;
+  margin-left: -15px;
+}
+
+/* move to theme */
 /**
  * @file
  * Components for displaying features of AO
@@ -2056,7 +2575,7 @@ section#below-content-three .section-wrapper {
 /* basic display of a pane in a user profile */
 /* line 7, ../sass/components/_user_profiles.scss */
 .user-profile-pane, BODY.page-user .panel-pane {
-  border: 1px solid #CCC;
+  margin: 0em 0em 1em;
 }
 /* line 9, ../sass/components/_user_profiles.scss */
 .user-profile-pane H2, BODY.page-user .panel-pane H2, .user-profile-pane H3, BODY.page-user .panel-pane H3 {
@@ -2066,58 +2585,94 @@ section#below-content-three .section-wrapper {
 }
 
 /* for displaying contact information */
-/* line 19, ../sass/components/_user_profiles.scss */
+/* line 18, ../sass/components/_user_profiles.scss */
 .user-profile-display-contact-info H2:not(.pane-title), BODY.page-user .pane-ao-user-profile-contact-info H2:not(.pane-title) {
   display: none;
 }
-/* line 22, ../sass/components/_user_profiles.scss */
+/* line 21, ../sass/components/_user_profiles.scss */
 .user-profile-display-contact-info .content, BODY.page-user .pane-ao-user-profile-contact-info .content {
   display: table;
 }
-/* line 24, ../sass/components/_user_profiles.scss */
+/* line 23, ../sass/components/_user_profiles.scss */
 .user-profile-display-contact-info .content .field, BODY.page-user .pane-ao-user-profile-contact-info .content .field {
   display: table-row;
 }
-/* line 27, ../sass/components/_user_profiles.scss */
+/* line 26, ../sass/components/_user_profiles.scss */
 .user-profile-display-contact-info .content .field-label, BODY.page-user .pane-ao-user-profile-contact-info .content .field-label,
 .user-profile-display-contact-info .content .field-items,
 BODY.page-user .pane-ao-user-profile-contact-info .content .field-items {
   display: table-cell;
 }
-/* line 31, ../sass/components/_user_profiles.scss */
+/* line 30, ../sass/components/_user_profiles.scss */
 .user-profile-display-contact-info .content .field-label, BODY.page-user .pane-ao-user-profile-contact-info .content .field-label {
   padding-right: .2em;
   font-weight: normal;
 }
 
 /* for panels that do not include titles */
-/* line 40, ../sass/components/_user_profiles.scss */
+/* line 39, ../sass/components/_user_profiles.scss */
 .user-profile-pane-no-title H2, BODY.page-user .pane-user-picture H2, .user-profile-pane-no-title H3, BODY.page-user .pane-user-picture H3 {
   display: none;
 }
 
 /* for DL lists in the profile */
-/* line 46, ../sass/components/_user_profiles.scss */
+/* line 45, ../sass/components/_user_profiles.scss */
 .user-dl, BODY.page-user DL {
   margin: .5em 0em;
   display: table;
 }
-/* line 49, ../sass/components/_user_profiles.scss */
+/* line 48, ../sass/components/_user_profiles.scss */
 .user-dl DT, BODY.page-user DL DT {
   display: table-cell;
   padding-right: .3em;
 }
-/* line 53, ../sass/components/_user_profiles.scss */
+/* line 52, ../sass/components/_user_profiles.scss */
 .user-dl DD, BODY.page-user DL DD {
   display: table-cell;
 }
 
-/* TODO: move to theme */
-/* line 65, ../sass/components/_user_profiles.scss */
-BODY.page-user .pane-user-picture {
+/* controls the display of user profile data */
+/* line 58, ../sass/components/_user_profiles.scss */
+.ao-up-summary-data, .user-profile-summary-data {
+  border: 1px solid #CCC;
+  display: table;
+  width: 100%;
+  margin-bottom: 1em;
+}
+/* line 64, ../sass/components/_user_profiles.scss */
+.ao-up-summary-data .user-profile-summary-data-row, .user-profile-summary-data .user-profile-summary-data-row {
+  display: table-row;
+  width: 100%;
+}
+/* line 69, ../sass/components/_user_profiles.scss */
+.ao-up-summary-data .user-profile-summary-data-item, .user-profile-summary-data .user-profile-summary-data-item {
+  display: table-cell;
+}
+/* line 71, ../sass/components/_user_profiles.scss */
+.ao-up-summary-data .user-profile-summary-data-item .udpi-label, .user-profile-summary-data .user-profile-summary-data-item .udpi-label, .ao-up-summary-data .user-profile-summary-data-item .udpi-data-item, .user-profile-summary-data .user-profile-summary-data-item .udpi-data-item {
   text-align: center;
 }
+/* line 74, ../sass/components/_user_profiles.scss */
+.ao-up-summary-data .user-profile-summary-data-item .udpi-label, .user-profile-summary-data .user-profile-summary-data-item .udpi-label {
+  font-size: 0.8em;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+/* line 79, ../sass/components/_user_profiles.scss */
+.ao-up-summary-data .user-profile-summary-data-item .udpi-data-item, .user-profile-summary-data .user-profile-summary-data-item .udpi-data-item {
+  font-size: 1.2em;
+  font-weight: 700;
+  padding: .4em 0em;
+}
 
+/* for profile entry forms */
+/* line 89, ../sass/components/_user_profiles.scss */
+.ao-profile-entry-form, BODY.page-user-user-profile FORM#crm-core-profile-entry-form {
+  border: 1px solid #CCC;
+  padding: 1em;
+}
+
+/* move to theme */
 /**
  * @file
  * Print styling
@@ -2243,120 +2798,13 @@ section#main-navigation {
   font-weight: 400;
 }
 
-/* FRONTPAGE */
-/* move to theme */
-/* FORMS */
-/* applies styles to forms in the second sidebar */
-/* controls the display of the CRM Core menu in the header */
-/* line 52, ../sass/themes/_basic_display.scss */
-#block-menu-crm-core-menu {
-  margin: 0em;
-  position: absolute;
-  bottom: -20px;
-  right: 0em;
-}
-/* line 58, ../sass/themes/_basic_display.scss */
-#block-menu-crm-core-menu H2.block-title {
-  font-size: 16px;
-  padding: 0.5em 1.5em;
-  display: inline-block;
-  cursor: pointer;
-  -moz-border-radius: 0.5em;
-  -webkit-border-radius: 0.5em;
-  border-radius: 0.5em;
-  *zoom: 1;
-  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF00B0F3', endColorstr='#FF00668D');
-  background-color: #00b0f3;
-  border: 0;
-  color: white;
-  font-size: 16px;
-  padding: 0.25em 1em;
-  display: inline-block;
-  cursor: pointer;
-  -moz-border-radius: 0.5em;
-  -webkit-border-radius: 0.5em;
-  border-radius: 0.5em;
-  font-weight: normal;
-}
-/* line 15, ../../../../../../../../Users/mhaggerty/.rvm/gems/ruby-2.1.0/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
-#block-menu-crm-core-menu H2.block-title:hover {
-  text-decoration: none;
-}
-/* line 42, ../../../../../../../../Users/mhaggerty/.rvm/gems/ruby-2.1.0/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
-#block-menu-crm-core-menu H2.block-title:hover {
-  background-color: #009ed9;
-}
-/* line 44, ../../../../../../../../Users/mhaggerty/.rvm/gems/ruby-2.1.0/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
-#block-menu-crm-core-menu H2.block-title:active {
-  background-color: #0092ca;
-}
-/* line 6, ../../../../../../../../Users/mhaggerty/.rvm/gems/ruby-2.1.0/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
-#block-menu-crm-core-menu H2.block-title.disabled, #block-menu-crm-core-menu H2.block-title[disabled] {
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
-  opacity: 0.6;
-  background: false;
-  cursor: default;
-  -moz-box-shadow: none;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-}
-/* line 74, ../../../../../../../../Users/mhaggerty/.rvm/gems/ruby-2.1.0/gems/sassy-buttons-0.2.6/stylesheets/_sassy-buttons.sass */
-#block-menu-crm-core-menu H2.block-title::-moz-focus-inner {
-  padding: 0 !important;
-  margin: -1px !important;
-}
-/* line 64, ../sass/themes/_basic_display.scss */
-#block-menu-crm-core-menu UL.menu {
-  display: none;
-}
-/* line 70, ../sass/themes/_basic_display.scss */
-#block-menu-crm-core-menu:hover H2.block-title {
-  -moz-border-radius: 0.5em 0.5em 0em 0em;
-  -webkit-border-radius: 0.5em;
-  border-radius: 0.5em 0.5em 0em 0em;
-}
-/* line 74, ../sass/themes/_basic_display.scss */
-#block-menu-crm-core-menu:hover UL.menu {
-  display: block;
-  position: absolute;
-  top: 38px;
-  right: 0px;
-  background-color: #00b0f3;
-  white-space: nowrap;
-  margin: 0em;
-  padding: 0em;
-  min-width: 100%;
-  z-index: 1000;
-  -moz-border-radius: 0em 0em 0.5em 0.5em;
-  -webkit-border-radius: 0em;
-  border-radius: 0em 0em 0.5em 0.5em;
-  overflow: hidden;
-}
-/* line 88, ../sass/themes/_basic_display.scss */
-#block-menu-crm-core-menu:hover UL.menu LI {
-  list-style-type: none;
-  list-style-image: none;
-  margin: 0em;
-  padding: .5em 1em;
-}
-/* line 94, ../sass/themes/_basic_display.scss */
-#block-menu-crm-core-menu:hover UL.menu LI:hover {
-  background-color: #009ed9;
-}
-/* line 98, ../sass/themes/_basic_display.scss */
-#block-menu-crm-core-menu:hover UL.menu LI A {
-  margin: 0em;
-  padding: 0em;
-  text-decoration: none;
-  color: White;
-}
-
-/* line 110, ../sass/themes/_basic_display.scss */
+/* controls the display of the secondary links in the header */
+/* line 37, ../sass/themes/_basic_display.scss */
 .header__secondary-menu .inline LI {
   margin: 0em;
   padding: 0em;
 }
-/* line 113, ../sass/themes/_basic_display.scss */
+/* line 40, ../sass/themes/_basic_display.scss */
 .header__secondary-menu .inline LI A {
   font-size: 13.28px;
   padding: 0.5em 1.5em;
@@ -2406,3 +2854,358 @@ section#main-navigation {
   padding: 0 !important;
   margin: -1px !important;
 }
+
+/* controls the display of the CRM Core menu in the header */
+/* line 50, ../sass/_mixins.scss */
+#block-menu-crm-core-menu H2.pane-title,
+#block-menu-crm-core-menu H2.block-title {
+  font-size: 16px;
+  padding: 0.5em 1.5em;
+  display: inline-block;
+  cursor: pointer;
+  -moz-border-radius: 0.5em;
+  -webkit-border-radius: 0.5em;
+  border-radius: 0.5em;
+  *zoom: 1;
+  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF00B0F3', endColorstr='#FF00668D');
+  background-color: #00b0f3;
+  border: 0;
+  color: white;
+  font-size: 16px;
+  padding: 0.25em 1em;
+  display: inline-block;
+  cursor: pointer;
+  -moz-border-radius: 0.5em;
+  -webkit-border-radius: 0.5em;
+  border-radius: 0.5em;
+  font-weight: normal;
+}
+/* line 15, ../../../../../../../../Users/mhaggerty/.rvm/gems/ruby-2.1.0/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
+#block-menu-crm-core-menu H2.pane-title:hover,
+#block-menu-crm-core-menu H2.block-title:hover {
+  text-decoration: none;
+}
+/* line 42, ../../../../../../../../Users/mhaggerty/.rvm/gems/ruby-2.1.0/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
+#block-menu-crm-core-menu H2.pane-title:hover,
+#block-menu-crm-core-menu H2.block-title:hover {
+  background-color: #009ed9;
+}
+/* line 44, ../../../../../../../../Users/mhaggerty/.rvm/gems/ruby-2.1.0/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
+#block-menu-crm-core-menu H2.pane-title:active,
+#block-menu-crm-core-menu H2.block-title:active {
+  background-color: #0092ca;
+}
+/* line 6, ../../../../../../../../Users/mhaggerty/.rvm/gems/ruby-2.1.0/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
+#block-menu-crm-core-menu H2.pane-title.disabled, #block-menu-crm-core-menu H2.pane-title[disabled],
+#block-menu-crm-core-menu H2.block-title.disabled,
+#block-menu-crm-core-menu H2.block-title[disabled] {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
+  opacity: 0.6;
+  background: false;
+  cursor: default;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+/* line 74, ../../../../../../../../Users/mhaggerty/.rvm/gems/ruby-2.1.0/gems/sassy-buttons-0.2.6/stylesheets/_sassy-buttons.sass */
+#block-menu-crm-core-menu H2.pane-title::-moz-focus-inner,
+#block-menu-crm-core-menu H2.block-title::-moz-focus-inner {
+  padding: 0 !important;
+  margin: -1px !important;
+}
+/* line 56, ../sass/_mixins.scss */
+#block-menu-crm-core-menu UL.menu {
+  display: none;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -moz-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+}
+/* line 63, ../sass/_mixins.scss */
+#block-menu-crm-core-menu:hover H2.pane-title,
+#block-menu-crm-core-menu:hover H2.block-title {
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -moz-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+  -moz-border-radius: 0.5em 0.5em 0em 0em;
+  -webkit-border-radius: 0.5em;
+  border-radius: 0.5em 0.5em 0em 0em;
+}
+/* line 70, ../sass/_mixins.scss */
+#block-menu-crm-core-menu:hover UL.menu {
+  display: block;
+  position: absolute;
+  top: 35.2px;
+  right: 0px;
+  background-color: #00b0f3;
+  white-space: nowrap;
+  margin: 0em;
+  padding: 0em;
+  overflow: hidden;
+  z-index: 1000;
+  -moz-border-radius: 0em 0em 0.5em 0.5em;
+  -webkit-border-radius: 0em;
+  border-radius: 0em 0em 0.5em 0.5em;
+  min-width: 100%;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -moz-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+}
+/* line 87, ../sass/_mixins.scss */
+#block-menu-crm-core-menu:hover UL.menu LI {
+  list-style-type: none;
+  list-style-image: none;
+  margin: 0em;
+  padding: .5em 1em;
+  font-size: 16px;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -moz-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+}
+/* line 96, ../sass/_mixins.scss */
+#block-menu-crm-core-menu:hover UL.menu LI:hover {
+  background-color: #009ed9;
+}
+/* line 99, ../sass/_mixins.scss */
+#block-menu-crm-core-menu:hover UL.menu LI A {
+  margin: 0em;
+  padding: 0em;
+  text-decoration: none;
+  color: white;
+}
+
+/* controls the display of thumbnails */
+/* line 52, ../sass/themes/_basic_display.scss */
+nav.breadcrumb {
+  padding: .5em 0em 0em;
+  font-size: 0.9em;
+}
+
+/* FRONTPAGE */
+/* move to theme */
+/* FORMS */
+/* applies styles to forms in the second sidebar */
+/* FIRST SIDEBAR LINKS */
+/* USER PROFILE PAGE */
+/* line 85, ../sass/themes/_basic_display.scss */
+BODY.page-user .panel-pane {
+  position: relative;
+}
+
+/* line 89, ../sass/themes/_basic_display.scss */
+.pane-menu-menu-user-profile-links H2 {
+  margin: 0em;
+  float: right;
+  position: absolute;
+  z-index: 999;
+}
+
+/* line 96, ../sass/themes/_basic_display.scss */
+#block-menu-crm-core-menu {
+  margin: 0em;
+  position: absolute;
+  bottom: -20px;
+  right: 0em;
+  z-index: 999;
+}
+
+/* USER PROFILE */
+/* line 110, ../sass/themes/_basic_display.scss */
+BODY.page-user .pane-user-picture {
+  text-align: center;
+}
+
+/* controls the display of the edit links in user profile */
+/* line 50, ../sass/_mixins.scss */
+BODY.page-user .pane-menu-menu-user-profile-links H2.pane-title,
+BODY.page-user .pane-menu-menu-user-profile-links H2.block-title {
+  font-size: 13.28px;
+  padding: 0.5em 1.5em;
+  display: inline-block;
+  cursor: pointer;
+  -moz-border-radius: 0.5em;
+  -webkit-border-radius: 0.5em;
+  border-radius: 0.5em;
+  *zoom: 1;
+  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF00B0F3', endColorstr='#FF00668D');
+  background-color: #00b0f3;
+  border: 0;
+  color: white;
+  font-size: 13.28px;
+  padding: 0.25em 1em;
+  display: inline-block;
+  cursor: pointer;
+  -moz-border-radius: 0.5em;
+  -webkit-border-radius: 0.5em;
+  border-radius: 0.5em;
+  font-weight: normal;
+}
+/* line 15, ../../../../../../../../Users/mhaggerty/.rvm/gems/ruby-2.1.0/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
+BODY.page-user .pane-menu-menu-user-profile-links H2.pane-title:hover,
+BODY.page-user .pane-menu-menu-user-profile-links H2.block-title:hover {
+  text-decoration: none;
+}
+/* line 42, ../../../../../../../../Users/mhaggerty/.rvm/gems/ruby-2.1.0/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
+BODY.page-user .pane-menu-menu-user-profile-links H2.pane-title:hover,
+BODY.page-user .pane-menu-menu-user-profile-links H2.block-title:hover {
+  background-color: #009ed9;
+}
+/* line 44, ../../../../../../../../Users/mhaggerty/.rvm/gems/ruby-2.1.0/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
+BODY.page-user .pane-menu-menu-user-profile-links H2.pane-title:active,
+BODY.page-user .pane-menu-menu-user-profile-links H2.block-title:active {
+  background-color: #0092ca;
+}
+/* line 6, ../../../../../../../../Users/mhaggerty/.rvm/gems/ruby-2.1.0/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
+BODY.page-user .pane-menu-menu-user-profile-links H2.pane-title.disabled, BODY.page-user .pane-menu-menu-user-profile-links H2.pane-title[disabled],
+BODY.page-user .pane-menu-menu-user-profile-links H2.block-title.disabled,
+BODY.page-user .pane-menu-menu-user-profile-links H2.block-title[disabled] {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
+  opacity: 0.6;
+  background: false;
+  cursor: default;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+/* line 74, ../../../../../../../../Users/mhaggerty/.rvm/gems/ruby-2.1.0/gems/sassy-buttons-0.2.6/stylesheets/_sassy-buttons.sass */
+BODY.page-user .pane-menu-menu-user-profile-links H2.pane-title::-moz-focus-inner,
+BODY.page-user .pane-menu-menu-user-profile-links H2.block-title::-moz-focus-inner {
+  padding: 0 !important;
+  margin: -1px !important;
+}
+/* line 56, ../sass/_mixins.scss */
+BODY.page-user .pane-menu-menu-user-profile-links UL.menu {
+  display: none;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -moz-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+}
+/* line 63, ../sass/_mixins.scss */
+BODY.page-user .pane-menu-menu-user-profile-links:hover H2.pane-title,
+BODY.page-user .pane-menu-menu-user-profile-links:hover H2.block-title {
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -moz-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+  -moz-border-radius: 0.5em 0.5em 0em 0em;
+  -webkit-border-radius: 0.5em;
+  border-radius: 0.5em 0.5em 0em 0em;
+}
+/* line 70, ../sass/_mixins.scss */
+BODY.page-user .pane-menu-menu-user-profile-links:hover UL.menu {
+  display: block;
+  position: absolute;
+  top: 29.216px;
+  right: 0px;
+  background-color: #00b0f3;
+  white-space: nowrap;
+  margin: 0em;
+  padding: 0em;
+  overflow: hidden;
+  z-index: 1000;
+  -moz-border-radius: 0em 0em 0.5em 0.5em;
+  -webkit-border-radius: 0em;
+  border-radius: 0em 0em 0.5em 0.5em;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -moz-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+}
+/* line 87, ../sass/_mixins.scss */
+BODY.page-user .pane-menu-menu-user-profile-links:hover UL.menu LI {
+  list-style-type: none;
+  list-style-image: none;
+  margin: 0em;
+  padding: .5em 1em;
+  font-size: 13.28px;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -moz-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+}
+/* line 96, ../sass/_mixins.scss */
+BODY.page-user .pane-menu-menu-user-profile-links:hover UL.menu LI:hover {
+  background-color: #009ed9;
+}
+/* line 99, ../sass/_mixins.scss */
+BODY.page-user .pane-menu-menu-user-profile-links:hover UL.menu LI A {
+  margin: 0em;
+  padding: 0em;
+  text-decoration: none;
+  color: white;
+}
+/* line 124, ../sass/themes/_basic_display.scss */
+BODY.page-user .pane-menu-menu-user-profile-links H2 {
+  font-size: 13.28px;
+}
+
+/* user summary data */
+/* user profiles, with data they can edit */

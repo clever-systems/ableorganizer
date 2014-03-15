@@ -5,7 +5,7 @@
  * Defines the appearance of buttons used throughout the system
  */
 .btn {
-
+  @include sassy-button("flat", .5em, $h5-font-size, $ao_blue, $ao_blue2, $gray-1, "Raised");
 } 
 .btn-small {
 
@@ -23,7 +23,28 @@
 
 } 
  
- 
+.btn-form-actions {
+  
+  input[type=submit] {
+    margin-right: .3em;
+    
+    @include sassy-button("flat", .5em, $h4-font-size, #e1e1e1, $ao_blue2, Black, "Raised");
+    
+    &#edit-delete {
+      @include sassy-button("flat", .5em, $h4-font-size, $base-red, $base-red, White, "Raised");
+    }
+    
+    &#edit-preview {
+      @include sassy-button("flat", .5em, $h4-font-size, $ao_blue, $ao_blue2, White, "Raised");
+    }
+    
+    &#edit-submit {
+      @include sassy-button("flat", .5em, $h4-font-size, $base-green, $ao_blue2, White, "Raised");
+    }
+    
+  }
+  
+}
 
 /* makes a link into a button to appear as part of a view */
 .header-button {
@@ -54,3 +75,10 @@
   }
 } 
 /* TODO: move to theme */
+section#main div#content {
+  div.form-actions {
+    @extend .btn-form-actions;  
+  }
+}
+
+

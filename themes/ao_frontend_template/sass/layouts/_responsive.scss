@@ -200,12 +200,12 @@ section#below-content-three {
   .sidebar-first {
     /* Span 4 columns, starting in 2nd column from left. */
     #content {
-      @include zen-grid-item(5, 3);
+      @include zen-grid-item(6, 2);
     }
 
     /* Span 1 column, starting in 1st column from left. */
     .region-sidebar-first {
-      @include zen-grid-item(2, 1);
+      @include zen-grid-item(1, 1);
     }
   }
 
@@ -230,12 +230,12 @@ section#below-content-three {
   .two-sidebars {
     /* Span 3 columns, starting in 2nd column from left. */
     #content {
-      @include zen-grid-item(5, 3);
+      @include zen-grid-item(4, 2);
     }
 
     /* Span 1 column, starting in 1st column from left. */
     .region-sidebar-first {
-      @include zen-grid-item(2, 1);
+      @include zen-grid-item(1, 1);
     }
 
     /* Span 1 column, starting in 5th column from left. */

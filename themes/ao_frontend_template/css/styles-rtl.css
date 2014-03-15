@@ -4,6 +4,17 @@
  */
 /* Import Sass mixins, variables, Compass modules, etc. */
 /* grays */
+/**
+ * turns a block or a panel page containing a menu into a drop down
+ *
+ * $border-radius - Valid border radius value. Should be a single value.
+ * $font-size - the size of the font for the button.
+ * $base-color - valid color for the button and the background of the menu.
+ * $secondary-color - valid color for the button and the background of the menu when hovered.
+ * $option-color - The color of links in the button.
+ * $option-font-size - The font size of links in the menu.
+ * $option-width - 'full' to make the menu expand to the width of the container. Use an empty string for auto width.
+ **/
 /* HTML element (SMACSS base) rules */
 /**
  * @file
@@ -190,16 +201,16 @@ ul {
   /* line 202, ../sass/layouts/_responsive.scss */
   .sidebar-first #content {
     float: right;
-    width: 71.42857%;
-    margin-right: 28.57143%;
+    width: 85.71429%;
+    margin-right: 14.28571%;
     margin-left: -100%;
   }
   /* line 207, ../sass/layouts/_responsive.scss */
   .sidebar-first .region-sidebar-first {
     float: right;
-    width: 28.57143%;
+    width: 14.28571%;
     margin-right: 0%;
-    margin-left: -28.57143%;
+    margin-left: -14.28571%;
   }
 
   /**
@@ -237,16 +248,16 @@ ul {
   /* line 232, ../sass/layouts/_responsive.scss */
   .two-sidebars #content {
     float: right;
-    width: 71.42857%;
-    margin-right: 28.57143%;
-    margin-left: -100%;
+    width: 57.14286%;
+    margin-right: 14.28571%;
+    margin-left: -71.42857%;
   }
   /* line 237, ../sass/layouts/_responsive.scss */
   .two-sidebars .region-sidebar-first {
     float: right;
-    width: 28.57143%;
+    width: 14.28571%;
     margin-right: 0%;
-    margin-left: -28.57143%;
+    margin-left: -14.28571%;
   }
   /* line 242, ../sass/layouts/_responsive.scss */
   .two-sidebars .region-sidebar-second {

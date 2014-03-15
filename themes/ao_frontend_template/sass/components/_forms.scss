@@ -4,9 +4,168 @@
  *
  * Defines the appearance of forms in the front end
  */
+
+/* forms appearing in the main content region */
+.ao-main-content-form {
+  .form-item {
+    margin: 0em 0em .5em;
+    
+    &.form-type-name-element {
+      .name-credentials-wrapper {
+        width: 10%;
+      }
+      div[class*='name-'] {
+        margin-right: .3em;
+        display: inline-block;
+        vertical-align: top;
+    
+        INPUT[type=text] {
+          width: 100%;
+        }
+        &:last-child {
+          margin-right: 0em;
+        }
+      }
+    }
+  }
+  .container-inline-date {
+    .date-padding {
+      padding: 0em;
+    }
+  }
+
+  .fieldset-legend,
+  LABEL,
+  LABEL.compact-form-label {
+    color: $gray-2;
+    font-weight: normal;
+  }
+  fieldset {
+    padding: 0em;
+    margin: 0em;
+    border: 0px;
+  }
+  INPUT[type=text] {
+    width: 95%;
+    display: inline-block;
+  }
+  
+  .form-required {
+    display: inline-block;
+  }
+  SELECT {
+    width: 100%;
+  }
+  
+  /* phone numbers */
+  .form-phone-number > DIV {
+    input[type=text]{
+      width: auto;
+    }
+    &:first-child {
+      width: 65%;
+    }
+    &:last-child {
+      width: 25%;
+    }
+  }
  
+ /* address fields */
+ .field-type-addressfield {
+  .fieldset-wrapper {
+    .addressfield-container-inline {
+      DIV[class*="locality"] {
+        width: 40%;
+        display: inline-block;
+        vertical-align: top;
+        margin-right: 0em;
+      }
+      DIV[class*="administrative-area"] {
+        width: 20%;
+        display: inline-block;
+        vertical-align: top;
+        margin-right: 0.5em;
+      }
+      DIV[class*="postal-code"] {
+        width: 30%;
+        display: inline-block;
+        vertical-align: top;
+        margin-right: 0.25em;
+      }
+    }
+  }
+ }
+ 
+  /* shopping carts */
+  /* item display */
+  caption, div.caption {
+    display: none;
+  }
+  #edit-cart-wrapper {
+    margin-bottom: 0.5em;
+  }
+  TABLE {
+    margin-bottom: 0em;
+    width: 100%;
+    TH {
+      white-space: nowrap;
+    }
+    DIV[class*="form-item-cart"] {
+      width: 2em;
+      margin: 0em auto;
+      padding: 0em;
+    }
+    DIV[id*="-total"] {
+      text-align: center;
+    }
+  }
+
+  /* cart summary */
+  .cart-summary {
+    .cart-summary-total {
+      text-align: center;
+      .cart-summary-total-value {
+        font-weight: 700;
+      }
+    }
+  }
+  /* amounts */
+  .amounts {
+    margin-bottom: 0.5em;
+  }
+
+}
+
+/* node forms */
+.ao-node-form {
+  border: 1px solid #CCC;
+  padding: 1em;
+  margin-bottom: 1em;
+  
+  .cke {
+    .cke_inner {
+      .cke_wysiwyg_frame {
+        padding: 0em .5em;
+        box-sizing: border-box;
+      }
+    }
+  }
+  
+  .wysiwyg-toggle-wrapper {
+    padding: 0em;
+  }
+  
+  .vertical-tabs {
+    .vertical-tabs-panes {
+      FIELDSET.vertical-tabs-pane {
+        padding: 1em !important;
+      }
+    }
+  }
+}
+
 /* forms appearing in the right hand region */
-.form-sidebar-2-display {
+.ao-sidebar-2-form {
   .form-item {
     margin: 0em 0em .5em;
   }
@@ -112,4 +271,78 @@
   }
 
 }
+
+.ao-filter-wrapper {
+  background-color: #f1f1f1;
+  @include border-radius(1em);
+  .form-item LABEL {
+    display: block;
+    font-size: $h5-font-size;
+  }
+  .filter-help {
+    padding-top: 0.5em;
+    font-size: $h5-font-size;
+  }
+  .ao-input-format-select {
+    margin-right: .3em;
+    @include sassy-button("flat", .5em, $h5-font-size, #CCC, $ao_blue2, White, "Raised");
+  }
+  .form-type-select SELECT {
+    display: none;
+  }
+  .filter-guidelines {
+    display: none;
+  }
+}
+
+.aoFormatBubble {
+  width: 240px;
+  font-size: $h6-font-size;
+  line-height: $h6-font-size*1.5;
+  @include border-radius(8px);
+  color: White;
+  background-color: $ao_blue;
+  padding: 0.5em 0.8em;
+  
+  H3 {
+    display: block;
+    text-align: center;
+    margin: 0em;
+  }
+  
+  UL {
+    margin: 0em;
+    padding: 0em;
+    LI {
+      list-style-type: none;
+    }
+  }
+  
+  &:after {
+    position: absolute;
+    display: block;
+    top: 100%;
+    left: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    pointer-events: none;    
+    border-top-color: $ao_blue;
+    border-width: 15px;
+    margin-left: -15px;    
+  }
+  
+}
+
  
+/* move to theme */
+
+FORM.node-form {
+  @extend .ao-node-form;
+}
+
+FIELDSET.filter-wrapper {
+  @extend .ao-filter-wrapper;
+}
+
