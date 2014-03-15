@@ -31,6 +31,12 @@ projects[context][version] = 3.1
 projects[context][subdir] = "contrib"
 projects[strongarm][version] = 2.0
 projects[strongarm][subdir] = "contrib"
+projects[menu_token][version] = 1.0-beta5
+projects[menu_token][subdir] = "contrib"
+projects[entity_view_mode][version] = "1.0-rc1"
+projects[entity_view_mode][subdir] = "contrib"
+
+; administration
 projects[admin_menu][version] = 3.0-rc4
 projects[admin_menu][subdir] = "contrib"
 
