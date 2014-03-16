@@ -17,6 +17,33 @@ function ao_ctools_plugin_directory($owner, $plugin_type) {
 }
 
 /**
+ * Implements hook_menu().
+ */
+function ao_menu() {
+  $items = array();
+
+  
+  // callback for view modes in user access wrapper
+  $items['ao/view_name/autocomplete'] = array(
+    'page callback' => 'ao_select_view_title_ajax_callback',
+    'file' => 'includes/ao_view_info.inc',
+    'type' => MENU_CALLBACK,
+    'access arguments' => array('Use Panels Dashboard'),
+  );
+
+  // callback for view modes in user access wrapper
+  $items['ao/view_mode/autocomplete'] = array(
+    'page callback' => 'ao_select_view_mode_ajax_callback',
+    'file' => 'includes/ao_view_info.inc',
+    'type' => MENU_CALLBACK,
+    'access arguments' => array('Use Panels Dashboard'),
+  );
+
+  return $items;
+}
+
+
+/**
  * Implements hook_form_alter().
  */
 function ao_form_alter(&$form, &$form_state, $form_id) {
@@ -117,3 +144,7 @@ function ao_views_default_views_alter(&$views) {
     $views['crm_activities_by_contact']->disabled = TRUE;
   }
 }
+
+
+
+
