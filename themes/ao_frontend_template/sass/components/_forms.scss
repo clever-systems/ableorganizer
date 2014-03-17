@@ -7,9 +7,63 @@
 
 /* forms appearing in the main content region */
 .ao-main-content-form {
+  
+  /* make descriptiosn fancy */
+  .description {
+    margin-bottom: 1em;
+    font-style: italic;
+  }
+  
+  /* keep textareas operating as a single unit */
+  /* give them margins on the bottom of the container */
+  .field-type-text-textarea,
+  .field-type-text-with-summary {
+    margin: 0.5em 0em;
+  }
+  
+  .form-field-type-datestamp,
+  .form-field-type-datetime {
+  
+    .date-float {
+      display: block;
+      float: none;
+    }
+  
+    .container-inline-date {
+      display: inline-block;
+      vertical-align: top;
+      width: auto;
+      
+      &.end-date-wrapper {
+        LABEL {
+          display: inline-block;
+          vertical-align: top;
+          margin-right: .5em;
+        }
+        > .form-item > LABEL:first-child {
+          font-weight: 700;
+        }
+        
+        
+        .date-padding {
+          display: inline-block;
+          float: none;
+        }
+      }
+      
+    }
+  }
+  
+
   .form-item {
     margin: 0em 0em .5em;
+
+    /* remove some of the funk around textareas */
+    &.form-type-textarea {
+      margin: 0em;
+    }
     
+    /* make name fields more paletable */
     &.form-type-name-element {
       .name-credentials-wrapper {
         width: 10%;
@@ -39,6 +93,7 @@
   LABEL.compact-form-label {
     color: $gray-2;
     font-weight: normal;
+    margin-bottom: .3em;
   }
   fieldset {
     padding: 0em;
@@ -56,6 +111,13 @@
   SELECT {
     width: 100%;
   }
+  
+  /* things to hide by default */
+  .text-format-wrapper div.description {
+    display: none;
+  }
+  
+  
   
   /* phone numbers */
   .form-phone-number > DIV {
@@ -153,6 +215,15 @@
   
   .wysiwyg-toggle-wrapper {
     padding: 0em;
+    background-color: #BaC5D1;
+    text-align: center;
+    font-weight: 700;
+    A {
+      color: White;
+      background-color: #9aA5B1;
+      padding: .3em .6em;
+      cursor: pointer;
+    }
   }
   
   .vertical-tabs {
@@ -168,6 +239,7 @@
 .ao-sidebar-2-form {
   .form-item {
     margin: 0em 0em .5em;
+    
   }
   LABEL,
   LABEL.compact-form-label {
@@ -271,13 +343,18 @@
   }
 
 }
-
+/* input formats */
+/* TODO: make this a mix-in */
 .ao-filter-wrapper {
-  background-color: #f1f1f1;
-  @include border-radius(1em);
-  .form-item LABEL {
-    display: block;
-    font-size: $h5-font-size;
+  background-color: #F5F1E9;
+  margin-bottom: 1em;
+  @include border-radius(0em 0em 1em 1em);
+  .form-item {
+    margin: 0em;
+    LABEL {
+      display: block;
+      font-size: $h5-font-size;
+    }
   }
   .filter-help {
     padding-top: 0.5em;
@@ -285,7 +362,7 @@
   }
   .ao-input-format-select {
     margin-right: .3em;
-    @include sassy-button("flat", .5em, $h5-font-size, #CCC, $ao_blue2, White, "Raised");
+    @include sassy-button("flat", .5em, $h5-font-size, #9aA5B1, $ao_blue2, White, "Raised");
   }
   .form-type-select SELECT {
     display: none;
@@ -295,6 +372,7 @@
   }
 }
 
+.aoCallout,
 .aoFormatBubble {
   width: 240px;
   font-size: $h6-font-size;
@@ -303,6 +381,8 @@
   color: White;
   background-color: $ao_blue;
   padding: 0.5em 0.8em;
+  position: absolute;
+  display: block;
   
   H3 {
     display: block;
@@ -335,7 +415,26 @@
   
 }
 
- 
+/* controls the appearance of help overlays */
+.ao-field-help {
+  font-size: $h6-font-size;
+  line-height: $h6-font-size;
+  font-weight: 700;
+  background-color: #BaC5D1;
+  padding: .5em;
+  display: inline-block;
+  vertial-align: bottom;
+  @include border-radius(50%);
+  color: White;
+  cursor: pointer;
+  margin-top: -1em;
+  margin-left: .5em;
+  .ao-show-help {
+    display: none;
+  }
+}
+
+
 /* move to theme */
 
 FORM.node-form {

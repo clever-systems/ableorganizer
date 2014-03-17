@@ -1,0 +1,25 @@
+/**
+ * @file
+ * Menus
+ *
+ * Defines the appearance of menus used in the theme
+ */
+ 
+.ao-menu-links {
+  
+  H2 {
+    font-size: 1.2em;
+  }
+  UL.menu {
+    margin: 0em;
+    padding: 0em;
+    font-size: 0.9em;
+    LI {
+      list-style-type: none;
+      list-style-image: none;
+      margin: 0em;
+      padding: 0em;
+    }
+  }
+}
+ 

@@ -2184,6 +2184,10 @@ section#below-content-three .section-wrapper {
 /* forms appearing in the main content region */
 /* line 9, ../sass/components/_forms.scss */
 .ao-main-content-form, section#main FORM {
+  /* make descriptiosn fancy */
+  /* keep textareas operating as a single unit */
+  /* give them margins on the bottom of the container */
+  /* things to hide by default */
   /* phone numbers */
   /* address fields */
   /* shopping carts */
@@ -2191,33 +2195,86 @@ section#below-content-three .section-wrapper {
   /* cart summary */
   /* amounts */
 }
-/* line 10, ../sass/components/_forms.scss */
+/* line 12, ../sass/components/_forms.scss */
+.ao-main-content-form .description, section#main FORM .description {
+  margin-bottom: 1em;
+  font-style: italic;
+}
+/* line 19, ../sass/components/_forms.scss */
+.ao-main-content-form .field-type-text-textarea, section#main FORM .field-type-text-textarea,
+.ao-main-content-form .field-type-text-with-summary,
+section#main FORM .field-type-text-with-summary {
+  margin: 0.5em 0em;
+}
+/* line 27, ../sass/components/_forms.scss */
+.ao-main-content-form .form-field-type-datestamp .date-float, section#main FORM .form-field-type-datestamp .date-float,
+.ao-main-content-form .form-field-type-datetime .date-float,
+section#main FORM .form-field-type-datetime .date-float {
+  display: block;
+  float: none;
+}
+/* line 32, ../sass/components/_forms.scss */
+.ao-main-content-form .form-field-type-datestamp .container-inline-date, section#main FORM .form-field-type-datestamp .container-inline-date,
+.ao-main-content-form .form-field-type-datetime .container-inline-date,
+section#main FORM .form-field-type-datetime .container-inline-date {
+  display: inline-block;
+  vertical-align: top;
+  width: auto;
+}
+/* line 38, ../sass/components/_forms.scss */
+.ao-main-content-form .form-field-type-datestamp .container-inline-date.end-date-wrapper LABEL, section#main FORM .form-field-type-datestamp .container-inline-date.end-date-wrapper LABEL,
+.ao-main-content-form .form-field-type-datetime .container-inline-date.end-date-wrapper LABEL,
+section#main FORM .form-field-type-datetime .container-inline-date.end-date-wrapper LABEL {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: .5em;
+}
+/* line 43, ../sass/components/_forms.scss */
+.ao-main-content-form .form-field-type-datestamp .container-inline-date.end-date-wrapper > .form-item > LABEL:first-child, section#main FORM .form-field-type-datestamp .container-inline-date.end-date-wrapper > .form-item > LABEL:first-child,
+.ao-main-content-form .form-field-type-datetime .container-inline-date.end-date-wrapper > .form-item > LABEL:first-child,
+section#main FORM .form-field-type-datetime .container-inline-date.end-date-wrapper > .form-item > LABEL:first-child {
+  font-weight: 700;
+}
+/* line 48, ../sass/components/_forms.scss */
+.ao-main-content-form .form-field-type-datestamp .container-inline-date.end-date-wrapper .date-padding, section#main FORM .form-field-type-datestamp .container-inline-date.end-date-wrapper .date-padding,
+.ao-main-content-form .form-field-type-datetime .container-inline-date.end-date-wrapper .date-padding,
+section#main FORM .form-field-type-datetime .container-inline-date.end-date-wrapper .date-padding {
+  display: inline-block;
+  float: none;
+}
+/* line 58, ../sass/components/_forms.scss */
 .ao-main-content-form .form-item, section#main FORM .form-item {
   margin: 0em 0em .5em;
+  /* remove some of the funk around textareas */
+  /* make name fields more paletable */
 }
-/* line 14, ../sass/components/_forms.scss */
+/* line 62, ../sass/components/_forms.scss */
+.ao-main-content-form .form-item.form-type-textarea, section#main FORM .form-item.form-type-textarea {
+  margin: 0em;
+}
+/* line 68, ../sass/components/_forms.scss */
 .ao-main-content-form .form-item.form-type-name-element .name-credentials-wrapper, section#main FORM .form-item.form-type-name-element .name-credentials-wrapper {
   width: 10%;
 }
-/* line 17, ../sass/components/_forms.scss */
+/* line 71, ../sass/components/_forms.scss */
 .ao-main-content-form .form-item.form-type-name-element div[class*='name-'], section#main FORM .form-item.form-type-name-element div[class*='name-'] {
   margin-right: .3em;
   display: inline-block;
   vertical-align: top;
 }
-/* line 22, ../sass/components/_forms.scss */
+/* line 76, ../sass/components/_forms.scss */
 .ao-main-content-form .form-item.form-type-name-element div[class*='name-'] INPUT[type=text], section#main FORM .form-item.form-type-name-element div[class*='name-'] INPUT[type=text] {
   width: 100%;
 }
-/* line 25, ../sass/components/_forms.scss */
+/* line 79, ../sass/components/_forms.scss */
 .ao-main-content-form .form-item.form-type-name-element div[class*='name-']:last-child, section#main FORM .form-item.form-type-name-element div[class*='name-']:last-child {
   margin-right: 0em;
 }
-/* line 32, ../sass/components/_forms.scss */
+/* line 86, ../sass/components/_forms.scss */
 .ao-main-content-form .container-inline-date .date-padding, section#main FORM .container-inline-date .date-padding {
   padding: 0em;
 }
-/* line 37, ../sass/components/_forms.scss */
+/* line 91, ../sass/components/_forms.scss */
 .ao-main-content-form .fieldset-legend, section#main FORM .fieldset-legend,
 .ao-main-content-form LABEL,
 section#main FORM LABEL,
@@ -2225,122 +2282,137 @@ section#main FORM LABEL,
 section#main FORM LABEL.compact-form-label {
   color: #5f656e;
   font-weight: normal;
+  margin-bottom: .3em;
 }
-/* line 43, ../sass/components/_forms.scss */
+/* line 98, ../sass/components/_forms.scss */
 .ao-main-content-form fieldset, section#main FORM fieldset {
   padding: 0em;
   margin: 0em;
   border: 0px;
 }
-/* line 48, ../sass/components/_forms.scss */
+/* line 103, ../sass/components/_forms.scss */
 .ao-main-content-form INPUT[type=text], section#main FORM INPUT[type=text] {
   width: 95%;
   display: inline-block;
 }
-/* line 53, ../sass/components/_forms.scss */
+/* line 108, ../sass/components/_forms.scss */
 .ao-main-content-form .form-required, section#main FORM .form-required {
   display: inline-block;
 }
-/* line 56, ../sass/components/_forms.scss */
+/* line 111, ../sass/components/_forms.scss */
 .ao-main-content-form SELECT, section#main FORM SELECT {
   width: 100%;
 }
-/* line 62, ../sass/components/_forms.scss */
+/* line 116, ../sass/components/_forms.scss */
+.ao-main-content-form .text-format-wrapper div.description, section#main FORM .text-format-wrapper div.description {
+  display: none;
+}
+/* line 124, ../sass/components/_forms.scss */
 .ao-main-content-form .form-phone-number > DIV input[type=text], section#main FORM .form-phone-number > DIV input[type=text] {
   width: auto;
 }
-/* line 65, ../sass/components/_forms.scss */
+/* line 127, ../sass/components/_forms.scss */
 .ao-main-content-form .form-phone-number > DIV:first-child, section#main FORM .form-phone-number > DIV:first-child {
   width: 65%;
 }
-/* line 68, ../sass/components/_forms.scss */
+/* line 130, ../sass/components/_forms.scss */
 .ao-main-content-form .form-phone-number > DIV:last-child, section#main FORM .form-phone-number > DIV:last-child {
   width: 25%;
 }
-/* line 77, ../sass/components/_forms.scss */
+/* line 139, ../sass/components/_forms.scss */
 .ao-main-content-form .field-type-addressfield .fieldset-wrapper .addressfield-container-inline DIV[class*="locality"], section#main FORM .field-type-addressfield .fieldset-wrapper .addressfield-container-inline DIV[class*="locality"] {
   width: 40%;
   display: inline-block;
   vertical-align: top;
   margin-right: 0em;
 }
-/* line 83, ../sass/components/_forms.scss */
+/* line 145, ../sass/components/_forms.scss */
 .ao-main-content-form .field-type-addressfield .fieldset-wrapper .addressfield-container-inline DIV[class*="administrative-area"], section#main FORM .field-type-addressfield .fieldset-wrapper .addressfield-container-inline DIV[class*="administrative-area"] {
   width: 20%;
   display: inline-block;
   vertical-align: top;
   margin-right: 0.5em;
 }
-/* line 89, ../sass/components/_forms.scss */
+/* line 151, ../sass/components/_forms.scss */
 .ao-main-content-form .field-type-addressfield .fieldset-wrapper .addressfield-container-inline DIV[class*="postal-code"], section#main FORM .field-type-addressfield .fieldset-wrapper .addressfield-container-inline DIV[class*="postal-code"] {
   width: 30%;
   display: inline-block;
   vertical-align: top;
   margin-right: 0.25em;
 }
-/* line 101, ../sass/components/_forms.scss */
+/* line 163, ../sass/components/_forms.scss */
 .ao-main-content-form caption, section#main FORM caption, .ao-main-content-form div.caption, section#main FORM div.caption {
   display: none;
 }
-/* line 104, ../sass/components/_forms.scss */
+/* line 166, ../sass/components/_forms.scss */
 .ao-main-content-form #edit-cart-wrapper, section#main FORM #edit-cart-wrapper {
   margin-bottom: 0.5em;
 }
-/* line 107, ../sass/components/_forms.scss */
+/* line 169, ../sass/components/_forms.scss */
 .ao-main-content-form TABLE, section#main FORM TABLE {
   margin-bottom: 0em;
   width: 100%;
 }
-/* line 110, ../sass/components/_forms.scss */
+/* line 172, ../sass/components/_forms.scss */
 .ao-main-content-form TABLE TH, section#main FORM TABLE TH {
   white-space: nowrap;
 }
-/* line 113, ../sass/components/_forms.scss */
+/* line 175, ../sass/components/_forms.scss */
 .ao-main-content-form TABLE DIV[class*="form-item-cart"], section#main FORM TABLE DIV[class*="form-item-cart"] {
   width: 2em;
   margin: 0em auto;
   padding: 0em;
 }
-/* line 118, ../sass/components/_forms.scss */
+/* line 180, ../sass/components/_forms.scss */
 .ao-main-content-form TABLE DIV[id*="-total"], section#main FORM TABLE DIV[id*="-total"] {
   text-align: center;
 }
-/* line 125, ../sass/components/_forms.scss */
+/* line 187, ../sass/components/_forms.scss */
 .ao-main-content-form .cart-summary .cart-summary-total, section#main FORM .cart-summary .cart-summary-total {
   text-align: center;
 }
-/* line 127, ../sass/components/_forms.scss */
+/* line 189, ../sass/components/_forms.scss */
 .ao-main-content-form .cart-summary .cart-summary-total .cart-summary-total-value, section#main FORM .cart-summary .cart-summary-total .cart-summary-total-value {
   font-weight: 700;
 }
-/* line 133, ../sass/components/_forms.scss */
+/* line 195, ../sass/components/_forms.scss */
 .ao-main-content-form .amounts, section#main FORM .amounts {
   margin-bottom: 0.5em;
 }
 
 /* node forms */
-/* line 140, ../sass/components/_forms.scss */
+/* line 202, ../sass/components/_forms.scss */
 .ao-node-form, FORM.node-form {
   border: 1px solid #CCC;
   padding: 1em;
   margin-bottom: 1em;
 }
-/* line 147, ../sass/components/_forms.scss */
+/* line 209, ../sass/components/_forms.scss */
 .ao-node-form .cke .cke_inner .cke_wysiwyg_frame, FORM.node-form .cke .cke_inner .cke_wysiwyg_frame {
   padding: 0em .5em;
   box-sizing: border-box;
 }
-/* line 154, ../sass/components/_forms.scss */
+/* line 216, ../sass/components/_forms.scss */
 .ao-node-form .wysiwyg-toggle-wrapper, FORM.node-form .wysiwyg-toggle-wrapper {
   padding: 0em;
+  background-color: #BaC5D1;
+  text-align: center;
+  font-weight: 700;
 }
-/* line 160, ../sass/components/_forms.scss */
+/* line 221, ../sass/components/_forms.scss */
+.ao-node-form .wysiwyg-toggle-wrapper A, FORM.node-form .wysiwyg-toggle-wrapper A {
+  color: White;
+  background-color: #9aA5B1;
+  padding: .3em .6em;
+  cursor: pointer;
+}
+/* line 231, ../sass/components/_forms.scss */
 .ao-node-form .vertical-tabs .vertical-tabs-panes FIELDSET.vertical-tabs-pane, FORM.node-form .vertical-tabs .vertical-tabs-panes FIELDSET.vertical-tabs-pane {
   padding: 1em !important;
 }
 
 /* forms appearing in the right hand region */
-/* line 168, ../sass/components/_forms.scss */
+/* line 239, ../sass/components/_forms.scss */
 .ao-sidebar-2-form, .region-sidebar-second FORM {
   /* phone numbers */
   /* address fields */
@@ -2349,130 +2421,137 @@ section#main FORM LABEL.compact-form-label {
   /* cart summary */
   /* amounts */
 }
-/* line 169, ../sass/components/_forms.scss */
+/* line 240, ../sass/components/_forms.scss */
 .ao-sidebar-2-form .form-item, .region-sidebar-second FORM .form-item {
   margin: 0em 0em .5em;
 }
-/* line 172, ../sass/components/_forms.scss */
+/* line 244, ../sass/components/_forms.scss */
 .ao-sidebar-2-form LABEL, .region-sidebar-second FORM LABEL,
 .ao-sidebar-2-form LABEL.compact-form-label,
 .region-sidebar-second FORM LABEL.compact-form-label {
   color: #777;
 }
-/* line 176, ../sass/components/_forms.scss */
+/* line 248, ../sass/components/_forms.scss */
 .ao-sidebar-2-form fieldset, .region-sidebar-second FORM fieldset {
   padding: 0em;
   margin: 0em;
   border: 0px;
 }
-/* line 181, ../sass/components/_forms.scss */
+/* line 253, ../sass/components/_forms.scss */
 .ao-sidebar-2-form INPUT[type=text], .region-sidebar-second FORM INPUT[type=text] {
   width: 90%;
   display: inline-block;
 }
-/* line 185, ../sass/components/_forms.scss */
+/* line 257, ../sass/components/_forms.scss */
 .ao-sidebar-2-form .form-required, .region-sidebar-second FORM .form-required {
   display: inline-block;
 }
-/* line 188, ../sass/components/_forms.scss */
+/* line 260, ../sass/components/_forms.scss */
 .ao-sidebar-2-form SELECT, .region-sidebar-second FORM SELECT {
   width: 100%;
 }
-/* line 194, ../sass/components/_forms.scss */
+/* line 266, ../sass/components/_forms.scss */
 .ao-sidebar-2-form .form-phone-number > DIV input[type=text], .region-sidebar-second FORM .form-phone-number > DIV input[type=text] {
   width: auto;
 }
-/* line 197, ../sass/components/_forms.scss */
+/* line 269, ../sass/components/_forms.scss */
 .ao-sidebar-2-form .form-phone-number > DIV:first-child, .region-sidebar-second FORM .form-phone-number > DIV:first-child {
   width: 65%;
 }
-/* line 200, ../sass/components/_forms.scss */
+/* line 272, ../sass/components/_forms.scss */
 .ao-sidebar-2-form .form-phone-number > DIV:last-child, .region-sidebar-second FORM .form-phone-number > DIV:last-child {
   width: 25%;
 }
-/* line 209, ../sass/components/_forms.scss */
+/* line 281, ../sass/components/_forms.scss */
 .ao-sidebar-2-form .field-type-addressfield .fieldset-wrapper .addressfield-container-inline DIV[class*="locality"], .region-sidebar-second FORM .field-type-addressfield .fieldset-wrapper .addressfield-container-inline DIV[class*="locality"] {
   width: 40%;
   display: inline-block;
   vertical-align: top;
   margin-right: 0em;
 }
-/* line 215, ../sass/components/_forms.scss */
+/* line 287, ../sass/components/_forms.scss */
 .ao-sidebar-2-form .field-type-addressfield .fieldset-wrapper .addressfield-container-inline DIV[class*="administrative-area"], .region-sidebar-second FORM .field-type-addressfield .fieldset-wrapper .addressfield-container-inline DIV[class*="administrative-area"] {
   width: 20%;
   display: inline-block;
   vertical-align: top;
   margin-right: 0.5em;
 }
-/* line 221, ../sass/components/_forms.scss */
+/* line 293, ../sass/components/_forms.scss */
 .ao-sidebar-2-form .field-type-addressfield .fieldset-wrapper .addressfield-container-inline DIV[class*="administrative-area"] LABEL, .region-sidebar-second FORM .field-type-addressfield .fieldset-wrapper .addressfield-container-inline DIV[class*="administrative-area"] LABEL {
   display: none;
 }
-/* line 225, ../sass/components/_forms.scss */
+/* line 297, ../sass/components/_forms.scss */
 .ao-sidebar-2-form .field-type-addressfield .fieldset-wrapper .addressfield-container-inline DIV[class*="postal-code"], .region-sidebar-second FORM .field-type-addressfield .fieldset-wrapper .addressfield-container-inline DIV[class*="postal-code"] {
   width: 30%;
   display: inline-block;
   vertical-align: top;
   margin-right: 0.25em;
 }
-/* line 237, ../sass/components/_forms.scss */
+/* line 309, ../sass/components/_forms.scss */
 .ao-sidebar-2-form caption, .region-sidebar-second FORM caption, .ao-sidebar-2-form div.caption, .region-sidebar-second FORM div.caption {
   display: none;
 }
-/* line 240, ../sass/components/_forms.scss */
+/* line 312, ../sass/components/_forms.scss */
 .ao-sidebar-2-form #edit-cart-wrapper, .region-sidebar-second FORM #edit-cart-wrapper {
   margin-bottom: 0.5em;
 }
-/* line 243, ../sass/components/_forms.scss */
+/* line 315, ../sass/components/_forms.scss */
 .ao-sidebar-2-form TABLE, .region-sidebar-second FORM TABLE {
   margin-bottom: 0em;
   width: 100%;
 }
-/* line 246, ../sass/components/_forms.scss */
+/* line 318, ../sass/components/_forms.scss */
 .ao-sidebar-2-form TABLE TH, .region-sidebar-second FORM TABLE TH {
   white-space: nowrap;
 }
-/* line 249, ../sass/components/_forms.scss */
+/* line 321, ../sass/components/_forms.scss */
 .ao-sidebar-2-form TABLE DIV[class*="form-item-cart"], .region-sidebar-second FORM TABLE DIV[class*="form-item-cart"] {
   width: 2em;
   margin: 0em auto;
   padding: 0em;
 }
-/* line 254, ../sass/components/_forms.scss */
+/* line 326, ../sass/components/_forms.scss */
 .ao-sidebar-2-form TABLE DIV[id*="-total"], .region-sidebar-second FORM TABLE DIV[id*="-total"] {
   text-align: center;
 }
-/* line 261, ../sass/components/_forms.scss */
+/* line 333, ../sass/components/_forms.scss */
 .ao-sidebar-2-form .cart-summary .cart-summary-total, .region-sidebar-second FORM .cart-summary .cart-summary-total {
   text-align: center;
 }
-/* line 263, ../sass/components/_forms.scss */
+/* line 335, ../sass/components/_forms.scss */
 .ao-sidebar-2-form .cart-summary .cart-summary-total .cart-summary-total-value, .region-sidebar-second FORM .cart-summary .cart-summary-total .cart-summary-total-value {
   font-weight: 700;
 }
-/* line 269, ../sass/components/_forms.scss */
+/* line 341, ../sass/components/_forms.scss */
 .ao-sidebar-2-form .amounts, .region-sidebar-second FORM .amounts {
   margin-bottom: 0.5em;
 }
 
-/* line 275, ../sass/components/_forms.scss */
+/* input formats */
+/* TODO: make this a mix-in */
+/* line 348, ../sass/components/_forms.scss */
 .ao-filter-wrapper, FIELDSET.filter-wrapper {
-  background-color: #f1f1f1;
-  -moz-border-radius: 1em;
-  -webkit-border-radius: 1em;
-  border-radius: 1em;
+  background-color: #F5F1E9;
+  margin-bottom: 1em;
+  -moz-border-radius: 0em 0em 1em 1em;
+  -webkit-border-radius: 0em;
+  border-radius: 0em 0em 1em 1em;
 }
-/* line 278, ../sass/components/_forms.scss */
+/* line 352, ../sass/components/_forms.scss */
+.ao-filter-wrapper .form-item, FIELDSET.filter-wrapper .form-item {
+  margin: 0em;
+}
+/* line 354, ../sass/components/_forms.scss */
 .ao-filter-wrapper .form-item LABEL, FIELDSET.filter-wrapper .form-item LABEL {
   display: block;
   font-size: 13.28px;
 }
-/* line 282, ../sass/components/_forms.scss */
+/* line 359, ../sass/components/_forms.scss */
 .ao-filter-wrapper .filter-help, FIELDSET.filter-wrapper .filter-help {
   padding-top: 0.5em;
   font-size: 13.28px;
 }
-/* line 286, ../sass/components/_forms.scss */
+/* line 363, ../sass/components/_forms.scss */
 .ao-filter-wrapper .ao-input-format-select, FIELDSET.filter-wrapper .ao-input-format-select {
   margin-right: .3em;
   font-size: 13.28px;
@@ -2483,8 +2562,8 @@ section#main FORM LABEL.compact-form-label {
   -webkit-border-radius: 0.5em;
   border-radius: 0.5em;
   *zoom: 1;
-  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FFCCCCCC', endColorstr='#FF999999');
-  background-color: #cccccc;
+  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF9AA5B1', endColorstr='#FF647281');
+  background-color: #9aa5b1;
   border: 0;
   color: white;
 }
@@ -2494,11 +2573,11 @@ section#main FORM LABEL.compact-form-label {
 }
 /* line 42, ../../../../../../../../Users/mhaggerty/.rvm/gems/ruby-2.1.0/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
 .ao-filter-wrapper .ao-input-format-select:hover, FIELDSET.filter-wrapper .ao-input-format-select:hover {
-  background-color: #bfbfbf;
+  background-color: #8c98a6;
 }
 /* line 44, ../../../../../../../../Users/mhaggerty/.rvm/gems/ruby-2.1.0/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
 .ao-filter-wrapper .ao-input-format-select:active, FIELDSET.filter-wrapper .ao-input-format-select:active {
-  background-color: #b8b8b8;
+  background-color: #83909f;
 }
 /* line 6, ../../../../../../../../Users/mhaggerty/.rvm/gems/ruby-2.1.0/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
 .ao-filter-wrapper .ao-input-format-select.disabled, FIELDSET.filter-wrapper .ao-input-format-select.disabled, .ao-filter-wrapper .ao-input-format-select[disabled], FIELDSET.filter-wrapper .ao-input-format-select[disabled] {
@@ -2515,16 +2594,17 @@ section#main FORM LABEL.compact-form-label {
   padding: 0 !important;
   margin: -1px !important;
 }
-/* line 290, ../sass/components/_forms.scss */
+/* line 367, ../sass/components/_forms.scss */
 .ao-filter-wrapper .form-type-select SELECT, FIELDSET.filter-wrapper .form-type-select SELECT {
   display: none;
 }
-/* line 293, ../sass/components/_forms.scss */
+/* line 370, ../sass/components/_forms.scss */
 .ao-filter-wrapper .filter-guidelines, FIELDSET.filter-wrapper .filter-guidelines {
   display: none;
 }
 
-/* line 298, ../sass/components/_forms.scss */
+/* line 375, ../sass/components/_forms.scss */
+.aoCallout,
 .aoFormatBubble {
   width: 240px;
   font-size: 10.72px;
@@ -2535,23 +2615,29 @@ section#main FORM LABEL.compact-form-label {
   color: White;
   background-color: #00b0f3;
   padding: 0.5em 0.8em;
+  position: absolute;
+  display: block;
 }
-/* line 307, ../sass/components/_forms.scss */
+/* line 387, ../sass/components/_forms.scss */
+.aoCallout H3,
 .aoFormatBubble H3 {
   display: block;
   text-align: center;
   margin: 0em;
 }
-/* line 313, ../sass/components/_forms.scss */
+/* line 393, ../sass/components/_forms.scss */
+.aoCallout UL,
 .aoFormatBubble UL {
   margin: 0em;
   padding: 0em;
 }
-/* line 316, ../sass/components/_forms.scss */
+/* line 396, ../sass/components/_forms.scss */
+.aoCallout UL LI,
 .aoFormatBubble UL LI {
   list-style-type: none;
 }
-/* line 321, ../sass/components/_forms.scss */
+/* line 401, ../sass/components/_forms.scss */
+.aoCallout:after,
 .aoFormatBubble:after {
   position: absolute;
   display: block;
@@ -2565,6 +2651,29 @@ section#main FORM LABEL.compact-form-label {
   border-top-color: #00b0f3;
   border-width: 15px;
   margin-left: -15px;
+}
+
+/* controls the appearance of help overlays */
+/* line 419, ../sass/components/_forms.scss */
+.ao-field-help {
+  font-size: 10.72px;
+  line-height: 10.72px;
+  font-weight: 700;
+  background-color: #BaC5D1;
+  padding: .5em;
+  display: inline-block;
+  vertial-align: bottom;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  color: White;
+  cursor: pointer;
+  margin-top: -1em;
+  margin-left: .5em;
+}
+/* line 432, ../sass/components/_forms.scss */
+.ao-field-help .ao-show-help {
+  display: none;
 }
 
 /* move to theme */
@@ -2673,6 +2782,130 @@ BODY.page-user .pane-ao-user-profile-contact-info .content .field-items {
 }
 
 /* move to theme */
+/**
+ * @file
+ * Displays activities and icons in the system
+ *
+ */
+/* activity feed */
+/* line 17, ../sass/components/_activities.scss */
+.activity-record-pane, .view-ao-crm-activities-by-contact .view-content, .pane-ao-dashboard-act-stream-panel-pane-1 .view-content {
+  border: 1px solid #e1e1e1;
+  background-color: White;
+  padding: 1em;
+  margin: 1em 0em;
+}
+/* line 23, ../sass/components/_activities.scss */
+.activity-record-pane .views-row:last-child .crm-core-activity, .view-ao-crm-activities-by-contact .view-content .views-row:last-child .crm-core-activity, .pane-ao-dashboard-act-stream-panel-pane-1 .view-content .views-row:last-child .crm-core-activity {
+  border-bottom: none;
+}
+
+/* activity in an activity feed */
+/* line 30, ../sass/components/_activities.scss */
+.crm-core-activity {
+  position: relative;
+  padding: 0em 0em .5em;
+  margin: 0em 0em .5em;
+  border-bottom: 1px solid #e1e1e1;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -moz-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+  font-size: 0.95em;
+}
+/* line 40, ../sass/components/_activities.scss */
+.crm-core-activity .crm-core-activity-info {
+  position: relative;
+  margin-left: 3em;
+}
+/* line 43, ../sass/components/_activities.scss */
+.crm-core-activity .crm-core-activity-info .crm-core-activity-actions {
+  float: right;
+}
+/* line 47, ../sass/components/_activities.scss */
+.crm-core-activity .crm-core-activity-icon {
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  left: 0em;
+  top: 4px;
+}
+/* line 54, ../sass/components/_activities.scss */
+.crm-core-activity .crm-core-activity-icon SPAN {
+  display: block;
+  height: 30px;
+  width: 30px;
+  background: #ffb533 url("../images/ao-backend-icons.png") -120px -30px no-repeat;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+
+/* activity icons */
+/* activty icons for donations */
+/* line 72, ../sass/components/_activities.scss */
+.cmcd_donation .crm-core-activity-icon SPAN {
+  background: #389a19 url("../images/ao-backend-icons.png") 0px -30px no-repeat;
+}
+
+/* activty icons for events */
+/* line 80, ../sass/components/_activities.scss */
+.cmcev_event_registration .crm-core-activity-icon SPAN {
+  background: #1a6099 url("../images/ao-backend-icons.png") -90px -30px no-repeat;
+}
+
+/* activty icons for petitions */
+/* line 88, ../sass/components/_activities.scss */
+.cmcp_petition_signature .crm-core-activity-icon SPAN {
+  background: #e26427 url("../images/ao-backend-icons.png") -60px -30px no-repeat;
+}
+
+/* activty icons for petitions */
+/* line 97, ../sass/components/_activities.scss */
+.cmcv_volunteer_commitment .crm-core-activity-icon SPAN {
+  background: #d02424 url("../images/ao-backend-icons.png") -30px -30px no-repeat;
+}
+
+/* full page view of an activity */
+/* line 104, ../sass/components/_activities.scss */
+.entity-crm-core-activity {
+  border: 1px solid #e1e1e1;
+  background-color: White;
+  padding: 1em;
+  margin: 1em 0em;
+}
+
+/* move to theme */
+/* activity page */
+/* dashboard */
+/* line 125, ../sass/components/_activities.scss */
+.pane-ao-dashboard-act-stream-panel-pane-1 h2.pane-title {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  z-index: 100;
+  border-bottom: none;
+  text-transform: uppercase;
+  margin: 0em;
+}
+/* line 135, ../sass/components/_activities.scss */
+.pane-ao-dashboard-act-stream-panel-pane-1 .view-content {
+  margin: 0em 0em;
+  padding-top: 64px;
+}
+/* line 139, ../sass/components/_activities.scss */
+.pane-ao-dashboard-act-stream-panel-pane-1 .view-content .crm-core-activity-actions {
+  margin-left: 12px;
+}
+
 /**
  * @file
  * Print styling

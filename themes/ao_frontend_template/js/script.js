@@ -19,11 +19,68 @@
     // handles display of meny navigation
     $('body', context).once('able-activate', function(){
       
+      
+      /**
+       * Creates a callout on the screen
+       */
+      aoCallout = function(content){
+        var callout;
+        $('BODY').append('<div class="aoCallout"></div>');
+        callout = $('.aoCallout');
+        callout.html(content);
+        // make sure we can see H3 elements
+        callout.find('h3').attr('style', '');
+      }
+      
+      // find the fields with a description 
+      // finds textareas, textareas with summaries, checkboxes, textboxes, datetime 
+      var aoFieldSelectors = ".text-format-wrapper > div.description, .form-type-textarea > div.description, .form-type-checkbox > div.description, .form-type-textfield > div.description, .form-type-select > div.description",
+      aoDTSelectors = ".fieldset-wrapper > .fieldset-description",
+      aoExclude = "[class$='-summary'] > div.description, .filter-wrapper .fieldset-wrapper .form-item, [id$='-format-help'] > div.description",
+      aoFormDecs = $(".node-form .form-wrapper").find(aoFieldSelectors).not(aoExclude),
+      aoDTDecs = $(".node-form").find(aoDTSelectors);
+      
+      if(aoFormDecs.length > 0 || aoDTDecs.length > 0){
+        
+        var helpItems;
+
+        // get all the descriptions for fields
+        // adjust the selectors above if necessary for other field types
+        aoFormDecs.each(function(){
+          var label = $(this).parent().find('LABEL').not('.text-summary-wrapper > .form-item > LABEL').first(), helpItems;
+          label.append('<div class="ao-field-help"></div>');
+          label.find('.ao-field-help').html('&nbsp;?&nbsp;<div class="ao-show-help">' + $(this).html() + '</div>');
+          $(this).hide();
+        });
+        
+        // date time fields are their own special ray of sunshine
+        aoDTDecs.each(function(){
+          var label = $(this).parents('.form-field-type-datetime').find('.fieldset-legend'), helpItems;
+          label.append('<div class="ao-field-help"></div>');
+          label.find('.ao-field-help').html('&nbsp;?&nbsp;<div class="ao-show-help">' + $(this).html() + '</div>');
+          $(this).hide();
+        });
+        
+        // get all the help items we just created
+        helpItems = $('.ao-field-help');
+        
+        // have them display help text where appropriate
+        helpItems.each(function(){
+          $(this).bind('mouseover', function(){
+            aoCallout($(this).find('.ao-show-help').html());
+          });
+          $(this).bind('mouseout', function(){
+            $('.aoCallout').remove();
+          });
+        });
+        
+      }
+      
       // track the position of the mouse
       var currentMousePos = { x: -1, y: -1 };
       
       $(document).mousemove(function(event) {
-        var formatBubble = $('.aoFormatBubble'), w, h;
+        var formatBubble = $('.aoFormatBubble, .aoCallout'), w, h;
         currentMousePos.x = event.pageX;
         currentMousePos.y = event.pageY;
         
@@ -31,12 +88,8 @@
           // position the format bubble where the mouse is
           w = formatBubble.width();
           h = formatBubble.height();
-          formatBubble.css('position', 'absolute');
-          formatBubble.css('display', 'block');
           formatBubble.css('left', currentMousePos.x - w/2);
           formatBubble.css('top', currentMousePos.y - h - 50);
-          console.log('moving bubble');
-          console.log(currentMousePos.x + ' - ' + currentMousePos.y);
         }
         
       });
@@ -64,21 +117,16 @@
           // check the guides, see if there is one that matches
           guides.each(function(){
             if($(this).hasClass("filter-guidelines-" + guideClass)){
-              $('BODY').append('<div class="aoFormatBubble"></div>');
-              formatBubble = $('.aoFormatBubble');
-              // fill out the content of the format bubble
-              formatBubble.html($(this).html());
-              formatBubble.find('h3').attr('style', '');
+              aoCallout($(this).html());
             }
           });
           
         });
         $('.ao-input-format-select').bind('mouseout', function(){
-          var formatBubble = $('.aoFormatBubble');
-          formatBubble.remove();
+          $('.aoCallout').remove();
         });
         
-        // changes the value of the select box, which should not be displaying
+        // changes the value of the select box for input filters, which should not be visible
         $('.ao-input-format-select').click(function(){
           var select, value;
             // set the value of the select list based on what the person selected
