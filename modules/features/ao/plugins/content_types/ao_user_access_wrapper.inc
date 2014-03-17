@@ -182,6 +182,8 @@ function ao_user_access_wrapper_render($subtype, $conf, $panel_args, $context = 
   $view->execute();
   $content .= $view->render();
   
+  // dpm($content);
+  
   $block = new stdClass();
   $block->title = $conf['override_title'] > 0 ? $conf['override_title_text'] : $view->get_title();
   $block->content = $content;

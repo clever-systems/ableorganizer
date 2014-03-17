@@ -256,7 +256,7 @@ function ao_default_page_manager_handlers() {
     $pane->configuration = array(
       'display_title' => 1,
       'override_title' => 1,
-      'override_title_text' => 'Upcoming events',
+      'override_title_text' => 'Upcoming Events',
       'access_control' => '1',
       'perm' => 'view any crm_core_contact entity',
       'view_name' => 'ableorganizer_user_event_registration',
