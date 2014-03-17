@@ -2,14 +2,14 @@
 api = 2
 core = 7.26
 
-; crm core prerequisites
+; crm core + features prerequisites
 projects[views][version] = 3.7
 projects[views][subdir] = "contrib"
-projects[views_bulk_operations][version] = 3.1
+projects[views_bulk_operations][version] = 3.2
 projects[views_bulk_operations][subdir] = "contrib"
-projects[ctools][version] = 1.3
+projects[ctools][version] = 1.4
 projects[ctools][subdir] = "contrib"
-projects[entity][version] = 1.2
+projects[entity][version] = 1.3
 projects[entity][subdir] = "contrib"
 projects[entity][patch][] = "https://drupal.org/files/unformatted_replacements-2082407-1.patch"
 projects[entity][patch][] = "https://drupal.org/files/php5.5_bitwise_operator_fix-2050775-7_0.patch"
@@ -19,15 +19,15 @@ projects[relation][version] = 1.0-rc4
 projects[relation][subdir] = "contrib"
 projects[token][version] = 1.5
 projects[token][subdir] = "contrib"
-projects[panels][version] = 3.3
+projects[panels][version] = 3.4
 projects[panels][subdir] = "contrib"
 projects[rules][version] = 2.6
 projects[rules][subdir] = "contrib"
-projects[libraries][version] = 2.1
+projects[libraries][version] = 2.2
 projects[libraries][subdir] = "contrib"
 projects[features][version] = 2.0
 projects[features][subdir] = "contrib"
-projects[context][version] = 3.1
+projects[context][version] = 3.2
 projects[context][subdir] = "contrib"
 projects[strongarm][version] = 2.0
 projects[strongarm][subdir] = "contrib"
@@ -53,13 +53,15 @@ projects[cck_phone][download][type] = git
 projects[cck_phone][download][revision] = 61ccc9fb055f2eefa29e8d654ec2794ecb32b119
 projects[cck_phone][download][branch] = 7.x-1.x
 projects[cck_phone][subdir] = "contrib"
+projects[phone][version] = 1.0-beta1
+projects[phone][subdir] = "contrib"
 projects[link][version] = 1.2
 projects[link][subdir] = "contrib"
 projects[email][version] = 1.2
 projects[email][subdir] = "contrib"
 projects[addressfield][version] = 1.0-beta5
 projects[addressfield][subdir] = "contrib"
-projects[date][version] = 2.6
+projects[date][version] = 2.7
 projects[date][subdir] = "contrib"
 projects[select_or_other][version] = 2.20
 projects[select_or_other][subdir] = "contrib"
@@ -70,14 +72,8 @@ projects[calendar][patch][] = "https://drupal.org/files/calendar-php54-1471400-5
 ; email
 projects[mailsystem][version] = 2.34
 projects[mailsystem][subdir] = "contrib"
-projects[mimemail][version] = 1.0-beta1
+projects[mimemail][version] = 1.0-beta3
 projects[mimemail][subdir] = "contrib"
-projects[mailchimp][version] = 2.12
-projects[mailchimp][subdir] = "contrib"
-projects[smtp][version] = 1.0
-projects[smtp][subdir] = "contrib"
-projects[mandrill][version] = 1.5
-projects[mandrill][subdir] = "contrib"
 
 ; content
 projects[pathologic][type] = "module"
@@ -129,9 +125,8 @@ projects[file_entity][download][url] = "http://git.drupal.org/project/file_entit
 projects[file_entity][download][branch] = "7.x-2.x"
 projects[file_entity][download][revision] = "fee20d5ba209c988cd7fd6ac54c68e988facf7d1"
 
-
 ; commerce modules
-projects[commerce][version] = 1.8
+projects[commerce][version] = 1.9
 projects[commerce][subdir] = "contrib"
 projects[commerce_order_reference][version] = 1.0-alpha1
 projects[commerce_order_reference][subdir] = "contrib"
@@ -141,7 +136,7 @@ projects[commerce_custom_product][version] = 1.0-beta2
 projects[commerce_custom_product][subdir] = "contrib"
 projects[commerce_authnet][version] = 1.1
 projects[commerce_authnet][subdir] = "contrib"
-projects[commerce_paypal][version] = 2.2
+projects[commerce_paypal][version] = 2.3
 projects[commerce_paypal][subdir] = "contrib"
 
 ; data visualization
@@ -164,7 +159,6 @@ projects[geophp][subdir] = "contrib"
 projects[geophp][version] = "1.7"
 projects[openlayers][subdir] = "contrib"
 projects[openlayers][version] = "2.0-beta7"
-projects[openlayers][patch][] = "https://drupal.org/files/2061611_1_incorrect_boxes_plugin_path_7.x-2.x.patch"
 projects[proj4js][subdir] = "contrib"
 projects[proj4js][version] = "1.2"
 
