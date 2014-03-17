@@ -2819,7 +2819,7 @@ BODY.page-user .pane-ao-user-profile-contact-info .content .field-items {
 }
 
 /* move to theme */
-/* line 135, ../sass/components/_user_profiles.scss */
+/* line 132, ../sass/components/_user_profiles.scss */
 .ao-no-results {
   margin: .5em;
   text-align: center;
@@ -3297,18 +3297,30 @@ nav.breadcrumb {
   font-size: 0.9em;
 }
 
+/* VIEWS - NO RESULTS */
+/* line 58, ../sass/themes/_basic_display.scss */
+.ao-no-results {
+  margin: .5em;
+  text-align: center;
+  -moz-border-radius: 0.5em;
+  -webkit-border-radius: 0.5em;
+  border-radius: 0.5em;
+  background-color: #f1f1f1;
+  padding: .5em;
+}
+
 /* FRONTPAGE */
 /* move to theme */
 /* FORMS */
 /* applies styles to forms in the second sidebar */
 /* FIRST SIDEBAR LINKS */
 /* USER PROFILE PAGE */
-/* line 85, ../sass/themes/_basic_display.scss */
+/* line 93, ../sass/themes/_basic_display.scss */
 BODY.page-user .panel-pane {
   position: relative;
 }
 
-/* line 89, ../sass/themes/_basic_display.scss */
+/* line 97, ../sass/themes/_basic_display.scss */
 .pane-menu-menu-user-profile-links H2 {
   margin: 0em;
   float: right;
@@ -3316,7 +3328,7 @@ BODY.page-user .panel-pane {
   z-index: 999;
 }
 
-/* line 96, ../sass/themes/_basic_display.scss */
+/* line 104, ../sass/themes/_basic_display.scss */
 #block-menu-crm-core-menu {
   margin: 0em;
   position: absolute;
@@ -3326,7 +3338,7 @@ BODY.page-user .panel-pane {
 }
 
 /* USER PROFILE */
-/* line 110, ../sass/themes/_basic_display.scss */
+/* line 118, ../sass/themes/_basic_display.scss */
 BODY.page-user .pane-user-picture {
   text-align: center;
 }
@@ -3483,10 +3495,11 @@ BODY.page-user .pane-menu-menu-user-profile-links:hover UL.menu LI A {
   text-decoration: none;
   color: white;
 }
-/* line 124, ../sass/themes/_basic_display.scss */
+/* line 132, ../sass/themes/_basic_display.scss */
 BODY.page-user .pane-menu-menu-user-profile-links H2 {
   font-size: 13.28px;
 }
 
 /* user summary data */
 /* user profiles, with data they can edit */
+/* various lists on the user profile page (event, volunteer) */

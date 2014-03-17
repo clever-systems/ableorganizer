@@ -54,6 +54,14 @@ nav.breadcrumb {
   font-size: 0.9em;
 }
 
+/* VIEWS - NO RESULTS */
+.ao-no-results {
+  margin: .5em;
+  text-align: center;
+  @include border-radius(.5em);
+  background-color: #f1f1f1;
+  padding: .5em;
+}
 
 /* FRONTPAGE */
 /* move to theme */
@@ -134,4 +142,9 @@ BODY.page-user-user-profile {
   FORM#crm-core-profile-entry-form {
     @extend .ao-profile-entry-form;
   }
+}
+/* various lists on the user profile page (event, volunteer) */
+.view-ableorganizer-user-event-registration,
+.view-ableorganizer-user-volunteer-registration {
+  @extend .ao-short-list;
 }
