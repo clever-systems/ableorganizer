@@ -81,7 +81,6 @@
       font-weight: 700;
       padding: .4em 0em;
     }
-
   }
 }
 
@@ -91,7 +90,55 @@
   padding: 1em;
 }
 
+/* for short lists of information */
+/* for short lists of things with dates and locations */
+.ao-short-list {
+
+  .views-field-title {
+    font-weight: 700;
+  }
+    
+  .views-row {
+    border-bottom: 1px solid #e1e1e1;
+    margin-bottom: .5em;
+    padding-bottom: .5em;
+    
+    &:last-child {
+      border-bottom: none;
+    }
+    
+  }
+    
+  div[class*=-location],
+  div[class*=-date] {
+  
+    line-height: $base-line-height*0.8;
+    
+    SPAN.views-label {
+      font-weight: 700;
+      font-size: $h5-font-size;
+    }
+    
+  }
+    
+}
 
 
 
 /* move to theme */
+
+.view-ableorganizer-user-event-registration,
+.view-ableorganizer-user-volunteer-registration {
+  @extend .ao-short-list;
+}
+
+.ao-no-results {
+  margin: .5em;
+  text-align: center;
+  @include border-radius(.5em);
+  background-color: #f1f1f1;
+  padding: .5em;
+}
+
+// <div class="ao-no-results">You have no upcoming volunteer commitments.</div>
+
