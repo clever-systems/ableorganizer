@@ -31,14 +31,6 @@ function ao_menu() {
     'access arguments' => array('Use Panels Dashboard'),
   );
 
-  // callback for view modes in user access wrapper
-  $items['ao/view_mode/autocomplete'] = array(
-    'page callback' => 'ao_select_view_mode_ajax_callback',
-    'file' => 'includes/ao_view_info.inc',
-    'type' => MENU_CALLBACK,
-    'access arguments' => array('Use Panels Dashboard'),
-  );
-
   return $items;
 }
 
