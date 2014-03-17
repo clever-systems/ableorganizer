@@ -32,6 +32,25 @@
         @extend .field-label-title;
       }
       
+    
+      &.form-type-name-element {
+        .name-credentials-wrapper {
+          width: 10%;
+        }
+        div[class*='name-'] {
+          margin-right: .4em;
+          display: inline-block;
+          vertical-align: top;
+      
+          INPUT[type=text] {
+            width: 100%;
+          }
+          &:last-child {
+            margin-right: 0em;
+          }
+        }
+      }
+      
     }
     
     .fieldset-legend {

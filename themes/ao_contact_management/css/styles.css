@@ -3110,6 +3110,40 @@ UL.tabs.tabs-secondary LI {
   font-size: 0.9em;
 }
 /* line 37, ../sass/components/_forms.scss */
+.edit-form-wrapper .form-item-title .form-item.form-type-name-element .name-credentials-wrapper, #crm-core-activity-edit-cmcd-donation-form .form-item-title .form-item.form-type-name-element .name-credentials-wrapper,
+#crm-core-contact-ui-form .form-item-title .form-item.form-type-name-element .name-credentials-wrapper,
+.edit-form-wrapper .form-wrapper .form-item.form-type-name-element .name-credentials-wrapper,
+#crm-core-activity-edit-cmcd-donation-form .form-wrapper .form-item.form-type-name-element .name-credentials-wrapper,
+#crm-core-contact-ui-form .form-wrapper .form-item.form-type-name-element .name-credentials-wrapper {
+  width: 10%;
+}
+/* line 40, ../sass/components/_forms.scss */
+.edit-form-wrapper .form-item-title .form-item.form-type-name-element div[class*='name-'], #crm-core-activity-edit-cmcd-donation-form .form-item-title .form-item.form-type-name-element div[class*='name-'],
+#crm-core-contact-ui-form .form-item-title .form-item.form-type-name-element div[class*='name-'],
+.edit-form-wrapper .form-wrapper .form-item.form-type-name-element div[class*='name-'],
+#crm-core-activity-edit-cmcd-donation-form .form-wrapper .form-item.form-type-name-element div[class*='name-'],
+#crm-core-contact-ui-form .form-wrapper .form-item.form-type-name-element div[class*='name-'] {
+  margin-right: .4em;
+  display: inline-block;
+  vertical-align: top;
+}
+/* line 45, ../sass/components/_forms.scss */
+.edit-form-wrapper .form-item-title .form-item.form-type-name-element div[class*='name-'] INPUT[type=text], #crm-core-activity-edit-cmcd-donation-form .form-item-title .form-item.form-type-name-element div[class*='name-'] INPUT[type=text],
+#crm-core-contact-ui-form .form-item-title .form-item.form-type-name-element div[class*='name-'] INPUT[type=text],
+.edit-form-wrapper .form-wrapper .form-item.form-type-name-element div[class*='name-'] INPUT[type=text],
+#crm-core-activity-edit-cmcd-donation-form .form-wrapper .form-item.form-type-name-element div[class*='name-'] INPUT[type=text],
+#crm-core-contact-ui-form .form-wrapper .form-item.form-type-name-element div[class*='name-'] INPUT[type=text] {
+  width: 100%;
+}
+/* line 48, ../sass/components/_forms.scss */
+.edit-form-wrapper .form-item-title .form-item.form-type-name-element div[class*='name-']:last-child, #crm-core-activity-edit-cmcd-donation-form .form-item-title .form-item.form-type-name-element div[class*='name-']:last-child,
+#crm-core-contact-ui-form .form-item-title .form-item.form-type-name-element div[class*='name-']:last-child,
+.edit-form-wrapper .form-wrapper .form-item.form-type-name-element div[class*='name-']:last-child,
+#crm-core-activity-edit-cmcd-donation-form .form-wrapper .form-item.form-type-name-element div[class*='name-']:last-child,
+#crm-core-contact-ui-form .form-wrapper .form-item.form-type-name-element div[class*='name-']:last-child {
+  margin-right: 0em;
+}
+/* line 56, ../sass/components/_forms.scss */
 .edit-form-wrapper .form-item-title .fieldset-legend, #crm-core-activity-edit-cmcd-donation-form .form-item-title .fieldset-legend,
 #crm-core-contact-ui-form .form-item-title .fieldset-legend,
 .edit-form-wrapper .form-wrapper .fieldset-legend,
@@ -3119,30 +3153,30 @@ UL.tabs.tabs-secondary LI {
   letter-spacing: -0.05em;
   font-size: 0.9em;
 }
-/* line 44, ../sass/components/_forms.scss */
+/* line 63, ../sass/components/_forms.scss */
 .edit-form-wrapper FIELDSET.form-wrapper, #crm-core-activity-edit-cmcd-donation-form FIELDSET.form-wrapper,
 #crm-core-contact-ui-form FIELDSET.form-wrapper {
   margin: 0em;
 }
-/* line 49, ../sass/components/_forms.scss */
+/* line 68, ../sass/components/_forms.scss */
 .edit-form-wrapper FIELDSET LEGEND, #crm-core-activity-edit-cmcd-donation-form FIELDSET LEGEND,
 #crm-core-contact-ui-form FIELDSET LEGEND {
   line-height: 0px;
   padding: 0.5em 0em;
 }
-/* line 52, ../sass/components/_forms.scss */
+/* line 71, ../sass/components/_forms.scss */
 .edit-form-wrapper FIELDSET LEGEND span.fieldset-legend, #crm-core-activity-edit-cmcd-donation-form FIELDSET LEGEND span.fieldset-legend,
 #crm-core-contact-ui-form FIELDSET LEGEND span.fieldset-legend {
   border: 1px solid #d5d5d5;
   padding: .2em .5em;
   background-color: White;
 }
-/* line 60, ../sass/components/_forms.scss */
+/* line 79, ../sass/components/_forms.scss */
 .edit-form-wrapper .field-type-geofield, #crm-core-activity-edit-cmcd-donation-form .field-type-geofield,
 #crm-core-contact-ui-form .field-type-geofield {
   display: none;
 }
-/* line 65, ../sass/components/_forms.scss */
+/* line 84, ../sass/components/_forms.scss */
 .edit-form-wrapper .field-type-addressfield INPUT, #crm-core-activity-edit-cmcd-donation-form .field-type-addressfield INPUT,
 #crm-core-contact-ui-form .field-type-addressfield INPUT, .edit-form-wrapper .field-type-addressfield select, #crm-core-activity-edit-cmcd-donation-form .field-type-addressfield select,
 #crm-core-contact-ui-form .field-type-addressfield select {
