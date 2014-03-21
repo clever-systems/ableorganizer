@@ -2819,17 +2819,6 @@ BODY.page-user .pane-ao-user-profile-contact-info .content .field-items {
 }
 
 /* move to theme */
-/* line 132, ../sass/components/_user_profiles.scss */
-.ao-no-results {
-  margin: .5em;
-  text-align: center;
-  -moz-border-radius: 0.5em;
-  -webkit-border-radius: 0.5em;
-  border-radius: 0.5em;
-  background-color: #f1f1f1;
-  padding: .5em;
-}
-
 /**
  * @file
  * Displays activities and icons in the system
