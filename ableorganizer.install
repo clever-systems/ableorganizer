@@ -318,9 +318,9 @@ function ableorganizer_install() {
   db_update('system')
     ->fields(array('status' => 1))
     ->condition('type', 'theme')
-    ->condition('name', 'abletemplate')
+    ->condition('name', 'ao_frontend_template')
     ->execute();
-  variable_set('theme_default', 'abletemplate');
+  variable_set('theme_default', 'ao_frontend_template');
 
   // Configure CRM Core Contact matching rules.
   // Enable the default engine.
@@ -419,10 +419,10 @@ function ableorganizer_install() {
   db_update('system')
     ->fields(array('status' => 1))
     ->condition('type', 'theme')
-    ->condition('name', 'ablestarter')
+    ->condition('name', 'ao_contact_management')
     ->execute();
   variable_set('crm_core_theme_enabled', 1);
-  variable_set('crm_core_theme', 'ablestarter');
+  variable_set('crm_core_theme', 'ao_contact_management');
 
   // Now set CRM Core to use the CRM Core menu.
   variable_set('crm_core_theme_replace_links', 1);
@@ -439,7 +439,7 @@ function ableorganizer_install() {
   menu_link_save($item);
 
   // Now set the default logo.
-  $theme_name = 'ablestarter';
+  $theme_name = 'ao_contact_management';
   $var_name = 'theme_' . $theme_name . '_settings';
   $new_path = 'profiles/ableorganizer/images/ao-logo.png';
 
@@ -481,7 +481,7 @@ crm-core-profile-entry-form-ao-volunteer-commitment-form");
 
   // Enable blocks.
   // This must be done after the theme has been installed.
-  $default_theme = variable_get('theme_default', 'abletemplate');
+  $default_theme = variable_get('theme_default', 'ao_frontend_template');
   $admin_theme = 'seven';
   $blocks = array(
     array(
@@ -537,7 +537,7 @@ crm-core-profile-entry-form-ao-volunteer-commitment-form");
     array(
       'module' => 'system',
       'delta' => 'help',
-      'theme' => 'ablestarter',
+      'theme' => 'ao_contact_management',
       'status' => 1,
       'weight' => 0,
       'region' => 'content',
