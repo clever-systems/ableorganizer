@@ -481,6 +481,10 @@ crm-core-profile-entry-form-ao-volunteer-commitment-form");
 
   // Enable blocks.
   // This must be done after the theme has been installed.
+  // TODO: add the following:
+  // - CRM Core in the headr
+  // 
+  
   $default_theme = variable_get('theme_default', 'ao_frontend_template');
   $admin_theme = 'seven';
   $blocks = array(
