@@ -73,8 +73,8 @@ function ableorganizer_sample_donation_pages_context_default_contexts() {
 
   // Translatables
   // Included for use with string extractors like potx.
-  t('sample_content');
   t('Place blocks on "donate" page');
+  t('sample_content');
   $export['donate_page_blocks'] = $context;
 
   return $export;
