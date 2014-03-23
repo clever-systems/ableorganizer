@@ -1,5 +1,5 @@
 name = AbleOrganizer installation profile
-description = Built on top of CRM Core to provide quick start and real working examples of how to use CRM Core to build CRM solution that feet your needs.
+description = Community Engagement Platform using CRM Core and Drupal. Provides donation, event registration, peititon and volunteer management.
 core = 7.x
 distribution_name = AbleOrganizer
 project = ableorganizer
@@ -69,6 +69,7 @@ dependencies[] = fontyourface
 dependencies[] = fontyourface_ui
 dependencies[] = google_fonts_api
 dependencies[] = compact_forms
+dependencies[] = menu_token
 
 ; commerce modules
 dependencies[] = commerce
@@ -85,10 +86,11 @@ dependencies[] = commerce_customer_ui
 dependencies[] = commerce_order_reference
 dependencies[] = commerce_authnet
 dependencies[] = commerce_paypal
-dependencies[] = commerce_product_ui
 dependencies[] = commerce_custom_product
+dependencies[] = commerce_product_ui
 dependencies[] = commerce_features
 dependencies[] = commerce_product_pricing
+dependencies[] = commerce_product_reference
 dependencies[] = commerce_cart
 
 ; crm core modules

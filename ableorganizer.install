@@ -86,9 +86,8 @@ function ableorganizer_install() {
   $full_html_format = (object) $full_html_format;
   filter_format_save($full_html_format);
 
-  // Insert default pre-defined node types into the database. For a complete
-  // list of available node type attributes, refer to the node type API
-  // documentation at: http://api.drupal.org/api/HEAD/function/hook_node_info.
+  // define default node types
+  // TODO: remove article, we don't need it by default
   $types = array(
     array(
       'type' => 'page',
@@ -109,7 +108,7 @@ function ableorganizer_install() {
       'locked' => 0,
     ),
   );
-
+  // create default node types
   foreach ($types as $type) {
     $type = node_type_set_defaults($type);
     node_type_save($type);
@@ -162,6 +161,7 @@ function ableorganizer_install() {
 
   // Create a default vocabulary named "Tags", enabled for the 'article'
   // content type.
+  // TODO: remove this, it's not necessary
   $description = $t('Use tags to group articles on similar topics into categories.');
   $help = $t('Enter a comma-separated list of words to describe your content.');
   $vocabulary = (object) array(
@@ -212,10 +212,8 @@ function ableorganizer_install() {
   );
   field_create_instance($instance);
 
-  // Create an image field named "Image", enabled for the 'article'
-  // content type. Many of the following values will be defaulted, they're
-  // included here as an illustrative examples.
-  // See http://api.drupal.org/api/function/field_create_field/7
+  // add image to article
+  // TODO: remove this
   $field = array(
     'field_name' => 'field_image',
     'type' => 'image',
@@ -482,12 +480,23 @@ crm-core-profile-entry-form-ao-volunteer-commitment-form");
   // Enable blocks.
   // This must be done after the theme has been installed.
   // TODO: add the following:
-  // - CRM Core in the headr
+  // - CRM Core in the header
   // 
-  
+
   $default_theme = variable_get('theme_default', 'ao_frontend_template');
   $admin_theme = 'seven';
   $blocks = array(
+    array(
+      'module' => 'menu',
+      'delta' => 'crm-core-menu',
+      'theme' => $default_theme,
+      'status' => 1,
+      'weight' => 0,
+      'region' => 'header',
+      'pages' => '',
+      'cache' => -1,
+      'title' => 'Contact Management',
+    ),
     array(
       'module' => 'system',
       'delta' => 'main',
@@ -497,6 +506,7 @@ crm-core-profile-entry-form-ao-volunteer-commitment-form");
       'region' => 'content',
       'pages' => '',
       'cache' => -1,
+      'title' => '',
     ),
     array(
       'module' => 'system',
@@ -507,6 +517,7 @@ crm-core-profile-entry-form-ao-volunteer-commitment-form");
       'region' => 'content',
       'pages' => '',
       'cache' => -1,
+      'title' => '',
     ),
     array(
       'module' => 'crm_core_profile',
@@ -517,6 +528,7 @@ crm-core-profile-entry-form-ao-volunteer-commitment-form");
       'region' => 'sidebar_second',
       'pages' => '',
       'cache' => -1,
+      'title' => '',
     ),
     array(
       'module' => 'system',
@@ -527,6 +539,7 @@ crm-core-profile-entry-form-ao-volunteer-commitment-form");
       'region' => 'content',
       'pages' => '',
       'cache' => -1,
+      'title' => '',
     ),
     array(
       'module' => 'system',
@@ -537,6 +550,7 @@ crm-core-profile-entry-form-ao-volunteer-commitment-form");
       'region' => 'help',
       'pages' => '',
       'cache' => -1,
+      'title' => '',
     ),
     array(
       'module' => 'system',
@@ -547,6 +561,7 @@ crm-core-profile-entry-form-ao-volunteer-commitment-form");
       'region' => 'content',
       'pages' => '',
       'cache' => -1,
+      'title' => '',
     ),
   );
   $query = db_insert('block')->fields(array(
@@ -558,13 +573,24 @@ crm-core-profile-entry-form-ao-volunteer-commitment-form");
     'region',
     'pages',
     'cache',
+    'title',
   ));
-
+  
   foreach ($blocks as $block) {
     $query->values($block);
   }
   $query->execute();
 
+  // set permissions for the crm core menu
+  // this should only be available to administrators by default
+  db_insert('block_role') 
+	->fields(array(
+  	'module' => 'menu',
+  	'delta' => 'crm-core-menu',
+  	'rid' => 3,
+	))
+	->execute();
+	
   // We need this to clear node_load cache after importing sample content in
   // order to prevent 'Notice: Undefined property: stdClass::$changed' msg.
   variable_set('search_active_modules', array('ableorganizer', 'node', 'user'));
@@ -617,9 +643,6 @@ function ableorganizer_install_tasks_alter(&$tasks, $install_state) {
     );
     $tasks = $new_task + $tasks;
   }
-
-
-
 
   $new_tasks = array();
 
@@ -1000,6 +1023,7 @@ function ableorganizer_profile_settings_submit($form, &$form_state) {
 
   global $install_state;
 
+
   // This is where we enable the default emails for each feature.
   if (!empty($form_state['values']['donation_emails'])) {
     variable_set('configure_donation_email', 1);
@@ -1054,7 +1078,7 @@ function ableorganizer_sample_content($form, &$form_state, &$install_state) {
     '#type' => 'checkbox',
     '#default_value' => TRUE,
     '#title' => $t('AbleOrganizer Sample Content'),
-    '#description' => $t('Tutorials, documentation and explanations of how to work with the system.'),
+    '#description' => $t('Sample content explaining how the system works.'),
   );
 
   if (variable_get('donations_enabled', 0) == 1) {
@@ -1153,17 +1177,17 @@ function ableorganizer_sample_content($form, &$form_state, &$install_state) {
  */
 function ableorganizer_sample_content_submit($form, &$form_state) {
   global $install_state;
-
+  
   // Remember modules to be enabled.
   $install_state['parameters']['ao_modules'] = array();
 
   // automatically install the front page blocks, for now
   // this will eventually be replaced with a configuration page and sample content for demos
-  $install_state['parameters']['ao_modules'][] = 'ao_basic_setup';
-  ableorganizer_install_frontpage();
 
   if (!empty($form_state['values']['ao_sample_content'])) {
     // $install_state['parameters']['ao_modules'][] = 'ableorganizer_sample_content';
+    $install_state['parameters']['ao_modules'][] = 'ao_basic_setup';
+    variable_set('configure_frontpage', 1);
   }
   if (!empty($form_state['values']['donation_sample_content'])) {
     $install_state['parameters']['ao_modules'][] = 'ableorganizer_sample_donation_pages';
@@ -1201,10 +1225,9 @@ function ableorganizer_sample_content_submit($form, &$form_state) {
  */
 function ableorganizer_install_frontpage (){
 
-
-
+  // this creates the image on the frontpage
+  // TODO: make this image local
   $content = '<h2><span>How it Does It</span></h2><p><a href="http://ao.trellon.com/sites/default/files/how-it-does-it.png" title="How it does it" class="colorbox init-colorbox-processed cboxElement" rel="gallery-file-1"><img class="adaptive-image" typeof="foaf:Image" src="http://ao.trellon.com/sites/default/files/styles/adaptive/adaptive-image/public/how-it-does-it.png?itok=kVG8B5Yf" alt="How it does it" title="How it does it"></a></p><div class="ao-down-arrow">&nbsp;</div>';
-
   $date               = new DateTime();
   $node               = new stdClass();
   $node->type         = 'page';
@@ -1227,6 +1250,77 @@ function ableorganizer_install_frontpage (){
       'safe_value' => $content
   );
   node_save($node);
+  
+  // set up the other blocks on the front page
+  $default_theme = 'ao_frontend_template';
+  $blocks = array(
+    // hero
+    array(
+      'module' => 'boxes',
+      'delta' => 'hero_content',
+      'theme' => $default_theme,
+      'status' => 1,
+      'weight' => 0,
+      'region' => 'above_content_one',
+      'pages' => '<front>',
+      'visibility' => 1,
+      'cache' => -1,
+    ),
+    // what it does
+    array(
+      'module' => 'boxes',
+      'delta' => 'above_content_lower',
+      'theme' => $default_theme,
+      'status' => 1,
+      'weight' => 0,
+      'region' => 'above_content_two',
+      'pages' => '<front>',
+      'visibility' => 1,
+      'cache' => -1,
+    ),
+    // benefits
+    array(
+      'module' => 'boxes',
+      'delta' => 'lower_zone',
+      'theme' => $default_theme,
+      'status' => 1,
+      'weight' => 0,
+      'region' => 'below_content_one',
+      'pages' => '<front>',
+      'visibility' => 1,
+      'cache' => -1,
+    ),
+    // get able
+    array(
+      'module' => 'boxes',
+      'delta' => 'lower_zone_2',
+      'theme' => $default_theme,
+      'status' => 1,
+      'weight' => 0,
+      'region' => 'below_content_two',
+      'pages' => '<front>',
+      'visibility' => 1,
+      'cache' => -1,
+    ),
+  );
+  
+  $query = db_insert('block')->fields(array(
+    'module',
+    'delta',
+    'theme',
+    'status',
+    'weight',
+    'region',
+    'pages',
+    'visibility',
+    'cache',
+  ));
+
+  foreach ($blocks as $block) {
+    $query->values($block);
+  }
+  $query->execute();  
+  
 }
 
 /**
@@ -1250,6 +1344,11 @@ function ableorganizer_install_sample_content(&$install_state) {
   // Flush caches if any modules will be installed.
   if (count($install_state['parameters']['ao_modules'])) {
     $operations[] = array('_install_profile_modules_finished', array($success, $results, $operations));
+  }
+  
+  // if we have selected sample content, setup the frontpage
+  if(variable_get('configure_frontpage', 0) === 1){
+    ableorganizer_install_frontpage();
   }
 
   // Add sample contacts to the batch if any data will be imported.
