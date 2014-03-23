@@ -172,7 +172,7 @@ projects[google_fonts][subdir] = "contrib"
 projects[google_fonts][version] = "2.3"
 
 ; crm core modules
-projects[crm_core][version] = 0.963
+projects[crm_core][version] = 0.964
 projects[crm_core][subdir] = "contrib"
 projects[crm_core_profile][version] = 1.0-beta8
 projects[crm_core_profile][subdir] = "contrib"
