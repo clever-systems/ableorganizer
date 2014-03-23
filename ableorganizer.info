@@ -69,7 +69,6 @@ dependencies[] = fontyourface
 dependencies[] = fontyourface_ui
 dependencies[] = google_fonts_api
 dependencies[] = compact_forms
-dependencies[] = menu_token
 
 ; commerce modules
 dependencies[] = commerce
