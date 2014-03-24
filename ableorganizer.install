@@ -1187,7 +1187,22 @@ function ableorganizer_sample_content_submit($form, &$form_state) {
   if (!empty($form_state['values']['ao_sample_content'])) {
     // $install_state['parameters']['ao_modules'][] = 'ableorganizer_sample_content';
     $install_state['parameters']['ao_modules'][] = 'ao_basic_setup';
+    // add blocks to the front page
     variable_set('configure_frontpage', 1);
+    // enable the user profile display from page manager
+    variable_set('page_manager_user_view_disabled', 0);
+    // turn on the user profile menu
+    $query = db_insert('block')->fields(array(
+      'module' => 'menu',
+      'delta' => 'menu-user-profile-links',
+      'theme' => 'ao_frontend_template',
+      'status' => 1,
+      'weight' => 0,
+      'region' => 'sidebar_left',
+      'pages' => 'user/*/user-profile/*',
+      'cache' => -1,
+      'title' => 'Manage Account',
+    ));
   }
   if (!empty($form_state['values']['donation_sample_content'])) {
     $install_state['parameters']['ao_modules'][] = 'ableorganizer_sample_donation_pages';
