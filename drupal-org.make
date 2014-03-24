@@ -174,23 +174,23 @@ projects[google_fonts][version] = "2.3"
 ; crm core modules
 projects[crm_core][version] = 0.964
 projects[crm_core][subdir] = "contrib"
-projects[crm_core_profile][version] = 1.0-beta8
+projects[crm_core_profile][version] = 1.0-beta9
 projects[crm_core_profile][subdir] = "contrib"
 projects[crm_core_profile_commerce_items][version] = 0.3
 projects[crm_core_profile_commerce_items][subdir] = "contrib"
 projects[crm_core_demo_standard_fields][version] = 1.3
 projects[crm_core_demo_standard_fields][subdir] = "contrib"
 ; donations
-projects[crm_core_donation][version] = 1.12
+projects[crm_core_donation][version] = 1.13
 projects[crm_core_donation][subdir] = "contrib"
 ; events
-projects[crm_core_event][version] = 0.11
+projects[crm_core_event][version] = 0.12
 projects[crm_core_event][subdir] = "contrib"
 ; petitions
-projects[crm_core_petition][version] = 0.10
+projects[crm_core_petition][version] = 0.11
 projects[crm_core_petition][subdir] = "contrib"
 ; volunteers
-projects[crm_core_volunteer][version] = 0.12
+projects[crm_core_volunteer][version] = 0.13
 projects[crm_core_volunteer][subdir] = "contrib"
 
 ; libraries
