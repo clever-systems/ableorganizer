@@ -1,44 +1,6 @@
 @CHARSET "UTF-8";
-/* layouts */
-/* modules */
-/* theme */
-/* apply colors to regions on the front page */
-/* line 22, ../sass/ableorganizer_sample_content.scss */
-BODY.front section#above-content-one {
-  background-color: #ffb836;
-}
-/* line 25, ../sass/ableorganizer_sample_content.scss */
-BODY.front section#main {
-  background-color: #00b0f3;
-}
-/* line 28, ../sass/ableorganizer_sample_content.scss */
-BODY.front section#below-content-one {
-  background-color: #ffcc4d;
-}
-/* line 31, ../sass/ableorganizer_sample_content.scss */
-BODY.front section#below-content-two {
-  background-color: #c8effe;
-}
-
-/* line 36, ../sass/ableorganizer_sample_content.scss */
-.ao-featlist {
-  display: inline-block;
-  width: 48%;
-  margin-right: 1%;
-  vertical-align: top;
-}
-/* line 41, ../sass/ableorganizer_sample_content.scss */
-.ao-featlist:last-child {
-  margin-right: 0%;
-}
-
-/* line 46, ../sass/ableorganizer_sample_content.scss */
-BODY.front {
-  background-color: Red;
-}
-
 /* front page regions */
-/* line 52, ../sass/ableorganizer_sample_content.scss */
+/* line 10, ../sass/ableorganizer_sample_content.scss */
 BODY.front .ao-down-arrow {
   width: 0;
   height: 0;
@@ -51,39 +13,39 @@ BODY.front .ao-down-arrow {
   margin-left: -35px;
 }
 
-/* line 63, ../sass/ableorganizer_sample_content.scss */
+/* line 21, ../sass/ableorganizer_sample_content.scss */
 BODY.front #section-content {
   padding-top: 0em;
 }
 
-/* line 66, ../sass/ableorganizer_sample_content.scss */
+/* line 24, ../sass/ableorganizer_sample_content.scss */
 BODY.front #section-content #zone-above-content-1-wrapper {
   background-color: #999;
 }
 
-/* line 69, ../sass/ableorganizer_sample_content.scss */
+/* line 27, ../sass/ableorganizer_sample_content.scss */
 BODY.front #section-content #zone-above-content-1-wrapper #zone-above-content-1 {
   height: 470px;
 }
 
-/* line 74, ../sass/ableorganizer_sample_content.scss */
+/* line 32, ../sass/ableorganizer_sample_content.scss */
 BODY.front #section-content #zone-content-wrapper {
   background-color: #00b0f3;
 }
 
-/* line 77, ../sass/ableorganizer_sample_content.scss */
+/* line 35, ../sass/ableorganizer_sample_content.scss */
 BODY.front #section-content #zone-below-content-1-wrapper {
   background-color: #ffcc4d;
   overflow: hidden;
 }
 
-/* line 81, ../sass/ableorganizer_sample_content.scss */
+/* line 39, ../sass/ableorganizer_sample_content.scss */
 BODY.front #section-content #zone-below-content-2-wrapper {
   background-color: White;
   overflow: hidden;
 }
 
-/* line 85, ../sass/ableorganizer_sample_content.scss */
+/* line 43, ../sass/ableorganizer_sample_content.scss */
 BODY.front #section-content h2 {
   text-align: center;
   font-size: 2.25em;
@@ -101,32 +63,32 @@ BODY.front #section-content h2 {
   color: #436ab3;
 }
 
-/* line 108, ../sass/ableorganizer_sample_content.scss */
+/* line 66, ../sass/ableorganizer_sample_content.scss */
 BODY.front #section-content h2 SPAN {
   background-color: White;
   padding: 0em .5em;
 }
 
-/* line 112, ../sass/ableorganizer_sample_content.scss */
+/* line 70, ../sass/ableorganizer_sample_content.scss */
 BODY.front #zone-branding-wrapper #main-menu LI A {
   text-decoration: none;
   font-size: 1.4em;
   color: Black;
 }
 
-/* line 117, ../sass/ableorganizer_sample_content.scss */
+/* line 75, ../sass/ableorganizer_sample_content.scss */
 BODY.front #zone-branding-wrapper .navigation-menu {
   font-size: 1em;
 }
 
 /* hero */
-/* line 124, ../sass/ableorganizer_sample_content.scss */
+/* line 82, ../sass/ableorganizer_sample_content.scss */
 BODY.front #section-content #zone-above-content-1-wrapper {
   background: #ffb836 url(../images/people.png) top center no-repeat;
   height: 380px;
 }
 
-/* line 128, ../sass/ableorganizer_sample_content.scss */
+/* line 86, ../sass/ableorganizer_sample_content.scss */
 BODY.front #section-content .hero_text {
   width: 60%;
   margin-top: 6em;
@@ -140,7 +102,7 @@ BODY.front #section-content .hero_text {
   -webkit-border-radius: 1em;
 }
 
-/* line 140, ../sass/ableorganizer_sample_content.scss */
+/* line 98, ../sass/ableorganizer_sample_content.scss */
 BODY.front #section-content .hero_text h2 {
   border-bottom: none;
   text-align: left;
@@ -151,263 +113,33 @@ BODY.front #section-content .hero_text h2 {
   color: White;
 }
 
-/* line 149, ../sass/ableorganizer_sample_content.scss */
+/* line 107, ../sass/ableorganizer_sample_content.scss */
 BODY.front #section-content .hero_text P {
   font-size: 1.85em;
   font-weight: normal;
 }
 
 /* above content */
-/* line 154, ../sass/ableorganizer_sample_content.scss */
+/* line 112, ../sass/ableorganizer_sample_content.scss */
 BODY.front #section-content #zone-above-content-2-wrapper H2 {
   color: #436ab3;
   margin-bottom: 1em;
 }
 
-/* line 158, ../sass/ableorganizer_sample_content.scss */
+/* line 116, ../sass/ableorganizer_sample_content.scss */
 .ui-widget-overlay {
   background-color: White;
   opacity: .6;
 }
 
-/* line 162, ../sass/ableorganizer_sample_content.scss */
-.ao_profeat_holder {
-  display: table;
-  width: 100%;
-  margin-bottom: 5em;
-}
-
-/* line 167, ../sass/ableorganizer_sample_content.scss */
-.ao_profeat_holder .ao_profeat_dialog_content {
-  display: none;
-}
-
-/* line 170, ../sass/ableorganizer_sample_content.scss */
-.ao_profeat {
-  display: table-cell;
-  padding: 0em .5em;
-  text-align: center;
-  font-size: 1.1em;
-}
-
-/* line 176, ../sass/ableorganizer_sample_content.scss */
-.ao_profeat H3 {
-  color: #436ab3;
-  text-align: center;
-  font-weight: normal;
-  text-transform: uppercase;
-  margin-bottom: 0px;
-}
-
-/* line 183, ../sass/ableorganizer_sample_content.scss */
-.ao_profeat_holder .ao_profeat_icon_outer {
-  height: 140px;
-  width: 140px;
-  border-radius: 50%;
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
-  background-color: White;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: .25em;
-  cursor: pointer;
-  border: 1px solid White;
-  position: relative;
-  vertical-align: middle;
-}
-
-/* line 198, ../sass/ableorganizer_sample_content.scss */
-.ao_profeat_holder .ao_profeat_icon_outer:hover {
-  border: 1px solid #CCC;
-}
-
-/* line 201, ../sass/ableorganizer_sample_content.scss */
-.ao_profeat_holder .ao_profeat_icon {
-  height: 110px;
-  width: 110px;
-  border-radius: 50%;
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
-  background-color: #777;
-  margin-left: auto;
-  margin-right: auto;
-  cursor: pointer;
-  position: absolute;
-  left: 15px;
-  top: 15px;
-}
-
-/* line 215, ../sass/ableorganizer_sample_content.scss */
-.ao_profeat_holder .ao_profeat_icon SPAN {
-  background-image: url("../images/ao-frontend-icons.png");
-  height: 60px;
-  width: 60px;
-  display: inline-block;
-  margin: 24px auto 0px;
-}
-
-/* line 222, ../sass/ableorganizer_sample_content.scss */
-.ao_profeat_donation .ao_profeat_icon {
-  background-color: #399B19;
-}
-
-/* line 225, ../sass/ableorganizer_sample_content.scss */
-.ao_profeat_donation .ao_profeat_icon SPAN {
-  background-position: -60px -120px;
-}
-
-/* line 228, ../sass/ableorganizer_sample_content.scss */
-.ao_profeat_event .ao_profeat_icon {
-  background-color: #1A6099;
-}
-
-/* line 231, ../sass/ableorganizer_sample_content.scss */
-.ao_profeat_event .ao_profeat_icon SPAN {
-  background-position: -120px -120px;
-}
-
-/* line 234, ../sass/ableorganizer_sample_content.scss */
-.ao_profeat_petition .ao_profeat_icon {
-  background-color: #e26427;
-}
-
-/* line 237, ../sass/ableorganizer_sample_content.scss */
-.ao_profeat_petition .ao_profeat_icon SPAN {
-  background-position: -180px -120px;
-}
-
-/* line 240, ../sass/ableorganizer_sample_content.scss */
-.ao_profeat_volunteer .ao_profeat_icon {
-  background-color: #D12424;
-}
-
-/* line 243, ../sass/ableorganizer_sample_content.scss */
-.ao_profeat_volunteer .ao_profeat_icon SPAN {
-  background-position: 0px -120px;
-}
-
-/* line 246, ../sass/ableorganizer_sample_content.scss */
-.ao_profeat_dialog {
-  color: #777;
-  font-size: 0.9em;
-}
-
-/* line 250, ../sass/ableorganizer_sample_content.scss */
-.ao_profeat_dialog .ao_profeat_dialog_title {
-  text-align: center;
-  margin: 0em;
-  background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 48%, #436ab3 49%, #436ab3 50%, rgba(255, 255, 255, 0) 51%, rgba(255, 255, 255, 0) 100%);
-  background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 48%, #436ab3 49%, #436ab3 50%, rgba(255, 255, 255, 0) 51%, rgba(255, 255, 255, 0) 100%);
-  background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 48%, #436ab3 49%, #436ab3 50%, rgba(255, 255, 255, 0) 51%, rgba(255, 255, 255, 0) 100%);
-  background-image: linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 48%, #436ab3 49%, #436ab3 50%, rgba(255, 255, 255, 0) 51%, rgba(255, 255, 255, 0) 100%);
-  padding: .5em 0em;
-  text-transform: uppercase;
-  font-size: 1.3em;
-}
-
-/* line 261, ../sass/ableorganizer_sample_content.scss */
-.ao_profeat_dialog .ao_profeat_dialog_title .title_inner {
-  display: inline-block;
-}
-
-/* line 264, ../sass/ableorganizer_sample_content.scss */
-.ao_profeat_dialog .ao_profeat_dialog_title .title_bg {
-  background-color: White;
-  display: inline-block;
-  padding: 0em .5em;
-}
-
-/* line 269, ../sass/ableorganizer_sample_content.scss */
-.ao_profeat_dialog .ao_profeat_dialog_title .ao_profeat_dialog_icon {
-  display: inline-block;
-  margin: 0em 0em 0.5em 0em;
-  background-color: #CCC;
-  border-radius: 50%;
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
-  height: 50px;
-  width: 50px;
-  vertical-align: middle;
-}
-
-/* line 280, ../sass/ableorganizer_sample_content.scss */
-.ao_profeat_dialog .ao_profeat_dialog_title .ao_profeat_dialog_icon SPAN {
-  background-image: url("../images/ao-frontend-icons.png");
-  height: 30px;
-  width: 30px;
-  margin: 10px auto;
-  display: block;
-}
-
-/* line 287, ../sass/ableorganizer_sample_content.scss */
-.ao_profeat_dialog .ao_profeat_dialog_fundraising .ao_profeat_dialog_icon {
-  background-color: #399B19;
-}
-
-/* line 290, ../sass/ableorganizer_sample_content.scss */
-.ao_profeat_dialog .ao_profeat_dialog_events .ao_profeat_dialog_icon {
-  background-color: #1A6099;
-}
-
-/* line 293, ../sass/ableorganizer_sample_content.scss */
-.ao_profeat_dialog .ao_profeat_dialog_petition .ao_profeat_dialog_icon {
-  background-color: #e26427;
-}
-
-/* line 296, ../sass/ableorganizer_sample_content.scss */
-.ao_profeat_dialog .ao_profeat_dialog_volunteer .ao_profeat_dialog_icon {
-  background-color: #D12424;
-}
-
-/* line 299, ../sass/ableorganizer_sample_content.scss */
-.ao_profeat_dialog .ao_profeat_dialog_fundraising .ao_profeat_dialog_icon SPAN {
-  background-position: -31px 0px;
-}
-
-/* line 302, ../sass/ableorganizer_sample_content.scss */
-.ao_profeat_dialog .ao_profeat_dialog_events .ao_profeat_dialog_icon SPAN {
-  background-position: -61px 0px;
-}
-
-/* line 305, ../sass/ableorganizer_sample_content.scss */
-.ao_profeat_dialog .ao_profeat_dialog_petition .ao_profeat_dialog_icon SPAN {
-  background-position: -61px -30px;
-}
-
-/* line 308, ../sass/ableorganizer_sample_content.scss */
-.ao_profeat_dialog .ao_profeat_dialog_volunteer .ao_profeat_dialog_icon SPAN {
-  background-position: 0px 0px;
-}
-
-/* line 311, ../sass/ableorganizer_sample_content.scss */
-.ao_profeat_dialog LI {
-  margin: 0em 0em 1em;
-}
-
-/* line 314, ../sass/ableorganizer_sample_content.scss */
-.ao_profeat_holder .ao_profeat_button {
-  display: inline-block;
-  width: normal;
-  margin-top: .5em;
-  margin-left: auto;
-  margin-right: auto;
-  background-image: none;
-  background-color: #ff6c4d;
-  text-shadow: none;
-  text-transform: uppercase;
-  font-weight: normal;
-  cursor: pointer;
-  font-size: 0.9em;
-}
-
 /* main content */
-/* line 329, ../sass/ableorganizer_sample_content.scss */
+/* line 122, ../sass/ableorganizer_sample_content.scss */
 BODY.front #section-content #zone-content-wrapper H2,
 BODY.front #section-content #zone-content-wrapper P {
   color: White;
 }
 
-/* line 333, ../sass/ableorganizer_sample_content.scss */
+/* line 126, ../sass/ableorganizer_sample_content.scss */
 BODY.front #section-content #zone-content-wrapper H2 {
   background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 48%, white 49%, white 53%, rgba(255, 255, 255, 0) 54%, rgba(255, 255, 255, 0) 100%);
   background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 48%, white 49%, white 53%, rgba(255, 255, 255, 0) 54%, rgba(255, 255, 255, 0) 100%);
@@ -416,17 +148,17 @@ BODY.front #section-content #zone-content-wrapper H2 {
   margin-top: 66px;
 }
 
-/* line 340, ../sass/ableorganizer_sample_content.scss */
+/* line 133, ../sass/ableorganizer_sample_content.scss */
 BODY.front #section-content #zone-content-wrapper .region-content-inner H2 {
   margin-top: 32px;
 }
 
-/* line 343, ../sass/ableorganizer_sample_content.scss */
+/* line 136, ../sass/ableorganizer_sample_content.scss */
 BODY.front #section-content #zone-content-wrapper H2 SPAN {
   background-color: #00b0f3;
 }
 
-/* line 346, ../sass/ableorganizer_sample_content.scss */
+/* line 139, ../sass/ableorganizer_sample_content.scss */
 .ao-how-it-does-it {
   background: url(../images/ao-how-it-does-it.png) top left no-repeat;
   height: 386px;
@@ -437,13 +169,13 @@ BODY.front #section-content #zone-content-wrapper H2 SPAN {
 }
 
 /* below content */
-/* line 355, ../sass/ableorganizer_sample_content.scss */
+/* line 148, ../sass/ableorganizer_sample_content.scss */
 BODY.front #section-content #zone-below-content-1-wrapper H2, BODY.front #section-content #zone-below-content-1-wrapper {
   color: #90783f;
   font-size: 1.5em;
 }
 
-/* line 359, ../sass/ableorganizer_sample_content.scss */
+/* line 152, ../sass/ableorganizer_sample_content.scss */
 BODY.front #section-content #zone-below-content-1-wrapper H2 {
   background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 48%, #89722c 49%, #89722c 53%, rgba(255, 255, 255, 0) 54%, rgba(255, 255, 255, 0) 100%);
   background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 48%, #89722c 49%, #89722c 53%, rgba(255, 255, 255, 0) 54%, rgba(255, 255, 255, 0) 100%);
@@ -453,63 +185,63 @@ BODY.front #section-content #zone-below-content-1-wrapper H2 {
   margin-bottom: 0px;
 }
 
-/* line 367, ../sass/ableorganizer_sample_content.scss */
+/* line 160, ../sass/ableorganizer_sample_content.scss */
 BODY.front #section-content #zone-below-content-1-wrapper H2 SPAN {
   background-color: #ffcc4d;
 }
 
-/* line 370, ../sass/ableorganizer_sample_content.scss */
+/* line 163, ../sass/ableorganizer_sample_content.scss */
 BODY.not-logged-in #section-content #zone-below-content-1-wrapper UL {
   margin-bottom: 2em;
 }
 
-/* line 373, ../sass/ableorganizer_sample_content.scss */
+/* line 166, ../sass/ableorganizer_sample_content.scss */
 BODY.front #section-content #zone-below-content-1-wrapper LI {
   margin-bottom: 1em;
 }
 
-/* line 376, ../sass/ableorganizer_sample_content.scss */
+/* line 169, ../sass/ableorganizer_sample_content.scss */
 BODY.front #section-content #zone-below-content-1-wrapper .ao-featlist {
   display: table-cell;
   padding: 0em 2em;
 }
 
-/* line 380, ../sass/ableorganizer_sample_content.scss */
+/* line 173, ../sass/ableorganizer_sample_content.scss */
 BODY.front #section-content #zone-below-content-1-wrapper .ao-down-arrow {
   border-top: 35px solid #00b0f3;
 }
 
-/* line 383, ../sass/ableorganizer_sample_content.scss */
+/* line 176, ../sass/ableorganizer_sample_content.scss */
 BODY.logged-in #section-content #zone-below-content-1-wrapper .ao-down-arrow {
   margin-top: -66px;
 }
 
 /* below content 2 */
-/* line 388, ../sass/ableorganizer_sample_content.scss */
+/* line 181, ../sass/ableorganizer_sample_content.scss */
 BODY.front #section-content #zone-below-content-2-wrapper {
   background: #c8effe url(../images/crowd.png) top center no-repeat;
 }
 
-/* line 391, ../sass/ableorganizer_sample_content.scss */
+/* line 184, ../sass/ableorganizer_sample_content.scss */
 BODY.front #section-content #zone-below-content-2-wrapper H2 {
   color: #ff2c00;
   margin-top: 66px;
 }
 
-/* line 395, ../sass/ableorganizer_sample_content.scss */
+/* line 188, ../sass/ableorganizer_sample_content.scss */
 BODY.front #section-content #zone-below-content-2-wrapper H2 SPAN {
   background-color: #fff0ca;
   background-color: #eaf8fd;
 }
 
-/* line 399, ../sass/ableorganizer_sample_content.scss */
+/* line 192, ../sass/ableorganizer_sample_content.scss */
 BODY.front #section-content #zone-below-content-2-wrapper H3 {
   text-align: center;
   font-size: 1.8em;
   text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.3);
 }
 
-/* line 404, ../sass/ableorganizer_sample_content.scss */
+/* line 197, ../sass/ableorganizer_sample_content.scss */
 BODY.front #section-content #zone-below-content-2-wrapper .ao-info-masthead {
   text-align: center;
   font-size: 1.5em;
@@ -517,7 +249,7 @@ BODY.front #section-content #zone-below-content-2-wrapper .ao-info-masthead {
   text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.3);
 }
 
-/* line 410, ../sass/ableorganizer_sample_content.scss */
+/* line 203, ../sass/ableorganizer_sample_content.scss */
 .ao-info-holder {
   display: table;
   width: 100%;
@@ -530,7 +262,7 @@ BODY.front #section-content #zone-below-content-2-wrapper .ao-info-masthead {
   padding: 1em;
 }
 
-/* line 421, ../sass/ableorganizer_sample_content.scss */
+/* line 214, ../sass/ableorganizer_sample_content.scss */
 .ao-info-item {
   display: table-cell;
   font-size: 1.2em;
@@ -539,12 +271,12 @@ BODY.front #section-content #zone-below-content-2-wrapper .ao-info-masthead {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-/* line 428, ../sass/ableorganizer_sample_content.scss */
+/* line 221, ../sass/ableorganizer_sample_content.scss */
 .ao-info-item P {
   text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.3);
 }
 
-/* line 431, ../sass/ableorganizer_sample_content.scss */
+/* line 224, ../sass/ableorganizer_sample_content.scss */
 .ao-info-item H4 {
   color: White;
   font-weight: normal;
@@ -552,7 +284,7 @@ BODY.front #section-content #zone-below-content-2-wrapper .ao-info-masthead {
   text-align: left;
 }
 
-/* line 437, ../sass/ableorganizer_sample_content.scss */
+/* line 230, ../sass/ableorganizer_sample_content.scss */
 .ao-info-item .ao-info-btn {
   display: inline-block;
   width: normal;
@@ -568,42 +300,42 @@ BODY.front #section-content #zone-below-content-2-wrapper .ao-info-masthead {
   font-size: 0.9em;
 }
 
-/* line 451, ../sass/ableorganizer_sample_content.scss */
+/* line 244, ../sass/ableorganizer_sample_content.scss */
 BODY.front #section-content #zone-below-content-2-wrapper .ao-down-arrow {
   border-top: 35px solid #ffcc4d;
 }
 
-/* line 454, ../sass/ableorganizer_sample_content.scss */
+/* line 247, ../sass/ableorganizer_sample_content.scss */
 BODY.logged-in #section-content #zone-below-content-2-wrapper .ao-down-arrow {
   margin-top: -66px;
 }
 
 /* documentation */
-/* line 461, ../sass/ableorganizer_sample_content.scss */
+/* line 254, ../sass/ableorganizer_sample_content.scss */
 .context-about #section-content #zone-above-content-1-wrapper {
   background-color: #3697ee;
   color: White;
 }
 
-/* line 465, ../sass/ableorganizer_sample_content.scss */
+/* line 258, ../sass/ableorganizer_sample_content.scss */
 .context-about #section-content #zone-above-content-1-wrapper .block .content H2 {
   margin: 1em 0em;
   font-size: 2.25em;
   font-weight: normal;
 }
 
-/* line 471, ../sass/ableorganizer_sample_content.scss */
+/* line 264, ../sass/ableorganizer_sample_content.scss */
 .context-about #section-content #zone-content-wrapper {
   padding-top: 2em;
   padding-bottom: 1em;
 }
 
-/* line 477, ../sass/ableorganizer_sample_content.scss */
+/* line 270, ../sass/ableorganizer_sample_content.scss */
 .context-about #region-sidebar-first .block .block-title {
   font-size: 1.15em;
 }
 
-/* line 480, ../sass/ableorganizer_sample_content.scss */
+/* line 273, ../sass/ableorganizer_sample_content.scss */
 .context-about #region-sidebar-first .block .content LI {
   list-style-image: none;
   list-style-type: none;
@@ -611,54 +343,54 @@ BODY.logged-in #section-content #zone-below-content-2-wrapper .ao-down-arrow {
   padding: 0px;
 }
 
-/* line 486, ../sass/ableorganizer_sample_content.scss */
+/* line 279, ../sass/ableorganizer_sample_content.scss */
 .context-about #region-sidebar-first .block .content LI A {
   text-decoration: none;
 }
 
 @media screen and (max-width: 540px) {
-  /* line 491, ../sass/ableorganizer_sample_content.scss */
+  /* line 284, ../sass/ableorganizer_sample_content.scss */
   .ao_profeat {
     display: block;
   }
 
-  /* line 494, ../sass/ableorganizer_sample_content.scss */
+  /* line 287, ../sass/ableorganizer_sample_content.scss */
   .ao-info-item {
     display: block;
   }
 
-  /* line 497, ../sass/ableorganizer_sample_content.scss */
+  /* line 290, ../sass/ableorganizer_sample_content.scss */
   .ao-info-holder {
     width: auto;
   }
 
-  /* line 500, ../sass/ableorganizer_sample_content.scss */
+  /* line 293, ../sass/ableorganizer_sample_content.scss */
   BODY.front #section-content #zone-below-content-2-wrapper {
     background-repeat: repeat;
   }
 
-  /* line 503, ../sass/ableorganizer_sample_content.scss */
+  /* line 296, ../sass/ableorganizer_sample_content.scss */
   BODY.front #section-content #zone-below-content-1-wrapper .ao-featlist {
     display: block;
   }
 
-  /* line 506, ../sass/ableorganizer_sample_content.scss */
+  /* line 299, ../sass/ableorganizer_sample_content.scss */
   BODY.front #boxes-box-hero_content {
     padding: 1em;
   }
 
-  /* line 509, ../sass/ableorganizer_sample_content.scss */
+  /* line 302, ../sass/ableorganizer_sample_content.scss */
   BODY.front #zone-branding-wrapper #main-menu LI A {
     font-size: 1em;
   }
 
-  /* line 512, ../sass/ableorganizer_sample_content.scss */
+  /* line 305, ../sass/ableorganizer_sample_content.scss */
   BODY.front #section-content .hero_text {
     margin-top: 1.5em;
     width: auto;
   }
 
-  /* line 516, ../sass/ableorganizer_sample_content.scss */
+  /* line 309, ../sass/ableorganizer_sample_content.scss */
   BODY.front #section-content .hero_text P {
     font-size: 1.45em;
     font-weight: normal;
