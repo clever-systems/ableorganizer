@@ -1368,7 +1368,7 @@ function ao_views_default_views() {
   $handler->display->display_options['empty']['area']['table'] = 'views';
   $handler->display->display_options['empty']['area']['field'] = 'area';
   $handler->display->display_options['empty']['area']['empty'] = TRUE;
-  $handler->display->display_options['empty']['area']['content'] = 'There are no contacts available. <a href="contact/add">Add one now</a>.';
+  $handler->display->display_options['empty']['area']['content'] = 'There are no contacts available. <a href="crm-core/contact/add">Add one now</a>.';
   $handler->display->display_options['empty']['area']['format'] = 'filtered_html';
   /* Field: Bulk operations: CRM Contact */
   $handler->display->display_options['fields']['views_bulk_operations']['id'] = 'views_bulk_operations';
