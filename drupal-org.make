@@ -199,8 +199,8 @@ libraries[flot][download][type] = get
 libraries[flot][download][url] = https://flot.googlecode.com/files/flot-0.7.tar.gz
 libraries[flot][destination] = modules/contrib/flot
 ; CKEditor
-; libraries[ckeditor][download][type] = get
-; libraries[ckeditor][download][url] = "http://download.cksource.com/CKEditor/CKEditor/CKEditor 4.2.2/ckeditor_4.2.2_full.zip"
+libraries[ckeditor][download][type] = get
+libraries[ckeditor][download][url] = "http://download.cksource.com/CKEditor/CKEditor/CKEditor 4.3.4/ckeditor_4.3.4_full.zip"
 ; Colorbox
 libraries[colorbox][download][type] = get
 libraries[colorbox][download][url] = "https://github.com/jackmoore/colorbox/archive/1.4.32.tar.gz"
