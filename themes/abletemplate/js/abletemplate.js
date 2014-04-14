@@ -16,6 +16,7 @@
         // change input formats to buttons
         $check = $('.text-format-wrapper').find('SELECT');
         if ($check.length > 0){
+          $check.hide();
           // check each text filter
           for($i = 0; $i < $check.length; $i++){
             $items = $('#' + $($check[$i]).attr('id') + ' > option').map(function(){
@@ -30,7 +31,7 @@
               $new_item = $(this).parent().before('<div class="' + $class + '" name="' + $value + '">' + $text + '</div>');
             });
           }
-          
+
           // this is where the onclick event will go
           $('.text-format-select').click(function(){
               // set the value of the select list based on what the person selected
@@ -45,7 +46,7 @@
         }
 
       });
-      
+
     }
   };
 })(jQuery);

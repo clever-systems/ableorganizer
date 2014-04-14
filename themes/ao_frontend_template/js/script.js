@@ -97,6 +97,7 @@
       // create buttons for each input filter
       $check = $('.text-format-wrapper').find('SELECT');
       if ($check.length > 0){
+        $check.hide();
         // check each text filter
         for($i = 0; $i < $check.length; $i++){
           $items = $('#' + $($check[$i]).attr('id') + ' > option').map(function(){

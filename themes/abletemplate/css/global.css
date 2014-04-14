@@ -580,9 +580,6 @@ LABEL.compact-form-label {
   margin: 0px;
   padding: .5em 0em;
 }
-.filter-wrapper .form-type-select SELECT {
-  display: none;
-}
 .filter-wrapper .form-type-select .button {
   font-size: 0.8em;
   width: auto;

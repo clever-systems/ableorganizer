@@ -364,9 +364,6 @@
     margin-right: .3em;
     @include sassy-button("flat", .5em, $h5-font-size, #9aA5B1, $ao_blue2, White, "Raised");
   }
-  .form-type-select SELECT {
-    display: none;
-  }
   .filter-guidelines {
     display: none;
   }
