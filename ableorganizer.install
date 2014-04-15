@@ -1502,13 +1502,12 @@ function ableorganizer_install_sample_content(&$install_state) {
   $files = system_rebuild_module_data();
   $success = $results = $operations = array();
 
-  // Add selected sample content modules to install to the batch.
-  foreach ($install_state['parameters']['ao_modules'] as $module) {
-    $operations[] = array('_install_ableorganizer_module', array($module, $files[$module]->info['name']));
-  }
-
-  // Flush caches if any modules will be installed.
-  if (count($install_state['parameters']['ao_modules'])) {
+  if (!empty($install_state['parameters']['ao_modules'])) {
+    // Add selected sample content modules to install to the batch.
+    foreach ($install_state['parameters']['ao_modules'] as $module) {
+      $operations[] = array('_install_ableorganizer_module', array($module, $files[$module]->info['name']));
+    }
+    // Flush caches if any modules will be installed.
     $operations[] = array('_install_profile_modules_finished', array($success, $results, $operations));
   }
 
@@ -1517,14 +1516,13 @@ function ableorganizer_install_sample_content(&$install_state) {
     ableorganizer_install_frontpage();
   }
 
-  // Add sample contacts to the batch if any data will be imported.
-  if (count($install_state['parameters']['ao_data'])) {
+  if (!empty($install_state['parameters']['ao_data'])) {
+    // Add sample contacts to the batch if any data will be imported.
     $operations[] = array('_install_ableorganizer_sample_contacts', array());
-  }
-
-  // Add sample activities to the batch for each type selected.
-  foreach ($install_state['parameters']['ao_data'] as $type) {
-    $operations[] = array('_install_ableorganizer_sample_data', array($type));
+    // Add sample activities to the batch for each type selected.
+    foreach ($install_state['parameters']['ao_data'] as $type) {
+      $operations[] = array('_install_ableorganizer_sample_data', array($type));
+    }
   }
 
   $batch = array(
