@@ -10,7 +10,6 @@ dependencies[] = ctools
 dependencies[] = deploy
 dependencies[] = entity_menu_links
 dependencies[] = features
-dependencies[] = media_youtube
 dependencies[] = menu
 dependencies[] = strongarm
 dependencies[] = uuid_path

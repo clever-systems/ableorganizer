@@ -12,7 +12,6 @@ dependencies[] = entity_menu_links
 dependencies[] = features
 dependencies[] = media
 dependencies[] = media_colorbox
-dependencies[] = media_youtube
 dependencies[] = menu
 dependencies[] = strongarm
 dependencies[] = uuid_path
