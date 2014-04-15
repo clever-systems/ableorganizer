@@ -69,7 +69,7 @@ dependencies[] = fontyourface
 dependencies[] = fontyourface_ui
 dependencies[] = google_fonts_api
 dependencies[] = compact_forms
-dependencies[] = wysiwyg
+dependencies[] = ckeditor
 dependencies[] = module_filter
 
 ; commerce modules

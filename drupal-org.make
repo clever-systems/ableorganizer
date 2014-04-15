@@ -90,6 +90,8 @@ projects[wysiwyg][download][url] = "http://git.drupal.org/project/wysiwyg.git"
 projects[wysiwyg][download][branch] = "7.x-2.x"
 projects[wysiwyg][download][revision] = "ee64524b3edb2aa21098a2309b0736e292010247"
 projects[wysiwyg][patch][] = "https://drupal.org/files/wysiwyg-ckeditor-acf-1956778-37.patch"
+projects[ckeditor][version] = 1.13
+projects[ckeditor][subdir] = "contrib"
 
 ; media
 projects[media][subdir] = "contrib"
