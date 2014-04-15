@@ -373,6 +373,8 @@ function ableorganizer_sample_petition_pages_default_crm_core_profile() {
   $crm_core_profile->created = 1379623255;
   $crm_core_profile->contact_match = 'default';
   $crm_core_profile->contact_match_engines = array();
+  $crm_core_profile->access_control = 'default';
+  $crm_core_profile->access_control_perm = 'none';
   $crm_core_profile->roles = array();
   $export['canvass_signatures'] = $crm_core_profile;
 
@@ -598,6 +600,8 @@ function ableorganizer_sample_petition_pages_default_crm_core_profile() {
   $crm_core_profile->created = 1379605128;
   $crm_core_profile->contact_match = 'default';
   $crm_core_profile->contact_match_engines = array();
+  $crm_core_profile->access_control = 'default';
+  $crm_core_profile->access_control_perm = 'none';
   $crm_core_profile->roles = array(
     0 => 'administrator',
   );
@@ -851,6 +855,8 @@ function ableorganizer_sample_petition_pages_default_crm_core_profile() {
   $crm_core_profile->created = 1379612768;
   $crm_core_profile->contact_match = 'default';
   $crm_core_profile->contact_match_engines = array();
+  $crm_core_profile->access_control = 'default';
+  $crm_core_profile->access_control_perm = 'none';
   $crm_core_profile->roles = array(
     0 => 'anonymous user',
     1 => 'authenticated user',
@@ -1265,6 +1271,8 @@ function ableorganizer_sample_petition_pages_default_crm_core_profile() {
   $crm_core_profile->created = 1379613897;
   $crm_core_profile->contact_match = 'default';
   $crm_core_profile->contact_match_engines = array();
+  $crm_core_profile->access_control = 'default';
+  $crm_core_profile->access_control_perm = 'none';
   $crm_core_profile->roles = array(
     0 => 'administrator',
   );

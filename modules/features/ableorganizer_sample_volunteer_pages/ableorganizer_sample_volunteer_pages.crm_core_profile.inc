@@ -224,6 +224,8 @@ function ableorganizer_sample_volunteer_pages_default_crm_core_profile() {
   $crm_core_profile->created = 1378725103;
   $crm_core_profile->contact_match = 'default';
   $crm_core_profile->contact_match_engines = array();
+  $crm_core_profile->access_control = 'default';
+  $crm_core_profile->access_control_perm = 'none';
   $crm_core_profile->roles = array();
   $export['ao_volunteer_commitment_form'] = $crm_core_profile;
 
@@ -474,6 +476,8 @@ function ableorganizer_sample_volunteer_pages_default_crm_core_profile() {
   $crm_core_profile->created = 1379536827;
   $crm_core_profile->contact_match = 'default';
   $crm_core_profile->contact_match_engines = array();
+  $crm_core_profile->access_control = 'default';
+  $crm_core_profile->access_control_perm = 'none';
   $crm_core_profile->roles = array();
   $export['ao_volunteer_commitment_form_2'] = $crm_core_profile;
 
