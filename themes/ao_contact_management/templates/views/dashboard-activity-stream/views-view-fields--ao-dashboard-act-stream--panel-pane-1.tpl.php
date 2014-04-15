@@ -35,11 +35,40 @@
     <?php print $fields['contact_name']->content; ?>
     
     <?php print $fields['activity_string']->content; ?>
-    
-    <?php print $fields['nothing']->content; ?>
+
+    <?php if (isset($fields['field_cmcd_page']->content)): ?>
+      <?php print $fields['field_cmcd_page']->content; ?>
+    <?php endif; ?>
+
+    <?php if (isset($fields['field_cmcev_event']->content)): ?>
+      <?php print $fields['field_cmcev_event']->content; ?>
+    <?php endif; ?>
+
+    <?php if (isset($fields['field_cmcp_petition_page']->content)): ?>
+      <?php print $fields['field_cmcp_petition_page']->content; ?>
+    <?php endif; ?>
+
+    <?php if (isset($fields['field_cmcv_vo_reference']->content)): ?>
+      <?php print $fields['field_cmcv_vo_reference']->content; ?>
+    <?php endif; ?>
+
     
     <div class="crm-core-activity-date">
-      <?php print $fields['nothing_1']->content; ?>
+      <?php if (isset($fields['field_cmcp_received_date']->content)): ?>
+        <?php print $fields['field_cmcp_received_date']->content; ?>
+      <?php endif; ?>
+
+      <?php if (isset($fields['field_cmcd_receive_date']->content)): ?>
+        <?php print $fields['field_cmcd_receive_date']->content; ?>
+      <?php endif; ?>
+
+      <?php if (isset($fields['field_cmcv_reg_date']->content)): ?>
+        <?php print $fields['field_cmcv_reg_date']->content; ?>
+      <?php endif; ?>
+
+      <?php if (isset($fields['field_cmcev_reg_date']->content)): ?>
+        <?php print $fields['field_cmcev_reg_date']->content; ?>
+      <?php endif; ?>
     </div>
   </div>
 </div>

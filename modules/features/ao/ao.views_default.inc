@@ -102,10 +102,9 @@ function ao_views_default_views() {
   $handler->display->display_options['fields']['field_cmcp_received_date']['table'] = 'field_data_field_cmcp_received_date';
   $handler->display->display_options['fields']['field_cmcp_received_date']['field'] = 'field_cmcp_received_date';
   $handler->display->display_options['fields']['field_cmcp_received_date']['label'] = '';
-  $handler->display->display_options['fields']['field_cmcp_received_date']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_cmcp_received_date']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_cmcp_received_date']['element_default_classes'] = FALSE;
-  $handler->display->display_options['fields']['field_cmcp_received_date']['hide_alter_empty'] = FALSE;
+  $handler->display->display_options['fields']['field_cmcp_received_date']['hide_empty'] = TRUE;
   $handler->display->display_options['fields']['field_cmcp_received_date']['type'] = 'format_interval';
   $handler->display->display_options['fields']['field_cmcp_received_date']['settings'] = array(
     'interval' => '2',
@@ -116,9 +115,9 @@ function ao_views_default_views() {
   $handler->display->display_options['fields']['field_cmcd_receive_date']['table'] = 'field_data_field_cmcd_receive_date';
   $handler->display->display_options['fields']['field_cmcd_receive_date']['field'] = 'field_cmcd_receive_date';
   $handler->display->display_options['fields']['field_cmcd_receive_date']['label'] = '';
-  $handler->display->display_options['fields']['field_cmcd_receive_date']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_cmcd_receive_date']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_cmcd_receive_date']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_cmcd_receive_date']['hide_empty'] = TRUE;
   $handler->display->display_options['fields']['field_cmcd_receive_date']['type'] = 'format_interval';
   $handler->display->display_options['fields']['field_cmcd_receive_date']['settings'] = array(
     'interval' => '2',
@@ -129,9 +128,9 @@ function ao_views_default_views() {
   $handler->display->display_options['fields']['field_cmcv_reg_date']['table'] = 'field_data_field_cmcv_reg_date';
   $handler->display->display_options['fields']['field_cmcv_reg_date']['field'] = 'field_cmcv_reg_date';
   $handler->display->display_options['fields']['field_cmcv_reg_date']['label'] = '';
-  $handler->display->display_options['fields']['field_cmcv_reg_date']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_cmcv_reg_date']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_cmcv_reg_date']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_cmcv_reg_date']['hide_empty'] = TRUE;
   $handler->display->display_options['fields']['field_cmcv_reg_date']['type'] = 'format_interval';
   $handler->display->display_options['fields']['field_cmcv_reg_date']['settings'] = array(
     'interval' => '2',
@@ -142,30 +141,22 @@ function ao_views_default_views() {
   $handler->display->display_options['fields']['field_cmcev_reg_date']['table'] = 'field_data_field_cmcev_reg_date';
   $handler->display->display_options['fields']['field_cmcev_reg_date']['field'] = 'field_cmcev_reg_date';
   $handler->display->display_options['fields']['field_cmcev_reg_date']['label'] = '';
-  $handler->display->display_options['fields']['field_cmcev_reg_date']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_cmcev_reg_date']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_cmcev_reg_date']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_cmcev_reg_date']['hide_empty'] = TRUE;
   $handler->display->display_options['fields']['field_cmcev_reg_date']['type'] = 'format_interval';
   $handler->display->display_options['fields']['field_cmcev_reg_date']['settings'] = array(
     'interval' => '2',
     'interval_display' => 'time ago',
   );
-  /* Field: Global: Custom text */
-  $handler->display->display_options['fields']['nothing']['id'] = 'nothing';
-  $handler->display->display_options['fields']['nothing']['table'] = 'views';
-  $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
-  $handler->display->display_options['fields']['nothing']['alter']['text'] = '[field_cmcp_received_date]
-[field_cmcd_receive_date]
-[field_cmcv_reg_date]
-[field_cmcev_reg_date]';
   /* Field: CRM Activity: Donation Page */
   $handler->display->display_options['fields']['field_cmcd_page']['id'] = 'field_cmcd_page';
   $handler->display->display_options['fields']['field_cmcd_page']['table'] = 'field_data_field_cmcd_page';
   $handler->display->display_options['fields']['field_cmcd_page']['field'] = 'field_cmcd_page';
   $handler->display->display_options['fields']['field_cmcd_page']['label'] = '';
-  $handler->display->display_options['fields']['field_cmcd_page']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_cmcd_page']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_cmcd_page']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_cmcd_page']['hide_empty'] = TRUE;
   $handler->display->display_options['fields']['field_cmcd_page']['settings'] = array(
     'link' => 1,
   );
@@ -174,9 +165,9 @@ function ao_views_default_views() {
   $handler->display->display_options['fields']['field_cmcev_event']['table'] = 'field_data_field_cmcev_event';
   $handler->display->display_options['fields']['field_cmcev_event']['field'] = 'field_cmcev_event';
   $handler->display->display_options['fields']['field_cmcev_event']['label'] = '';
-  $handler->display->display_options['fields']['field_cmcev_event']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_cmcev_event']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_cmcev_event']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_cmcev_event']['hide_empty'] = TRUE;
   $handler->display->display_options['fields']['field_cmcev_event']['settings'] = array(
     'link' => 1,
   );
@@ -185,9 +176,9 @@ function ao_views_default_views() {
   $handler->display->display_options['fields']['field_cmcp_petition_page']['table'] = 'field_data_field_cmcp_petition_page';
   $handler->display->display_options['fields']['field_cmcp_petition_page']['field'] = 'field_cmcp_petition_page';
   $handler->display->display_options['fields']['field_cmcp_petition_page']['label'] = '';
-  $handler->display->display_options['fields']['field_cmcp_petition_page']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_cmcp_petition_page']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_cmcp_petition_page']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_cmcp_petition_page']['hide_empty'] = TRUE;
   $handler->display->display_options['fields']['field_cmcp_petition_page']['settings'] = array(
     'link' => 1,
   );
@@ -196,21 +187,12 @@ function ao_views_default_views() {
   $handler->display->display_options['fields']['field_cmcv_vo_reference']['table'] = 'field_data_field_cmcv_vo_reference';
   $handler->display->display_options['fields']['field_cmcv_vo_reference']['field'] = 'field_cmcv_vo_reference';
   $handler->display->display_options['fields']['field_cmcv_vo_reference']['label'] = '';
-  $handler->display->display_options['fields']['field_cmcv_vo_reference']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_cmcv_vo_reference']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_cmcv_vo_reference']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_cmcv_vo_reference']['hide_empty'] = TRUE;
   $handler->display->display_options['fields']['field_cmcv_vo_reference']['settings'] = array(
     'link' => 1,
   );
-  /* Field: Global: Custom text */
-  $handler->display->display_options['fields']['nothing_1']['id'] = 'nothing_1';
-  $handler->display->display_options['fields']['nothing_1']['table'] = 'views';
-  $handler->display->display_options['fields']['nothing_1']['field'] = 'nothing';
-  $handler->display->display_options['fields']['nothing_1']['label'] = 'Target';
-  $handler->display->display_options['fields']['nothing_1']['alter']['text'] = '[field_cmcd_page]
-[field_cmcev_event]
-[field_cmcp_petition_page]
-[field_cmcv_vo_reference]';
   /* Field: CRM Activity Type: Activity string */
   $handler->display->display_options['fields']['activity_string']['id'] = 'activity_string';
   $handler->display->display_options['fields']['activity_string']['table'] = 'crm_core_activity_type';
@@ -610,10 +592,9 @@ function ao_views_default_views() {
   $handler->display->display_options['fields']['field_cmcp_received_date']['table'] = 'field_data_field_cmcp_received_date';
   $handler->display->display_options['fields']['field_cmcp_received_date']['field'] = 'field_cmcp_received_date';
   $handler->display->display_options['fields']['field_cmcp_received_date']['label'] = '';
-  $handler->display->display_options['fields']['field_cmcp_received_date']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_cmcp_received_date']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_cmcp_received_date']['element_default_classes'] = FALSE;
-  $handler->display->display_options['fields']['field_cmcp_received_date']['hide_alter_empty'] = FALSE;
+  $handler->display->display_options['fields']['field_cmcp_received_date']['hide_empty'] = TRUE;
   $handler->display->display_options['fields']['field_cmcp_received_date']['type'] = 'format_interval';
   $handler->display->display_options['fields']['field_cmcp_received_date']['settings'] = array(
     'interval' => '2',
@@ -624,9 +605,9 @@ function ao_views_default_views() {
   $handler->display->display_options['fields']['field_cmcd_receive_date']['table'] = 'field_data_field_cmcd_receive_date';
   $handler->display->display_options['fields']['field_cmcd_receive_date']['field'] = 'field_cmcd_receive_date';
   $handler->display->display_options['fields']['field_cmcd_receive_date']['label'] = '';
-  $handler->display->display_options['fields']['field_cmcd_receive_date']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_cmcd_receive_date']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_cmcd_receive_date']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_cmcd_receive_date']['hide_empty'] = TRUE;
   $handler->display->display_options['fields']['field_cmcd_receive_date']['type'] = 'format_interval';
   $handler->display->display_options['fields']['field_cmcd_receive_date']['settings'] = array(
     'interval' => '2',
@@ -637,9 +618,9 @@ function ao_views_default_views() {
   $handler->display->display_options['fields']['field_cmcv_reg_date']['table'] = 'field_data_field_cmcv_reg_date';
   $handler->display->display_options['fields']['field_cmcv_reg_date']['field'] = 'field_cmcv_reg_date';
   $handler->display->display_options['fields']['field_cmcv_reg_date']['label'] = '';
-  $handler->display->display_options['fields']['field_cmcv_reg_date']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_cmcv_reg_date']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_cmcv_reg_date']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_cmcv_reg_date']['hide_empty'] = TRUE;
   $handler->display->display_options['fields']['field_cmcv_reg_date']['type'] = 'format_interval';
   $handler->display->display_options['fields']['field_cmcv_reg_date']['settings'] = array(
     'interval' => '2',
@@ -650,30 +631,22 @@ function ao_views_default_views() {
   $handler->display->display_options['fields']['field_cmcev_reg_date']['table'] = 'field_data_field_cmcev_reg_date';
   $handler->display->display_options['fields']['field_cmcev_reg_date']['field'] = 'field_cmcev_reg_date';
   $handler->display->display_options['fields']['field_cmcev_reg_date']['label'] = '';
-  $handler->display->display_options['fields']['field_cmcev_reg_date']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_cmcev_reg_date']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_cmcev_reg_date']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_cmcev_reg_date']['hide_empty'] = TRUE;
   $handler->display->display_options['fields']['field_cmcev_reg_date']['type'] = 'format_interval';
   $handler->display->display_options['fields']['field_cmcev_reg_date']['settings'] = array(
     'interval' => '2',
     'interval_display' => 'time ago',
   );
-  /* Field: Global: Custom text */
-  $handler->display->display_options['fields']['nothing']['id'] = 'nothing';
-  $handler->display->display_options['fields']['nothing']['table'] = 'views';
-  $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
-  $handler->display->display_options['fields']['nothing']['alter']['text'] = '[field_cmcp_received_date]
-[field_cmcd_receive_date]
-[field_cmcv_reg_date]
-[field_cmcev_reg_date]';
   /* Field: CRM Activity: Donation Page */
   $handler->display->display_options['fields']['field_cmcd_page']['id'] = 'field_cmcd_page';
   $handler->display->display_options['fields']['field_cmcd_page']['table'] = 'field_data_field_cmcd_page';
   $handler->display->display_options['fields']['field_cmcd_page']['field'] = 'field_cmcd_page';
   $handler->display->display_options['fields']['field_cmcd_page']['label'] = '';
-  $handler->display->display_options['fields']['field_cmcd_page']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_cmcd_page']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_cmcd_page']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_cmcd_page']['hide_empty'] = TRUE;
   $handler->display->display_options['fields']['field_cmcd_page']['settings'] = array(
     'link' => 1,
   );
@@ -682,9 +655,9 @@ function ao_views_default_views() {
   $handler->display->display_options['fields']['field_cmcev_event']['table'] = 'field_data_field_cmcev_event';
   $handler->display->display_options['fields']['field_cmcev_event']['field'] = 'field_cmcev_event';
   $handler->display->display_options['fields']['field_cmcev_event']['label'] = '';
-  $handler->display->display_options['fields']['field_cmcev_event']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_cmcev_event']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_cmcev_event']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_cmcev_event']['hide_empty'] = TRUE;
   $handler->display->display_options['fields']['field_cmcev_event']['settings'] = array(
     'link' => 1,
   );
@@ -693,9 +666,9 @@ function ao_views_default_views() {
   $handler->display->display_options['fields']['field_cmcp_petition_page']['table'] = 'field_data_field_cmcp_petition_page';
   $handler->display->display_options['fields']['field_cmcp_petition_page']['field'] = 'field_cmcp_petition_page';
   $handler->display->display_options['fields']['field_cmcp_petition_page']['label'] = '';
-  $handler->display->display_options['fields']['field_cmcp_petition_page']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_cmcp_petition_page']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_cmcp_petition_page']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_cmcp_petition_page']['hide_empty'] = TRUE;
   $handler->display->display_options['fields']['field_cmcp_petition_page']['settings'] = array(
     'link' => 1,
   );
@@ -704,21 +677,12 @@ function ao_views_default_views() {
   $handler->display->display_options['fields']['field_cmcv_vo_reference']['table'] = 'field_data_field_cmcv_vo_reference';
   $handler->display->display_options['fields']['field_cmcv_vo_reference']['field'] = 'field_cmcv_vo_reference';
   $handler->display->display_options['fields']['field_cmcv_vo_reference']['label'] = '';
-  $handler->display->display_options['fields']['field_cmcv_vo_reference']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_cmcv_vo_reference']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_cmcv_vo_reference']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_cmcv_vo_reference']['hide_empty'] = TRUE;
   $handler->display->display_options['fields']['field_cmcv_vo_reference']['settings'] = array(
     'link' => 1,
   );
-  /* Field: Global: Custom text */
-  $handler->display->display_options['fields']['nothing_1']['id'] = 'nothing_1';
-  $handler->display->display_options['fields']['nothing_1']['table'] = 'views';
-  $handler->display->display_options['fields']['nothing_1']['field'] = 'nothing';
-  $handler->display->display_options['fields']['nothing_1']['label'] = 'Target';
-  $handler->display->display_options['fields']['nothing_1']['alter']['text'] = '[field_cmcd_page]
-[field_cmcev_event]
-[field_cmcp_petition_page]
-[field_cmcv_vo_reference]';
   /* Field: CRM Activity Type: Activity string */
   $handler->display->display_options['fields']['activity_string']['id'] = 'activity_string';
   $handler->display->display_options['fields']['activity_string']['table'] = 'crm_core_activity_type';
@@ -1033,9 +997,9 @@ function ao_views_default_views() {
   $handler->display->display_options['fields']['field_cmcp_received_date']['table'] = 'field_data_field_cmcp_received_date';
   $handler->display->display_options['fields']['field_cmcp_received_date']['field'] = 'field_cmcp_received_date';
   $handler->display->display_options['fields']['field_cmcp_received_date']['label'] = '';
-  $handler->display->display_options['fields']['field_cmcp_received_date']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_cmcp_received_date']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_cmcp_received_date']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_cmcp_received_date']['hide_empty'] = TRUE;
   $handler->display->display_options['fields']['field_cmcp_received_date']['type'] = 'format_interval';
   $handler->display->display_options['fields']['field_cmcp_received_date']['settings'] = array(
     'interval' => '2',
@@ -1046,9 +1010,9 @@ function ao_views_default_views() {
   $handler->display->display_options['fields']['field_cmcd_receive_date']['table'] = 'field_data_field_cmcd_receive_date';
   $handler->display->display_options['fields']['field_cmcd_receive_date']['field'] = 'field_cmcd_receive_date';
   $handler->display->display_options['fields']['field_cmcd_receive_date']['label'] = '';
-  $handler->display->display_options['fields']['field_cmcd_receive_date']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_cmcd_receive_date']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_cmcd_receive_date']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_cmcd_receive_date']['hide_empty'] = TRUE;
   $handler->display->display_options['fields']['field_cmcd_receive_date']['type'] = 'format_interval';
   $handler->display->display_options['fields']['field_cmcd_receive_date']['settings'] = array(
     'interval' => '2',
@@ -1059,9 +1023,9 @@ function ao_views_default_views() {
   $handler->display->display_options['fields']['field_cmcv_reg_date']['table'] = 'field_data_field_cmcv_reg_date';
   $handler->display->display_options['fields']['field_cmcv_reg_date']['field'] = 'field_cmcv_reg_date';
   $handler->display->display_options['fields']['field_cmcv_reg_date']['label'] = '';
-  $handler->display->display_options['fields']['field_cmcv_reg_date']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_cmcv_reg_date']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_cmcv_reg_date']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_cmcv_reg_date']['hide_empty'] = TRUE;
   $handler->display->display_options['fields']['field_cmcv_reg_date']['type'] = 'format_interval';
   $handler->display->display_options['fields']['field_cmcv_reg_date']['settings'] = array(
     'interval' => '2',
@@ -1072,9 +1036,9 @@ function ao_views_default_views() {
   $handler->display->display_options['fields']['field_cmcev_reg_date']['table'] = 'field_data_field_cmcev_reg_date';
   $handler->display->display_options['fields']['field_cmcev_reg_date']['field'] = 'field_cmcev_reg_date';
   $handler->display->display_options['fields']['field_cmcev_reg_date']['label'] = '';
-  $handler->display->display_options['fields']['field_cmcev_reg_date']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_cmcev_reg_date']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_cmcev_reg_date']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_cmcev_reg_date']['hide_empty'] = TRUE;
   $handler->display->display_options['fields']['field_cmcev_reg_date']['type'] = 'format_interval';
   $handler->display->display_options['fields']['field_cmcev_reg_date']['settings'] = array(
     'interval' => '2',
@@ -1143,9 +1107,9 @@ function ao_views_default_views() {
   $handler->display->display_options['fields']['field_cmcd_page']['table'] = 'field_data_field_cmcd_page';
   $handler->display->display_options['fields']['field_cmcd_page']['field'] = 'field_cmcd_page';
   $handler->display->display_options['fields']['field_cmcd_page']['label'] = '';
-  $handler->display->display_options['fields']['field_cmcd_page']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_cmcd_page']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_cmcd_page']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_cmcd_page']['hide_empty'] = TRUE;
   $handler->display->display_options['fields']['field_cmcd_page']['settings'] = array(
     'link' => 1,
   );
@@ -1154,9 +1118,9 @@ function ao_views_default_views() {
   $handler->display->display_options['fields']['field_cmcev_event']['table'] = 'field_data_field_cmcev_event';
   $handler->display->display_options['fields']['field_cmcev_event']['field'] = 'field_cmcev_event';
   $handler->display->display_options['fields']['field_cmcev_event']['label'] = '';
-  $handler->display->display_options['fields']['field_cmcev_event']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_cmcev_event']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_cmcev_event']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_cmcev_event']['hide_empty'] = TRUE;
   $handler->display->display_options['fields']['field_cmcev_event']['settings'] = array(
     'link' => 1,
   );
@@ -1165,9 +1129,9 @@ function ao_views_default_views() {
   $handler->display->display_options['fields']['field_cmcp_petition_page']['table'] = 'field_data_field_cmcp_petition_page';
   $handler->display->display_options['fields']['field_cmcp_petition_page']['field'] = 'field_cmcp_petition_page';
   $handler->display->display_options['fields']['field_cmcp_petition_page']['label'] = '';
-  $handler->display->display_options['fields']['field_cmcp_petition_page']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_cmcp_petition_page']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_cmcp_petition_page']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_cmcp_petition_page']['hide_empty'] = TRUE;
   $handler->display->display_options['fields']['field_cmcp_petition_page']['settings'] = array(
     'link' => 1,
   );
@@ -1176,22 +1140,12 @@ function ao_views_default_views() {
   $handler->display->display_options['fields']['field_cmcv_vo_reference']['table'] = 'field_data_field_cmcv_vo_reference';
   $handler->display->display_options['fields']['field_cmcv_vo_reference']['field'] = 'field_cmcv_vo_reference';
   $handler->display->display_options['fields']['field_cmcv_vo_reference']['label'] = '';
-  $handler->display->display_options['fields']['field_cmcv_vo_reference']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_cmcv_vo_reference']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_cmcv_vo_reference']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_cmcv_vo_reference']['hide_empty'] = TRUE;
   $handler->display->display_options['fields']['field_cmcv_vo_reference']['settings'] = array(
     'link' => 1,
   );
-  /* Field: Global: Custom text */
-  $handler->display->display_options['fields']['nothing_5']['id'] = 'nothing_5';
-  $handler->display->display_options['fields']['nothing_5']['table'] = 'views';
-  $handler->display->display_options['fields']['nothing_5']['field'] = 'nothing';
-  $handler->display->display_options['fields']['nothing_5']['label'] = 'Target';
-  $handler->display->display_options['fields']['nothing_5']['alter']['text'] = '[field_cmcd_page]
-[field_cmcev_event]
-[field_cmcp_petition_page]
-[field_cmcv_vo_reference]';
-  $handler->display->display_options['fields']['nothing_5']['element_default_classes'] = FALSE;
   /* Field: CRM Activity Type: Type */
   $handler->display->display_options['fields']['type']['id'] = 'type';
   $handler->display->display_options['fields']['type']['table'] = 'crm_core_activity_type';
@@ -1692,10 +1646,9 @@ function ao_views_default_views() {
   $handler->display->display_options['fields']['field_cmcp_received_date']['table'] = 'field_data_field_cmcp_received_date';
   $handler->display->display_options['fields']['field_cmcp_received_date']['field'] = 'field_cmcp_received_date';
   $handler->display->display_options['fields']['field_cmcp_received_date']['label'] = '';
-  $handler->display->display_options['fields']['field_cmcp_received_date']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_cmcp_received_date']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_cmcp_received_date']['element_default_classes'] = FALSE;
-  $handler->display->display_options['fields']['field_cmcp_received_date']['hide_alter_empty'] = FALSE;
+  $handler->display->display_options['fields']['field_cmcp_received_date']['hide_empty'] = TRUE;
   $handler->display->display_options['fields']['field_cmcp_received_date']['type'] = 'format_interval';
   $handler->display->display_options['fields']['field_cmcp_received_date']['settings'] = array(
     'interval' => '2',
@@ -1706,9 +1659,9 @@ function ao_views_default_views() {
   $handler->display->display_options['fields']['field_cmcd_receive_date']['table'] = 'field_data_field_cmcd_receive_date';
   $handler->display->display_options['fields']['field_cmcd_receive_date']['field'] = 'field_cmcd_receive_date';
   $handler->display->display_options['fields']['field_cmcd_receive_date']['label'] = '';
-  $handler->display->display_options['fields']['field_cmcd_receive_date']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_cmcd_receive_date']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_cmcd_receive_date']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_cmcd_receive_date']['hide_empty'] = TRUE;
   $handler->display->display_options['fields']['field_cmcd_receive_date']['type'] = 'format_interval';
   $handler->display->display_options['fields']['field_cmcd_receive_date']['settings'] = array(
     'interval' => '2',
@@ -1719,9 +1672,9 @@ function ao_views_default_views() {
   $handler->display->display_options['fields']['field_cmcv_reg_date']['table'] = 'field_data_field_cmcv_reg_date';
   $handler->display->display_options['fields']['field_cmcv_reg_date']['field'] = 'field_cmcv_reg_date';
   $handler->display->display_options['fields']['field_cmcv_reg_date']['label'] = '';
-  $handler->display->display_options['fields']['field_cmcv_reg_date']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_cmcv_reg_date']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_cmcv_reg_date']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_cmcv_reg_date']['hide_empty'] = TRUE;
   $handler->display->display_options['fields']['field_cmcv_reg_date']['type'] = 'format_interval';
   $handler->display->display_options['fields']['field_cmcv_reg_date']['settings'] = array(
     'interval' => '2',
@@ -1732,30 +1685,22 @@ function ao_views_default_views() {
   $handler->display->display_options['fields']['field_cmcev_reg_date']['table'] = 'field_data_field_cmcev_reg_date';
   $handler->display->display_options['fields']['field_cmcev_reg_date']['field'] = 'field_cmcev_reg_date';
   $handler->display->display_options['fields']['field_cmcev_reg_date']['label'] = '';
-  $handler->display->display_options['fields']['field_cmcev_reg_date']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_cmcev_reg_date']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_cmcev_reg_date']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_cmcev_reg_date']['hide_empty'] = TRUE;
   $handler->display->display_options['fields']['field_cmcev_reg_date']['type'] = 'format_interval';
   $handler->display->display_options['fields']['field_cmcev_reg_date']['settings'] = array(
     'interval' => '2',
     'interval_display' => 'time ago',
   );
-  /* Field: Global: Custom text */
-  $handler->display->display_options['fields']['nothing']['id'] = 'nothing';
-  $handler->display->display_options['fields']['nothing']['table'] = 'views';
-  $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
-  $handler->display->display_options['fields']['nothing']['alter']['text'] = '[field_cmcp_received_date]
-[field_cmcd_receive_date]
-[field_cmcv_reg_date]
-[field_cmcev_reg_date]';
   /* Field: CRM Activity: Donation Page */
   $handler->display->display_options['fields']['field_cmcd_page']['id'] = 'field_cmcd_page';
   $handler->display->display_options['fields']['field_cmcd_page']['table'] = 'field_data_field_cmcd_page';
   $handler->display->display_options['fields']['field_cmcd_page']['field'] = 'field_cmcd_page';
   $handler->display->display_options['fields']['field_cmcd_page']['label'] = '';
-  $handler->display->display_options['fields']['field_cmcd_page']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_cmcd_page']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_cmcd_page']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_cmcd_page']['hide_empty'] = TRUE;
   $handler->display->display_options['fields']['field_cmcd_page']['settings'] = array(
     'link' => 1,
   );
@@ -1764,9 +1709,9 @@ function ao_views_default_views() {
   $handler->display->display_options['fields']['field_cmcev_event']['table'] = 'field_data_field_cmcev_event';
   $handler->display->display_options['fields']['field_cmcev_event']['field'] = 'field_cmcev_event';
   $handler->display->display_options['fields']['field_cmcev_event']['label'] = '';
-  $handler->display->display_options['fields']['field_cmcev_event']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_cmcev_event']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_cmcev_event']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_cmcev_event']['hide_empty'] = TRUE;
   $handler->display->display_options['fields']['field_cmcev_event']['settings'] = array(
     'link' => 1,
   );
@@ -1775,9 +1720,9 @@ function ao_views_default_views() {
   $handler->display->display_options['fields']['field_cmcp_petition_page']['table'] = 'field_data_field_cmcp_petition_page';
   $handler->display->display_options['fields']['field_cmcp_petition_page']['field'] = 'field_cmcp_petition_page';
   $handler->display->display_options['fields']['field_cmcp_petition_page']['label'] = '';
-  $handler->display->display_options['fields']['field_cmcp_petition_page']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_cmcp_petition_page']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_cmcp_petition_page']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_cmcp_petition_page']['hide_empty'] = TRUE;
   $handler->display->display_options['fields']['field_cmcp_petition_page']['settings'] = array(
     'link' => 1,
   );
@@ -1786,21 +1731,12 @@ function ao_views_default_views() {
   $handler->display->display_options['fields']['field_cmcv_vo_reference']['table'] = 'field_data_field_cmcv_vo_reference';
   $handler->display->display_options['fields']['field_cmcv_vo_reference']['field'] = 'field_cmcv_vo_reference';
   $handler->display->display_options['fields']['field_cmcv_vo_reference']['label'] = '';
-  $handler->display->display_options['fields']['field_cmcv_vo_reference']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_cmcv_vo_reference']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_cmcv_vo_reference']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_cmcv_vo_reference']['hide_empty'] = TRUE;
   $handler->display->display_options['fields']['field_cmcv_vo_reference']['settings'] = array(
     'link' => 1,
   );
-  /* Field: Global: Custom text */
-  $handler->display->display_options['fields']['nothing_1']['id'] = 'nothing_1';
-  $handler->display->display_options['fields']['nothing_1']['table'] = 'views';
-  $handler->display->display_options['fields']['nothing_1']['field'] = 'nothing';
-  $handler->display->display_options['fields']['nothing_1']['label'] = 'Target';
-  $handler->display->display_options['fields']['nothing_1']['alter']['text'] = '[field_cmcd_page]
-[field_cmcev_event]
-[field_cmcp_petition_page]
-[field_cmcv_vo_reference]';
   /* Field: CRM Activity Type: Activity string */
   $handler->display->display_options['fields']['activity_string']['id'] = 'activity_string';
   $handler->display->display_options['fields']['activity_string']['table'] = 'crm_core_activity_type';

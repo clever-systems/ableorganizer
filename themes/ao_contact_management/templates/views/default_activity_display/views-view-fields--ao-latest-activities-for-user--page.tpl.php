@@ -30,8 +30,10 @@
 <div class="crm-core-activity <?php print $fields['type']->raw; ?>">
   <div class="crm-core-activity-icon"><span></span></div>
   <div class="crm-core-activity-info">
-      
+
+    
     <?php print $fields['contact_name']->content; ?>
+    
     <?php print $fields['activity_string']->content; ?>
 
     <?php if (isset($fields['field_cmcd_page']->content)): ?>
@@ -67,7 +69,7 @@
         <?php print $fields['field_cmcev_reg_date']->content; ?>
       <?php endif; ?>
     </div>
-
+  
   </div>
 
 </div>
