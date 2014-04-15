@@ -159,7 +159,7 @@ projects[geofield][version] = "2.1"
 projects[geophp][subdir] = "contrib"
 projects[geophp][version] = "1.7"
 projects[openlayers][subdir] = "contrib"
-projects[openlayers][version] = "2.0-beta7"
+projects[openlayers][version] = "2.0-beta9"
 projects[proj4js][subdir] = "contrib"
 projects[proj4js][version] = "1.2"
 
