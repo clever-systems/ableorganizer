@@ -92,6 +92,7 @@ projects[wysiwyg][download][revision] = "ee64524b3edb2aa21098a2309b0736e29201024
 projects[wysiwyg][patch][] = "https://drupal.org/files/wysiwyg-ckeditor-acf-1956778-37.patch"
 projects[ckeditor][version] = 1.13
 projects[ckeditor][subdir] = "contrib"
+projects[ckeditor][patch][] = "https://drupal.org/files/ckeditor-feature-import-fix-1103980.patch"
 
 ; media
 projects[media][subdir] = "contrib"
