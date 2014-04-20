@@ -55,22 +55,23 @@ dependencies[] = addressfield
 dependencies[] = date
 
 ; helper modules
+dependencies[] = admin_menu
 dependencies[] = boxes
 dependencies[] = calendar
-dependencies[] = flot
-dependencies[] = mimemail
-dependencies[] = mailsystem
-dependencies[] = admin_menu
-dependencies[] = features
+dependencies[] = ckeditor
+dependencies[] = compact_forms
 dependencies[] = context
-dependencies[] = strongarm
-dependencies[] = pathologic
+dependencies[] = features
+dependencies[] = flot
 dependencies[] = fontyourface
 dependencies[] = fontyourface_ui
 dependencies[] = google_fonts_api
-dependencies[] = compact_forms
-dependencies[] = ckeditor
+dependencies[] = mailsystem
+dependencies[] = mimemail
 dependencies[] = module_filter
+dependencies[] = menu_token
+dependencies[] = pathologic
+dependencies[] = strongarm
 
 ; commerce modules
 dependencies[] = commerce
