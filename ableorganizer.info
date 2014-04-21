@@ -69,7 +69,6 @@ dependencies[] = google_fonts_api
 dependencies[] = mailsystem
 dependencies[] = mimemail
 dependencies[] = module_filter
-dependencies[] = menu_token
 dependencies[] = pathologic
 dependencies[] = strongarm
 

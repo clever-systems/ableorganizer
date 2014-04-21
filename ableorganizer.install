@@ -946,6 +946,8 @@ rgba(49, 81, 189, 1)');
     variable_set('crm_core_volunteer_xaxis_tickmarks', '7');
   }
 
+  $modules[] = 'menu_token';
+
   module_enable($modules);
 
   // Flush caches to initialize features.
