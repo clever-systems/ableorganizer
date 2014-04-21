@@ -7,6 +7,22 @@
 include_once 'ableorganizer_sample_volunteer_pages.features.inc';
 
 /**
+ * Implements hook_uuid_default_entities_alter().
+ *
+ * Adjust timezone of event page dates to match site timezone.
+ */
+function ableorganizer_sample_volunteer_pages_uuid_default_entities_alter(&$entities) {
+  if (!isset($entities['cmcv_sample_content_dp'])) {
+    return;
+  }
+  foreach ($entities['cmcv_sample_content_dp'] as $entity) {
+    if (isset($entity->field_cmcv_date)) {
+      $entity->field_cmcv_date['und'][0]['timezone'] = date_default_timezone();
+    }
+  }
+}
+
+/**
  * Implements hook_post_features_rebuild().
  */
 function ableorganizer_sample_volunteer_pages_post_features_rebuild($component) {

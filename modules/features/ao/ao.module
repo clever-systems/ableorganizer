@@ -22,7 +22,6 @@ function ao_ctools_plugin_directory($owner, $plugin_type) {
 function ao_menu() {
   $items = array();
 
-  
   // callback for view modes in user access wrapper
   $items['ao/view_name/autocomplete'] = array(
     'page callback' => 'ao_select_view_title_ajax_callback',
@@ -136,7 +135,3 @@ function ao_views_default_views_alter(&$views) {
     $views['crm_activities_by_contact']->disabled = TRUE;
   }
 }
-
-
-
-

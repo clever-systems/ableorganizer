@@ -306,6 +306,8 @@ Corporate|1000',
   $crm_core_profile->created = 1378138244;
   $crm_core_profile->contact_match = 'default';
   $crm_core_profile->contact_match_engines = array();
+  $crm_core_profile->access_control = 'default';
+  $crm_core_profile->access_control_perm = 'none';
   $crm_core_profile->roles = array();
   $export['ao_cmcev_simple_many_form'] = $crm_core_profile;
 
@@ -594,6 +596,8 @@ Corporate|1000',
   $crm_core_profile->created = 1378138529;
   $crm_core_profile->contact_match = 'default';
   $crm_core_profile->contact_match_engines = array();
+  $crm_core_profile->access_control = 'default';
+  $crm_core_profile->access_control_perm = 'none';
   $crm_core_profile->roles = array();
   $export['ao_cmcev_simple_quantity_form'] = $crm_core_profile;
 
@@ -837,6 +841,8 @@ Corporate|1000',
   $crm_core_profile->created = 1377939967;
   $crm_core_profile->contact_match = 'default';
   $crm_core_profile->contact_match_engines = array();
+  $crm_core_profile->access_control = 'default';
+  $crm_core_profile->access_control_perm = 'none';
   $crm_core_profile->roles = array();
   $export['ao_cmcev_simple_reg_form'] = $crm_core_profile;
 
@@ -1124,6 +1130,8 @@ Corporate|1000',
   $crm_core_profile->created = 1378137904;
   $crm_core_profile->contact_match = 'default';
   $crm_core_profile->contact_match_engines = array();
+  $crm_core_profile->access_control = 'default';
+  $crm_core_profile->access_control_perm = 'none';
   $crm_core_profile->roles = array();
   $export['ao_cmcev_simple_single_form'] = $crm_core_profile;
 

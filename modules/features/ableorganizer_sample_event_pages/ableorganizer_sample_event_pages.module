@@ -7,6 +7,22 @@
 include_once 'ableorganizer_sample_event_pages.features.inc';
 
 /**
+ * Implements hook_uuid_default_entities_alter().
+ *
+ * Adjust timezone of event page dates to match site timezone.
+ */
+function ableOrganizer_sample_event_pages_uuid_default_entities_alter(&$entities) {
+  if (!isset($entities['cmce_sample_content_dp'])) {
+    return;
+  }
+  foreach ($entities['cmce_sample_content_dp'] as $entity) {
+    if (isset($entity->field_cmcev_date)) {
+      $entity->field_cmcev_date['und'][0]['timezone'] = date_default_timezone();
+    }
+  }
+}
+
+/**
  * Implements hook_uuid_node_features_rebuild_alter().
  *
  * Update field_cmcev_date of event node so they will cover current month fully.

@@ -559,8 +559,8 @@ function ableorganizer_sample_donation_pages_uuid_default_entities() {
       'p8' => 0,
       'p9' => 0,
       'updated' => 0,
-      'vid' => 114,
-      'uuid' => 'd919297b-453f-4f6c-9574-42a1df7d47c9',
+      'vid' => 16,
+      'uuid' => '2714a1ec-bc2a-4390-944b-97f17475e911',
       'path' => 'node/%',
       'load_functions' => array(
         1 => 'node_load',

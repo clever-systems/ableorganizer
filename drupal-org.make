@@ -90,18 +90,18 @@ projects[wysiwyg][download][url] = "http://git.drupal.org/project/wysiwyg.git"
 projects[wysiwyg][download][branch] = "7.x-2.x"
 projects[wysiwyg][download][revision] = "ee64524b3edb2aa21098a2309b0736e292010247"
 projects[wysiwyg][patch][] = "https://drupal.org/files/wysiwyg-ckeditor-acf-1956778-37.patch"
-; Necessary until 1.14
+; Remain on dev until 1.14
 projects[ckeditor][version] = 1.x-dev
 projects[ckeditor][subdir] = "contrib"
 
 ; media
+; Remain on dev until 2.0-alpha4
 projects[media][subdir] = "contrib"
 projects[media][type] = "module"
 projects[media][download][type] = "git"
 projects[media][download][url] = "http://git.drupal.org/project/media.git"
 projects[media][download][branch] = "7.x-2.x"
-projects[media][download][revision] = "e7be30f196b3ad23743646db62f4a392e96eedb0"
-projects[media][patch][] = "https://drupal.org/files/media-broken-wysiwyg-2067063-113.patch"
+projects[media][download][revision] = "a74c013160b56605ed5e990b3a9aaaceeff92be9"
 projects[colorbox][subdir] = "contrib"
 projects[colorbox][type] = "module"
 projects[colorbox][download][type] = "git"

@@ -1,9 +1,6 @@
 name = AbleOrganizer Sample Content
 description = Sample content for AbleOrganizer. Includes user profiles, navigation menus and other items.
-core = 7.x
 package = AbleOrganizer
-version = 7.x-1.0-beta1
-project = ableorganizer_sample_content
 dependencies[] = boxes
 dependencies[] = ctools
 dependencies[] = deploy
@@ -16,7 +13,6 @@ stylesheets[all][] = css/ableorganizer_sample_content.css
 __drupal_alter_by_ref[][node][article] = article
 __drupal_alter_by_ref[][node][test] = test
 __drupal_alter_by_ref[][node][page] = page
-datestamp = 1393085963
 features[box][] = documentation_header
 features[context][] = documentation
 features[ctools][] = boxes:box:1
