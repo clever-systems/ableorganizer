@@ -1,7 +1,7 @@
 api = 2
 core = 7.x
 
-projects[drupal][version] = 7.26
+projects[drupal][version] = 7.27
 
 ; Download the install profile and recursively build all its dependencies
 ;projects[ableorganizer][version] = 0.1
