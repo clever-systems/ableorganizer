@@ -122,12 +122,13 @@ projects[media_youtube][download][branch] = 7.x-2.x
 projects[media_youtube][download][revision] = "ca46aba0150faf0b64290e6ac386c4ad5ccef363"
 projects[adaptive_image][subdir] = "contrib"
 projects[adaptive_image][version] = "1.4"
+; Remain on dev until 2.0-alpha4
 projects[file_entity][subdir] = "contrib"
 projects[file_entity][type] = "module"
 projects[file_entity][download][type] = "git"
 projects[file_entity][download][url] = "http://git.drupal.org/project/file_entity.git"
 projects[file_entity][download][branch] = "7.x-2.x"
-projects[file_entity][download][revision] = "fee20d5ba209c988cd7fd6ac54c68e988facf7d1"
+projects[file_entity][download][revision] = "13fa2b0bcb73d066b996bffed9f13c6a66ed924d"
 
 ; commerce modules
 projects[commerce][version] = 1.9

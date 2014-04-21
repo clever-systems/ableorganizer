@@ -454,7 +454,7 @@ function ableorganizer_sample_event_pages_uuid_default_entities() {
           'dependent_locality' => NULL,
           'first_name' => NULL,
           'last_name' => NULL,
-          'locality' => 'Washington ',
+          'locality' => 'Washington',
           'name_line' => NULL,
           'organisation_name' => NULL,
           'postal_code' => 20016,
