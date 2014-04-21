@@ -522,7 +522,31 @@ function ableorganizer_sample_donation_pages_uuid_default_entities() {
         0 => array(
           'format' => 'full_html',
           'summary' => '',
-          'value' => '<p>Thank you for considering supporting our work. Your contribution is absolutely vital. Without it, the valuable work of our organization\'s&nbsp;field staff would be impossible. Your support demonstrates solidarity with the people our programs and events go to&nbsp;help.&nbsp;It also helps up in other, vital ways:</p><ul><li>To ensure the freedom to provide humanitarian assistance whenever and wherever it is needed.</li><li>To remain independent from political, religious and economic interests.</li></ul><p>There are 4 easy ways to give.</p><h3><a href="/donate/online-donation">Make an online donation</a></h3><p>Online donations are the quickest and easiest ways to become involved. Make a donation in any amount today!</p><h3><a href="/donate/annual-appeal">Join our Annual Appeal</a></h3><p>Our organization\'s Annual Appeal campaign goes towards offsetting operating costs and ensuring our staff has the tools they need to carry out our programs.</p><h3><a href="/donate/fundraiser">Participate in our fundraiser</a></h3><p>Our online fundraiser is for a popular program run by the organization that appeals to a wide audience. It gets more traction with a certain segment of our followers. You can get involved at any of the recommended&nbsp;donation levels.&nbsp;</p><h3><a href="/donate/walkup">Walk up donations</a></h3><p>We use this form internally for recording donations to our organization. It is a direct entry form that allows us to track offline donations received through walk ups, phone calls, and the like. While everyone can see the link to this form, the only people who should be able to fill it out are people who are logged in.</p>',
+          'value' => '<p>Thank you for considering supporting our work. Your contribution is absolutely vital. Without it, the valuable work of our organization\'s&nbsp;field staff would be impossible. Your support demonstrates solidarity with the people our programs and events go to&nbsp;help.&nbsp;It also helps up in other, vital ways:</p>
+
+<ul>
+	<li>To ensure the freedom to provide humanitarian assistance whenever and wherever it is needed.</li>
+	<li>To remain independent from political, religious and economic interests.</li>
+</ul>
+
+<p>There are 4 easy ways to give.</p>
+
+<p><a href="/donate/online-donation">Make an online donation</a></p>
+
+<p>Online donations are the quickest and easiest ways to become involved. Make a donation in any amount today!</p>
+
+<p><a href="/donate/annual-appeal">Join our Annual Appeal</a></p>
+
+<p>Our organization\'s Annual Appeal campaign goes towards offsetting operating costs and ensuring our staff has the tools they need to carry out our programs.</p>
+
+<p><a href="/donate/fundraiser">Participate in our fundraiser</a></p>
+
+<p>Our online fundraiser is for a popular program run by the organization that appeals to a wide audience. It gets more traction with a certain segment of our followers. You can get involved at any of the recommended&nbsp;donation levels.&nbsp;</p>
+
+<p><a href="/donate/walkup">Walk up donations</a></p>
+
+<p>We use this form internally for recording donations to our organization. It is a direct entry form that allows us to track offline donations received through walk ups, phone calls, and the like. While everyone can see the link to this form, the only people who should be able to fill it out are people who are logged in.</p>
+',
         ),
       ),
     ),
@@ -535,12 +559,17 @@ function ableorganizer_sample_donation_pages_uuid_default_entities() {
     'log' => '',
     'menu_link' => array(
       'menu_name' => 'main-menu',
-      'mlid' => 985,
+      'mlid' => 991,
       'plid' => 0,
       'link_path' => 'node/7',
       'router_path' => 'node/%',
       'link_title' => 'Donate',
-      'options' => array(),
+      'options' => array(
+        'attributes' => array(
+          'title' => '',
+        ),
+        'identifier' => 'main-menu_donate:node/7',
+      ),
       'module' => 'menu',
       'hidden' => 0,
       'external' => 0,
@@ -548,8 +577,8 @@ function ableorganizer_sample_donation_pages_uuid_default_entities() {
       'expanded' => 0,
       'weight' => 0,
       'depth' => 1,
-      'customized' => 0,
-      'p1' => 985,
+      'customized' => 1,
+      'p1' => 991,
       'p2' => 0,
       'p3' => 0,
       'p4' => 0,
@@ -559,8 +588,8 @@ function ableorganizer_sample_donation_pages_uuid_default_entities() {
       'p8' => 0,
       'p9' => 0,
       'updated' => 0,
-      'vid' => 16,
-      'uuid' => '9ac0b8b0-9bdc-44dc-8a5a-ffcb75921a54',
+      'vid' => 17,
+      'uuid' => '26b8c74e-ca8f-4568-b202-dc4b61771a44',
       'path' => 'node/%',
       'load_functions' => array(
         1 => 'node_load',
@@ -588,7 +617,12 @@ function ableorganizer_sample_donation_pages_uuid_default_entities() {
       'link_weight' => 0,
       'href' => 'node/7',
       'access' => TRUE,
-      'localized_options' => array(),
+      'localized_options' => array(
+        'attributes' => array(
+          'title' => '',
+        ),
+        'identifier' => 'main-menu_donate:node/7',
+      ),
     ),
     'promote' => 0,
     'rdf_mapping' => array(
