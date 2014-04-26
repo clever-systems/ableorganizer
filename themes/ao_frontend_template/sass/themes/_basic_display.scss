@@ -54,6 +54,12 @@ nav.breadcrumb {
   font-size: 0.9em;
 }
 
+/* FOOTER */
+footer#footer {
+  background-color: $gray-3;
+  min-height: 200px;
+}
+
 /* VIEWS - NO RESULTS */
 .ao-no-results {
   margin: .5em;
