@@ -1049,10 +1049,6 @@ function ao_views_default_views() {
   $handler->display->display_options['fields']['nothing']['table'] = 'views';
   $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
   $handler->display->display_options['fields']['nothing']['label'] = 'Date Received';
-  $handler->display->display_options['fields']['nothing']['alter']['text'] = '[field_cmcp_received_date]
-[field_cmcd_receive_date]
-[field_cmcv_reg_date]
-[field_cmcev_reg_date]';
   $handler->display->display_options['fields']['nothing']['empty'] = '[field_activity_date]';
   /* Field: Global: Custom text */
   $handler->display->display_options['fields']['nothing_1']['id'] = 'nothing_1';
