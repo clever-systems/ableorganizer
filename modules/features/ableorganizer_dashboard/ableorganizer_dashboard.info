@@ -4,6 +4,7 @@ package = AbleOrganizer
 dependencies[] = ctools
 dependencies[] = features
 dependencies[] = media
+dependencies[] = panels
 dependencies[] = page_manager
 dependencies[] = pathologic
 dependencies[] = views
