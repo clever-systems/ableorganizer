@@ -1,13 +1,12 @@
 api = 2
 core = 7.x
 
-projects[drupal][version] = 7.27
+projects[drupal][version] = 7.31
 
-; Download the install profile and recursively build all its dependencies
-;projects[ableorganizer][version] = 0.1
+; Download the AbleOrganizer install profile and recursively build all its dependencies.
+projects[ableorganizer][version] = 1.0-beta2
 
-; for testing development releases
-projects[ableorganizer][type] = profile
-projects[ableorganizer][download][type] = git
-projects[ableorganizer][download][branch] = 7.x-1.x
-projects[ableorganizer][download][url] = "http://git.drupal.org/project/ableorganizer.git"
+; For testing development releases.
+;projects[ableorganizer][type] = profile
+;projects[ableorganizer][download][type] = git
+;projects[ableorganizer][download][branch] = 7.x-1.x
