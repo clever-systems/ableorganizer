@@ -74,7 +74,6 @@ projects[calendar][download][type] = git
 projects[calendar][download][branch] = 7.x-3.x
 projects[calendar][download][revision] = 23730b91170e040a4a85a1cd4a7b7fc1bd1d33b3
 projects[calendar][subdir] = "contrib"
-projects[calendar][patch][] = "https://drupal.org/files/calendar-php54-1471400-58.patch"
 
 ; email
 projects[mailsystem][version] = 2.34
