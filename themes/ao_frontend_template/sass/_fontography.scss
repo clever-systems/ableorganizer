@@ -1,0 +1,28 @@
+/**
+ * @file
+ * Menus
+ *
+ * Mixin for storing fonts in AbleOrganizer
+ */
+@mixin fontography (
+  $fonto-style: normal,
+  $color: false
+) {
+
+
+  @if $fonto-style == normal {
+    font-size: $base-font-size;
+  }
+  @if $fonto-style == button {
+    @include adjust-font-size-to(16px, $lines: 1.35);
+    font-weight: normal;
+    cursor: pointer;
+  }
+
+
+
+  @if color != false {
+    color: $color;
+  }
+
+}

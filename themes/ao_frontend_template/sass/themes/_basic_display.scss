@@ -46,8 +46,10 @@ section#main-navigation {
 }
 /* controls the display of the CRM Core menu in the header */
 #block-menu-crm-core-menu {
-  @include -ao-button-drop-down(.5em, $h4-font-size, $ao_blue, #009ed9, White, $h4-font-size, 'full');
+  @include ao-drop-down();
 }
+
+
 /* controls the display of thumbnails */
 nav.breadcrumb {
   padding: .5em 0em 0em;
@@ -134,7 +136,9 @@ BODY.page-user {
 }
 /* controls the display of the edit links in user profile */
 BODY.page-user .pane-menu-menu-user-profile-links {
-  @include -ao-button-drop-down(.5em, $h5-font-size, $ao_blue, #009ed9, White, $h5-font-size, '');
+  
+  @include ao-drop-down($ao-menu-justify: right, $ao-menu-border-radius: 0.5em 0em 0.5em 0.5em);
+  
   H2 {
     font-size: $h5-font-size;
   }

@@ -1,0 +1,56 @@
+/**
+ * @file
+ * AbleOrganizer Initialization
+ *
+ * Provides default values for mixins used in AbleOrganizer
+ * Variables are organized by category
+ */
+
+/**
+ * DROP DOWN MENUS
+ * Variables controlling the default appearance of drop down menus
+ */
+$ao-menu-trigger-style: '.ao-menu-default-trigger-style';
+$ao-menu-menu-style: '.ao-menu-default-menu-style';
+$ao-menu-element-style: '.ao-menu-default-element-style';
+$ao-menu-border-radius:  0em 0em 0.5em 0.5em;
+
+/**
+ * DROP DOWN MENU DEFAULTS
+ * TRIGGER< MENU AND ELEMENT STYLES
+ * These styles apply to drop down menus by default.
+ * They can be removed or replaced using default values for the mixin.
+ */
+.ao-menu-default-trigger-style {
+  @include border-radius(.5em);
+  @include box-sizing(border-box);
+  margin: 0em;
+  padding: 0.25em 1em;
+  background-color: $ao_blue;
+  @include fontography($fonto-style: button, $color: White);
+} 
+.ao-menu-default-menu-style {
+  background-color: $ao_blue;
+  white-space: nowrap;
+  margin: 0em;
+  padding: 0em;
+  overflow: hidden;
+  z-index: 1000;
+} 
+.ao-menu-default-element-style {
+  list-style-type: none;
+  list-style-image: none;
+  padding: rhythm(.25) rhythm(.5);
+  margin: 0em;
+  &:hover {
+    background-color: darken($ao_blue, 5%);
+  }
+  A {
+    margin: 0em;
+    padding: 0em;
+    text-decoration: none;
+    @include fontography($fonto-style: normal, $color: White);
+  }
+} 
+
+  
