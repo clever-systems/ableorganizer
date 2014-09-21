@@ -4,25 +4,172 @@
  *
  * Mixin for storing fonts in AbleOrganizer
  */
-@mixin fontography (
-  $fonto-style: normal,
-  $color: false
+
+/**
+ * DEFAULT VARIABLES
+ * Default settings for fontography.
+ * See mixin documentation for explanations.
+ */
+
+// FONTOGRAPY
+// This is the main style registry
+$ao-fontography:                  () !default;
+
+// FONTOGRAPY MIXIN
+$ao-fonto-style:                  normal !default;
+$ao-fonto-color:                  false !default;
+
+// REGISTER STYLES
+$ao-fonto-style-name:             false !default;
+$ao-fonto-style-color:            false !default;
+$ao-fonto-style-size:             false !default;
+$ao-fonto-style-lines:            false !default;
+$ao-fonto-style-family:           false !default;
+$ao-fonto-style-weight:           false !default;
+$ao-fonto-style-text-transform:   false !default;
+$ao-fonto-style-font-style:       false !default;
+$ao-fonto-style-padding:          false !default;
+$ao-fonto-style-margin:           false !default;
+$ao-fonto-style-text-align:       false !default;
+  
+/**
+ * AO FONTOGRAPHY
+ *
+ * Registers a font / display style for content
+ * 
+ * @variables:
+ * $ao-fonto-style: Name of the font style.
+ * $ao-fonto-color: Color for the font.
+ * 
+ */  
+@mixin ao-fontography (
+  $ao-fonto-style: $ao-fonto-style,
+  $ao-fonto-color: $ao-fonto-color
 ) {
 
-
-  @if $fonto-style == normal {
-    font-size: $base-font-size;
+  text-align: $ao-fonto-style;
+  
+  @if map-has-key($ao-fontography, $ao-fonto-style){
+  
+    text-align: $ao-fonto-style;
+    
+    // get the key
+    $style: map-get($ao-fontography, $ao-fonto-style);
+    
+    // get the font values
+    $color: map-get($style, 'color');
+    $size: map-get($style, 'size');
+    $family: map-get($style, 'family');
+    $set-lines: map-get($style, 'lines');
+    $weight: map-get($style, 'weight');
+    $text-transform: map-get($style, 'text-transform');
+    $font-style: map-get($style, 'font-style');
+    $padding: map-get($style, 'padding');
+    $margin: map-get($style, 'margin');
+    $text-align: map-get($style, 'text-align');
+    
+    // font color
+    // allow colors to be overridden
+    @if $color != false and $color != null and $ao-fonto-color == false {
+      color: color;
+    }
+    @if $ao-fonto-color != false {
+      color: $ao-fonto-color;
+    }
+    // font family
+    @if $family != false and  $family != null {
+      font-family: $family;
+    }
+    // font weight
+    @if $weight != false and  $weight != null {
+      font-weight: $weight;
+    }
+    // font size
+    @if $size != false and $size != null {
+      @if $set-lines == false {
+        $set-lines: 1;
+      }
+      @include adjust-font-size-to($size, $lines: $set-lines);
+    }
+    // text transform
+    @if $text-transform != false and  $text-transform != null {
+      text-transform: $text-transform;
+    }
+    // font-style
+    @if $font-style != false and  $font-style != null {
+      font-style: $font-style;
+    }
+    // padding
+    @if $padding != false and  $padding != null {
+      padding: $padding;
+    }
+    // margin
+    @if $margin != false and  $margin != null {
+      padding: $padding;
+    }
+    // text-align
+    @if $text-align != false and  $text-align != null {
+      text-align: $text-align;
+    }
   }
-  @if $fonto-style == button {
-    @include adjust-font-size-to(16px, $lines: 1.35);
-    font-weight: normal;
-    cursor: pointer;
+}
+
+/**
+ * AO FONTOGRAPHY - REGISTER STYLE
+ *
+ * Registers a style for presenting fonts
+ * 
+ * @variables:
+ * $ao-fonto-style: Name of the font style.
+ * $ao-fonto-color: Color for the font.
+ * 
+ */  
+@function ao-fontography-register-style (
+  $ao-fonto-style-name:             $ao-fonto-style-name,
+  $ao-fonto-style-color:            $ao-fonto-style-color,
+  $ao-fonto-style-size:             $ao-fonto-style-size,
+  $ao-fonto-style-lines:            $ao-fonto-style-lines,
+  $ao-fonto-style-family:           $ao-fonto-style-family,
+  $ao-fonto-style-weight:           $ao-fonto-style-weight,
+  $ao-fonto-style-text-transform:   $ao-fonto-style-text-transform,
+  $ao-fonto-style-font-style:       $ao-fonto-style-font-style,
+  $ao-fonto-style-padding:          $ao-fonto-style-padding,
+  $ao-fonto-style-margin:           $ao-fonto-style-margin,
+  $ao-fonto-style-text-align:       $ao-fonto-style-text-align
+) {
+  // check that there is a valid name for the style
+  @if $ao-fonto-style-name != false {
+    $newmap: (
+      $ao-fonto-style-name: (
+        color: $ao-fonto-style-color,
+        size: $ao-fonto-style-size,
+        lines: $ao-fonto-style-lines,
+        family: $ao-fonto-style-family,
+        weight: $ao-fonto-style-weight,
+        text-transform: $ao-fonto-style-text-transform,
+        font-style: $ao-fonto-style-font-style,
+        padding: $ao-fonto-style-padding,
+        margin: $ao-fonto-style-margin,
+        text-align: $ao-fonto-style-text-align
+      )
+    );
+    $ao-fontography: map-merge($ao-fontography, $newmap);
+    @return true;
   }
+  @return false;
+}
 
 
+// debug
+.see-it {
+  @include ao-fontography($ao-fonto-style: button);
+}
 
-  @if color != false {
-    color: $color;
+#block-menu-crm-core-menu {
+  // @extend .see-it;
+  
+  H2 {
+    @include ao-fontography($ao-fonto-style: button-blue, $ao-fonto-color: White);
+    
   }
-
 }
