@@ -2,24 +2,77 @@
  * @file
  * Buttons
  *
- * Defines the appearance of regions used to display content
+ * Mixin for controlling the appearance of regions
  */
- 
-/* controls the appearance of a single region within the template */ 
-.page-region {
-  border-bottom: 1px solid #CCC;
-  .section-wrapper {
-    margin-left: auto;
-    margin-right: auto;
+
+/**
+ * DEFAULT VARIABLES
+ * Default settings for regions.
+ * See mixin documentation for explanations.
+ */
+$ao-horiz-region-container-selector: '.section-wrapper' !default;
+$ao-horiz-region-container-position: center !default;
+$ao-horiz-region-container-width: 1200px !default;
+$ao-horiz-region-padding: false !default;
+$ao-horiz-region-style: false !default;
+
+/**
+ * AO HORIZONTAL REGION
+ *
+ * Controls the position and display of horizontal regions.
+ * Regions include any block region that is horizonally aligned.
+ * 
+ * @variables
+ * $ao-horiz-region-container-selector: Container in the region used to hold the content. Defaults to '.section-wrapper'
+ * $ao-region-container-position: Position of the container. Possible values are left, right, center. Defaults to 'center'
+ * $ao-region-container-width: Width of the container in the region. Defaults to 1200px.
+ * $ao-region-padding: Padding to apply to the region. Ignored when value is set to false. Defaults to false.
+ * $ao-region-style: Additional css style to apply to the region. Ignored when value is set to false. Defaults to false.
+ *
+ */
+@mixin ao-horizontal-region (
+  $ao-horiz-region-container-selector: $ao-horiz-region-container-selector,
+  $ao-horiz-region-container-position: $ao-horiz-region-container-position,
+  $ao-horiz-region-container-width: $ao-horiz-region-container-width,
+  $ao-horiz-region-padding: $ao-horiz-region-padding,
+  $ao-horiz-region-style: $ao-horiz-region-style
+) {
+
+
+  // apply any additional styles to the region
+  @if $ao-horiz-region-style != false {
+    @extend #{$ao-horiz-region-style};
   }
+
+  // center the section wrapper
+  #{$ao-horiz-region-container-selector} {
+  
+    // containers should always be position relative
+    // to account for absolutely positioned elements inside
+    position: relative;
+    
+    @if $ao-horiz-region-container-position == center {
+      margin-left: auto;
+      margin-right: auto;
+    }
+    @if $ao-horiz-region-container-position == left {
+    }
+    @if $ao-horiz-region-container-position == right {
+      margin-left: auto;
+    }
+    @if $ao-horiz-region-container-width != false {
+      max-width: $ao-horiz-region-container-width;
+    }
+    // padding
+    @if $ao-horiz-region-padding != false {
+      padding: $ao-horiz-region-padding;
+    }
+
+  }
+
 }
-/* controls the appearance of header elements in the page */
-.header-region {
-  padding: 2em 0em;
-  border-bottom: 1px solid #CCC;
-}
-/* controls the appearance of navigation elements in the page */
-.navigation-region {
-  padding: 1em 0em;
-  border-bottom: 1px solid #CCC;
-}
+
+
+// section-wrapper
+
+
