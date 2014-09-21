@@ -6,6 +6,33 @@
  * Variables are organized by category
  */
 
+
+// default fonts styles
+$normal: ao-fontography-register-style(
+  $ao-fonto-style-name: normal,
+  $ao-fonto-style-color: false,
+  $ao-fonto-style-size: false,
+  $ao-fonto-style-lines: false,
+  $ao-fonto-style-family: false
+);
+
+$regular: ao-fontography-register-style(
+  $ao-fonto-style-name: regular,
+  $ao-fonto-style-color: false,
+  $ao-fonto-style-size: false,
+  $ao-fonto-style-lines: false,
+  $ao-fonto-style-family: false
+);
+
+$button-blue: ao-fontography-register-style(
+  $ao-fonto-style-name:     button-blue,
+  $ao-fonto-style-size:     16px,
+  $ao-fonto-style-padding:  0.25em 1em,
+  $ao-fonto-style-margin:   0em,
+  $ao-fonto-style-color:    White
+);
+
+
 /**
  * DROP DOWN MENUS
  * Variables controlling the default appearance of drop down menus
@@ -24,10 +51,12 @@ $ao-menu-border-radius:  0em 0em 0.5em 0.5em;
 .ao-menu-default-trigger-style {
   @include border-radius(.5em);
   @include box-sizing(border-box);
-  margin: 0em;
-  padding: 0.25em 1em;
+  @include ao-fontography($ao-fonto-style: button-blue, $ao-fonto-color: White);
+  
   background-color: $ao_blue;
-  @include fontography($fonto-style: button, $color: White);
+  border: 0;
+  display: inline-block;
+  cursor: pointer;  
 } 
 .ao-menu-default-menu-style {
   background-color: $ao_blue;
@@ -49,8 +78,6 @@ $ao-menu-border-radius:  0em 0em 0.5em 0.5em;
     margin: 0em;
     padding: 0em;
     text-decoration: none;
-    @include fontography($fonto-style: normal, $color: White);
+    @include ao-fontography($ao-fonto-style: normal, $ao-fonto-color: White);
   }
 } 
-
-  

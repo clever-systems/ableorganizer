@@ -8,16 +8,115 @@
 /* Import Sass mixins, variables, Compass modules, etc. */
 /* grays */
 /**
- * turns a block or a panel page containing a menu into a drop down
+ * @file
+ * Menus
  *
- * $border-radius - Valid border radius value. Should be a single value.
- * $font-size - the size of the font for the button.
- * $base-color - valid color for the button and the background of the menu.
- * $secondary-color - valid color for the button and the background of the menu when hovered.
- * $option-color - The color of links in the button.
- * $option-font-size - The font size of links in the menu.
- * $option-width - 'full' to make the menu expand to the width of the container. Use an empty string for auto width.
- **/
+ * Mixin for storing fonts in AbleOrganizer
+ */
+/**
+ * DEFAULT VARIABLES
+ * Default settings for fontography.
+ * See mixin documentation for explanations.
+ */
+/**
+ * AO FONTOGRAPHY
+ *
+ * Registers a font / display style for content
+ * 
+ * @variables:
+ * $ao-fonto-style: Name of the font style.
+ * $ao-fonto-color: Color for the font.
+ * 
+ */
+/**
+ * AO FONTOGRAPHY - REGISTER STYLE
+ *
+ * Registers a style for presenting fonts
+ * 
+ * @variables:
+ * $ao-fonto-style: Name of the font style.
+ * $ao-fonto-color: Color for the font.
+ * 
+ */
+/* line 164, ../sass/_fontography.scss */
+.see-it {
+  text-align: button;
+}
+
+/* line 171, ../sass/_fontography.scss */
+#block-menu-crm-core-menu H2 {
+  text-align: button-blue;
+}
+
+/**
+ * @file
+ * AbleOrganizer Initialization
+ *
+ * Provides default values for mixins used in AbleOrganizer
+ * Variables are organized by category
+ */
+/**
+ * DROP DOWN MENUS
+ * Variables controlling the default appearance of drop down menus
+ */
+/**
+ * DROP DOWN MENU DEFAULTS
+ * TRIGGER< MENU AND ELEMENT STYLES
+ * These styles apply to drop down menus by default.
+ * They can be removed or replaced using default values for the mixin.
+ */
+/* line 51, ../sass/_ao-init.scss */
+.ao-menu-default-trigger-style, #block-menu-crm-core-menu H2.pane-title, #block-menu-crm-core-menu H2.block-title, BODY.page-user .pane-menu-menu-user-profile-links H2.pane-title, BODY.page-user .pane-menu-menu-user-profile-links H2.block-title {
+  -moz-border-radius: 0.5em;
+  -webkit-border-radius: 0.5em;
+  border-radius: 0.5em;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  text-align: button-blue;
+  text-align: button-blue;
+  color: white;
+  font-size: 1em;
+  line-height: 1.5em;
+  padding: 0.25em 1em;
+  padding: 0.25em 1em;
+  background-color: #00b0f3;
+  border: 0;
+  display: inline-block;
+  cursor: pointer;
+}
+
+/* line 61, ../sass/_ao-init.scss */
+.ao-menu-default-menu-style, #block-menu-crm-core-menu UL.menu, BODY.page-user .pane-menu-menu-user-profile-links UL.menu {
+  background-color: #00b0f3;
+  white-space: nowrap;
+  margin: 0em;
+  padding: 0em;
+  overflow: hidden;
+  z-index: 1000;
+}
+
+/* line 69, ../sass/_ao-init.scss */
+.ao-menu-default-element-style, #block-menu-crm-core-menu UL.menu LI, BODY.page-user .pane-menu-menu-user-profile-links UL.menu LI {
+  list-style-type: none;
+  list-style-image: none;
+  padding: 0.375em 0.75em;
+  margin: 0em;
+}
+/* line 74, ../sass/_ao-init.scss */
+.ao-menu-default-element-style:hover, #block-menu-crm-core-menu UL.menu LI:hover, BODY.page-user .pane-menu-menu-user-profile-links UL.menu LI:hover {
+  background-color: #009ed9;
+}
+/* line 77, ../sass/_ao-init.scss */
+.ao-menu-default-element-style A, #block-menu-crm-core-menu UL.menu LI A, BODY.page-user .pane-menu-menu-user-profile-links UL.menu LI A {
+  margin: 0em;
+  padding: 0em;
+  text-decoration: none;
+  text-align: normal;
+  text-align: normal;
+  color: white;
+}
+
 /* HTML element (SMACSS base) rules */
 /**
  * @file
@@ -614,18 +713,8 @@ table {
   width: 100%;
 }
 
-/* line 61, ../sass/layouts/_responsive.scss */
-div#main .section-wrapper,
-header#header .section-wrapper,
-footer#footer .section-wrapper,
-section#main .section-wrapper,
-section#main-navigation .section-wrapper,
-section#above-content-one .section-wrapper,
-section#above-content-two .section-wrapper,
-section#above-content-three .section-wrapper,
-section#below-content-one .section-wrapper,
-section#below-content-two .section-wrapper,
-section#below-content-three .section-wrapper {
+/* line 51, ../sass/layouts/_responsive.scss */
+zzz .section-wrapper {
   margin-left: auto;
   margin-right: auto;
   max-width: 1200px;
@@ -633,7 +722,7 @@ section#below-content-three .section-wrapper {
 }
 
 /* Apply the shared properties of grid items in a single, efficient ruleset. */
-/* line 70, ../sass/layouts/_responsive.scss */
+/* line 60, ../sass/layouts/_responsive.scss */
 #header,
 #content,
 #navigation,
@@ -668,14 +757,14 @@ section#below-content-three .section-wrapper {
 
 /* Navigation bar */
 @media all and (min-width: 480px) {
-  /* line 89, ../sass/layouts/_responsive.scss */
+  /* line 79, ../sass/layouts/_responsive.scss */
   #main {
     /* Move all the children of #main down to make room. */
     padding-top: 0em;
     position: relative;
   }
 
-  /* line 94, ../sass/layouts/_responsive.scss */
+  /* line 84, ../sass/layouts/_responsive.scss */
   #navigation {
     /* Move the navbar up inside #main's padding. */
     position: absolute;
@@ -691,19 +780,19 @@ section#below-content-three .section-wrapper {
   /**
    * The layout when there is only one sidebar, the left one.
    */
-  /* line 115, ../sass/layouts/_responsive.scss */
+  /* line 105, ../sass/layouts/_responsive.scss */
   .sidebar-first {
     /* Span 2 columns, starting in 2nd column from left. */
     /* Span 1 column, starting in 1st column from left. */
   }
-  /* line 117, ../sass/layouts/_responsive.scss */
+  /* line 107, ../sass/layouts/_responsive.scss */
   .sidebar-first #content {
     float: left;
     width: 60%;
     margin-left: 40%;
     margin-right: -100%;
   }
-  /* line 122, ../sass/layouts/_responsive.scss */
+  /* line 112, ../sass/layouts/_responsive.scss */
   .sidebar-first .region-sidebar-first {
     float: left;
     width: 40%;
@@ -714,19 +803,19 @@ section#below-content-three .section-wrapper {
   /**
    * The layout when there is only one sidebar, the right one.
    */
-  /* line 130, ../sass/layouts/_responsive.scss */
+  /* line 120, ../sass/layouts/_responsive.scss */
   .sidebar-second {
     /* Span 2 columns, starting in 1st column from left. */
     /* Span 1 column, starting in 3rd column from left. */
   }
-  /* line 132, ../sass/layouts/_responsive.scss */
+  /* line 122, ../sass/layouts/_responsive.scss */
   .sidebar-second #content {
     float: left;
     width: 60%;
     margin-left: 0%;
     margin-right: -60%;
   }
-  /* line 137, ../sass/layouts/_responsive.scss */
+  /* line 127, ../sass/layouts/_responsive.scss */
   .sidebar-second .region-sidebar-second {
     float: left;
     width: 40%;
@@ -737,27 +826,27 @@ section#below-content-three .section-wrapper {
   /**
    * The layout when there are two sidebars.
    */
-  /* line 145, ../sass/layouts/_responsive.scss */
+  /* line 135, ../sass/layouts/_responsive.scss */
   .two-sidebars {
     /* Span 2 columns, starting in 2nd column from left. */
     /* Span 1 column, starting in 1st column from left. */
     /* Start a new row and span all 3 columns. */
   }
-  /* line 147, ../sass/layouts/_responsive.scss */
+  /* line 137, ../sass/layouts/_responsive.scss */
   .two-sidebars #content {
     float: left;
     width: 60%;
     margin-left: 40%;
     margin-right: -100%;
   }
-  /* line 152, ../sass/layouts/_responsive.scss */
+  /* line 142, ../sass/layouts/_responsive.scss */
   .two-sidebars .region-sidebar-first {
     float: left;
     width: 40%;
     margin-left: 0%;
     margin-right: -40%;
   }
-  /* line 157, ../sass/layouts/_responsive.scss */
+  /* line 147, ../sass/layouts/_responsive.scss */
   .two-sidebars .region-sidebar-second {
     float: left;
     width: 100%;
@@ -773,7 +862,7 @@ section#below-content-three .section-wrapper {
     /* Span 1 column, starting in the 4th column from left. */
     /* Span 1 column, starting in the 3rd column from left. */
   }
-  /* line 163, ../sass/layouts/_responsive.scss */
+  /* line 153, ../sass/layouts/_responsive.scss */
   .two-sidebars .region-sidebar-second .block {
     padding-left: 6px;
     padding-right: 6px;
@@ -783,7 +872,7 @@ section#below-content-three .section-wrapper {
     box-sizing: border-box;
     word-wrap: break-word;
   }
-  /* line 167, ../sass/layouts/_responsive.scss */
+  /* line 157, ../sass/layouts/_responsive.scss */
   .two-sidebars .region-sidebar-second .block:nth-child(5n+1) {
     float: left;
     width: 20%;
@@ -791,28 +880,28 @@ section#below-content-three .section-wrapper {
     margin-right: -20%;
     clear: left;
   }
-  /* line 172, ../sass/layouts/_responsive.scss */
+  /* line 162, ../sass/layouts/_responsive.scss */
   .two-sidebars .region-sidebar-second .block:nth-child(5n+2) {
     float: left;
     width: 20%;
     margin-left: 20%;
     margin-right: -40%;
   }
-  /* line 176, ../sass/layouts/_responsive.scss */
+  /* line 166, ../sass/layouts/_responsive.scss */
   .two-sidebars .region-sidebar-second .block:nth-child(5n+3) {
     float: left;
     width: 20%;
     margin-left: 40%;
     margin-right: -60%;
   }
-  /* line 180, ../sass/layouts/_responsive.scss */
+  /* line 170, ../sass/layouts/_responsive.scss */
   .two-sidebars .region-sidebar-second .block:nth-child(5n+4) {
     float: left;
     width: 20%;
     margin-left: 60%;
     margin-right: -80%;
   }
-  /* line 184, ../sass/layouts/_responsive.scss */
+  /* line 174, ../sass/layouts/_responsive.scss */
   .two-sidebars .region-sidebar-second .block:nth-child(5n) {
     float: left;
     width: 20%;
@@ -827,19 +916,19 @@ section#below-content-three .section-wrapper {
   /**
    * The layout when there is only one sidebar, the left one.
    */
-  /* line 201, ../sass/layouts/_responsive.scss */
+  /* line 191, ../sass/layouts/_responsive.scss */
   .sidebar-first {
     /* Span 4 columns, starting in 2nd column from left. */
     /* Span 1 column, starting in 1st column from left. */
   }
-  /* line 203, ../sass/layouts/_responsive.scss */
+  /* line 193, ../sass/layouts/_responsive.scss */
   .sidebar-first #content {
     float: left;
     width: 85.71429%;
     margin-left: 14.28571%;
     margin-right: -100%;
   }
-  /* line 208, ../sass/layouts/_responsive.scss */
+  /* line 198, ../sass/layouts/_responsive.scss */
   .sidebar-first .region-sidebar-first {
     float: left;
     width: 14.28571%;
@@ -850,19 +939,19 @@ section#below-content-three .section-wrapper {
   /**
    * The layout when there is only one sidebar, the right one.
    */
-  /* line 216, ../sass/layouts/_responsive.scss */
+  /* line 206, ../sass/layouts/_responsive.scss */
   .sidebar-second {
     /* Span 4 columns, starting in 1st column from left. */
     /* Span 1 column, starting in 5th column from left. */
   }
-  /* line 218, ../sass/layouts/_responsive.scss */
+  /* line 208, ../sass/layouts/_responsive.scss */
   .sidebar-second #content {
     float: left;
     width: 71.42857%;
     margin-left: 0%;
     margin-right: -71.42857%;
   }
-  /* line 223, ../sass/layouts/_responsive.scss */
+  /* line 213, ../sass/layouts/_responsive.scss */
   .sidebar-second .region-sidebar-second {
     float: left;
     width: 28.57143%;
@@ -873,27 +962,27 @@ section#below-content-three .section-wrapper {
   /**
    * The layout when there are two sidebars.
    */
-  /* line 231, ../sass/layouts/_responsive.scss */
+  /* line 221, ../sass/layouts/_responsive.scss */
   .two-sidebars {
     /* Span 3 columns, starting in 2nd column from left. */
     /* Span 1 column, starting in 1st column from left. */
     /* Span 1 column, starting in 5th column from left. */
   }
-  /* line 233, ../sass/layouts/_responsive.scss */
+  /* line 223, ../sass/layouts/_responsive.scss */
   .two-sidebars #content {
     float: left;
     width: 57.14286%;
     margin-left: 14.28571%;
     margin-right: -71.42857%;
   }
-  /* line 238, ../sass/layouts/_responsive.scss */
+  /* line 228, ../sass/layouts/_responsive.scss */
   .two-sidebars .region-sidebar-first {
     float: left;
     width: 14.28571%;
     margin-left: 0%;
     margin-right: -14.28571%;
   }
-  /* line 243, ../sass/layouts/_responsive.scss */
+  /* line 233, ../sass/layouts/_responsive.scss */
   .two-sidebars .region-sidebar-second {
     float: left;
     width: 28.57143%;
@@ -902,12 +991,27 @@ section#below-content-three .section-wrapper {
   }
 }
 /* fix an issue with icons in the title bar */
-/* line 250, ../sass/layouts/_responsive.scss */
+/* line 240, ../sass/layouts/_responsive.scss */
 #admin-menu .dropdown .admin-menu-icon img {
   height: 16px;
 }
 
 /* Component (SMACSS module) rules */
+/**
+ * @file
+ * Transitions
+ *
+ * Mixins to create CSS transitions
+ */
+/**
+ * ao-transition
+ * Creates a CSS transition. All properties can be ignored by setting them to 0.
+ *
+ * $property: the properties to apply the transition to. Defaults to all.
+ * $duration: the duration for the transition. Defaults to .2s.
+ * $timing: the timing function for the transition. Defaults to ease-in-out.
+ * $delay: the delay before transition occurs. Defaults to false.
+ */
 /**
  * @file
  * SMACSS Modules
@@ -1175,8 +1279,10 @@ section#below-content-three .section-wrapper {
 .tabs-primary, .tabs-secondary {
   overflow: hidden;
   *zoom: 1;
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjEuMCIgeDI9IjAuNSIgeTI9IjAuMCI+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjYmJiYmJiIi8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMDAwMDAwIiBzdG9wLW9wYWNpdHk9IjAuMCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(100%, #bbbbbb), color-stop(100%, rgba(0, 0, 0, 0)));
   background-image: -moz-linear-gradient(bottom, #bbbbbb 1px, rgba(0, 0, 0, 0) 1px);
-  background-image: -o-linear-gradient(bottom, #bbbbbb 1px, rgba(0, 0, 0, 0) 1px);
   background-image: -webkit-linear-gradient(bottom, #bbbbbb 1px, rgba(0, 0, 0, 0) 1px);
   background-image: linear-gradient(to top, #bbbbbb 1px, rgba(0, 0, 0, 0) 1px);
   /* IE 9 and earlier don't understand gradients. */
@@ -1256,8 +1362,10 @@ a.tabs-primary__tab-link:active, a.tabs-primary__tab-link.is-active {
   background-color: transparent;
   *zoom: 1;
   filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FFE9E9E9', endColorstr='#00E9E9E9');
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2U5ZTllOSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2U5ZTllOSIgc3RvcC1vcGFjaXR5PSIwLjAiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #e9e9e9), color-stop(100%, rgba(233, 233, 233, 0)));
   background-image: -moz-linear-gradient(#e9e9e9, rgba(233, 233, 233, 0));
-  background-image: -o-linear-gradient(#e9e9e9, rgba(233, 233, 233, 0));
   background-image: -webkit-linear-gradient(#e9e9e9, rgba(233, 233, 233, 0));
   background-image: linear-gradient(#e9e9e9, rgba(233, 233, 233, 0));
   border-color: #fff;
@@ -1749,7 +1857,7 @@ tr.selected td {
 /* line 803, ../sass/components/_misc.scss */
 .progress .filled {
   background-color: #0072b9;
-  background-image: url('../images/progress.gif?1397160451');
+  background-image: url('../images/progress.gif?1411132269');
 }
 
 /**
@@ -1773,19 +1881,19 @@ tr.selected td {
   border: 0;
   color: #2f353e;
 }
-/* line 15, ../../../../../../../.rvm/gems/ruby-2.1.1/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
+/* line 15, ../../../../../../../../Users/mhaggerty/.rvm/gems/ruby-2.1.0/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
 .btn:hover {
   text-decoration: none;
 }
-/* line 42, ../../../../../../../.rvm/gems/ruby-2.1.1/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
+/* line 42, ../../../../../../../../Users/mhaggerty/.rvm/gems/ruby-2.1.0/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
 .btn:hover {
   background-color: #009ed9;
 }
-/* line 44, ../../../../../../../.rvm/gems/ruby-2.1.1/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
+/* line 44, ../../../../../../../../Users/mhaggerty/.rvm/gems/ruby-2.1.0/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
 .btn:active {
   background-color: #0092ca;
 }
-/* line 6, ../../../../../../../.rvm/gems/ruby-2.1.1/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
+/* line 6, ../../../../../../../../Users/mhaggerty/.rvm/gems/ruby-2.1.0/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
 .btn.disabled, .btn[disabled] {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
   opacity: 0.6;
@@ -1795,7 +1903,7 @@ tr.selected td {
   -webkit-box-shadow: none;
   box-shadow: none;
 }
-/* line 74, ../../../../../../../.rvm/gems/ruby-2.1.1/gems/sassy-buttons-0.2.6/stylesheets/_sassy-buttons.sass */
+/* line 74, ../../../../../../../../Users/mhaggerty/.rvm/gems/ruby-2.1.0/gems/sassy-buttons-0.2.6/stylesheets/_sassy-buttons.sass */
 .btn::-moz-focus-inner {
   padding: 0 !important;
   margin: -1px !important;
@@ -1817,19 +1925,19 @@ tr.selected td {
   border: 0;
   color: black;
 }
-/* line 15, ../../../../../../../.rvm/gems/ruby-2.1.1/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
+/* line 15, ../../../../../../../../Users/mhaggerty/.rvm/gems/ruby-2.1.0/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
 .btn-form-actions input[type=submit]:hover, section#main div#content div.form-actions input[type=submit]:hover {
   text-decoration: none;
 }
-/* line 42, ../../../../../../../.rvm/gems/ruby-2.1.1/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
+/* line 42, ../../../../../../../../Users/mhaggerty/.rvm/gems/ruby-2.1.0/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
 .btn-form-actions input[type=submit]:hover, section#main div#content div.form-actions input[type=submit]:hover {
   background-color: #d4d4d4;
 }
-/* line 44, ../../../../../../../.rvm/gems/ruby-2.1.1/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
+/* line 44, ../../../../../../../../Users/mhaggerty/.rvm/gems/ruby-2.1.0/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
 .btn-form-actions input[type=submit]:active, section#main div#content div.form-actions input[type=submit]:active {
   background-color: #cdcdcd;
 }
-/* line 6, ../../../../../../../.rvm/gems/ruby-2.1.1/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
+/* line 6, ../../../../../../../../Users/mhaggerty/.rvm/gems/ruby-2.1.0/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
 .btn-form-actions input[type=submit].disabled, section#main div#content div.form-actions input[type=submit].disabled, .btn-form-actions input[type=submit][disabled], section#main div#content div.form-actions input[type=submit][disabled] {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
   opacity: 0.6;
@@ -1839,7 +1947,7 @@ tr.selected td {
   -webkit-box-shadow: none;
   box-shadow: none;
 }
-/* line 74, ../../../../../../../.rvm/gems/ruby-2.1.1/gems/sassy-buttons-0.2.6/stylesheets/_sassy-buttons.sass */
+/* line 74, ../../../../../../../../Users/mhaggerty/.rvm/gems/ruby-2.1.0/gems/sassy-buttons-0.2.6/stylesheets/_sassy-buttons.sass */
 .btn-form-actions input[type=submit]::-moz-focus-inner, section#main div#content div.form-actions input[type=submit]::-moz-focus-inner {
   padding: 0 !important;
   margin: -1px !important;
@@ -1859,19 +1967,19 @@ tr.selected td {
   border: 0;
   color: white;
 }
-/* line 15, ../../../../../../../.rvm/gems/ruby-2.1.1/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
+/* line 15, ../../../../../../../../Users/mhaggerty/.rvm/gems/ruby-2.1.0/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
 .btn-form-actions input[type=submit]#edit-delete:hover, section#main div#content div.form-actions input[type=submit]#edit-delete:hover {
   text-decoration: none;
 }
-/* line 42, ../../../../../../../.rvm/gems/ruby-2.1.1/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
+/* line 42, ../../../../../../../../Users/mhaggerty/.rvm/gems/ruby-2.1.0/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
 .btn-form-actions input[type=submit]#edit-delete:hover, section#main div#content div.form-actions input[type=submit]#edit-delete:hover {
   background-color: #ff4237;
 }
-/* line 44, ../../../../../../../.rvm/gems/ruby-2.1.1/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
+/* line 44, ../../../../../../../../Users/mhaggerty/.rvm/gems/ruby-2.1.0/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
 .btn-form-actions input[type=submit]#edit-delete:active, section#main div#content div.form-actions input[type=submit]#edit-delete:active {
   background-color: #ff3328;
 }
-/* line 6, ../../../../../../../.rvm/gems/ruby-2.1.1/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
+/* line 6, ../../../../../../../../Users/mhaggerty/.rvm/gems/ruby-2.1.0/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
 .btn-form-actions input[type=submit]#edit-delete.disabled, section#main div#content div.form-actions input[type=submit]#edit-delete.disabled, .btn-form-actions input[type=submit]#edit-delete[disabled], section#main div#content div.form-actions input[type=submit]#edit-delete[disabled] {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
   opacity: 0.6;
@@ -1881,7 +1989,7 @@ tr.selected td {
   -webkit-box-shadow: none;
   box-shadow: none;
 }
-/* line 74, ../../../../../../../.rvm/gems/ruby-2.1.1/gems/sassy-buttons-0.2.6/stylesheets/_sassy-buttons.sass */
+/* line 74, ../../../../../../../../Users/mhaggerty/.rvm/gems/ruby-2.1.0/gems/sassy-buttons-0.2.6/stylesheets/_sassy-buttons.sass */
 .btn-form-actions input[type=submit]#edit-delete::-moz-focus-inner, section#main div#content div.form-actions input[type=submit]#edit-delete::-moz-focus-inner {
   padding: 0 !important;
   margin: -1px !important;
@@ -1901,19 +2009,19 @@ tr.selected td {
   border: 0;
   color: white;
 }
-/* line 15, ../../../../../../../.rvm/gems/ruby-2.1.1/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
+/* line 15, ../../../../../../../../Users/mhaggerty/.rvm/gems/ruby-2.1.0/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
 .btn-form-actions input[type=submit]#edit-preview:hover, section#main div#content div.form-actions input[type=submit]#edit-preview:hover {
   text-decoration: none;
 }
-/* line 42, ../../../../../../../.rvm/gems/ruby-2.1.1/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
+/* line 42, ../../../../../../../../Users/mhaggerty/.rvm/gems/ruby-2.1.0/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
 .btn-form-actions input[type=submit]#edit-preview:hover, section#main div#content div.form-actions input[type=submit]#edit-preview:hover {
   background-color: #009ed9;
 }
-/* line 44, ../../../../../../../.rvm/gems/ruby-2.1.1/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
+/* line 44, ../../../../../../../../Users/mhaggerty/.rvm/gems/ruby-2.1.0/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
 .btn-form-actions input[type=submit]#edit-preview:active, section#main div#content div.form-actions input[type=submit]#edit-preview:active {
   background-color: #0092ca;
 }
-/* line 6, ../../../../../../../.rvm/gems/ruby-2.1.1/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
+/* line 6, ../../../../../../../../Users/mhaggerty/.rvm/gems/ruby-2.1.0/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
 .btn-form-actions input[type=submit]#edit-preview.disabled, section#main div#content div.form-actions input[type=submit]#edit-preview.disabled, .btn-form-actions input[type=submit]#edit-preview[disabled], section#main div#content div.form-actions input[type=submit]#edit-preview[disabled] {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
   opacity: 0.6;
@@ -1923,7 +2031,7 @@ tr.selected td {
   -webkit-box-shadow: none;
   box-shadow: none;
 }
-/* line 74, ../../../../../../../.rvm/gems/ruby-2.1.1/gems/sassy-buttons-0.2.6/stylesheets/_sassy-buttons.sass */
+/* line 74, ../../../../../../../../Users/mhaggerty/.rvm/gems/ruby-2.1.0/gems/sassy-buttons-0.2.6/stylesheets/_sassy-buttons.sass */
 .btn-form-actions input[type=submit]#edit-preview::-moz-focus-inner, section#main div#content div.form-actions input[type=submit]#edit-preview::-moz-focus-inner {
   padding: 0 !important;
   margin: -1px !important;
@@ -1943,19 +2051,19 @@ tr.selected td {
   border: 0;
   color: white;
 }
-/* line 15, ../../../../../../../.rvm/gems/ruby-2.1.1/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
+/* line 15, ../../../../../../../../Users/mhaggerty/.rvm/gems/ruby-2.1.0/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
 .btn-form-actions input[type=submit]#edit-submit:hover, section#main div#content div.form-actions input[type=submit]#edit-submit:hover {
   text-decoration: none;
 }
-/* line 42, ../../../../../../../.rvm/gems/ruby-2.1.1/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
+/* line 42, ../../../../../../../../Users/mhaggerty/.rvm/gems/ruby-2.1.0/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
 .btn-form-actions input[type=submit]#edit-submit:hover, section#main div#content div.form-actions input[type=submit]#edit-submit:hover {
   background-color: #2cbe62;
 }
-/* line 44, ../../../../../../../.rvm/gems/ruby-2.1.1/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
+/* line 44, ../../../../../../../../Users/mhaggerty/.rvm/gems/ruby-2.1.0/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
 .btn-form-actions input[type=submit]#edit-submit:active, section#main div#content div.form-actions input[type=submit]#edit-submit:active {
   background-color: #29b25c;
 }
-/* line 6, ../../../../../../../.rvm/gems/ruby-2.1.1/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
+/* line 6, ../../../../../../../../Users/mhaggerty/.rvm/gems/ruby-2.1.0/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
 .btn-form-actions input[type=submit]#edit-submit.disabled, section#main div#content div.form-actions input[type=submit]#edit-submit.disabled, .btn-form-actions input[type=submit]#edit-submit[disabled], section#main div#content div.form-actions input[type=submit]#edit-submit[disabled] {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
   opacity: 0.6;
@@ -1965,7 +2073,7 @@ tr.selected td {
   -webkit-box-shadow: none;
   box-shadow: none;
 }
-/* line 74, ../../../../../../../.rvm/gems/ruby-2.1.1/gems/sassy-buttons-0.2.6/stylesheets/_sassy-buttons.sass */
+/* line 74, ../../../../../../../../Users/mhaggerty/.rvm/gems/ruby-2.1.0/gems/sassy-buttons-0.2.6/stylesheets/_sassy-buttons.sass */
 .btn-form-actions input[type=submit]#edit-submit::-moz-focus-inner, section#main div#content div.form-actions input[type=submit]#edit-submit::-moz-focus-inner {
   padding: 0 !important;
   margin: -1px !important;
@@ -2000,19 +2108,19 @@ tr.selected td {
   border-radius: 0.5em;
   text-decoration: none;
 }
-/* line 15, ../../../../../../../.rvm/gems/ruby-2.1.1/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
+/* line 15, ../../../../../../../../Users/mhaggerty/.rvm/gems/ruby-2.1.0/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
 .header-button .inline LI A:hover {
   text-decoration: none;
 }
-/* line 42, ../../../../../../../.rvm/gems/ruby-2.1.1/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
+/* line 42, ../../../../../../../../Users/mhaggerty/.rvm/gems/ruby-2.1.0/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
 .header-button .inline LI A:hover {
   background-color: #009ed9;
 }
-/* line 44, ../../../../../../../.rvm/gems/ruby-2.1.1/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
+/* line 44, ../../../../../../../../Users/mhaggerty/.rvm/gems/ruby-2.1.0/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
 .header-button .inline LI A:active {
   background-color: #0092ca;
 }
-/* line 6, ../../../../../../../.rvm/gems/ruby-2.1.1/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
+/* line 6, ../../../../../../../../Users/mhaggerty/.rvm/gems/ruby-2.1.0/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
 .header-button .inline LI A.disabled, .header-button .inline LI A[disabled] {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
   opacity: 0.6;
@@ -2022,7 +2130,7 @@ tr.selected td {
   -webkit-box-shadow: none;
   box-shadow: none;
 }
-/* line 74, ../../../../../../../.rvm/gems/ruby-2.1.1/gems/sassy-buttons-0.2.6/stylesheets/_sassy-buttons.sass */
+/* line 74, ../../../../../../../../Users/mhaggerty/.rvm/gems/ruby-2.1.0/gems/sassy-buttons-0.2.6/stylesheets/_sassy-buttons.sass */
 .header-button .inline LI A::-moz-focus-inner {
   padding: 0 !important;
   margin: -1px !important;
@@ -2061,19 +2169,19 @@ tr.selected td {
   right: 0px;
   top: -36px;
 }
-/* line 15, ../../../../../../../.rvm/gems/ruby-2.1.1/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
+/* line 15, ../../../../../../../../Users/mhaggerty/.rvm/gems/ruby-2.1.0/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
 .views-link-header-button .view-header P A:hover, BODY.page-user .panel-pane .view-header P A:hover {
   text-decoration: none;
 }
-/* line 42, ../../../../../../../.rvm/gems/ruby-2.1.1/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
+/* line 42, ../../../../../../../../Users/mhaggerty/.rvm/gems/ruby-2.1.0/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
 .views-link-header-button .view-header P A:hover, BODY.page-user .panel-pane .view-header P A:hover {
   background-color: #009ed9;
 }
-/* line 44, ../../../../../../../.rvm/gems/ruby-2.1.1/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
+/* line 44, ../../../../../../../../Users/mhaggerty/.rvm/gems/ruby-2.1.0/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
 .views-link-header-button .view-header P A:active, BODY.page-user .panel-pane .view-header P A:active {
   background-color: #0092ca;
 }
-/* line 6, ../../../../../../../.rvm/gems/ruby-2.1.1/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
+/* line 6, ../../../../../../../../Users/mhaggerty/.rvm/gems/ruby-2.1.0/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
 .views-link-header-button .view-header P A.disabled, BODY.page-user .panel-pane .view-header P A.disabled, .views-link-header-button .view-header P A[disabled], BODY.page-user .panel-pane .view-header P A[disabled] {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
   opacity: 0.6;
@@ -2083,7 +2191,7 @@ tr.selected td {
   -webkit-box-shadow: none;
   box-shadow: none;
 }
-/* line 74, ../../../../../../../.rvm/gems/ruby-2.1.1/gems/sassy-buttons-0.2.6/stylesheets/_sassy-buttons.sass */
+/* line 74, ../../../../../../../../Users/mhaggerty/.rvm/gems/ruby-2.1.0/gems/sassy-buttons-0.2.6/stylesheets/_sassy-buttons.sass */
 .views-link-header-button .view-header P A::-moz-focus-inner, BODY.page-user .panel-pane .view-header P A::-moz-focus-inner {
   padding: 0 !important;
   margin: -1px !important;
@@ -2094,69 +2202,67 @@ tr.selected td {
  * @file
  * Buttons
  *
- * Defines the appearance of regions used to display content
+ * Mixin for controlling the appearance of regions
  */
-/* controls the appearance of a single region within the template */
-/* line 9, ../sass/components/_regions.scss */
-.page-region, section#main,
-section#above-content-one,
-section#above-content-two,
-section#above-content-three,
-section#below-content-one,
-section#below-content-two,
-section#below-content-three {
-  border-bottom: 1px solid #CCC;
-}
-/* line 11, ../sass/components/_regions.scss */
-.page-region .section-wrapper, section#main .section-wrapper,
-section#above-content-one .section-wrapper,
-section#above-content-two .section-wrapper,
-section#above-content-three .section-wrapper,
-section#below-content-one .section-wrapper,
-section#below-content-two .section-wrapper,
-section#below-content-three .section-wrapper {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/* controls the appearance of header elements in the page */
-/* line 17, ../sass/components/_regions.scss */
-.header-region, header#header {
-  padding: 2em 0em;
-  border-bottom: 1px solid #CCC;
-}
-
-/* controls the appearance of navigation elements in the page */
-/* line 22, ../sass/components/_regions.scss */
-.navigation-region, section#main-navigation {
-  padding: 1em 0em;
-  border-bottom: 1px solid #CCC;
-}
-
+/**
+ * DEFAULT VARIABLES
+ * Default settings for regions.
+ * See mixin documentation for explanations.
+ */
+/**
+ * AO HORIZONTAL REGION
+ *
+ * Controls the position and display of horizontal regions.
+ * Regions include any block region that is horizonally aligned.
+ * 
+ * @variables
+ * $ao-horiz-region-container-selector: Container in the region used to hold the content. Defaults to '.section-wrapper'
+ * $ao-region-container-position: Position of the container. Possible values are left, right, center. Defaults to 'center'
+ * $ao-region-container-width: Width of the container in the region. Defaults to 1200px.
+ * $ao-region-padding: Padding to apply to the region. Ignored when value is set to false. Defaults to false.
+ * $ao-region-style: Additional css style to apply to the region. Ignored when value is set to false. Defaults to false.
+ *
+ */
 /**
  * @file
  * Menus
  *
- * Defines the appearance of menus used in the theme
+ * Mixin for creating drop down menus in AbleOrganizer.
  */
-/* line 10, ../sass/components/_menus.scss */
-.ao-menu-links H2, .region-sidebar-first .block-menu H2 {
-  font-size: 1.2em;
-}
-/* line 13, ../sass/components/_menus.scss */
-.ao-menu-links UL.menu, .region-sidebar-first .block-menu UL.menu {
-  margin: 0em;
-  padding: 0em;
-  font-size: 0.9em;
-}
-/* line 17, ../sass/components/_menus.scss */
-.ao-menu-links UL.menu LI, .region-sidebar-first .block-menu UL.menu LI {
-  list-style-type: none;
-  list-style-image: none;
-  margin: 0em;
-  padding: 0em;
-}
-
+/**
+ * DEFAULT VARIABLES
+ * Default settings for drop down menus.
+ * See mixin documentation for explanations.
+ */
+/**
+ * AO DROP DOWN MENU
+ *
+ * Creates a CSS drop down menu. Useful when you need to display a list after hovering over an element.
+ * Menus appear beneath the triggering element.
+ * Menus can be left justified, right justified, or at the width of the triggering element.
+ * 
+ * - Trigger is the element a user rolls over to make the menu appear.
+ * - Menu is the container for the menu elements.
+ * - Element applies to each element in the menu.
+ * 
+ * @variables:
+ * $ao-menu-style: The style for the drop down menu. Defaults to bottom. Possible values:
+ * - up: make the menu go up
+ * - down: make the menu go down
+ * $ao-menu-justify: The justification for the drop down menu. Defaults to full. Possible values:
+ * - left: justify the menu to the left
+ * - right: justify the menu to the right
+ * - full: expand menu items to the full width of the triggering element
+ * $ao-menu-trigger-selector: identifies the element that triggers the drop down. Defaults to 'H2.pane-title, H2.block-title'.
+ * $ao-menu-trigger-style: CSS style to apply to selectors. Defaults to false.
+ * $ao-menu-menu-selector: identifies the container for the menu itself. Defaults to UL.menu.
+ * $ao-menu-element-selector: the selector for each element in the menu. Defaults to LI.
+ * $ao-menu-include-transitions: whether or not to apply CSS transitions to the menu. Defaults to true.
+ * $ao-menu-border: apply this value as a border when menus display. Defaults to false.
+ * $ao-menu-border-radius: apply this as the border radius to menus when they display. Defaults to false.
+ * $ao-menu-border-shadow: apply this value as the shadow for menus when they display. Defaults to false.
+ * 
+ */
 /**
  * @file
  * Buttons
@@ -2568,19 +2674,19 @@ section#main FORM LABEL.compact-form-label {
   border: 0;
   color: white;
 }
-/* line 15, ../../../../../../../.rvm/gems/ruby-2.1.1/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
+/* line 15, ../../../../../../../../Users/mhaggerty/.rvm/gems/ruby-2.1.0/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
 .ao-filter-wrapper .ao-input-format-select:hover, FIELDSET.filter-wrapper .ao-input-format-select:hover {
   text-decoration: none;
 }
-/* line 42, ../../../../../../../.rvm/gems/ruby-2.1.1/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
+/* line 42, ../../../../../../../../Users/mhaggerty/.rvm/gems/ruby-2.1.0/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
 .ao-filter-wrapper .ao-input-format-select:hover, FIELDSET.filter-wrapper .ao-input-format-select:hover {
   background-color: #8c98a6;
 }
-/* line 44, ../../../../../../../.rvm/gems/ruby-2.1.1/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
+/* line 44, ../../../../../../../../Users/mhaggerty/.rvm/gems/ruby-2.1.0/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
 .ao-filter-wrapper .ao-input-format-select:active, FIELDSET.filter-wrapper .ao-input-format-select:active {
   background-color: #83909f;
 }
-/* line 6, ../../../../../../../.rvm/gems/ruby-2.1.1/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
+/* line 6, ../../../../../../../../Users/mhaggerty/.rvm/gems/ruby-2.1.0/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
 .ao-filter-wrapper .ao-input-format-select.disabled, FIELDSET.filter-wrapper .ao-input-format-select.disabled, .ao-filter-wrapper .ao-input-format-select[disabled], FIELDSET.filter-wrapper .ao-input-format-select[disabled] {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
   opacity: 0.6;
@@ -2590,7 +2696,7 @@ section#main FORM LABEL.compact-form-label {
   -webkit-box-shadow: none;
   box-shadow: none;
 }
-/* line 74, ../../../../../../../.rvm/gems/ruby-2.1.1/gems/sassy-buttons-0.2.6/stylesheets/_sassy-buttons.sass */
+/* line 74, ../../../../../../../../Users/mhaggerty/.rvm/gems/ruby-2.1.0/gems/sassy-buttons-0.2.6/stylesheets/_sassy-buttons.sass */
 .ao-filter-wrapper .ao-input-format-select::-moz-focus-inner, FIELDSET.filter-wrapper .ao-input-format-select::-moz-focus-inner {
   padding: 0 !important;
   margin: -1px !important;
@@ -3148,43 +3254,92 @@ BODY.page-user .pane-ao-user-profile-contact-info .content .field-items {
  *
  * Defines the basic appearance of elements in the theme.
  */
-/* LAYOUT MODIFICATIONS */
-/* line 9, ../sass/themes/_basic_display.scss */
-section#main,
-section#above-content-one,
-section#above-content-two,
-section#above-content-three,
-section#below-content-one,
-section#below-content-two,
-section#below-content-three {
-  border: 1px solid transparent;
+/* line 8, ../sass/themes/_basic_display.scss */
+.happy, header#header, section#main-navigation {
+  border-bottom: 1px solid #CCC;
 }
-/* line 18, ../sass/themes/_basic_display.scss */
+
+/* REGIONS */
+/* line 48, ../sass/components/_regions.scss */
+div#main .section-wrapper,
+footer#footer .section-wrapper,
 section#main .section-wrapper,
+section#main-navigation .section-wrapper,
 section#above-content-one .section-wrapper,
 section#above-content-two .section-wrapper,
 section#above-content-three .section-wrapper,
 section#below-content-one .section-wrapper,
 section#below-content-two .section-wrapper,
 section#below-content-three .section-wrapper {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
+}
+
+/* line 48, ../sass/components/_regions.scss */
+header#header .section-wrapper {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
+  padding: 2em 0em;
+}
+
+/* line 48, ../sass/components/_regions.scss */
+section#main-navigation .section-wrapper {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
+  padding: 1em 0em;
+}
+
+/* controls the appearance of navigation elements in the page */
+/* line 41, ../sass/themes/_basic_display.scss */
+.header-region, .navigation-region {
+  border-bottom: 1px solid #CCC;
+}
+
+/* controls the appearance of a single region within the template */
+/* line 48, ../sass/themes/_basic_display.scss */
+.page-region {
+  border: 1px solid transparent;
+}
+/* line 50, ../sass/themes/_basic_display.scss */
+.page-region .section-wrapper {
   border: 1px solid transparent;
 }
 
+/* controls the appearance of header elements in the page */
+/* line 56, ../sass/themes/_basic_display.scss */
+.header-region {
+  padding: 2em 0em;
+}
+
+/* controls the appearance of navigation elements in the page */
+/* line 60, ../sass/themes/_basic_display.scss */
+.navigation-region {
+  padding: 1em 0em;
+  border-bottom: 1px solid #CCC;
+}
+
+/* LAYOUT MODIFICATIONS */
 /* HEADER / NAVIGATION */
 /* controls the layout of the navigation */
-/* line 25, ../sass/themes/_basic_display.scss */
+/* line 73, ../sass/themes/_basic_display.scss */
 section#main-navigation {
   font-size: 18.72px;
   font-weight: 400;
 }
 
 /* controls the display of the secondary links in the header */
-/* line 37, ../sass/themes/_basic_display.scss */
+/* line 80, ../sass/themes/_basic_display.scss */
 .header__secondary-menu .inline LI {
   margin: 0em;
   padding: 0em;
 }
-/* line 40, ../sass/themes/_basic_display.scss */
+/* line 83, ../sass/themes/_basic_display.scss */
 .header__secondary-menu .inline LI A {
   font-size: 13.28px;
   padding: 0.5em 1.5em;
@@ -3207,19 +3362,19 @@ section#main-navigation {
   border-radius: 0.5em;
   text-decoration: none;
 }
-/* line 15, ../../../../../../../.rvm/gems/ruby-2.1.1/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
+/* line 15, ../../../../../../../../Users/mhaggerty/.rvm/gems/ruby-2.1.0/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
 .header__secondary-menu .inline LI A:hover {
   text-decoration: none;
 }
-/* line 42, ../../../../../../../.rvm/gems/ruby-2.1.1/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
+/* line 42, ../../../../../../../../Users/mhaggerty/.rvm/gems/ruby-2.1.0/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
 .header__secondary-menu .inline LI A:hover {
   background-color: #e4e4e4;
 }
-/* line 44, ../../../../../../../.rvm/gems/ruby-2.1.1/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
+/* line 44, ../../../../../../../../Users/mhaggerty/.rvm/gems/ruby-2.1.0/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
 .header__secondary-menu .inline LI A:active {
   background-color: #dddddd;
 }
-/* line 6, ../../../../../../../.rvm/gems/ruby-2.1.1/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
+/* line 6, ../../../../../../../../Users/mhaggerty/.rvm/gems/ruby-2.1.0/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
 .header__secondary-menu .inline LI A.disabled, .header__secondary-menu .inline LI A[disabled] {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
   opacity: 0.6;
@@ -3229,121 +3384,57 @@ section#main-navigation {
   -webkit-box-shadow: none;
   box-shadow: none;
 }
-/* line 74, ../../../../../../../.rvm/gems/ruby-2.1.1/gems/sassy-buttons-0.2.6/stylesheets/_sassy-buttons.sass */
+/* line 74, ../../../../../../../../Users/mhaggerty/.rvm/gems/ruby-2.1.0/gems/sassy-buttons-0.2.6/stylesheets/_sassy-buttons.sass */
 .header__secondary-menu .inline LI A::-moz-focus-inner {
   padding: 0 !important;
   margin: -1px !important;
 }
 
 /* controls the display of the CRM Core menu in the header */
-/* line 50, ../sass/_mixins.scss */
-#block-menu-crm-core-menu H2.pane-title,
-#block-menu-crm-core-menu H2.block-title {
-  font-size: 16px;
-  padding: 0.5em 1.5em;
-  display: inline-block;
-  cursor: pointer;
-  -moz-border-radius: 0.5em;
-  -webkit-border-radius: 0.5em;
-  border-radius: 0.5em;
-  *zoom: 1;
-  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF00B0F3', endColorstr='#FF00668D');
-  background-color: #00b0f3;
-  border: 0;
-  color: white;
-  font-size: 16px;
-  padding: 0.25em 1em;
-  display: inline-block;
-  cursor: pointer;
-  -moz-border-radius: 0.5em;
-  -webkit-border-radius: 0.5em;
-  border-radius: 0.5em;
-  font-weight: normal;
+/* line 91, ../sass/themes/_basic_display.scss */
+#block-menu-crm-core-menu {
+  position: relative;
 }
-/* line 15, ../../../../../../../.rvm/gems/ruby-2.1.1/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
-#block-menu-crm-core-menu H2.pane-title:hover,
-#block-menu-crm-core-menu H2.block-title:hover {
-  text-decoration: none;
+/* line 75, ../sass/components/_menus.scss */
+#block-menu-crm-core-menu H2.pane-title, #block-menu-crm-core-menu H2.block-title {
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -moz-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
 }
-/* line 42, ../../../../../../../.rvm/gems/ruby-2.1.1/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
-#block-menu-crm-core-menu H2.pane-title:hover,
-#block-menu-crm-core-menu H2.block-title:hover {
-  background-color: #009ed9;
-}
-/* line 44, ../../../../../../../.rvm/gems/ruby-2.1.1/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
-#block-menu-crm-core-menu H2.pane-title:active,
-#block-menu-crm-core-menu H2.block-title:active {
-  background-color: #0092ca;
-}
-/* line 6, ../../../../../../../.rvm/gems/ruby-2.1.1/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
-#block-menu-crm-core-menu H2.pane-title.disabled, #block-menu-crm-core-menu H2.pane-title[disabled],
-#block-menu-crm-core-menu H2.block-title.disabled,
-#block-menu-crm-core-menu H2.block-title[disabled] {
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
-  opacity: 0.6;
-  background: false;
-  cursor: default;
-  -moz-box-shadow: none;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-}
-/* line 74, ../../../../../../../.rvm/gems/ruby-2.1.1/gems/sassy-buttons-0.2.6/stylesheets/_sassy-buttons.sass */
-#block-menu-crm-core-menu H2.pane-title::-moz-focus-inner,
-#block-menu-crm-core-menu H2.block-title::-moz-focus-inner {
-  padding: 0 !important;
-  margin: -1px !important;
-}
-/* line 56, ../sass/_mixins.scss */
+/* line 84, ../sass/components/_menus.scss */
 #block-menu-crm-core-menu UL.menu {
   display: none;
-  -moz-transition-property: all;
-  -o-transition-property: all;
-  -webkit-transition-property: all;
-  transition-property: all;
-  -moz-transition-duration: 0.2s;
-  -o-transition-duration: 0.2s;
-  -webkit-transition-duration: 0.2s;
-  transition-duration: 0.2s;
-  -moz-transition-timing-function: ease-in-out;
-  -o-transition-timing-function: ease-in-out;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
-}
-/* line 63, ../sass/_mixins.scss */
-#block-menu-crm-core-menu:hover H2.pane-title,
-#block-menu-crm-core-menu:hover H2.block-title {
-  -moz-transition-property: all;
-  -o-transition-property: all;
-  -webkit-transition-property: all;
-  transition-property: all;
-  -moz-transition-duration: 0.2s;
-  -o-transition-duration: 0.2s;
-  -webkit-transition-duration: 0.2s;
-  transition-duration: 0.2s;
-  -moz-transition-timing-function: ease-in-out;
-  -o-transition-timing-function: ease-in-out;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
-  -moz-border-radius: 0.5em 0.5em 0em 0em;
-  -webkit-border-radius: 0.5em;
-  border-radius: 0.5em 0.5em 0em 0em;
-}
-/* line 70, ../sass/_mixins.scss */
-#block-menu-crm-core-menu:hover UL.menu {
-  display: block;
   position: absolute;
-  top: 35.2px;
-  right: 0px;
-  background-color: #00b0f3;
-  white-space: nowrap;
-  margin: 0em;
-  padding: 0em;
-  overflow: hidden;
-  z-index: 1000;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -moz-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
   -moz-border-radius: 0em 0em 0.5em 0.5em;
   -webkit-border-radius: 0em;
   border-radius: 0em 0em 0.5em 0.5em;
+  top: 35.2px;
+  left: 0px;
   min-width: 100%;
+}
+/* line 126, ../sass/components/_menus.scss */
+#block-menu-crm-core-menu UL.menu LI {
   -moz-transition-property: all;
   -o-transition-property: all;
   -webkit-transition-property: all;
@@ -3357,54 +3448,27 @@ section#main-navigation {
   -webkit-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
 }
-/* line 87, ../sass/_mixins.scss */
-#block-menu-crm-core-menu:hover UL.menu LI {
-  list-style-type: none;
-  list-style-image: none;
-  margin: 0em;
-  padding: .5em 1em;
-  font-size: 16px;
-  -moz-transition-property: all;
-  -o-transition-property: all;
-  -webkit-transition-property: all;
-  transition-property: all;
-  -moz-transition-duration: 0.2s;
-  -o-transition-duration: 0.2s;
-  -webkit-transition-duration: 0.2s;
-  transition-duration: 0.2s;
-  -moz-transition-timing-function: ease-in-out;
-  -o-transition-timing-function: ease-in-out;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
-}
-/* line 96, ../sass/_mixins.scss */
-#block-menu-crm-core-menu:hover UL.menu LI:hover {
-  background-color: #009ed9;
-}
-/* line 99, ../sass/_mixins.scss */
-#block-menu-crm-core-menu:hover UL.menu LI A {
-  margin: 0em;
-  padding: 0em;
-  text-decoration: none;
-  color: white;
+/* line 140, ../sass/components/_menus.scss */
+#block-menu-crm-core-menu:hover UL.menu {
+  display: block;
 }
 
 /* controls the display of thumbnails */
-/* line 52, ../sass/themes/_basic_display.scss */
+/* line 97, ../sass/themes/_basic_display.scss */
 nav.breadcrumb {
   padding: .5em 0em 0em;
   font-size: 0.9em;
 }
 
 /* FOOTER */
-/* line 58, ../sass/themes/_basic_display.scss */
+/* line 103, ../sass/themes/_basic_display.scss */
 footer#footer {
   background-color: #272723;
   min-height: 200px;
 }
 
 /* VIEWS - NO RESULTS */
-/* line 64, ../sass/themes/_basic_display.scss */
+/* line 109, ../sass/themes/_basic_display.scss */
 .ao-no-results {
   margin: .5em;
   text-align: center;
@@ -3420,13 +3484,31 @@ footer#footer {
 /* FORMS */
 /* applies styles to forms in the second sidebar */
 /* FIRST SIDEBAR LINKS */
+/* line 139, ../sass/themes/_basic_display.scss */
+.region-sidebar-first .block-menu H2 {
+  font-size: 1.2em;
+}
+/* line 142, ../sass/themes/_basic_display.scss */
+.region-sidebar-first .block-menu UL.menu {
+  margin: 0em;
+  padding: 0em;
+  font-size: 0.9em;
+}
+/* line 146, ../sass/themes/_basic_display.scss */
+.region-sidebar-first .block-menu UL.menu LI {
+  list-style-type: none;
+  list-style-image: none;
+  margin: 0em;
+  padding: 0em;
+}
+
 /* USER PROFILE PAGE */
-/* line 99, ../sass/themes/_basic_display.scss */
+/* line 157, ../sass/themes/_basic_display.scss */
 BODY.page-user .panel-pane {
   position: relative;
 }
 
-/* line 103, ../sass/themes/_basic_display.scss */
+/* line 161, ../sass/themes/_basic_display.scss */
 .pane-menu-menu-user-profile-links H2 {
   margin: 0em;
   float: right;
@@ -3434,7 +3516,7 @@ BODY.page-user .panel-pane {
   z-index: 999;
 }
 
-/* line 110, ../sass/themes/_basic_display.scss */
+/* line 168, ../sass/themes/_basic_display.scss */
 #block-menu-crm-core-menu {
   margin: 0em;
   position: absolute;
@@ -3444,72 +3526,35 @@ BODY.page-user .panel-pane {
 }
 
 /* USER PROFILE */
-/* line 124, ../sass/themes/_basic_display.scss */
+/* line 182, ../sass/themes/_basic_display.scss */
 BODY.page-user .pane-user-picture {
   text-align: center;
 }
 
 /* controls the display of the edit links in user profile */
-/* line 50, ../sass/_mixins.scss */
-BODY.page-user .pane-menu-menu-user-profile-links H2.pane-title,
-BODY.page-user .pane-menu-menu-user-profile-links H2.block-title {
-  font-size: 13.28px;
-  padding: 0.5em 1.5em;
-  display: inline-block;
-  cursor: pointer;
-  -moz-border-radius: 0.5em;
-  -webkit-border-radius: 0.5em;
-  border-radius: 0.5em;
-  *zoom: 1;
-  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF00B0F3', endColorstr='#FF00668D');
-  background-color: #00b0f3;
-  border: 0;
-  color: white;
-  font-size: 13.28px;
-  padding: 0.25em 1em;
-  display: inline-block;
-  cursor: pointer;
-  -moz-border-radius: 0.5em;
-  -webkit-border-radius: 0.5em;
-  border-radius: 0.5em;
-  font-weight: normal;
+/* line 194, ../sass/themes/_basic_display.scss */
+BODY.page-user .pane-menu-menu-user-profile-links {
+  position: relative;
 }
-/* line 15, ../../../../../../../.rvm/gems/ruby-2.1.1/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
-BODY.page-user .pane-menu-menu-user-profile-links H2.pane-title:hover,
-BODY.page-user .pane-menu-menu-user-profile-links H2.block-title:hover {
-  text-decoration: none;
+/* line 75, ../sass/components/_menus.scss */
+BODY.page-user .pane-menu-menu-user-profile-links H2.pane-title, BODY.page-user .pane-menu-menu-user-profile-links H2.block-title {
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -moz-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
 }
-/* line 42, ../../../../../../../.rvm/gems/ruby-2.1.1/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
-BODY.page-user .pane-menu-menu-user-profile-links H2.pane-title:hover,
-BODY.page-user .pane-menu-menu-user-profile-links H2.block-title:hover {
-  background-color: #009ed9;
-}
-/* line 44, ../../../../../../../.rvm/gems/ruby-2.1.1/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
-BODY.page-user .pane-menu-menu-user-profile-links H2.pane-title:active,
-BODY.page-user .pane-menu-menu-user-profile-links H2.block-title:active {
-  background-color: #0092ca;
-}
-/* line 6, ../../../../../../../.rvm/gems/ruby-2.1.1/gems/sassy-buttons-0.2.6/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
-BODY.page-user .pane-menu-menu-user-profile-links H2.pane-title.disabled, BODY.page-user .pane-menu-menu-user-profile-links H2.pane-title[disabled],
-BODY.page-user .pane-menu-menu-user-profile-links H2.block-title.disabled,
-BODY.page-user .pane-menu-menu-user-profile-links H2.block-title[disabled] {
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
-  opacity: 0.6;
-  background: false;
-  cursor: default;
-  -moz-box-shadow: none;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-}
-/* line 74, ../../../../../../../.rvm/gems/ruby-2.1.1/gems/sassy-buttons-0.2.6/stylesheets/_sassy-buttons.sass */
-BODY.page-user .pane-menu-menu-user-profile-links H2.pane-title::-moz-focus-inner,
-BODY.page-user .pane-menu-menu-user-profile-links H2.block-title::-moz-focus-inner {
-  padding: 0 !important;
-  margin: -1px !important;
-}
-/* line 56, ../sass/_mixins.scss */
+/* line 84, ../sass/components/_menus.scss */
 BODY.page-user .pane-menu-menu-user-profile-links UL.menu {
   display: none;
+  position: absolute;
   -moz-transition-property: all;
   -o-transition-property: all;
   -webkit-transition-property: all;
@@ -3522,86 +3567,32 @@ BODY.page-user .pane-menu-menu-user-profile-links UL.menu {
   -o-transition-timing-function: ease-in-out;
   -webkit-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
-}
-/* line 63, ../sass/_mixins.scss */
-BODY.page-user .pane-menu-menu-user-profile-links:hover H2.pane-title,
-BODY.page-user .pane-menu-menu-user-profile-links:hover H2.block-title {
-  -moz-transition-property: all;
-  -o-transition-property: all;
-  -webkit-transition-property: all;
-  transition-property: all;
-  -moz-transition-duration: 0.2s;
-  -o-transition-duration: 0.2s;
-  -webkit-transition-duration: 0.2s;
-  transition-duration: 0.2s;
-  -moz-transition-timing-function: ease-in-out;
-  -o-transition-timing-function: ease-in-out;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
-  -moz-border-radius: 0.5em 0.5em 0em 0em;
+  -moz-border-radius: 0.5em 0em 0.5em 0.5em;
   -webkit-border-radius: 0.5em;
-  border-radius: 0.5em 0.5em 0em 0em;
+  border-radius: 0.5em 0em 0.5em 0.5em;
+  top: 35.2px;
+  right: 0px;
 }
-/* line 70, ../sass/_mixins.scss */
+/* line 126, ../sass/components/_menus.scss */
+BODY.page-user .pane-menu-menu-user-profile-links UL.menu LI {
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -moz-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+}
+/* line 140, ../sass/components/_menus.scss */
 BODY.page-user .pane-menu-menu-user-profile-links:hover UL.menu {
   display: block;
-  position: absolute;
-  top: 29.216px;
-  right: 0px;
-  background-color: #00b0f3;
-  white-space: nowrap;
-  margin: 0em;
-  padding: 0em;
-  overflow: hidden;
-  z-index: 1000;
-  -moz-border-radius: 0em 0em 0.5em 0.5em;
-  -webkit-border-radius: 0em;
-  border-radius: 0em 0em 0.5em 0.5em;
-  -moz-transition-property: all;
-  -o-transition-property: all;
-  -webkit-transition-property: all;
-  transition-property: all;
-  -moz-transition-duration: 0.2s;
-  -o-transition-duration: 0.2s;
-  -webkit-transition-duration: 0.2s;
-  transition-duration: 0.2s;
-  -moz-transition-timing-function: ease-in-out;
-  -o-transition-timing-function: ease-in-out;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
 }
-/* line 87, ../sass/_mixins.scss */
-BODY.page-user .pane-menu-menu-user-profile-links:hover UL.menu LI {
-  list-style-type: none;
-  list-style-image: none;
-  margin: 0em;
-  padding: .5em 1em;
-  font-size: 13.28px;
-  -moz-transition-property: all;
-  -o-transition-property: all;
-  -webkit-transition-property: all;
-  transition-property: all;
-  -moz-transition-duration: 0.2s;
-  -o-transition-duration: 0.2s;
-  -webkit-transition-duration: 0.2s;
-  transition-duration: 0.2s;
-  -moz-transition-timing-function: ease-in-out;
-  -o-transition-timing-function: ease-in-out;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
-}
-/* line 96, ../sass/_mixins.scss */
-BODY.page-user .pane-menu-menu-user-profile-links:hover UL.menu LI:hover {
-  background-color: #009ed9;
-}
-/* line 99, ../sass/_mixins.scss */
-BODY.page-user .pane-menu-menu-user-profile-links:hover UL.menu LI A {
-  margin: 0em;
-  padding: 0em;
-  text-decoration: none;
-  color: white;
-}
-/* line 138, ../sass/themes/_basic_display.scss */
+/* line 201, ../sass/themes/_basic_display.scss */
 BODY.page-user .pane-menu-menu-user-profile-links H2 {
   font-size: 13.28px;
 }
@@ -3609,3 +3600,5 @@ BODY.page-user .pane-menu-menu-user-profile-links H2 {
 /* user summary data */
 /* user profiles, with data they can edit */
 /* various lists on the user profile page (event, volunteer) */
+
+/*# sourceMappingURL=styles.css.map */
