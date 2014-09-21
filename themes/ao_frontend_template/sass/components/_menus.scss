@@ -7,7 +7,6 @@
  
 /**
  * DEFAULT VARIABLES
- * 
  * Default settings for drop down menus.
  * See mixin documentation for explanations.
  */
@@ -86,7 +85,8 @@ $ao-menu-top-offset: $base-font-size * 2.2;
   
     // hide the menu
     display: none;
-    
+    position: absolute;
+
     // default style for menus
     @if $ao-menu-menu-style != false {
       @extend #{$ao-menu-menu-style};
@@ -105,21 +105,22 @@ $ao-menu-top-offset: $base-font-size * 2.2;
     }
     
     // menu placement
-    // this is where left, right and full should be applied
+    // this is where up, down should be applied
+    @if $ao-menu-style == up {
+      bottom: 100%;
+    }
     @if $ao-menu-style == down {
-      @if $ao-menu-justify == left or $ao-menu-justify == full { 
-        position: absolute;
-        top: $ao-menu-top-offset;
-        left: 0px;
-      }
-      @if $ao-menu-justify == right { 
-        position: absolute;
-        top: $ao-menu-top-offset;
-        right: 0px;
-      }
-      @if $ao-menu-justify == full { 
-        min-width: 100%; 
-      }
+      top: $ao-menu-top-offset;
+    }
+    // this is where left, right and full should be applied
+    @if $ao-menu-justify == left or $ao-menu-justify == full { 
+      left: 0px;
+    }
+    @if $ao-menu-justify == right { 
+      right: 0px;
+    }
+    @if $ao-menu-justify == full { 
+      min-width: 100%; 
     }
     
     #{$ao-menu-element-selector} {
@@ -142,25 +143,3 @@ $ao-menu-top-offset: $base-font-size * 2.2;
   }
 } 
 
-
-
-
-
-.ao-menu-links {
-  
-  H2 {
-    font-size: 1.2em;
-  }
-  UL.menu {
-    margin: 0em;
-    padding: 0em;
-    font-size: 0.9em;
-    LI {
-      list-style-type: none;
-      list-style-image: none;
-      margin: 0em;
-      padding: 0em;
-    }
-  }
-}
- 
