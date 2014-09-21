@@ -17,12 +17,13 @@ firesass = false
 
 
 # Location of the theme's resources.
-css_dir         = "css"
-sass_dir        = "sass"
-extensions_dir  = "sass-extensions"
-images_dir      = "images"
-javascripts_dir = "js"
-disable_warnings = "true"
+css_dir           = "css"
+sass_dir          = "sass"
+extensions_dir    = "sass-extensions"
+images_dir        = "images"
+javascripts_dir   = "js"
+disable_warnings  = "true"
+sourcemap         = "true"
 
 # Require any additional compass plugins installed on your system.
 #require 'ninesixty'
