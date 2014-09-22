@@ -65,7 +65,7 @@
  * These styles apply to drop down menus by default.
  * They can be removed or replaced using default values for the mixin.
  */
-/* line 51, ../sass/_ao-init.scss */
+/* line 50, ../sass/_ao-init.scss */
 .ao-menu-default-trigger-style, #block-menu-crm-core-menu H2.pane-title, #block-menu-crm-core-menu H2.block-title, BODY.page-user .pane-menu-menu-user-profile-links H2.pane-title, BODY.page-user .pane-menu-menu-user-profile-links H2.block-title {
   -moz-border-radius: 0.5em;
   -webkit-border-radius: 0.5em;
@@ -86,7 +86,7 @@
   cursor: pointer;
 }
 
-/* line 61, ../sass/_ao-init.scss */
+/* line 60, ../sass/_ao-init.scss */
 .ao-menu-default-menu-style, #block-menu-crm-core-menu UL.menu, BODY.page-user .pane-menu-menu-user-profile-links UL.menu {
   background-color: #00b0f3;
   white-space: nowrap;
@@ -96,18 +96,18 @@
   z-index: 1000;
 }
 
-/* line 69, ../sass/_ao-init.scss */
+/* line 68, ../sass/_ao-init.scss */
 .ao-menu-default-element-style, #block-menu-crm-core-menu UL.menu LI, BODY.page-user .pane-menu-menu-user-profile-links UL.menu LI {
   list-style-type: none;
   list-style-image: none;
   padding: 0.375em 0.75em;
   margin: 0em;
 }
-/* line 74, ../sass/_ao-init.scss */
+/* line 73, ../sass/_ao-init.scss */
 .ao-menu-default-element-style:hover, #block-menu-crm-core-menu UL.menu LI:hover, BODY.page-user .pane-menu-menu-user-profile-links UL.menu LI:hover {
   background-color: #009ed9;
 }
-/* line 77, ../sass/_ao-init.scss */
+/* line 76, ../sass/_ao-init.scss */
 .ao-menu-default-element-style A, #block-menu-crm-core-menu UL.menu LI A, BODY.page-user .pane-menu-menu-user-profile-links UL.menu LI A {
   margin: 0em;
   padding: 0em;

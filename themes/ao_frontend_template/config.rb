@@ -28,6 +28,9 @@ sourcemap         = "true"
 # Require any additional compass plugins installed on your system.
 #require 'ninesixty'
 #require 'zen-grids'
+require 'rubygems'
+require 'bundler/setup'
+Bundler.require(:default)
 require 'sassy-buttons'
 
 # Assuming this theme is in sites/*/themes/THEMENAME, you can add the partials
