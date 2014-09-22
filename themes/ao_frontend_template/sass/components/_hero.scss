@@ -1,15 +1,14 @@
 /**
  * @file
- * Buttons
+ * Hero units
  *
  * Defines the appearance of hero elements used within the theme
  */
 .hero-element {
+  @include ao-fontography($ao-fonto-style: hero);
   width: 60%;
   margin: 2em 0em;
   padding: 1em 2em;
-  color: white;
   background-color: rgba(135,105,40,.7);
-  @include text-shadow(1px 1px 3px rgba(0,0,0,.5));
   @include border-radius(1em);
 } 
