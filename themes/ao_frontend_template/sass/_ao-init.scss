@@ -6,8 +6,7 @@
  * Variables are organized by category
  */
 
-
-// default fonts styles
+// default font styles
 $normal: ao-fontography-register-style(
   $ao-fonto-style-name: normal,
   $ao-fonto-style-color: false,
@@ -24,12 +23,36 @@ $regular: ao-fontography-register-style(
   $ao-fonto-style-family: false
 );
 
+$breadcrumb: ao-fontography-register-style(
+  $ao-fonto-style-name: breadcrumb,
+  $ao-fonto-style-size: 0.9em
+);
+
+$hero: ao-fontography-register-style(
+  $ao-fonto-style-name: hero,
+  $ao-fonto-style-color: White,
+  $ao-fonto-style-text-shadow: 1px 1px 3px rgba(0,0,0,.5)
+);
+
+// buttons
+$button-default: ao-fontography-register-style(
+  $ao-fonto-style-name:     button-default,
+  $ao-fonto-style-size:     13.25px,
+  $ao-fonto-style-lines:    1.333,
+  $ao-fonto-style-margin:   0em,
+  $ao-fonto-style-color:    #333,
+  $ao-fonto-style-weight:   normal,
+  $ao-fonto-style-text-decoration:  none
+);
+
 $button-blue: ao-fontography-register-style(
   $ao-fonto-style-name:     button-blue,
   $ao-fonto-style-size:     16px,
+  $ao-fonto-style-lines:    1.333,
   $ao-fonto-style-padding:  0.25em 1em,
   $ao-fonto-style-margin:   0em,
-  $ao-fonto-style-color:    White
+  $ao-fonto-style-color:    White,
+  $ao-fonto-style-weight:   normal
 );
 
 /**
@@ -80,3 +103,30 @@ $ao-menu-border-radius:  0em 0em 0.5em 0.5em;
     @include ao-fontography($ao-fonto-style: normal, $ao-fonto-color: White);
   }
 } 
+
+/**
+ * BUTTONS
+ * Variables controlling the default appearance of buttons
+ */
+$ao-button-hover-bg-color:  #e1e1e1;
+
+/**
+ * DEFAULT BUTTONS
+ * Variables controlling the default appearance of buttons
+ */
+.small-grey-button {
+  @include ao-button();
+  @include ao-fontography($ao-fonto-style: button-default);
+}
+.red-button {
+  @include ao-button (
+    // $ao-button-margin:          false !default; 
+    $ao-button-padding:         rhythm(.25) rhythm(.5),
+    $ao-button-border:          none,
+    $ao-button-border-radius:   0.5em,
+    $ao-button-color:           White,
+    $ao-button-bg-color:        $base-red
+  );
+}
+
+
