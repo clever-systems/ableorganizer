@@ -8,6 +8,9 @@
 .happy {
   border-bottom: 1px solid #CCC;
 }
+/* DEFAULTS */
+/* BUTTONS */
+
 
 /* REGIONS */
 div#main,
@@ -20,20 +23,46 @@ section#above-content-three,
 section#below-content-one, 
 section#below-content-two, 
 section#below-content-three {
-  @include ao-horizontal-region();
+  @include ao-horizontal-region(
+    $ao-horiz-region-padding: 0em .5em
+  );
 }
 header#header {
   @include ao-horizontal-region(
     $ao-horiz-region-style: '.happy',
-    $ao-horiz-region-padding: 2em 0em
+    $ao-horiz-region-padding: 2em .5em
   );
 }
 section#main-navigation {
   @include ao-horizontal-region(
     $ao-horiz-region-style: '.happy',
-    $ao-horiz-region-padding: 1em 0em
+    $ao-horiz-region-padding: 1em .5em
   );
 }
+
+/* BREADCRUMBS */
+nav.breadcrumb {
+  padding: .5em 0em 0em;
+  @include ao-fontography($ao-fonto-style: breadcrumb);
+}
+
+/* HEADER / NAVIGATION */
+/* controls the layout of the navigation */
+section#main-navigation {
+  font-size: $h3-font-size;
+  font-weight: 400;
+}
+/* controls the display of the secondary links in the header */
+.header__secondary-menu {
+  .inline LI {
+    margin: 0em;
+    padding: 0em;
+    A {
+      @extend .small-grey-button;
+    }
+  }
+}
+
 
 
 
@@ -68,36 +97,16 @@ section#main-navigation {
 
 /* LAYOUT MODIFICATIONS */
 
-/* HEADER / NAVIGATION */
-/* controls the layout of the navigation */
-section#main-navigation {
-  font-size: $h3-font-size;
-  font-weight: 400;
-}
 
-/* controls the display of the secondary links in the header */
-.header__secondary-menu {
-  .inline LI {
-    margin: 0em;
-    padding: 0em;
-    A {
-      @include sassy-button("flat", .5em, $h5-font-size, #f1f1f1, $ao_blue2, $gray-1, "Raised");
-      @include sassy-button-structure(.5em, $h5-font-size, 0.25em 1em);
-      text-decoration: none;
-    }
-  }
-}
+
+
+
 /* controls the display of the CRM Core menu in the header */
 #block-menu-crm-core-menu {
   @include ao-drop-down();
 }
 
 
-/* controls the display of thumbnails */
-nav.breadcrumb {
-  padding: .5em 0em 0em;
-  font-size: 0.9em;
-}
 
 /* FOOTER */
 footer#footer {
