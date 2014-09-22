@@ -8,8 +8,6 @@
 
 /* Import Sass mixins, variables, Compass modules, etc. */
 @import "init";
-@import "fontography";
-@import "ao-init";
 
 /* HTML element (SMACSS base) rules */
 @import "normalize";
@@ -18,13 +16,16 @@
 @import "layouts/responsive";
 
 /* Component (SMACSS module) rules */
+@import "components/fontography";
 @import "components/transitions";
-@import "components/misc";
 @import "components/buttons";
 @import "components/regions";
 @import "components/menus";
 @import "components/hero";
 @import "components/forms";
+@import "ao-init";
+
+@import "components/misc";
 @import "components/user_profiles";
 @import "components/activities";
 @import "components/identity-blocks";
