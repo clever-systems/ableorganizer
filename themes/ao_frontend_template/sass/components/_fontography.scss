@@ -26,11 +26,13 @@ $ao-fonto-style-size:             false !default;
 $ao-fonto-style-lines:            false !default;
 $ao-fonto-style-family:           false !default;
 $ao-fonto-style-weight:           false !default;
+$ao-fonto-style-text-decoration:  false !default;
 $ao-fonto-style-text-transform:   false !default;
 $ao-fonto-style-font-style:       false !default;
 $ao-fonto-style-padding:          false !default;
 $ao-fonto-style-margin:           false !default;
 $ao-fonto-style-text-align:       false !default;
+$ao-fonto-style-text-shadow:      false !default;
   
 /**
  * AO FONTOGRAPHY
@@ -47,11 +49,10 @@ $ao-fonto-style-text-align:       false !default;
   $ao-fonto-color: $ao-fonto-color
 ) {
 
-  text-align: $ao-fonto-style;
-  
+  font-style-name: $ao-fonto-style;
+    
   @if map-has-key($ao-fontography, $ao-fonto-style){
   
-    text-align: $ao-fonto-style;
     
     // get the key
     $style: map-get($ao-fontography, $ao-fonto-style);
@@ -62,16 +63,18 @@ $ao-fonto-style-text-align:       false !default;
     $family: map-get($style, 'family');
     $set-lines: map-get($style, 'lines');
     $weight: map-get($style, 'weight');
-    $text-transform: map-get($style, 'text-transform');
     $font-style: map-get($style, 'font-style');
     $padding: map-get($style, 'padding');
     $margin: map-get($style, 'margin');
     $text-align: map-get($style, 'text-align');
+    $text-decoration: map-get($style, 'text-decoration');
+    $text-shadow: map-get($style, 'text-shadow');
+    $text-transform: map-get($style, 'text-transform');
     
     // font color
     // allow colors to be overridden
     @if $color != false and $color != null and $ao-fonto-color == false {
-      color: color;
+      color: $color;
     }
     @if $ao-fonto-color != false {
       color: $ao-fonto-color;
@@ -91,10 +94,6 @@ $ao-fonto-style-text-align:       false !default;
       }
       @include adjust-font-size-to($size, $lines: $set-lines);
     }
-    // text transform
-    @if $text-transform != false and  $text-transform != null {
-      text-transform: $text-transform;
-    }
     // font-style
     @if $font-style != false and  $font-style != null {
       font-style: $font-style;
@@ -111,7 +110,19 @@ $ao-fonto-style-text-align:       false !default;
     @if $text-align != false and  $text-align != null {
       text-align: $text-align;
     }
-  }
+    // text-decoration
+    @if $text-decoration != false and  $text-decoration != null {
+      text-decoration: $text-decoration;
+    }
+    // text-shadow
+    @if $text-shadow != false and  $text-shadow != null {
+      @include text-shadow($text-shadow);
+    }
+    // text transform
+    @if $text-transform != false and  $text-transform != null {
+      text-transform: $text-transform;
+    }
+}
 }
 
 /**
@@ -135,7 +146,9 @@ $ao-fonto-style-text-align:       false !default;
   $ao-fonto-style-font-style:       $ao-fonto-style-font-style,
   $ao-fonto-style-padding:          $ao-fonto-style-padding,
   $ao-fonto-style-margin:           $ao-fonto-style-margin,
-  $ao-fonto-style-text-align:       $ao-fonto-style-text-align
+  $ao-fonto-style-text-align:       $ao-fonto-style-text-align,
+  $ao-fonto-style-text-decoration:  $ao-fonto-style-text-decoration,
+  $ao-fonto-style-text-shadow:      $ao-fonto-style-text-shadow
 ) {
   // check that there is a valid name for the style
   @if $ao-fonto-style-name != false {
@@ -146,11 +159,13 @@ $ao-fonto-style-text-align:       false !default;
         lines: $ao-fonto-style-lines,
         family: $ao-fonto-style-family,
         weight: $ao-fonto-style-weight,
-        text-transform: $ao-fonto-style-text-transform,
         font-style: $ao-fonto-style-font-style,
         padding: $ao-fonto-style-padding,
         margin: $ao-fonto-style-margin,
-        text-align: $ao-fonto-style-text-align
+        text-align: $ao-fonto-style-text-align,
+        text-transform: $ao-fonto-style-text-transform,
+        text-decoration: $ao-fonto-style-text-decoration,
+        text-shadow: $ao-fonto-style-text-shadow
       )
     );
     $ao-fontography: map-merge($ao-fontography, $newmap);
