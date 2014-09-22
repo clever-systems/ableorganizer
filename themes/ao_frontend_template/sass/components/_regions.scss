@@ -10,11 +10,12 @@
  * Default settings for regions.
  * See mixin documentation for explanations.
  */
-$ao-horiz-region-container-selector: '.section-wrapper' !default;
-$ao-horiz-region-container-position: center !default;
-$ao-horiz-region-container-width: 1200px !default;
-$ao-horiz-region-padding: false !default;
-$ao-horiz-region-style: false !default;
+$ao-horiz-region-padding:               false !default;
+$ao-horiz-region-style:                 false !default;
+$ao-horiz-region-container-selector:    '.section-wrapper' !default;
+$ao-horiz-region-container-position:    center !default;
+$ao-horiz-region-container-width:       1200px !default;
+$ao-horiz-region-container-padding:     false !default;
 
 /**
  * AO HORIZONTAL REGION
@@ -31,19 +32,24 @@ $ao-horiz-region-style: false !default;
  *
  */
 @mixin ao-horizontal-region (
+  $ao-horiz-region-padding: $ao-horiz-region-padding,
+  $ao-horiz-region-style: $ao-horiz-region-style,
   $ao-horiz-region-container-selector: $ao-horiz-region-container-selector,
   $ao-horiz-region-container-position: $ao-horiz-region-container-position,
   $ao-horiz-region-container-width: $ao-horiz-region-container-width,
-  $ao-horiz-region-padding: $ao-horiz-region-padding,
-  $ao-horiz-region-style: $ao-horiz-region-style
+  $ao-horiz-region-container-padding: $ao-horiz-region-container-padding
 ) {
-
 
   // apply any additional styles to the region
   @if $ao-horiz-region-style != false {
     @extend #{$ao-horiz-region-style};
   }
 
+  // padding
+  @if $ao-horiz-region-padding != false {
+    padding: $ao-horiz-region-padding;
+  }
+    
   // center the section wrapper
   #{$ao-horiz-region-container-selector} {
   
@@ -64,8 +70,8 @@ $ao-horiz-region-style: false !default;
       max-width: $ao-horiz-region-container-width;
     }
     // padding
-    @if $ao-horiz-region-padding != false {
-      padding: $ao-horiz-region-padding;
+    @if $ao-horiz-region-container-padding != false {
+      padding: $ao-horiz-region-container-padding;
     }
 
   }
