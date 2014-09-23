@@ -103,7 +103,7 @@ $ao-fonto-style-text-shadow:      false !default;
     }
     // margin
     @if $margin != false and  $margin != null {
-      margin: $padding;
+      margin: $margin;
     }
     // text-align
     @if $text-align != false and  $text-align != null {
