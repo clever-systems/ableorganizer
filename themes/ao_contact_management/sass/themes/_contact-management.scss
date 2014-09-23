@@ -1,0 +1,28 @@
+/**
+ * @file
+ * Contact Management
+ *
+ * This is the base theme file for contact management in AbleOrganizer.
+ */
+
+/* REGIONS */
+
+section.banner {
+  font-size: $h6-font-size;
+  A {
+    color: #dfe4e6;
+    text-decoration: none;
+    &:hover {
+      color: White;
+    }
+  }
+}
+
+
+
+
+
+/* Dashboard */
+BODY.page-crm-core-dashboard {
+
+}

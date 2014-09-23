@@ -50,6 +50,9 @@
 /* SMACSS theme rules */
 /* @import "theme-A"; */
 /* @import "theme-B"; */
+@import "themes/contact-management";
+
+// move all of this into mixins in the main theme file
 @import "themes/global-styles";
 @import "themes/dashboard";
 @import "themes/reports";
