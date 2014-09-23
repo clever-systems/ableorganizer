@@ -18,17 +18,34 @@
 
 /* Component (SMACSS module) rules */
 @import "components/misc";
+@import "components/fontography";
+
+// this creates a set of font styles for use in the theme
+// doing this here to ensure styles are available to other mixins
+@import "ao-init-fonts";
+
+// partials from frontend theme
+@import "components/transitions";
+// @import "components/buttons"; - this one is an issue
+@import "components/regions";
+// @import "components/menus"; - this one is an issue
+@import "components/hero";
+// @import "components/forms"; - this one is an issue
+@import "components/grids";
+@import "components/node";
+@import "components/block";
+
+// partials from original
 @import "components/buttons";
+@import "components/menus";
 @import "components/containers";
 @import "components/tables";
 @import "components/titles";
-@import "components/menus";
 @import "components/nav";
 @import "components/activities";
 @import "components/tabs";
 @import "components/contact";
 @import "components/forms";
-
 
 // Optionally, add your own components here.
 @import "print";

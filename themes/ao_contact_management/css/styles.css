@@ -1211,7 +1211,7 @@ section.content {
   margin: 1.5em 0;
   padding: 10px 10px 10px 50px;
   /* LTR */
-  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAD6UlEQVR42s2WX0xbVRzH3YwmC4k+GF/0ZS/S267/bmnX9nL7bwstZlnbjTDYyoC5GCbB0ZW5pdJCe6swbLFA6bpWIGuRMWVjKGP+21QW3SZBSAjGh4XEaTZTH82Cm/3ztS2xs7mw4KLRk3xyzj33/H6fe5Pz7zEA/yr/vUDukj9FH6drqTaqT8EoPs/UV+nX6TD1BlUh9AqLHlmgPKLcRHmoCOWmElK/FOKTYpS8UwLJkASiUyLI3pKhlClN0g46qj+qL/pbArlbrlO1q25JeiSgR2iYJ8ywXLSg/qP6LNl2ro8+Q4MMkKCd9K2t3q3KdQnkXXIF5aISkgEJzONm1F2qW52pDJN1MI2bUBIuAdVOJWSMTPNQgX6/vkjVpvpREpag6oMqWCYta1IzbsHh9ga0RJtzY8URMdRO9U/KSuWmNQUqh2pY3CtG+fvlqJyofMAFNrZAE+7e/RWR4X4cD9tgOGsA2U2CdtMDqwqyMyIzQ5KKqAKmcyaYxkzYd3YvjGNGFtXRPRj58DT+LOemRrFnrBLyITmUDmUyO/NYgu2d26ukHVJo3tXAMGpAs+cQmh0NeClan30uwN7TgnQ6nRd4r3thOGOAJqYB2UVC79AfZAnKHGUxQa8A2tNaNLW/jKvXv8Dyb8s4yryKA4O10A3roIvpUB+swTdz1/LJZ27PQBvT5lBH1RD4BChzlQ2wBNtc22aE/ULQgzRCl4P5BPcT93GMOYz9wb2QhCRgAq35d8u/L2PXe7tADVGgBlcQ+AXQtmlvsP/gzbJZvp8PMkJCFBYh8m0knyiVSsHe0YIGZz1+/uVOvt8z7QGvnwf+ST5EIRHIUyR4fh50rbp5lsDcYR4ReAXgBrng9q/Qfa0bfy035r7Ot2dvz4IX4IEIEAXwvDzscOw4zxJUd1YfEXlE4Aa4BQHMlwzSSBeI7iXvoTxWDqKPYCFsFaKmr+YVliB0JfS89DVpiuhlB9k/tSOZTuYFvq98yI7L0/MAsVWcGp0bfW61hbahwltxSeARsIKyWKesSKQSWIwvYkvvllwfx88pgOvhwthu/AzAxlVX8vz385tLbaVxwpcLZtEw0QDjsBGctzksiE4CimZFfHp++oWHbnbuUfdB0komMgHsRN1r0MWBsEmYODF5onY92/UTwcvBxuzXcN1ccHycVSn2FaPYWwzCQUDWKIt7z3utAJ5c74Hz+OLSomynY+cVfiM/xW3JiDyZpB3FuZrj4oCwE+Ad4qWMjPHjpTtL0mzMoxyZz9yM39Q7Y85Ok930icqm+k59TL2wm9l90dZv8y/8sPAigGf/iUN/Q4anM2zOsdLe+L+4VfwBVVjDs2rTYx0AAAAASUVORK5CYII=');
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAMAAADXqc3KAAABgFBMVEUAAADI08j///+QtZA9fj05cDk/fD////8zhTNAZkD///+fxp+ErYT///9QglD///9Oe07X5df///9Bf0E7gjs+hj42gjY2ijZOf05cklw1ajXd5t1LfEtBe0FTi1PU3dQ6fjo+dj48dzw9cj1ylHJ9on04gjhFgEVYh1g6fjpGfEZQhlA8ejxFhUX///8njCcokihftl8njycnjicokCgokyhOq05VsFVAokBbs1tHp0c6fzongicxmTEvmC86nTpQr1Asaiz8/vwsiywrjyt2g2+MxowplCkxkTFufmYwcDAohygreysodihLo0sugy4qlCqDwYPJzsZelVr3+/cskSxbtFstlS3L5csynTIyjjI8pjwzmjM0iDQ3oDdXsVf19vRYqlcniSdnsGcmhiY0dTTU6dRwtXB5unlnfWCCk3vn6ub5+/lhnV55kHMxiTFYoVaazZpioWDCx79IqkiXvJVvg2ilsqByk2x3mXJzoW9HqEeao5RcrlustadEpUR05P1tAAAALnRSTlMAIgVt7/ejAQwKAxpgFLsPwUcg0ZtVQDjBafc0sNi7NZLcXt+Ph8ScccljppnVCMq+4AAAAUdJREFUKM+dzlVzwlAUBODg7lZ3l0uhNE2JosGlWHGou7v99iaXQBleOtPv7ezO7Bzk/5QzUwvLazblQKyy4hWqVqbquFzVn9ulkSpTdLmKTDUidfzmDrzMuARMDbf3dqRkc6fjK/reJKXdNXnkcVvw2vp8+6hYhX/wBoq2Ud7tCwDf7Qbe+c1Wx7zP0Xsv5xoAEPZiNyudpQIWfWiFrjAstwvAHoZhgUVYWEr0EwCXoRx5DkAepWk6aIHFepCk7gDwh84uAMhmShQZHIfFaoBl2TC3zg9ltjiBMVgspVnuyAJOPrXBSwzDQnPk4a9TP/eRB4ppYKGYSMPzxH9c8Lg5xJACgUQyp5t3kNrkxWUiRKCNxfnECe37tEiXWCIjnILEiESM9Kgnjb4kcUgQSZ9+VI3005nmjbPT+jmTDhmkMJjNBgXypx/1oEsauKwB7gAAAABJRU5ErkJggg==');
   background-position: 8px 8px;
   /* LTR */
   background-repeat: no-repeat;
@@ -1220,13 +1220,13 @@ section.content {
 
 /* line 212, ../sass/components/_misc.scss */
 .messages--warning {
-  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAACuElEQVRIiWP4//8/Ay0xSYqntTpnT252zqeJBf0Njhsykrz/pyd6/e9vcNpGVQv6q2wlm0qc/r0+IPD/3UG+/61l9v9mdrjIUc2C7hqHUzc3S///eZwBjO9tF/vfWe1wjioWTKixVm8otPn38wQT3IKfxxn/t5Va/utpsNSg2ILWcttrNzdJgQ3+dpQRjEHs+9tE/zeXWt+gyILOamuTqlxrsOtPLub+7+emBsSq/88v5wL7oqHQ9H9nmbkF2RbUF1rev7lJEuziuU3i/90ddcB4UZsoJC62ifyvK7R4QJYFrcUGrmUZ5v9hYb9hosh/bzcDMN42VRgeF9W5hv8bi/XdSbagKtfs2c1NEvCIPbaQ/7+/pwkYn17Ki0hR24T/l2eZPCfJgsZ83dCiNOP/yCnn7iau/8G+5mD8aBsHSoqqyNL9X5erHUm0BcVpRm9ubhZHMoTh/4eDzP/DA23+RwTZ/P96hAlF7t5Wof8FyfpvibKgNk8noyDZ4D9quofg1Bjr/1kJlhjiIF+Upmn/r83RzCJoQXaC3qcbm8SwGMLwvybP/H8jMGlik7u7VeB/Zqz2J7wWVGdr1uTG62J1PQgfWST1/+hiCaxyIF8UJqv9r8hQrcVpQVqkzrcbG0WwGvB2H/P/lnx5MAaxsam5vYn3f2KY+jesFpSlqfZnxWjidP2OGWL/g/0swBjExu4Lhv958Ur/i5KU+lEsCA1lYI4JUv95bZ0gTo2Pt3P+z0myBmMQG5e6mxu4/kf4Kf8EmQm3oCRNebKrvSawIGPBqRG9sMOp5hjjfwdrlf/58bKT4RaUpWvtcLZV/39iscD/H0AFP46jYwYiMeP/44u4/9tbKQODSXUH3II9G7v18hI0n8YGKv+IDVT6joxj/BVx4mgcOCde/SnITPRUJAHEGlTCEkQV19TAAN8FC67hZdFXAAAAAElFTkSuQmCC');
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAMAAADXqc3KAAAAxlBMVEUAAAB4azVVVQCVhENwYy9/bix5aSf///9zYyF9bSqPgEGVgkG8sYuKe0COfjptXyiJeDmEdjx+cTj///9zZjKBcy9yYiWFczB2Zyr5xwD4xwBbTyH5yAL2xQHZsxhdUSJrXivtwAlqYDrfthTIog1TTTdNRzJ4ai1/cDXbsgtAOyRGQCvetRFvYSTFoxleVCfXsBKEbx9XUTxnYUqGdTyBcj+4mBZ4ajnjtwnNpguzkxNORiWghBZxZDFmWSxYTiPwwQPitgjdTTAnAAAAPnRSTlMA9QNt/ld8KJFptxsu1SfyNuLsGPtHvUW9/////////////////////////////////////////////////oPnRDMAAADnSURBVCjPjZLXUoNAGEZNNb3ajsJKl4Amplfb+7+ULGAkwGRyrnbON2f25r+6hFIp3zfm80aeby51fdHMGdoCzHbWd5YKsOhkhr5AVTH7ad9bK9Z+v8XtpYaB4OD7B8zBqb9fK+wcZwcvtydDQYDlOFswC0lf+VBgZNs/BEklMdwEAd+zmQq8lv99vawQYBggk/px0ERoXBdkov35qhYGjMeEvFXj4fMdiT6d6khGk8jX4mBl26s4qUlfnEQBG8PYECVfRRn4KhHq8eHJ5MGzHlNY3l0wtLrPkqck3Zb8ZHidYXjmZH4BQc4g59lkML0AAAAASUVORK5CYII=');
   border-color: #ed5;
 }
 
 /* line 221, ../sass/components/_misc.scss */
 .messages--error {
-  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAACpElEQVR42rWWTUgbQRiGQ0Tx4MWDeFM8eBA9iKAoggiCoCiiIiL4L3oQV1CJB0UEf6iRYFpK7UniTw9VSqL2kvQsVDBpSZrtRo35czVNW3oprRf17exSl4yzu1ikAy9h59vvedhkMrMGAGoxknAk2w8MJ/WosXThiZkZt9jdLeglPjn5ATc3mhJNuNjbK0QbG3ExMICL/n6IfX0gcxB7ekDAELu6IHZ2IlJbi1hLS1BLogmPtbUhMTv7oMSamzUlqnByMxLT0/8STQkDj9TV4ZLj5OysrODl8jIu5Gs68dFR7JG6dWkJ0fFx+TpSX89IDMnwcHU1yKec12Yz3rlc4HkeLwjkXJpPip3U3+7vIx6P4ymph4eG5PlwTQ0lMdytlmBxMWKtrXLeT0zA5XTibvj9fjxfXETkb/3N/Dz2dneVuiTZtliU/rPSUsQ5ziuxZYG03IIlJdKKUPJjdRUAKMmzuTnskB/VYbdTtd9HR4g2NCi9Z2VliDY1BSnBaUEBzsrLqXyzWCiQ9HU5HA4afniIUFWV0hOqqMBpURErOM7NxWlhIZOvCwvA7S3Uxq+DA5AnZ3pO8vJYQSArC8c5Oeqx2Rj4udeLQH6+6v2B7GxW8DkjA0JmJpONwUHY7XZGIAgCzCYTeJUewmIFfqMRfEoKlQ2yJbza2oLWcLvdeDI2hk/3+iQWKzAYkJzNjg5srq9TwJ9OJ76YTNScx+ORJT66X1/grKyEbW2NgfPp6XKd/JMZySrHaQsSU1Oe+0/w3WpVgyu5HBlR6lc+H8gioevDwz6JrWwV5+3txyoSFk5DcOX1MnCyJ4Vwfb1zt1UY9SR8aioDpuppaVpwZbPTl+hHF04dOKzk8XBF8DgJC3/woU/W/EciOtELOWi8DDwp//215Q+p7kiKh2lQSAAAAABJRU5ErkJggg==');
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAMAAADXqc3KAAAA1VBMVEUAAAD//Pz//f3gSkrkXl7jV1fhT0/////////////jV1fiUlLkYGDod3fnbGzpfX3UAAD////ZHh7pe3vbKyvkYGDXERHnbW3pf3/VAwPdNzfiU1PgRkbWCQmwsLDzuLjYFRXiUlKtjIzhS0uIcnLNzc3W1tbsjo72yMjcMTGRh4ffQECiW1uhn5/ma2ucaWmrgYH30tLU1NTZIyPlc3OWiYnkXl7n5+fkXFyko6PZn5///v6RgoLj0dHqhIS4OzvSAADulpa6ubm5uLjHc3OoiYnfZmb6s0s+AAAAEHRSTlMArKvq4uXoq20C5Oji19zV3vvZAwAAAQdJREFUKM91kntPgzAUR1GngLrRThBHCzKYTmA63dv32+//kbz3t6ZZsuz8c3vPSZo0qQN8z7V4Phvrg5ahvc/F+tMyIhaL1UqfcLFeXVj6KMb3zzZAMffEcTGPQVHP4hKFfBNFv1+TeUQU2bL+ixoqjhtUSv18SzmplbrPpFwWSiUd13Fbldb6U1J5YS9vSq2TIw5hQgy5wDe0hQjdkHl7Jku+4mWKkHfBE/vXKc45QnrOjDMO1wMsKYLoEaNHCa4GH7SJdSBGtyQvZ+sihA3v8KmIuYxNCAQxZE/zTsqHnCY90HOPUeCpwB/seY5vSg+eJ7zvmGKx3pRtb8u2R2kfGjrG7/w+/2G9J2vVc3WTAAAAAElFTkSuQmCC');
   border-color: #ed541d;
 }
 
@@ -1276,8 +1276,10 @@ section.content {
 .tabs-primary, .tabs-secondary {
   overflow: hidden;
   *zoom: 1;
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjEuMCIgeDI9IjAuNSIgeTI9IjAuMCI+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjYmJiYmJiIi8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMDAwMDAwIiBzdG9wLW9wYWNpdHk9IjAuMCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(100%, #bbbbbb), color-stop(100%, rgba(0, 0, 0, 0)));
   background-image: -moz-linear-gradient(bottom, #bbbbbb 1px, rgba(0, 0, 0, 0) 1px);
-  background-image: -o-linear-gradient(bottom, #bbbbbb 1px, rgba(0, 0, 0, 0) 1px);
   background-image: -webkit-linear-gradient(bottom, #bbbbbb 1px, rgba(0, 0, 0, 0) 1px);
   background-image: linear-gradient(to top, #bbbbbb 1px, rgba(0, 0, 0, 0) 1px);
   /* IE 9 and earlier don't understand gradients. */
@@ -1357,8 +1359,10 @@ a.tabs-primary__tab-link:active, a.tabs-primary__tab-link.is-active {
   background-color: transparent;
   *zoom: 1;
   filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FFE9E9E9', endColorstr='#00E9E9E9');
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2U5ZTllOSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2U5ZTllOSIgc3RvcC1vcGFjaXR5PSIwLjAiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #e9e9e9), color-stop(100%, rgba(233, 233, 233, 0)));
   background-image: -moz-linear-gradient(#e9e9e9, rgba(233, 233, 233, 0));
-  background-image: -o-linear-gradient(#e9e9e9, rgba(233, 233, 233, 0));
   background-image: -webkit-linear-gradient(#e9e9e9, rgba(233, 233, 233, 0));
   background-image: linear-gradient(#e9e9e9, rgba(233, 233, 233, 0));
   border-color: #fff;
@@ -1449,7 +1453,7 @@ span.field-label {
 
 /* line 425, ../sass/components/_misc.scss */
 .more-help-link a {
-  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA7UlEQVR42qWTPQqDQBCFcwSPkCNITpAj5AjeIm1uYpkyR7Cy2Mot7OwsBAsRwUKwmOwLGRle3EIy8PyBfZ/z3J2TiPylz8VWWZZpUB40BonRKyizaxkA88MYYiqCEgv4MTvnZJom0VqWRbz3FlJZgLYtqmEY1Lg9r+sKsIXcLSC3AC019H0vqLquLeC5AfiHYSGkcdAJimKIBQiJ4+CO92OAtm0FNc8zOjkMwE5Q63FAtbeg6zpAYvG8BWR7i5qmQYwY4MIHqYhE2DOPQWcGJBQF2XU72ZzyUeZ5GCNt5/hybJgYdAXsq5sOEE/jG6dC5IOqCXTmAAAAAElFTkSuQmCC');
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAARVBMVEUAAADFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcXFxcX////y8vLt7e3JycnQ0NDU1NT5+fnk5OTb29tm/OKWAAAADXRSTlMAIEjFMBCf/oDZYK53P37p4wAAAHVJREFUGNNtjwkKwCAMBHtjj41Ntf3/U7tGhQodBM2YJaT7ZVpA9q3WDoVxrrV6kXgBq/UDOCXyKHBQpLyIUgZgpwAJARqFGRRhqRNfcYvXRngGilhzhwexuZu9ntuuqSNjjpjok5hT6ArW0C6z8L8yODfkzV7FmAkaJl7gmgAAAABJRU5ErkJggg==');
   background-position: 0 50%;
   /* LTR */
   background-repeat: no-repeat;
@@ -1511,19 +1515,19 @@ span.field-label {
  */
 /* line 479, ../sass/components/_misc.scss */
 .menu__item.is-leaf {
-  list-style-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHBAMAAAA2fErgAAAAD1BMVEX///+/v7+Li4sAAADAwMBFvsw8AAAAAXRSTlMAQObYZgAAAB1JREFUCFtjYAADYwMGBmYVZSDhKAwkFJWhYiAAAB2+Aa/9ugeaAAAAAElFTkSuQmCC');
+  list-style-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHAgMAAAC5PL9AAAAADFBMVEUAAAAAAADAwMCLi4v0JMC2AAAAAXRSTlMAQObYZgAAABhJREFUCNdjAAJWBwa5CwxSE4AkkA0UAAAfFQMRsFfQBQAAAABJRU5ErkJggg==');
   list-style-type: square;
 }
 
 /* line 486, ../sass/components/_misc.scss */
 .menu__item.is-expanded {
-  list-style-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHAQMAAAD+nMWQAAAABlBMVEX///8AAABVwtN+AAAAAXRSTlMAQObYZgAAABJJREFUeJxj+MdQw2DBIMAABgAUsAHD3c3BpwAAAABJRU5ErkJggg==');
+  list-style-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHAQMAAAD+nMWQAAAABlBMVEUAAAAAAAClZ7nPAAAAAXRSTlMAQObYZgAAABJJREFUCNdj+MdQw2DBIMAABgAUsAHD/GkkAQAAAABJRU5ErkJggg==');
   list-style-type: circle;
 }
 
 /* line 493, ../sass/components/_misc.scss */
 .menu__item.is-collapsed {
-  list-style-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHAQMAAAD+nMWQAAAABlBMVEX///8AAABVwtN+AAAAAXRSTlMAQObYZgAAABFJREFUCB1jVmCGQClmEWYOAAZ8AMy3HPLXAAAAAElFTkSuQmCC');
+  list-style-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHAQMAAAD+nMWQAAAABlBMVEUAAAAAAAClZ7nPAAAAAXRSTlMAQObYZgAAABRJREFUCNdjUGAwYLBgsAFiAwYFAAkiAU0pXr/sAAAAAElFTkSuQmCC');
   /* LTR */
   list-style-type: disc;
 }
@@ -1778,7 +1782,7 @@ td.menu-disabled {
  */
 /* line 742, ../sass/components/_misc.scss */
 html.js .collapsible .fieldset-legend {
-  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHAQMAAAD+nMWQAAAABlBMVEX///8AAABVwtN+AAAAAXRSTlMAQObYZgAAABJJREFUeJxj+MdQw2DBIMAABgAUsAHD3c3BpwAAAABJRU5ErkJggg==');
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHAQMAAAD+nMWQAAAABlBMVEUAAAAAAAClZ7nPAAAAAXRSTlMAQObYZgAAABJJREFUCNdj+MdQw2DBIMAABgAUsAHD/GkkAQAAAABJRU5ErkJggg==');
   background-position: 5px 65%;
   /* LTR */
   background-repeat: no-repeat;
@@ -1787,7 +1791,7 @@ html.js .collapsible .fieldset-legend {
 }
 /* line 751, ../sass/components/_misc.scss */
 html.js .collapsed .fieldset-legend {
-  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHAQMAAAD+nMWQAAAABlBMVEX///8AAABVwtN+AAAAAXRSTlMAQObYZgAAABFJREFUCB1jVmCGQClmEWYOAAZ8AMy3HPLXAAAAAElFTkSuQmCC');
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHAQMAAAD+nMWQAAAABlBMVEUAAAAAAAClZ7nPAAAAAXRSTlMAQObYZgAAABRJREFUCNdjUGAwYLBgsAFiAwYFAAkiAU0pXr/sAAAAAElFTkSuQmCC');
   /* LTR */
   background-position: 5px 50%;
   /* LTR */
@@ -1850,9 +1854,228 @@ tr.selected td {
 /* line 803, ../sass/components/_misc.scss */
 .progress .filled {
   background-color: #0072b9;
-  background-image: url('../images/progress.gif?1394091436');
+  background-image: url('../images/progress.gif?1411132269');
 }
 
+/**
+ * @file
+ * Menus
+ *
+ * Mixin for storing fonts in AbleOrganizer
+ */
+/**
+ * DEFAULT VARIABLES
+ * Default settings for fontography.
+ * See mixin documentation for explanations.
+ */
+/**
+ * AO FONTOGRAPHY
+ *
+ * Displays registered fonts.
+ * 
+ * @variables:
+ * $ao-fonto-style: Required. Name of the font style. Defaults to normal.
+ * $ao-fonto-color: Color for the font. Overrides any font colors declared for the style. Defaults to false.
+ * $ao-fonto-debug: Prints an invalid CSS style called 'font-style-name' for use in debugging. Does not print if false. Defaults to false.
+ * 
+ */
+/**
+ * AO FONTOGRAPHY - REGISTER STYLE
+ *
+ * Registers a style for presenting fonts.
+ * 
+ * @variables:
+ * $ao-fonto-style: Name of the font style.
+ * $ao-fonto-color: Color for the font.
+ * 
+ */
+/**
+ * @file
+ * AbleOrganizer Font Initialization
+ *
+ * Creates font styles used throughout the site
+ */
+/* DEFAULT FONT STYLES */
+/* NAVIGATION LINKS */
+/* FORMS */
+/* BLOCKS */
+/* BUTTONS */
+/**
+ * @file
+ * Transitions
+ *
+ * Mixins to create CSS transitions
+ */
+/**
+ * ao-transition
+ * Creates a CSS transition. All properties can be ignored by setting them to 0.
+ *
+ * $property: the properties to apply the transition to. Defaults to all.
+ * $duration: the duration for the transition. Defaults to .2s.
+ * $timing: the timing function for the transition. Defaults to ease-in-out.
+ * $delay: the delay before transition occurs. Defaults to false.
+ */
+/**
+ * @file
+ * Buttons
+ *
+ * Mixin for controlling the appearance of regions
+ */
+/**
+ * DEFAULT VARIABLES
+ * Default settings for regions.
+ * See mixin documentation for explanations.
+ */
+/**
+ * AO REGION
+ * 
+ * Applies basic styles to a region.
+ * 
+ * Variables: All variables can be ignored by passing false as the value, unless otherwise noted.
+ * 
+ * $ao-region-background: The background for the region. Defaults to false.
+ * $ao-region-margin: The margin for the region. Defaults to false.
+ * $ao-region-padding: The padding for the region. Defaults to false.
+ * $ao-region-border-top: The top border for the region. Defaults to false.
+ * $ao-region-border-bottom: The bottom border for the region. Defaults to false.
+ * $ao-region-border-left: The left border for the region. Defaults to false.
+ * $ao-region-border-right: The right border for the region. Defaults to false.
+ */
+/**
+ * AO HORIZONTAL REGION
+ *
+ * Controls the position and display of horizontal regions.
+ * Regions include any block region that is horizonally aligned.
+ * 
+ * @variables
+ * $ao-horiz-region-container-selector: Container in the region used to hold the content. Defaults to '.section-wrapper'
+ * $ao-region-container-position: Position of the container. Possible values are left, right, center. Defaults to 'center'
+ * $ao-region-container-width: Width of the container in the region. Defaults to 1200px.
+ * $ao-region-padding: Padding to apply to the region. Ignored when value is set to false. Defaults to false.
+ * $ao-region-style: Additional css style to apply to the region. Ignored when value is set to false. Defaults to false.
+ *
+ */
+/**
+ * @file
+ * Hero units
+ *
+ * Defines the appearance of hero elements used within the theme
+ */
+/* line 7, ../sass/components/_hero.scss */
+.hero-element {
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  width: 60%;
+  margin: 2em 0em;
+  padding: 1em 2em;
+  background-color: rgba(135, 105, 40, 0.7);
+  -moz-border-radius: 1em;
+  -webkit-border-radius: 1em;
+  border-radius: 1em;
+}
+
+/**
+ * @file
+ * Grids
+ *
+ * Defines styles for displaying grids
+ */
+/**
+ * DEFAULT VARIABLES
+ * Default settings for grids
+ * See mixin documentation for explanations.
+ */
+/**
+ * GRID 
+ * Creates a responsive grid using Zen Grids and zen-grid-flow-item. 
+ * Grid items are evenly spaced.
+ * Compensates for some bugs in the v1 version of Zen Grids.
+ *
+ * $ao-grid-padding: Padding for the grid. Defaults to false.
+ * $ao-grid-border: Border for the grid. Defaults to false.
+ * $ao-grid-item-selector: Selector for the items appearing in the grid. Required field.
+ *
+ * $ao-grid-item-cols: The number of columns for the grid. Defaults to 3.
+ * $ao-grid-item-parent-cols: The number of columns the grid spans. Defaults to 1.
+ * $ao-grid-item-grid-width: The width of the grid. Defaults to 100%.
+ * $ao-grid-item-grid-padding: The padding inside the grid. Defaults to false.
+ * $ao-grid-item-gutter-width: The width of the guttern to pass in.
+ * $ao-grid-item-gutter-alpha: Include an alpha gutter. TRUE or FALSE. Defaults to false.
+ * $ao-grid-item-gutter-omega: Include an omega gutter. TRUE or FALSE. Defaults to true.
+ *
+ */
+/**
+ * GRID ITEM BREAK
+ * Breaks an item out of a grid.
+ *
+ */
+/**
+ * @file
+ * Node
+ *
+ * Defines styles for displaying nodes
+ */
+/**
+ * DEFAULT VARIABLES
+ * Default settings for node
+ * See mixin documentation for explanations.
+ */
+/**
+ * AO NODE
+ * Provides consistent styles for nodes.
+ * Can be applied to all nodes or individual node types.
+ * Can be applied to teasers as well as other display modes.
+ *
+ * Variables:
+ * 
+ * Any variable will be ignored if set to false (unless otherwise stated).
+ * 
+ * $ao-node-padding: Padding to apply to the node.
+ * $ao-node-border-top: Top border to apply to the node.
+ * $ao-node-border-bottom: Bottom border to apply to the node.
+ * $ao-node-border-left: Left border to apply to the node.
+ * $ao-node-border-right: Right border to apply to the node.
+ * $ao-node-border-on-last: Border to apply to the last item. Use this to remove borders on the last item. Defaults to false.
+ * $ao-node-padding: Padding to apply to the nodes. Defaults to false.
+ * $ao-node-margin: Whether or not to apply borders to the last item. Defaults to true.
+ *
+ */
+/**
+ * @file
+ * Block
+ *
+ * Defines styles for displaying blocks
+ */
+/**
+ * DEFAULT VARIABLES
+ * Default settings for block
+ * See mixin documentation for explanations.
+ */
+/**
+ * AO NODE
+ * Provides consistent styles for blocks.
+ * Ideally used to change styles for blocks in specific regions.
+ * Can be applied to all blocks or individual blocks.
+ *
+ * Variables:
+ * 
+ * Any variable will be ignored if set to false (unless otherwise stated).
+ * 
+ * $ao-block-background: $ao-background,
+ * $ao-block-padding: $ao-block-padding,
+ * $ao-block-margin: $ao-block-margin,
+ * $ao-block-box-sizing: $ao-block-box-sizing,
+ * $ao-block-box-shadow: $ao-block-box-shadow,
+ * $ao-block-border-radius: $ao-block-border-radius,
+ * $ao-block-overflow: $ao-block-overflow,
+ * $ao-block-color: $ao-block-color
+ * $ao-block-border-top: Top border to apply to the block.
+ * $ao-block-border-bottom: Bottom border to apply to the block.
+ * $ao-block-border-left: Left border to apply to the block.
+ * $ao-block-border-right: Right border to apply to the block.
+ * $ao-block-border-on-last: Border to apply to the last item. Use this to remove borders on the last item. Defaults to false.
+ *
+ */
 /**
  * @file
  * Defines the appearance of buttons throughout the theme
@@ -1860,7 +2083,7 @@ tr.selected td {
  */
 /* line 8, ../sass/components/_buttons.scss */
 .btn, .btn-blue, .pane-ao-dashboard-act-stream-panel-pane-1 .view-content .crm-core-activity-actions A:first-child, .contact-pane-header-buttons .view-header A, .pane-ao-5-recent-activities .view-header A, .btn-red, .edit-form-wrapper .form-actions #edit-delete, #crm-core-activity-edit-cmcd-donation-form .form-actions #edit-delete,
-#crm-core-contact-ui-form .form-actions #edit-delete, .action-links LI A, .menu, .btn-vbo, .pane-ao-dashboard-act-stream-panel-pane-1 .view-content .crm-core-activity-actions A, .edit-form-wrapper .form-actions #edit-submit, #crm-core-activity-edit-cmcd-donation-form .form-actions #edit-submit,
+#crm-core-contact-ui-form .form-actions #edit-delete, .menu, .btn-vbo, .action-links LI A, .pane-ao-dashboard-act-stream-panel-pane-1 .view-content .crm-core-activity-actions A, .edit-form-wrapper .form-actions #edit-submit, #crm-core-activity-edit-cmcd-donation-form .form-actions #edit-submit,
 #crm-core-contact-ui-form .form-actions #edit-submit, BODY.maintenance-page section.content div#content input[type=submit] {
   background-color: #ffb600;
   color: White;
@@ -1895,28 +2118,28 @@ tr.selected td {
 }
 /* line 26, ../sass/components/_buttons.scss */
 .btn:hover, .btn-blue:hover, .contact-pane-header-buttons .view-header A:hover, .pane-ao-5-recent-activities .view-header A:hover, .btn-red:hover, .edit-form-wrapper .form-actions #edit-delete:hover, #crm-core-activity-edit-cmcd-donation-form .form-actions #edit-delete:hover,
-#crm-core-contact-ui-form .form-actions #edit-delete:hover, .action-links LI A:hover, .menu:hover, .btn-vbo:hover, .pane-ao-dashboard-act-stream-panel-pane-1 .view-content .crm-core-activity-actions A:hover, .edit-form-wrapper .form-actions #edit-submit:hover, #crm-core-activity-edit-cmcd-donation-form .form-actions #edit-submit:hover,
+#crm-core-contact-ui-form .form-actions #edit-delete:hover, .menu:hover, .btn-vbo:hover, .action-links LI A:hover, .pane-ao-dashboard-act-stream-panel-pane-1 .view-content .crm-core-activity-actions A:hover, .edit-form-wrapper .form-actions #edit-submit:hover, #crm-core-activity-edit-cmcd-donation-form .form-actions #edit-submit:hover,
 #crm-core-contact-ui-form .form-actions #edit-submit:hover, BODY.maintenance-page section.content div#content input[type=submit]:hover {
   background-color: #ffd889;
   color: White;
 }
 /* line 30, ../sass/components/_buttons.scss */
 .btn:active, .btn-blue:active, .contact-pane-header-buttons .view-header A:active, .pane-ao-5-recent-activities .view-header A:active, .btn-red:active, .edit-form-wrapper .form-actions #edit-delete:active, #crm-core-activity-edit-cmcd-donation-form .form-actions #edit-delete:active,
-#crm-core-contact-ui-form .form-actions #edit-delete:active, .action-links LI A:active, .menu:active, .btn-vbo:active, .pane-ao-dashboard-act-stream-panel-pane-1 .view-content .crm-core-activity-actions A:active, .edit-form-wrapper .form-actions #edit-submit:active, #crm-core-activity-edit-cmcd-donation-form .form-actions #edit-submit:active,
+#crm-core-contact-ui-form .form-actions #edit-delete:active, .menu:active, .btn-vbo:active, .action-links LI A:active, .pane-ao-dashboard-act-stream-panel-pane-1 .view-content .crm-core-activity-actions A:active, .edit-form-wrapper .form-actions #edit-submit:active, #crm-core-activity-edit-cmcd-donation-form .form-actions #edit-submit:active,
 #crm-core-contact-ui-form .form-actions #edit-submit:active, BODY.maintenance-page section.content div#content input[type=submit]:active {
   background-color: #f89406;
   color: #7d4a0e;
 }
 /* line 35, ../sass/components/_buttons.scss */
 .btn A, .btn-blue A, .pane-ao-dashboard-act-stream-panel-pane-1 .view-content .crm-core-activity-actions A:first-child A, .contact-pane-header-buttons .view-header A A, .pane-ao-5-recent-activities .view-header A A, .btn-red A, .edit-form-wrapper .form-actions #edit-delete A, #crm-core-activity-edit-cmcd-donation-form .form-actions #edit-delete A,
-#crm-core-contact-ui-form .form-actions #edit-delete A, .action-links LI A A, .menu A, .btn-vbo A, .pane-ao-dashboard-act-stream-panel-pane-1 .view-content .crm-core-activity-actions A A, .edit-form-wrapper .form-actions #edit-submit A, #crm-core-activity-edit-cmcd-donation-form .form-actions #edit-submit A,
+#crm-core-contact-ui-form .form-actions #edit-delete A, .menu A, .btn-vbo A, .action-links LI A A, .pane-ao-dashboard-act-stream-panel-pane-1 .view-content .crm-core-activity-actions A A, .edit-form-wrapper .form-actions #edit-submit A, #crm-core-activity-edit-cmcd-donation-form .form-actions #edit-submit A,
 #crm-core-contact-ui-form .form-actions #edit-submit A, BODY.maintenance-page section.content div#content input[type=submit] A {
   color: White;
   text-decoration: none;
 }
 /* line 38, ../sass/components/_buttons.scss */
 .btn A:hover, .btn-blue A:hover, .contact-pane-header-buttons .view-header A A:hover, .pane-ao-5-recent-activities .view-header A A:hover, .btn-red A:hover, .edit-form-wrapper .form-actions #edit-delete A:hover, #crm-core-activity-edit-cmcd-donation-form .form-actions #edit-delete A:hover,
-#crm-core-contact-ui-form .form-actions #edit-delete A:hover, .action-links LI A A:hover, .menu A:hover, .btn-vbo A:hover, .pane-ao-dashboard-act-stream-panel-pane-1 .view-content .crm-core-activity-actions A A:hover, .edit-form-wrapper .form-actions #edit-submit A:hover, #crm-core-activity-edit-cmcd-donation-form .form-actions #edit-submit A:hover,
+#crm-core-contact-ui-form .form-actions #edit-delete A:hover, .menu A:hover, .btn-vbo A:hover, .action-links LI A A:hover, .pane-ao-dashboard-act-stream-panel-pane-1 .view-content .crm-core-activity-actions A A:hover, .edit-form-wrapper .form-actions #edit-submit A:hover, #crm-core-activity-edit-cmcd-donation-form .form-actions #edit-submit A:hover,
 #crm-core-contact-ui-form .form-actions #edit-submit A:hover, BODY.maintenance-page section.content div#content input[type=submit] A:hover {
   color: White;
 }
@@ -1939,11 +2162,11 @@ tr.selected td {
 .table-container TABLE TR TD #crm-core-contact-ui-form .form-actions #edit-delete,
 #crm-core-contact-ui-form .form-actions .table-container TABLE TR TD #edit-delete,
 .views-table TR TD #crm-core-contact-ui-form .form-actions #edit-delete,
-#crm-core-contact-ui-form .form-actions .views-table TR TD #edit-delete, .container-table TR TD .action-links LI A, .action-links LI .container-table TR TD A, .table-container TABLE TR TD .action-links LI A, .action-links LI .table-container TABLE TR TD A,
-.views-table TR TD .action-links LI A,
-.action-links LI .views-table TR TD A, .container-table TR TD .menu, .table-container TABLE TR TD .menu,
+#crm-core-contact-ui-form .form-actions .views-table TR TD #edit-delete, .container-table TR TD .menu, .table-container TABLE TR TD .menu,
 .views-table TR TD .menu, .container-table TR TD .btn-vbo, .table-container TABLE TR TD .btn-vbo,
-.views-table TR TD .btn-vbo, .container-table TR TD .edit-form-wrapper .form-actions #edit-submit, .edit-form-wrapper .form-actions .container-table TR TD #edit-submit, .table-container TABLE TR TD .edit-form-wrapper .form-actions #edit-submit, .edit-form-wrapper .form-actions .table-container TABLE TR TD #edit-submit,
+.views-table TR TD .btn-vbo, .container-table TR TD .action-links LI A, .action-links LI .container-table TR TD A, .table-container TABLE TR TD .action-links LI A, .action-links LI .table-container TABLE TR TD A,
+.views-table TR TD .action-links LI A,
+.action-links LI .views-table TR TD A, .container-table TR TD .edit-form-wrapper .form-actions #edit-submit, .edit-form-wrapper .form-actions .container-table TR TD #edit-submit, .table-container TABLE TR TD .edit-form-wrapper .form-actions #edit-submit, .edit-form-wrapper .form-actions .table-container TABLE TR TD #edit-submit,
 .views-table TR TD .edit-form-wrapper .form-actions #edit-submit,
 .edit-form-wrapper .form-actions .views-table TR TD #edit-submit, .container-table TR TD #crm-core-activity-edit-cmcd-donation-form .form-actions #edit-submit, #crm-core-activity-edit-cmcd-donation-form .form-actions .container-table TR TD #edit-submit, .table-container TABLE TR TD #crm-core-activity-edit-cmcd-donation-form .form-actions #edit-submit, #crm-core-activity-edit-cmcd-donation-form .form-actions .table-container TABLE TR TD #edit-submit,
 .views-table TR TD #crm-core-activity-edit-cmcd-donation-form .form-actions #edit-submit,
@@ -1989,6 +2212,85 @@ BODY.maintenance-page section.content div#content .views-table TR TD input[type=
 #crm-core-contact-ui-form .form-actions #edit-delete:active {
   background-color: #C1443D;
   color: #cf4444;
+}
+
+/**
+ * @file
+ * Handles drop down menus and whatnot
+ */
+/* line 6, ../sass/components/_menus.scss */
+.menu, .btn-vbo {
+  position: relative;
+  background-color: #00a03c;
+}
+/* line 12, ../sass/components/_menus.scss */
+.menu.btn-disabled, .btn-disabled.btn-vbo {
+  background-color: #93e387;
+}
+/* line 17, ../sass/components/_menus.scss */
+.menu.btn-expander:hover, .btn-expander.btn-vbo:hover {
+  background-color: #00a03c;
+}
+/* line 19, ../sass/components/_menus.scss */
+.menu.btn-expander:hover .btn-expandable, .btn-expander.btn-vbo:hover .btn-expandable {
+  display: block;
+}
+/* line 26, ../sass/components/_menus.scss */
+.menu .btn-expandable, .btn-vbo .btn-expandable {
+  display: none;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -moz-border-radius: 4px 0px 4px 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px 0px 4px 4px;
+  background-color: #00a03c;
+  border-top: none;
+  margin-top: -2px;
+  padding: .8em .4em .4em;
+  position: absolute;
+  left: auto;
+  right: 0px;
+  z-index: 1000;
+  min-width: 175px;
+}
+/* line 40, ../sass/components/_menus.scss */
+.menu .btn-expandable UL.links, .btn-vbo .btn-expandable UL.links {
+  padding: 0em;
+  margin: 0em;
+}
+/* line 43, ../sass/components/_menus.scss */
+.menu .btn-expandable UL.links LI, .btn-vbo .btn-expandable UL.links LI {
+  list-style-type: none;
+  padding: 0em .4em .2em;
+  margin: 0em;
+}
+/* line 47, ../sass/components/_menus.scss */
+.menu .btn-expandable UL.links LI:hover, .btn-vbo .btn-expandable UL.links LI:hover {
+  background-color: #34d06e;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+}
+/* line 51, ../sass/components/_menus.scss */
+.menu .btn-expandable UL.links LI A, .btn-vbo .btn-expandable UL.links LI A {
+  color: White;
+  white-space: nowrap;
+  text-decoration: none;
+}
+/* line 55, ../sass/components/_menus.scss */
+.menu .btn-expandable UL.links LI A:hover, .btn-vbo .btn-expandable UL.links LI A:hover {
+  color: White;
+}
+
+/* line 70, ../sass/components/_menus.scss */
+.vbo-views-form #edit-select {
+  display: none;
+}
+
+/* line 74, ../sass/components/_menus.scss */
+.btn-vbo {
+  float: right;
 }
 
 /**
@@ -2096,7 +2398,7 @@ BODY.maintenance-page section.content div#content .views-table TR TD input[type=
 .quick-links .link-container #crm-core-contact-ui-form .form-actions strong#edit-submit,
 #crm-core-contact-ui-form .form-actions .quick-links .link-container strong#edit-submit, .quick-links .link-container A.btn, .quick-links .link-container A.btn-blue, .quick-links .link-container .contact-pane-header-buttons .view-header A, .contact-pane-header-buttons .view-header .quick-links .link-container A, .quick-links .link-container .pane-ao-5-recent-activities .view-header A, .pane-ao-5-recent-activities .view-header .quick-links .link-container A, .quick-links .link-container A.btn-red, .quick-links .link-container .edit-form-wrapper .form-actions A#edit-delete, .edit-form-wrapper .form-actions .quick-links .link-container A#edit-delete, .quick-links .link-container #crm-core-activity-edit-cmcd-donation-form .form-actions A#edit-delete, #crm-core-activity-edit-cmcd-donation-form .form-actions .quick-links .link-container A#edit-delete,
 .quick-links .link-container #crm-core-contact-ui-form .form-actions A#edit-delete,
-#crm-core-contact-ui-form .form-actions .quick-links .link-container A#edit-delete, .quick-links .link-container .action-links LI A, .action-links LI .quick-links .link-container A, .quick-links .link-container A.menu, .quick-links .link-container A.btn-vbo, .quick-links .link-container .pane-ao-dashboard-act-stream-panel-pane-1 .view-content .crm-core-activity-actions A, .pane-ao-dashboard-act-stream-panel-pane-1 .view-content .crm-core-activity-actions .quick-links .link-container A, .quick-links .link-container .edit-form-wrapper .form-actions A#edit-submit, .edit-form-wrapper .form-actions .quick-links .link-container A#edit-submit, .quick-links .link-container #crm-core-activity-edit-cmcd-donation-form .form-actions A#edit-submit, #crm-core-activity-edit-cmcd-donation-form .form-actions .quick-links .link-container A#edit-submit,
+#crm-core-contact-ui-form .form-actions .quick-links .link-container A#edit-delete, .quick-links .link-container A.menu, .quick-links .link-container A.btn-vbo, .quick-links .link-container .action-links LI A, .action-links LI .quick-links .link-container A, .quick-links .link-container .pane-ao-dashboard-act-stream-panel-pane-1 .view-content .crm-core-activity-actions A, .pane-ao-dashboard-act-stream-panel-pane-1 .view-content .crm-core-activity-actions .quick-links .link-container A, .quick-links .link-container .edit-form-wrapper .form-actions A#edit-submit, .edit-form-wrapper .form-actions .quick-links .link-container A#edit-submit, .quick-links .link-container #crm-core-activity-edit-cmcd-donation-form .form-actions A#edit-submit, #crm-core-activity-edit-cmcd-donation-form .form-actions .quick-links .link-container A#edit-submit,
 .quick-links .link-container #crm-core-contact-ui-form .form-actions A#edit-submit,
 #crm-core-contact-ui-form .form-actions .quick-links .link-container A#edit-submit {
   display: inline-block;
@@ -2187,8 +2489,10 @@ BODY.maintenance-page section.content div#content .views-table TR TD input[type=
 /* line 22, ../sass/components/_tables.scss */
 .container-table TR TH, .table-container TABLE TR TH,
 .views-table TR TH {
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIzMSUiIHN0b3AtY29sb3I9IiNmZmZmZmYiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNkZmU0ZTYiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(31%, #ffffff), color-stop(100%, #dfe4e6));
   background-image: -moz-linear-gradient(top, #ffffff 31%, #dfe4e6 100%);
-  background-image: -o-linear-gradient(top, #ffffff 31%, #dfe4e6 100%);
   background-image: -webkit-linear-gradient(top, #ffffff 31%, #dfe4e6 100%);
   background-image: linear-gradient(to bottom, #ffffff 31%, #dfe4e6 100%);
   text-transform: uppercase;
@@ -2552,85 +2856,6 @@ h1, h2, h3, h4, h5, h6 {
 
 /**
  * @file
- * Handles drop down menus and whatnot
- */
-/* line 6, ../sass/components/_menus.scss */
-.menu, .btn-vbo {
-  position: relative;
-  background-color: #00a03c;
-}
-/* line 12, ../sass/components/_menus.scss */
-.menu.btn-disabled, .btn-disabled.btn-vbo {
-  background-color: #93e387;
-}
-/* line 17, ../sass/components/_menus.scss */
-.menu.btn-expander:hover, .btn-expander.btn-vbo:hover {
-  background-color: #00a03c;
-}
-/* line 19, ../sass/components/_menus.scss */
-.menu.btn-expander:hover .btn-expandable, .btn-expander.btn-vbo:hover .btn-expandable {
-  display: block;
-}
-/* line 26, ../sass/components/_menus.scss */
-.menu .btn-expandable, .btn-vbo .btn-expandable {
-  display: none;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  -moz-border-radius: 4px 0px 4px 4px;
-  -webkit-border-radius: 4px;
-  border-radius: 4px 0px 4px 4px;
-  background-color: #00a03c;
-  border-top: none;
-  margin-top: -2px;
-  padding: .8em .4em .4em;
-  position: absolute;
-  left: auto;
-  right: 0px;
-  z-index: 1000;
-  min-width: 175px;
-}
-/* line 40, ../sass/components/_menus.scss */
-.menu .btn-expandable UL.links, .btn-vbo .btn-expandable UL.links {
-  padding: 0em;
-  margin: 0em;
-}
-/* line 43, ../sass/components/_menus.scss */
-.menu .btn-expandable UL.links LI, .btn-vbo .btn-expandable UL.links LI {
-  list-style-type: none;
-  padding: 0em .4em .2em;
-  margin: 0em;
-}
-/* line 47, ../sass/components/_menus.scss */
-.menu .btn-expandable UL.links LI:hover, .btn-vbo .btn-expandable UL.links LI:hover {
-  background-color: #34d06e;
-  -moz-border-radius: 4px;
-  -webkit-border-radius: 4px;
-  border-radius: 4px;
-}
-/* line 51, ../sass/components/_menus.scss */
-.menu .btn-expandable UL.links LI A, .btn-vbo .btn-expandable UL.links LI A {
-  color: White;
-  white-space: nowrap;
-  text-decoration: none;
-}
-/* line 55, ../sass/components/_menus.scss */
-.menu .btn-expandable UL.links LI A:hover, .btn-vbo .btn-expandable UL.links LI A:hover {
-  color: White;
-}
-
-/* line 70, ../sass/components/_menus.scss */
-.vbo-views-form #edit-select {
-  display: none;
-}
-
-/* line 74, ../sass/components/_menus.scss */
-.btn-vbo {
-  float: right;
-}
-
-/**
- * @file
  * Defines the appearance of the main navigation, and some other navigation elements
  *
  */
@@ -2891,8 +3116,10 @@ UL.tabs LI.tabs-primary__tab {
 UL.tabs LI.tabs-primary__tab A {
   padding: .3em .6em;
   position: relative;
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2UxZTFlMSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2Q1ZDVkNSIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #e1e1e1), color-stop(100%, #d5d5d5));
   background-image: -moz-linear-gradient(#e1e1e1, #d5d5d5);
-  background-image: -o-linear-gradient(#e1e1e1, #d5d5d5);
   background-image: -webkit-linear-gradient(#e1e1e1, #d5d5d5);
   background-image: linear-gradient(#e1e1e1, #d5d5d5);
   -moz-transition-property: all;
@@ -2911,8 +3138,10 @@ UL.tabs LI.tabs-primary__tab A {
 /* line 39, ../sass/components/_tabs.scss */
 UL.tabs LI.tabs-primary__tab A:hover {
   color: #708c9b;
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2Y1ZjVmNSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2UxZTFlMSIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f5f5f5), color-stop(100%, #e1e1e1));
   background-image: -moz-linear-gradient(#f5f5f5, #e1e1e1);
-  background-image: -o-linear-gradient(#f5f5f5, #e1e1e1);
   background-image: -webkit-linear-gradient(#f5f5f5, #e1e1e1);
   background-image: linear-gradient(#f5f5f5, #e1e1e1);
 }
@@ -2923,8 +3152,10 @@ UL.tabs LI.is-active.tabs-primary__tab {
 }
 /* line 48, ../sass/components/_tabs.scss */
 UL.tabs LI.is-active.tabs-primary__tab A {
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2Y1ZjVmNSIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #f5f5f5));
   background-image: -moz-linear-gradient(#ffffff, #f5f5f5);
-  background-image: -o-linear-gradient(#ffffff, #f5f5f5);
   background-image: -webkit-linear-gradient(#ffffff, #f5f5f5);
   background-image: linear-gradient(#ffffff, #f5f5f5);
 }
@@ -3471,8 +3702,10 @@ FOOTER {
 }
 /* line 190, ../sass/themes/_global-styles.scss */
 .summary-widget-container TABLE THEAD TH, .summary-pane TABLE THEAD TH {
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIzMSUiIHN0b3AtY29sb3I9IiNmZmZmZmYiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNkZmU0ZTYiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(31%, #ffffff), color-stop(100%, #dfe4e6));
   background-image: -moz-linear-gradient(top, #ffffff 31%, #dfe4e6 100%);
-  background-image: -o-linear-gradient(top, #ffffff 31%, #dfe4e6 100%);
   background-image: -webkit-linear-gradient(top, #ffffff 31%, #dfe4e6 100%);
   background-image: linear-gradient(to bottom, #ffffff 31%, #dfe4e6 100%);
 }
@@ -3874,3 +4107,5 @@ BODY.maintenance-page section.content section.region-sidebar-first OL.task-list 
 
 
  */
+
+/*# sourceMappingURL=styles.css.map */
