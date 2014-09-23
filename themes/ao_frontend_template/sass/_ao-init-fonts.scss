@@ -5,7 +5,7 @@
  * Creates font styles used throughout the site
  */
 
-// default font styles
+/* DEFAULT FONT STYLES */
 $normal: ao-fontography-register-style(
   $ao-fonto-style-name: normal,
   $ao-fonto-style-color: false,
@@ -34,7 +34,18 @@ $hero: ao-fontography-register-style(
   $ao-fonto-style-text-shadow: 1px 1px 3px rgba(0,0,0,.5)
 );
 
-// forms
+/* NAVIGATION LINKS */
+$form-fieldset-label: ao-fontography-register-style(
+  $ao-fonto-style-name:     navigation-link,
+  $ao-fonto-style-size:     $base-font-size*1.1,
+  $ao-fonto-style-weight:   600,
+  $ao-fonto-style-lines:    1,
+  $ao-fonto-style-margin:   0em 0em rhythm(1),
+  $ao-fonto-style-color:    #555,
+  $ao-fonto-style-text-decoration: none
+);
+
+/* FORMS */
 $form-fieldset-label: ao-fontography-register-style(
   $ao-fonto-style-name:     form-fieldset-label,
   $ao-fonto-style-size:     $base-font-size,
@@ -43,10 +54,39 @@ $form-fieldset-label: ao-fontography-register-style(
   $ao-fonto-style-color:    #555,
   $ao-fonto-style-weight:   600
 );
+$form-title-special: ao-fontography-register-style(
+  $ao-fonto-style-name:     form-title-special,
+  $ao-fonto-style-padding:  0em,
+  $ao-fonto-style-margin:   0em 0em rhythm(.5),
+  $ao-fonto-style-border-bottom:   1px solid #CCC
+);
 
 
+/* BLOCKS */
+$block-title: ao-fontography-register-style(
+  $ao-fonto-style-name:             block-title,
+  $ao-fonto-style-padding:          0em,
+  $ao-fonto-style-margin:           0em 0em 0.75em
+);
+$block-title-sample-title: ao-fontography-register-style(
+  $ao-fonto-style-name:             block-title-sample-title,
+  $ao-fonto-style-text-align:       center,
+  $ao-fonto-style-margin:           0em 0em 0.5em,
+  $ao-fonto-style-text-shadow:      White 2px 2px 0
+);
+$block-title-sample-content: ao-fontography-register-style(
+  $ao-fonto-style-name:             block-content-sample-content,
+  $ao-fonto-style-text-align:       left,
+  $ao-fonto-style-text-shadow:      White 2px 2px 0
+);
+$block-title-sample-list: ao-fontography-register-style(
+  $ao-fonto-style-name:             block-content-sample-list,
+  $ao-fonto-style-text-align:       left,
+  $ao-fonto-style-font-style:       italic,
+  $ao-fonto-style-margin:           0em 0em 1em
+);
 
-// buttons
+/* BUTTONS */
 $button-default: ao-fontography-register-style(
   $ao-fonto-style-name:     button-default,
   $ao-fonto-style-size:     13.25px,
