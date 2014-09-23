@@ -1749,39 +1749,35 @@ tr.selected td {
 /**
  * AO FONTOGRAPHY
  *
- * Registers a font / display style for content
+ * Displays registered fonts.
  * 
  * @variables:
- * $ao-fonto-style: Name of the font style.
- * $ao-fonto-color: Color for the font.
+ * $ao-fonto-style: Required. Name of the font style. Defaults to normal.
+ * $ao-fonto-color: Color for the font. Overrides any font colors declared for the style. Defaults to false.
+ * $ao-fonto-debug: Prints an invalid CSS style called 'font-style-name' for use in debugging. Does not print if false. Defaults to false.
  * 
  */
 /**
  * AO FONTOGRAPHY - REGISTER STYLE
  *
- * Registers a style for presenting fonts
+ * Registers a style for presenting fonts.
  * 
  * @variables:
  * $ao-fonto-style: Name of the font style.
  * $ao-fonto-color: Color for the font.
  * 
  */
-/* line 179, ../sass/components/_fontography.scss */
-.see-it {
-  font-style-name: button;
-}
-
-/* line 186, ../sass/components/_fontography.scss */
-#block-menu-crm-core-menu H2 {
-  font-style-name: button-blue;
-}
-
 /**
  * @file
  * AbleOrganizer Font Initialization
  *
  * Creates font styles used throughout the site
  */
+/* DEFAULT FONT STYLES */
+/* NAVIGATION LINKS */
+/* FORMS */
+/* BLOCKS */
+/* BUTTONS */
 /**
  * @file
  * Transitions
@@ -2179,6 +2175,21 @@ tr.selected td {
  * See mixin documentation for explanations.
  */
 /**
+ * AO REGION
+ * 
+ * Applies basic styles to a region.
+ * 
+ * Variables: All variables can be ignored by passing false as the value, unless otherwise noted.
+ * 
+ * $ao-region-background: The background for the region. Defaults to false.
+ * $ao-region-margin: The margin for the region. Defaults to false.
+ * $ao-region-padding: The padding for the region. Defaults to false.
+ * $ao-region-border-top: The top border for the region. Defaults to false.
+ * $ao-region-border-bottom: The bottom border for the region. Defaults to false.
+ * $ao-region-border-left: The left border for the region. Defaults to false.
+ * $ao-region-border-right: The right border for the region. Defaults to false.
+ */
+/**
  * AO HORIZONTAL REGION
  *
  * Controls the position and display of horizontal regions.
@@ -2240,7 +2251,6 @@ tr.selected td {
  */
 /* line 7, ../sass/components/_hero.scss */
 .hero-element, .hero_text {
-  font-style-name: hero;
   color: white;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
   width: 60%;
@@ -2297,12 +2307,11 @@ LABEL.compact-form-label {
 }
 /* line 214, ../sass/components/_forms.scss */
 .ao-right-sidebar-form fieldset LEGEND > SPAN.fieldset-legend, #block-crm-core-profile-crm-core-profile-form-viewer fieldset LEGEND > SPAN.fieldset-legend {
-  font-style-name: form-fieldset-label;
   color: #555555;
   font-weight: 600;
   font-size: 1em;
   line-height: 1.5em;
-  padding: false;
+  margin: 0em 0em 1.5em;
 }
 /* line 221, ../sass/components/_forms.scss */
 .ao-right-sidebar-form FORM > DIV > .form-type-textfield, #block-crm-core-profile-crm-core-profile-form-viewer FORM > DIV > .form-type-textfield {
@@ -2420,7 +2429,6 @@ LABEL.compact-form-label {
 }
 /* line 365, ../sass/components/_forms.scss */
 .ao-right-sidebar-form #edit-cart-wrapper #edit-actions input[type=submit], #block-crm-core-profile-crm-core-profile-form-viewer #edit-cart-wrapper #edit-actions input[type=submit] {
-  font-style-name: button;
   position: absolute;
   right: 0em;
   top: 0em;
@@ -2433,12 +2441,11 @@ LABEL.compact-form-label {
 }
 /* line 387, ../sass/components/_forms.scss */
 .ao-right-sidebar-form FORM > DIV > .form-actions input[type=submit], #block-crm-core-profile-crm-core-profile-form-viewer FORM > DIV > .form-actions input[type=submit] {
-  font-style-name: button-large;
   color: #333333;
   font-weight: normal;
   font-size: 1.3em;
   line-height: 1.15385em;
-  padding: false;
+  margin: 0em;
   text-decoration: none;
 }
 
@@ -2953,12 +2960,52 @@ section#main FORM .form-field-type-datetime .container-inline-date.end-date-wrap
  *
  * Variables:
  * 
+ * Any variable will be ignored if set to false (unless otherwise stated).
+ * 
  * $ao-node-padding: Padding to apply to the node.
  * $ao-node-border-top: Top border to apply to the node.
- * $ao-node-border-bottom: $ao-node-border-bottom,
- * $ao-node-border-left: $ao-node-border-left,
- * $ao-node-border-right: $ao-node-border-right
+ * $ao-node-border-bottom: Bottom border to apply to the node.
+ * $ao-node-border-left: Left border to apply to the node.
+ * $ao-node-border-right: Right border to apply to the node.
+ * $ao-node-border-on-last: Border to apply to the last item. Use this to remove borders on the last item. Defaults to false.
+ * $ao-node-padding: Padding to apply to the nodes. Defaults to false.
+ * $ao-node-margin: Whether or not to apply borders to the last item. Defaults to true.
  *
+ */
+/**
+ * @file
+ * Block
+ *
+ * Defines styles for displaying blocks
+ */
+/**
+ * DEFAULT VARIABLES
+ * Default settings for block
+ * See mixin documentation for explanations.
+ */
+/**
+ * AO NODE
+ * Provides consistent styles for blocks.
+ * Ideally used to change styles for blocks in specific regions.
+ * Can be applied to all blocks or individual blocks.
+ *
+ * Variables:
+ * 
+ * Any variable will be ignored if set to false (unless otherwise stated).
+ * 
+ * $ao-block-background: $ao-background,
+ * $ao-block-padding: $ao-block-padding,
+ * $ao-block-margin: $ao-block-margin,
+ * $ao-block-box-sizing: $ao-block-box-sizing,
+ * $ao-block-box-shadow: $ao-block-box-shadow,
+ * $ao-block-border-radius: $ao-block-border-radius,
+ * $ao-block-overflow: $ao-block-overflow,
+ * $ao-block-color: $ao-block-color
+ * $ao-block-border-top: Top border to apply to the block.
+ * $ao-block-border-bottom: Bottom border to apply to the block.
+ * $ao-block-border-left: Left border to apply to the block.
+ * $ao-block-border-right: Right border to apply to the block.
+ * $ao-block-border-on-last: Border to apply to the last item. Use this to remove borders on the last item. Defaults to false.
  *
  */
 /**
@@ -3433,13 +3480,12 @@ BODY.page-user .pane-ao-user-profile-contact-info .content .field-items {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  font-style-name: button-blue;
   color: white;
   font-weight: normal;
   font-size: 1em;
   line-height: 1.9995em;
   padding: 0.25em 1em;
-  padding: 0.25em 1em;
+  margin: 0em;
   background-color: #00b0f3;
   border: 0;
   display: inline-block;
@@ -3472,7 +3518,6 @@ BODY.page-user .pane-ao-user-profile-contact-info .content .field-items {
   margin: 0em;
   padding: 0em;
   text-decoration: none;
-  font-style-name: normal;
   color: white;
 }
 
@@ -3506,12 +3551,11 @@ BODY.page-user .pane-ao-user-profile-contact-info .content .field-items {
   -o-transition-timing-function: ease-in-out;
   -webkit-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
-  font-style-name: button-default;
   color: #333333;
   font-weight: normal;
   font-size: 0.82813em;
   line-height: 2.41449em;
-  padding: false;
+  margin: 0em;
   text-decoration: none;
 }
 /* line 111, ../sass/components/_buttons.scss */
@@ -3575,7 +3619,7 @@ section#below-content-two,
 section#below-content-three {
   padding: 0em 0.5em;
 }
-/* line 54, ../sass/components/_regions.scss */
+/* line 111, ../sass/components/_regions.scss */
 div#main .section-wrapper,
 footer#footer .section-wrapper,
 section#main .section-wrapper,
@@ -3596,7 +3640,7 @@ section#below-content-three .section-wrapper {
 header#header {
   padding: 2em 0.5em;
 }
-/* line 54, ../sass/components/_regions.scss */
+/* line 111, ../sass/components/_regions.scss */
 header#header .section-wrapper {
   position: relative;
   margin-left: auto;
@@ -3608,7 +3652,7 @@ header#header .section-wrapper {
 section#main-navigation {
   padding: 1em 0.5em;
 }
-/* line 54, ../sass/components/_regions.scss */
+/* line 111, ../sass/components/_regions.scss */
 section#main-navigation .section-wrapper {
   position: relative;
   margin-left: auto;
@@ -3616,54 +3660,81 @@ section#main-navigation .section-wrapper {
   max-width: 1200px;
 }
 
+/**
+ * BLOCKS
+ */
+/* line 49, ../sass/themes/_ableorganizer.scss */
+.region-sidebar-second .block H2.block__title {
+  padding: 0em;
+  margin: 0em 0em 0.75em;
+}
+
 /* BREADCRUMBS */
-/* line 44, ../sass/themes/_ableorganizer.scss */
+/* line 56, ../sass/themes/_ableorganizer.scss */
 nav.breadcrumb {
   padding: .5em 0em 0em;
-  font-style-name: breadcrumb;
   font-size: 0.9em;
   line-height: 1.66667em;
 }
 
 /* HEADER / NAVIGATION */
 /* controls the layout of the navigation */
-/* line 51, ../sass/themes/_ableorganizer.scss */
+/* line 63, ../sass/themes/_ableorganizer.scss */
 section#main-navigation {
   font-size: 18.72px;
   font-weight: 400;
 }
 
 /* controls the display of the secondary links in the header */
-/* line 57, ../sass/themes/_ableorganizer.scss */
+/* line 69, ../sass/themes/_ableorganizer.scss */
 .header__secondary-menu .inline LI {
   margin: 0em;
   padding: 0em;
 }
 
+/* FONTS */
+/* line 79, ../sass/themes/_ableorganizer.scss */
+P {
+  margin: 0em 0em 0.75em 0em;
+}
+
+/**
+ * HEADER
+ */
+/* line 88, ../sass/themes/_ableorganizer.scss */
+#block-menu-crm-core-menu H2 {
+  color: white;
+  font-weight: normal;
+  font-size: 1em;
+  line-height: 1.9995em;
+  padding: 0.25em 1em;
+  margin: 0em;
+}
+
 /* controls the appearance of navigation elements in the page */
-/* line 70, ../sass/themes/_ableorganizer.scss */
+/* line 96, ../sass/themes/_ableorganizer.scss */
 .header-region, .navigation-region {
   border-bottom: 1px solid #CCC;
 }
 
 /* controls the appearance of a single region within the template */
-/* line 77, ../sass/themes/_ableorganizer.scss */
+/* line 103, ../sass/themes/_ableorganizer.scss */
 .page-region {
   border: 1px solid transparent;
 }
-/* line 79, ../sass/themes/_ableorganizer.scss */
+/* line 105, ../sass/themes/_ableorganizer.scss */
 .page-region .section-wrapper {
   border: 1px solid transparent;
 }
 
 /* controls the appearance of header elements in the page */
-/* line 85, ../sass/themes/_ableorganizer.scss */
+/* line 111, ../sass/themes/_ableorganizer.scss */
 .header-region {
   padding: 2em 0em;
 }
 
 /* controls the appearance of navigation elements in the page */
-/* line 89, ../sass/themes/_ableorganizer.scss */
+/* line 115, ../sass/themes/_ableorganizer.scss */
 .navigation-region {
   padding: 1em 0em;
   border-bottom: 1px solid #CCC;
@@ -3671,7 +3742,7 @@ section#main-navigation {
 
 /* LAYOUT MODIFICATIONS */
 /* controls the display of the CRM Core menu in the header */
-/* line 105, ../sass/themes/_ableorganizer.scss */
+/* line 131, ../sass/themes/_ableorganizer.scss */
 #block-menu-crm-core-menu {
   position: relative;
 }
@@ -3734,14 +3805,14 @@ section#main-navigation {
 }
 
 /* FOOTER */
-/* line 112, ../sass/themes/_ableorganizer.scss */
+/* line 138, ../sass/themes/_ableorganizer.scss */
 footer#footer {
   background-color: #272723;
   min-height: 200px;
 }
 
 /* VIEWS - NO RESULTS */
-/* line 118, ../sass/themes/_ableorganizer.scss */
+/* line 144, ../sass/themes/_ableorganizer.scss */
 .ao-no-results {
   margin: .5em;
   text-align: center;
@@ -3757,17 +3828,17 @@ footer#footer {
 /* FORMS */
 /* applies styles to forms in the second sidebar */
 /* FIRST SIDEBAR LINKS */
-/* line 148, ../sass/themes/_ableorganizer.scss */
+/* line 174, ../sass/themes/_ableorganizer.scss */
 .region-sidebar-first .block-menu H2 {
   font-size: 1.2em;
 }
-/* line 151, ../sass/themes/_ableorganizer.scss */
+/* line 177, ../sass/themes/_ableorganizer.scss */
 .region-sidebar-first .block-menu UL.menu {
   margin: 0em;
   padding: 0em;
   font-size: 0.9em;
 }
-/* line 155, ../sass/themes/_ableorganizer.scss */
+/* line 181, ../sass/themes/_ableorganizer.scss */
 .region-sidebar-first .block-menu UL.menu LI {
   list-style-type: none;
   list-style-image: none;
@@ -3776,12 +3847,12 @@ footer#footer {
 }
 
 /* USER PROFILE PAGE */
-/* line 166, ../sass/themes/_ableorganizer.scss */
+/* line 192, ../sass/themes/_ableorganizer.scss */
 BODY.page-user .panel-pane {
   position: relative;
 }
 
-/* line 170, ../sass/themes/_ableorganizer.scss */
+/* line 196, ../sass/themes/_ableorganizer.scss */
 .pane-menu-menu-user-profile-links H2 {
   margin: 0em;
   float: right;
@@ -3789,7 +3860,7 @@ BODY.page-user .panel-pane {
   z-index: 999;
 }
 
-/* line 177, ../sass/themes/_ableorganizer.scss */
+/* line 203, ../sass/themes/_ableorganizer.scss */
 #block-menu-crm-core-menu {
   margin: 0em;
   position: absolute;
@@ -3799,13 +3870,13 @@ BODY.page-user .panel-pane {
 }
 
 /* USER PROFILE */
-/* line 191, ../sass/themes/_ableorganizer.scss */
+/* line 217, ../sass/themes/_ableorganizer.scss */
 BODY.page-user .pane-user-picture {
   text-align: center;
 }
 
 /* controls the display of the edit links in user profile */
-/* line 203, ../sass/themes/_ableorganizer.scss */
+/* line 229, ../sass/themes/_ableorganizer.scss */
 BODY.page-user .pane-menu-menu-user-profile-links {
   position: relative;
 }
@@ -3865,7 +3936,7 @@ BODY.page-user .pane-menu-menu-user-profile-links UL.menu LI {
 BODY.page-user .pane-menu-menu-user-profile-links:hover UL.menu {
   display: block;
 }
-/* line 210, ../sass/themes/_ableorganizer.scss */
+/* line 236, ../sass/themes/_ableorganizer.scss */
 BODY.page-user .pane-menu-menu-user-profile-links H2 {
   font-size: 13.28px;
 }
@@ -3880,44 +3951,63 @@ BODY.page-user .pane-menu-menu-user-profile-links H2 {
  * Theme for sample content
  */
 /**
- * DONATION PAGES
+ * HEADER
  */
-/* line 12, ../sass/themes/_sample-content.scss */
-BODY.node-type-cmcd-page .region-sidebar-second {
-  border: 1px solid #777777;
-  margin-top: -1em;
-  background-color: White;
-  padding: 0.375em 0.9em;
+/* line 14, ../sass/themes/_sample-content.scss */
+NAV#main-menu UL LI A {
+  /* NAVIGATION LINKS */
+  color: #555555;
+  font-weight: 600;
+  font-size: 1.1em;
+  line-height: 1.36364em;
+  margin: 0em 0em 1.5em;
+  text-decoration: none;
 }
-/* line 18, ../sass/themes/_sample-content.scss */
+
+/**
+ * PAGES
+ */
+/**
+ * DONATION, EVENT PAGES
+ */
+/* line 32, ../sass/themes/_sample-content.scss */
+BODY.node-type-cmcev-event .region-sidebar-second,
+BODY.node-type-cmcd-page .region-sidebar-second {
+  background: white;
+  padding: 0.375em 0.9em;
+  border-top: 1px solid #777777;
+  border-bottom: 1px solid #777777;
+  border-left: 1px solid #777777;
+  border-right: 1px solid #777777;
+  margin-top: -1em;
+}
+/* line 45, ../sass/themes/_sample-content.scss */
+BODY.node-type-cmcev-event .region-sidebar-second #block-crm-core-profile-crm-core-profile-form-viewer H2.block-title,
 BODY.node-type-cmcd-page .region-sidebar-second #block-crm-core-profile-crm-core-profile-form-viewer H2.block-title {
   padding: 0em;
   margin: 0em 0em 0.75em;
-  border-bottom: 1px solid #CCC;
+  border-bottom: 1px solid #cccccc;
 }
 
 /**
- * DONATION PAGES
+ * NODES
  */
-/* line 30, ../sass/themes/_sample-content.scss */
-BODY.node-type-cmcev-event .region-sidebar-second {
-  border: 1px solid #777777;
-  margin-top: -1em;
-  background-color: White;
-  padding: 0.375em 0.9em;
+/* line 55, ../sass/themes/_sample-content.scss */
+article.node {
+  /* DEFAULT NODE DISPLAY */
+  /* EVENT NODES */
 }
-/* line 36, ../sass/themes/_sample-content.scss */
-BODY.node-type-cmcev-event .region-sidebar-second #block-crm-core-profile-crm-core-profile-form-viewer H2.block-title {
-  padding: 0em;
-  margin: 0em 0em 0.75em;
-  border-bottom: 1px solid #CCC;
+/* line 59, ../sass/themes/_sample-content.scss */
+article.node.node-teaser {
+  margin: 0em 0em 1.5em;
+  padding: 1.5em;
+  border-top: 1px solid #cccccc;
+  border-bottom: 1px solid #cccccc;
+  border-left: 1px solid #cccccc;
+  border-right: 1px solid #cccccc;
 }
-
-/**
- * EVENT NODES
- */
-/* line 49, ../sass/themes/_sample-content.scss */
-article.node-cmcev-event {
+/* line 70, ../sass/themes/_sample-content.scss */
+article.node:not(.node-teaser) {
   padding: 1.5em;
   border-top: 1px solid #cccccc;
   border-bottom: 1px solid #cccccc;
@@ -3925,16 +4015,16 @@ article.node-cmcev-event {
   border-right: 1px solid #cccccc;
 }
 /* line 45, ../sass-extensions/zen-grids/stylesheets/zen/_grids.scss */
-article.node-cmcev-event:before, article.node-cmcev-event:after {
+article.node.node-cmcev-event:before, article.node.node-cmcev-event:after {
   content: "";
   display: table;
 }
 /* line 50, ../sass-extensions/zen-grids/stylesheets/zen/_grids.scss */
-article.node-cmcev-event:after {
+article.node.node-cmcev-event:after {
   clear: both;
 }
 /* line 72, ../sass/components/_grids.scss */
-article.node-cmcev-event > DIV {
+article.node.node-cmcev-event > DIV {
   display: inline-block;
   vertical-align: top;
   padding-left: 0%;
@@ -3950,9 +4040,75 @@ article.node-cmcev-event > DIV {
   margin-right: 0%;
   width: 50%;
 }
-/* line 72, ../sass/themes/_sample-content.scss */
-article.node-cmcev-event > DIV.field-name-body {
+/* line 98, ../sass/themes/_sample-content.scss */
+article.node.node-cmcev-event > DIV.field-name-field-cmcev-location,
+article.node.node-cmcev-event > DIV.field-name-field-cmcev-date {
+  background-color: #f1f1f1;
+  padding: 0.75em;
+  margin-bottom: 0.375em;
+}
+/* line 106, ../sass/themes/_sample-content.scss */
+article.node.node-cmcev-event > DIV.field-name-body {
   width: 100%;
 }
+
+/**
+ * BLOCKS
+ */
+/* line 118, ../sass/themes/_sample-content.scss */
+#block-boxes-ao-volunteer-info,
+#block-boxes-ao-petition-description,
+#block-boxes-ao-event-desc,
+#block-boxes-ao-donate-info {
+  background: #f1f3f9;
+  padding: 0em 1em 1em;
+  margin: 1em 0em 0em 0em;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -moz-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), 0 1px 4px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), 0 1px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), 0 1px 4px rgba(0, 0, 0, 0.2);
+  color: #2f353e;
+}
+/* line 133, ../sass/themes/_sample-content.scss */
+#block-boxes-ao-volunteer-info H2.block__title,
+#block-boxes-ao-petition-description H2.block__title,
+#block-boxes-ao-event-desc H2.block__title,
+#block-boxes-ao-donate-info H2.block__title {
+  margin: 0em 0em 0.5em;
+  text-align: center;
+  text-shadow: white 2px 2px 0;
+}
+/* line 137, ../sass/themes/_sample-content.scss */
+#block-boxes-ao-volunteer-info .boxes-box-content,
+#block-boxes-ao-petition-description .boxes-box-content,
+#block-boxes-ao-event-desc .boxes-box-content,
+#block-boxes-ao-donate-info .boxes-box-content {
+  text-align: left;
+  text-shadow: white 2px 2px 0;
+}
+/* line 139, ../sass/themes/_sample-content.scss */
+#block-boxes-ao-volunteer-info .boxes-box-content UL,
+#block-boxes-ao-petition-description .boxes-box-content UL,
+#block-boxes-ao-event-desc .boxes-box-content UL,
+#block-boxes-ao-donate-info .boxes-box-content UL {
+  margin: 0em;
+  padding: 0em;
+}
+/* line 142, ../sass/themes/_sample-content.scss */
+#block-boxes-ao-volunteer-info .boxes-box-content UL LI,
+#block-boxes-ao-petition-description .boxes-box-content UL LI,
+#block-boxes-ao-event-desc .boxes-box-content UL LI,
+#block-boxes-ao-donate-info .boxes-box-content UL LI {
+  font-style: italic;
+  margin: 0em 0em 1em;
+  text-align: left;
+  list-style-type: none;
+}
+
+/**
+ * COMPONENTS
+ */
 
 /*# sourceMappingURL=styles.css.map */

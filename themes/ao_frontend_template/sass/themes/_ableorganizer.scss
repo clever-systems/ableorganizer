@@ -40,6 +40,18 @@ section#main-navigation {
   );
 }
 
+/**
+ * BLOCKS
+ */
+// standard block display for the right region
+.region-sidebar-second {
+  .block {
+    H2.block__title {
+      @include ao-fontography($ao-fonto-style: block-title);
+    }
+  }
+}
+
 /* BREADCRUMBS */
 nav.breadcrumb {
   padding: .5em 0em 0em;
@@ -63,6 +75,20 @@ section#main-navigation {
   }
 }
 
+/* FONTS */
+P {
+  @include ao-fontography($ao-fonto-style: regular);
+}
+
+
+/**
+ * HEADER
+ */
+#block-menu-crm-core-menu {
+  H2 {
+    @include ao-fontography($ao-fonto-style: button-blue, $ao-fonto-color: White);
+  }
+}
 
 
 

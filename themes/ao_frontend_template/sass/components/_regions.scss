@@ -10,12 +10,69 @@
  * Default settings for regions.
  * See mixin documentation for explanations.
  */
+// regions 
+$ao-region-background:      false !default;
+$ao-region-margin:          false !default;
+$ao-region-padding:         false !default;
+$ao-region-border-top:      false !default;
+$ao-region-border-bottom:   false !default;
+$ao-region-border-left:     false !default;
+$ao-region-border-right:    false !default;
+ 
+// horizontal regions 
 $ao-horiz-region-padding:               false !default;
 $ao-horiz-region-style:                 false !default;
 $ao-horiz-region-container-selector:    '.section-wrapper' !default;
 $ao-horiz-region-container-position:    center !default;
 $ao-horiz-region-container-width:       1200px !default;
 $ao-horiz-region-container-padding:     false !default;
+
+/**
+ * AO REGION
+ * 
+ * Applies basic styles to a region.
+ * 
+ * Variables: All variables can be ignored by passing false as the value, unless otherwise noted.
+ * 
+ * $ao-region-background: The background for the region. Defaults to false.
+ * $ao-region-margin: The margin for the region. Defaults to false.
+ * $ao-region-padding: The padding for the region. Defaults to false.
+ * $ao-region-border-top: The top border for the region. Defaults to false.
+ * $ao-region-border-bottom: The bottom border for the region. Defaults to false.
+ * $ao-region-border-left: The left border for the region. Defaults to false.
+ * $ao-region-border-right: The right border for the region. Defaults to false.
+ */
+@mixin ao-region (
+  $ao-region-background: $ao-region-background,
+  $ao-region-margin: $ao-region-margin,
+  $ao-region-padding: $ao-region-padding,
+  $ao-region-border-top: $ao-region-border-top,
+  $ao-region-border-bottom: $ao-region-border-bottom,
+  $ao-region-border-left: $ao-region-border-left,
+  $ao-region-border-right: $ao-region-border-right
+) {
+  @if $ao-region-background != false {
+    background: $ao-region-background;
+  }
+  @if $ao-region-margin != false {
+    margin: $ao-region-margin;
+  }
+  @if $ao-region-padding != false {
+    padding: $ao-region-padding;
+  }
+  @if $ao-region-border-top != false {
+    border-top: $ao-region-border-top;
+  }
+  @if $ao-region-border-bottom != false {
+    border-bottom: $ao-region-border-bottom;
+  }
+  @if $ao-region-border-left != false {
+    border-left: $ao-region-border-left;
+  }
+  @if $ao-region-border-right != false {
+    border-right: $ao-region-border-right;
+  }
+}
 
 /**
  * AO HORIZONTAL REGION
@@ -73,12 +130,6 @@ $ao-horiz-region-container-padding:     false !default;
     @if $ao-horiz-region-container-padding != false {
       padding: $ao-horiz-region-container-padding;
     }
-
   }
-
 }
-
-
-// section-wrapper
-
 

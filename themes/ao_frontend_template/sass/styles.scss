@@ -20,6 +20,7 @@
 @import "components/fontography";
 
 // this creates a set of font styles for use in the theme
+// doing this here to ensure styles are available to other mixins
 @import "ao-init-fonts";
 
 @import "components/transitions";
@@ -30,6 +31,7 @@
 @import "components/forms";
 @import "components/grids";
 @import "components/node";
+@import "components/block";
 
 // these components still need mixins...
 @import "components/user_profiles";
