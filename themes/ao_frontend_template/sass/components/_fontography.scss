@@ -290,8 +290,6 @@ $ao-fonto-style-focus-text-shadow:        false !default;
         }
       }
     }
-    
-    
   }
 }
 
@@ -391,11 +389,5 @@ $ao-fonto-style-focus-text-shadow:        false !default;
     @return true;
   }
   @return false;
-}
-
-
-// debug
-.see-it {
-  @include ao-fontography($ao-fonto-style: button);
 }
 
