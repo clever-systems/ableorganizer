@@ -1,0 +1,78 @@
+/**
+ * @file
+ * Sample Content
+ *
+ * Theme for sample content
+ */
+ 
+/**
+ * DONATION PAGES
+ */ 
+BODY.node-type-cmcd-page {
+  .region-sidebar-second {
+    border: 1px solid rgb(119, 119, 119);
+    margin-top: -1em;
+    background-color: White;
+    padding: rhythm(.25) rhythm(.6);
+    #block-crm-core-profile-crm-core-profile-form-viewer {
+      H2.block-title {
+        padding: 0em;
+        margin: 0em 0em rhythm(.5);
+        border-bottom: 1px solid #CCC;
+      }
+    }
+  }
+}
+/**
+ * DONATION PAGES
+ */ 
+BODY.node-type-cmcev-event {
+  .region-sidebar-second {
+    border: 1px solid rgb(119, 119, 119);
+    margin-top: -1em;
+    background-color: White;
+    padding: rhythm(.25) rhythm(.6);
+    #block-crm-core-profile-crm-core-profile-form-viewer {
+      H2.block-title {
+        padding: 0em;
+        margin: 0em 0em rhythm(.5);
+        border-bottom: 1px solid #CCC;
+      }
+    }
+  }
+}
+
+
+/**
+ * EVENT NODES
+ */ 
+article.node-cmcev-event {
+  
+  @include ao-node(
+    $ao-node-padding: rhythm(1),
+    $ao-node-border-top: 1px solid #CCC,
+    $ao-node-border-bottom: 1px solid #CCC,
+    $ao-node-border-left: 1px solid #CCC,
+    $ao-node-border-right: 1px solid #CCC
+  );
+  
+  @include ao-grid (
+    $ao-grid-padding: false,
+    $ao-grid-border: false,
+    $ao-grid-item-selector: '> DIV',
+    $ao-grid-item-cols: 2,
+    $ao-grid-item-parent-cols: 1,
+    $ao-grid-item-grid-width: 100%,
+    $ao-grid-item-grid-padding: false,
+    $ao-grid-item-gutter-width: 0%,
+    $ao-grid-item-gutter-alpha: false,
+    $ao-grid-item-gutter-omega: true
+  );
+  
+  > DIV.field-name-body {
+    @include ao-grid-item-break();
+  }
+  
+  
+
+}

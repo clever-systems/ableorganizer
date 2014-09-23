@@ -16,24 +16,36 @@
 @import "layouts/responsive";
 
 /* Component (SMACSS module) rules */
+@import "components/misc";
 @import "components/fontography";
+
+// this creates a set of font styles for use in the theme
+@import "ao-init-fonts";
+
 @import "components/transitions";
 @import "components/buttons";
 @import "components/regions";
 @import "components/menus";
 @import "components/hero";
 @import "components/forms";
-@import "ao-init";
+@import "components/grids";
+@import "components/node";
 
-@import "components/misc";
+// these components still need mixins...
 @import "components/user_profiles";
 @import "components/activities";
 @import "components/identity-blocks";
 
 // Optionally, add your own components here.
 @import "print";
+// this is a second set of variables, created after all the mixins are defined
+@import "ao-init";
 
 /* SMACSS theme rules */
-/* @import "theme-A"; */
-/* @import "theme-B"; */
-@import "themes/basic_display"; 
+// this is the basic display for ableorganizer
+@import "themes/ableorganizer"; 
+
+// this is a set of styles just for the sample content
+// this should be removed / replaced when you are creating your own theme
+@import "themes/sample-content"; 
+  
