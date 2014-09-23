@@ -4,8 +4,92 @@
  *
  * This is the base theme file for contact management in AbleOrganizer.
  */
+ 
+/**
+ * REGIONS
+ */ 
+BODY > section {
+  @include ao-horizontal-region (
+    $ao-horiz-region-container-selector: '.section-wrapper',
+    $ao-horiz-region-container-position: center,
+    $ao-horiz-region-container-width: 100%,
+    $ao-horiz-region-container-overflow: hidden
+  );
+  @include ao-transition();
+  .section-wrapper {
+    width: 100%;
+    @include ao-transition();
+  }
+  @include breakpoint($breakpoint-zen-large){
+    .section-wrapper {
+      width: 960px;
+    }
+  }
+  @include breakpoint($breakpoint-zen-larger){
+    .section-wrapper {
+      width: 1200px;
+    }
+  }
+}
+/* TOP BANNER */
+section.banner {
+  @include ao-region (
+    $ao-region-background: $dark-blue,
+    $ao-region-padding: .5em 0em
+  );
+}
+/* BRANDING BANNER */
+section.branding {
+  @include ao-region (
+    $ao-region-background: White,
+    $ao-region-padding: rhythm(.5) 0em 0em
+  );
+  @include breakpoint($breakpoint-zen-large){
+    @include ao-region (
+      $ao-region-padding: rhythm(1) 0em 0em
+    );
+  }
+}  
+/* HEADER */
+section.header {
+  @include ao-region (
+    $ao-region-background: $base-blue
+  );
+  @include breakpoint($breakpoint-zen-large){
+    .section-wrapper {
+      height: rhythm(3.5);
+    }
+  }
+}
+/* CONTENT */
+section.content {
+  @include ao-region (
+    $ao-region-background: $f-gray,
+    $ao-region-padding: rhythm(1) 0em
+  );
+}
 
-/* REGIONS */
+
+/**
+ * MENUS
+ */
+/* Main Menu */
+nav#main-menu {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  UL.links {
+    @include ao-menu-style ($stylename: ao-main-nav);
+    LI, A {
+      @include ao-transition();
+    }
+    A {
+      @include ao-fontography(main-nav-contact-management);
+      @include ao-transition ();
+    }
+  }
+}
+
 
 section.banner {
   font-size: $h6-font-size;
@@ -18,11 +102,31 @@ section.banner {
   }
 }
 
-
-
-
-
 /* Dashboard */
 BODY.page-crm-core-dashboard {
 
 }
+
+
+/**
+ * COMPONENTS
+ */ 
+/* PAGE TITLE */ 
+section.header {
+  H1#page-title {
+    @include ao-fontography(header-font-contact-management);
+    em {
+      color: $base-blue0;
+    }
+  }
+  @include breakpoint($breakpoint-zen-large){
+    H1#page-title {
+      position: absolute;
+      left: 0px;
+      margin: 0px;
+      bottom: rhythm(.18);
+    } 
+  }
+}
+
+

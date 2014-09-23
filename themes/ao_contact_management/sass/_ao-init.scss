@@ -7,6 +7,16 @@
  */
  
 /**
+ * BREAKPOINTS
+ * Breakpoints used in the theme
+ */
+/* Default Breakpoints from Zen */
+$breakpoint-zen-tiny:   480px;
+$breakpoint-zen-small:  480px 959px;
+$breakpoint-zen-large:  960px;
+$breakpoint-zen-larger: 1200px;
+
+/**
  * DROP DOWN MENUS
  * Variables controlling the default appearance of drop down menus
  */

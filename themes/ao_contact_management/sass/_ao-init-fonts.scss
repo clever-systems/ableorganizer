@@ -34,6 +34,23 @@ $hero: ao-fontography-register-style(
   $ao-fonto-style-text-shadow: 1px 1px 3px rgba(0,0,0,.5)
 );
 
+/* CONTACT MANAGEMENT */
+$header-font-contact-management: ao-fontography-register-style(
+  $ao-fonto-style-name: header-font-contact-management,
+  $ao-fonto-style-color: White,
+  $ao-fonto-style-padding: 0em,
+  $ao-fonto-style-margin: rhythm(0.25) 0em,
+  $ao-fonto-style-weight: normal
+);
+
+/* ACTIVITY FEEDS */
+$activity-item-text: ao-fontography-register-style(
+  $ao-fonto-style-name: activity-item-text,
+  $ao-fonto-style-size: $base-font-size*0.95
+);
+
+
+
 /* NAVIGATION LINKS */
 $form-fieldset-label: ao-fontography-register-style(
   $ao-fonto-style-name:     navigation-link,
@@ -60,7 +77,6 @@ $form-title-special: ao-fontography-register-style(
   $ao-fonto-style-margin:   0em 0em rhythm(.5),
   $ao-fonto-style-border-bottom:   1px solid #CCC
 );
-
 
 /* BLOCKS */
 $block-title: ao-fontography-register-style(
@@ -116,3 +132,18 @@ $button-blue: ao-fontography-register-style(
   $ao-fonto-style-color:    White,
   $ao-fonto-style-weight:   normal
 );
+
+/* MENUS */
+$main-nav-contact-management: ao-fontography-register-style(
+  $ao-fonto-style-name:     main-nav-contact-management,
+  $ao-fonto-style-size:     1.1em,
+  $ao-fonto-style-letter-spacing:     0.04em,
+  $ao-fonto-style-lines:    1,
+  $ao-fonto-style-padding:  0em,
+  $ao-fonto-style-margin:   0em,
+  $ao-fonto-style-color:    White,
+  $ao-fonto-style-weight:   600,
+  $ao-fonto-style-text-decoration: none
+);
+
+

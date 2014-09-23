@@ -46,6 +46,8 @@
 
 // Optionally, add your own components here.
 @import "print";
+// this is a second set of variables, created after all the mixins are defined
+@import "ao-init";
 
 /* SMACSS theme rules */
 /* @import "theme-A"; */
