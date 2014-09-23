@@ -1,0 +1,59 @@
+/**
+ * @file
+ * Node
+ *
+ * Defines styles for displaying nodes
+ */
+
+/**
+ * DEFAULT VARIABLES
+ * Default settings for node
+ * See mixin documentation for explanations.
+ */
+$ao-node-padding:         false !default;
+$ao-node-border-top:      false !default;
+$ao-node-border-bottom:   false !default;
+$ao-node-border-left:     false !default;
+$ao-node-border-right:    false !default;
+
+/**
+ * AO NODE
+ * Provides consistent styles for nodes.
+ * Can be applied to all nodes or individual node types.
+ * Can be applied to teasers as well as other display modes.
+ *
+ * Variables:
+ * 
+ * $ao-node-padding: Padding to apply to the node.
+ * $ao-node-border-top: Top border to apply to the node.
+ * $ao-node-border-bottom: $ao-node-border-bottom,
+ * $ao-node-border-left: $ao-node-border-left,
+ * $ao-node-border-right: $ao-node-border-right
+ *
+ *
+ */
+@mixin ao-node (
+  $ao-node-padding: $ao-node-padding,
+  $ao-node-border-top: $ao-node-border-top,
+  $ao-node-border-bottom: $ao-node-border-bottom,
+  $ao-node-border-left: $ao-node-border-left,
+  $ao-node-border-right: $ao-node-border-right
+) {
+
+  @if $ao-node-padding != false {
+    padding: $ao-node-padding;
+  }
+  @if $ao-node-border-top != false {
+    border-top: $ao-node-border-top;
+  }
+  @if $ao-node-border-bottom != false {
+    border-bottom: $ao-node-border-bottom;
+  }
+  @if $ao-node-border-left != false {
+    border-left: $ao-node-border-left;
+  }
+  @if $ao-node-border-right != false {
+    border-right: $ao-node-border-right;
+  }
+  
+}
