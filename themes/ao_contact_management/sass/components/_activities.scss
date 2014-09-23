@@ -4,24 +4,304 @@
  *
  */
 
-/* activity feed */
-.activity-record-pane {
-  border: 1px solid $e-gray;
-  background-color: White;
-  padding: 1em;
-  margin: 1em 0em;
-  .views-row:last-child {
-    .crm-core-activity {
-      border-bottom: none;
+/**
+ * DEFAULT VARIABLES
+ * Default settings, see mixin documentation for explanations.
+ */
+
+/* main activity icon registry */
+$ao-activity-icon: () !default;
+ 
+/* ao-activity-icon-register defaults */
+$ao-activity-icon-title:          false !default;
+$ao-activity-icon-background:     false !default;
+$ao-activity-icon-color:          false !default;
+$ao-activity-icon-text-shadow:    false !default;
+$ao-activity-icon-border:         false !default;
+$ao-activity-icon-border-radius:  false !default;
+$ao-activity-icon-margin:         false !default;
+$ao-activity-icon-padding:        false !default;
+
+/* ao-activity-icon-display defaults */
+$ao-activity-style:               false !default;
+$ao-activity-debug:               false !default;
+
+/* ao-activity-item defaults */
+$ao-activity-item-margin:             false !default;
+$ao-activity-item-padding:            false !default;
+$ao-activity-item-icon:               false !default;
+$ao-activity-item-info-selector:      '.crm-core-activity-info' !default;
+$ao-activity-item-icon-selector:      '.crm-core-activity-icon' !default;
+$ao-activity-item-icon-placement:     false !default;
+$ao-activity-item-icon-style:         $ao-activity-style !default;
+$ao-activity-item-icon-height:        false !default;
+$ao-activity-item-icon-width:         false !default;
+$ao-activity-item-icon-border:        false !default;
+$ao-activity-item-icon-border-radius: false !default;
+$ao-activity-item-icon-background:    false !default;
+$ao-activity-item-icon-color:         false !default;
+$ao-activity-item-icon-margin:        false !default;
+$ao-activity-item-icon-padding:       false !default;
+
+/**
+ * AO SET ACTIVITY ICON
+ *
+ * Sets values for an activity icon.
+ * 
+ * @variables:
+ * $ao-activity-icon-title: Required. Title for the icon. Defaults to false.
+ * $ao-activity-icon-background: Background for the icon. Can be overridden when the icon is displayed. Defaults to false.
+ * $ao-activity-icon-color: Color for the icon. Can be overridden when the icon is displayed. Defaults to White.
+ * $ao-activity-icon-text-shadow: Shadow for the text in the icon.
+ * $ao-activity-icon-border: Standard border for the icon. Can be overridden when the icon is displayed. Defaults to false.
+ * $ao-activity-icon-border-radius: Border radius for the icon. Can be overridden when the icon is displayed. Defaults to false.
+ * $ao-activity-icon-box-shadow: Box shadow for the icon. Can be overridden when the icon is displayed. Defaults to false.
+ * $ao-activity-icon-margin: Margin for the icon. Defaults to false.
+ * $ao-activity-icon-padding: Padding for the icon. Defaults to false.
+ * 
+ */  
+@function ao-set-activity-icon (
+  $ao-activity-icon-title: $ao-activity-icon-title,
+  $ao-activity-icon-background: $ao-activity-icon-background,
+  $ao-activity-icon-color: $ao-activity-icon-color,
+  $ao-activity-icon-text-shadow: $ao-activity-icon-text-shadow,
+  $ao-activity-icon-border: $ao-activity-icon-border,
+  $ao-activity-icon-border-radius: $ao-activity-icon-border-radius,
+  $ao-activity-icon-margin: $ao-activity-icon-margin,
+  $ao-activity-icon-padding: $ao-activity-icon-padding
+){
+  // check that there is a valid name for the icon
+  @if $ao-activity-icon-title != false {
+    $newmap: (
+      $ao-activity-icon-title: (
+        background: $ao-activity-icon-background,
+        color: $ao-activity-icon-color,
+        text-shadow: $ao-activity-icon-text-shadow,
+        border: $ao-activity-icon-border,
+        border-radius: $ao-activity-icon-border-radius,
+        margin: $ao-activity-icon-margin,
+        padding: $ao-activity-icon-padding
+      )
+    );
+    $ao-activity-icon: map-merge($ao-activity-icon, $newmap);
+    @return true;
+  }
+  @return false;
+}
+
+/**
+ * AO GET ACTIVITY ICON
+ *
+ * Returns and activity icon.
+ * 
+ * @variables:
+ * $ao-activity-style: Required. The name of the icon. Defaults to false.
+ * 
+ */ 
+@function ao-get-activity-icon (
+  $ao-activity-style: $ao-activity-style
+){
+  $style: false;
+  
+  @if map-has-key($ao-activity-icon, $ao-activity-style) {
+    $style: map-get($ao-activity-icon, $ao-activity-style);
+  }
+  
+  @return $style;
+}
+
+/**
+ * AO GET ACTIVITY ICON STYLES
+ *
+ * Lays out the styles to apply to the activity icon.
+ *
+ * @variables:
+ * $ao-activity-style: Required. The name of the icon. Defaults to false.
+ *
+ */
+@mixin ao-get-activity-icon-styles (
+  $ao-activity-style: $ao-activity-style,
+  $ao-activity-debug: $ao-activity-debug
+){
+
+  @if $ao-activity-style != false {
+  
+    $style: ao-get-activity-icon($ao-activity-style);
+    
+    @if $style != false {
+    
+      // get the css values for the icon
+      $background: map-get($style, 'background');
+      $color: map-get($style, 'color');
+      $text-shadow: map-get($style, 'text-shadow');
+      $border: map-get($style, 'border');
+      $border-radius: map-get($style, 'border-radius');
+      $margin: map-get($style, 'margin');
+      $padding: map-get($style, 'padding');
+      
+      // color
+      @if $color != false {
+        color: $color;
+      }
+      // background
+      @if $background != false {
+        background: $background;
+      }
+      // shadow
+      @if $text-shadow != false {
+        text-shadow: $text-shadow;
+      }
+      // border
+      @if $border != false {
+        border: $border;
+      }
+      // border-radius
+      @if $border-radius != false {
+        border-radius: $border-radius;
+      }
+      // margin
+      @if $margin != false {
+        margin: $margin;
+      }
+      // padding
+      @if $padding != false {
+        padding: $padding;
+      }
     }
   }
+}
+
+/**
+ * AO ACTIVITY ITEM
+ * 
+ * Styles a single activity feed item.
+ * 
+ * 
+ * $ao-activity-item-icon-selector: Required.
+ * $ao-activity-item-icon-style: Required.
+ * 
+ */
+
+@mixin ao-activity-item (
+
+  $ao-activity-item-margin: $ao-activity-item-margin,
+  $ao-activity-item-padding: $ao-activity-item-padding,
+  $ao-activity-item-info-selector: $ao-activity-item-info-selector,
+  $ao-activity-item-icon-style: $ao-activity-item-icon-style,
+  $ao-activity-item-icon-selector:  $ao-activity-item-icon-selector,
+  $ao-activity-item-icon-placement: $ao-activity-item-icon-placement,
+  $ao-activity-item-icon-style: $ao-activity-item-icon-style,
+  $ao-activity-item-icon-height: $ao-activity-item-icon-height,
+  $ao-activity-item-icon-width: $ao-activity-item-icon-width,
+  $ao-activity-item-icon-border: $ao-activity-item-icon-border,
+  $ao-activity-item-icon-border-radius: $ao-activity-item-icon-border-radius,
+  $ao-activity-item-icon-background: $ao-activity-item-icon-background,
+  $ao-activity-item-icon-color: $ao-activity-item-icon-color,
+  $ao-activity-item-icon-margin: $ao-activity-item-icon-margin,
+  $ao-activity-item-icon-padding: $ao-activity-item-icon-padding
+
+){
+
+  // position should always be relative, we are going to position things in it
+  position: relative;
+  
+  // get styles for the icon
+  @if $ao-activity-item-info-selector != false and $ao-activity-item-icon-style != false {
+    #{$ao-activity-item-info-selector}{
+    
+      @include ao-get-activity-icon-styles ($ao-activity-style: $ao-activity-style);
+      
+      // apply height and width
+      @if $ao-activity-item-icon-height != false {
+        height: $ao-activity-item-icon-height;
+      }
+      @if $ao-activity-item-icon-width != false {
+        width: $ao-activity-item-icon-width;
+      }
+      
+      // override any of the style settings, if necessary
+      @if $ao-activity-item-icon-border != false {
+        border: $ao-activity-item-icon-border;
+      }
+      @if $ao-activity-item-icon-border-radius != false {
+        border: $ao-activity-item-icon-border-radius;
+      }
+      @if $ao-activity-item-icon-background != false {
+        background: $ao-activity-item-icon-background;
+      }
+      @if $ao-activity-item-icon-margin != false {
+        margin: $ao-activity-item-icon-margin;
+      }
+      @if $ao-activity-item-icon-padding != false {
+        padding: $ao-activity-item-icon-padding;
+      }
+    }
+  }
+  
+  
+  
+  /*  
+  // margins, padding
+  @if $ao-activity-item-margin != false {
+    margin: $ao-activity-item-margin;
+  }
+  @if $ao-activity-item-padding != false {
+    margin: $ao-activity-item-padding;
+  }
+
+  // place the icon
+  @if $ao-activity-item-icon-selector != false {
+  
+    #{$ao-activity-item-icon-selector} {
+    
+      // background, color, text-shadow
+      @if $ao-activity-item-icon-background != false {
+        background: $ao-activity-item-icon-background;
+      }
+      @if $ao-activity-item-icon-color != false {
+        color: $ao-activity-item-icon-color;
+      }
+      @if $ao-activity-item-icon-text-shadow != false {
+        @include text-shadow($ao-activity-item-icon-text-shadow);
+      }
+      
+      // border, radius, height, width
+      @if $ao-activity-item-icon-border != false {
+        border: $ao-activity-item-icon-border;
+      }
+      @if $ao-activity-item-icon-border != false {
+        border-radius: $ao-activity-item-icon-border-radius;
+      }
+      @if $ao-activity-item-icon-height != false {
+        height: $ao-activity-item-icon-height;
+      }
+      @if $ao-activity-item-icon-width != false {
+        width: $ao-activity-item-icon-width;
+      }
+    
+      position: absolute;
+
+      // placement
+      @if $ao-activity-item-icon-placement == left {
+
+      }
+    
+    }
+  }
+
+  // place the info
+  @if $ao-activity-item-info-selector != false {
+    #{$ao-activity-item-info-selector} {
+    
+    }
+  }
+  */
+
 }
 
 /* activity in an activity feed */
 .crm-core-activity {
   position: relative;
-  padding: 0em 0em .5em;
-  margin: 0em 0em .5em;
   border-bottom: 1px solid $e-gray;
   @include transition-property(all);
   @include transition-duration(.2s);
@@ -55,6 +335,23 @@
   }
 
 }
+
+
+
+/* activity feed */
+.activity-record-pane {
+  border: 1px solid $e-gray;
+  background-color: White;
+  padding: 1em;
+  margin: 1em 0em;
+  .views-row:last-child {
+    .crm-core-activity {
+      border-bottom: none;
+    }
+  }
+}
+
+
  
 /* activity icons */
 /* activty icons for donations */
