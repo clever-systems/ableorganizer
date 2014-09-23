@@ -29,6 +29,7 @@ $ao-fonto-style-family:                   false !default;
 $ao-fonto-style-weight:                   false !default;
 $ao-fonto-style-text-decoration:          false !default;
 $ao-fonto-style-text-transform:           false !default;
+$ao-fonto-style-letter-spacing:           false !default;
 $ao-fonto-style-font-style:               false !default;
 $ao-fonto-style-padding:                  false !default;
 $ao-fonto-style-margin:                   false !default;
@@ -98,6 +99,7 @@ $ao-fonto-style-focus-text-shadow:        false !default;
     $text-decoration: map-get($style, 'text-decoration');
     $text-shadow: map-get($style, 'text-shadow');
     $text-transform: map-get($style, 'text-transform');
+    $letter-spacing: map-get($style, 'letter-spacing');
     $border-top: map-get($style, 'border-top');
     $border-bottom: map-get($style, 'border-bottom');
     $border-left: map-get($style, 'border-left');
@@ -174,6 +176,10 @@ $ao-fonto-style-focus-text-shadow:        false !default;
     // text transform
     @if $text-transform != false and $text-transform != null {
       text-transform: $text-transform;
+    }
+    // text transform
+    @if $letter-spacing != false and $letter-spacing != null {
+      letter-spacing: $letter-spacing;
     }
     // borders
     @if $border-top != false and $border-top != null {
@@ -311,6 +317,7 @@ $ao-fonto-style-focus-text-shadow:        false !default;
   $ao-fonto-style-family:                   $ao-fonto-style-family,
   $ao-fonto-style-weight:                   $ao-fonto-style-weight,
   $ao-fonto-style-text-transform:           $ao-fonto-style-text-transform,
+  $ao-fonto-style-letter-spacing:           $ao-fonto-style-letter-spacing,
   $ao-fonto-style-font-style:               $ao-fonto-style-font-style,
   $ao-fonto-style-padding:                  $ao-fonto-style-padding,
   $ao-fonto-style-margin:                   $ao-fonto-style-margin,
@@ -356,13 +363,13 @@ $ao-fonto-style-focus-text-shadow:        false !default;
         margin: $ao-fonto-style-margin,
         text-align: $ao-fonto-style-text-align,
         text-transform: $ao-fonto-style-text-transform,
+        letter-spacing: $ao-fonto-style-letter-spacing,
         text-decoration: $ao-fonto-style-text-decoration,
         text-shadow: $ao-fonto-style-text-shadow,
         border-top: $ao-fonto-style-border-top,
         border-bottom: $ao-fonto-style-border-bottom,
         border-left: $ao-fonto-style-border-left,
         border-right: $ao-fonto-style-border-right,
-        
         hover-color: $ao-fonto-style-hover-color,
         hover-font-style: $ao-fonto-style-hover-font-style,
         hover-padding: $ao-fonto-style-hover-padding,
