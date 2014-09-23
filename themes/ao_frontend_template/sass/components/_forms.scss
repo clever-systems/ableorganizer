@@ -177,6 +177,14 @@ $ao-form-item-desc-position:      false !default;
 }
 
 // TESTING
+LABEL.compact-form-label {
+  color: $gray-2;
+  font-weight: normal;
+  opacity: .8;
+  margin-bottom: 0em;
+}
+
+
 // SIDEBAR FORMS
 #block-crm-core-profile-crm-core-profile-form-viewer {
   @extend .ao-right-sidebar-form;
@@ -202,6 +210,11 @@ $ao-form-item-desc-position:      false !default;
     padding: 0em;
     margin: 0em;
     border: 0px;
+    
+    LEGEND > SPAN.fieldset-legend {
+      @include ao-fontography($ao-fonto-style: form-fieldset-label);
+    }
+    
   }
   
   // textfields
@@ -228,12 +241,77 @@ $ao-form-item-desc-position:      false !default;
 
   // addressfields
   FORM > DIV > .field-widget-addressfield-standard {
-    .form-type-textfield {
+  
+    // country select
+    .form-type-select {
+      SELECT.country {
+        @include ao-form-item (
+          $ao-form-item-margin: $arsf-margin,
+          $ao-form-item-width: 95%,
+          $ao-form-item-element-width: 95%,
+          $ao-form-item-element-selector: SELECT
+        );
+      }
+    }
+    
+    // streets
+    .fieldset-wrapper > .street-block > .form-type-textfield {
       @include ao-form-item (
         $ao-form-item-margin: $arsf-margin,
         $ao-form-item-width: $arsf-width,
         $ao-form-item-element-width: $arsf-text-width
       );
+    }
+    
+    // city, state and postal
+    .addressfield-container-inline {
+      width: $arsf-width;
+      DIV[class*="locality"] {
+        display: inline-block;
+        vertical-align: top;
+        @include ao-form-item (
+          $ao-form-item-margin: $arsf-margin,
+          $ao-form-item-width: 40%,
+          $ao-form-item-element-width: 80%
+        );
+      }
+      
+      // this can be a select list or a text field
+      // 
+      
+      // form-item form-type-textfield form-item-commerce-customer-address-und-0-locality
+      
+      DIV[class*="administrative-area"] {
+      
+        position: relative;
+        
+        &.form-type-select,
+        &.compact-form-wrapper {
+          label {
+            display: none;
+          }
+        }
+        
+        @include ao-form-item (
+          $ao-form-item-margin: $arsf-margin,
+          $ao-form-item-width: 20%,
+          $ao-form-item-element-width: 95%,
+          $ao-form-item-element-selector: SELECT
+        );
+        
+        INPUT {
+        }
+        
+      }
+      DIV[class*="postal-code"] {
+        display: inline-block;
+        vertical-align: top;
+        @include ao-form-item (
+          $ao-form-item-margin: $arsf-margin,
+          $ao-form-item-width: 30%,
+          $ao-form-item-element-width: 80%
+        );
+      }
     }
   }
   
@@ -257,20 +335,60 @@ $ao-form-item-desc-position:      false !default;
     }
   }
   
-  // form actions
-  FORM > DIV > .form-actions {
-    input[type=submit] {
-      @include ao-button(
-        // $ao-button-margin:          false !default; 
-        $ao-button-padding:         rhythm(.25) rhythm(.5),
-        $ao-button-border:          none,
-        $ao-button-border-radius:   0.5em,
-        $ao-button-color:           White,
-        $ao-button-bg-color:        $base-red
-      );
+  // amount buttons
+  FORM > DIV > .amounts {
+    &:before {
+      content: 'Select an amount:';
+      display: block;
+      margin-bottom: rhythm(.25);
+    }
+    input[type=button] {
+      @extend .red-button;
     }
   }
   
+  // cart wrapper
+  #edit-cart-wrapper {
+    
+    TABLE {
+      margin: 0px;
+    }
+    
+    .cart-summary {
+      font-weight: 600;
+    }
+    
+    #edit-actions {
+      position: relative;
+      margin: -1.3em 0em 0em;
+      
+      input[type=submit] {
+        @extend .red-button;
+        @include ao-fontography($ao-fonto-style: button);
+        position: absolute;
+        right: 0em;
+        top: 0em;
+      }
+    }
+    
+  }
+  
+  // amount free entry
+  FORM > DIV > .form-item-commerce-amount-single  {
+    &:before {
+      content: 'Or enter the amount you wish to give:';
+      display: block;
+      margin-bottom: rhythm(.25);
+    }
+  }
+  
+  // form actions
+  FORM > DIV > .form-actions {
+    input[type=submit] {
+      @extend .red-button;
+      @include ao-fontography($ao-fonto-style: button-large);
+    }
+  }
 }
 
 
@@ -393,15 +511,10 @@ ao-form-item (
     }
   }
 
-  .fieldset-legend,
-  LABEL,
-  LABEL.compact-form-label {
+  .fieldset-legend {
     color: $gray-2;
     font-weight: normal;
     margin-bottom: .3em;
-  }
-  LABEL.compact-form-label {
-    margin-bottom: 0em;
   }
   
   .form-required {
@@ -426,32 +539,6 @@ ao-form-item (
       width: 25%;
     }
   }
- 
- /* address fields */
- .field-type-addressfield {
-  .fieldset-wrapper {
-    .addressfield-container-inline {
-      DIV[class*="locality"] {
-        width: 40%;
-        display: inline-block;
-        vertical-align: top;
-        margin-right: 0em;
-      }
-      DIV[class*="administrative-area"] {
-        width: 20%;
-        display: inline-block;
-        vertical-align: top;
-        margin-right: 0.5em;
-      }
-      DIV[class*="postal-code"] {
-        width: 30%;
-        display: inline-block;
-        vertical-align: top;
-        margin-right: 0.25em;
-      }
-    }
-  }
- }
  
   /* shopping carts */
   /* item display */
@@ -536,10 +623,6 @@ ao-form-item (
   LABEL.compact-form-label {
     color: #777;
   }
-  INPUT[type=text] {
-    width: 90%;
-    display: inline-block;
-  }
   .form-required {
     display: inline-block;
   }
@@ -572,10 +655,6 @@ ao-form-item (
         display: inline-block;
         vertical-align: top;
         margin-right: 0.5em;
-        
-        LABEL {
-          display: none;
-        }
       }
       DIV[class*="postal-code"] {
         width: 30%;
