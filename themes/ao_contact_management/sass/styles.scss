@@ -26,18 +26,16 @@
 
 // partials from frontend theme
 @import "components/transitions";
-// @import "components/buttons"; - this one is an issue
+@import "components/buttons";
 @import "components/regions";
-// @import "components/menus"; - this one is an issue
+@import "components/menus";
 @import "components/hero";
-// @import "components/forms"; - this one is an issue
+@import "components/forms";
 @import "components/grids";
 @import "components/node";
 @import "components/block";
 
 // partials from original
-@import "components/buttons";
-@import "components/menus";
 @import "components/containers";
 @import "components/tables";
 @import "components/titles";
@@ -45,7 +43,6 @@
 @import "components/activities";
 @import "components/tabs";
 @import "components/contact";
-@import "components/forms";
 
 // Optionally, add your own components here.
 @import "print";
