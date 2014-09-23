@@ -3156,20 +3156,20 @@ BODY.page-user .pane-ao-user-profile-contact-info .content .field-items {
  *
  */
 /* activity feed */
-/* line 24, ../sass/components/_activities.scss */
+/* line 8, ../sass/components/_activities.scss */
 .activity-record-pane, .view-ao-crm-activities-by-contact .view-content, .pane-ao-dashboard-act-stream-panel-pane-1 .view-content {
   border: 1px solid #e1e1e1;
   background-color: White;
   padding: 1em;
   margin: 1em 0em;
 }
-/* line 30, ../sass/components/_activities.scss */
+/* line 14, ../sass/components/_activities.scss */
 .activity-record-pane .views-row:last-child .crm-core-activity, .view-ao-crm-activities-by-contact .view-content .views-row:last-child .crm-core-activity, .pane-ao-dashboard-act-stream-panel-pane-1 .view-content .views-row:last-child .crm-core-activity {
   border-bottom: none;
 }
 
 /* activity in an activity feed */
-/* line 37, ../sass/components/_activities.scss */
+/* line 21, ../sass/components/_activities.scss */
 .crm-core-activity {
   position: relative;
   padding: 0em 0em .5em;
@@ -3189,16 +3189,16 @@ BODY.page-user .pane-ao-user-profile-contact-info .content .field-items {
   transition-timing-function: ease-in-out;
   font-size: 0.95em;
 }
-/* line 47, ../sass/components/_activities.scss */
+/* line 31, ../sass/components/_activities.scss */
 .crm-core-activity .crm-core-activity-info {
   position: relative;
   margin-left: 3em;
 }
-/* line 50, ../sass/components/_activities.scss */
+/* line 34, ../sass/components/_activities.scss */
 .crm-core-activity .crm-core-activity-info .crm-core-activity-actions {
   float: right;
 }
-/* line 54, ../sass/components/_activities.scss */
+/* line 38, ../sass/components/_activities.scss */
 .crm-core-activity .crm-core-activity-icon {
   height: 30px;
   width: 30px;
@@ -3206,7 +3206,7 @@ BODY.page-user .pane-ao-user-profile-contact-info .content .field-items {
   left: 0em;
   top: 4px;
 }
-/* line 61, ../sass/components/_activities.scss */
+/* line 45, ../sass/components/_activities.scss */
 .crm-core-activity .crm-core-activity-icon SPAN {
   display: block;
   height: 30px;
@@ -3219,31 +3219,31 @@ BODY.page-user .pane-ao-user-profile-contact-info .content .field-items {
 
 /* activity icons */
 /* activty icons for donations */
-/* line 79, ../sass/components/_activities.scss */
+/* line 63, ../sass/components/_activities.scss */
 .cmcd_donation .crm-core-activity-icon SPAN {
   background: #389a19 url("../images/ao-backend-icons.png") 0px -30px no-repeat;
 }
 
 /* activty icons for events */
-/* line 87, ../sass/components/_activities.scss */
+/* line 71, ../sass/components/_activities.scss */
 .cmcev_event_registration .crm-core-activity-icon SPAN {
   background: #1a6099 url("../images/ao-backend-icons.png") -90px -30px no-repeat;
 }
 
 /* activty icons for petitions */
-/* line 95, ../sass/components/_activities.scss */
+/* line 79, ../sass/components/_activities.scss */
 .cmcp_petition_signature .crm-core-activity-icon SPAN {
   background: #e26427 url("../images/ao-backend-icons.png") -60px -30px no-repeat;
 }
 
 /* activty icons for petitions */
-/* line 104, ../sass/components/_activities.scss */
+/* line 88, ../sass/components/_activities.scss */
 .cmcv_volunteer_commitment .crm-core-activity-icon SPAN {
   background: #d02424 url("../images/ao-backend-icons.png") -30px -30px no-repeat;
 }
 
 /* full page view of an activity */
-/* line 111, ../sass/components/_activities.scss */
+/* line 95, ../sass/components/_activities.scss */
 .entity-crm-core-activity {
   border: 1px solid #e1e1e1;
   background-color: White;
@@ -3254,7 +3254,7 @@ BODY.page-user .pane-ao-user-profile-contact-info .content .field-items {
 /* move to theme */
 /* activity page */
 /* dashboard */
-/* line 132, ../sass/components/_activities.scss */
+/* line 116, ../sass/components/_activities.scss */
 .pane-ao-dashboard-act-stream-panel-pane-1 h2.pane-title {
   position: absolute;
   top: 8px;
@@ -3264,12 +3264,12 @@ BODY.page-user .pane-ao-user-profile-contact-info .content .field-items {
   text-transform: uppercase;
   margin: 0em;
 }
-/* line 142, ../sass/components/_activities.scss */
+/* line 126, ../sass/components/_activities.scss */
 .pane-ao-dashboard-act-stream-panel-pane-1 .view-content {
   margin: 0em 0em;
   padding-top: 64px;
 }
-/* line 146, ../sass/components/_activities.scss */
+/* line 130, ../sass/components/_activities.scss */
 .pane-ao-dashboard-act-stream-panel-pane-1 .view-content .crm-core-activity-actions {
   margin-left: 12px;
 }
@@ -3970,7 +3970,7 @@ NAV#main-menu UL LI A {
 /**
  * DONATION, EVENT PAGES
  */
-/* line 32, ../sass/themes/_sample-content.scss */
+/* line 31, ../sass/themes/_sample-content.scss */
 BODY.node-type-cmcev-event .region-sidebar-second,
 BODY.node-type-cmcd-page .region-sidebar-second {
   background: white;
@@ -3981,7 +3981,7 @@ BODY.node-type-cmcd-page .region-sidebar-second {
   border-right: 1px solid #777777;
   margin-top: -1em;
 }
-/* line 45, ../sass/themes/_sample-content.scss */
+/* line 44, ../sass/themes/_sample-content.scss */
 BODY.node-type-cmcev-event .region-sidebar-second #block-crm-core-profile-crm-core-profile-form-viewer H2.block-title,
 BODY.node-type-cmcd-page .region-sidebar-second #block-crm-core-profile-crm-core-profile-form-viewer H2.block-title {
   padding: 0em;
@@ -3992,12 +3992,12 @@ BODY.node-type-cmcd-page .region-sidebar-second #block-crm-core-profile-crm-core
 /**
  * NODES
  */
-/* line 55, ../sass/themes/_sample-content.scss */
+/* line 54, ../sass/themes/_sample-content.scss */
 article.node {
   /* DEFAULT NODE DISPLAY */
   /* EVENT NODES */
 }
-/* line 59, ../sass/themes/_sample-content.scss */
+/* line 58, ../sass/themes/_sample-content.scss */
 article.node.node-teaser {
   margin: 0em 0em 1.5em;
   padding: 1.5em;
@@ -4006,7 +4006,7 @@ article.node.node-teaser {
   border-left: 1px solid #cccccc;
   border-right: 1px solid #cccccc;
 }
-/* line 70, ../sass/themes/_sample-content.scss */
+/* line 69, ../sass/themes/_sample-content.scss */
 article.node:not(.node-teaser) {
   padding: 1.5em;
   border-top: 1px solid #cccccc;
@@ -4040,14 +4040,14 @@ article.node.node-cmcev-event > DIV {
   margin-right: 0%;
   width: 50%;
 }
-/* line 98, ../sass/themes/_sample-content.scss */
+/* line 97, ../sass/themes/_sample-content.scss */
 article.node.node-cmcev-event > DIV.field-name-field-cmcev-location,
 article.node.node-cmcev-event > DIV.field-name-field-cmcev-date {
   background-color: #f1f1f1;
   padding: 0.75em;
   margin-bottom: 0.375em;
 }
-/* line 106, ../sass/themes/_sample-content.scss */
+/* line 105, ../sass/themes/_sample-content.scss */
 article.node.node-cmcev-event > DIV.field-name-body {
   width: 100%;
 }
@@ -4055,7 +4055,7 @@ article.node.node-cmcev-event > DIV.field-name-body {
 /**
  * BLOCKS
  */
-/* line 118, ../sass/themes/_sample-content.scss */
+/* line 114, ../sass/themes/_sample-content.scss */
 #block-boxes-ao-volunteer-info,
 #block-boxes-ao-petition-description,
 #block-boxes-ao-event-desc,
@@ -4071,7 +4071,7 @@ article.node.node-cmcev-event > DIV.field-name-body {
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), 0 1px 4px rgba(0, 0, 0, 0.2);
   color: #2f353e;
 }
-/* line 133, ../sass/themes/_sample-content.scss */
+/* line 129, ../sass/themes/_sample-content.scss */
 #block-boxes-ao-volunteer-info H2.block__title,
 #block-boxes-ao-petition-description H2.block__title,
 #block-boxes-ao-event-desc H2.block__title,
@@ -4080,7 +4080,7 @@ article.node.node-cmcev-event > DIV.field-name-body {
   text-align: center;
   text-shadow: white 2px 2px 0;
 }
-/* line 137, ../sass/themes/_sample-content.scss */
+/* line 133, ../sass/themes/_sample-content.scss */
 #block-boxes-ao-volunteer-info .boxes-box-content,
 #block-boxes-ao-petition-description .boxes-box-content,
 #block-boxes-ao-event-desc .boxes-box-content,
@@ -4088,7 +4088,7 @@ article.node.node-cmcev-event > DIV.field-name-body {
   text-align: left;
   text-shadow: white 2px 2px 0;
 }
-/* line 139, ../sass/themes/_sample-content.scss */
+/* line 135, ../sass/themes/_sample-content.scss */
 #block-boxes-ao-volunteer-info .boxes-box-content UL,
 #block-boxes-ao-petition-description .boxes-box-content UL,
 #block-boxes-ao-event-desc .boxes-box-content UL,
@@ -4096,7 +4096,7 @@ article.node.node-cmcev-event > DIV.field-name-body {
   margin: 0em;
   padding: 0em;
 }
-/* line 142, ../sass/themes/_sample-content.scss */
+/* line 138, ../sass/themes/_sample-content.scss */
 #block-boxes-ao-volunteer-info .boxes-box-content UL LI,
 #block-boxes-ao-petition-description .boxes-box-content UL LI,
 #block-boxes-ao-event-desc .boxes-box-content UL LI,
