@@ -3,38 +3,4 @@
  * Components for displaying info boxes
  * This is just used for callouts around sample content
  */
-
-
-.ao-info-box {
-  background-color: #f1f3f9;
-  padding: 0em 1em 1em;
-  margin: 1em 0em 0em 0em;
-  box-sizing: border-box;
-  @include box-shadow(0 0 0 1px rgba(0, 0, 0, .1), 0 1px 4px rgba(0, 0, 0, .2));
-  @include border-radius(16px);
-  @include text-shadow(White 2px 2px 0);
-  overflow: hidden;
-  color: $gray-1;
-  
-  H2.block__title {
-    text-align: center;
-  }
-  
-  .boxes-box-content {
-    text-align: center;
-    margin-top: -1em;
-  
-    UL {
-      margin: 0em;
-      padding: 0em;
-      font-style: italic;
-
-      LI {
-        text-align: left;
-        list-style-type: none;
-        margin-bottom: 1em;
-      }
-    }
-  }
-}
-
+// depreciated - this can be removed

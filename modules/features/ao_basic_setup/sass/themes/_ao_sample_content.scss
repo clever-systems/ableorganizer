@@ -3,18 +3,6 @@
  * Basic theme for sample content in AO
  */
 
-
-
-
-
-/* style the info boxes */
-#block-boxes-ao-volunteer-info,
-#block-boxes-ao-petition-description,
-#block-boxes-ao-event-desc,
-#block-boxes-ao-donate-info {
-  @extend .ao-info-box;
-}
-
 /* style the hero */
 section#above-content-one {
   height: 300px;
