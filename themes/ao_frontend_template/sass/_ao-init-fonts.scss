@@ -16,6 +16,7 @@ $normal: ao-fontography-register-style(
 
 $regular: ao-fontography-register-style(
   $ao-fonto-style-name: regular,
+  $ao-fonto-style-margin: 0em 0em rhythm(.5) 0em,
   $ao-fonto-style-color: false,
   $ao-fonto-style-size: false,
   $ao-fonto-style-lines: false,

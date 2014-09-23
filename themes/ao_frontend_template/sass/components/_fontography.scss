@@ -52,7 +52,6 @@ $ao-fonto-style-text-shadow:      false !default;
   font-style-name: $ao-fonto-style;
     
   @if map-has-key($ao-fontography, $ao-fonto-style){
-  
     
     // get the key
     $style: map-get($ao-fontography, $ao-fonto-style);
@@ -104,7 +103,7 @@ $ao-fonto-style-text-shadow:      false !default;
     }
     // margin
     @if $margin != false and  $margin != null {
-      padding: $padding;
+      margin: $padding;
     }
     // text-align
     @if $text-align != false and  $text-align != null {
