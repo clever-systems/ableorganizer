@@ -170,6 +170,8 @@ $base-red: #FF5A51;
 @import "zen";
 // Nice looking buttons
 @import "sassy-buttons";
+// breakpoints
+@import "breakpoint";
 
 // Now we add our custom helper mixins.
 @import "mixins";

@@ -3962,6 +3962,18 @@ NAV#main-menu UL LI A {
   line-height: 1.36364em;
   margin: 0em 0em 1.5em;
   text-decoration: none;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -moz-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
 }
 
 /**
@@ -3970,7 +3982,7 @@ NAV#main-menu UL LI A {
 /**
  * DONATION, EVENT PAGES
  */
-/* line 31, ../sass/themes/_sample-content.scss */
+/* line 32, ../sass/themes/_sample-content.scss */
 BODY.node-type-cmcev-event .region-sidebar-second,
 BODY.node-type-cmcd-page .region-sidebar-second {
   background: white;
@@ -3981,7 +3993,7 @@ BODY.node-type-cmcd-page .region-sidebar-second {
   border-right: 1px solid #777777;
   margin-top: -1em;
 }
-/* line 44, ../sass/themes/_sample-content.scss */
+/* line 45, ../sass/themes/_sample-content.scss */
 BODY.node-type-cmcev-event .region-sidebar-second #block-crm-core-profile-crm-core-profile-form-viewer H2.block-title,
 BODY.node-type-cmcd-page .region-sidebar-second #block-crm-core-profile-crm-core-profile-form-viewer H2.block-title {
   padding: 0em;
@@ -3992,12 +4004,12 @@ BODY.node-type-cmcd-page .region-sidebar-second #block-crm-core-profile-crm-core
 /**
  * NODES
  */
-/* line 54, ../sass/themes/_sample-content.scss */
+/* line 55, ../sass/themes/_sample-content.scss */
 article.node {
   /* DEFAULT NODE DISPLAY */
   /* EVENT NODES */
 }
-/* line 58, ../sass/themes/_sample-content.scss */
+/* line 59, ../sass/themes/_sample-content.scss */
 article.node.node-teaser {
   margin: 0em 0em 1.5em;
   padding: 1.5em;
@@ -4006,7 +4018,7 @@ article.node.node-teaser {
   border-left: 1px solid #cccccc;
   border-right: 1px solid #cccccc;
 }
-/* line 69, ../sass/themes/_sample-content.scss */
+/* line 70, ../sass/themes/_sample-content.scss */
 article.node:not(.node-teaser) {
   padding: 1.5em;
   border-top: 1px solid #cccccc;
@@ -4040,14 +4052,14 @@ article.node.node-cmcev-event > DIV {
   margin-right: 0%;
   width: 50%;
 }
-/* line 97, ../sass/themes/_sample-content.scss */
+/* line 98, ../sass/themes/_sample-content.scss */
 article.node.node-cmcev-event > DIV.field-name-field-cmcev-location,
 article.node.node-cmcev-event > DIV.field-name-field-cmcev-date {
   background-color: #f1f1f1;
   padding: 0.75em;
   margin-bottom: 0.375em;
 }
-/* line 105, ../sass/themes/_sample-content.scss */
+/* line 106, ../sass/themes/_sample-content.scss */
 article.node.node-cmcev-event > DIV.field-name-body {
   width: 100%;
 }
@@ -4055,7 +4067,7 @@ article.node.node-cmcev-event > DIV.field-name-body {
 /**
  * BLOCKS
  */
-/* line 114, ../sass/themes/_sample-content.scss */
+/* line 115, ../sass/themes/_sample-content.scss */
 #block-boxes-ao-volunteer-info,
 #block-boxes-ao-petition-description,
 #block-boxes-ao-event-desc,
@@ -4071,7 +4083,7 @@ article.node.node-cmcev-event > DIV.field-name-body {
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), 0 1px 4px rgba(0, 0, 0, 0.2);
   color: #2f353e;
 }
-/* line 129, ../sass/themes/_sample-content.scss */
+/* line 130, ../sass/themes/_sample-content.scss */
 #block-boxes-ao-volunteer-info H2.block__title,
 #block-boxes-ao-petition-description H2.block__title,
 #block-boxes-ao-event-desc H2.block__title,
@@ -4080,7 +4092,7 @@ article.node.node-cmcev-event > DIV.field-name-body {
   text-align: center;
   text-shadow: white 2px 2px 0;
 }
-/* line 133, ../sass/themes/_sample-content.scss */
+/* line 134, ../sass/themes/_sample-content.scss */
 #block-boxes-ao-volunteer-info .boxes-box-content,
 #block-boxes-ao-petition-description .boxes-box-content,
 #block-boxes-ao-event-desc .boxes-box-content,
@@ -4088,7 +4100,7 @@ article.node.node-cmcev-event > DIV.field-name-body {
   text-align: left;
   text-shadow: white 2px 2px 0;
 }
-/* line 135, ../sass/themes/_sample-content.scss */
+/* line 136, ../sass/themes/_sample-content.scss */
 #block-boxes-ao-volunteer-info .boxes-box-content UL,
 #block-boxes-ao-petition-description .boxes-box-content UL,
 #block-boxes-ao-event-desc .boxes-box-content UL,
@@ -4096,7 +4108,7 @@ article.node.node-cmcev-event > DIV.field-name-body {
   margin: 0em;
   padding: 0em;
 }
-/* line 138, ../sass/themes/_sample-content.scss */
+/* line 139, ../sass/themes/_sample-content.scss */
 #block-boxes-ao-volunteer-info .boxes-box-content UL LI,
 #block-boxes-ao-petition-description .boxes-box-content UL LI,
 #block-boxes-ao-event-desc .boxes-box-content UL LI,

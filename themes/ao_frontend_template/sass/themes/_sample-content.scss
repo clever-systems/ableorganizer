@@ -13,7 +13,8 @@ NAV#main-menu {
     LI {
       A {
         /* NAVIGATION LINKS */
-        @include ao-fontography($ao-fonto-style: navigation-link);      
+        @include ao-fontography($ao-fonto-style: navigation-link);
+        @include ao-transition;
       }
     }
   }
