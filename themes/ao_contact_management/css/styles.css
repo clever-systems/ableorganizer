@@ -4042,7 +4042,7 @@ UL.tabs.tabs-secondary LI {
  * These styles apply to drop down menus by default.
  * They can be removed or replaced using default values for the mixin.
  */
-/* line 60, ../sass/_ao-init.scss */
+/* line 58, ../sass/_ao-init.scss */
 .ao-menu-default-trigger-style {
   -moz-border-radius: 0.5em;
   -webkit-border-radius: 0.5em;
@@ -4062,7 +4062,7 @@ UL.tabs.tabs-secondary LI {
   cursor: pointer;
 }
 
-/* line 70, ../sass/_ao-init.scss */
+/* line 68, ../sass/_ao-init.scss */
 .ao-menu-default-menu-style {
   background-color: #00b0f3;
   white-space: nowrap;
@@ -4072,18 +4072,18 @@ UL.tabs.tabs-secondary LI {
   z-index: 1000;
 }
 
-/* line 78, ../sass/_ao-init.scss */
+/* line 76, ../sass/_ao-init.scss */
 .ao-menu-default-element-style {
   list-style-type: none;
   list-style-image: none;
   padding: 0.375em 0.75em;
   margin: 0em;
 }
-/* line 83, ../sass/_ao-init.scss */
+/* line 81, ../sass/_ao-init.scss */
 .ao-menu-default-element-style:hover {
   background-color: #009ed9;
 }
-/* line 86, ../sass/_ao-init.scss */
+/* line 84, ../sass/_ao-init.scss */
 .ao-menu-default-element-style A {
   margin: 0em;
   padding: 0em;
@@ -4095,7 +4095,7 @@ UL.tabs.tabs-secondary LI {
  * DEFAULT BUTTONS
  * Variables controlling the default appearance of buttons
  */
-/* line 98, ../sass/_ao-init.scss */
+/* line 96, ../sass/_ao-init.scss */
 .small-grey-button {
   display: inline-block;
   padding: 0.1em 1em;
@@ -4129,7 +4129,7 @@ UL.tabs.tabs-secondary LI {
   background-color: #e1e1e1;
 }
 
-/* line 103, ../sass/_ao-init.scss */
+/* line 101, ../sass/_ao-init.scss */
 .red-button {
   -moz-transition-property: all;
   -o-transition-property: all;
@@ -4163,13 +4163,12 @@ UL.tabs.tabs-secondary LI {
 /**
  * @file
  * Contact Management
- *
- * This is the base theme file for contact management in AbleOrganizer.
+ * Theme for contact management in AbleOrganizer.
  */
 /**
  * REGIONS / SECTIONS
  */
-/* line 11, ../sass/themes/_contact-management.scss */
+/* line 10, ../sass/themes/_contact-management.scss */
 BODY > section {
   -moz-transition-property: all;
   -o-transition-property: all;
@@ -4192,7 +4191,7 @@ BODY > section .section-wrapper {
   max-width: 100%;
   overflow: hidden;
 }
-/* line 19, ../sass/themes/_contact-management.scss */
+/* line 18, ../sass/themes/_contact-management.scss */
 BODY > section .section-wrapper {
   width: 100%;
   -moz-transition-property: all;
@@ -4209,62 +4208,62 @@ BODY > section .section-wrapper {
   transition-timing-function: ease-in-out;
 }
 @media (min-width: 960px) {
-  /* line 24, ../sass/themes/_contact-management.scss */
+  /* line 23, ../sass/themes/_contact-management.scss */
   BODY > section .section-wrapper {
     width: 960px;
   }
 }
 @media (min-width: 1200px) {
-  /* line 29, ../sass/themes/_contact-management.scss */
+  /* line 28, ../sass/themes/_contact-management.scss */
   BODY > section .section-wrapper {
     width: 1200px;
   }
 }
 
 /* TOP BANNER */
-/* line 35, ../sass/themes/_contact-management.scss */
+/* line 34, ../sass/themes/_contact-management.scss */
 section.banner {
   background: #2d4552;
   padding: 0.5em 0em;
   font-size: 10.72px;
 }
-/* line 43, ../sass/themes/_contact-management.scss */
+/* line 42, ../sass/themes/_contact-management.scss */
 section.banner A {
   color: #dfe4e6;
   text-decoration: none;
 }
-/* line 46, ../sass/themes/_contact-management.scss */
+/* line 45, ../sass/themes/_contact-management.scss */
 section.banner A:hover {
   color: White;
 }
 
 /* BRANDING BANNER */
-/* line 53, ../sass/themes/_contact-management.scss */
+/* line 52, ../sass/themes/_contact-management.scss */
 section.branding {
   background: white;
   padding: 0.75em 0em 0em;
 }
 @media (min-width: 960px) {
-  /* line 53, ../sass/themes/_contact-management.scss */
+  /* line 52, ../sass/themes/_contact-management.scss */
   section.branding {
     padding: 1.5em 0em 0em;
   }
 }
 
 /* HEADER */
-/* line 65, ../sass/themes/_contact-management.scss */
+/* line 64, ../sass/themes/_contact-management.scss */
 section.header {
   background: #3697ee;
 }
 @media (min-width: 960px) {
-  /* line 70, ../sass/themes/_contact-management.scss */
+  /* line 69, ../sass/themes/_contact-management.scss */
   section.header .section-wrapper {
     height: 5.25em;
   }
 }
 
 /* CONTENT */
-/* line 76, ../sass/themes/_contact-management.scss */
+/* line 75, ../sass/themes/_contact-management.scss */
 section.content {
   background: whitesmoke;
   padding: 1.5em 0em;
@@ -4274,13 +4273,13 @@ section.content {
  * MENUS
  */
 /* Main Menu */
-/* line 88, ../sass/themes/_contact-management.scss */
+/* line 87, ../sass/themes/_contact-management.scss */
 nav#main-menu {
   position: absolute;
   right: 0px;
   bottom: 0px;
 }
-/* line 92, ../sass/themes/_contact-management.scss */
+/* line 91, ../sass/themes/_contact-management.scss */
 nav#main-menu UL.links {
   margin: 0em;
   -moz-box-sizing: border-box;
@@ -4333,7 +4332,7 @@ nav#main-menu UL.links A {
   margin: 0em;
   padding: 0em;
 }
-/* line 94, ../sass/themes/_contact-management.scss */
+/* line 93, ../sass/themes/_contact-management.scss */
 nav#main-menu UL.links LI, nav#main-menu UL.links A {
   -moz-transition-property: all;
   -o-transition-property: all;
@@ -4348,7 +4347,7 @@ nav#main-menu UL.links LI, nav#main-menu UL.links A {
   -webkit-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
 }
-/* line 97, ../sass/themes/_contact-management.scss */
+/* line 96, ../sass/themes/_contact-management.scss */
 nav#main-menu UL.links A {
   color: white;
   font-weight: 600;
@@ -4375,7 +4374,7 @@ nav#main-menu UL.links A {
 /**
  * DASHBOARD
  */
-/* line 107, ../sass/themes/_contact-management.scss */
+/* line 106, ../sass/themes/_contact-management.scss */
 BODY.page-crm-core-dashboard {
   /* PANELS */
   /* PANEL TITLES */
@@ -4384,7 +4383,7 @@ BODY.page-crm-core-dashboard {
   /* SUMMARY TABLES */
   /* BREAKPOINTS */
 }
-/* line 113, ../sass/themes/_contact-management.scss */
+/* line 112, ../sass/themes/_contact-management.scss */
 BODY.page-crm-core-dashboard .crm-core-activity {
   position: relative;
   padding: 0.9em 0em;
@@ -4507,19 +4506,19 @@ BODY.page-crm-core-dashboard .crm-core-activity .crm-core-activity-actions {
  * COMPONENTS
  */
 /* PAGE TITLE */
-/* line 133, ../sass/themes/_contact-management.scss */
+/* line 132, ../sass/themes/_contact-management.scss */
 section.header H1#page-title {
   color: white;
   font-weight: normal;
   padding: 0em;
   margin: 0.375em 0em;
 }
-/* line 135, ../sass/themes/_contact-management.scss */
+/* line 134, ../sass/themes/_contact-management.scss */
 section.header H1#page-title em {
   color: #d6f7ff;
 }
 @media (min-width: 960px) {
-  /* line 140, ../sass/themes/_contact-management.scss */
+  /* line 139, ../sass/themes/_contact-management.scss */
   section.header H1#page-title {
     position: absolute;
     left: 0px;
