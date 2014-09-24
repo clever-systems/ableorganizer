@@ -1925,38 +1925,38 @@ tr.selected td {
   content: "o";
 }
 
-/* line 272, ../sass/components/_icons.scss */
+/* line 278, ../sass/components/_icons.scss */
 .cmcd_donation .crm-core-activity-icon {
   background-color: #389a19 !important;
 }
-/* line 274, ../sass/components/_icons.scss */
+/* line 280, ../sass/components/_icons.scss */
 .cmcd_donation .crm-core-activity-icon:before {
   content: "\e00b" !important;
 }
 
-/* line 272, ../sass/components/_icons.scss */
+/* line 278, ../sass/components/_icons.scss */
 .cmcev_event_registration .crm-core-activity-icon {
   background-color: #1a6099 !important;
 }
-/* line 274, ../sass/components/_icons.scss */
+/* line 280, ../sass/components/_icons.scss */
 .cmcev_event_registration .crm-core-activity-icon:before {
   content: "b" !important;
 }
 
-/* line 272, ../sass/components/_icons.scss */
+/* line 278, ../sass/components/_icons.scss */
 .cmcp_petition_signature .crm-core-activity-icon {
   background-color: #e26427 !important;
 }
-/* line 274, ../sass/components/_icons.scss */
+/* line 280, ../sass/components/_icons.scss */
 .cmcp_petition_signature .crm-core-activity-icon:before {
   content: "E" !important;
 }
 
-/* line 272, ../sass/components/_icons.scss */
+/* line 278, ../sass/components/_icons.scss */
 .cmcv_volunteer_commitment .crm-core-activity-icon {
   background-color: #d02424 !important;
 }
-/* line 274, ../sass/components/_icons.scss */
+/* line 280, ../sass/components/_icons.scss */
 .cmcv_volunteer_commitment .crm-core-activity-icon:before {
   content: "(" !important;
 }
@@ -2537,7 +2537,7 @@ tr.selected td {
 }
 
 /* line 203, ../sass/components/_buttons.scss */
-.btn-small, .container-table TR TD .btn, .table-container TABLE TR TD .btn,
+.btn-small, .pane-ao-dashboard-act-stream-panel-pane-1 .view-content .crm-core-activity-actions A, .pane-ao-dashboard-act-stream-panel-pane-1 .view-content .crm-core-activity-actions A:first-child, .contact-pane-header-buttons .view-header A, .pane-ao-5-recent-activities .view-header A, .container-table TR TD .btn, .table-container TABLE TR TD .btn,
 .views-table TR TD .btn, .container-table TR TD .btn-blue, .table-container TABLE TR TD .btn-blue,
 .views-table TR TD .btn-blue, .container-table TR TD .contact-pane-header-buttons .view-header A, .contact-pane-header-buttons .view-header .container-table TR TD A, .table-container TABLE TR TD .contact-pane-header-buttons .view-header A, .contact-pane-header-buttons .view-header .table-container TABLE TR TD A,
 .views-table TR TD .contact-pane-header-buttons .view-header A,
@@ -2570,7 +2570,7 @@ tr.selected td {
 .views-table TR TD .action-links LI A,
 .action-links LI .views-table TR TD A, .container-table TR TD BODY.maintenance-page section.content div#content input[type=submit], BODY.maintenance-page section.content div#content .container-table TR TD input[type=submit], .table-container TABLE TR TD BODY.maintenance-page section.content div#content input[type=submit], BODY.maintenance-page section.content div#content .table-container TABLE TR TD input[type=submit],
 .views-table TR TD BODY.maintenance-page section.content div#content input[type=submit],
-BODY.maintenance-page section.content div#content .views-table TR TD input[type=submit], .pane-ao-dashboard-act-stream-panel-pane-1 .view-content .crm-core-activity-actions A, .pane-ao-dashboard-act-stream-panel-pane-1 .view-content .crm-core-activity-actions A:first-child, .contact-pane-header-buttons .view-header A, .pane-ao-5-recent-activities .view-header A {
+BODY.maintenance-page section.content div#content .views-table TR TD input[type=submit] {
   font-size: 0.8em;
   padding: 0.1em .8em;
 }
@@ -3237,131 +3237,9 @@ BODY.maintenance-page section.content div#content .views-table TR TD input[type=
 /* THIS IS THE OLD STUFF */
 /* container tables */
 /* used to display contacts */
-/* line 169, ../sass/components/_tables.scss */
-.container-table, .table-container TABLE,
-.views-table {
-  width: 100%;
-  border-collapse: separate;
-  border: none;
-  margin: .75em 0em 1em;
-  padding: 0em;
-  color: #555;
-  font-size: 13.28px;
-}
-/* line 179, ../sass/components/_tables.scss */
-.container-table TR, .table-container TABLE TR,
-.views-table TR {
-  border-collapse: separate;
-}
-/* line 183, ../sass/components/_tables.scss */
-.container-table TR TH, .table-container TABLE TR TH,
-.views-table TR TH {
-  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIzMSUiIHN0b3AtY29sb3I9IiNmZmZmZmYiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNkZmU0ZTYiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
-  background-size: 100%;
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(31%, #ffffff), color-stop(100%, #dfe4e6));
-  background-image: -moz-linear-gradient(top, #ffffff 31%, #dfe4e6 100%);
-  background-image: -webkit-linear-gradient(top, #ffffff 31%, #dfe4e6 100%);
-  background-image: linear-gradient(to bottom, #ffffff 31%, #dfe4e6 100%);
-  text-transform: uppercase;
-}
-/* line 189, ../sass/components/_tables.scss */
-.container-table TR TH .form-type-checkbox, .table-container TABLE TR TH .form-type-checkbox,
-.views-table TR TH .form-type-checkbox {
-  background-color: #CCC;
-  margin: 0em .5em 0em .5em;
-  -moz-border-radius: 4px;
-  -webkit-border-radius: 4px;
-  border-radius: 4px;
-}
-/* line 195, ../sass/components/_tables.scss */
-.container-table TR TH:first-child, .table-container TABLE TR TH:first-child,
-.views-table TR TH:first-child {
-  -moz-border-radius: 8px 0px 0px 0px;
-  -webkit-border-radius: 8px;
-  border-radius: 8px 0px 0px 0px;
-  border-left: 1px solid #CCC;
-}
-/* line 199, ../sass/components/_tables.scss */
-.container-table TR TH:last-child, .table-container TABLE TR TH:last-child,
-.views-table TR TH:last-child {
-  -moz-border-radius: 0px 8px 0px 0px;
-  -webkit-border-radius: 0px;
-  border-radius: 0px 8px 0px 0px;
-  border-right: 1px solid #CCC;
-}
-/* line 209, ../sass/components/_tables.scss */
-.container-table TR:last-child TD, .table-container TABLE TR:last-child TD,
-.views-table TR:last-child TD {
-  border-bottom: 1px solid #ccc;
-}
-/* line 215, ../sass/components/_tables.scss */
-.container-table TR:hover TD, .table-container TABLE TR:hover TD,
-.views-table TR:hover TD {
-  background-color: White;
-}
-/* line 222, ../sass/components/_tables.scss */
-.container-table TR.even TD, .table-container TABLE TR.even TD,
-.views-table TR.even TD {
-  background-color: #f1f1f1;
-}
-/* line 226, ../sass/components/_tables.scss */
-.container-table TR.even:hover TD, .table-container TABLE TR.even:hover TD,
-.views-table TR.even:hover TD {
-  background-color: White;
-}
-/* line 234, ../sass/components/_tables.scss */
-.container-table TR TD, .table-container TABLE TR TD,
-.views-table TR TD {
-  border-bottom: 1px solid #e1e1e1;
-  background-color: #fafafa;
-  padding: 0em .5em;
-  border-left: 1px solid #f9f9f9;
-  border-right: 1px solid #CCC;
-}
-/* line 242, ../sass/components/_tables.scss */
-.container-table TR TD.active, .table-container TABLE TR TD.active,
-.views-table TR TD.active {
-  font-weight: 700;
-  border-left: 1px solid #CCC;
-  border-right: 1px solid #CCC;
-}
-/* line 249, ../sass/components/_tables.scss */
-.container-table TR TD:first-child, .table-container TABLE TR TD:first-child,
-.views-table TR TD:first-child {
-  border-left: 1px solid #CCC;
-}
-/* line 252, ../sass/components/_tables.scss */
-.container-table TR TD:last-child, .table-container TABLE TR TD:last-child,
-.views-table TR TD:last-child {
-  border-right: 1px solid #CCC;
-}
-/* line 256, ../sass/components/_tables.scss */
-.container-table TR TD .form-type-checkbox, .table-container TABLE TR TD .form-type-checkbox,
-.views-table TR TD .form-type-checkbox {
-  margin: 0em auto;
-}
-/* line 263, ../sass/components/_tables.scss */
-.container-table TR TD .form-type-checkbox, .table-container TABLE TR TD .form-type-checkbox,
-.views-table TR TD .form-type-checkbox {
-  background-color: #e5e5e5;
-  margin: 0em;
-  -moz-border-radius: 4px;
-  -webkit-border-radius: 4px;
-  border-radius: 4px;
-  text-align: center;
-}
-/* line 270, ../sass/components/_tables.scss */
-.container-table TR TD .ao_contact_icon, .table-container TABLE TR TD .ao_contact_icon,
-.views-table TR TD .ao_contact_icon {
-  background: url(../images/ao-backend-icons.png) 0px -150px no-repeat;
-  height: 27px;
-  width: 27px;
-  margin: 0px .05em;
-}
-
 /* data tables */
 /* displays tables related to run downs of data within reports */
-/* line 286, ../sass/components/_tables.scss */
+/* line 285, ../sass/components/_tables.scss */
 .data-tables .table-container, BODY.page-crm-core-reports .pane-cmcv-source-summary-frequency .table-container,
 BODY.page-crm-core-reports .pane-cmcv-source-summary-attendance .table-container,
 BODY.page-crm-core-reports .pane-opportunity-summary-sources .table-container,
@@ -3422,7 +3300,7 @@ BODY.page-crm-core-reports .pane-cmcd-source-callouts-panel-pane-1 .view-content
   -webkit-border-radius: 8px;
   border-radius: 8px;
 }
-/* line 295, ../sass/components/_tables.scss */
+/* line 294, ../sass/components/_tables.scss */
 .data-tables .table-container TABLE, BODY.page-crm-core-reports .pane-cmcv-source-summary-frequency .table-container TABLE,
 BODY.page-crm-core-reports .pane-cmcv-source-summary-attendance .table-container TABLE,
 BODY.page-crm-core-reports .pane-opportunity-summary-sources .table-container TABLE,
@@ -3480,7 +3358,7 @@ BODY.page-crm-core-reports .pane-cmcd-source-callouts-panel-pane-1 .view-content
 }
 
 /* handles the display of summary items */
-/* line 312, ../sass/components/_tables.scss */
+/* line 311, ../sass/components/_tables.scss */
 .data-summary .table-container TR TD, BODY.page-crm-core-reports .pane-cmcv-source-summary-totals .table-container TR TD,
 BODY.page-crm-core-reports .pane-cmcv-opportunity-metrics .table-container TR TD,
 BODY.page-crm-core-reports .pane-cmcv-overview-metrics .table-container TR TD,
@@ -3670,28 +3548,21 @@ h1, h2, h3, h4, h5, h6 {
  * 
  */
 /* activity in an activity feed */
-/* line 172, ../sass/components/_activities.scss */
-.crm-core-activity {
-  position: relative;
-  border-bottom: 1px solid #e1e1e1;
-  font-size: 0.95em;
-}
-
 /* activity feed */
-/* line 178, ../sass/components/_activities.scss */
+/* line 173, ../sass/components/_activities.scss */
 .activity-record-pane, .view-ao-crm-activities-by-contact .view-content, .pane-ao-dashboard-act-stream-panel-pane-1 .view-content {
   border: 1px solid #e1e1e1;
   background-color: White;
   padding: 1em;
   margin: 1em 0em;
 }
-/* line 184, ../sass/components/_activities.scss */
+/* line 179, ../sass/components/_activities.scss */
 .activity-record-pane .views-row:last-child .crm-core-activity, .view-ao-crm-activities-by-contact .view-content .views-row:last-child .crm-core-activity, .pane-ao-dashboard-act-stream-panel-pane-1 .view-content .views-row:last-child .crm-core-activity {
   border-bottom: none;
 }
 
 /* full page view of an activity */
-/* line 191, ../sass/components/_activities.scss */
+/* line 186, ../sass/components/_activities.scss */
 .entity-crm-core-activity {
   border: 1px solid #e1e1e1;
   background-color: White;
@@ -3702,7 +3573,7 @@ h1, h2, h3, h4, h5, h6 {
 /* move to theme */
 /* activity page */
 /* dashboard */
-/* line 209, ../sass/components/_activities.scss */
+/* line 204, ../sass/components/_activities.scss */
 .pane-ao-dashboard-act-stream-panel-pane-1 h2.pane-title {
   position: absolute;
   top: 8px;
@@ -3712,12 +3583,12 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
   margin: 0em;
 }
-/* line 220, ../sass/components/_activities.scss */
+/* line 215, ../sass/components/_activities.scss */
 .pane-ao-dashboard-act-stream-panel-pane-1 .view-content {
   margin: 0em 0em;
   padding-top: 64px;
 }
-/* line 224, ../sass/components/_activities.scss */
+/* line 219, ../sass/components/_activities.scss */
 .pane-ao-dashboard-act-stream-panel-pane-1 .view-content .crm-core-activity-actions {
   margin-left: 12px;
 }
@@ -3928,11 +3799,6 @@ UL.tabs.tabs-secondary LI {
 /* TODO: move to theme file */
 /* line 138, ../sass/components/_contact.scss */
 .pane-crm-core-contact .entity-crm-core-contact {
-  font-size: 13.28px;
-}
-
-/* line 143, ../sass/components/_contact.scss */
-.pane-ao-5-recent-activities .view-content {
   font-size: 13.28px;
 }
 
@@ -4287,13 +4153,13 @@ section.content {
  * MENUS
  */
 /* Main Menu */
-/* line 87, ../sass/themes/_contact-management.scss */
+/* line 86, ../sass/themes/_contact-management.scss */
 nav#main-menu {
   position: absolute;
   right: 0px;
   bottom: 0px;
 }
-/* line 91, ../sass/themes/_contact-management.scss */
+/* line 90, ../sass/themes/_contact-management.scss */
 nav#main-menu UL.links {
   margin: 0em;
   -moz-box-sizing: border-box;
@@ -4346,7 +4212,7 @@ nav#main-menu UL.links A {
   margin: 0em;
   padding: 0em;
 }
-/* line 93, ../sass/themes/_contact-management.scss */
+/* line 92, ../sass/themes/_contact-management.scss */
 nav#main-menu UL.links LI, nav#main-menu UL.links A {
   -moz-transition-property: all;
   -o-transition-property: all;
@@ -4361,7 +4227,7 @@ nav#main-menu UL.links LI, nav#main-menu UL.links A {
   -webkit-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
 }
-/* line 96, ../sass/themes/_contact-management.scss */
+/* line 95, ../sass/themes/_contact-management.scss */
 nav#main-menu UL.links A {
   color: white;
   font-weight: 600;
@@ -4388,7 +4254,7 @@ nav#main-menu UL.links A {
 /**
  * DASHBOARD
  */
-/* line 106, ../sass/themes/_contact-management.scss */
+/* line 105, ../sass/themes/_contact-management.scss */
 BODY.page-crm-core-dashboard {
   /* PANELS */
   /* PANEL TITLES */
@@ -4397,7 +4263,7 @@ BODY.page-crm-core-dashboard {
   /* SUMMARY TABLES */
   /* BREAKPOINTS */
 }
-/* line 112, ../sass/themes/_contact-management.scss */
+/* line 111, ../sass/themes/_contact-management.scss */
 BODY.page-crm-core-dashboard .crm-core-activity {
   position: relative;
   padding: 0.9em 0em;
@@ -4489,11 +4355,10 @@ BODY.page-crm-core-dashboard .crm-core-activity .crm-core-activity-icon {
   padding: 9px;
   height: 45px;
   width: 45px;
-  margin: 0px 0.45em 0px 0px;
   background: #ffb836;
   color: white;
 }
-/* line 177, ../sass/components/_icons.scss */
+/* line 183, ../sass/components/_icons.scss */
 BODY.page-crm-core-dashboard .crm-core-activity .crm-core-activity-icon:before {
   font-family: "ao-icons" !important;
   content: "o";
@@ -4516,23 +4381,339 @@ BODY.page-crm-core-dashboard .crm-core-activity .crm-core-activity-actions {
   float: right;
 }
 
+/* line 125, ../sass/themes/_contact-management.scss */
+.crm-core-activity-info DIV {
+  display: inline-block;
+}
+
+/**
+ * ACTIVITIES 
+ */
+/* Default Activity List */
+/* line 133, ../sass/themes/_contact-management.scss */
+.crm-core-activity {
+  position: relative;
+  padding: 0.9em 0em;
+  width: 100%;
+  /* ICONS */
+  /* INFO BOX */
+  /* ACTION LINKS */
+  /*  
+  
+    // ICON OVERRIDES
+    // this will let us mess with the appearance of an icon
+    // should go into the icon callback
+    
+    // get styles for the icon
+    @if $ao-activity-item-info-selector != false and $ao-activity-item-icon-style != false {
+      .crm-core-activity-info{
+      
+        @include ao-get-icon ($ao-activity-style: $ao-activity-style);
+        
+        // apply height and width
+        @if $ao-activity-item-icon-height != false {
+          height: $ao-activity-item-icon-height;
+        }
+        @if $ao-activity-item-icon-width != false {
+          width: $ao-activity-item-icon-width;
+        }
+        // override any of the style settings, if necessary
+        @if $ao-activity-item-icon-border != false {
+          border: $ao-activity-item-icon-border;
+        }
+        @if $ao-activity-item-icon-border-radius != false {
+          border: $ao-activity-item-icon-border-radius;
+        }
+        @if $ao-activity-item-icon-background != false {
+          background: $ao-activity-item-icon-background;
+        }
+        @if $ao-activity-item-icon-margin != false {
+          margin: $ao-activity-item-icon-margin;
+        }
+        @if $ao-activity-item-icon-padding != false {
+          padding: $ao-activity-item-icon-padding;
+        }
+      }
+    }
+  
+    */
+  font-size: 0.9375em;
+  line-height: 1.6em;
+  border-bottom: 1px solid #d1d1d1;
+}
+/* line 79, ../sass/components/_activities.scss */
+.crm-core-activity:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+/* line 106, ../sass/components/_activities.scss */
+.crm-core-activity .crm-core-activity-icon {
+  default-size: 50px;
+  size-passed-in: 35px;
+  size-in-use: 35px;
+  default-color: false;
+  default-background: false;
+  default-text-shadow: false;
+  default-border: false;
+  default--border-radius: false;
+  default-margin: false;
+  default-padding: false;
+  default-before: false;
+  icon-color: white;
+  icon-background: #ffb836;
+  icon-color: white;
+  icon-text-shadow: false;
+  icon-border: false;
+  icon-border-radius: false;
+  icon-margin: false;
+  icon-padding: false;
+  icon-before: "o";
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -moz-user-select: false;
+  -ms-user-select: false;
+  -webkit-user-select: false;
+  user-select: false;
+  float: left;
+  font-size: 21px;
+  line-height: 1;
+  padding: 7px;
+  height: 35px;
+  width: 35px;
+  background: #ffb836;
+  color: white;
+}
+/* line 183, ../sass/components/_icons.scss */
+.crm-core-activity .crm-core-activity-icon:before {
+  font-family: "ao-icons" !important;
+  content: "o";
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/* line 113, ../sass/components/_activities.scss */
+.crm-core-activity .crm-core-activity-info {
+  display: block;
+  margin-left: 49px;
+}
+/* line 120, ../sass/components/_activities.scss */
+.crm-core-activity .crm-core-activity-actions {
+  float: right;
+}
+/* line 144, ../sass/themes/_contact-management.scss */
+.crm-core-activity .crm-core-activity-date {
+  margin-top: 0.45em;
+  display: block;
+  font-size: 0.8125em;
+  line-height: 1.84615em;
+  text-transform: uppercase;
+  color: #777799;
+}
+
+/**
+ * CONTACTS
+ */
+/* CONTACT TABLE */
+/* line 157, ../sass/themes/_contact-management.scss */
+.container-table, .table-container TABLE,
+.views-table {
+  width: 100%;
+  border-bottom: 1px solid #cccccc;
+  border-right: separate;
+  margin: 0.75em 0em 0em;
+  padding: 0em;
+  /* RESPONSIVE TABLES */
+  /* Flipscroll - http://elvery.net/demo/responsive-tables/ */
+  color: #555;
+  font-size: 13.28px;
+}
+/* line 112, ../sass/components/_tables.scss */
+.container-table TH, .table-container TABLE TH,
+.views-table TH {
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIzMSUiIHN0b3AtY29sb3I9IiNmZmZmZmYiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNkZmU0ZTYiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(31%, #ffffff), color-stop(100%, #dfe4e6));
+  background-image: -moz-linear-gradient(top, #ffffff 31%, #dfe4e6 100%);
+  background-image: -webkit-linear-gradient(top, #ffffff 31%, #dfe4e6 100%);
+  background-image: linear-gradient(to bottom, #ffffff 31%, #dfe4e6 100%);
+  background-color: white;
+}
+/* line 129, ../sass/components/_tables.scss */
+.container-table TR, .table-container TABLE TR,
+.views-table TR {
+  border-left: 1px solid #cccccc;
+  border-right: 1px solid #cccccc;
+}
+/* line 151, ../sass/components/_tables.scss */
+.container-table TR TD, .table-container TABLE TR TD,
+.views-table TR TD {
+  border-bottom: 1px solid #e1e1e1;
+  border-left: 1px solid #f9f9f9;
+  border-right: 1px solid #cccccc;
+  background-color: #fafafa;
+  padding: 0.15em 0.75em;
+}
+/* line 170, ../sass/components/_tables.scss */
+.container-table TR TD:first-child, .table-container TABLE TR TD:first-child,
+.views-table TR TD:first-child {
+  border-left: 1px solid #cccccc;
+}
+/* line 175, ../sass/components/_tables.scss */
+.container-table TR TD:last-child, .table-container TABLE TR TD:last-child,
+.views-table TR TD:last-child {
+  border-right: 1px solid #cccccc;
+}
+/* line 184, ../sass/components/_tables.scss */
+.container-table TR.even TD, .table-container TABLE TR.even TD,
+.views-table TR.even TD {
+  background-color: #f1f1f1;
+}
+/* line 191, ../sass/components/_tables.scss */
+.container-table TR.even:hover TD, .table-container TABLE TR.even:hover TD,
+.views-table TR.even:hover TD {
+  background-color: white;
+}
+/* line 216, ../sass/components/_tables.scss */
+.container-table TR:last-child TD, .table-container TABLE TR:last-child TD,
+.views-table TR:last-child TD {
+  border-bottom: 1px solid #cccccc;
+}
+/* line 188, ../sass/themes/_contact-management.scss */
+.container-table TD.views-field-nothing-4, .table-container TABLE TD.views-field-nothing-4,
+.views-table TD.views-field-nothing-4 {
+  width: 40px;
+  text-align: center;
+  padding: .1em 0em;
+}
+/* line 193, ../sass/themes/_contact-management.scss */
+.container-table TD.views-field-nothing-3, .table-container TABLE TD.views-field-nothing-3,
+.views-table TD.views-field-nothing-3 {
+  width: 200px;
+  text-align: center;
+  padding: .1em 0em;
+}
+/* line 200, ../sass/themes/_contact-management.scss */
+.container-table .form-type-checkbox, .table-container TABLE .form-type-checkbox,
+.views-table .form-type-checkbox {
+  background-color: #e5e5e5;
+  margin: 0em;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  text-align: center;
+}
+/* line 208, ../sass/themes/_contact-management.scss */
+.container-table .ao_contact_icon, .table-container TABLE .ao_contact_icon,
+.views-table .ao_contact_icon {
+  /*
+    background: url(../images/ao-backend-icons.png) 0px -150px no-repeat;
+    height: 27px;
+    width: 27px;
+    margin: 0px .05em;
+  */
+  default-size: 50px;
+  size-passed-in: 35px;
+  size-in-use: 35px;
+  default-color: #777777;
+  default-background: transparent;
+  default-text-shadow: false;
+  default-border: false;
+  default--border-radius: false;
+  default-margin: 0em;
+  default-padding: false;
+  default-before: false;
+  icon-color: white;
+  icon-background: #ffb836;
+  icon-color: white;
+  icon-text-shadow: false;
+  icon-border: false;
+  icon-border-radius: false;
+  icon-margin: false;
+  icon-padding: false;
+  icon-before: "o";
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -moz-user-select: false;
+  -ms-user-select: false;
+  -webkit-user-select: false;
+  user-select: false;
+  float: left;
+  font-size: 21px;
+  line-height: 1;
+  padding: 7px;
+  height: 35px;
+  width: 35px;
+  margin: 0em;
+  background: transparent;
+  color: #777777;
+}
+/* line 183, ../sass/components/_icons.scss */
+.container-table .ao_contact_icon:before, .table-container TABLE .ao_contact_icon:before,
+.views-table .ao_contact_icon:before {
+  font-family: "ao-icons" !important;
+  content: "o";
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/* line 229, ../sass/themes/_contact-management.scss */
+.container-table TR TH, .table-container TABLE TR TH,
+.views-table TR TH {
+  text-transform: uppercase;
+}
+/* line 233, ../sass/themes/_contact-management.scss */
+.container-table TR TH:first-child, .table-container TABLE TR TH:first-child,
+.views-table TR TH:first-child {
+  -moz-border-radius: 8px 0px 0px 0px;
+  -webkit-border-radius: 8px;
+  border-radius: 8px 0px 0px 0px;
+}
+/* line 236, ../sass/themes/_contact-management.scss */
+.container-table TR TH:last-child, .table-container TABLE TR TH:last-child,
+.views-table TR TH:last-child {
+  -moz-border-radius: 0px 8px 0px 0px;
+  -webkit-border-radius: 0px;
+  border-radius: 0px 8px 0px 0px;
+}
+/* line 246, ../sass/themes/_contact-management.scss */
+.container-table TR TD.active, .table-container TABLE TR TD.active,
+.views-table TR TD.active {
+  font-weight: 700;
+}
+
 /**
  * COMPONENTS
  */
 /* PAGE TITLE */
-/* line 132, ../sass/themes/_contact-management.scss */
+/* line 261, ../sass/themes/_contact-management.scss */
 section.header H1#page-title {
   color: white;
   font-weight: normal;
   padding: 0em;
   margin: 0.375em 0em;
 }
-/* line 134, ../sass/themes/_contact-management.scss */
+/* line 263, ../sass/themes/_contact-management.scss */
 section.header H1#page-title em {
   color: #d6f7ff;
 }
 @media (min-width: 960px) {
-  /* line 139, ../sass/themes/_contact-management.scss */
+  /* line 268, ../sass/themes/_contact-management.scss */
   section.header H1#page-title {
     position: absolute;
     left: 0px;

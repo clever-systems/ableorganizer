@@ -169,11 +169,6 @@ $ao-activity-item-icon-padding:         false !default;
 // Move it to the theme or get rid of it
 
 /* activity in an activity feed */
-.crm-core-activity {
-  position: relative;
-  border-bottom: 1px solid $e-gray;
-  font-size: 0.95em;
-}
 /* activity feed */
 .activity-record-pane {
   border: 1px solid $e-gray;
