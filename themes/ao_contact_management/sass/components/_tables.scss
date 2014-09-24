@@ -13,9 +13,25 @@ $ao-table-border-left: false !default;
 $ao-table-border-right: false !default;
 $ao-table-border-collapse: collapse !default;
 $ao-table-border-spacing: collapse !default;
-$ao-table-border-margin: false !default;
-$ao-table-border-padding: false !default;
-$ao-table-header-background: false !default;
+$ao-table-margin: false !default;
+$ao-table-padding: false !default;
+$ao-table-row-border-top: false !default;
+$ao-table-row-border-bottom: false !default;
+$ao-table-row-border-left: false !default;
+$ao-table-row-border-right: false !default;
+$ao-table-row-hover-color: false !default;
+$ao-table-row-hover-color-even: false !default;
+$ao-table-row-hover-color-odd: false !default;
+$ao-table-cell-border-top: false !default;
+$ao-table-cell-border-bottom: false !default;
+$ao-table-cell-border-left: false !default;
+$ao-table-cell-border-right: false !default;
+$ao-table-cell-background-color: false !default;
+$ao-table-cell-background-color-even: false !default;
+$ao-table-cell-background-color-odd: false !default;
+$ao-table-cell-padding: false !default;
+$ao-table-header-background-color: false !default;
+$ao-table-header-background-image: false !default;
 $ao-table-responsive-style: false !default;
 $ao-table-responsive-breakpoint: false !default;
 
@@ -33,15 +49,31 @@ $ao-table-responsive-breakpoint: false !default;
 
   $ao-table-responsive-style: $ao-table-responsive-style,
   $ao-table-width: $ao-table-width,
+  $ao-table-margin: $ao-table-margin,
+  $ao-table-padding: $ao-table-padding,
   $ao-table-border-top: $ao-table-border-top,
   $ao-table-border-bottom: $ao-table-border-bottom,
   $ao-table-border-left: $ao-table-border-left,
   $ao-table-border-right: $ao-table-border-right,
+  $ao-table-row-border-top: $ao-table-row-border-top,
+  $ao-table-row-border-bottom: $ao-table-row-border-bottom,
+  $ao-table-row-border-left: $ao-table-row-border-left,
+  $ao-table-row-border-right: $ao-table-row-border-right,
+  $ao-table-row-hover-color: $ao-table-row-hover-color,
+  $ao-table-row-hover-color-even: $ao-table-row-hover-color-even,
+  $ao-table-row-hover-color-odd: $ao-table-row-hover-color-odd,
+  $ao-table-cell-border-top: $ao-table-cell-border-top,
+  $ao-table-cell-border-bottom: $ao-table-cell-border-bottom,
+  $ao-table-cell-border-left: $ao-table-cell-border-left,
+  $ao-table-cell-border-right: $ao-table-cell-border-right,
+  $ao-table-cell-background-color: $ao-table-cell-background-color,
+  $ao-table-cell-background-color-even: $ao-table-cell-background-color-even,
+  $ao-table-cell-background-color-odd: $ao-table-cell-background-color-odd,
+  $ao-table-cell-padding: $ao-table-cell-padding,
   $ao-table-border-collapse: $ao-table-border-collapse,
   $ao-table-border-spacing: $ao-table-border-spacing,
-  $ao-table-border-margin: $ao-table-border-margin,
-  $ao-table-border-padding: $ao-table-border-padding,
-  $ao-table-header-background: $ao-table-header-background
+  $ao-table-header-background-image: $ao-table-header-background-image,
+  $ao-table-header-background-color: $ao-table-header-background-color
   
 ) {
 
@@ -78,9 +110,11 @@ $ao-table-responsive-breakpoint: false !default;
   // Q: how are we handling rounded borders? This should be queued off the table itself
   
   TH {
-  
-    @if $ao-table-header-background != false {
-      background: $ao-table-header-background;
+    @if $ao-table-header-background-image != false {
+      @include background-image($ao-table-header-background-image);
+    }
+    @if $ao-table-header-background-color != false {
+      background-color: $ao-table-header-background-color;
     }
     
     &:first-child {
@@ -89,27 +123,103 @@ $ao-table-responsive-breakpoint: false !default;
     &:last-child {
       // if there are rounded corners on the table, we need to apply them here as well
     }
-  
   }
   
-  
   // rows
-  
   TR {
-  
-  
+
+    @if $ao-table-row-border-top != false {
+      border-top: $ao-table-row-border-top;
+    }
+    @if $ao-table-row-border-bottom != false {
+      border-bottom: $ao-table-row-border-bottom;
+    }
+    @if $ao-table-row-border-left != false {
+      border-left: $ao-table-row-border-left;
+    }
+    @if $ao-table-row-border-right != false {
+      border-right: $ao-table-row-border-right;
+    }
+    &.odd {
+      // odd striping goes here
+    }
+    &.even {
+      // even striping goes here
+    }
+
     // cells
-    
     TD {
-      &.odd {
-        // odd striping goes here
+      @if $ao-table-cell-border-top != false {
+        border-top: $ao-table-cell-border-top;
       }
-      &.even {
-        // even striping goes here
+      @if $ao-table-cell-border-bottom != false {
+        border-bottom: $ao-table-cell-border-bottom;
+      }
+      @if $ao-table-cell-border-left != false {
+        border-left: $ao-table-cell-border-left;
+      }
+      @if $ao-table-cell-border-right != false {
+        border-right: $ao-table-cell-border-right;
+      }
+      @if $ao-table-cell-background-color != false {
+        background-color: $ao-table-cell-background-color;
+      }
+      @if $ao-table-cell-padding != false {
+        padding: $ao-table-cell-padding;
+      }
+      &:first-child {
+        @if $ao-table-row-border-left != false {
+          border-left: $ao-table-row-border-left;
+        }
+      }
+      &:last-child {
+        @if $ao-table-row-border-right != false {
+          border-right: $ao-table-row-border-right;
+        }
+      }
+    }
+    
+    // striping
+    &.even {
+      TD {
+        @if $ao-table-cell-background-color-even != false {
+          background-color: $ao-table-cell-background-color-even;
+        }
+      }
+      @if $ao-table-row-hover-color-even != false {
+        &:hover {
+          TD {
+            background-color: $ao-table-row-hover-color-even;
+          }
+        }
+      }
+    }
+    &.odd {
+      TD {
+        @if $ao-table-cell-background-color-odd != false {
+          background-color: $ao-table-cell-background-color-odd;
+        }
+      }
+      @if $ao-table-row-hover-color-odd != false {
+        &:hover {
+          TD {
+            background-color: $ao-table-row-hover-color-odd;
+          }
+        }
+      }
+    }
+    
+    // table border
+    // the table will not do this itself, we use the cells to do the borders
+    @if $ao-table-border-bottom != false {
+      &:last-child {
+        TD {
+          border-bottom: $ao-table-border-bottom;
+        }
       }
     }
   }
-  
+    
   /* RESPONSIVE TABLES */
   /* Flipscroll - http://elvery.net/demo/responsive-tables/ */
   @if $ao-table-responsive-style == flip-scroll {
@@ -158,126 +268,15 @@ $ao-table-responsive-breakpoint: false !default;
       */    
     }
   }
-}
 
+}
 
 /* THIS IS THE OLD STUFF */
 
 
 /* container tables */
 /* used to display contacts */
-.container-table {
-  
-  width: 100%;
-  border-collapse: separate;
-  border: none;
-  margin: .75em 0em 1em;
-  padding: 0em;
-  color: #555;
-  font-size: $h5-font-size;  
-  
-  TR {
-  
-    border-collapse: separate;
-    
-    TH {
-    
-      @extend .widget-table-titles-large;
-      @include background-image(linear-gradient(to bottom, #ffffff 31%,#dfe4e6 100%));
-      text-transform: uppercase;
 
-      .form-type-checkbox {
-        background-color: #CCC;
-        margin: 0em .5em 0em .5em;
-        @include border-radius(4px);        
-      }
-      
-      &:first-child {
-        @include border-radius(8px 0px 0px 0px);
-        border-left: 1px solid #CCC;
-      }
-      &:last-child {
-        @include border-radius(0px 8px 0px 0px);
-        border-right: 1px solid #CCC;
-      }
-    }
-  }
-  
-  TR {
-  
-    &:last-child {
-      TD {
-        border-bottom: 1px solid #ccc;
-      }
-    }
-  
-    &:hover {
-      TD {
-        background-color: White;
-      }
-    }
-  
-    &.even {
-    
-      TD {
-        background-color: #f1f1f1;
-      }
-      &:hover {
-        TD {
-          background-color: White;
-        }
-      }
-
-    }
-  
-  
-    TD {
-    
-      border-bottom: 1px solid #e1e1e1;
-      background-color: #fafafa;
-      padding: 0em .5em;
-      border-left: 1px solid #f9f9f9;
-      border-right: 1px solid #CCC;
-      
-      &.active {
-        font-weight: 700;
-        border-left: 1px solid #CCC;
-        border-right: 1px solid #CCC;
-      }
-      
-      
-      &:first-child {
-        border-left: 1px solid #CCC;
-      }
-      &:last-child {
-        border-right: 1px solid #CCC;
-      }      
-    
-      .form-type-checkbox {
-        margin: 0em auto;
-      }
-      
-      .btn {
-         @extend .btn-small;
-      }
-      .form-type-checkbox {
-        background-color: #e5e5e5;
-        margin: 0em;
-        @include border-radius(4px);        
-        text-align: center;
-      }
-      
-      .ao_contact_icon {
-        background: url(../images/ao-backend-icons.png) 0px -150px no-repeat;
-        height: 27px;
-        width: 27px;
-        margin: 0px .05em;
-      }
-
-    }
-  }
-  
-}
 
 /* data tables */
 /* displays tables related to run downs of data within reports */
