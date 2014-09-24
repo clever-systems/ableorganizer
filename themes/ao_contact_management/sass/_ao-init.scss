@@ -5,9 +5,10 @@
  * Provides default values for mixins used in AbleOrganizer
  * Variables are organized by category
  */
- 
+
 /**
  * BREAKPOINTS
+ *
  * Breakpoints used in the theme
  */
 /* Default Breakpoints from Zen */
@@ -18,12 +19,35 @@ $breakpoint-zen-larger: 1200px;
 
 /**
  * DROP DOWN MENUS
- * Variables controlling the default appearance of drop down menus
+ *
+ * These settings control the default appearance of menus throughout the site.
  */
 $ao-menu-trigger-style: '.ao-menu-default-trigger-style';
 $ao-menu-menu-style: '.ao-menu-default-menu-style';
 $ao-menu-element-style: '.ao-menu-default-element-style';
 $ao-menu-border-radius:  0em 0em 0.5em 0.5em;
+
+/**
+ * BUTTONS
+ * These settings control the default appearance of buttons.
+ */
+$ao-button-hover-bg-color:  #e1e1e1;
+
+/**
+ * ICONS
+ * 
+ * These settings affect how icons are displayed throughout the system. 
+ * Uncomment these kinds to modify the way icons are handled globally.
+ */
+// $ao-icon-font-family:    "ao-icons";
+// $ao-icon-default-size:   30px;
+// $ao-icon-float:          right !default;
+// $ao-icon-background:     #CCC;
+// $ao-icon-color:          Red;
+// $ao-icon-text-shadow:    false;
+// $ao-icon-border:         1px solid #CCC;
+// $ao-icon-border-radius:  5px;
+
 
 /**
  * DROP DOWN MENU DEFAULTS
@@ -64,12 +88,6 @@ $ao-menu-border-radius:  0em 0em 0.5em 0.5em;
     @include ao-fontography($ao-fonto-style: normal, $ao-fonto-color: White);
   }
 } 
-
-/**
- * BUTTONS
- * Variables controlling the default appearance of buttons
- */
-$ao-button-hover-bg-color:  #e1e1e1;
 
 /**
  * DEFAULT BUTTONS

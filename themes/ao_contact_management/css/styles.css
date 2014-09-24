@@ -1805,6 +1805,61 @@ tr.selected td {
  */
 /**
  * @file
+ * Displays activities and icons in the system
+ *
+ */
+/**
+ * DEFAULT VARIABLES
+ * Default settings, see mixin documentation for explanations.
+ */
+/* main activity icon registry */
+/* ao-icon-register defaults */
+/* ao-icon-get defaults */
+/**
+ * AO GET ICON
+ *
+ * Creates a complete set of styles for an icon.
+ * Use this when you want to generate styles for an icon.
+ *
+ * @variables:
+ * $ao-style: Required. The name of the icon. Defaults to false.
+ * $ao-icon-size: The size of the icon. Must be in pixels. Defaults to $ao-icon-default-size.
+ *
+ */
+/**
+ * AO SET ACTIVITY ICON
+ *
+ * Sets values for an activity icon.
+ * 
+ * @variables:
+ * $ao-icon-title: Required. Title for the icon. Defaults to false.
+ * $ao-icon-background: Background for the icon. Can be overridden when the icon is displayed. Defaults to false.
+ * $ao-icon-color: Color for the icon. Can be overridden when the icon is displayed. Defaults to White.
+ * $ao-icon-text-shadow: Shadow for the text in the icon.
+ * $ao-icon-border: Standard border for the icon. Can be overridden when the icon is displayed. Defaults to false.
+ * $ao-icon-border-radius: Border radius for the icon. Can be overridden when the icon is displayed. Defaults to false.
+ * $ao-icon-box-shadow: Box shadow for the icon. Can be overridden when the icon is displayed. Defaults to false.
+ * $ao-icon-margin: Margin for the icon. Defaults to false.
+ * $ao-icon-padding: Padding for the icon. Defaults to false.
+ * 
+ */
+/**
+ * AO GET ICON INFO
+ *
+ * Returns information about an activity icon.
+ * 
+ * @variables:
+ * $ao-style: Required. The name of the icon. Defaults to false.
+ * 
+ */
+/**
+ * AO ICON GENERATE STYLE
+ *
+ * Generates a set of styles for icons that override some of the default settings.
+ * 
+ */
+/**
+ * @file
  * AbleOrganizer Font Initialization
  *
  * Creates font styles used throughout the site
@@ -1817,6 +1872,554 @@ tr.selected td {
 /* BLOCKS */
 /* BUTTONS */
 /* MENUS */
+/**
+ * @file
+ * Controls the appearance of icons available for AbleOrganizer.
+ *
+ */
+/**
+ * ICON FONTS AND DEFAULT STYLES
+ * Add fonts used for the icons
+ */
+@font-face {
+  font-family: "ao-icons";
+  src: url("../fonts/ao-icons.eot");
+  src: url("../fonts/ao-icons.eot?#iefix") format("embedded-opentype"), url("../fonts/ao-icons.woff") format("woff"), url("../fonts/ao-icons.ttf") format("truetype"), url("../fonts/ao-icons.svg#ao-icons") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* line 24, ../sass/_ao-init-icons.scss */
+[data-icon]:before {
+  font-family: "ao-icons" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 36, ../sass/_ao-init-icons.scss */
+[class^="ao-icon-"]:before,
+[class*=" ao-icon-"]:before {
+  font-family: "ao-icons" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/**
+ * ICONS
+ * Icons used by AbleOrganizer
+ */
+/* line 54, ../sass/_ao-init-icons.scss */
+.ao-icon-zap:before {
+  content: "o";
+}
+
+/* line 272, ../sass/components/_icons.scss */
+.cmcd_donation .crm-core-activity-icon {
+  background-color: #389a19 !important;
+}
+/* line 274, ../sass/components/_icons.scss */
+.cmcd_donation .crm-core-activity-icon:before {
+  content: "\e00b" !important;
+}
+
+/* line 272, ../sass/components/_icons.scss */
+.cmcev_event_registration .crm-core-activity-icon {
+  background-color: #1a6099 !important;
+}
+/* line 274, ../sass/components/_icons.scss */
+.cmcev_event_registration .crm-core-activity-icon:before {
+  content: "b" !important;
+}
+
+/* line 272, ../sass/components/_icons.scss */
+.cmcp_petition_signature .crm-core-activity-icon {
+  background-color: #e26427 !important;
+}
+/* line 274, ../sass/components/_icons.scss */
+.cmcp_petition_signature .crm-core-activity-icon:before {
+  content: "E" !important;
+}
+
+/* line 272, ../sass/components/_icons.scss */
+.cmcv_volunteer_commitment .crm-core-activity-icon {
+  background-color: #d02424 !important;
+}
+/* line 274, ../sass/components/_icons.scss */
+.cmcv_volunteer_commitment .crm-core-activity-icon:before {
+  content: "(" !important;
+}
+
+/* line 110, ../sass/_ao-init-icons.scss */
+.ao-icon-clipboard-pencil:before {
+  content: "E";
+}
+
+/* line 120, ../sass/_ao-init-icons.scss */
+.ao-icon-location:before {
+  content: "b";
+}
+
+/* line 129, ../sass/_ao-init-icons.scss */
+.ao-icon-dollar:before {
+  content: "C";
+}
+
+/* line 139, ../sass/_ao-init-icons.scss */
+.ao-icon-heart:before {
+  content: "m";
+}
+
+/* line 149, ../sass/_ao-init-icons.scss */
+.ao-icon-torso:before {
+  content: "p";
+}
+
+/* line 159, ../sass/_ao-init-icons.scss */
+.ao-icon-torsos-all:before {
+  content: "t";
+}
+
+/* line 169, ../sass/_ao-init-icons.scss */
+.ao-icon-home:before {
+  content: "!";
+}
+
+/* line 178, ../sass/_ao-init-icons.scss */
+.ao-icon-dashboard:before {
+  content: "c";
+}
+
+/* line 188, ../sass/_ao-init-icons.scss */
+.ao-icon-graph-bar:before {
+  content: "-";
+}
+
+/**
+ * ICON STYLES
+ * Generic icon styles
+ */
+/* line 204, ../sass/_ao-init-icons.scss */
+.ao-icon-star:before {
+  content: "a";
+}
+
+/* line 207, ../sass/_ao-init-icons.scss */
+.ao-icon-location:before {
+  content: "b";
+}
+
+/* line 210, ../sass/_ao-init-icons.scss */
+.ao-icon-dashboard:before {
+  content: "c";
+}
+
+/* line 213, ../sass/_ao-init-icons.scss */
+.ao-icon-gear:before {
+  content: "d";
+}
+
+/* line 216, ../sass/_ao-init-icons.scss */
+.ao-icon-pencil:before {
+  content: "e";
+}
+
+/* line 219, ../sass/_ao-init-icons.scss */
+.ao-icon-code:before {
+  content: "f";
+}
+
+/* line 222, ../sass/_ao-init-icons.scss */
+.ao-icon-chevron-down:before {
+  content: "g";
+}
+
+/* line 225, ../sass/_ao-init-icons.scss */
+.ao-icon-chevron-left:before {
+  content: "h";
+}
+
+/* line 228, ../sass/_ao-init-icons.scss */
+.ao-icon-chevron-right:before {
+  content: "i";
+}
+
+/* line 231, ../sass/_ao-init-icons.scss */
+.ao-icon-chevron-up:before {
+  content: "j";
+}
+
+/* line 234, ../sass/_ao-init-icons.scss */
+.ao-icon-comment:before {
+  content: "k";
+}
+
+/* line 237, ../sass/_ao-init-icons.scss */
+.ao-icon-comment-discussion:before {
+  content: "l";
+}
+
+/* line 240, ../sass/_ao-init-icons.scss */
+.ao-icon-heart:before {
+  content: "m";
+}
+
+/* line 243, ../sass/_ao-init-icons.scss */
+.ao-icon-flame:before {
+  content: "n";
+}
+
+/* line 246, ../sass/_ao-init-icons.scss */
+.ao-icon-zap:before {
+  content: "o";
+}
+
+/* line 249, ../sass/_ao-init-icons.scss */
+.ao-icon-torso:before {
+  content: "p";
+}
+
+/* line 252, ../sass/_ao-init-icons.scss */
+.ao-icon-torso-business:before {
+  content: "q";
+}
+
+/* line 255, ../sass/_ao-init-icons.scss */
+.ao-icon-torso-female:before {
+  content: "r";
+}
+
+/* line 258, ../sass/_ao-init-icons.scss */
+.ao-icon-torsos:before {
+  content: "s";
+}
+
+/* line 261, ../sass/_ao-init-icons.scss */
+.ao-icon-torsos-all:before {
+  content: "t";
+}
+
+/* line 264, ../sass/_ao-init-icons.scss */
+.ao-icon-torsos-all-female:before {
+  content: "u";
+}
+
+/* line 267, ../sass/_ao-init-icons.scss */
+.ao-icon-torsos-female-male:before {
+  content: "v";
+}
+
+/* line 270, ../sass/_ao-init-icons.scss */
+.ao-icon-torsos-male-female:before {
+  content: "w";
+}
+
+/* line 273, ../sass/_ao-init-icons.scss */
+.ao-icon-wrench:before {
+  content: "x";
+}
+
+/* line 276, ../sass/_ao-init-icons.scss */
+.ao-icon-x:before {
+  content: "y";
+}
+
+/* line 279, ../sass/_ao-init-icons.scss */
+.ao-icon-social-facebook:before {
+  content: "z";
+}
+
+/* line 282, ../sass/_ao-init-icons.scss */
+.ao-icon-social-evernote:before {
+  content: "A";
+}
+
+/* line 285, ../sass/_ao-init-icons.scss */
+.ao-icon-print:before {
+  content: "B";
+}
+
+/* line 288, ../sass/_ao-init-icons.scss */
+.ao-icon-dollar:before {
+  content: "C";
+}
+
+/* line 291, ../sass/_ao-init-icons.scss */
+.ao-icon-euro:before {
+  content: "D";
+}
+
+/* line 294, ../sass/_ao-init-icons.scss */
+.ao-icon-clipboard-pencil:before {
+  content: "E";
+}
+
+/* line 297, ../sass/_ao-init-icons.scss */
+.ao-icon-check:before {
+  content: "F";
+}
+
+/* line 300, ../sass/_ao-init-icons.scss */
+.ao-icon-yen:before {
+  content: "G";
+}
+
+/* line 303, ../sass/_ao-init-icons.scss */
+.ao-icon-bitcoin:before {
+  content: "H";
+}
+
+/* line 306, ../sass/_ao-init-icons.scss */
+.ao-icon-bullhorn:before {
+  content: "I";
+}
+
+/* line 309, ../sass/_ao-init-icons.scss */
+.ao-icon-briefcase-case-two:before {
+  content: "J";
+}
+
+/* line 312, ../sass/_ao-init-icons.scss */
+.ao-icon-gears-setting:before {
+  content: "K";
+}
+
+/* line 315, ../sass/_ao-init-icons.scss */
+.ao-icon-twitter:before {
+  content: "L";
+}
+
+/* line 318, ../sass/_ao-init-icons.scss */
+.ao-icon-twitter-square:before {
+  content: "M";
+}
+
+/* line 321, ../sass/_ao-init-icons.scss */
+.ao-icon-pinterest-square:before {
+  content: "N";
+}
+
+/* line 324, ../sass/_ao-init-icons.scss */
+.ao-icon-pinterest:before {
+  content: "O";
+}
+
+/* line 327, ../sass/_ao-init-icons.scss */
+.ao-icon-instagram:before {
+  content: "P";
+}
+
+/* line 330, ../sass/_ao-init-icons.scss */
+.ao-icon-facebook-square:before {
+  content: "Q";
+}
+
+/* line 333, ../sass/_ao-init-icons.scss */
+.ao-icon-facebook:before {
+  content: "R";
+}
+
+/* line 336, ../sass/_ao-init-icons.scss */
+.ao-icon-google-plus:before {
+  content: "S";
+}
+
+/* line 339, ../sass/_ao-init-icons.scss */
+.ao-icon-google-plus-1:before {
+  content: "T";
+}
+
+/* line 342, ../sass/_ao-init-icons.scss */
+.ao-icon-cc:before {
+  content: "U";
+}
+
+/* line 345, ../sass/_ao-init-icons.scss */
+.ao-icon-cc-nc:before {
+  content: "V";
+}
+
+/* line 348, ../sass/_ao-init-icons.scss */
+.ao-icon-cc-nc-eu:before {
+  content: "W";
+}
+
+/* line 351, ../sass/_ao-init-icons.scss */
+.ao-icon-cc-nc-jp:before {
+  content: "X";
+}
+
+/* line 354, ../sass/_ao-init-icons.scss */
+.ao-icon-cc-pd:before {
+  content: "Y";
+}
+
+/* line 357, ../sass/_ao-init-icons.scss */
+.ao-icon-pinterest-circled:before {
+  content: "Z";
+}
+
+/* line 360, ../sass/_ao-init-icons.scss */
+.ao-icon-pinterest-1:before {
+  content: "0";
+}
+
+/* line 363, ../sass/_ao-init-icons.scss */
+.ao-icon-linkedin-alt:before {
+  content: "1";
+}
+
+/* line 366, ../sass/_ao-init-icons.scss */
+.ao-icon-linkedin:before {
+  content: "2";
+}
+
+/* line 369, ../sass/_ao-init-icons.scss */
+.ao-icon-vimeo:before {
+  content: "3";
+}
+
+/* line 372, ../sass/_ao-init-icons.scss */
+.ao-icon-virb:before {
+  content: "4";
+}
+
+/* line 375, ../sass/_ao-init-icons.scss */
+.ao-icon-alert:before {
+  content: "5";
+}
+
+/* line 378, ../sass/_ao-init-icons.scss */
+.ao-icon-check-1:before {
+  content: "6";
+}
+
+/* line 381, ../sass/_ao-init-icons.scss */
+.ao-icon-circle-slash:before {
+  content: "7";
+}
+
+/* line 384, ../sass/_ao-init-icons.scss */
+.ao-icon-device-camera:before {
+  content: "8";
+}
+
+/* line 387, ../sass/_ao-init-icons.scss */
+.ao-icon-globe:before {
+  content: "9";
+}
+
+/* line 390, ../sass/_ao-init-icons.scss */
+.ao-icon-home:before {
+  content: "!";
+}
+
+/* line 393, ../sass/_ao-init-icons.scss */
+.ao-icon-megaphone:before {
+  content: "\"";
+}
+
+/* line 396, ../sass/_ao-init-icons.scss */
+.ao-icon-tools:before {
+  content: "#";
+}
+
+/* line 399, ../sass/_ao-init-icons.scss */
+.ao-icon-x-1:before {
+  content: "$";
+}
+
+/* line 402, ../sass/_ao-init-icons.scss */
+.ao-icon-repo:before {
+  content: "%";
+}
+
+/* line 405, ../sass/_ao-init-icons.scss */
+.ao-icon-calendar:before {
+  content: "&";
+}
+
+/* line 408, ../sass/_ao-init-icons.scss */
+.ao-icon-checkbox:before {
+  content: "'";
+}
+
+/* line 411, ../sass/_ao-init-icons.scss */
+.ao-icon-heart-1:before {
+  content: "(";
+}
+
+/* line 414, ../sass/_ao-init-icons.scss */
+.ao-icon-flag:before {
+  content: ")";
+}
+
+/* line 417, ../sass/_ao-init-icons.scss */
+.ao-icon-filter:before {
+  content: "*";
+}
+
+/* line 420, ../sass/_ao-init-icons.scss */
+.ao-icon-graph-pie:before {
+  content: "+";
+}
+
+/* line 423, ../sass/_ao-init-icons.scss */
+.ao-icon-graph-horizontal:before {
+  content: ",";
+}
+
+/* line 426, ../sass/_ao-init-icons.scss */
+.ao-icon-graph-bar:before {
+  content: "-";
+}
+
+/* line 429, ../sass/_ao-init-icons.scss */
+.ao-icon-graph-trend:before {
+  content: ".";
+}
+
+/* line 432, ../sass/_ao-init-icons.scss */
+.ao-icon-mail:before {
+  content: "/";
+}
+
+/* line 435, ../sass/_ao-init-icons.scss */
+.ao-icon-tag-2:before {
+  content: ":";
+}
+
+/* line 438, ../sass/_ao-init-icons.scss */
+.ao-icon-tags:before {
+  content: ";";
+}
+
+/* line 441, ../sass/_ao-init-icons.scss */
+.ao-icon-tachometer:before {
+  content: "<";
+}
+
+/* line 444, ../sass/_ao-init-icons.scss */
+.ao-icon-youtube-square:before {
+  content: "=";
+}
+
+/* line 447, ../sass/_ao-init-icons.scss */
+.ao-icon-youtube:before {
+  content: ">";
+}
+
 /**
  * @file
  * Transitions
@@ -3032,142 +3635,49 @@ h1, h2, h3, h4, h5, h6 {
  * DEFAULT VARIABLES
  * Default settings, see mixin documentation for explanations.
  */
-/* main activity icon registry */
-/* ao-activity-icon-register defaults */
-/* ao-activity-icon-display defaults */
 /* ao-activity-item defaults */
-/**
- * AO SET ACTIVITY ICON
- *
- * Sets values for an activity icon.
- * 
- * @variables:
- * $ao-activity-icon-title: Required. Title for the icon. Defaults to false.
- * $ao-activity-icon-background: Background for the icon. Can be overridden when the icon is displayed. Defaults to false.
- * $ao-activity-icon-color: Color for the icon. Can be overridden when the icon is displayed. Defaults to White.
- * $ao-activity-icon-text-shadow: Shadow for the text in the icon.
- * $ao-activity-icon-border: Standard border for the icon. Can be overridden when the icon is displayed. Defaults to false.
- * $ao-activity-icon-border-radius: Border radius for the icon. Can be overridden when the icon is displayed. Defaults to false.
- * $ao-activity-icon-box-shadow: Box shadow for the icon. Can be overridden when the icon is displayed. Defaults to false.
- * $ao-activity-icon-margin: Margin for the icon. Defaults to false.
- * $ao-activity-icon-padding: Padding for the icon. Defaults to false.
- * 
- */
-/**
- * AO GET ACTIVITY ICON
- *
- * Returns and activity icon.
- * 
- * @variables:
- * $ao-activity-style: Required. The name of the icon. Defaults to false.
- * 
- */
-/**
- * AO GET ACTIVITY ICON STYLES
- *
- * Lays out the styles to apply to the activity icon.
- *
- * @variables:
- * $ao-activity-style: Required. The name of the icon. Defaults to false.
- *
- */
 /**
  * AO ACTIVITY ITEM
  * 
  * Styles a single activity feed item.
  * 
+ * Variables. All variables are ignored if set to false, unless otherwise noted.
+ * @TODO: clean up this list. There are variables no longer in use.
  * 
- * $ao-activity-item-icon-selector: Required.
- * $ao-activity-item-icon-style: Required.
+ * $ao-activity-item-margin: The margin to apply to the activity item. Defaults to false.
+ * $ao-activity-item-padding: The padding to apply to the activity item. Defaults to false.
+ * $ao-activity-item-width: The padding to apply to the activity item. Defaults to 100%.
+ * $ao-activity-item-icon-selector: CSS selector for the activity icon.
+ * $ao-activity-item-info-selector: CSS selector for information about the activity.
+ * $ao-activity-item-info-selector: CSS selector for action links associated with activity.
+ * $ao-activity-item-icon-size: The size to use for the icons. Should be a number experessed as pixels,
+ *   or a preset value. See ao-get-icon for details. Defaults to $ao-icon-default-size.
+ * $ao-activity-item-icon-style: 
  * 
  */
 /* activity in an activity feed */
-/* line 303, ../sass/components/_activities.scss */
+/* line 172, ../sass/components/_activities.scss */
 .crm-core-activity {
   position: relative;
   border-bottom: 1px solid #e1e1e1;
-  -moz-transition-property: all;
-  -o-transition-property: all;
-  -webkit-transition-property: all;
-  transition-property: all;
-  -moz-transition-duration: 0.2s;
-  -o-transition-duration: 0.2s;
-  -webkit-transition-duration: 0.2s;
-  transition-duration: 0.2s;
-  -moz-transition-timing-function: ease-in-out;
-  -o-transition-timing-function: ease-in-out;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
   font-size: 0.95em;
-}
-/* line 311, ../sass/components/_activities.scss */
-.crm-core-activity .crm-core-activity-info {
-  position: relative;
-  margin-left: 3em;
-}
-/* line 314, ../sass/components/_activities.scss */
-.crm-core-activity .crm-core-activity-info .crm-core-activity-actions {
-  float: right;
-}
-/* line 318, ../sass/components/_activities.scss */
-.crm-core-activity .crm-core-activity-icon {
-  height: 30px;
-  width: 30px;
-  position: absolute;
-  left: 0em;
-  top: 4px;
-}
-/* line 325, ../sass/components/_activities.scss */
-.crm-core-activity .crm-core-activity-icon SPAN {
-  display: block;
-  height: 30px;
-  width: 30px;
-  background: #ffb533 url("../images/ao-backend-icons.png") -120px -30px no-repeat;
-  border-radius: 5px;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
 }
 
 /* activity feed */
-/* line 342, ../sass/components/_activities.scss */
+/* line 178, ../sass/components/_activities.scss */
 .activity-record-pane, .view-ao-crm-activities-by-contact .view-content, .pane-ao-dashboard-act-stream-panel-pane-1 .view-content {
   border: 1px solid #e1e1e1;
   background-color: White;
   padding: 1em;
   margin: 1em 0em;
 }
-/* line 348, ../sass/components/_activities.scss */
+/* line 184, ../sass/components/_activities.scss */
 .activity-record-pane .views-row:last-child .crm-core-activity, .view-ao-crm-activities-by-contact .view-content .views-row:last-child .crm-core-activity, .pane-ao-dashboard-act-stream-panel-pane-1 .view-content .views-row:last-child .crm-core-activity {
   border-bottom: none;
 }
 
-/* activity icons */
-/* activty icons for donations */
-/* line 360, ../sass/components/_activities.scss */
-.cmcd_donation .crm-core-activity-icon SPAN {
-  background: #389a19 url("../images/ao-backend-icons.png") 0px -30px no-repeat;
-}
-
-/* activty icons for events */
-/* line 368, ../sass/components/_activities.scss */
-.cmcev_event_registration .crm-core-activity-icon SPAN {
-  background: #1a6099 url("../images/ao-backend-icons.png") -90px -30px no-repeat;
-}
-
-/* activty icons for petitions */
-/* line 376, ../sass/components/_activities.scss */
-.cmcp_petition_signature .crm-core-activity-icon SPAN {
-  background: #e26427 url("../images/ao-backend-icons.png") -60px -30px no-repeat;
-}
-
-/* activty icons for petitions */
-/* line 385, ../sass/components/_activities.scss */
-.cmcv_volunteer_commitment .crm-core-activity-icon SPAN {
-  background: #d02424 url("../images/ao-backend-icons.png") -30px -30px no-repeat;
-}
-
 /* full page view of an activity */
-/* line 392, ../sass/components/_activities.scss */
+/* line 191, ../sass/components/_activities.scss */
 .entity-crm-core-activity {
   border: 1px solid #e1e1e1;
   background-color: White;
@@ -3178,7 +3688,7 @@ h1, h2, h3, h4, h5, h6 {
 /* move to theme */
 /* activity page */
 /* dashboard */
-/* line 413, ../sass/components/_activities.scss */
+/* line 209, ../sass/components/_activities.scss */
 .pane-ao-dashboard-act-stream-panel-pane-1 h2.pane-title {
   position: absolute;
   top: 8px;
@@ -3188,12 +3698,12 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
   margin: 0em;
 }
-/* line 424, ../sass/components/_activities.scss */
+/* line 220, ../sass/components/_activities.scss */
 .pane-ao-dashboard-act-stream-panel-pane-1 .view-content {
   margin: 0em 0em;
   padding-top: 64px;
 }
-/* line 428, ../sass/components/_activities.scss */
+/* line 224, ../sass/components/_activities.scss */
 .pane-ao-dashboard-act-stream-panel-pane-1 .view-content .crm-core-activity-actions {
   margin-left: 12px;
 }
@@ -3507,12 +4017,24 @@ UL.tabs.tabs-secondary LI {
  */
 /**
  * BREAKPOINTS
+ *
  * Breakpoints used in the theme
  */
 /* Default Breakpoints from Zen */
 /**
  * DROP DOWN MENUS
- * Variables controlling the default appearance of drop down menus
+ *
+ * These settings control the default appearance of menus throughout the site.
+ */
+/**
+ * BUTTONS
+ * These settings control the default appearance of buttons.
+ */
+/**
+ * ICONS
+ * 
+ * These settings affect how icons are displayed throughout the system. 
+ * Uncomment these kinds to modify the way icons are handled globally.
  */
 /**
  * DROP DOWN MENU DEFAULTS
@@ -3520,7 +4042,7 @@ UL.tabs.tabs-secondary LI {
  * These styles apply to drop down menus by default.
  * They can be removed or replaced using default values for the mixin.
  */
-/* line 34, ../sass/_ao-init.scss */
+/* line 60, ../sass/_ao-init.scss */
 .ao-menu-default-trigger-style {
   -moz-border-radius: 0.5em;
   -webkit-border-radius: 0.5em;
@@ -3540,7 +4062,7 @@ UL.tabs.tabs-secondary LI {
   cursor: pointer;
 }
 
-/* line 44, ../sass/_ao-init.scss */
+/* line 70, ../sass/_ao-init.scss */
 .ao-menu-default-menu-style {
   background-color: #00b0f3;
   white-space: nowrap;
@@ -3550,18 +4072,18 @@ UL.tabs.tabs-secondary LI {
   z-index: 1000;
 }
 
-/* line 52, ../sass/_ao-init.scss */
+/* line 78, ../sass/_ao-init.scss */
 .ao-menu-default-element-style {
   list-style-type: none;
   list-style-image: none;
   padding: 0.375em 0.75em;
   margin: 0em;
 }
-/* line 57, ../sass/_ao-init.scss */
+/* line 83, ../sass/_ao-init.scss */
 .ao-menu-default-element-style:hover {
   background-color: #009ed9;
 }
-/* line 60, ../sass/_ao-init.scss */
+/* line 86, ../sass/_ao-init.scss */
 .ao-menu-default-element-style A {
   margin: 0em;
   padding: 0em;
@@ -3570,14 +4092,10 @@ UL.tabs.tabs-secondary LI {
 }
 
 /**
- * BUTTONS
- * Variables controlling the default appearance of buttons
- */
-/**
  * DEFAULT BUTTONS
  * Variables controlling the default appearance of buttons
  */
-/* line 78, ../sass/_ao-init.scss */
+/* line 98, ../sass/_ao-init.scss */
 .small-grey-button {
   display: inline-block;
   padding: 0.1em 1em;
@@ -3611,7 +4129,7 @@ UL.tabs.tabs-secondary LI {
   background-color: #e1e1e1;
 }
 
-/* line 83, ../sass/_ao-init.scss */
+/* line 103, ../sass/_ao-init.scss */
 .red-button {
   -moz-transition-property: all;
   -o-transition-property: all;
@@ -3649,7 +4167,7 @@ UL.tabs.tabs-secondary LI {
  * This is the base theme file for contact management in AbleOrganizer.
  */
 /**
- * REGIONS
+ * REGIONS / SECTIONS
  */
 /* line 11, ../sass/themes/_contact-management.scss */
 BODY > section {
@@ -3708,35 +4226,45 @@ BODY > section .section-wrapper {
 section.banner {
   background: #2d4552;
   padding: 0.5em 0em;
+  font-size: 10.72px;
+}
+/* line 43, ../sass/themes/_contact-management.scss */
+section.banner A {
+  color: #dfe4e6;
+  text-decoration: none;
+}
+/* line 46, ../sass/themes/_contact-management.scss */
+section.banner A:hover {
+  color: White;
 }
 
 /* BRANDING BANNER */
-/* line 42, ../sass/themes/_contact-management.scss */
+/* line 53, ../sass/themes/_contact-management.scss */
 section.branding {
   background: white;
   padding: 0.75em 0em 0em;
 }
 @media (min-width: 960px) {
-  /* line 42, ../sass/themes/_contact-management.scss */
+  /* line 53, ../sass/themes/_contact-management.scss */
   section.branding {
     padding: 1.5em 0em 0em;
   }
 }
 
 /* HEADER */
-/* line 54, ../sass/themes/_contact-management.scss */
+/* line 65, ../sass/themes/_contact-management.scss */
 section.header {
   background: #3697ee;
 }
 @media (min-width: 960px) {
-  /* line 59, ../sass/themes/_contact-management.scss */
+  /* line 70, ../sass/themes/_contact-management.scss */
   section.header .section-wrapper {
     height: 5.25em;
   }
 }
 
 /* CONTENT */
-/* line 65, ../sass/themes/_contact-management.scss */
+/* line 76, ../sass/themes/_contact-management.scss */
 section.content {
   background: whitesmoke;
   padding: 1.5em 0em;
@@ -3746,13 +4274,13 @@ section.content {
  * MENUS
  */
 /* Main Menu */
-/* line 77, ../sass/themes/_contact-management.scss */
+/* line 88, ../sass/themes/_contact-management.scss */
 nav#main-menu {
   position: absolute;
   right: 0px;
   bottom: 0px;
 }
-/* line 81, ../sass/themes/_contact-management.scss */
+/* line 92, ../sass/themes/_contact-management.scss */
 nav#main-menu UL.links {
   margin: 0em;
   -moz-box-sizing: border-box;
@@ -3805,7 +4333,7 @@ nav#main-menu UL.links A {
   margin: 0em;
   padding: 0em;
 }
-/* line 83, ../sass/themes/_contact-management.scss */
+/* line 94, ../sass/themes/_contact-management.scss */
 nav#main-menu UL.links LI, nav#main-menu UL.links A {
   -moz-transition-property: all;
   -o-transition-property: all;
@@ -3820,7 +4348,7 @@ nav#main-menu UL.links LI, nav#main-menu UL.links A {
   -webkit-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
 }
-/* line 86, ../sass/themes/_contact-management.scss */
+/* line 97, ../sass/themes/_contact-management.scss */
 nav#main-menu UL.links A {
   color: white;
   font-weight: 600;
@@ -3844,38 +4372,154 @@ nav#main-menu UL.links A {
   transition-timing-function: ease-in-out;
 }
 
-/* line 94, ../sass/themes/_contact-management.scss */
-section.banner {
-  font-size: 10.72px;
+/**
+ * DASHBOARD
+ */
+/* line 107, ../sass/themes/_contact-management.scss */
+BODY.page-crm-core-dashboard {
+  /* PANELS */
+  /* PANEL TITLES */
+  /* ACTIVITY LISTS */
+  /* QUICK LINKS */
+  /* SUMMARY TABLES */
+  /* BREAKPOINTS */
 }
-/* line 96, ../sass/themes/_contact-management.scss */
-section.banner A {
-  color: #dfe4e6;
-  text-decoration: none;
+/* line 113, ../sass/themes/_contact-management.scss */
+BODY.page-crm-core-dashboard .crm-core-activity {
+  position: relative;
+  padding: 0.9em 0em;
+  width: 100%;
+  /* ICONS */
+  /* INFO BOX */
+  /* ACTION LINKS */
+  /*  
+  
+    // ICON OVERRIDES
+    // this will let us mess with the appearance of an icon
+    // should go into the icon callback
+    
+    // get styles for the icon
+    @if $ao-activity-item-info-selector != false and $ao-activity-item-icon-style != false {
+      .crm-core-activity-info{
+      
+        @include ao-get-icon ($ao-activity-style: $ao-activity-style);
+        
+        // apply height and width
+        @if $ao-activity-item-icon-height != false {
+          height: $ao-activity-item-icon-height;
+        }
+        @if $ao-activity-item-icon-width != false {
+          width: $ao-activity-item-icon-width;
+        }
+        // override any of the style settings, if necessary
+        @if $ao-activity-item-icon-border != false {
+          border: $ao-activity-item-icon-border;
+        }
+        @if $ao-activity-item-icon-border-radius != false {
+          border: $ao-activity-item-icon-border-radius;
+        }
+        @if $ao-activity-item-icon-background != false {
+          background: $ao-activity-item-icon-background;
+        }
+        @if $ao-activity-item-icon-margin != false {
+          margin: $ao-activity-item-icon-margin;
+        }
+        @if $ao-activity-item-icon-padding != false {
+          padding: $ao-activity-item-icon-padding;
+        }
+      }
+    }
+  
+    */
 }
-/* line 99, ../sass/themes/_contact-management.scss */
-section.banner A:hover {
-  color: White;
+/* line 79, ../sass/components/_activities.scss */
+BODY.page-crm-core-dashboard .crm-core-activity:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+/* line 106, ../sass/components/_activities.scss */
+BODY.page-crm-core-dashboard .crm-core-activity .crm-core-activity-icon {
+  default-size: 50px;
+  size-passed-in: 45px;
+  size-in-use: 45px;
+  default-color: false;
+  default-background: false;
+  default-text-shadow: false;
+  default-border: false;
+  default--border-radius: false;
+  default-margin: false;
+  default-padding: false;
+  default-before: false;
+  icon-color: white;
+  icon-background: #ffb836;
+  icon-color: white;
+  icon-text-shadow: false;
+  icon-border: false;
+  icon-border-radius: false;
+  icon-margin: false;
+  icon-padding: false;
+  icon-before: "o";
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -moz-user-select: false;
+  -ms-user-select: false;
+  -webkit-user-select: false;
+  user-select: false;
+  float: left;
+  font-size: 27px;
+  line-height: 1;
+  padding: 9px;
+  height: 45px;
+  width: 45px;
+  margin: 0px 0.45em 0px 0px;
+  background: #ffb836;
+  color: white;
+}
+/* line 177, ../sass/components/_icons.scss */
+BODY.page-crm-core-dashboard .crm-core-activity .crm-core-activity-icon:before {
+  font-family: "ao-icons" !important;
+  content: "o";
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/* line 113, ../sass/components/_activities.scss */
+BODY.page-crm-core-dashboard .crm-core-activity .crm-core-activity-info {
+  display: block;
+  margin-left: 63.0px;
+}
+/* line 120, ../sass/components/_activities.scss */
+BODY.page-crm-core-dashboard .crm-core-activity .crm-core-activity-actions {
+  float: right;
 }
 
-/* Dashboard */
 /**
  * COMPONENTS
  */
 /* PAGE TITLE */
-/* line 116, ../sass/themes/_contact-management.scss */
+/* line 133, ../sass/themes/_contact-management.scss */
 section.header H1#page-title {
   color: white;
   font-weight: normal;
   padding: 0em;
   margin: 0.375em 0em;
 }
-/* line 118, ../sass/themes/_contact-management.scss */
+/* line 135, ../sass/themes/_contact-management.scss */
 section.header H1#page-title em {
   color: #d6f7ff;
 }
 @media (min-width: 960px) {
-  /* line 123, ../sass/themes/_contact-management.scss */
+  /* line 140, ../sass/themes/_contact-management.scss */
   section.header H1#page-title {
     position: absolute;
     left: 0px;

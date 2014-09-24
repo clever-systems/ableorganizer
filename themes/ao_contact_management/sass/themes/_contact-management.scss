@@ -6,7 +6,7 @@
  */
  
 /**
- * REGIONS
+ * REGIONS / SECTIONS
  */ 
 BODY > section {
   @include ao-horizontal-region (
@@ -37,7 +37,18 @@ section.banner {
     $ao-region-background: $dark-blue,
     $ao-region-padding: .5em 0em
   );
+  
+  // @TODO: move this into a mixin
+  font-size: $h6-font-size;
+  A {
+    color: #dfe4e6;
+    text-decoration: none;
+    &:hover {
+      color: White;
+    }
+  }
 }
+
 /* BRANDING BANNER */
 section.branding {
   @include ao-region (
@@ -90,23 +101,29 @@ nav#main-menu {
   }
 }
 
-
-section.banner {
-  font-size: $h6-font-size;
-  A {
-    color: #dfe4e6;
-    text-decoration: none;
-    &:hover {
-      color: White;
-    }
-  }
-}
-
-/* Dashboard */
+/**
+ * DASHBOARD
+ */
 BODY.page-crm-core-dashboard {
-
+  
+  /* PANELS */
+  /* PANEL TITLES */
+  
+  /* ACTIVITY LISTS */
+  .crm-core-activity {
+    @include ao-activity-item(
+      $ao-activity-item-icon-size: 45px,
+      $ao-activity-item-padding: rhythm(.6) 0em
+    );
+  }
+  
+  /* QUICK LINKS */
+  
+  /* SUMMARY TABLES */
+  
+  /* BREAKPOINTS */
+  
 }
-
 
 /**
  * COMPONENTS

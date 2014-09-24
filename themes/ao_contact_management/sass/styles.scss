@@ -19,10 +19,12 @@
 /* Component (SMACSS module) rules */
 @import "components/misc";
 @import "components/fontography";
+@import "components/icons";
 
 // this creates a set of font styles for use in the theme
 // doing this here to ensure styles are available to other mixins
 @import "ao-init-fonts";
+@import "ao-init-icons";
 
 // partials from frontend theme
 @import "components/transitions";
