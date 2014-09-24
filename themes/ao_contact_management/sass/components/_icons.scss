@@ -136,7 +136,13 @@ $ao-debug:                    false !default;
   width:  $icon-size;
 
   // these would be the user setttable things
-  margin: 0px rhythm(.3) 0px 0px;
+  @if $ao-icon-margin != false {
+    margin: $ao-icon-margin;
+    // margin: 0px rhythm(.3) 0px 0px;
+  }
+  @if $margin != false {
+    margin: $margin;
+  }
 
   // override any of the style settings, if necessary
   // the way we arrive at a value is like this
@@ -176,7 +182,7 @@ $ao-debug:                    false !default;
   // this is where the icon is set
   &:before {
     font-family: $ao-icon-font-family !important;
-    content: "o";
+    content: "#{$before}";
     font-style: normal !important;
     font-weight: normal !important;
     font-variant: normal !important;
