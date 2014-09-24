@@ -1,8 +1,169 @@
 /**
  * @file
- * Layout for tables used in the theme
+ * Controls the appearance and behavior of tables.
  */
- 
+/**
+ * DEFAULT VARIABLES
+ * Default settings, see mixin documentation for explanations.
+ */
+$ao-table-width: 100% !default;
+$ao-table-border-top: false !default;
+$ao-table-border-bottom: false !default;
+$ao-table-border-left: false !default;
+$ao-table-border-right: false !default;
+$ao-table-border-collapse: collapse !default;
+$ao-table-border-spacing: collapse !default;
+$ao-table-border-margin: false !default;
+$ao-table-border-padding: false !default;
+$ao-table-header-background: false !default;
+$ao-table-responsive-style: false !default;
+$ao-table-responsive-breakpoint: false !default;
+
+
+/**
+ * AO TABLE
+ * Controls the appearance of tables
+ *
+ * Variables:
+ *
+ * $ao-table-responsive-style: presets for responsive tables. Defaults to false.
+ *
+ */
+@mixin ao-table (
+
+  $ao-table-responsive-style: $ao-table-responsive-style,
+  $ao-table-width: $ao-table-width,
+  $ao-table-border-top: $ao-table-border-top,
+  $ao-table-border-bottom: $ao-table-border-bottom,
+  $ao-table-border-left: $ao-table-border-left,
+  $ao-table-border-right: $ao-table-border-right,
+  $ao-table-border-collapse: $ao-table-border-collapse,
+  $ao-table-border-spacing: $ao-table-border-spacing,
+  $ao-table-border-margin: $ao-table-border-margin,
+  $ao-table-border-padding: $ao-table-border-padding,
+  $ao-table-header-background: $ao-table-header-background
+  
+) {
+
+  // basic table display
+  @if $ao-table-width != false {
+    width: $ao-table-width;
+  }
+  @if $ao-table-border-top != false {
+    border-top: $ao-table-border-top;
+  }
+  @if $ao-table-border-bottom != false {
+    border-bottom: $ao-table-border-bottom;
+  }
+  @if $ao-table-border-left != false {
+    border-left: $ao-table-border-left;
+  }
+  @if $ao-table-border-right != false {
+    border-right: $ao-table-border-right;
+  }
+  @if $ao-table-border-collapse != false {
+    border-right: $ao-table-border-collapse;
+  }
+  @if $ao-table-margin != false {
+    margin: $ao-table-margin;
+  }
+  @if $ao-table-padding != false {
+    padding: $ao-table-padding;
+  }
+  
+  // header
+  // there should be a special style for checkboxes
+  // there should be a special style for icons
+  // there should be a special style for backgrounds
+  // Q: how are we handling rounded borders? This should be queued off the table itself
+  
+  TH {
+  
+    @if $ao-table-header-background != false {
+      background: $ao-table-header-background;
+    }
+    
+    &:first-child {
+      // if there are rounded corners on the table, we need to apply them here as well
+    }
+    &:last-child {
+      // if there are rounded corners on the table, we need to apply them here as well
+    }
+  
+  }
+  
+  
+  // rows
+  
+  TR {
+  
+  
+    // cells
+    
+    TD {
+      &.odd {
+        // odd striping goes here
+      }
+      &.even {
+        // even striping goes here
+      }
+    }
+  }
+  
+  /* RESPONSIVE TABLES */
+  /* Flipscroll - http://elvery.net/demo/responsive-tables/ */
+  @if $ao-table-responsive-style == flip-scroll {
+    @include breakpoint($ao-table-responsive-breakpoint){
+      display: block; 
+      position: relative; 
+      width: 100%;
+    
+      THEAD {
+        display: block; 
+        float: left; 
+        TR {
+          display: block; 
+        }
+      }
+      TBODY {
+        display: block; 
+        width: auto; 
+        position: relative; 
+        overflow-x: auto; 
+        white-space: nowrap; 
+        TR {
+          display: inline-block; 
+          vertical-align: top;        
+        }
+      }
+      TD {
+        margin: 0; 
+        vertical-align: top;      
+        display: block; 
+        min-height: 1.25em; 
+        text-align: left;
+      }
+      TH {
+        text-align: left;
+        display: block; 
+        text-align: right;
+      }
+    
+      /* sort out borders 
+        #flip-scroll th { border-bottom: 0; border-left: 0; }
+        #flip-scroll td { border-left: 0; border-right: 0; border-bottom: 0; }
+        #flip-scroll tbody tr { border-left: 1px solid #babcbf; }
+        #flip-scroll th:last-child,
+        #flip-scroll td:last-child { border-bottom: 1px solid #babcbf; }    
+      */    
+    }
+  }
+}
+
+
+/* THIS IS THE OLD STUFF */
+
+
 /* container tables */
 /* used to display contacts */
 .container-table {

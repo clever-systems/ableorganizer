@@ -3219,11 +3219,25 @@ BODY.maintenance-page section.content div#content .views-table TR TD input[type=
 
 /**
  * @file
- * Layout for tables used in the theme
+ * Controls the appearance and behavior of tables.
  */
+/**
+ * DEFAULT VARIABLES
+ * Default settings, see mixin documentation for explanations.
+ */
+/**
+ * AO TABLE
+ * Controls the appearance of tables
+ *
+ * Variables:
+ *
+ * $ao-table-responsive-style: presets for responsive tables. Defaults to false.
+ *
+ */
+/* THIS IS THE OLD STUFF */
 /* container tables */
 /* used to display contacts */
-/* line 8, ../sass/components/_tables.scss */
+/* line 169, ../sass/components/_tables.scss */
 .container-table, .table-container TABLE,
 .views-table {
   width: 100%;
@@ -3234,12 +3248,12 @@ BODY.maintenance-page section.content div#content .views-table TR TD input[type=
   color: #555;
   font-size: 13.28px;
 }
-/* line 18, ../sass/components/_tables.scss */
+/* line 179, ../sass/components/_tables.scss */
 .container-table TR, .table-container TABLE TR,
 .views-table TR {
   border-collapse: separate;
 }
-/* line 22, ../sass/components/_tables.scss */
+/* line 183, ../sass/components/_tables.scss */
 .container-table TR TH, .table-container TABLE TR TH,
 .views-table TR TH {
   background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIzMSUiIHN0b3AtY29sb3I9IiNmZmZmZmYiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNkZmU0ZTYiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
@@ -3250,7 +3264,7 @@ BODY.maintenance-page section.content div#content .views-table TR TD input[type=
   background-image: linear-gradient(to bottom, #ffffff 31%, #dfe4e6 100%);
   text-transform: uppercase;
 }
-/* line 28, ../sass/components/_tables.scss */
+/* line 189, ../sass/components/_tables.scss */
 .container-table TR TH .form-type-checkbox, .table-container TABLE TR TH .form-type-checkbox,
 .views-table TR TH .form-type-checkbox {
   background-color: #CCC;
@@ -3259,7 +3273,7 @@ BODY.maintenance-page section.content div#content .views-table TR TD input[type=
   -webkit-border-radius: 4px;
   border-radius: 4px;
 }
-/* line 34, ../sass/components/_tables.scss */
+/* line 195, ../sass/components/_tables.scss */
 .container-table TR TH:first-child, .table-container TABLE TR TH:first-child,
 .views-table TR TH:first-child {
   -moz-border-radius: 8px 0px 0px 0px;
@@ -3267,7 +3281,7 @@ BODY.maintenance-page section.content div#content .views-table TR TD input[type=
   border-radius: 8px 0px 0px 0px;
   border-left: 1px solid #CCC;
 }
-/* line 38, ../sass/components/_tables.scss */
+/* line 199, ../sass/components/_tables.scss */
 .container-table TR TH:last-child, .table-container TABLE TR TH:last-child,
 .views-table TR TH:last-child {
   -moz-border-radius: 0px 8px 0px 0px;
@@ -3275,27 +3289,27 @@ BODY.maintenance-page section.content div#content .views-table TR TD input[type=
   border-radius: 0px 8px 0px 0px;
   border-right: 1px solid #CCC;
 }
-/* line 48, ../sass/components/_tables.scss */
+/* line 209, ../sass/components/_tables.scss */
 .container-table TR:last-child TD, .table-container TABLE TR:last-child TD,
 .views-table TR:last-child TD {
   border-bottom: 1px solid #ccc;
 }
-/* line 54, ../sass/components/_tables.scss */
+/* line 215, ../sass/components/_tables.scss */
 .container-table TR:hover TD, .table-container TABLE TR:hover TD,
 .views-table TR:hover TD {
   background-color: White;
 }
-/* line 61, ../sass/components/_tables.scss */
+/* line 222, ../sass/components/_tables.scss */
 .container-table TR.even TD, .table-container TABLE TR.even TD,
 .views-table TR.even TD {
   background-color: #f1f1f1;
 }
-/* line 65, ../sass/components/_tables.scss */
+/* line 226, ../sass/components/_tables.scss */
 .container-table TR.even:hover TD, .table-container TABLE TR.even:hover TD,
 .views-table TR.even:hover TD {
   background-color: White;
 }
-/* line 73, ../sass/components/_tables.scss */
+/* line 234, ../sass/components/_tables.scss */
 .container-table TR TD, .table-container TABLE TR TD,
 .views-table TR TD {
   border-bottom: 1px solid #e1e1e1;
@@ -3304,29 +3318,29 @@ BODY.maintenance-page section.content div#content .views-table TR TD input[type=
   border-left: 1px solid #f9f9f9;
   border-right: 1px solid #CCC;
 }
-/* line 81, ../sass/components/_tables.scss */
+/* line 242, ../sass/components/_tables.scss */
 .container-table TR TD.active, .table-container TABLE TR TD.active,
 .views-table TR TD.active {
   font-weight: 700;
   border-left: 1px solid #CCC;
   border-right: 1px solid #CCC;
 }
-/* line 88, ../sass/components/_tables.scss */
+/* line 249, ../sass/components/_tables.scss */
 .container-table TR TD:first-child, .table-container TABLE TR TD:first-child,
 .views-table TR TD:first-child {
   border-left: 1px solid #CCC;
 }
-/* line 91, ../sass/components/_tables.scss */
+/* line 252, ../sass/components/_tables.scss */
 .container-table TR TD:last-child, .table-container TABLE TR TD:last-child,
 .views-table TR TD:last-child {
   border-right: 1px solid #CCC;
 }
-/* line 95, ../sass/components/_tables.scss */
+/* line 256, ../sass/components/_tables.scss */
 .container-table TR TD .form-type-checkbox, .table-container TABLE TR TD .form-type-checkbox,
 .views-table TR TD .form-type-checkbox {
   margin: 0em auto;
 }
-/* line 102, ../sass/components/_tables.scss */
+/* line 263, ../sass/components/_tables.scss */
 .container-table TR TD .form-type-checkbox, .table-container TABLE TR TD .form-type-checkbox,
 .views-table TR TD .form-type-checkbox {
   background-color: #e5e5e5;
@@ -3336,7 +3350,7 @@ BODY.maintenance-page section.content div#content .views-table TR TD input[type=
   border-radius: 4px;
   text-align: center;
 }
-/* line 109, ../sass/components/_tables.scss */
+/* line 270, ../sass/components/_tables.scss */
 .container-table TR TD .ao_contact_icon, .table-container TABLE TR TD .ao_contact_icon,
 .views-table TR TD .ao_contact_icon {
   background: url(../images/ao-backend-icons.png) 0px -150px no-repeat;
@@ -3347,7 +3361,7 @@ BODY.maintenance-page section.content div#content .views-table TR TD input[type=
 
 /* data tables */
 /* displays tables related to run downs of data within reports */
-/* line 125, ../sass/components/_tables.scss */
+/* line 286, ../sass/components/_tables.scss */
 .data-tables .table-container, BODY.page-crm-core-reports .pane-cmcv-source-summary-frequency .table-container,
 BODY.page-crm-core-reports .pane-cmcv-source-summary-attendance .table-container,
 BODY.page-crm-core-reports .pane-opportunity-summary-sources .table-container,
@@ -3408,7 +3422,7 @@ BODY.page-crm-core-reports .pane-cmcd-source-callouts-panel-pane-1 .view-content
   -webkit-border-radius: 8px;
   border-radius: 8px;
 }
-/* line 134, ../sass/components/_tables.scss */
+/* line 295, ../sass/components/_tables.scss */
 .data-tables .table-container TABLE, BODY.page-crm-core-reports .pane-cmcv-source-summary-frequency .table-container TABLE,
 BODY.page-crm-core-reports .pane-cmcv-source-summary-attendance .table-container TABLE,
 BODY.page-crm-core-reports .pane-opportunity-summary-sources .table-container TABLE,
@@ -3466,7 +3480,7 @@ BODY.page-crm-core-reports .pane-cmcd-source-callouts-panel-pane-1 .view-content
 }
 
 /* handles the display of summary items */
-/* line 151, ../sass/components/_tables.scss */
+/* line 312, ../sass/components/_tables.scss */
 .data-summary .table-container TR TD, BODY.page-crm-core-reports .pane-cmcv-source-summary-totals .table-container TR TD,
 BODY.page-crm-core-reports .pane-cmcv-opportunity-metrics .table-container TR TD,
 BODY.page-crm-core-reports .pane-cmcv-overview-metrics .table-container TR TD,
