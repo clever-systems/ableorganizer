@@ -79,7 +79,6 @@ section.content {
   );
 }
 
-
 /**
  * MENUS
  */
@@ -122,6 +121,136 @@ BODY.page-crm-core-dashboard {
   
   /* BREAKPOINTS */
   
+}
+.crm-core-activity-info DIV {
+  display: inline-block;
+}
+
+/**
+ * ACTIVITIES 
+ */
+/* Default Activity List */
+.crm-core-activity {
+  
+  @include ao-activity-item(
+    $ao-activity-item-icon-size: 35px,
+    $ao-activity-item-padding: rhythm(.6) 0em
+  );
+  
+  @include adjust-font-size-to(15px, $lines: 1);  
+  
+  border-bottom: 1px solid #d1d1d1;
+  
+  .crm-core-activity-date {
+    margin-top: rhythm(.3);
+    display: block;
+    @include adjust-font-size-to(13px, $lines: 1);  
+    text-transform: uppercase;
+    color: #777799;
+  } 
+}
+
+/**
+ * CONTACTS
+ */
+/* CONTACT TABLE */
+.container-table {
+  
+  // table
+  @include ao-table (
+    $ao-table-width: 100%,
+    $ao-table-margin: rhythm(.5) 0em 0em,
+    $ao-table-padding: 0em,
+    $ao-table-border-collapse: separate,
+    $ao-table-border-top: false,
+    $ao-table-border-bottom: 1px solid #ccc,
+    $ao-table-border-left: false,
+    $ao-table-border-right: false,
+    $ao-table-row-border-top: false,
+    $ao-table-row-border-bottom: false,
+    $ao-table-row-border-left: 1px solid #CCC,
+    $ao-table-row-border-right: 1px solid #CCC,
+    $ao-table-row-hover-color: false,
+    $ao-table-row-hover-color-even: White,
+    $ao-table-row-hover-color-odd: false,
+    $ao-table-cell-border-top: false,
+    $ao-table-cell-border-bottom: 1px solid #e1e1e1,
+    $ao-table-cell-border-left: 1px solid #f9f9f9,
+    $ao-table-cell-border-right: 1px solid #CCC,
+    $ao-table-cell-background-color: #fafafa,
+    $ao-table-cell-background-color-even: #f1f1f1,
+    $ao-table-cell-background-color-odd: false,
+    $ao-table-cell-padding: rhythm(.1) rhythm(.5),
+    $ao-table-header-background-image: linear-gradient(to bottom, #ffffff 31%,#dfe4e6 100%),
+    $ao-table-header-background-color: #ffffff
+  );
+  
+  TD.views-field-nothing-4 {
+    width: 40px;
+    text-align: center;
+    padding: .1em 0em;
+  }
+  TD.views-field-nothing-3 {
+    width: 200px;
+    text-align: center;
+    padding: .1em 0em;
+  }
+  
+  // checkboxes
+  .form-type-checkbox {
+    background-color: #e5e5e5;
+    margin: 0em;
+    @include border-radius(4px);        
+    text-align: center;
+  }
+  
+  // icons
+  .ao_contact_icon {
+    /*
+      background: url(../images/ao-backend-icons.png) 0px -150px no-repeat;
+      height: 27px;
+      width: 27px;
+      margin: 0px .05em;
+    */
+    @include ao-get-icon(
+      $ao-icon-size: 35px,
+      $ao-icon-background: transparent,
+      $ao-icon-margin: 0em,
+      $ao-icon-color: #777
+    );
+  }
+  
+
+  // this needs to go into a font mixin
+  color: #555;
+  font-size: $h5-font-size;  
+  
+  TR {
+    TH {
+      // this needs to move into a font mixin
+      @extend .widget-table-titles-large;
+      text-transform: uppercase;
+      &:first-child {
+        @include border-radius(8px 0px 0px 0px);
+      }
+      &:last-child {
+        @include border-radius(0px 8px 0px 0px);
+      }
+    }
+  }
+  
+  TR {
+    &:last-child {
+    }
+    TD {
+      &.active {
+        font-weight: 700;
+      }
+      .btn {
+         @extend .btn-small;
+      }
+    }
+  }
 }
 
 /**
