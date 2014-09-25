@@ -15,6 +15,10 @@ $ao-table-border-collapse: collapse !default;
 $ao-table-border-spacing: collapse !default;
 $ao-table-margin: false !default;
 $ao-table-padding: false !default;
+$ao-table-header-border-top: false !default;
+$ao-table-header-border-bottom: false !default;
+$ao-table-header-border-left: false !default;
+$ao-table-header-border-right: false !default;
 $ao-table-row-border-top: false !default;
 $ao-table-row-border-bottom: false !default;
 $ao-table-row-border-left: false !default;
@@ -55,6 +59,10 @@ $ao-table-responsive-breakpoint: false !default;
   $ao-table-border-bottom: $ao-table-border-bottom,
   $ao-table-border-left: $ao-table-border-left,
   $ao-table-border-right: $ao-table-border-right,
+  $ao-table-header-border-top: $ao-table-header-border-top,
+  $ao-table-header-border-bottom: $ao-table-header-border-bottom,
+  $ao-table-header-border-left: $ao-table-header-border-left,
+  $ao-table-header-border-right: $ao-table-header-border-right,
   $ao-table-row-border-top: $ao-table-row-border-top,
   $ao-table-row-border-bottom: $ao-table-row-border-bottom,
   $ao-table-row-border-left: $ao-table-row-border-left,
@@ -146,6 +154,23 @@ $ao-table-responsive-breakpoint: false !default;
     &.even {
       // even striping goes here
     }
+    
+    // header cells
+    TH {
+      @if $ao-table-header-border-top != false {
+        border-top: $ao-table-header-border-top;
+      }
+      @if $ao-table-header-border-bottom != false {
+        border-bottom: $ao-table-header-border-bottom;
+      }
+      @if $ao-table-header-border-left != false {
+        border-left: $ao-table-header-border-left;
+      }
+      @if $ao-table-header-border-right != false {
+        border-right: $ao-table-header-border-right;
+      }
+    }
+    
 
     // cells
     TD {
@@ -175,6 +200,17 @@ $ao-table-responsive-breakpoint: false !default;
       &:last-child {
         @if $ao-table-row-border-right != false {
           border-right: $ao-table-row-border-right;
+        }
+      }
+    }
+    
+    // row hover
+    @if $ao-table-row-hover-color != false {
+      &.even, &.odd {
+        &:hover {
+          TD {
+            background-color: $ao-table-row-hover-color;
+          }
         }
       }
     }

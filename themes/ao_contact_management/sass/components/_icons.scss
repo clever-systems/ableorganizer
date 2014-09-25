@@ -25,6 +25,8 @@ $ao-icon-border-radius:  false !default;
 $ao-icon-margin:         false !default;
 $ao-icon-padding:        false !default;
 $ao-icon-before:         false !default;
+$ao-icon-height:         false !default;
+$ao-icon-width:         false !default;
 
 /* ao-icon-get defaults */
 $ao-icon-name:                false !default;
@@ -53,6 +55,8 @@ $ao-debug:                    false !default;
   $ao-icon-border-radius: $ao-icon-border-radius,
   $ao-icon-margin: $ao-icon-margin,
   $ao-icon-padding: $ao-icon-padding,
+  $ao-icon-height: $ao-icon-height,
+  $ao-icon-width: $ao-icon-width,
   $ao-debug: $ao-debug
 ){
   
@@ -128,13 +132,26 @@ $ao-debug:                    false !default;
   line-height: 1;
   
   // generate the padding
-  $padding-size: round(($icon-size*0.4)/2);
-  padding: $padding-size;
+  @if $ao-icon-padding != false {
+    padding: $ao-icon-padding;
+  } @else {
+    $padding-size: round(($icon-size*0.4)/2);
+    padding: $padding-size;
+  }
 
   // generate the height / width
-  height: $icon-size;
-  width:  $icon-size;
-
+  @if $ao-icon-height != false {
+    height: $ao-icon-height;
+  } @else {
+    height: $icon-size;
+  }
+  
+  @if $ao-icon-width != false {
+    width: $ao-icon-width;
+  } @else {
+    width: $icon-size;
+  }
+  
   // these would be the user setttable things
   @if $ao-icon-margin != false {
     margin: $ao-icon-margin;

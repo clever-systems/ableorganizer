@@ -162,33 +162,36 @@ BODY.page-crm-core-dashboard {
     $ao-table-margin: rhythm(.5) 0em 0em,
     $ao-table-padding: 0em,
     $ao-table-border-collapse: separate,
-    $ao-table-border-top: false,
-    $ao-table-border-bottom: 1px solid #ccc,
-    $ao-table-border-left: false,
-    $ao-table-border-right: false,
-    $ao-table-row-border-top: false,
-    $ao-table-row-border-bottom: false,
-    $ao-table-row-border-left: 1px solid #CCC,
+    $ao-table-border-bottom: 1px solid #CCC,
+    $ao-table-header-border-top: 1px solid #e1e1e1,
+    $ao-table-row-border-left: 1px solid #e1e1e1,
     $ao-table-row-border-right: 1px solid #CCC,
-    $ao-table-row-hover-color: false,
-    $ao-table-row-hover-color-even: White,
-    $ao-table-row-hover-color-odd: false,
-    $ao-table-cell-border-top: false,
+    $ao-table-row-hover-color: White,
     $ao-table-cell-border-bottom: 1px solid #e1e1e1,
     $ao-table-cell-border-left: 1px solid #f9f9f9,
     $ao-table-cell-border-right: 1px solid #CCC,
-    $ao-table-cell-background-color: #fafafa,
-    $ao-table-cell-background-color-even: #f1f1f1,
-    $ao-table-cell-background-color-odd: false,
+    $ao-table-cell-background-color: #f7f7f7,
+    $ao-table-cell-background-color-even: #f3f3f3,
     $ao-table-cell-padding: rhythm(.1) rhythm(.5),
     $ao-table-header-background-image: linear-gradient(to bottom, #ffffff 31%,#dfe4e6 100%),
     $ao-table-header-background-color: #ffffff
   );
   
   TD.views-field-nothing-4 {
-    width: 40px;
+    width: 30px;
     text-align: center;
-    padding: .1em 0em;
+    padding: 0em;
+  }
+  TD.views-field-views-bulk-operations {
+    width: 30px;
+    text-align: center;
+    padding: 0em;
+    background-color: #f1f1f1 !important;
+    .form-item {
+      padding: 0em .5em;
+      margin: 0em auto;
+      display: inline-block;
+    }
   }
   TD.views-field-nothing-3 {
     width: 200px;
@@ -198,7 +201,6 @@ BODY.page-crm-core-dashboard {
   
   // checkboxes
   .form-type-checkbox {
-    background-color: #e5e5e5;
     margin: 0em;
     @include border-radius(4px);        
     text-align: center;
@@ -212,14 +214,47 @@ BODY.page-crm-core-dashboard {
       width: 27px;
       margin: 0px .05em;
     */
+    $icon-size: 35px;
+    $icon-color: #3c7489;
+    $icon-padding: .25em 0em 0em;
+    $icon-dim: 35px;
+    
+    // default icon
     @include ao-get-icon(
-      $ao-icon-size: 35px,
+      $ao-icon-name: contact-individual,
+      $ao-icon-size: $icon-size,
+      $ao-icon-padding: $icon-padding,
       $ao-icon-background: transparent,
-      $ao-icon-margin: 0em,
-      $ao-icon-color: #777
+      $ao-icon-margin: 0em auto,
+      $ao-icon-height: $icon-dim,
+      $ao-icon-width: $icon-dim,
+      $ao-icon-color: $icon-color
     );
+    // orgs
+    &.ao_contact_organization {
+      @include ao-get-icon(
+        $ao-icon-name: contact-org,
+        $ao-icon-size: $icon-size,
+        $ao-icon-padding: $icon-padding,
+        $ao-icon-background: transparent,
+        $ao-icon-height: $icon-dim,
+        $ao-icon-width: $icon-dim,
+        $ao-icon-margin: 0em auto
+      );
+    }
+    // orgs
+    &.ao_contact_household {
+      @include ao-get-icon(
+        $ao-icon-name: contact-household,
+        $ao-icon-size: $icon-size,
+        $ao-icon-padding: $icon-padding,
+        $ao-icon-background: transparent,
+        $ao-icon-height: $icon-dim,
+        $ao-icon-width: $icon-dim,
+        $ao-icon-margin: 0em auto
+      );
+    }
   }
-  
 
   // this needs to go into a font mixin
   color: #555;

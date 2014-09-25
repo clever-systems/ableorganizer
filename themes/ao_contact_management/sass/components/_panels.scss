@@ -6,3 +6,25 @@
  * DEFAULT VARIABLES
  * Default settings, see mixin documentation for explanations.
  */
+ 
+// controls the appearance of a panel
+// allow you to set borders, backgrounds, corners, padding, margins, etc
+@mixin ao-panel () {
+ 
+}
+
+// sets breakpoints for panels
+// controls when panes collapse
+// pass in a series of breakpoint names and the mixin will apply the breakpoints
+// assumes that all panes will collapse into a single column
+@mixin ao-panel-responsive () {
+ 
+}
+
+// controls appearance of a pane
+// allow you to set borders, backgrounds, corners, padding, margins, etc
+// allows you to control the position of the title
+// - titles can be absolutely positioned, and the mixin will adjust the placement
+@mixin ao-panel () {
+ 
+}

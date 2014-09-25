@@ -106,6 +106,27 @@ $general: ao-set-icon(
   $ao-icon-before: "o"
 );
 
+
+
+// contact
+$contact-individual: ao-set-icon(
+  $ao-icon-title: contact-individual,
+  $ao-icon-background: #CCC,
+  $ao-icon-before: "p"
+);
+$contact-org: ao-set-icon(
+  $ao-icon-title: contact-org,
+  $ao-icon-background: #CCC,
+  $ao-icon-before: "u"
+);
+$contact-household: ao-set-icon(
+  $ao-icon-title: contact-household,
+  $ao-icon-background: #CCC,
+  $ao-icon-before: "!"
+);
+
+
+
 // petition 
 .ao-icon-clipboard-pencil:before {
   content: "E";
