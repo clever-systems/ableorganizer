@@ -42,14 +42,44 @@ $header-font-contact-management: ao-fontography-register-style(
   $ao-fonto-style-margin: rhythm(0.25) 0em,
   $ao-fonto-style-weight: normal
 );
+$contact-management-btn-font: ao-fontography-register-style(
+  $ao-fonto-style-name: contact-management-btn-font,
+  $ao-fonto-style-size: 12px,
+  $ao-fonto-style-color: White,
+  $ao-fonto-style-weight: normal,
+  $ao-fonto-style-text-decoration: none,
+  $ao-fonto-style-letter-spacing: 2px
+);
+$contact-management-btn-font-small: ao-fontography-register-style(
+  $ao-fonto-style-name: contact-management-btn-font-small,
+  $ao-fonto-style-size: 10px
+);
+$contact-management-btn-font-large: ao-fontography-register-style(
+  $ao-fonto-style-name: contact-management-btn-font-large,
+  $ao-fonto-style-size: 14px
+);
+
+/* TABLES */
+$table-font-basic: ao-fontography-register-style(
+  $ao-fonto-style-name: table-font-basic,
+  $ao-fonto-style-color: #555,
+  $ao-fonto-style-size: 14px
+);
+$table-font-header-basic: ao-fontography-register-style(
+  $ao-fonto-style-size: 0.8em,
+  $ao-fonto-style-name: table-font-header-basic,
+  $ao-fonto-style-text-transform: uppercase,
+  $ao-fonto-style-padding: rhythm(.25) 0em,
+  $ao-fonto-style-color: $base-purple,
+  $ao-fonto-style-white-space: nowrap,
+  $ao-fonto-style-text-align: center
+);
 
 /* ACTIVITY FEEDS */
 $activity-item-text: ao-fontography-register-style(
   $ao-fonto-style-name: activity-item-text,
   $ao-fonto-style-size: $base-font-size*0.95
 );
-
-
 
 /* NAVIGATION LINKS */
 $form-fieldset-label: ao-fontography-register-style(
@@ -145,5 +175,36 @@ $main-nav-contact-management: ao-fontography-register-style(
   $ao-fonto-style-weight:   600,
   $ao-fonto-style-text-decoration: none
 );
+
+/* TABLES */
+$summary-table-header: ao-fontography-register-style(
+  $ao-fonto-style-name:     summary-table-header,
+  $ao-fonto-style-size:     0.8em,
+  $ao-fonto-style-weight:   600,
+  $ao-fonto-style-color:    $base-purple,
+  $ao-fonto-style-text-transform: uppercase
+);
+$summary-table-data: ao-fontography-register-style(
+  $ao-fonto-style-name:     summary-table-data,
+  $ao-fonto-style-size:     1.4em,
+  $ao-fonto-style-weight:   600,
+  $ao-fonto-style-color:    #555,
+  $ao-fonto-style-text-transform: uppercase
+);
+
+/*
+
+  font-size: 1em;
+  padding: 0.5em 0.5em;
+  margin: 0px auto;
+  color: $base-purple;
+  white-space: nowrap;
+  overflow: hidden;
+  text-align: center;
+  text-transform: uppercase;  
+  
+*/
+
+
 
 

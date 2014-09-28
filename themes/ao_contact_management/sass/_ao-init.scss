@@ -59,7 +59,6 @@ $ao-button-hover-bg-color:  #e1e1e1;
   @include border-radius(.5em);
   @include box-sizing(border-box);
   @include ao-fontography($ao-fonto-style: button-blue, $ao-fonto-color: White);
-  
   background-color: $ao_blue;
   border: 0;
   display: inline-block;
@@ -87,27 +86,6 @@ $ao-button-hover-bg-color:  #e1e1e1;
     text-decoration: none;
     @include ao-fontography($ao-fonto-style: normal, $ao-fonto-color: White);
   }
-} 
-
-/**
- * DEFAULT BUTTONS
- * Variables controlling the default appearance of buttons
- */
-.small-grey-button {
-  @include ao-button();
-  @include ao-transition();
-  @include ao-fontography($ao-fonto-style: button-default);
-}
-.red-button {
-  @include ao-transition();
-  @include ao-button (
-    // $ao-button-margin:          false !default; 
-    $ao-button-padding:         rhythm(.25) rhythm(.5),
-    $ao-button-border:          none,
-    $ao-button-border-radius:   0.5em,
-    $ao-button-color:           White,
-    $ao-button-bg-color:        $base-red
-  );
 }
 
 
