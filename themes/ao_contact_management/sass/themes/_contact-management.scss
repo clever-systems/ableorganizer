@@ -130,6 +130,7 @@ BODY.page-crm-core-dashboard {
     @extend .ao-summary-panel-pane;
     
     .pane-title {
+      // @TODO: move to mixins
       @extend .widget-title;
       @extend .title-fonts;
     }
@@ -144,6 +145,7 @@ BODY.page-crm-core-dashboard {
 .pane-ao-dashboard-act-stream-panel-pane-1 {
   
   h2.pane-title {
+    // @TODO: move to mixins
     position: absolute;
     top: 8px;
     left: 16px;
@@ -155,6 +157,7 @@ BODY.page-crm-core-dashboard {
   }
   
   .view-content {
+    // @TODO: move to mixins
     @extend .activity-record-pane;
     margin: 0em 0em;
     padding-top: 64px;
