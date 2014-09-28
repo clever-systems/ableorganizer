@@ -1,0 +1,44 @@
+/**
+ * @file
+ * Panel Styles
+ *
+ * Predefined styles for panels and panel panes
+ */
+
+
+
+
+
+
+.ao-summary-panel-pane {
+  @include ao-panel-pane(
+  
+    $ao-panel-pane-background: $f-gray2,
+    $ao-panel-pane-border: false,
+    $ao-panel-pane-border-top: 1px solid $e-gray,
+    $ao-panel-pane-border-bottom: 1px solid $c-gray,
+    $ao-panel-pane-border-left: 1px solid $e-gray,
+    $ao-panel-pane-border-right: 1px solid $c-gray,
+    $ao-panel-pane-border-radius: 8px,
+    $ao-panel-pane-margin: 0em 0em .8em,
+    $ao-panel-pane-padding: 0em .2em .2em,
+    $ao-panel-header-font-style: $ao-panel-header-font-style,
+    $ao-panel-content-font-style: $ao-panel-content-font-style  
+  
+  );  
+  
+  
+/*
+    
+  background-color: $f-gray2;
+  @include border-radius(8px);
+  border: 1px solid $e-gray;
+  padding: 0em .2em .2em;
+  margin: 0em 0em .8em;
+  border: 1px solid #CCC;    
+    
+    */
+  
+  
+}
+ 

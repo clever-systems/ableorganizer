@@ -24,6 +24,7 @@
 // this creates a set of font styles for use in the theme
 // doing this here to ensure styles are available to other mixins
 @import "ao-init-fonts";
+// this creates a set of icons for use in the theme
 @import "ao-init-icons";
 
 // partials from frontend theme
@@ -36,6 +37,9 @@
 @import "components/grids";
 @import "components/node";
 @import "components/block";
+
+// new partials
+@import "components/panels";
 
 // partials from original
 @import "components/containers";
@@ -54,6 +58,10 @@
 /* SMACSS theme rules */
 /* @import "theme-A"; */
 /* @import "theme-B"; */
+@import "themes/panel-styles";
+@import "themes/table-styles";
+@import "themes/menu-styles";
+@import "themes/button-styles";
 @import "themes/contact-management";
 
 // move all of this into mixins in the main theme file

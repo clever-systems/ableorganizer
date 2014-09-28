@@ -32,11 +32,22 @@ A {
 .title-fonts-large {
   font-size: 1.2em;
 }
+
+
+
+
+
+
 .summary-data {
   font-size: 1.4em;
   font-weight: 700;
   background-color: White;
 }
+/* summary widget */
+
+
+
+
 
 /* page titles */
  
@@ -151,33 +162,6 @@ FOOTER {
   }
 }
 
-/* summary widget */
-.summary-widget-container {
-  background-color: $f-gray2;
-  
-  .pane-title {
-    @extend .widget-title;
-    @extend .title-fonts;
-  }
-  
-  
-  TABLE {
-    THEAD {
-      TH {
-        @include background-image(linear-gradient(to bottom, #ffffff 31%,#dfe4e6 100%));
-        @extend .widget-table-titles;
-      }
-    }
-  
-    TR {
-      TD {
-        @extend .summary-data;
-      }
-    }
-    
-  }
-  
-}
 
 /* quicklinks */
 .quick-links {

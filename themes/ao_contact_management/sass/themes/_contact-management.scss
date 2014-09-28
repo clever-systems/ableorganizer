@@ -3,7 +3,6 @@
  * Contact Management
  * Theme for contact management in AbleOrganizer.
  */
- 
 /**
  * REGIONS / SECTIONS
  */ 
@@ -36,7 +35,6 @@ section.banner {
     $ao-region-background: $dark-blue,
     $ao-region-padding: .5em 0em
   );
-  
   // @TODO: move this into a mixin
   font-size: $h6-font-size;
   A {
@@ -78,7 +76,7 @@ section.content {
     $ao-region-padding: rhythm(1) 0em
   );
 }
-
+ 
 /**
  * MENUS
  */
@@ -94,8 +92,18 @@ nav#main-menu {
     }
     A {
       @include ao-fontography(main-nav-contact-management);
-      @include ao-transition ();
+      @include ao-transition();
     }
+  }
+}
+.vbo-views-form {
+  #edit-select {
+    display: none;
+  }
+}
+.view-header {
+  .btn-vbo {
+    @extend .ao-vbo-menu;
   }
 }
 
@@ -118,9 +126,59 @@ BODY.page-crm-core-dashboard {
   /* QUICK LINKS */
   
   /* SUMMARY TABLES */
+  .summary-pane {
+    @extend .ao-summary-panel-pane;
+    
+    .pane-title {
+      @extend .widget-title;
+      @extend .title-fonts;
+    }
+    
+    // all summary tables get this style
+    TABLE {
+      @extend .ao-summary-table;
+    }
+  }
+
+/* dashboard */
+.pane-ao-dashboard-act-stream-panel-pane-1 {
   
+  h2.pane-title {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+    z-index: 100;
+    border-bottom: none;
+    text-transform: uppercase;
+    margin: 0em;
+    @extend .standard-panel-title;
+  }
+  
+  .view-content {
+    @extend .activity-record-pane;
+    margin: 0em 0em;
+    padding-top: 64px;
+    .crm-core-activity-actions {
+      margin-left: 12px;
+      A {
+        @extend .btn;
+        @extend .btn-small;
+        &:first-child{
+          @extend .btn-blue;
+          @extend .btn-small;
+        }
+      }
+    }
+    
+  }
+}
+
   /* BREAKPOINTS */
-  
+
+
+
+
+
 }
 .crm-core-activity-info DIV {
   display: inline-block;
@@ -131,16 +189,12 @@ BODY.page-crm-core-dashboard {
  */
 /* Default Activity List */
 .crm-core-activity {
-  
   @include ao-activity-item(
     $ao-activity-item-icon-size: 35px,
     $ao-activity-item-padding: rhythm(.6) 0em
   );
-  
   @include adjust-font-size-to(15px, $lines: 1);  
-  
   border-bottom: 1px solid #d1d1d1;
-  
   .crm-core-activity-date {
     margin-top: rhythm(.3);
     display: block;
@@ -154,29 +208,9 @@ BODY.page-crm-core-dashboard {
  * CONTACTS
  */
 /* CONTACT TABLE */
-.container-table {
-  
-  // table
-  @include ao-table (
-    $ao-table-width: 100%,
-    $ao-table-margin: rhythm(.5) 0em 0em,
-    $ao-table-padding: 0em,
-    $ao-table-border-collapse: separate,
-    $ao-table-border-bottom: 1px solid #CCC,
-    $ao-table-header-border-top: 1px solid #e1e1e1,
-    $ao-table-row-border-left: 1px solid #e1e1e1,
-    $ao-table-row-border-right: 1px solid #CCC,
-    $ao-table-row-hover-color: White,
-    $ao-table-cell-border-bottom: 1px solid #e1e1e1,
-    $ao-table-cell-border-left: 1px solid #f9f9f9,
-    $ao-table-cell-border-right: 1px solid #CCC,
-    $ao-table-cell-background-color: #f7f7f7,
-    $ao-table-cell-background-color-even: #f3f3f3,
-    $ao-table-cell-padding: rhythm(.1) rhythm(.5),
-    $ao-table-header-background-image: linear-gradient(to bottom, #ffffff 31%,#dfe4e6 100%),
-    $ao-table-header-background-color: #ffffff
-  );
-  
+.table-container TABLE,
+.view-ao-crm-core-contacts TABLE {
+  @extend .ao-action-table;
   TD.views-field-nothing-4 {
     width: 30px;
     text-align: center;
@@ -197,94 +231,6 @@ BODY.page-crm-core-dashboard {
     width: 200px;
     text-align: center;
     padding: .1em 0em;
-  }
-  
-  // checkboxes
-  .form-type-checkbox {
-    margin: 0em;
-    @include border-radius(4px);        
-    text-align: center;
-  }
-  
-  // icons
-  .ao_contact_icon {
-    /*
-      background: url(../images/ao-backend-icons.png) 0px -150px no-repeat;
-      height: 27px;
-      width: 27px;
-      margin: 0px .05em;
-    */
-    $icon-size: 35px;
-    $icon-color: #3c7489;
-    $icon-padding: .25em 0em 0em;
-    $icon-dim: 35px;
-    
-    // default icon
-    @include ao-get-icon(
-      $ao-icon-name: contact-individual,
-      $ao-icon-size: $icon-size,
-      $ao-icon-padding: $icon-padding,
-      $ao-icon-background: transparent,
-      $ao-icon-margin: 0em auto,
-      $ao-icon-height: $icon-dim,
-      $ao-icon-width: $icon-dim,
-      $ao-icon-color: $icon-color
-    );
-    // orgs
-    &.ao_contact_organization {
-      @include ao-get-icon(
-        $ao-icon-name: contact-org,
-        $ao-icon-size: $icon-size,
-        $ao-icon-padding: $icon-padding,
-        $ao-icon-background: transparent,
-        $ao-icon-height: $icon-dim,
-        $ao-icon-width: $icon-dim,
-        $ao-icon-margin: 0em auto
-      );
-    }
-    // orgs
-    &.ao_contact_household {
-      @include ao-get-icon(
-        $ao-icon-name: contact-household,
-        $ao-icon-size: $icon-size,
-        $ao-icon-padding: $icon-padding,
-        $ao-icon-background: transparent,
-        $ao-icon-height: $icon-dim,
-        $ao-icon-width: $icon-dim,
-        $ao-icon-margin: 0em auto
-      );
-    }
-  }
-
-  // this needs to go into a font mixin
-  color: #555;
-  font-size: $h5-font-size;  
-  
-  TR {
-    TH {
-      // this needs to move into a font mixin
-      @extend .widget-table-titles-large;
-      text-transform: uppercase;
-      &:first-child {
-        @include border-radius(8px 0px 0px 0px);
-      }
-      &:last-child {
-        @include border-radius(0px 8px 0px 0px);
-      }
-    }
-  }
-  
-  TR {
-    &:last-child {
-    }
-    TD {
-      &.active {
-        font-weight: 700;
-      }
-      .btn {
-         @extend .btn-small;
-      }
-    }
   }
 }
 
@@ -308,5 +254,16 @@ section.header {
     } 
   }
 }
+/* ACTION LINKS */
+.action-links {
+  margin: 0em 0em .8em;
+  padding: 0em;
+  LI {
+    display: inline-block;
+    @extend .btn;
+    @extend .btn-large;
+  }
+} 
+
 
 
