@@ -169,7 +169,7 @@ $ao-debug:                    false !default;
   // 4. If none of the previous are true, ignore the value
   
   // set the border
-  @if $ao-activity-item-icon-border != false {
+  @if $ao-icon-border != false {
     border: $ao-icon-border;
   } @else if $border != false {
     border: $border;

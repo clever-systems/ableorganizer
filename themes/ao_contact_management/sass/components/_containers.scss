@@ -1,11 +1,13 @@
 /**
  * @file
- * Layout of containers used throughout the theme
  *
- *
- *
+ * Container mixins, used to implement boxes in the theme.
  */
- 
+
+
+
+
+
  /* basic container - extended by various widgets */
 .basic-container {
   @include border-radius(8px);
@@ -49,44 +51,6 @@
   
 }
 
-/* summary widget - used on the dashboard */
-.summary-widget-container {
-  
-  @extend .basic-container;
-  padding: 0em .2em .2em;
-  margin: 0em 0em .8em;
-  border: 1px solid #CCC;
-  
-  TABLE {
-    margin: 0em auto;
-    padding: 0em;
-    width: 100%;
-    @include border-radius(8px);
-    border: 1px solid #CCC;
-    overflow: hidden;
-    border-collapse: initial;
-    
-    TH {
-    
-      border: 1px solid #CCC;
-      
-      TD {
-      
-      }
-    }
-    
-    TR {
-      border: none;
-      TD {
-        border: none;
-        text-align: center;
-        padding: 0.5em 0em;
-      }
-    }
-    
-  }
-  
-}
 
 /* quicklinks - used on the dashboard */
 .quick-links {
@@ -114,19 +78,6 @@
   
 }
 
-/* action links */
-.action-links {
-  margin: 0em 0em .8em;
-  padding: 0em;
-  LI {
-    display: inline-block;
-    margin: 0em;
-    padding: 0em;
-    A {
-      @extend .btn;
-    }
-  }
-}
 
 /* summary rows */
 .results-summary {

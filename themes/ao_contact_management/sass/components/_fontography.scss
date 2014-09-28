@@ -35,6 +35,7 @@ $ao-fonto-style-padding:                  false !default;
 $ao-fonto-style-margin:                   false !default;
 $ao-fonto-style-text-align:               false !default;
 $ao-fonto-style-text-shadow:              false !default;
+$ao-fonto-style-white-space:              false !default;
 $ao-fonto-style-border-top:               false !default;
 $ao-fonto-style-border-bottom:            false !default;
 $ao-fonto-style-border-left:              false !default;
@@ -59,7 +60,8 @@ $ao-fonto-style-focus-padding:            false !default;
 $ao-fonto-style-focus-margin:             false !default;
 $ao-fonto-style-focus-text-decoration:    false !default;
 $ao-fonto-style-focus-text-shadow:        false !default;
-  
+$ao-fonto-rhythm-unit:               em !default;
+
 /**
  * AO FONTOGRAPHY
  *
@@ -74,11 +76,19 @@ $ao-fonto-style-focus-text-shadow:        false !default;
 @mixin ao-fontography (
   $ao-fonto-style: $ao-fonto-style,
   $ao-fonto-color: $ao-fonto-color,
+  $ao-fonto-rhythm-unit: $ao-fonto-rhythm-unit,
   $ao-fonto-debug: $ao-fonto-debug
 ) {
 
   @if $ao-fonto-debug != false {
     font-style-name: $ao-fonto-style;
+  }
+  
+  // check rhythm units
+  $original-rhythm-unit: false;
+  @if $ao-fonto-rhythm-unit != $rhythm-unit {
+    $original-rhythm-unit: $rhythm-unit;
+    $rhythm-unit: $ao-fonto-rhythm-unit;
   }
 
   @if map-has-key($ao-fontography, $ao-fonto-style){
@@ -99,6 +109,7 @@ $ao-fonto-style-focus-text-shadow:        false !default;
     $text-decoration: map-get($style, 'text-decoration');
     $text-shadow: map-get($style, 'text-shadow');
     $text-transform: map-get($style, 'text-transform');
+    $white-space: map-get($style, 'white-space');
     $letter-spacing: map-get($style, 'letter-spacing');
     $border-top: map-get($style, 'border-top');
     $border-bottom: map-get($style, 'border-bottom');
@@ -180,6 +191,10 @@ $ao-fonto-style-focus-text-shadow:        false !default;
     // text transform
     @if $letter-spacing != false and $letter-spacing != null {
       letter-spacing: $letter-spacing;
+    }
+    // text transform
+    @if $white-space != false and $white-space != null {
+      white-space: $white-space;
     }
     // borders
     @if $border-top != false and $border-top != null {
@@ -297,6 +312,12 @@ $ao-fonto-style-focus-text-shadow:        false !default;
       }
     }
   }
+  
+  // set the rhythm unit back to the original
+  @if $original-rhythm-unit != false {
+    $rhythm-unit: $original-rhythm-unit;
+  }
+  
 }
 
 /**
@@ -324,6 +345,7 @@ $ao-fonto-style-focus-text-shadow:        false !default;
   $ao-fonto-style-text-align:               $ao-fonto-style-text-align,
   $ao-fonto-style-text-decoration:          $ao-fonto-style-text-decoration,
   $ao-fonto-style-text-shadow:              $ao-fonto-style-text-shadow,
+  $ao-fonto-style-white-space:              $ao-fonto-style-white-space,
   $ao-fonto-style-border-top:               $ao-fonto-style-border-top,
   $ao-fonto-style-border-bottom:            $ao-fonto-style-border-bottom,
   $ao-fonto-style-border-left:              $ao-fonto-style-border-left,
@@ -366,6 +388,7 @@ $ao-fonto-style-focus-text-shadow:        false !default;
         letter-spacing: $ao-fonto-style-letter-spacing,
         text-decoration: $ao-fonto-style-text-decoration,
         text-shadow: $ao-fonto-style-text-shadow,
+        white-space: $ao-fonto-style-white-space,
         border-top: $ao-fonto-style-border-top,
         border-bottom: $ao-fonto-style-border-bottom,
         border-left: $ao-fonto-style-border-left,

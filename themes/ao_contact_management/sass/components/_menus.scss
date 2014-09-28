@@ -102,9 +102,9 @@ $ao-menu-top-offset: $base-font-size * 2.2;
         $ao-icon-menu-item-icon-vertical-align: bottom,
         $ao-icon-menu-item-icon-height: 30px,
         $ao-icon-menu-item-icon-width: 30px,
-        $ao-icon-menu-item-icon-margin: -2px rhythm(.3) 0em 0em, 
+        $ao-icon-menu-item-icon-margin: -2px rhythm(.15) 0em 0em, 
         $ao-icon-menu-item-icon-padding: 0em,
-        $ao-icon-menu-item-icon-background: url('../images/ao-backend-icons.png') 0px -60px no-repeat,
+        $ao-icon-menu-item-icon-background: false,
         $ao-icon-menu-item-text-selector: A,
         $ao-icon-menu-item-text-display: inline-block,
         $ao-icon-menu-item-text-vertical-align: top,
@@ -375,20 +375,25 @@ $ao-menu-top-offset: $base-font-size * 2.2;
   // default states
   position: relative;
   
-  #{$ao-menu-trigger-selector} {
-    // default style for triggers
-    @if $ao-menu-trigger-style != false {
-      @extend #{$ao-menu-trigger-style};
-    }
-    @if $ao-menu-include-transitions == true {
-      @include ao-transition();
-    }
-  }
-  #{$ao-menu-menu-selector} {
+  @if $ao-menu-trigger-selector != false {
   
+    #{$ao-menu-trigger-selector} {
+      // default style for triggers
+      @if $ao-menu-trigger-style != false {
+        @extend #{$ao-menu-trigger-style};
+      }
+      @if $ao-menu-include-transitions == true {
+        @include ao-transition();
+      }
+    }
+  } 
+  
+  #{$ao-menu-menu-selector} {
     // hide the menu
     display: none;
     position: absolute;
+    white-space: nowrap;
+    overflow: hidden;
 
     // default style for menus
     @if $ao-menu-menu-style != false {
@@ -440,81 +445,15 @@ $ao-menu-top-offset: $base-font-size * 2.2;
   // the hover gets applied to the containing element, not the trigger
   // this allows us to do things like make block titles into triggers for menus
   &:hover {
+  
+    // make sure there's no border radius on the bottom corners
+    @include border-bottom-left-radius(0px);
+    @include border-bottom-right-radius(0px);
+
+  
     #{$ao-menu-menu-selector} {
       display: block;
     }
   }
 } 
  
-.menu {
-  
-  @extend .btn;
-  position: relative;
-  background-color: $base-green3;
-  
-  &.btn-disabled {
-    background-color: $base-green2;
-  }
-  
-  &.btn-expander {
-    &:hover {
-       background-color: $base-green3;
-      .btn-expandable {
-        display: block;
-      }
-    }
-    
-  }
-  
-  .btn-expandable {
-    display: none;
-    @include box-sizing(border-box);
-    @include border-radius(4px 0px 4px 4px);
-    background-color: $base-green3;
-    border-top: none;
-    margin-top: -2px;
-    padding: .8em .4em .4em;
-    position: absolute;
-    left: auto;
-    right: 0px;
-    z-index: 1000;
-    min-width: 175px;
-  
-    UL.links {
-      padding: 0em;
-      margin: 0em;
-      LI {
-        list-style-type: none;
-        padding: 0em .4em .2em;
-        margin: 0em;
-        &:hover {
-          background-color: $base-green;
-          @include border-radius(4px);
-        }
-        A {
-          color: White;
-          white-space:nowrap;
-          text-decoration: none;
-          &:hover {
-            color: White;
-          }
-        }
-      }
-    }
-  } 
-  
-  
-} 
-
-.menu-right {
-}
-
-.vbo-views-form {
-  #edit-select {
-    display: none;
-  }
-}
-.btn-vbo {
-  @extend .menu;
-  float: right;
-}
