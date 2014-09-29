@@ -65,7 +65,7 @@ projects[email][version] = 1.3
 projects[email][subdir] = "contrib"
 projects[addressfield][version] = 1.0-beta5
 projects[addressfield][subdir] = "contrib"
-projects[date][version] = 2.9-alpha1
+projects[date][version] = 2.9-alpha2
 projects[date][subdir] = "contrib"
 projects[select_or_other][version] = 2.20
 projects[select_or_other][subdir] = "contrib"
@@ -102,7 +102,7 @@ projects[media][download][type] = "git"
 projects[media][download][branch] = "7.x-2.x"
 projects[media][download][revision] = "5d7ed633439e2ddd633a5e35fa5442743eeb0df0"
 projects[colorbox][subdir] = "contrib"
-projects[colorbox][version] = 2.7
+projects[colorbox][version] = 2.8
 projects[media_colorbox][subdir] = "contrib"
 projects[media_colorbox][type] = "module"
 projects[media_colorbox][download][type] = "git"
@@ -128,7 +128,7 @@ projects[file_entity][download][branch] = "7.x-2.x"
 projects[file_entity][download][revision] = "1e037ada7f783058aa460cf90421b809ba04d0a7"
 
 ; commerce modules
-projects[commerce][version] = 1.9
+projects[commerce][version] = 1.10
 projects[commerce][subdir] = "contrib"
 projects[commerce_order_reference][version] = 1.0-alpha1
 projects[commerce_order_reference][subdir] = "contrib"
@@ -159,7 +159,7 @@ projects[geocoder][download][type] = git
 projects[geocoder][download][branch] = 7.x-1.x
 projects[geocoder][download][revision] = "c1a79dc5738030f714254fd58e74659582eae2ff"
 projects[geofield][subdir] = "contrib"
-projects[geofield][version] = "2.1"
+projects[geofield][version] = "2.3"
 projects[geophp][type] = module
 projects[geophp][subdir] = "contrib"
 projects[geophp][download][type] = git
@@ -215,7 +215,7 @@ libraries[colorbox][download][type] = get
 libraries[colorbox][download][url] = "https://github.com/jackmoore/colorbox/archive/1.5.13.tar.gz"
 
 ; sample content
-projects[uuid][version] = 1.0-alpha5
+projects[uuid][version] = 1.0-alpha6
 projects[uuid][subdir] = "contrib"
 projects[uuid][patch][] = "https://www.drupal.org/files/uuid.uuid_core_inc.patch"
 projects[deploy][type] = module
