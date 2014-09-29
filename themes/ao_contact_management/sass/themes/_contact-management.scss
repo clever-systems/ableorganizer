@@ -114,7 +114,6 @@ BODY.page-crm-core-dashboard {
   
   /* PANELS */
   
-  
   /* PANEL TITLES */
   
   /* ACTIVITY LISTS */
@@ -157,10 +156,7 @@ BODY.page-crm-core-dashboard {
       @extend .ao-summary-table;
     }
   }
-
-
   /* BREAKPOINTS */
-
 
 }
 .crm-core-activity-info DIV {
@@ -185,14 +181,13 @@ BODY.page-crm-core-dashboard {
   border-bottom: 1px solid #d1d1d1;
 }
 /* full page view of an activity */
+// move this to a mixin
 .entity-crm-core-activity {
   border: 1px solid $e-gray;
   background-color: White;
   padding: 1em;
   margin: 1em 0em;
 }
-
-
 
 /**
  * CONTACTS
@@ -287,16 +282,9 @@ section.header {
   }
 } 
 
-
-
-
-
-/* container tables */
-/* used to display contacts */
-
-
 /* data tables */
 /* displays tables related to run downs of data within reports */
+// move this to a mixin
 .data-tables {
 
   .table-container,
@@ -321,6 +309,7 @@ section.header {
 }
 
 /* handles the display of summary items */
+// move this to a mixin
 .data-summary {
   .table-container,
   .views-table {
