@@ -21,8 +21,13 @@ $ao-panel-pane-border-radius:       false !default;
 $ao-panel-pane-margin:       false !default; 
 $ao-panel-pane-padding:       false !default; 
 $ao-panel-header-font-style:       false !default; 
+$ao-panel-pane-title-border:       false !default; 
+$ao-panel-pane-title-border-top:       false !default; 
+$ao-panel-pane-title-border-bottom:       false !default; 
+$ao-panel-pane-title-border-left:       false !default; 
+$ao-panel-pane-title-border-right:       false !default; 
+$ao-panel-pane-title-border-radius:       false !default; 
 $ao-panel-content-font-style:       false !default; 
- 
  
 // controls the appearance of a panel
 // allow you to set borders, backgrounds, corners, padding, margins, etc
@@ -58,6 +63,12 @@ $ao-panel-content-font-style:       false !default;
   $ao-panel-pane-margin: $ao-panel-pane-margin,
   $ao-panel-pane-padding: $ao-panel-pane-padding,
   $ao-panel-header-font-style: $ao-panel-header-font-style,
+  $ao-panel-pane-title-border: $ao-panel-pane-title-border,
+  $ao-panel-pane-title-border-top: $ao-panel-pane-title-border-top,
+  $ao-panel-pane-title-border-bottom: $ao-panel-pane-title-border-bottom,
+  $ao-panel-pane-title-border-left: $ao-panel-pane-title-border-left,
+  $ao-panel-pane-title-border-right: $ao-panel-pane-title-border-right,
+  $ao-panel-pane-title-border-radius: $ao-panel-pane-border-radius,
   $ao-panel-content-font-style: $ao-panel-content-font-style
 
 ) {
@@ -88,10 +99,26 @@ $ao-panel-content-font-style:       false !default;
   }
   @if $ao-panel-header-font-style != false {
     .pane-title {
-      @include ao-fontography($ao-panel-header-font-style);
+      
+      // header font style
+      @if $ao-panel-header-font-style != false {
+        @include ao-fontography($ao-panel-header-font-style);
+      }
+      
+      // pane title border
+      @include ao-set-borders (
+        $ao-set-border: $ao-panel-pane-title-border,
+        $ao-set-border-top: $ao-panel-pane-title-border-top,
+        $ao-set-border-bottom: $ao-panel-pane-title-border-bottom,
+        $ao-set-border-left: $ao-panel-pane-title-border-left,
+        $ao-set-border-right: $ao-panel-pane-title-border-right
+      );
+      
+      @if $ao-panel-pane-title-border-radius != false {
+        @include border-radius($ao-panel-pane-title-border-radius);
+      }
     }
   }
- 
 }
 
 

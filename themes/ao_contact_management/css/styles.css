@@ -1766,7 +1766,7 @@ tr.selected td {
 /* line 803, ../sass/components/_misc.scss */
 .progress .filled {
   background-color: #0072b9;
-  background-image: url('../images/progress.gif?1411132269');
+  background-image: url('../images/progress.gif?1411322614');
 }
 
 /**
@@ -1872,6 +1872,7 @@ tr.selected td {
 /* BUTTONS */
 /* MENUS */
 /* TABLES */
+/* PANELS */
 /*
 
   font-size: 1em;
@@ -3338,18 +3339,8 @@ h1, h2, h3, h4, h5, h6 {
 
 /* standard panel title */
 /* this is just a basic title that can be used for any panel  */
-/* line 14, ../sass/components/_titles.scss */
-.standard-panel-title, .contact-pane h2.pane-title, BODY.page-crm-core-contact .panel-pane h2.pane-title, BODY.page-crm-core-dashboard .pane-ao-dashboard-act-stream-panel-pane-1 h2.pane-title {
-  margin: 0em 0em .8em;
-  border-bottom: 1px solid #e1e1e1;
-  text-align: left;
-  padding: 0px;
-  text-transform: uppercase;
-  color: #3697ee;
-}
-
 /* field label title */
-/* line 25, ../sass/components/_titles.scss */
+/* line 15, ../sass/components/_titles.scss */
 .field-label-title, .edit-form-wrapper .form-item-title .form-item .fieldset-legend, #crm-core-activity-edit-cmcd-donation-form .form-item-title .form-item .fieldset-legend,
 #crm-core-contact-ui-form .form-item-title .form-item .fieldset-legend,
 .edit-form-wrapper .form-item-title .form-item LABEL,
@@ -3371,7 +3362,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* widget titles */
 /* small colored title used in summaries and other items */
-/* line 39, ../sass/components/_titles.scss */
+/* line 29, ../sass/components/_titles.scss */
 .widget-title, .widget-title-links, .quick-links .pane-title, BODY.page-crm-core-reports .pane-title, .widget-table-titles-large, BODY.page-crm-core-dashboard .summary-pane .pane-title, .activty-feed-container .pane-title {
   border: none;
   text-align: center;
@@ -3384,7 +3375,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* applied to tables */
 /* used in dashboard, reports */
-/* line 51, ../sass/components/_titles.scss */
+/* line 41, ../sass/components/_titles.scss */
 .widget-title-links, .quick-links .pane-title, BODY.page-crm-core-reports .pane-title {
   margin: 0em 0em .8em;
   border-bottom: 1px solid #e1e1e1;
@@ -3392,7 +3383,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* titles for widget tables */
-/* line 59, ../sass/components/_titles.scss */
+/* line 49, ../sass/components/_titles.scss */
 .widget-table-titles {
   /*
   
@@ -3409,7 +3400,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* larger version of widget tables */
-/* line 77, ../sass/components/_titles.scss */
+/* line 67, ../sass/components/_titles.scss */
 .widget-table-titles-large {
   font-size: 0.9em;
   padding: 0.5em 0.5em;
@@ -3418,17 +3409,17 @@ h1, h2, h3, h4, h5, h6 {
   border-top: 1px solid #CCC;
   border-bottom: 1px solid #CCC;
 }
-/* line 85, ../sass/components/_titles.scss */
+/* line 75, ../sass/components/_titles.scss */
 .widget-table-titles-large A {
   text-decoration: none;
 }
-/* line 87, ../sass/components/_titles.scss */
+/* line 77, ../sass/components/_titles.scss */
 .widget-table-titles-large A IMG {
   margin-left: 0.4em;
 }
 
 /* average pane title */
-/* line 94, ../sass/components/_titles.scss */
+/* line 84, ../sass/components/_titles.scss */
 .pane-title-header {
   font-family: Montserrat, Helvetica, sans-serif;
   letter-spacing: -0.05em;
@@ -3487,22 +3478,8 @@ h1, h2, h3, h4, h5, h6 {
  * $ao-activity-item-icon-style: 
  * 
  */
-/* activity in an activity feed */
-/* activity feed */
-/* line 173, ../sass/components/_activities.scss */
-.activity-record-pane, .view-ao-crm-activities-by-contact .view-content, BODY.page-crm-core-dashboard .pane-ao-dashboard-act-stream-panel-pane-1 .view-content {
-  border: 1px solid #e1e1e1;
-  background-color: White;
-  padding: 1em;
-  margin: 1em 0em;
-}
-/* line 179, ../sass/components/_activities.scss */
-.activity-record-pane .views-row:last-child .crm-core-activity, .view-ao-crm-activities-by-contact .view-content .views-row:last-child .crm-core-activity, BODY.page-crm-core-dashboard .pane-ao-dashboard-act-stream-panel-pane-1 .view-content .views-row:last-child .crm-core-activity {
-  border-bottom: none;
-}
-
 /* full page view of an activity */
-/* line 186, ../sass/components/_activities.scss */
+/* line 171, ../sass/components/_activities.scss */
 .entity-crm-core-activity {
   border: 1px solid #e1e1e1;
   background-color: White;
@@ -3510,8 +3487,6 @@ h1, h2, h3, h4, h5, h6 {
   margin: 1em 0em;
 }
 
-/* move to theme */
-/* activity page */
 /**
  * @file
  * Defines the appearance of tabs within the UI
@@ -3626,21 +3601,31 @@ UL.tabs.tabs-secondary LI {
 }
 /* line 21, ../sass/components/_contact.scss */
 .contact-pane h2.pane-title, BODY.page-crm-core-contact .panel-pane h2.pane-title {
-  font-size: 18.72px;
+  margin: 0em 0em .8em;
+  border-bottom: 1px solid #e1e1e1;
+  padding: 0px;
+  color: #3697ee;
+  font-family: Montserrat, Helvetica, sans-serif;
+  font-size: 1.17em;
+  line-height: 1.28205em;
+  padding: 0em 0.2em 0.2em;
+  margin: 0em 0em 0.8em;
+  text-transform: uppercase;
+  letter-spacing: -0.05em;
 }
 
 /* displays contact fields as a table */
-/* line 31, ../sass/components/_contact.scss */
+/* line 33, ../sass/components/_contact.scss */
 .contact-fields .content, .pane-crm-core-contact .entity-crm-core-contact .content {
   display: table;
   border: 1px solid #e1e1e1;
   width: 100%;
 }
-/* line 36, ../sass/components/_contact.scss */
+/* line 38, ../sass/components/_contact.scss */
 .contact-fields .content .field, .pane-crm-core-contact .entity-crm-core-contact .content .field {
   display: table-row;
 }
-/* line 39, ../sass/components/_contact.scss */
+/* line 41, ../sass/components/_contact.scss */
 .contact-fields .content .field .field-label, .pane-crm-core-contact .entity-crm-core-contact .content .field .field-label {
   display: table-cell;
   padding-right: 20px;
@@ -3653,7 +3638,7 @@ UL.tabs.tabs-secondary LI {
   font-family: Montserrat, Helvetica, sans-serif;
   font-size: 0.9em;
 }
-/* line 51, ../sass/components/_contact.scss */
+/* line 53, ../sass/components/_contact.scss */
 .contact-fields .content .field .field-items, .pane-crm-core-contact .entity-crm-core-contact .content .field .field-items {
   display: table-cell;
   border-bottom: 1px solid #e1e1e1;
@@ -3661,21 +3646,21 @@ UL.tabs.tabs-secondary LI {
 }
 
 /* summary data for user profiles */
-/* line 61, ../sass/components/_contact.scss */
+/* line 63, ../sass/components/_contact.scss */
 .user-profile-summary-data {
   border: 1px solid #e1e1e1;
   display: table;
   width: 100%;
 }
-/* line 65, ../sass/components/_contact.scss */
+/* line 67, ../sass/components/_contact.scss */
 .user-profile-summary-data .user-profile-summary-data-row {
   display: table-row;
 }
-/* line 67, ../sass/components/_contact.scss */
+/* line 69, ../sass/components/_contact.scss */
 .user-profile-summary-data .user-profile-summary-data-row .user-profile-summary-data-item {
   display: table-cell;
 }
-/* line 69, ../sass/components/_contact.scss */
+/* line 71, ../sass/components/_contact.scss */
 .user-profile-summary-data .user-profile-summary-data-row .user-profile-summary-data-item .udpi-label {
   font-size: 0.7em;
   padding: .5em 0em;
@@ -3683,7 +3668,7 @@ UL.tabs.tabs-secondary LI {
   font-family: Montserrat, Helvetica, sans-serif;
   text-transform: uppercase;
 }
-/* line 76, ../sass/components/_contact.scss */
+/* line 78, ../sass/components/_contact.scss */
 .user-profile-summary-data .user-profile-summary-data-row .user-profile-summary-data-item .udpi-data-item {
   text-align: center;
   font-size: 1.5em;
@@ -3692,7 +3677,7 @@ UL.tabs.tabs-secondary LI {
 }
 
 /* takes views-headers and puts them on the same line as the pane title */
-/* line 89, ../sass/components/_contact.scss */
+/* line 91, ../sass/components/_contact.scss */
 .contact-pane-header-buttons .view-header, .pane-ao-5-recent-activities .view-header {
   position: absolute;
   top: -75px;
@@ -3700,23 +3685,23 @@ UL.tabs.tabs-secondary LI {
 }
 
 /* handles the display of user info in a contact record */
-/* line 102, ../sass/components/_contact.scss */
+/* line 104, ../sass/components/_contact.scss */
 .contact-user-info-box, .pane-ao-user-picture {
   background-color: whitesmoke;
   padding: 1em;
   text-align: center;
 }
-/* line 107, ../sass/components/_contact.scss */
+/* line 109, ../sass/components/_contact.scss */
 .contact-user-info-box .contact-user-info, .pane-ao-user-picture .contact-user-info {
   font-size: 13.28px;
 }
-/* line 109, ../sass/components/_contact.scss */
+/* line 111, ../sass/components/_contact.scss */
 .contact-user-info-box .contact-user-info.nouser, .pane-ao-user-picture .contact-user-info.nouser {
   font-style: italic;
 }
 
 /* TODO: move to theme file */
-/* line 138, ../sass/components/_contact.scss */
+/* line 140, ../sass/components/_contact.scss */
 .pane-crm-core-contact .entity-crm-core-contact {
   font-size: 13.28px;
 }
@@ -3899,7 +3884,63 @@ UL.tabs.tabs-secondary LI {
  *
  * Predefined styles for panels and panel panes
  */
+/**
+ *  PANEL PANES
+ */
 /* line 13, ../sass/themes/_panel-styles.scss */
+.ao-standard-panel-pane {
+  background: #f1f1f1;
+  border-top: 1px solid #e1e1e1;
+  border-bottom: 1px solid #cccccc;
+  border-left: 1px solid #e1e1e1;
+  border-right: 1px solid #cccccc;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+  margin: 0em 0em 0.8em;
+  padding: 0em 0.2em 0.2em;
+}
+/* line 101, ../sass/components/_panels.scss */
+.ao-standard-panel-pane .pane-title {
+  color: #3697ee;
+  font-family: Montserrat, Helvetica, sans-serif;
+  font-size: 1.17em;
+  line-height: 1.28205em;
+  padding: 0em 0.2em 0.2em;
+  margin: 0em 0em 0.8em;
+  text-transform: uppercase;
+  letter-spacing: -0.05em;
+  border-bottom: 1px solid #e1e1e1;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+}
+
+/* line 30, ../sass/themes/_panel-styles.scss */
+.ao-highlighted-panel-pane, BODY.page-crm-core-dashboard .pane-ao-dashboard-act-stream-panel-pane-1 {
+  background: white;
+  border-top: 1px solid #e1e1e1;
+  border-bottom: 1px solid #cccccc;
+  border-left: 1px solid #e1e1e1;
+  border-right: 1px solid #cccccc;
+  margin: 0em 0em 0.8em;
+  padding: 0em 1em;
+}
+/* line 101, ../sass/components/_panels.scss */
+.ao-highlighted-panel-pane .pane-title, BODY.page-crm-core-dashboard .pane-ao-dashboard-act-stream-panel-pane-1 .pane-title {
+  color: #3697ee;
+  font-family: Montserrat, Helvetica, sans-serif;
+  font-size: 1.5em;
+  line-height: 1em;
+  padding: 0.75em 0em 0em;
+  margin: 0em 0em 0.375em;
+  text-align: uppercase;
+  text-transform: uppercase;
+  letter-spacing: -0.05em;
+  border-bottom: standard-panel-title-large;
+}
+
+/* line 47, ../sass/themes/_panel-styles.scss */
 .ao-summary-panel-pane, BODY.page-crm-core-dashboard .summary-pane {
   background: #f1f1f1;
   border-top: 1px solid #e1e1e1;
@@ -3911,18 +3952,39 @@ UL.tabs.tabs-secondary LI {
   border-radius: 8px;
   margin: 0em 0em 0.8em;
   padding: 0em 0.2em 0.2em;
-  /*
-      
-    background-color: $f-gray2;
-    @include border-radius(8px);
-    border: 1px solid $e-gray;
-    padding: 0em .2em .2em;
-    margin: 0em 0em .8em;
-    border: 1px solid #CCC;    
-      
-      */
+}
+/* line 101, ../sass/components/_panels.scss */
+.ao-summary-panel-pane .pane-title, BODY.page-crm-core-dashboard .summary-pane .pane-title {
+  color: #0062a0;
+  font-family: Montserrat, Helvetica, sans-serif;
+  font-size: 1.17em;
+  line-height: 1.28205em;
+  padding: 0.75em 0em 0em;
+  margin: 0em 0em 0.375em;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: -0.05em;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
 }
 
+/* activity in an activity feed */
+/* activity feed */
+/* line 66, ../sass/themes/_panel-styles.scss */
+.activity-record-pane, .view-ao-crm-activities-by-contact .view-content {
+  border: 1px solid #e1e1e1;
+  background-color: White;
+  padding: 1em;
+  margin: 1em 0em;
+}
+/* line 72, ../sass/themes/_panel-styles.scss */
+.activity-record-pane .views-row:last-child .crm-core-activity, .view-ao-crm-activities-by-contact .view-content .views-row:last-child .crm-core-activity {
+  border-bottom: none;
+}
+
+/* move to theme */
+/* activity page */
 /**
  * @file
  * TABLES
@@ -4950,27 +5012,12 @@ BODY.page-crm-core-dashboard .crm-core-activity .crm-core-activity-info {
 BODY.page-crm-core-dashboard .crm-core-activity .crm-core-activity-actions {
   float: right;
 }
-/* line 147, ../sass/themes/_contact-management.scss */
-BODY.page-crm-core-dashboard .pane-ao-dashboard-act-stream-panel-pane-1 h2.pane-title {
-  position: absolute;
-  top: 8px;
-  left: 16px;
-  z-index: 100;
-  border-bottom: none;
-  text-transform: uppercase;
-  margin: 0em;
-}
-/* line 159, ../sass/themes/_contact-management.scss */
-BODY.page-crm-core-dashboard .pane-ao-dashboard-act-stream-panel-pane-1 .view-content {
-  margin: 0em 0em;
-  padding-top: 64px;
-}
-/* line 164, ../sass/themes/_contact-management.scss */
+/* line 154, ../sass/themes/_contact-management.scss */
 BODY.page-crm-core-dashboard .pane-ao-dashboard-act-stream-panel-pane-1 .view-content .crm-core-activity-actions {
   margin-left: 12px;
 }
 
-/* line 186, ../sass/themes/_contact-management.scss */
+/* line 176, ../sass/themes/_contact-management.scss */
 .crm-core-activity-info DIV {
   display: inline-block;
 }
@@ -4979,7 +5026,7 @@ BODY.page-crm-core-dashboard .pane-ao-dashboard-act-stream-panel-pane-1 .view-co
  * ACTIVITIES 
  */
 /* Default Activity List */
-/* line 194, ../sass/themes/_contact-management.scss */
+/* line 184, ../sass/themes/_contact-management.scss */
 .crm-core-activity {
   position: relative;
   padding: 0.9em 0em;
@@ -5099,7 +5146,7 @@ BODY.page-crm-core-dashboard .pane-ao-dashboard-act-stream-panel-pane-1 .view-co
 .crm-core-activity .crm-core-activity-actions {
   float: right;
 }
-/* line 201, ../sass/themes/_contact-management.scss */
+/* line 191, ../sass/themes/_contact-management.scss */
 .crm-core-activity .crm-core-activity-date {
   margin-top: 0.45em;
   display: block;
@@ -5113,14 +5160,14 @@ BODY.page-crm-core-dashboard .pane-ao-dashboard-act-stream-panel-pane-1 .view-co
  * CONTACTS
  */
 /* CONTACT TABLE */
-/* line 217, ../sass/themes/_contact-management.scss */
+/* line 207, ../sass/themes/_contact-management.scss */
 .table-container TABLE TD.views-field-nothing-4,
 .view-ao-crm-core-contacts TABLE TD.views-field-nothing-4 {
   width: 30px;
   text-align: center;
   padding: 0em;
 }
-/* line 222, ../sass/themes/_contact-management.scss */
+/* line 212, ../sass/themes/_contact-management.scss */
 .table-container TABLE TD.views-field-views-bulk-operations,
 .view-ao-crm-core-contacts TABLE TD.views-field-views-bulk-operations {
   width: 30px;
@@ -5128,14 +5175,14 @@ BODY.page-crm-core-dashboard .pane-ao-dashboard-act-stream-panel-pane-1 .view-co
   padding: 0em;
   background-color: #f1f1f1 !important;
 }
-/* line 227, ../sass/themes/_contact-management.scss */
+/* line 217, ../sass/themes/_contact-management.scss */
 .table-container TABLE TD.views-field-views-bulk-operations .form-item,
 .view-ao-crm-core-contacts TABLE TD.views-field-views-bulk-operations .form-item {
   padding: 0em .5em;
   margin: 0em auto;
   display: inline-block;
 }
-/* line 233, ../sass/themes/_contact-management.scss */
+/* line 223, ../sass/themes/_contact-management.scss */
 .table-container TABLE TD.views-field-nothing-3,
 .view-ao-crm-core-contacts TABLE TD.views-field-nothing-3 {
   width: 200px;
@@ -5147,19 +5194,19 @@ BODY.page-crm-core-dashboard .pane-ao-dashboard-act-stream-panel-pane-1 .view-co
  * COMPONENTS
  */
 /* PAGE TITLE */
-/* line 245, ../sass/themes/_contact-management.scss */
+/* line 235, ../sass/themes/_contact-management.scss */
 section.header H1#page-title {
   color: white;
   font-weight: normal;
   padding: 0em;
   margin: 0.375em 0em;
 }
-/* line 247, ../sass/themes/_contact-management.scss */
+/* line 237, ../sass/themes/_contact-management.scss */
 section.header H1#page-title em {
   color: #d6f7ff;
 }
 @media (min-width: 960px) {
-  /* line 252, ../sass/themes/_contact-management.scss */
+  /* line 242, ../sass/themes/_contact-management.scss */
   section.header H1#page-title {
     position: absolute;
     left: 0px;
@@ -5169,12 +5216,12 @@ section.header H1#page-title em {
 }
 
 /* ACTION LINKS */
-/* line 261, ../sass/themes/_contact-management.scss */
+/* line 251, ../sass/themes/_contact-management.scss */
 .action-links {
   margin: 0em 0em .8em;
   padding: 0em;
 }
-/* line 264, ../sass/themes/_contact-management.scss */
+/* line 254, ../sass/themes/_contact-management.scss */
 .action-links LI {
   display: inline-block;
 }
@@ -5218,7 +5265,7 @@ A:active {
 }
 
 /* line 28, ../sass/themes/_global-styles.scss */
-.title-fonts, .quick-links .pane-title, .standard-panel-title, .contact-pane h2.pane-title, BODY.page-crm-core-contact .panel-pane h2.pane-title, BODY.page-crm-core-dashboard .pane-ao-dashboard-act-stream-panel-pane-1 h2.pane-title, .field-label-title, .edit-form-wrapper .form-item-title .form-item .fieldset-legend, #crm-core-activity-edit-cmcd-donation-form .form-item-title .form-item .fieldset-legend,
+.title-fonts, .quick-links .pane-title, .field-label-title, .edit-form-wrapper .form-item-title .form-item .fieldset-legend, #crm-core-activity-edit-cmcd-donation-form .form-item-title .form-item .fieldset-legend,
 #crm-core-contact-ui-form .form-item-title .form-item .fieldset-legend,
 .edit-form-wrapper .form-item-title .form-item LABEL,
 #crm-core-activity-edit-cmcd-donation-form .form-item-title .form-item LABEL,
@@ -5238,7 +5285,7 @@ A:active {
   font-size: 1.2em;
 }
 
-/* line 41, ../sass/themes/_global-styles.scss */
+/* line 36, ../sass/themes/_global-styles.scss */
 .summary-data {
   font-size: 1.4em;
   font-weight: 700;
@@ -5250,14 +5297,14 @@ A:active {
 /* navigation links */
 /* navigation links */
 /* footer */
-/* line 59, ../sass/themes/_global-styles.scss */
+/* line 54, ../sass/themes/_global-styles.scss */
 FOOTER {
   background-color: #555;
   padding: 1em -0em 2em;
 }
 
 /* reports */
-/* line 72, ../sass/themes/_global-styles.scss */
+/* line 67, ../sass/themes/_global-styles.scss */
 .crm_core_reports H3 {
   -moz-border-radius: 32px;
   -webkit-border-radius: 32px;
@@ -5271,7 +5318,7 @@ FOOTER {
   text-shadow: rgba(0, 0, 0, 0.5) 1px 1px 0;
   font-size: 1.3em;
 }
-/* line 83, ../sass/themes/_global-styles.scss */
+/* line 78, ../sass/themes/_global-styles.scss */
 .crm_core_reports H3 .crm_core_report_icon {
   height: 30px;
   width: 30px;
@@ -5283,17 +5330,17 @@ FOOTER {
   border-radius: 24px;
   padding: 0;
 }
-/* line 97, ../sass/themes/_global-styles.scss */
+/* line 92, ../sass/themes/_global-styles.scss */
 .crm_core_reports .item-list {
   font-size: 0.9em;
 }
-/* line 102, ../sass/themes/_global-styles.scss */
+/* line 97, ../sass/themes/_global-styles.scss */
 .crm_core_reports .item-list UL {
   list-style: none;
   margin: 1em 0em 1em 1em;
   padding: 0em;
 }
-/* line 107, ../sass/themes/_global-styles.scss */
+/* line 102, ../sass/themes/_global-styles.scss */
 .crm_core_reports .item-list UL LI {
   list-style: none;
   margin: 0em;
@@ -5301,7 +5348,7 @@ FOOTER {
   font-style: italic;
   margin-left: 12px;
 }
-/* line 114, ../sass/themes/_global-styles.scss */
+/* line 109, ../sass/themes/_global-styles.scss */
 .crm_core_reports .item-list UL LI A {
   margin-left: -12px;
   font-style: normal;
@@ -5317,7 +5364,7 @@ FOOTER {
 .crm_core_reports:after {
   clear: both;
 }
-/* line 128, ../sass/themes/_global-styles.scss */
+/* line 123, ../sass/themes/_global-styles.scss */
 .crm_core_reports .column-left {
   float: left;
   width: 50%;
@@ -5325,7 +5372,7 @@ FOOTER {
   margin-right: -50%;
   padding: 0em 2em 0em 0em;
 }
-/* line 132, ../sass/themes/_global-styles.scss */
+/* line 127, ../sass/themes/_global-styles.scss */
 .crm_core_reports .column-right {
   float: left;
   width: 50%;
@@ -5338,21 +5385,21 @@ FOOTER {
 /* basic container */
 /* basic container element */
 /* activity feed */
-/* line 152, ../sass/themes/_global-styles.scss */
+/* line 147, ../sass/themes/_global-styles.scss */
 .activty-feed-container {
   background-color: #f9f9f9;
 }
 
 /* quicklinks */
-/* line 174, ../sass/themes/_global-styles.scss */
+/* line 169, ../sass/themes/_global-styles.scss */
 .quick-links .link-container {
   font-size: 0.9em;
 }
-/* line 178, ../sass/themes/_global-styles.scss */
+/* line 173, ../sass/themes/_global-styles.scss */
 .quick-links .link-container strong {
   text-transform: uppercase;
 }
-/* line 181, ../sass/themes/_global-styles.scss */
+/* line 176, ../sass/themes/_global-styles.scss */
 .quick-links .link-container strong, .quick-links .link-container A {
   margin-bottom: 0.4em;
   text-decoration: none;
@@ -5361,23 +5408,23 @@ FOOTER {
 /* views */
 /* views buttons */
 /* views filters */
-/* line 204, ../sass/themes/_global-styles.scss */
+/* line 199, ../sass/themes/_global-styles.scss */
 .views-exposed-form .views-exposed-widget {
   font-size: 13.28px;
   padding: 0em;
   margin: 0em .4em 0em 0em;
 }
-/* line 210, ../sass/themes/_global-styles.scss */
+/* line 205, ../sass/themes/_global-styles.scss */
 .views-exposed-form .views-exposed-widget LABEL {
   text-transform: uppercase;
 }
 
 /* breadcrumbs */
-/* line 217, ../sass/themes/_global-styles.scss */
+/* line 212, ../sass/themes/_global-styles.scss */
 #breadcrumb {
   clear: both;
 }
-/* line 221, ../sass/themes/_global-styles.scss */
+/* line 216, ../sass/themes/_global-styles.scss */
 #breadcrumb UL.breadcrumbs {
   list-style-type: none;
   margin-left: 0px;
@@ -5391,14 +5438,14 @@ FOOTER {
   border-radius: 5px;
   padding: 0px;
 }
-/* line 232, ../sass/themes/_global-styles.scss */
+/* line 227, ../sass/themes/_global-styles.scss */
 #breadcrumb UL.breadcrumbs LI {
   float: left;
   margin-right: 2px;
   height: 19px;
   padding: 0px;
 }
-/* line 238, ../sass/themes/_global-styles.scss */
+/* line 233, ../sass/themes/_global-styles.scss */
 #breadcrumb UL.breadcrumbs LI A {
   height: 19px;
   display: block;
@@ -5411,11 +5458,11 @@ FOOTER {
   background: url("../images/ao-backend-icons.png") -452px -6px no-repeat;
   line-height: 1.5em;
 }
-/* line 250, ../sass/themes/_global-styles.scss */
+/* line 245, ../sass/themes/_global-styles.scss */
 #breadcrumb UL.breadcrumbs LI A:hover {
   color: White;
 }
-/* line 257, ../sass/themes/_global-styles.scss */
+/* line 252, ../sass/themes/_global-styles.scss */
 #breadcrumb UL.breadcrumbs LI.cmc_home A {
   display: block;
   padding: 0;
@@ -5435,19 +5482,19 @@ FOOTER {
   -webkit-transition-duration: 0s;
   transition-duration: 0s;
 }
-/* line 270, ../sass/themes/_global-styles.scss */
+/* line 265, ../sass/themes/_global-styles.scss */
 #breadcrumb UL.breadcrumbs LI.cmc_home A:hover {
   background: url("../images/ao-backend-icons.png") -27px -127px no-repeat;
 }
 
-/* line 285, ../sass/themes/_global-styles.scss */
+/* line 280, ../sass/themes/_global-styles.scss */
 #breadcrumb UL.breadcrumbs LI:nth-child(2) A {
   padding: 0px 4px 0px 8px;
   background: none;
   border-left: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-/* line 290, ../sass/themes/_global-styles.scss */
+/* line 285, ../sass/themes/_global-styles.scss */
 #breadcrumb UL.breadcrumbs LI div.bc_arrow {
   display: none;
 }
@@ -5455,20 +5502,20 @@ FOOTER {
 /* media queries */
 @media all and (min-width: 0px) and (max-width: 683px) {
   /* logo size */
-  /* line 298, ../sass/themes/_global-styles.scss */
+  /* line 293, ../sass/themes/_global-styles.scss */
   .header__logo {
     width: 220px;
     margin-bottom: .5em;
   }
 
   /* report columns */
-  /* line 305, ../sass/themes/_global-styles.scss */
+  /* line 300, ../sass/themes/_global-styles.scss */
   .crm_core_reports .column-left {
     display: block;
     width: 100%;
     margin: 0em;
   }
-  /* line 310, ../sass/themes/_global-styles.scss */
+  /* line 305, ../sass/themes/_global-styles.scss */
   .crm_core_reports .column-right {
     display: block;
     width: 100%;
@@ -5477,7 +5524,7 @@ FOOTER {
 }
 @media all and (min-width: 684px) and (max-width: 959px) {
   /* logo size */
-  /* line 319, ../sass/themes/_global-styles.scss */
+  /* line 314, ../sass/themes/_global-styles.scss */
   .header__logo {
     width: 240px;
     margin-bottom: .6em;
@@ -5485,7 +5532,7 @@ FOOTER {
 }
 @media all and (min-width: 960px) {
   /* logo size */
-  /* line 326, ../sass/themes/_global-styles.scss */
+  /* line 321, ../sass/themes/_global-styles.scss */
   .header__logo {
     width: 260px;
     margin-bottom: .8em;
@@ -5493,7 +5540,7 @@ FOOTER {
 }
 @media all and (min-width: 1200px) {
   /* logo size */
-  /* line 333, ../sass/themes/_global-styles.scss */
+  /* line 328, ../sass/themes/_global-styles.scss */
   .header__logo {
     width: 280px;
     margin-bottom: 1em;

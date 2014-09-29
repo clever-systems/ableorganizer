@@ -11,16 +11,6 @@ h1, h2, h3, h4, h5, h6 {
 
 /* standard panel title */
 /* this is just a basic title that can be used for any panel  */
-.standard-panel-title {
-  @extend .title-fonts;
-  margin: 0em 0em .8em;
-  border-bottom: 1px solid #e1e1e1;
-  text-align: left;
-  padding: 0px;
-  text-transform: uppercase;
-  color: $base-blue;
-}
-
 /* field label title */
 .field-label-title {
   @extend .title-fonts;

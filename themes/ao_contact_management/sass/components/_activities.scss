@@ -167,35 +167,12 @@ $ao-activity-item-icon-padding:         false !default;
 
 // THIS IS THE OLD STUFF
 // Move it to the theme or get rid of it
-
-/* activity in an activity feed */
-/* activity feed */
-.activity-record-pane {
-  border: 1px solid $e-gray;
-  background-color: White;
-  padding: 1em;
-  margin: 1em 0em;
-  .views-row:last-child {
-    .crm-core-activity {
-      border-bottom: none;
-    }
-  }
-}
-
 /* full page view of an activity */
 .entity-crm-core-activity {
   border: 1px solid $e-gray;
   background-color: White;
   padding: 1em;
   margin: 1em 0em;
-}
-
-/* move to theme */
-/* activity page */
-.view-ao-crm-activities-by-contact {
-  .view-content {
-    @extend .activity-record-pane;
-  }
 }
 
 

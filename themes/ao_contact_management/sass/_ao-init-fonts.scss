@@ -178,19 +178,56 @@ $main-nav-contact-management: ao-fontography-register-style(
 
 /* TABLES */
 $summary-table-header: ao-fontography-register-style(
-  $ao-fonto-style-name:     summary-table-header,
-  $ao-fonto-style-size:     0.8em,
-  $ao-fonto-style-weight:   600,
-  $ao-fonto-style-color:    $base-purple,
-  $ao-fonto-style-text-transform: uppercase
+  $ao-fonto-style-name:             summary-table-header,
+  $ao-fonto-style-size:             0.8em,
+  $ao-fonto-style-weight:           600,
+  $ao-fonto-style-color:            $base-purple,
+  $ao-fonto-style-text-transform:   uppercase
 );
 $summary-table-data: ao-fontography-register-style(
-  $ao-fonto-style-name:     summary-table-data,
-  $ao-fonto-style-size:     1.4em,
-  $ao-fonto-style-weight:   600,
-  $ao-fonto-style-color:    #555,
-  $ao-fonto-style-text-transform: uppercase
+  $ao-fonto-style-name:             summary-table-data,
+  $ao-fonto-style-size:             1.4em,
+  $ao-fonto-style-weight:           600,
+  $ao-fonto-style-color:            #555,
+  $ao-fonto-style-text-transform:   uppercase
 );
+
+/* PANELS */
+$standard-panel-title: ao-fontography-register-style(
+  $ao-fonto-style-name:             standard-panel-title,
+  $ao-fonto-style-family:           $panel-pane-title-font,
+  $ao-fonto-style-size:             $h3-font-size,
+  $ao-fonto-style-text-transform:   uppercase,
+  $ao-fonto-style-letter-spacing:   -0.05em,
+  $ao-fonto-style-color:            $base-blue,
+  $ao-fonto-style-padding:          0em .2em .2em,
+  $ao-fonto-style-margin:           0em 0em .8em
+);
+
+$summary-panel-title: ao-fontography-register-style(
+  $ao-fonto-style-name:             summary-panel-title,
+  $ao-fonto-style-family:           $panel-pane-title-font,
+  $ao-fonto-style-size:             $h3-font-size,
+  $ao-fonto-style-text-transform:   uppercase,
+  $ao-fonto-style-text-align:       center,
+  $ao-fonto-style-letter-spacing:   -0.05em,
+  $ao-fonto-style-color:            $blue-almost-black,
+  $ao-fonto-style-padding:          rhythm(.5) 0em 0em,
+  $ao-fonto-style-margin:           0em 0em rhythm(.25)
+);
+
+$standard-panel-title-large: ao-fontography-register-style(
+  $ao-fonto-style-name:             standard-panel-title-large,
+  $ao-fonto-style-family:           $panel-pane-title-font,
+  $ao-fonto-style-size:             1.5em,
+  $ao-fonto-style-text-transform:   uppercase,
+  $ao-fonto-style-text-align:       uppercase,
+  $ao-fonto-style-letter-spacing:   -0.05em,
+  $ao-fonto-style-color:            $base-blue,
+  $ao-fonto-style-padding:          rhythm(.5) 0em 0em,
+  $ao-fonto-style-margin:           0em 0em rhythm(.25)
+);
+
 
 /*
 

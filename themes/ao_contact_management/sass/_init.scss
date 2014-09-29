@@ -78,6 +78,7 @@ $verdana:         Verdana, Tahoma, "DejaVu Sans", sans-serif;
 $tahoma:          Tahoma, Verdana, "DejaVu Sans", sans-serif;
 $helvetica:       Helvetica, Arial, "Nimbus Sans L", sans-serif;
 $arial:           Arial, Helvetica, "Nimbus Sans L", sans-serif;
+$montserrat:      Montserrat, Helvetica, sans-serif;
 
 $icon-font:       "ao-icons";  
   
@@ -95,6 +96,9 @@ $font-monospace:   $courier;
 $open-sans:       Open Sans, Helvetica, sans-serif;  
 $base-font-family: $open-sans; // The font family set on the html element.  
 $font-titles:     Montserrat, Helvetica, sans-serif;
+
+// Panels
+$panel-pane-title-font: $montserrat;
 
 //
 // Colors, etc.

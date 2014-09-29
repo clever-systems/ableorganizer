@@ -144,23 +144,13 @@ BODY.page-crm-core-dashboard {
 /* dashboard */
 .pane-ao-dashboard-act-stream-panel-pane-1 {
   
-  h2.pane-title {
-    // @TODO: move to mixins
-    position: absolute;
-    top: 8px;
-    left: 16px;
-    z-index: 100;
-    border-bottom: none;
-    text-transform: uppercase;
-    margin: 0em;
-    @extend .standard-panel-title;
-  }
+  @extend .ao-highlighted-panel-pane;
   
   .view-content {
     // @TODO: move to mixins
-    @extend .activity-record-pane;
-    margin: 0em 0em;
-    padding-top: 64px;
+    // @extend .activity-record-pane;
+    // margin: 0em 0em;
+    // padding-top: 64px;
     .crm-core-activity-actions {
       margin-left: 12px;
       A {
