@@ -35,7 +35,7 @@ section.banner {
     $ao-region-background: $dark-blue,
     $ao-region-padding: .5em 0em
   );
-  // @TODO: move this into a mixin
+  // @TODO: replace with fontography
   font-size: $h6-font-size;
   A {
     color: #dfe4e6;
@@ -45,7 +45,6 @@ section.banner {
     }
   }
 }
-
 /* BRANDING BANNER */
 section.branding {
   @include ao-region (
