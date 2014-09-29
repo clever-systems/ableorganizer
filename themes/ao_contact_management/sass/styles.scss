@@ -28,7 +28,7 @@
 // this creates a set of icons for use in the theme
 @import "ao-init-icons";
 
-// partials from frontend theme
+// partials that need to be kept in sync with the frontend theme
 @import "components/transitions";
 @import "components/buttons";
 @import "components/regions";
@@ -39,9 +39,9 @@
 @import "components/node";
 @import "components/block";
 @import "components/breadcrumbs";
+@import "components/panels";
 
 // new partials
-@import "components/panels";
 
 // partials from original
 @import "components/containers";
@@ -68,7 +68,7 @@
 
 // move all of this into mixins in the main theme file
 // @import "themes/global-styles";
-@import "themes/dashboard";
+// @import "themes/dashboard";
 @import "themes/reports";
 // @import "themes/icons";
 @import "themes/maintenance";
