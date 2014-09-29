@@ -122,55 +122,5 @@ $ao-panel-content-font-style:       false !default;
 }
 
 
-// defaults
-$ao-set-border: false !default;
-$ao-set-border-top: false !default;
-$ao-set-border-bottom: false !default;
-$ao-set-border-left: false !default;
-$ao-set-border-right: false !default;
-
-
-@mixin ao-set-borders (
-  $ao-set-border: $ao-set-border,
-  $ao-set-border-top: $ao-set-border-top,
-  $ao-set-border-bottom: $ao-set-border-bottom,
-  $ao-set-border-left: $ao-set-border-left,
-  $ao-set-border-right: $ao-set-border-right
-){
-
-  $border-top: false;
-  $border-bottom: false;
-  $border-left: false;
-  $border-right: false;
-  
-  @if $ao-set-border-top != false {
-    $border-top: $ao-set-border-top;
-  }
-  @if $ao-set-border-bottom != false {
-    $border-bottom: $ao-set-border-bottom;
-  }
-  @if $ao-set-border-left != false {
-    $border-left: $ao-set-border-left;
-  }
-  @if $ao-set-border-right != false {
-    $border-right: $ao-set-border-right;
-  }
-  @if $ao-set-border != false and $border-top == false and $border-bottom == false and $border-left == false and $border-right == false {
-    border: $ao-set-border;
-  } @else {
-    @if $border-top != false {
-      border-top: $border-top;
-    }
-    @if $border-bottom != false {
-      border-bottom: $border-bottom;
-    }
-    @if $border-left != false {
-      border-left: $border-left;
-    }
-    @if $border-right != false {
-      border-right: $border-right;
-    }
-  }
-}
 
 

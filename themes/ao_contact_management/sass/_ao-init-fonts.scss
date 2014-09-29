@@ -13,7 +13,6 @@ $normal: ao-fontography-register-style(
   $ao-fonto-style-lines: false,
   $ao-fonto-style-family: false
 );
-
 $regular: ao-fontography-register-style(
   $ao-fonto-style-name: regular,
   $ao-fonto-style-margin: 0em 0em rhythm(.5) 0em,
@@ -22,12 +21,10 @@ $regular: ao-fontography-register-style(
   $ao-fonto-style-lines: false,
   $ao-fonto-style-family: false
 );
-
 $breadcrumb: ao-fontography-register-style(
   $ao-fonto-style-name: breadcrumb,
   $ao-fonto-style-size: 0.9em
 );
-
 $hero: ao-fontography-register-style(
   $ao-fonto-style-name: hero,
   $ao-fonto-style-color: White,
@@ -79,6 +76,14 @@ $table-font-header-basic: ao-fontography-register-style(
 $activity-item-text: ao-fontography-register-style(
   $ao-fonto-style-name: activity-item-text,
   $ao-fonto-style-size: $base-font-size*0.95
+);
+
+$activity-item-date: ao-fontography-register-style(
+  $ao-fonto-style-name: activity-item-date,
+  $ao-fonto-style-size: 13px,
+  $ao-fonto-style-margin: rhythm(.3) 0em 0em,
+  $ao-fonto-style-text-transform: uppercase,
+  $ao-fonto-style-color: #777799
 );
 
 /* NAVIGATION LINKS */
@@ -203,7 +208,6 @@ $standard-panel-title: ao-fontography-register-style(
   $ao-fonto-style-padding:          0em .2em .2em,
   $ao-fonto-style-margin:           0em 0em .8em
 );
-
 $summary-panel-title: ao-fontography-register-style(
   $ao-fonto-style-name:             summary-panel-title,
   $ao-fonto-style-family:           $panel-pane-title-font,
@@ -215,7 +219,6 @@ $summary-panel-title: ao-fontography-register-style(
   $ao-fonto-style-padding:          rhythm(.5) 0em 0em,
   $ao-fonto-style-margin:           0em 0em rhythm(.25)
 );
-
 $standard-panel-title-large: ao-fontography-register-style(
   $ao-fonto-style-name:             standard-panel-title-large,
   $ao-fonto-style-family:           $panel-pane-title-font,
@@ -228,6 +231,14 @@ $standard-panel-title-large: ao-fontography-register-style(
   $ao-fonto-style-margin:           0em 0em rhythm(.25)
 );
 
+/* BREADCRUMBS */
+$breadcrumbs: ao-fontography-register-style(
+  $ao-fonto-style-name:             breadcrumbs,
+  $ao-fonto-style-size:             0.8em,
+  $ao-fonto-style-lines:            .75,
+  $ao-fonto-style-color:            rgba(255,255,255,.3),
+  $ao-fonto-style-text-decoration:  none
+);
 
 /*
 

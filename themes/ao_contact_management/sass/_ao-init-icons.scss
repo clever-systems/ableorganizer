@@ -55,6 +55,7 @@
 .ao-icon-zap:before {
   content: "o";
 }
+
 // GENERAL ICON STYLE
 // this is the basic style applied to icons
 // it is important to have this set
@@ -120,7 +121,7 @@ $home: ao-set-icon(
 );
 // dashboard
 $home: ao-set-icon(
-  $ao-icon-title: home,
+  $ao-icon-title: dashboard,
   $ao-icon-background: #CCC,
   $ao-icon-before: "c"
 );

@@ -22,8 +22,6 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
 }
 
-
-
 /* widget titles */
 /* small colored title used in summaries and other items */
 .widget-title {
@@ -47,21 +45,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* titles for widget tables */
 .widget-table-titles {
-  
-  /*
-  
-  @extend .widget-title;
-  font-size: 0.8em;
-  padding: 0.5em 0.5em;
-  color: $base-purple;
-  border-bottom: 1px solid #CCC;
-  white-space: nowrap;
-  overflow: hidden;
-  
-  */
-  border: none;
-  
-  
+  border: none;  
 }
 /* larger version of widget tables */
 .widget-table-titles-large {

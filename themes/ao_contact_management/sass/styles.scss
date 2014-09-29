@@ -18,6 +18,7 @@
 
 /* Component (SMACSS module) rules */
 @import "components/misc";
+@import "components/utilities";
 @import "components/fontography";
 @import "components/icons";
 
@@ -37,6 +38,7 @@
 @import "components/grids";
 @import "components/node";
 @import "components/block";
+@import "components/breadcrumbs";
 
 // new partials
 @import "components/panels";

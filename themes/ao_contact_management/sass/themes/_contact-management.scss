@@ -113,6 +113,8 @@ nav#main-menu {
 BODY.page-crm-core-dashboard {
   
   /* PANELS */
+  
+  
   /* PANEL TITLES */
   
   /* ACTIVITY LISTS */
@@ -122,54 +124,42 @@ BODY.page-crm-core-dashboard {
       $ao-activity-item-padding: rhythm(.6) 0em
     );
   }
+  /* dashboard */
+  .pane-ao-dashboard-act-stream-panel-pane-1 {
+    @extend .ao-highlighted-panel-pane;
+    .view-content {
+      .crm-core-activity-actions {
+        margin-left: 12px;
+        A {
+          @extend .btn;
+          @extend .btn-small;
+          &:first-child{
+            @extend .btn-blue;
+            @extend .btn-small;
+          }
+        }
+      }
+    }
+  }
   
   /* QUICK LINKS */
   
   /* SUMMARY TABLES */
   .summary-pane {
     @extend .ao-summary-panel-pane;
-    
     .pane-title {
       // @TODO: move to mixins
       @extend .widget-title;
       @extend .title-fonts;
     }
-    
     // all summary tables get this style
     TABLE {
       @extend .ao-summary-table;
     }
   }
 
-/* dashboard */
-.pane-ao-dashboard-act-stream-panel-pane-1 {
-  
-  @extend .ao-highlighted-panel-pane;
-  
-  .view-content {
-    // @TODO: move to mixins
-    // @extend .activity-record-pane;
-    // margin: 0em 0em;
-    // padding-top: 64px;
-    .crm-core-activity-actions {
-      margin-left: 12px;
-      A {
-        @extend .btn;
-        @extend .btn-small;
-        &:first-child{
-          @extend .btn-blue;
-          @extend .btn-small;
-        }
-      }
-    }
-    
-  }
-}
 
   /* BREAKPOINTS */
-
-
-
 
 
 }
@@ -186,16 +176,23 @@ BODY.page-crm-core-dashboard {
     $ao-activity-item-icon-size: 35px,
     $ao-activity-item-padding: rhythm(.6) 0em
   );
-  @include adjust-font-size-to(15px, $lines: 1);  
-  border-bottom: 1px solid #d1d1d1;
+  // @include adjust-font-size-to(15px, $lines: 1);  
+  @include ao-fontography(activity-item-text);
   .crm-core-activity-date {
-    margin-top: rhythm(.3);
     display: block;
-    @include adjust-font-size-to(13px, $lines: 1);  
-    text-transform: uppercase;
-    color: #777799;
+    @include ao-fontography(activity-item-date);
   } 
+  border-bottom: 1px solid #d1d1d1;
 }
+/* full page view of an activity */
+.entity-crm-core-activity {
+  border: 1px solid $e-gray;
+  background-color: White;
+  padding: 1em;
+  margin: 1em 0em;
+}
+
+
 
 /**
  * CONTACTS
@@ -230,6 +227,38 @@ BODY.page-crm-core-dashboard {
 /**
  * COMPONENTS
  */ 
+/* BREADCRUMBS */
+#breadcrumb {
+  clear: both;
+  UL.breadcrumbs {
+    float: left;
+    @include ao-breadcrumb (
+      $ao-bc-height: 19px,
+      $ao-bc-padding: 0px,
+      $ao-bc-margin: 12px 0px 0px,
+      $ao-bc-border: 1px solid rgba(255, 255, 255, .3),
+      $ao-bc-bg-color: rgba(60, 116, 137, .3),
+      $ao-bc-border-radius: 5px,
+      $ao-bc-element-height: 19px,
+      $ao-bc-element-margin: 0px 2px 0px 0px,
+      $ao-bc-element-padding: 0px,
+      $ao-bc-link-margin: 0px,
+      $ao-bc-link-font-style: breadcrumbs,
+      $ao-bc-link-padding: 0px 4px 0px 20px,
+      $ao-bc-link-background: url('../images/ao-backend-icons.png') -452px -6px no-repeat,
+      $ao-bc-link-hover-color: rgba(255,255,255,.9)
+    );
+  }
+}
+#breadcrumb UL.breadcrumbs LI:nth-child(2) A {
+  padding: 0px 4px 0px 8px;
+  background: none;
+  border-left: 1px solid rgba(255,255,255,.3);
+}
+#breadcrumb UL.breadcrumbs LI div.bc_arrow {
+  display: none;
+}
+
 /* PAGE TITLE */ 
 section.header {
   H1#page-title {
@@ -257,6 +286,56 @@ section.header {
     @extend .btn-large;
   }
 } 
+
+
+
+
+
+/* container tables */
+/* used to display contacts */
+
+
+/* data tables */
+/* displays tables related to run downs of data within reports */
+.data-tables {
+
+  .table-container,
+  .view-content {
+    background-color: #f1f1f1;
+    padding: 0em .2em .2em;
+    margin: 0em 0em .8em;
+    border: 1px solid #CCC;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+    
+    TABLE {
+    
+      margin-bottom: 0em;
+    
+      TR {
+        TD {
+        }
+      }
+    }
+  }
+}
+
+/* handles the display of summary items */
+.data-summary {
+  .table-container,
+  .views-table {
+    TR {
+      TD {
+        background-color: White;
+        text-align: center;
+        font-weight: 600;
+        font-size: $h2-font-size;
+        padding: .5em 0em;
+      }
+    }
+  }
+}
+
 
 
 
