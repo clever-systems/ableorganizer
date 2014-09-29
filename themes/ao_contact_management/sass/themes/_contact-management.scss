@@ -282,7 +282,6 @@ BODY.page-crm-core-dashboard {
 #breadcrumb UL.breadcrumbs LI div.bc_arrow {
   display: none;
 }
-
 /* PAGE TITLE */ 
 section.header {
   H1#page-title {
@@ -300,6 +299,17 @@ section.header {
     } 
   }
 }
+
+/* HEROS */
+.hero-element {
+  @include ao-fontography($ao-fonto-style: hero);
+  width: 60%;
+  margin: 2em 0em;
+  padding: 1em 2em;
+  background-color: rgba(135,105,40,.7);
+  @include border-radius(1em);
+} 
+
 /* ACTION LINKS */
 .action-links {
   margin: 0em 0em .8em;
