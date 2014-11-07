@@ -92,7 +92,7 @@ projects[wysiwyg][subdir] = "contrib"
 projects[wysiwyg][download][type] = "git"
 projects[wysiwyg][download][branch] = "7.x-2.x"
 projects[wysiwyg][download][revision] = "37dc07db900cac540f30bca5d90bb75951cc314f"
-projects[ckeditor][version] = 1.15
+projects[ckeditor][version] = 1.16
 projects[ckeditor][subdir] = "contrib"
 
 ; Media
