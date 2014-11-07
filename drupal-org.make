@@ -1,6 +1,6 @@
 ; ableorganizer demo make file
 api = 2
-core = 7.31
+core = 7.32
 
 ; crm core + features prerequisites
 projects[views][version] = 3.8
