@@ -1,6 +1,6 @@
 ; ableorganizer demo make file
 api = 2
-core = 7.32
+core = 7.33
 
 ; crm core + features prerequisites
 projects[views][version] = 3.8
@@ -166,7 +166,7 @@ projects[geophp][download][type] = git
 projects[geophp][download][branch] = 7.x-1.x
 projects[geophp][download][revision] = "f8c09edb30140ab823dd0c899f29d2408d216bcd"
 projects[openlayers][subdir] = "contrib"
-projects[openlayers][version] = "2.0-beta9"
+projects[openlayers][version] = "2.0-beta11"
 projects[proj4js][subdir] = "contrib"
 projects[proj4js][version] = "1.2"
 
