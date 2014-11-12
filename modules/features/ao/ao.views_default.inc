@@ -83,6 +83,7 @@ function ao_views_default_views() {
   $handler->display->display_options['fields']['activity_id']['table'] = 'crm_core_activity';
   $handler->display->display_options['fields']['activity_id']['field'] = 'activity_id';
   $handler->display->display_options['fields']['activity_id']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['activity_id']['separator'] = '';
   /* Field: CRM Core Activity: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'crm_core_activity';
