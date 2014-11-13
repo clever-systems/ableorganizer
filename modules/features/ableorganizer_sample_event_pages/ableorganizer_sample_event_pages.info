@@ -1,6 +1,7 @@
 name = AbleOrganizer Sample Event Pages
-description = Sample content for the CRM Core Event
-package = AbleOrganizer
+description = Sample content for CRM Core Event.
+package = AbleOrganizer Sample Content
+core = 7.x
 dependencies[] = boxes
 dependencies[] = commerce_features
 dependencies[] = commerce_price

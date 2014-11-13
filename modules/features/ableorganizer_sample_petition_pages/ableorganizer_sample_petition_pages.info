@@ -1,6 +1,7 @@
 name = AbleOrganizer Sample Petition Pages
-description = Sample content for the CRM Core Petition module
-package = AbleOrganizer
+description = Sample content for the CRM Core Petition module.
+package = AbleOrganizer Sample Content
+core = 7.x
 dependencies[] = boxes
 dependencies[] = context
 dependencies[] = crm_core_petition

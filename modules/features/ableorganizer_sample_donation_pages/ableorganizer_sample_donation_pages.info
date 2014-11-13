@@ -1,6 +1,7 @@
 name = AbleOrganizer Sample Donation Pages
-description = Sample donation pages for AbleOrganizer, including an offline donation form.
-package = AbleOrganizer
+description = Sample content for CRM Core Donation.
+package = AbleOrganizer Sample Content
+core = 7.x
 dependencies[] = boxes
 dependencies[] = commerce_features
 dependencies[] = commerce_price

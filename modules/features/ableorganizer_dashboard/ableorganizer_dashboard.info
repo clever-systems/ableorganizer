@@ -1,5 +1,6 @@
 name = AbleOrganizer Dashboard
-description = Provides a dashboard for use with AbleOrganizer
+description = Provides a dashboard for use with AbleOrganizer.
+core = 7.x
 package = AbleOrganizer
 dependencies[] = ctools
 dependencies[] = features
@@ -15,3 +16,4 @@ features[features_api][] = api:2
 features[page_manager_pages][] = ao_dashboard
 features[views_view][] = ao_dashboard_act_stream
 project path = profiles/ableorganizer/modules/features
+core = 7.x

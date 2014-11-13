@@ -1,6 +1,7 @@
-name = AO Basic Setup
-description = Simply sets up front page and instructional content in AbleOrganizer
+name = AbleOrganizer Basic Setup
+description = Simply sets up front page and instructional content in AbleOrganizer.
 package = AbleOrganizer Sample Content
+core = 7.x
 dependencies[] = boxes
 dependencies[] = context
 ; dependencies[] = crm_core_profile

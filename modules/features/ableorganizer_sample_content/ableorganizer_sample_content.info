@@ -1,6 +1,7 @@
 name = AbleOrganizer Sample Content
 description = Sample content for AbleOrganizer. Includes user profiles, navigation menus and other items.
-package = AbleOrganizer
+package = AbleOrganizer Sample Content
+core = 7.x
 dependencies[] = boxes
 dependencies[] = ctools
 dependencies[] = deploy
