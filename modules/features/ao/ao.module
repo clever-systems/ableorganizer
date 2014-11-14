@@ -52,7 +52,7 @@ function ao_form_alter(&$form, &$form_state, $form_id) {
     'crm_core_profile_entry_form_short_online_petition',
     'crm_core_profile_entry_form_short_petition_with_message',
     'crm_core_profile_entry_form_signature_drive',
-    'crm_core_profile_entry_form_ao_volunteer_commitment_form',
+    'crm_core_profile_entry_form_ao_volunteer_commit_form',
   );
 
   if (in_array($form_id, $forms)) {

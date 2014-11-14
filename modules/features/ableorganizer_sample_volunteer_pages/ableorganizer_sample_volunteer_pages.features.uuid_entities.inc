@@ -32,7 +32,7 @@ function ableorganizer_sample_volunteer_pages_uuid_default_entities() {
     'crm_core_profile_node_config' => array(
       'nid' => '0b621efb-62fa-4312-b0bd-479c6d8d8be4',
       'use_profile' => 1,
-      'profile_name' => 'ao_volunteer_commitment_form',
+      'profile_name' => 'ao_volunteer_commit_form',
       'display_profile' => 0,
       'inline_title' => 'Get Involved',
     ),
@@ -186,7 +186,7 @@ function ableorganizer_sample_volunteer_pages_uuid_default_entities() {
     'crm_core_profile_node_config' => array(
       'nid' => '0d86ea2a-fb8a-4ec5-8a00-3361772433d3',
       'use_profile' => 1,
-      'profile_name' => 'ao_volunteer_commitment_form',
+      'profile_name' => 'ao_volunteer_commit_form',
       'display_profile' => 0,
       'inline_title' => 'Volunteer form',
     ),
@@ -333,7 +333,7 @@ function ableorganizer_sample_volunteer_pages_uuid_default_entities() {
     'crm_core_profile_node_config' => array(
       'nid' => '2a0e3955-18a5-4be1-a2c4-8dff6e05be73',
       'use_profile' => 1,
-      'profile_name' => 'ao_volunteer_commitment_form_2',
+      'profile_name' => 'ao_volunteer_commit_form_2',
       'display_profile' => 0,
       'inline_title' => 'I want to help!',
     ),
@@ -480,7 +480,7 @@ function ableorganizer_sample_volunteer_pages_uuid_default_entities() {
     'crm_core_profile_node_config' => array(
       'nid' => '85b8792e-c6f0-41e1-bb04-7cbf6b522abf',
       'use_profile' => 1,
-      'profile_name' => 'ao_volunteer_commitment_form',
+      'profile_name' => 'ao_volunteer_commit_form',
       'display_profile' => 0,
       'inline_title' => 'Get Involved',
     ),
@@ -629,7 +629,7 @@ function ableorganizer_sample_volunteer_pages_uuid_default_entities() {
     'crm_core_profile_node_config' => array(
       'nid' => '9c84b384-91ef-438d-a442-b7aa4158823f',
       'use_profile' => 1,
-      'profile_name' => 'ao_volunteer_commitment_form',
+      'profile_name' => 'ao_volunteer_commit_form',
       'display_profile' => 0,
       'inline_title' => 'Volunteer form',
     ),
