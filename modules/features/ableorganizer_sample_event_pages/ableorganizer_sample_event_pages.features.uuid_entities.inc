@@ -58,7 +58,7 @@ function ableorganizer_sample_event_pages_uuid_default_entities() {
     'crm_core_profile_node_config' => array(
       'nid' => '37106c78-84c8-4e74-a387-5c04b03f5375',
       'use_profile' => 1,
-      'profile_name' => 'ao_cmcev_simple_quantity_form',
+      'profile_name' => 'ao_cmcev_simple_qty_form',
       'display_profile' => 0,
       'inline_title' => 'Buy tickets today!',
     ),

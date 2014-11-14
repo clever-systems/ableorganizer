@@ -314,7 +314,7 @@ Corporate|1000',
   $crm_core_profile = new stdClass();
   $crm_core_profile->disabled = FALSE; /* Edit this to true to make a default crm_core_profile disabled initially */
   $crm_core_profile->api_version = 1;
-  $crm_core_profile->name = 'ao_cmcev_simple_quantity_form';
+  $crm_core_profile->name = 'ao_cmcev_simple_qty_form';
   $crm_core_profile->label = 'Event Quantity Form';
   $crm_core_profile->entities = array(
     'crm_core_contact' => array(
@@ -599,7 +599,7 @@ Corporate|1000',
   $crm_core_profile->access_control = 'default';
   $crm_core_profile->access_control_perm = 'none';
   $crm_core_profile->roles = array();
-  $export['ao_cmcev_simple_quantity_form'] = $crm_core_profile;
+  $export['ao_cmcev_simple_qty_form'] = $crm_core_profile;
 
   $crm_core_profile = new stdClass();
   $crm_core_profile->disabled = FALSE; /* Edit this to true to make a default crm_core_profile disabled initially */

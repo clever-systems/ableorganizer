@@ -44,7 +44,7 @@ function ao_form_alter(&$form, &$form_state, $form_id) {
     'crm_core_profile_entry_form_ao_annual_appeal_form',
     'crm_core_profile_entry_form_ao_fundraiser_form',
     'crm_core_profile_entry_form_ao_cmcev_simple_single_form',
-    'crm_core_profile_entry_form_ao_cmcev_simple_quantity_form',
+    'crm_core_profile_entry_form_ao_cmcev_simple_qty_form',
     'crm_core_profile_entry_form_ao_cmcev_simple_many_form',
     'crm_core_profile_entry_form_ao_cmcev_simple_reg_form',
     'crm_core_profile_entry_form_short_petition_with_message',
