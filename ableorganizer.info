@@ -70,6 +70,7 @@ dependencies[] = mailsystem
 dependencies[] = mimemail
 dependencies[] = module_filter
 dependencies[] = pathologic
+dependencies[] = pathauto
 dependencies[] = strongarm
 
 ; commerce modules

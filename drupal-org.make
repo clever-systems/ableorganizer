@@ -82,6 +82,8 @@ projects[mimemail][version] = 1.0-beta3
 projects[mimemail][subdir] = "contrib"
 
 ; content
+projects[pathauto][version] = 1.2
+projects[pathauto][subdir] = "contrib"
 projects[pathologic][type] = "module"
 projects[pathologic][subdir] = "contrib"
 projects[pathologic][download][type] = "git"
