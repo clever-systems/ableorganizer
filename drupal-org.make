@@ -32,14 +32,17 @@ projects[strongarm][version] = 2.0
 projects[strongarm][subdir] = "contrib"
 projects[menu_token][type] = module
 projects[menu_token][download][type] = git
-projects[menu_token][download][branch] = git
+projects[menu_token][download][branch] = 7.x-1.x
 projects[menu_token][download][revision] = eda6188de57198b89b94accd421fd283cd512753
 projects[menu_token][subdir] = "contrib"
 projects[entity_view_mode][version] = "1.0-rc1"
 projects[entity_view_mode][subdir] = "contrib"
 
 ; administration
-projects[admin_menu][version] = 3.0-rc4
+projects[admin_menu][type] = module
+projects[admin_menu][download][type] = git
+projects[admin_menu][download][branch] = 7.x-3.x
+projects[admin_menu][download][revision] = b07d37b857f48e8e38ca8c31fbb8153184c46932
 projects[admin_menu][subdir] = "contrib"
 projects[module_filter][version] = 2.0-alpha2
 projects[module_filter][subdir] = "contrib"
