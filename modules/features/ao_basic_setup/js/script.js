@@ -7,7 +7,7 @@
       // front page stuff
       var wwidth  = $('#above-content-two .section-wrapper').width();
       var wheight = $('#above-content-two').height();
-      
+
       $(".ao_profeat_dialog").dialog({
           autoOpen: false,
           modal: true,
@@ -30,7 +30,7 @@
             jQuery('.ui-widget-overlay').bind('click', function() {
               jQuery('.ao_profeat_dialog').dialog('close');
             })
-          },          
+          },
         }
       );
       $('.ui-dialog-titlebar').hide();
@@ -40,7 +40,7 @@
         diag.html(content.html());
         diag.dialog("open");
       });
-      
+
     }
   };
 })(jQuery);

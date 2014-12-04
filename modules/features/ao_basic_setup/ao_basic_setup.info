@@ -2,14 +2,13 @@ name = AbleOrganizer Basic Setup
 description = Simply sets up front page and instructional content in AbleOrganizer.
 package = AbleOrganizer Sample Content
 core = 7.x
+
 dependencies[] = boxes
 dependencies[] = context
-; dependencies[] = crm_core_profile
 dependencies[] = ctools
 dependencies[] = features
 dependencies[] = menu
-scripts[] = js/script.js
-stylesheets[all][] = css/ao_basic_setup.css
+
 features[box][] = above_content_lower
 features[box][] = hero_content
 features[box][] = lower_zone
@@ -19,4 +18,3 @@ features[ctools][] = boxes:box:1
 features[ctools][] = context:context:3
 features[ctools][] = crm_core_profile:crm_core_profile:1
 features[features_api][] = api:2
-project path = profiles/ableorganizer/modules/features
