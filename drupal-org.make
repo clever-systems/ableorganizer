@@ -136,7 +136,7 @@ projects[file_entity][download][branch] = "7.x-2.x"
 projects[file_entity][download][revision] = "1e037ada7f783058aa460cf90421b809ba04d0a7"
 
 ; commerce modules
-projects[commerce][version] = 1.10
+projects[commerce][version] = 1.11
 projects[commerce][subdir] = "contrib"
 projects[commerce_order_reference][version] = 1.0-alpha1
 projects[commerce_order_reference][subdir] = "contrib"
