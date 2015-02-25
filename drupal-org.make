@@ -47,7 +47,7 @@ projects[entity_view_mode][subdir] = "contrib"
 projects[admin_menu][type] = module
 projects[admin_menu][version] = 3.0-rc5
 projects[admin_menu][subdir] = "contrib"
-projects[module_filter][version] = 2.0-alpha2
+projects[module_filter][version] = 2.0
 projects[module_filter][subdir] = "contrib"
 
 ; fields
