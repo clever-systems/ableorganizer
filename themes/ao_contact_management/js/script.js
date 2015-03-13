@@ -80,11 +80,7 @@ Drupal.behaviors.ao_contact_management = {
             // toggle btn-expander class on the button when checkboxes are selected
             var checkboxes = vbo.find('.vbo-select, .vbo-table-select-all');
             checkboxes.bind('click', function(){
-              var selected = 0;
-              if($(this).attr('checked') == true){
-                selected = 1;                
-              }
-              if(selected == 1){
+              if($(this).is(':checked')){
                 $('.btn-vbo').removeClass('btn-disabled');
                 $('.btn-vbo').addClass('btn-expander');
               } else {
