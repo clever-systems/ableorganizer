@@ -1,7 +1,7 @@
 api = 2
 core = 7.x
 
-projects[drupal][version] = 7.34
+projects[drupal][version] = 7.35
 
 ; Download the AbleOrganizer install profile and recursively build all its dependencies.
 projects[ableorganizer][version] = 1.0-beta1
