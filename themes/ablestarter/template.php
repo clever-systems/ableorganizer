@@ -44,7 +44,6 @@ function ablestarter_breadcrumb($variables) {
 }
 
 function ablestarter_menu_link($variables) {
-  dpm('yo yo yo');
   //add class for li
    $variables['element']['#attributes']['class'][] = 'menu-' . $variables['element']['#original_link']['mlid'];
    //add class for a
