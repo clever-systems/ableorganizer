@@ -220,6 +220,11 @@ libraries[ckeditor][download][url] = "http://download.cksource.com/CKEditor/CKEd
 ; Colorbox
 libraries[colorbox][download][type] = get
 libraries[colorbox][download][url] = "https://github.com/jackmoore/colorbox/archive/1.5.13.tar.gz"
+; OpenLayers
+libraries[openlayers][download][type] = "file"
+libraries[openlayers][download][url] = http://github.com/openlayers/openlayers/releases/download/release-2.13.1/OpenLayers-2.13.1.zip
+libraries[openlayers][directory_name] = openlayers
+libraries[openlayers][destination] = "libraries"
 
 ; sample content
 projects[uuid][version] = 1.0-alpha6
