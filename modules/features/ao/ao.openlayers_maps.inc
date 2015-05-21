@@ -19,8 +19,8 @@ function ao_openlayers_maps() {
   $openlayers_maps->data = array(
     'width' => 'auto',
     'height' => '400px',
-    'image_path' => 'sites/all/modules/contrib/openlayers/themes/default_dark/img/',
-    'css_path' => 'sites/all/modules/contrib/openlayers/themes/default_dark/style.css',
+    'image_path' => '',
+    'css_path' => '',
     'proxy_host' => '',
     'hide_empty_map' => 0,
     'center' => array(
