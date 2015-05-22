@@ -1,9 +1,9 @@
-; ableorganizer demo make file
+; Ableorganizer make file.
 api = 2
-core = 7.34
+core = 7.37
 
 ; crm core + features prerequisites
-projects[views][version] = 3.10
+projects[views][version] = 3.11
 projects[views][subdir] = "contrib"
 projects[views_bulk_operations][version] = 3.2
 projects[views_bulk_operations][subdir] = "contrib"
@@ -16,15 +16,15 @@ projects[entityreference][version] = 1.1
 projects[entityreference][subdir] = "contrib"
 projects[relation][version] = 1.0-rc7
 projects[relation][subdir] = "contrib"
-projects[token][version] = 1.5
+projects[token][version] = 1.6
 projects[token][subdir] = "contrib"
 projects[panels][version] = 3.5
 projects[panels][subdir] = "contrib"
-projects[rules][version] = 2.8
+projects[rules][version] = 2.9
 projects[rules][subdir] = "contrib"
 projects[libraries][version] = 2.2
 projects[libraries][subdir] = "contrib"
-projects[features][version] = 2.3
+projects[features][version] = 2.5
 projects[features][subdir] = "contrib"
 projects[diff][type] = module
 projects[diff][download][type] = git
@@ -68,16 +68,13 @@ projects[link][version] = 1.3
 projects[link][subdir] = "contrib"
 projects[email][version] = 1.3
 projects[email][subdir] = "contrib"
-projects[addressfield][version] = 1.0
+projects[addressfield][version] = 1.1
 projects[addressfield][subdir] = "contrib"
-projects[date][version] = 2.9-beta2
+projects[date][version] = 2.9-rc1
 projects[date][subdir] = "contrib"
-projects[select_or_other][version] = 2.20
+projects[select_or_other][version] = 2.22
 projects[select_or_other][subdir] = "contrib"
-projects[calendar][type] = module
-projects[calendar][download][type] = git
-projects[calendar][download][branch] = 7.x-3.x
-projects[calendar][download][revision] = 23730b91170e040a4a85a1cd4a7b7fc1bd1d33b3
+projects[calendar][version] = 3.5
 projects[calendar][subdir] = "contrib"
 
 ; email
@@ -143,7 +140,7 @@ projects[commerce_features][version] = 1.0
 projects[commerce_features][subdir] = "contrib"
 projects[commerce_custom_product][version] = 1.0-beta2
 projects[commerce_custom_product][subdir] = "contrib"
-projects[commerce_authnet][version] = 1.1
+projects[commerce_authnet][version] = 1.2
 projects[commerce_authnet][subdir] = "contrib"
 projects[commerce_paypal][version] = 2.3
 projects[commerce_paypal][subdir] = "contrib"
