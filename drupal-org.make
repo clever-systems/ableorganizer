@@ -1,6 +1,7 @@
 ; Ableorganizer make file.
 api = 2
-core = 7.37
+core = 7.x
+projects[drupal][version] = "7.37"
 
 ; crm core + features prerequisites
 projects[views][version] = 3.11
