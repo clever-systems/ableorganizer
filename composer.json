@@ -1,8 +1,6 @@
 {
     "name": "clever-systems/ableorganizer",
     "description": "Use ableorganizer with composer.",
-    "minimum-stability": "dev",
-    "prefer-stable": true,
     "repositories": {
         "libraries/flot": {
             "type": "package",
