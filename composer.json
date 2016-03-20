@@ -1,56 +1,6 @@
 {
     "name": "clever-systems/ableorganizer",
     "description": "Use ableorganizer with composer.",
-    "repositories": {
-        "libraries/flot": {
-            "type": "package",
-            "package": {
-                "name": "library/flot",
-                "version": "1.0",
-                "type": "drupal-library",
-                "dist": {
-                    "url": "https://flot.googlecode.com/files/flot-0.7.tar.gz",
-                    "type": "tar"
-                }
-            }
-        },
-        "libraries/ckeditor": {
-            "type": "package",
-            "package": {
-                "name": "library/ckeditor",
-                "version": "1.0",
-                "type": "drupal-library",
-                "dist": {
-                    "url": "http://download.cksource.com/CKEditor/CKEditor/CKEditor%204.4.4/ckeditor_4.4.4_full.zip",
-                    "type": "zip"
-                }
-            }
-        },
-        "libraries/colorbox": {
-            "type": "package",
-            "package": {
-                "name": "library/colorbox",
-                "version": "1.0",
-                "type": "drupal-library",
-                "dist": {
-                    "url": "https://github.com/jackmoore/colorbox/archive/1.5.13.tar.gz",
-                    "type": "tar"
-                }
-            }
-        },
-        "libraries/openlayers": {
-            "type": "package",
-            "package": {
-                "name": "library/openlayers",
-                "version": "1.0",
-                "type": "drupal-library",
-                "dist": {
-                    "url": "http://github.com/openlayers/openlayers/releases/download/release-2.13.1/OpenLayers-2.13.1.zip",
-                    "type": "file"
-                }
-            }
-        }
-    },
     "require": {
         "composer/installers": "~1.0",
         "drupal/views": "7.3.11",
