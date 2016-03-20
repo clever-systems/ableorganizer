@@ -1,4 +1,8 @@
 {
+    "name": "clever-systems/ableorganizer",
+    "description": "Personal fork to play with",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
     "repositories": {
         "libraries/flot": {
             "type": "package",
@@ -125,7 +129,5 @@
         "library/ckeditor": "1.0",
         "library/colorbox": "1.0",
         "library/openlayers": "1.0"
-    },
-    "minimum-stability": "dev",
-    "prefer-stable": true
+    }
 }
