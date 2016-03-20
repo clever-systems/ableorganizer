@@ -1,9 +1,13 @@
 {
     "name": "clever-systems/ableorganizer",
-    "description": "Personal fork to play with",
+    "description": "Use ableorganizer with composer.",
     "minimum-stability": "dev",
     "prefer-stable": true,
     "repositories": {
+        "drupal-composer": {
+            "type": "composer",
+            "url": "https://packagist.drupal-composer.org"
+        },
         "libraries/flot": {
             "type": "package",
             "package": {
