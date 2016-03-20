@@ -4,10 +4,6 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "repositories": {
-        "drupal-composer": {
-            "type": "composer",
-            "url": "https://packagist.drupal-composer.org"
-        },
         "libraries/flot": {
             "type": "package",
             "package": {
