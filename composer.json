@@ -60,7 +60,7 @@
         "drupal/ctools": "7.1.7",
         "drupal/entity": "7.1.6",
         "drupal/entityreference": "7.1.1",
-        "drupal/relation": "7.1.0-rc7",
+        "drupal/relation": "7.1.0",
         "drupal/token": "7.1.6",
         "drupal/panels": "7.3.5",
         "drupal/rules": "7.2.9",
