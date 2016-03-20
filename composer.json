@@ -18,7 +18,7 @@
         "drupal/context": "7.3.6",
         "drupal/strongarm": "7.2.0",
         "drupal/menu_token": "7.x@beta",
-        "drupal/entity_view_mode": "7.1.0-rc1@rc",
+        "drupal/entity_view_mode": "7.x@rc",
         "drupal/admin_menu": "7.3.0-rc5@rc",
         "drupal/module_filter": "7.2.0",
         "drupal/name": "7.x",
