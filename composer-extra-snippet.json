@@ -148,7 +148,7 @@
             "package": {
                 "name": "drupal/diff",
                 "type": "drupal-module",
-                "version": "7.x",
+                "version": "7.0.0-dev",
                 "source": {
                     "url": "http://git.drupal.org/project/diff.git",
                     "type": "git",
@@ -185,7 +185,7 @@
             "package": {
                 "name": "drupal/menu_token",
                 "type": "drupal-module",
-                "version": "7.x",
+                "version": "7.0.0-dev",
                 "source": {
                     "url": "http://git.drupal.org/project/menu_token.git",
                     "type": "git",
@@ -234,7 +234,7 @@
             "package": {
                 "name": "drupal/name",
                 "type": "drupal-module",
-                "version": "7.x",
+                "version": "7.0.0-dev",
                 "source": {
                     "url": "http://git.drupal.org/project/name.git",
                     "type": "git",
@@ -259,7 +259,7 @@
             "package": {
                 "name": "drupal/cck_phone",
                 "type": "drupal-module",
-                "version": "7.x",
+                "version": "7.0.0-dev",
                 "source": {
                     "url": "http://git.drupal.org/project/cck_phone.git",
                     "type": "git",
@@ -380,7 +380,7 @@
             "package": {
                 "name": "drupal/pathologic",
                 "type": "drupal-module",
-                "version": "7.x",
+                "version": "7.0.0-dev",
                 "source": {
                     "url": "http://git.drupal.org/project/pathologic.git",
                     "type": "git",
@@ -393,7 +393,7 @@
             "package": {
                 "name": "drupal/wysiwyg",
                 "type": "drupal-module",
-                "version": "7.x",
+                "version": "7.0.0-dev",
                 "source": {
                     "url": "http://git.drupal.org/project/wysiwyg.git",
                     "type": "git",
@@ -418,7 +418,7 @@
             "package": {
                 "name": "drupal/media",
                 "type": "drupal-module",
-                "version": "7.x",
+                "version": "7.0.0-dev",
                 "source": {
                     "url": "http://git.drupal.org/project/media.git",
                     "type": "git",
@@ -443,7 +443,7 @@
             "package": {
                 "name": "drupal/media_colorbox",
                 "type": "drupal-module",
-                "version": "7.x",
+                "version": "7.0.0-dev",
                 "source": {
                     "url": "http://git.drupal.org/project/media_colorbox.git",
                     "type": "git",
@@ -456,7 +456,7 @@
             "package": {
                 "name": "drupal/media_youtube",
                 "type": "drupal-module",
-                "version": "7.x",
+                "version": "7.0.0-dev",
                 "source": {
                     "url": "http://git.drupal.org/project/media_youtube.git",
                     "type": "git",
@@ -469,7 +469,7 @@
             "package": {
                 "name": "drupal/adaptive_image",
                 "type": "drupal-module",
-                "version": "7.x",
+                "version": "7.0.0-dev",
                 "source": {
                     "url": "http://git.drupal.org/project/adaptive_image.git",
                     "type": "git",
@@ -482,7 +482,7 @@
             "package": {
                 "name": "drupal/file_entity",
                 "type": "drupal-module",
-                "version": "7.x",
+                "version": "7.0.0-dev",
                 "source": {
                     "url": "http://git.drupal.org/project/file_entity.git",
                     "type": "git",
@@ -567,7 +567,7 @@
             "package": {
                 "name": "drupal/flot",
                 "type": "drupal-module",
-                "version": "7.x",
+                "version": "7.0.0-dev",
                 "source": {
                     "url": "http://git.drupal.org/project/flot.git",
                     "type": "git",
@@ -592,7 +592,7 @@
             "package": {
                 "name": "drupal/geocoder",
                 "type": "drupal-module",
-                "version": "7.x",
+                "version": "7.0.0-dev",
                 "source": {
                     "url": "http://git.drupal.org/project/geocoder.git",
                     "type": "git",
@@ -617,7 +617,7 @@
             "package": {
                 "name": "drupal/geophp",
                 "type": "drupal-module",
-                "version": "7.x",
+                "version": "7.0.0-dev",
                 "source": {
                     "url": "http://git.drupal.org/project/geophp.git",
                     "type": "git",
@@ -810,7 +810,7 @@
             "package": {
                 "name": "drupal/deploy",
                 "type": "drupal-module",
-                "version": "7.x",
+                "version": "7.0.0-dev",
                 "source": {
                     "url": "http://git.drupal.org/project/deploy.git",
                     "type": "git",
@@ -823,7 +823,7 @@
             "package": {
                 "name": "drupal/entity_dependency",
                 "type": "drupal-module",
-                "version": "7.x",
+                "version": "7.0.0-dev",
                 "source": {
                     "url": "http://git.drupal.org/project/entity_dependency.git",
                     "type": "git",
@@ -836,7 +836,7 @@
             "package": {
                 "name": "drupal/entity_menu_links",
                 "type": "drupal-module",
-                "version": "7.x",
+                "version": "7.0.0-dev",
                 "source": {
                     "url": "http://git.drupal.org/project/entity_menu_links.git",
                     "type": "git",
