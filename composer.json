@@ -1,6 +1,7 @@
 {
     "name": "clever-systems/ableorganizer",
     "description": "Use ableorganizer with composer.",
+    "type": "drupal-profile",
     "require": {
         "composer/installers": "~1.0",
         "cweagans/composer-patches": "~1.0",
