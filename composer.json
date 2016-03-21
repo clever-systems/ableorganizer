@@ -31,7 +31,7 @@
         "drupal/select_or_other": "7.2.22",
         "drupal/calendar": "7.3.5",
         "drupal/mailsystem": "7.2.34",
-        "drupal/mimemail": "~7.1.0@beta",
+        "drupal/mimemail": "7.1.*@beta",
         "drupal/pathauto": "7.1.2",
         "drupal/pathologic": "~7",
         "drupal/wysiwyg": "~7",
