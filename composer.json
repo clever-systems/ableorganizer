@@ -2,6 +2,7 @@
     "name": "clever-systems/ableorganizer",
     "description": "Use ableorganizer with composer.",
     "require": {
-        "drupal/entity_view_mode": "7.1.0-rc1@dev"
+       "drupal/views": "7.3.11",
+       "drupal/entity_view_mode": "7.*.*@dev"
     }
 }
