@@ -6,7 +6,7 @@
         "drupal/views": "7.3.11",
         "drupal/views_bulk_operations": "7.3.2",
         "drupal/ctools": "7.1.7",
-        "drupal/entity": "7.1.6",
+        "drupal/entity": "7.1.7",
         "drupal/entityreference": "7.1.1",
         "drupal/relation": "7.1.0-rc7@rc",
         "drupal/token": "7.1.6",
