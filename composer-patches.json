@@ -8,7 +8,7 @@
           "Work with wysiwyg": "https://www.drupal.org/files/issues/media_colorbox_wysiwyg-1888198-24.patch"
         },
         "drupal/flot": {
-          "PHP 5.4": "https://www.drupal.org/files/flot-php54compat_0.patch"
+          "PHP 5.4": "https://www.drupal.org/files/flot-php54compat_0.patch",
           "Pie options": "https://www.drupal.org/files/flot-pie_options-2088021-3.patch"
         },
         "drupal/uuid": {
