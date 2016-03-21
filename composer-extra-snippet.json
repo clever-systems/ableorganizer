@@ -76,7 +76,7 @@
             "package": {
                 "name": "drupal/relation",
                 "type": "drupal-module",
-                "version": "~7.1.0-rc7@rc",
+                "version": "7.1.0-rc7",
                 "dist": {
                     "url": "https://ftp.drupal.org/files/projects/relation-7.x-1.0-rc7.tar.gz",
                     "type": "tar"
@@ -148,7 +148,7 @@
             "package": {
                 "name": "drupal/diff",
                 "type": "drupal-module",
-                "version": "~7@dev",
+                "version": "7.x",
                 "source": {
                     "url": "http://git.drupal.org/project/diff.git",
                     "type": "git",
@@ -185,7 +185,7 @@
             "package": {
                 "name": "drupal/menu_token",
                 "type": "drupal-module",
-                "version": "~7@dev",
+                "version": "7.x",
                 "source": {
                     "url": "http://git.drupal.org/project/menu_token.git",
                     "type": "git",
@@ -198,7 +198,7 @@
             "package": {
                 "name": "drupal/entity_view_mode",
                 "type": "drupal-module",
-                "version": "~7.1.0-rc1@rc",
+                "version": "7.1.0-rc1",
                 "dist": {
                     "url": "https://ftp.drupal.org/files/projects/entity_view_mode-7.x-1.0-rc1.tar.gz",
                     "type": "tar"
@@ -210,7 +210,7 @@
             "package": {
                 "name": "drupal/admin_menu",
                 "type": "drupal-module",
-                "version": "~7.3.0-rc5@rc",
+                "version": "7.3.0-rc5",
                 "dist": {
                     "url": "https://ftp.drupal.org/files/projects/admin_menu-7.x-3.0-rc5.tar.gz",
                     "type": "tar"
@@ -234,7 +234,7 @@
             "package": {
                 "name": "drupal/name",
                 "type": "drupal-module",
-                "version": "~7@dev",
+                "version": "7.x",
                 "source": {
                     "url": "http://git.drupal.org/project/name.git",
                     "type": "git",
@@ -259,7 +259,7 @@
             "package": {
                 "name": "drupal/cck_phone",
                 "type": "drupal-module",
-                "version": "~7@dev",
+                "version": "7.x",
                 "source": {
                     "url": "http://git.drupal.org/project/cck_phone.git",
                     "type": "git",
@@ -308,7 +308,7 @@
             "package": {
                 "name": "drupal/date",
                 "type": "drupal-module",
-                "version": "~7.2.9-rc1@rc",
+                "version": "7.2.9-rc1",
                 "dist": {
                     "url": "https://ftp.drupal.org/files/projects/date-7.x-2.9-rc1.tar.gz",
                     "type": "tar"
@@ -356,7 +356,7 @@
             "package": {
                 "name": "drupal/mimemail",
                 "type": "drupal-module",
-                "version": "~7.1.0-beta3@beta",
+                "version": "7.1.0-beta3",
                 "dist": {
                     "url": "https://ftp.drupal.org/files/projects/mimemail-7.x-1.0-beta3.tar.gz",
                     "type": "tar"
@@ -380,7 +380,7 @@
             "package": {
                 "name": "drupal/pathologic",
                 "type": "drupal-module",
-                "version": "~7@dev",
+                "version": "7.x",
                 "source": {
                     "url": "http://git.drupal.org/project/pathologic.git",
                     "type": "git",
@@ -393,7 +393,7 @@
             "package": {
                 "name": "drupal/wysiwyg",
                 "type": "drupal-module",
-                "version": "~7@dev",
+                "version": "7.x",
                 "source": {
                     "url": "http://git.drupal.org/project/wysiwyg.git",
                     "type": "git",
@@ -418,7 +418,7 @@
             "package": {
                 "name": "drupal/media",
                 "type": "drupal-module",
-                "version": "~7@dev",
+                "version": "7.x",
                 "source": {
                     "url": "http://git.drupal.org/project/media.git",
                     "type": "git",
@@ -443,7 +443,7 @@
             "package": {
                 "name": "drupal/media_colorbox",
                 "type": "drupal-module",
-                "version": "~7@dev",
+                "version": "7.x",
                 "source": {
                     "url": "http://git.drupal.org/project/media_colorbox.git",
                     "type": "git",
@@ -456,7 +456,7 @@
             "package": {
                 "name": "drupal/media_youtube",
                 "type": "drupal-module",
-                "version": "~7@dev",
+                "version": "7.x",
                 "source": {
                     "url": "http://git.drupal.org/project/media_youtube.git",
                     "type": "git",
@@ -469,7 +469,7 @@
             "package": {
                 "name": "drupal/adaptive_image",
                 "type": "drupal-module",
-                "version": "~7@dev",
+                "version": "7.x",
                 "source": {
                     "url": "http://git.drupal.org/project/adaptive_image.git",
                     "type": "git",
@@ -482,7 +482,7 @@
             "package": {
                 "name": "drupal/file_entity",
                 "type": "drupal-module",
-                "version": "~7@dev",
+                "version": "7.x",
                 "source": {
                     "url": "http://git.drupal.org/project/file_entity.git",
                     "type": "git",
@@ -507,7 +507,7 @@
             "package": {
                 "name": "drupal/commerce_order_reference",
                 "type": "drupal-module",
-                "version": "~7.1.0-alpha1@alpha",
+                "version": "7.1.0-alpha1",
                 "dist": {
                     "url": "https://ftp.drupal.org/files/projects/commerce_order_reference-7.x-1.0-alpha1.tar.gz",
                     "type": "tar"
@@ -531,7 +531,7 @@
             "package": {
                 "name": "drupal/commerce_custom_product",
                 "type": "drupal-module",
-                "version": "~7.1.0-beta2@beta",
+                "version": "7.1.0-beta2",
                 "dist": {
                     "url": "https://ftp.drupal.org/files/projects/commerce_custom_product-7.x-1.0-beta2.tar.gz",
                     "type": "tar"
@@ -567,7 +567,7 @@
             "package": {
                 "name": "drupal/flot",
                 "type": "drupal-module",
-                "version": "~7@dev",
+                "version": "7.x",
                 "source": {
                     "url": "http://git.drupal.org/project/flot.git",
                     "type": "git",
@@ -580,7 +580,7 @@
             "package": {
                 "name": "drupal/views_data_export",
                 "type": "drupal-module",
-                "version": "~7.3.0-beta8@beta",
+                "version": "7.3.0-beta8",
                 "dist": {
                     "url": "https://ftp.drupal.org/files/projects/views_data_export-7.x-3.0-beta8.tar.gz",
                     "type": "tar"
@@ -592,7 +592,7 @@
             "package": {
                 "name": "drupal/geocoder",
                 "type": "drupal-module",
-                "version": "~7@dev",
+                "version": "7.x",
                 "source": {
                     "url": "http://git.drupal.org/project/geocoder.git",
                     "type": "git",
@@ -617,7 +617,7 @@
             "package": {
                 "name": "drupal/geophp",
                 "type": "drupal-module",
-                "version": "~7@dev",
+                "version": "7.x",
                 "source": {
                     "url": "http://git.drupal.org/project/geophp.git",
                     "type": "git",
@@ -630,7 +630,7 @@
             "package": {
                 "name": "drupal/openlayers",
                 "type": "drupal-module",
-                "version": "~7.2.0-beta11@beta",
+                "version": "7.2.0-beta11",
                 "dist": {
                     "url": "https://ftp.drupal.org/files/projects/openlayers-7.x-2.0-beta11.tar.gz",
                     "type": "tar"
@@ -714,7 +714,7 @@
             "package": {
                 "name": "drupal/crm_core_profile",
                 "type": "drupal-module",
-                "version": "~7.1.0-beta10@beta",
+                "version": "7.1.0-beta10",
                 "dist": {
                     "url": "https://ftp.drupal.org/files/projects/crm_core_profile-7.x-1.0-beta10.tar.gz",
                     "type": "tar"
@@ -798,7 +798,7 @@
             "package": {
                 "name": "drupal/uuid",
                 "type": "drupal-module",
-                "version": "~7.1.0-alpha6@alpha",
+                "version": "7.1.0-alpha6",
                 "dist": {
                     "url": "https://ftp.drupal.org/files/projects/uuid-7.x-1.0-alpha6.tar.gz",
                     "type": "tar"
@@ -810,7 +810,7 @@
             "package": {
                 "name": "drupal/deploy",
                 "type": "drupal-module",
-                "version": "~7@dev",
+                "version": "7.x",
                 "source": {
                     "url": "http://git.drupal.org/project/deploy.git",
                     "type": "git",
@@ -823,7 +823,7 @@
             "package": {
                 "name": "drupal/entity_dependency",
                 "type": "drupal-module",
-                "version": "~7@dev",
+                "version": "7.x",
                 "source": {
                     "url": "http://git.drupal.org/project/entity_dependency.git",
                     "type": "git",
@@ -836,7 +836,7 @@
             "package": {
                 "name": "drupal/entity_menu_links",
                 "type": "drupal-module",
-                "version": "~7@dev",
+                "version": "7.x",
                 "source": {
                     "url": "http://git.drupal.org/project/entity_menu_links.git",
                     "type": "git",
@@ -916,5 +916,5 @@
                 }
             }
         }
-    ]
+    ],
 
