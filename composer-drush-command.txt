@@ -1,0 +1,2 @@
+~/bin/drush6/drush m2c drupal-org.make -v --add-drupal-repositories >composer.json
+
