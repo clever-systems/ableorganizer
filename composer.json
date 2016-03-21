@@ -67,7 +67,7 @@
         "drupal/crm_core_event": "7.0.13",
         "drupal/crm_core_petition": "7.0.12",
         "drupal/crm_core_volunteer": "7.0.14",
-        "drupal/uuid": "~7.1.0@alpha",
+        "drupal/uuid": "~7.1@alpha",
         "drupal/deploy": "~7@beta",
         "drupal/entity_dependency": "~7@alpha",
         "drupal/entity_menu_links": "~7@alpha",
