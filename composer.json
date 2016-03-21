@@ -43,7 +43,7 @@
         "drupal/adaptive_image": "~7",
         "drupal/file_entity": "~7@beta",
         "drupal/commerce": "7.1.11",
-        "drupal/commerce_order_reference": "~7.1.0@alpha",
+        "drupal/commerce_order_reference": "7.1.*@alpha",
         "drupal/commerce_features": "7.1.0",
         "drupal/commerce_custom_product": "~7.1.0@beta",
         "drupal/commerce_authnet": "7.1.2",
