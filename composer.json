@@ -3,7 +3,6 @@
     "description": "Use ableorganizer with composer.",
     "require": {
         "composer/installers": "~1.0",
-        "drupal/drupal": "7.7.37",
         "drupal/views": "7.3.11",
         "drupal/views_bulk_operations": "7.3.2",
         "drupal/ctools": "7.1.7",
