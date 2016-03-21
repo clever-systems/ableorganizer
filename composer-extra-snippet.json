@@ -1,0 +1,920 @@
+    "repositories": [
+        {
+            "type": "package",
+            "package": {
+                "name": "drupal/drupal",
+                "type": "drupal-core",
+                "version": "7.7.37",
+                "dist": {
+                    "url": "https://ftp.drupal.org/files/projects/drupal-7.37.tar.gz",
+                    "type": "tar"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "drupal/views",
+                "type": "drupal-module",
+                "version": "7.3.11",
+                "dist": {
+                    "url": "https://ftp.drupal.org/files/projects/views-7.x-3.11.tar.gz",
+                    "type": "tar"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "drupal/views_bulk_operations",
+                "type": "drupal-module",
+                "version": "7.3.2",
+                "dist": {
+                    "url": "https://ftp.drupal.org/files/projects/views_bulk_operations-7.x-3.2.tar.gz",
+                    "type": "tar"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "drupal/ctools",
+                "type": "drupal-module",
+                "version": "7.1.7",
+                "dist": {
+                    "url": "https://ftp.drupal.org/files/projects/ctools-7.x-1.7.tar.gz",
+                    "type": "tar"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "drupal/entity",
+                "type": "drupal-module",
+                "version": "7.1.6",
+                "dist": {
+                    "url": "https://ftp.drupal.org/files/projects/entity-7.x-1.6.tar.gz",
+                    "type": "tar"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "drupal/entityreference",
+                "type": "drupal-module",
+                "version": "7.1.1",
+                "dist": {
+                    "url": "https://ftp.drupal.org/files/projects/entityreference-7.x-1.1.tar.gz",
+                    "type": "tar"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "drupal/relation",
+                "type": "drupal-module",
+                "version": "7.1.0-rc7",
+                "dist": {
+                    "url": "https://ftp.drupal.org/files/projects/relation-7.x-1.0-rc7.tar.gz",
+                    "type": "tar"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "drupal/token",
+                "type": "drupal-module",
+                "version": "7.1.6",
+                "dist": {
+                    "url": "https://ftp.drupal.org/files/projects/token-7.x-1.6.tar.gz",
+                    "type": "tar"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "drupal/panels",
+                "type": "drupal-module",
+                "version": "7.3.5",
+                "dist": {
+                    "url": "https://ftp.drupal.org/files/projects/panels-7.x-3.5.tar.gz",
+                    "type": "tar"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "drupal/rules",
+                "type": "drupal-module",
+                "version": "7.2.9",
+                "dist": {
+                    "url": "https://ftp.drupal.org/files/projects/rules-7.x-2.9.tar.gz",
+                    "type": "tar"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "drupal/libraries",
+                "type": "drupal-module",
+                "version": "7.2.2",
+                "dist": {
+                    "url": "https://ftp.drupal.org/files/projects/libraries-7.x-2.2.tar.gz",
+                    "type": "tar"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "drupal/features",
+                "type": "drupal-module",
+                "version": "7.2.5",
+                "dist": {
+                    "url": "https://ftp.drupal.org/files/projects/features-7.x-2.5.tar.gz",
+                    "type": "tar"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "drupal/diff",
+                "type": "drupal-module",
+                "version": "~~7@dev@dev",
+                "source": {
+                    "url": "http://git.drupal.org/project/diff.git",
+                    "type": "git",
+                    "reference": "7.x-3.x"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "drupal/context",
+                "type": "drupal-module",
+                "version": "7.3.6",
+                "dist": {
+                    "url": "https://ftp.drupal.org/files/projects/context-7.x-3.6.tar.gz",
+                    "type": "tar"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "drupal/strongarm",
+                "type": "drupal-module",
+                "version": "7.2.0",
+                "dist": {
+                    "url": "https://ftp.drupal.org/files/projects/strongarm-7.x-2.0.tar.gz",
+                    "type": "tar"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "drupal/menu_token",
+                "type": "drupal-module",
+                "version": "~~7@dev@dev",
+                "source": {
+                    "url": "http://git.drupal.org/project/menu_token.git",
+                    "type": "git",
+                    "reference": "7.x-1.x"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "drupal/entity_view_mode",
+                "type": "drupal-module",
+                "version": "7.1.0-rc1",
+                "dist": {
+                    "url": "https://ftp.drupal.org/files/projects/entity_view_mode-7.x-1.0-rc1.tar.gz",
+                    "type": "tar"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "drupal/admin_menu",
+                "type": "drupal-module",
+                "version": "7.3.0-rc5",
+                "dist": {
+                    "url": "https://ftp.drupal.org/files/projects/admin_menu-7.x-3.0-rc5.tar.gz",
+                    "type": "tar"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "drupal/module_filter",
+                "type": "drupal-module",
+                "version": "7.2.0",
+                "dist": {
+                    "url": "https://ftp.drupal.org/files/projects/module_filter-7.x-2.0.tar.gz",
+                    "type": "tar"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "drupal/name",
+                "type": "drupal-module",
+                "version": "~~7@dev@dev",
+                "source": {
+                    "url": "http://git.drupal.org/project/name.git",
+                    "type": "git",
+                    "reference": "7.x-1.x"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "drupal/field_group",
+                "type": "drupal-module",
+                "version": "7.1.4",
+                "dist": {
+                    "url": "https://ftp.drupal.org/files/projects/field_group-7.x-1.4.tar.gz",
+                    "type": "tar"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "drupal/cck_phone",
+                "type": "drupal-module",
+                "version": "~~7@dev@dev",
+                "source": {
+                    "url": "http://git.drupal.org/project/cck_phone.git",
+                    "type": "git",
+                    "reference": "7.x-1.x"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "drupal/link",
+                "type": "drupal-module",
+                "version": "7.1.3",
+                "dist": {
+                    "url": "https://ftp.drupal.org/files/projects/link-7.x-1.3.tar.gz",
+                    "type": "tar"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "drupal/email",
+                "type": "drupal-module",
+                "version": "7.1.3",
+                "dist": {
+                    "url": "https://ftp.drupal.org/files/projects/email-7.x-1.3.tar.gz",
+                    "type": "tar"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "drupal/addressfield",
+                "type": "drupal-module",
+                "version": "7.1.1",
+                "dist": {
+                    "url": "https://ftp.drupal.org/files/projects/addressfield-7.x-1.1.tar.gz",
+                    "type": "tar"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "drupal/date",
+                "type": "drupal-module",
+                "version": "7.2.9-rc1",
+                "dist": {
+                    "url": "https://ftp.drupal.org/files/projects/date-7.x-2.9-rc1.tar.gz",
+                    "type": "tar"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "drupal/select_or_other",
+                "type": "drupal-module",
+                "version": "7.2.22",
+                "dist": {
+                    "url": "https://ftp.drupal.org/files/projects/select_or_other-7.x-2.22.tar.gz",
+                    "type": "tar"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "drupal/calendar",
+                "type": "drupal-module",
+                "version": "7.3.5",
+                "dist": {
+                    "url": "https://ftp.drupal.org/files/projects/calendar-7.x-3.5.tar.gz",
+                    "type": "tar"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "drupal/mailsystem",
+                "type": "drupal-module",
+                "version": "7.2.34",
+                "dist": {
+                    "url": "https://ftp.drupal.org/files/projects/mailsystem-7.x-2.34.tar.gz",
+                    "type": "tar"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "drupal/mimemail",
+                "type": "drupal-module",
+                "version": "7.1.0-beta3",
+                "dist": {
+                    "url": "https://ftp.drupal.org/files/projects/mimemail-7.x-1.0-beta3.tar.gz",
+                    "type": "tar"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "drupal/pathauto",
+                "type": "drupal-module",
+                "version": "7.1.2",
+                "dist": {
+                    "url": "https://ftp.drupal.org/files/projects/pathauto-7.x-1.2.tar.gz",
+                    "type": "tar"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "drupal/pathologic",
+                "type": "drupal-module",
+                "version": "~~7@dev@dev",
+                "source": {
+                    "url": "http://git.drupal.org/project/pathologic.git",
+                    "type": "git",
+                    "reference": "7.x-2.x"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "drupal/wysiwyg",
+                "type": "drupal-module",
+                "version": "~~7@dev@dev",
+                "source": {
+                    "url": "http://git.drupal.org/project/wysiwyg.git",
+                    "type": "git",
+                    "reference": "7.x-2.x"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "drupal/ckeditor",
+                "type": "drupal-module",
+                "version": "7.1.16",
+                "dist": {
+                    "url": "https://ftp.drupal.org/files/projects/ckeditor-7.x-1.16.tar.gz",
+                    "type": "tar"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "drupal/media",
+                "type": "drupal-module",
+                "version": "~~7@dev@dev",
+                "source": {
+                    "url": "http://git.drupal.org/project/media.git",
+                    "type": "git",
+                    "reference": "7.x-2.x"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "drupal/colorbox",
+                "type": "drupal-module",
+                "version": "7.2.8",
+                "dist": {
+                    "url": "https://ftp.drupal.org/files/projects/colorbox-7.x-2.8.tar.gz",
+                    "type": "tar"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "drupal/media_colorbox",
+                "type": "drupal-module",
+                "version": "~~7@dev@dev",
+                "source": {
+                    "url": "http://git.drupal.org/project/media_colorbox.git",
+                    "type": "git",
+                    "reference": "7.x-1.x"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "drupal/media_youtube",
+                "type": "drupal-module",
+                "version": "~~7@dev@dev",
+                "source": {
+                    "url": "http://git.drupal.org/project/media_youtube.git",
+                    "type": "git",
+                    "reference": "7.x-2.x"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "drupal/adaptive_image",
+                "type": "drupal-module",
+                "version": "~~7@dev@dev",
+                "source": {
+                    "url": "http://git.drupal.org/project/adaptive_image.git",
+                    "type": "git",
+                    "reference": "7.x-1.x"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "drupal/file_entity",
+                "type": "drupal-module",
+                "version": "~~7@dev@dev",
+                "source": {
+                    "url": "http://git.drupal.org/project/file_entity.git",
+                    "type": "git",
+                    "reference": "7.x-2.x"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "drupal/commerce",
+                "type": "drupal-module",
+                "version": "7.1.11",
+                "dist": {
+                    "url": "https://ftp.drupal.org/files/projects/commerce-7.x-1.11.tar.gz",
+                    "type": "tar"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "drupal/commerce_order_reference",
+                "type": "drupal-module",
+                "version": "7.1.0-alpha1",
+                "dist": {
+                    "url": "https://ftp.drupal.org/files/projects/commerce_order_reference-7.x-1.0-alpha1.tar.gz",
+                    "type": "tar"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "drupal/commerce_features",
+                "type": "drupal-module",
+                "version": "7.1.0",
+                "dist": {
+                    "url": "https://ftp.drupal.org/files/projects/commerce_features-7.x-1.0.tar.gz",
+                    "type": "tar"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "drupal/commerce_custom_product",
+                "type": "drupal-module",
+                "version": "7.1.0-beta2",
+                "dist": {
+                    "url": "https://ftp.drupal.org/files/projects/commerce_custom_product-7.x-1.0-beta2.tar.gz",
+                    "type": "tar"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "drupal/commerce_authnet",
+                "type": "drupal-module",
+                "version": "7.1.2",
+                "dist": {
+                    "url": "https://ftp.drupal.org/files/projects/commerce_authnet-7.x-1.2.tar.gz",
+                    "type": "tar"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "drupal/commerce_paypal",
+                "type": "drupal-module",
+                "version": "7.2.3",
+                "dist": {
+                    "url": "https://ftp.drupal.org/files/projects/commerce_paypal-7.x-2.3.tar.gz",
+                    "type": "tar"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "drupal/flot",
+                "type": "drupal-module",
+                "version": "~~7@dev@dev",
+                "source": {
+                    "url": "http://git.drupal.org/project/flot.git",
+                    "type": "git",
+                    "reference": "7.x-1.x"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "drupal/views_data_export",
+                "type": "drupal-module",
+                "version": "7.3.0-beta8",
+                "dist": {
+                    "url": "https://ftp.drupal.org/files/projects/views_data_export-7.x-3.0-beta8.tar.gz",
+                    "type": "tar"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "drupal/geocoder",
+                "type": "drupal-module",
+                "version": "~~7@dev@dev",
+                "source": {
+                    "url": "http://git.drupal.org/project/geocoder.git",
+                    "type": "git",
+                    "reference": "7.x-1.x"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "drupal/geofield",
+                "type": "drupal-module",
+                "version": "7.2.3",
+                "dist": {
+                    "url": "https://ftp.drupal.org/files/projects/geofield-7.x-2.3.tar.gz",
+                    "type": "tar"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "drupal/geophp",
+                "type": "drupal-module",
+                "version": "~~7@dev@dev",
+                "source": {
+                    "url": "http://git.drupal.org/project/geophp.git",
+                    "type": "git",
+                    "reference": "7.x-1.x"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "drupal/openlayers",
+                "type": "drupal-module",
+                "version": "7.2.0-beta11",
+                "dist": {
+                    "url": "https://ftp.drupal.org/files/projects/openlayers-7.x-2.0-beta11.tar.gz",
+                    "type": "tar"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "drupal/proj4js",
+                "type": "drupal-module",
+                "version": "7.1.2",
+                "dist": {
+                    "url": "https://ftp.drupal.org/files/projects/proj4js-7.x-1.2.tar.gz",
+                    "type": "tar"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "drupal/boxes",
+                "type": "drupal-module",
+                "version": "7.1.2",
+                "dist": {
+                    "url": "https://ftp.drupal.org/files/projects/boxes-7.x-1.2.tar.gz",
+                    "type": "tar"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "drupal/compact_forms",
+                "type": "drupal-module",
+                "version": "7.1.0",
+                "dist": {
+                    "url": "https://ftp.drupal.org/files/projects/compact_forms-7.x-1.0.tar.gz",
+                    "type": "tar"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "drupal/fontyourface",
+                "type": "drupal-module",
+                "version": "7.2.8",
+                "dist": {
+                    "url": "https://ftp.drupal.org/files/projects/fontyourface-7.x-2.8.tar.gz",
+                    "type": "tar"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "drupal/google_fonts",
+                "type": "drupal-module",
+                "version": "7.2.3",
+                "dist": {
+                    "url": "https://ftp.drupal.org/files/projects/google_fonts-7.x-2.3.tar.gz",
+                    "type": "tar"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "drupal/crm_core",
+                "type": "drupal-module",
+                "version": "7.0.980",
+                "dist": {
+                    "url": "https://ftp.drupal.org/files/projects/crm_core-7.x-0.980.tar.gz",
+                    "type": "tar"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "drupal/crm_core_profile",
+                "type": "drupal-module",
+                "version": "7.1.0-beta10",
+                "dist": {
+                    "url": "https://ftp.drupal.org/files/projects/crm_core_profile-7.x-1.0-beta10.tar.gz",
+                    "type": "tar"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "drupal/crm_core_profile_commerce_items",
+                "type": "drupal-module",
+                "version": "7.0.4",
+                "dist": {
+                    "url": "https://ftp.drupal.org/files/projects/crm_core_profile_commerce_items-7.x-0.4.tar.gz",
+                    "type": "tar"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "drupal/crm_core_demo_standard_fields",
+                "type": "drupal-module",
+                "version": "7.1.3",
+                "dist": {
+                    "url": "https://ftp.drupal.org/files/projects/crm_core_demo_standard_fields-7.x-1.3.tar.gz",
+                    "type": "tar"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "drupal/crm_core_donation",
+                "type": "drupal-module",
+                "version": "7.1.14",
+                "dist": {
+                    "url": "https://ftp.drupal.org/files/projects/crm_core_donation-7.x-1.14.tar.gz",
+                    "type": "tar"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "drupal/crm_core_event",
+                "type": "drupal-module",
+                "version": "7.0.13",
+                "dist": {
+                    "url": "https://ftp.drupal.org/files/projects/crm_core_event-7.x-0.13.tar.gz",
+                    "type": "tar"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "drupal/crm_core_petition",
+                "type": "drupal-module",
+                "version": "7.0.12",
+                "dist": {
+                    "url": "https://ftp.drupal.org/files/projects/crm_core_petition-7.x-0.12.tar.gz",
+                    "type": "tar"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "drupal/crm_core_volunteer",
+                "type": "drupal-module",
+                "version": "7.0.14",
+                "dist": {
+                    "url": "https://ftp.drupal.org/files/projects/crm_core_volunteer-7.x-0.14.tar.gz",
+                    "type": "tar"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "drupal/uuid",
+                "type": "drupal-module",
+                "version": "7.1.0-alpha6",
+                "dist": {
+                    "url": "https://ftp.drupal.org/files/projects/uuid-7.x-1.0-alpha6.tar.gz",
+                    "type": "tar"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "drupal/deploy",
+                "type": "drupal-module",
+                "version": "~~7@dev@dev",
+                "source": {
+                    "url": "http://git.drupal.org/project/deploy.git",
+                    "type": "git",
+                    "reference": "7.x-2.x"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "drupal/entity_dependency",
+                "type": "drupal-module",
+                "version": "~~7@dev@dev",
+                "source": {
+                    "url": "http://git.drupal.org/project/entity_dependency.git",
+                    "type": "git",
+                    "reference": "7.x-1.x"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "drupal/entity_menu_links",
+                "type": "drupal-module",
+                "version": "~~7@dev@dev",
+                "source": {
+                    "url": "http://git.drupal.org/project/entity_menu_links.git",
+                    "type": "git",
+                    "reference": "7.x-1.x"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "drupal/omega",
+                "type": "drupal-theme",
+                "version": "7.3.1",
+                "dist": {
+                    "url": "https://ftp.drupal.org/files/projects/omega-7.x-3.1.tar.gz",
+                    "type": "tar"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "drupal/zen",
+                "type": "drupal-theme",
+                "version": "7.5.5",
+                "dist": {
+                    "url": "https://ftp.drupal.org/files/projects/zen-7.x-5.5.tar.gz",
+                    "type": "tar"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "library/flot",
+                "version": "1.0",
+                "type": "drupal-library",
+                "dist": {
+                    "url": "https://flot.googlecode.com/files/flot-0.7.tar.gz",
+                    "type": "tar"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "library/ckeditor",
+                "version": "1.0",
+                "type": "drupal-library",
+                "dist": {
+                    "url": "http://download.cksource.com/CKEditor/CKEditor/CKEditor%204.4.4/ckeditor_4.4.4_full.zip",
+                    "type": "zip"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "library/colorbox",
+                "version": "1.0",
+                "type": "drupal-library",
+                "dist": {
+                    "url": "https://github.com/jackmoore/colorbox/archive/1.5.13.tar.gz",
+                    "type": "tar"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "library/openlayers",
+                "version": "1.0",
+                "type": "drupal-library",
+                "dist": {
+                    "url": "http://github.com/openlayers/openlayers/releases/download/release-2.13.1/OpenLayers-2.13.1.zip",
+                    "type": "file"
+                }
+            }
+        }
+    ],
+
