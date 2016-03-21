@@ -82,24 +82,6 @@
     },
     "extra": {
       "patches": {
-        "drupal/entity": {
-          "Add token formatting option": "https://www.drupal.org/files/issues/unformatted_replacements-2082407-6.patch"
-        },
-        "drupal/name": {
-          "Improve migrate handler": "https://www.drupal.org/files/issues/name-2221717-16.patch"
-        },
-        "drupal/media_colorbox": {
-          "Work with wysiwyg": "https://www.drupal.org/files/issues/media_colorbox_wysiwyg-1888198-24.patch"
-        },
-        "drupal/flot": {
-          "PHP 5.4": "https://www.drupal.org/files/flot-php54compat_0.patch"
-        },
-        "drupal/flot": {
-          "Pie options": "https://www.drupal.org/files/flot-pie_options-2088021-3.patch"
-        },
-        "drupal/uuid": {
-          "Empty file": "https://www.drupal.org/files/issues/uuid-empty_file-2121031-1.patch"
-        }
       }
     }
 }
